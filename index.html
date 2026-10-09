@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Eliminate</title>
+<title>Shelhom!</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800;900&display=swap" rel="stylesheet">
 <style>
@@ -225,7 +225,7 @@ CATS.forEach(function(c){c.r.forEach(function(r){var v=r.items.map(function(x){r
 
 // Text in English and Egyptian Arabic. Functions take numbers already formatted.
 var TX={
- en:{title:"ELIMINATE",streak:"🔥 STREAK ",best:"🏅 BEST ",rounds:function(n){return n+" rounds"},solved:function(s,n){return s+"/"+n+" solved"},complete:"★ COMPLETE",
+ en:{title:"SHELHOM!",streak:"🔥 STREAK ",best:"🏅 BEST ",rounds:function(n){return n+" rounds"},solved:function(s,n){return s+"/"+n+" solved"},complete:"★ COMPLETE",
   hint:"Eliminated cards flip to show their answer. Tap one to flip it back. Tap 📷 in a round, then a tile, to use your own photo.",
   round:function(a,b){return"ROUND "+a+"/"+b},photo:"PHOTO MODE: TAP A TILE",nailed:"NAILED IT!",wrong:"WRONG ONE!",left:function(n){return n+" TO ELIMINATE"},all:"ELIMINATE ALL BUT ONE",
   undo:"↺",skip:"▶| SKIP",next:"NEXT ▶",lost:"❌ YOU LOST!",knocked:function(x){return"You knocked out the answer: "+x+"."},keep:function(n){return" Undo to keep your 🔥"+n+" streak."},
@@ -323,7 +323,7 @@ function confetti(){if(RM)return;var cv=$("fx"),x=cv.getContext("2d"),W=cv.width
   x.save();x.globalAlpha=1-k;x.translate(p.x,p.y);x.rotate(p.r);x.fillStyle=p.c;x.fillRect(-p.s/2,-p.s/4,p.s,p.s/2);x.restore()});requestAnimationFrame(f)})(t0)}
 
 // --- screens ---
-function applyLang(){var h=document.documentElement;h.lang=L;h.dir=L==="ar"?"rtl":"ltr";$("lang").textContent=t("lang");$("snd").textContent=mute?"🔇":"🔊"}
+function applyLang(){var h=document.documentElement;h.lang=L;document.title=L==="ar"?"شيلهم!":"Shelhom!";h.dir=L==="ar"?"rtl":"ltr";$("lang").textContent=t("lang");$("snd").textContent=mute?"🔇":"🔊"}
 function inGame(){return $("game").style.display!=="none"}
 function menu(){hide();edit=false;cur=null;$("game").style.display="none";$("menu").style.display="flex";$("coins").textContent=n(coins);$("cam").className="pill";
  $("menu").innerHTML="<h1>"+t("title")+"</h1><div class='stats'><span class='stat streak'>"+t("streak")+n(streak)+"</span><span class='stat'>"+t("best")+n(best)+"</span></div>"+
