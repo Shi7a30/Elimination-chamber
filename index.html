@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Eliminate</title>
+<style>
+:root{--bg:#fafafa;--fg:#1c1c1c;--y:#f7c83d;--dark:#2a2a2a;--mut:#8a8a8a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161616;--fg:#f2f2f2;--dark:#3a3a3a;--mut:#999}}
+:root[data-theme="dark"]{--bg:#161616;--fg:#f2f2f2;--dark:#3a3a3a;--mut:#999}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:800;display:flex;justify-content:center}
+#app{width:100%;max-width:440px;padding:14px 16px 24px;display:flex;flex-direction:column;align-items:center}
+.top{width:100%;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.pill{border:3px solid var(--fg);border-radius:16px;background:var(--bg);color:var(--fg);font:inherit;font-size:20px;padding:8px 16px;box-shadow:0 5px 0 var(--fg);display:flex;align-items:center;gap:8px}
+.pill.on{background:var(--y);color:#1c1c1c}
+.coin{width:20px;height:20px;border-radius:50%;background:var(--y);border:3px solid #d9a800;display:inline-block}
+.q{text-align:center;margin:18px 0 6px;font-size:18px}
+.big{display:inline-block;text-align:center;background:var(--y);color:#1c1c1c;border:4px solid var(--fg);border-radius:18px;padding:12px 22px;font-size:24px;margin:8px 0}
+.sub{color:var(--mut);font-size:16px;margin:10px 0 16px;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px 12px;width:100%}
+.cell{display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer}
+.tile{width:100%;aspect-ratio:1;border-radius:20px;border:4px solid var(--dark);box-shadow:0 5px 0 var(--dark);display:flex;align-items:center;justify-content:center;font-size:44px;color:#fff;overflow:hidden;transition:.15s}
+.tile img{width:100%;height:100%;object-fit:cover}
+.lab{width:100%;height:40px;display:flex;align-items:center;justify-content:center;text-align:center;background:var(--dark);color:#fff;border-radius:14px;padding:0 6px;font-size:12px;line-height:1.1;transition:.15s}
+.cell.out .tile{border-color:var(--y);box-shadow:0 5px 0 var(--y);opacity:.55}
+.cell.out .lab{background:var(--y);color:#1c1c1c;font-size:17px}
+.cell.win .tile{border-color:#3ecf6e;box-shadow:0 5px 0 #3ecf6e}
+.cell.win .lab{background:#3ecf6e;color:#06210f}
+.cell.bad .tile{border-color:#e5484d;box-shadow:0 5px 0 #e5484d}
+.cell.bad .lab{background:#e5484d}
+.cell:active .tile{transform:translateY(3px)}
+.cell.show .lab{font-size:17px}
+.bar{display:flex;gap:18px;margin-top:26px}
+.btn{border:3px solid var(--fg);background:var(--bg);color:var(--fg);font:inherit;font-size:19px;padding:11px 24px;border-radius:999px;box-shadow:0 5px 0 var(--fg);display:flex;gap:8px;align-items:center}
+.btn:disabled{opacity:.4}
+#menu{width:100%;display:flex;flex-direction:column;gap:14px;align-items:stretch}
+#menu h1{text-align:center;font-size:30px;margin:20px 0 4px}
+.cat{background:var(--y);color:#1c1c1c;border:4px solid var(--fg);border-radius:20px;padding:16px;font:inherit;font-size:20px;box-shadow:0 5px 0 var(--fg);text-align:left}
+.cat small{display:block;font-size:13px;opacity:.7;margin-top:2px}
+#sheet{position:fixed;left:0;right:0;bottom:0;padding:22px 22px calc(26px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:4px solid var(--fg);border-radius:26px 26px 0 0;text-align:center;transform:translateY(110%);transition:.25s;font-size:22px}
+#sheet.show{transform:none}
+#sheet p{margin:6px 0 16px;font-size:16px;color:var(--mut)}
+#sheet .btn{margin:auto;background:var(--y);color:#1c1c1c}
+</style></head><body>
+<div id="app">
+ <div class="top"><button class="pill" id="home">⌂</button><button class="pill" id="cam" title="Add photos">📷</button><div class="pill"><span id="coins">28</span><i class="coin"></i></div></div>
+ <div id="menu"></div>
+ <div id="game" style="display:none;width:100%;flex-direction:column;align-items:center">
+  <div class="q" id="q1"></div><div class="big" id="q2"></div><div class="q" id="q3"></div>
+  <div class="sub" id="sub"></div>
+  <div class="grid" id="grid"></div>
+  <div class="bar"><button class="btn" id="undo">↺ <i class="coin"></i>30</button><button class="btn" id="skip">▶| SKIP</button></div>
+ </div>
+</div>
+<input type="file" id="file" accept="image/*" style="display:none">
+<div id="sheet"><div id="st"></div><p id="sp"></p><button class="btn" id="next">NEXT</button></div>
+<script>
+// Item = [name, value]. Photos are added in-app with the 📷 button and saved on this device.
+function Rd(a,b,c,best,items,o){o=o||{};return{q:[a,b,c],best:best,items:items,pre:o.pre,unit:o.unit}}
+var CATS=[
+{n:"Egyptian Football",e:"🇪🇬 ⚽",r:[
+ Rd("WHO IS THE","YOUNGEST PLAYER","ON THIS LIST","max",[["Ahmed Hegazi",1991],["Mohamed Salah",1992],["Mahmoud 'Trezeguet' Hassan",1994],["Mahmoud Hamdy 'El Wensh'",1995],["Ahmed Sayed 'Zizo'",1996],["Mostafa Mohamed",1997],["Ahmed Fatouh",1998],["Omar Marmoush",1999],["Hamza Abdel Karim",2008]]),
+ Rd("WHO IS THE","OLDEST LEGEND","ON THIS LIST","min",[["Hassan Shehata",1947],["Mahmoud 'Bibo' El Khatib",1954],["Hossam Hassan",1966],["Hany Ramzy",1969],["Essam El-Hadary",1973],["Ahmed Hassan",1975],["Mohamed Aboutrika",1978],["Mohamed Zidan",1981],["Ahmed 'Mido' Hossam",1983]])]},
+{n:"World Football",e:"🌍 ⚽",r:[
+ Rd("WHO IS THE","YOUNGEST STAR","ON THIS LIST","max",[["Neymar Jr",1992],["Kylian Mbappé",1998],["Erling Haaland",2000],["Rodrygo Goes",2001],["Pedri González",2002],["Jude Bellingham",2003],["Pablo 'Gavi' Páez",2004],["Endrick Felipe",2006],["Lamine Yamal",2007]]),
+ Rd("WHO IS THE","OLDEST LEGEND","ON THIS LIST","min",[["Zinedine Zidane",1972],["David Beckham",1975],["Ronaldo Nazário",1976],["Thierry Henry",1977],["Ronaldinho Gaúcho",1980],["Zlatan Ibrahimović",1981],["Ricardo Kaká",1982],["Cristiano Ronaldo",1985],["Lionel Messi",1987]])]},
+{n:"Cinema",e:"🎬",r:[
+ Rd("WHO IS THE","OLDEST ACTOR","ON THIS LIST","min",[["Clint Eastwood",1930],["Dustin Hoffman",1937],["Al Pacino",1940],["Harrison Ford",1942],["Robert De Niro",1943],["Sylvester Stallone",1946],["Arnold Schwarzenegger",1947],["Meryl Streep",1949],["Jackie Chan",1954]]),
+ Rd("WHO IS THE","OLDEST EGYPTIAN STAR","ON THIS LIST","min",[["Omar Sharif",1932],["Adel Imam",1940],["Mahmoud Yassin",1941],["Ahmed Zaki",1949],["Mohamed Henedy",1965],["Ahmed Helmy",1969],["Ahmed El-Sakka",1973],["Karim Abdel Aziz",1975],["Mohamed Ramadan",1988]]),
+ Rd("WHICH IS THE","BIGGEST BLOCKBUSTER","ON THIS LIST","max",[["Avatar",2.924],["Avengers: Endgame",2.798],["Titanic",2.258],["Star Wars: The Force Awakens",2.07],["Avengers: Infinity War",2.05],["Spider-Man: No Way Home",1.92],["Jurassic World",1.67],["The Lion King (2019)",1.66],["Frozen II",1.450]],{pre:"$",unit:"B"})]},
+{n:"TV",e:"📺",r:[
+ Rd("WHO IS THE","YOUNGEST STAR","ON THIS LIST","max",[["Sean Bean",1959],["Iain Glen",1961],["Peter Dinklage",1969],["Nikolaj Coster-Waldau",1970],["Lena Headey",1973],["Gwendoline Christie",1978],["Emilia Clarke",1986],["Sophie Turner",1996],["Maisie Williams",1997]]),
+ Rd("WHO IS THE","OLDEST SITCOM STAR","ON THIS LIST","min",[["Lisa Kudrow",1963],["Courteney Cox",1964],["David Schwimmer",1966],["Matt LeBlanc",1967],["Jennifer Aniston",1969],["Jim Parsons",1973],["Johnny Galecki",1975],["Kunal Nayyar",1981],["Kaley Cuoco",1985]])]},
+{n:"Music",e:"🎤",r:[
+ Rd("WHO IS THE","OLDEST ICON","ON THIS LIST","min",[["Bob Dylan",1941],["Paul McCartney",1942],["Mick Jagger",1943],["Rod Stewart",1945],["Freddie Mercury",1946],["Elton John",1947],["Ozzy Osbourne",1948],["Bruce Springsteen",1949],["Stevie Wonder",1950]]),
+ Rd("WHO IS THE","YOUNGEST POP STAR","ON THIS LIST","max",[["The Weeknd",1990],["Ed Sheeran",1991],["Ariana Grande",1993],["Harry Styles",1994],["Dua Lipa",1995],["Shawn Mendes",1998],["Billie Eilish",2001],["Olivia Rodrigo",2003],["Taylor Swift",1989]]),
+ Rd("WHO IS THE","OLDEST EGYPTIAN ICON","ON THIS LIST","min",[["Abdel Halim Hafez",1929],["Warda Al-Jazairia",1939],["Mohamed Mounir",1954],["Amr Diab",1961],["Hakim",1962],["Angham",1972],["Mohamed Hamaki",1975],["Tamer Hosny",1977],["Sherine Abdel Wahab",1980]])]},
+{n:"Pop Culture",e:"🔥",r:[
+ Rd("WHO IS THE","YOUNGEST ONLINE STAR","ON THIS LIST","max",[["Kim Kardashian",1980],["PewDiePie",1989],["KSI",1993],["Timothée Chalamet",1995],["Zendaya",1996],["Kylie Jenner",1997],["MrBeast",1998],["Charli D'Amelio",2004],["Elon Musk",1971]]),
+ Rd("WHO IS THE","OLDEST MARVEL STAR","ON THIS LIST","min",[["Robert Downey Jr",1965],["Mark Ruffalo",1967],["Paul Rudd",1969],["Benedict Cumberbatch",1976],["Chris Pratt",1979],["Chris Evans",1981],["Chris Hemsworth",1983],["Scarlett Johansson",1984],["Tom Holland",1996]])]}
+];
+var $=function(i){return document.getElementById(i)};
+var coins=28,ci=0,ri=0,items,out,hist,over,corr,edit=false,pend=null,IM={};
+try{var c=localStorage.getItem("elim_coins");if(c!==null)coins=+c||28;IM=JSON.parse(localStorage.getItem("elim_img")||"{}")}catch(e){}
+function save(){try{localStorage.setItem("elim_coins",coins)}catch(e){}}
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a}
+function fmt(r,v){return(r.pre||"")+(r.unit==="B"?v.toFixed(2):v)+(r.unit||"")}
+function menu(){$("game").style.display="none";$("menu").style.display="flex";$("sheet").classList.remove("show");
+ $("menu").innerHTML="<h1>ELIMINATE</h1>"+CATS.map(function(c,i){return '<button class="cat" data-c="'+i+'">'+c.e+" "+c.n.toUpperCase()+"<small>"+c.r.length+" rounds</small></button>"}).join("")+
+ '<div class="sub">Tap 📷, then tap any tile to add a photo from your phone.</div>'}
+$("menu").onclick=function(e){var b=e.target.closest(".cat");if(!b)return;ci=+b.dataset.c;ri=0;start()};
+function start(){var r=CATS[ci].r[ri];$("menu").style.display="none";$("game").style.display="flex";
+ items=shuffle(r.items);out=[];hist=[];over=false;
+ var v=items.map(function(x){return x[1]});corr=v.indexOf(r.best==="min"?Math.min.apply(0,v):Math.max.apply(0,v));
+ $("q1").textContent=r.q[0];$("q2").textContent=r.q[1];$("q3").textContent=r.q[2];$("sheet").classList.remove("show");render()}
+function render(){var r=CATS[ci].r[ri],left=items.length-out.length;
+ $("sub").textContent=edit?"PHOTO MODE: TAP A TILE":(out.length?(left-1)+" TO ELIMINATE":"ELIMINATE ALL BUT ONE");
+ $("coins").textContent=coins;$("undo").disabled=!hist.length||coins<30||over==="win";$("cam").className="pill"+(edit?" on":"");
+ $("grid").innerHTML=items.map(function(it,i){var o=out.indexOf(i)>-1,cls=o?"out":"";
+  if(over==="win"&&!o)cls="win";if(over==="lose"&&i===corr)cls="win";if(over==="lose"&&!o)cls="bad";
+  var show=o||over;
+  var inner=IM[it[0]]?'<img src="'+IM[it[0]]+'" alt="">':it[0].charAt(0);
+  return '<div class="cell '+cls+(show?" show":"")+'" data-i="'+i+'"><div class="tile" style="background:hsl('+(i*47+20)+',45%,42%)">'+inner+'</div><div class="lab">'+(show?fmt(r,it[1]):it[0])+'</div></div>'}).join("")}
+$("grid").onclick=function(e){var c=e.target.closest(".cell");if(!c)return;var i=+c.dataset.i;
+ if(edit){pend=items[i][0];$("file").click();return}
+ if(over||out.indexOf(i)>-1)return;
+ out.push(i);hist.push(i);
+ if(items.length-out.length===1){
+  if(out.indexOf(corr)>-1){over="lose";render();sheet("YOU LOST!","The answer was "+items[corr][0]+" ("+fmt(CATS[ci].r[ri],items[corr][1])+").")}
+  else{over="win";coins+=10;save();render();sheet("YOU GOT IT!","+10 coins")}
+  return}
+ render()};
+$("file").onchange=function(){var f=this.files[0];this.value="";if(!f||!pend)return;var n=pend,u=URL.createObjectURL(f),im=new Image();
+ im.onload=function(){var s=Math.min(im.width,im.height),cv=document.createElement("canvas");cv.width=cv.height=220;
+  cv.getContext("2d").drawImage(im,(im.width-s)/2,(im.height-s)/2,s,s,0,0,220,220);IM[n]=cv.toDataURL("image/jpeg",.8);
+  try{localStorage.setItem("elim_img",JSON.stringify(IM))}catch(e){}URL.revokeObjectURL(u);render()};im.src=u};
+$("cam").onclick=function(){edit=!edit;if($("game").style.display!=="none")render();else $("cam").className="pill"+(edit?" on":"")};
+$("undo").onclick=function(){if(!hist.length||coins<30||over==="win")return;coins-=30;save();var i=hist.pop();out.splice(out.indexOf(i),1);if(over){over=false;$("sheet").classList.remove("show")}render()};
+function nxt(){ri++;if(ri>=CATS[ci].r.length)menu();else start()}
+$("skip").onclick=nxt;$("next").onclick=nxt;$("home").onclick=menu;
+function sheet(t,p){$("st").textContent=t;$("sp").textContent=p;setTimeout(function(){$("sheet").classList.add("show")},500)}
+menu();
+</script></body></html>
