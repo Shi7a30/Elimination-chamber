@@ -349,7 +349,7 @@
   "hint": "Egyptian footballer",
   "ar": "أحمد شوبير",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Nader El-Sayed",
@@ -1253,7 +1253,7 @@
   "hint": "Egyptian film",
   "ar": "الممر",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Ghazal El Banat",
@@ -1285,7 +1285,7 @@
   "hint": "Egyptian film",
   "ar": "الزوجة التانية",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Shei' Men El Khof",
@@ -1581,7 +1581,7 @@
   "hint": "Egyptian TV series",
   "ar": "جراند أوتيل",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "El Ostoura",
@@ -1589,7 +1589,7 @@
   "hint": "Egyptian TV series",
   "ar": "الأسطورة",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "El Ikhtiyar",
@@ -1597,7 +1597,7 @@
   "hint": "Egyptian TV series",
   "ar": "الاختيار",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Gaafar El Omda",
