@@ -1096,18 +1096,18 @@
   "skip": false
  },
  {
-  "name": "Yehia El-Fakharany",
-  "title": "Yehia El-Fakharany",
+  "name": "Emad Hamdy",
+  "title": "Emad Hamdy",
   "hint": "Egyptian actor",
-  "ar": "يحيى الفخراني",
+  "ar": "عماد حمدي",
   "logo": false,
   "skip": false
  },
  {
-  "name": "Nour El-Sherif",
-  "title": "Nour El-Sherif",
+  "name": "Mahmoud el-Meliguy",
+  "title": "Mahmoud el-Meliguy",
   "hint": "Egyptian actor",
-  "ar": "نور الشريف",
+  "ar": "محمود المليجي",
   "logo": false,
   "skip": false
  },
@@ -1283,7 +1283,7 @@
   "name": "El Zoga El Tanya",
   "title": "The Second Wife (1967 film)",
   "hint": "Egyptian film",
-  "ar": "الزوجة التانية",
+  "ar": "الزوجة الثانية",
   "logo": false,
   "skip": true
  },
@@ -1768,10 +1768,10 @@
   "skip": false
  },
  {
-  "name": "Warda Al-Jazairia",
-  "title": "Warda Al-Jazairia",
+  "name": "Hany Shaker",
+  "title": "Hany Shaker",
   "hint": "Egyptian singer",
-  "ar": "وردة الجزائرية",
+  "ar": "هاني شاكر",
   "logo": false,
   "skip": false
  },
@@ -1900,14 +1900,6 @@
   "title": "Blinding Lights",
   "hint": "song",
   "ar": "",
-  "logo": false,
-  "skip": false
- },
- {
-  "name": "Hany Shaker",
-  "title": "Hany Shaker",
-  "hint": "Egyptian singer",
-  "ar": "هاني شاكر",
   "logo": false,
   "skip": false
  },
@@ -2731,7 +2723,7 @@
   "name": "High Dam completed",
   "title": "Aswan Dam",
   "hint": "Egypt",
-  "ar": "بناء السد العالي",
+  "ar": "اكتمال السد العالي",
   "logo": false,
   "skip": false
  },
@@ -3120,7 +3112,7 @@
   "skip": false
  },
  {
-  "name": "Nintendo NES",
+  "name": "NES / Famicom",
   "title": "Nintendo Entertainment System",
   "hint": "video game console",
   "ar": "",
