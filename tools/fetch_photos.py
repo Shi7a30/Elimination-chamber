@@ -113,6 +113,8 @@ def main():
         pages.update(by_titles(items[i:i + 40]))
     out, report, miss = {}, {}, []
     for x in items:
+        if x.get("skip"):  # known bad matches: show a letter instead
+            continue
         p = pages.get(x["name"])
         qid = p and (p.get("pageprops") or {}).get("wikibase_item")
         # Order: logo for companies/apps, the article's lead image, Wikidata logo/image, Arabic Wikipedia, search.
