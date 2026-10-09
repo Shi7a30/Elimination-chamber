@@ -76,10 +76,12 @@ button{cursor:pointer}
 @keyframes bump{0%,100%{transform:none}40%{transform:scale(1.18)}}
 @keyframes rise{from{opacity:1;transform:none}to{opacity:0;transform:translateY(-50px)}}
 @media (prefers-reduced-motion:reduce){*,*::after{animation:none!important;transition:none!important}}
-</style></head><body>
+</style>
+<script>window.onerror=function(m,u,l){var e=document.getElementById("menu");if(e)e.insertAdjacentHTML("beforeend","<p class='sub'>Error: "+String(m).replace(/</g,"&lt;")+" (line "+l+")</p>")}</script>
+</head><body>
 <div id="app">
  <div class="top"><button class="pill" id="home" aria-label="Home">⌂</button><button class="pill" id="snd" aria-label="Sound">🔊</button><button class="pill" id="cam" aria-label="Photo mode">📷</button><button class="pill" id="lang" aria-label="Language">ع</button><span class="gap"></span><div class="pill" id="cpill"><span id="coins">0</span><i class="coin"></i></div></div>
- <div id="menu"></div>
+ <div id="menu"><p class="sub">Loading… If nothing else shows up, this viewer isn't running the game. Open it in Safari or Chrome instead of a file preview.<br><br>لو مفيش حاجة ظهرت، افتح الملف في Safari أو Chrome بدل المعاينة.</p></div>
  <div id="game" style="display:none;width:100%;flex-direction:column;align-items:center">
   <div class="meta"><span id="rn"></span><span class="streak" id="stk"></span></div>
   <div class="q" id="q1"></div><div class="big" id="q2"></div><div class="q" id="q3"></div>
