@@ -189,6 +189,118 @@
   "logo": false
  },
  {
+  "name": "Al Ittihad Alexandria",
+  "title": "Al Ittihad Alexandria Club",
+  "hint": "Egyptian football club",
+  "ar": "الاتحاد السكندري",
+  "logo": false
+ },
+ {
+  "name": "Al Masry",
+  "title": "Al Masry SC",
+  "hint": "Egyptian football club",
+  "ar": "المصري",
+  "logo": false
+ },
+ {
+  "name": "Ismaily",
+  "title": "Ismaily SC",
+  "hint": "Egyptian football club",
+  "ar": "الإسماعيلي",
+  "logo": false
+ },
+ {
+  "name": "Smouha",
+  "title": "Smouha SC",
+  "hint": "Egyptian football club",
+  "ar": "سموحة",
+  "logo": false
+ },
+ {
+  "name": "Arab Contractors",
+  "title": "Al Mokawloon Al Arab SC",
+  "hint": "Egyptian football club",
+  "ar": "المقاولون العرب",
+  "logo": false
+ },
+ {
+  "name": "ENPPI",
+  "title": "ENPPI SC",
+  "hint": "Egyptian football club",
+  "ar": "إنبي",
+  "logo": false
+ },
+ {
+  "name": "Pyramids FC",
+  "title": "Pyramids FC",
+  "hint": "Egyptian football club",
+  "ar": "بيراميدز",
+  "logo": false
+ },
+ {
+  "name": "Egypt",
+  "title": "Egypt",
+  "hint": "country",
+  "ar": "مصر",
+  "logo": false
+ },
+ {
+  "name": "Cameroon",
+  "title": "Cameroon",
+  "hint": "country",
+  "ar": "الكاميرون",
+  "logo": false
+ },
+ {
+  "name": "Ghana",
+  "title": "Ghana",
+  "hint": "country",
+  "ar": "غانا",
+  "logo": false
+ },
+ {
+  "name": "Nigeria",
+  "title": "Nigeria",
+  "hint": "country",
+  "ar": "نيجيريا",
+  "logo": false
+ },
+ {
+  "name": "Ivory Coast",
+  "title": "Ivory Coast",
+  "hint": "country",
+  "ar": "كوت ديفوار",
+  "logo": false
+ },
+ {
+  "name": "Algeria",
+  "title": "Algeria",
+  "hint": "country",
+  "ar": "الجزائر",
+  "logo": false
+ },
+ {
+  "name": "DR Congo",
+  "title": "Democratic Republic of the Congo",
+  "hint": "country",
+  "ar": "الكونغو الديمقراطية",
+  "logo": false
+ },
+ {
+  "name": "Tunisia",
+  "title": "Tunisia",
+  "hint": "country",
+  "ar": "تونس",
+  "logo": false
+ },
+ {
+  "name": "Zambia",
+  "title": "Zambia",
+  "hint": "country",
+  "ar": "زامبيا",
+  "logo": false
+ },
+ {
   "name": "Neymar Jr",
   "title": "Neymar",
   "hint": "footballer",
@@ -585,6 +697,132 @@
   "title": "The Matrix",
   "hint": "film",
   "ar": "",
+  "logo": false
+ },
+ {
+  "name": "Faten Hamama",
+  "title": "Faten Hamama",
+  "hint": "Egyptian actress",
+  "ar": "فاتن حمامة",
+  "logo": false
+ },
+ {
+  "name": "Soad Hosny",
+  "title": "Soad Hosny",
+  "hint": "Egyptian actress",
+  "ar": "سعاد حسني",
+  "logo": false
+ },
+ {
+  "name": "Yousra",
+  "title": "Yousra",
+  "hint": "Egyptian actress",
+  "ar": "يسرا",
+  "logo": false
+ },
+ {
+  "name": "Elham Shahin",
+  "title": "Elham Shahin",
+  "hint": "Egyptian actress",
+  "ar": "إلهام شاهين",
+  "logo": false
+ },
+ {
+  "name": "Laila Elwi",
+  "title": "Laila Elwi",
+  "hint": "Egyptian actress",
+  "ar": "ليلى علوي",
+  "logo": false
+ },
+ {
+  "name": "Nelly Karim",
+  "title": "Nelly Karim",
+  "hint": "Egyptian actress",
+  "ar": "نيللي كريم",
+  "logo": false
+ },
+ {
+  "name": "Hend Sabry",
+  "title": "Hend Sabry",
+  "hint": "Egyptian actress",
+  "ar": "هند صبري",
+  "logo": false
+ },
+ {
+  "name": "Yasmin Abdulaziz",
+  "title": "Yasmin Abdulaziz",
+  "hint": "Egyptian actress",
+  "ar": "ياسمين عبد العزيز",
+  "logo": false
+ },
+ {
+  "name": "Menna Shalaby",
+  "title": "Menna Shalabi",
+  "hint": "Egyptian actress",
+  "ar": "منة شلبي",
+  "logo": false
+ },
+ {
+  "name": "Cairo Station",
+  "title": "Cairo Station",
+  "hint": "Egyptian film",
+  "ar": "باب الحديد",
+  "logo": false
+ },
+ {
+  "name": "The Nightingale's Prayer",
+  "title": "The Nightingale's Prayer",
+  "hint": "Egyptian film",
+  "ar": "دعاء الكروان",
+  "logo": false
+ },
+ {
+  "name": "Watch Out for Zouzou",
+  "title": "Watch Out for Zouzou",
+  "hint": "Egyptian film",
+  "ar": "خلي بالك من زوزو",
+  "logo": false
+ },
+ {
+  "name": "Terrorism and Kebab",
+  "title": "Terrorism and Kebab",
+  "hint": "Egyptian film",
+  "ar": "الإرهاب والكباب",
+  "logo": false
+ },
+ {
+  "name": "Ismailia Rayeh Gai",
+  "title": "Round Trip to Ismailia",
+  "hint": "Egyptian film",
+  "ar": "إسماعيلية رايح جاي",
+  "logo": false
+ },
+ {
+  "name": "El Limby",
+  "title": "El Limby",
+  "hint": "Egyptian film",
+  "ar": "اللمبي",
+  "logo": false
+ },
+ {
+  "name": "The Yacoubian Building",
+  "title": "The Yacoubian Building (film)",
+  "hint": "Egyptian film",
+  "ar": "عمارة يعقوبيان",
+  "logo": false
+ },
+ {
+  "name": "The Blue Elephant",
+  "title": "The Blue Elephant (film)",
+  "hint": "Egyptian film",
+  "ar": "الفيل الأزرق",
+  "logo": false
+ },
+ {
+  "name": "Kira & El Gin",
+  "title": "Kira & El Gin",
+  "hint": "Egyptian film",
+  "ar": "كيرة والجن",
   "logo": false
  },
  {
@@ -1274,13 +1512,6 @@
   "logo": false
  },
  {
-  "name": "Egypt",
-  "title": "Egypt",
-  "hint": "country",
-  "ar": "مصر",
-  "logo": false
- },
- {
   "name": "Mount Everest",
   "title": "Mount Everest",
   "hint": "mountain",
@@ -1404,6 +1635,69 @@
   "title": "Singapore",
   "hint": "country",
   "ar": "سنغافورة",
+  "logo": false
+ },
+ {
+  "name": "Narmer",
+  "title": "Narmer",
+  "hint": "pharaoh",
+  "ar": "نعرمر (مينا)",
+  "logo": false
+ },
+ {
+  "name": "Djoser",
+  "title": "Djoser",
+  "hint": "pharaoh",
+  "ar": "زوسر",
+  "logo": false
+ },
+ {
+  "name": "Khufu",
+  "title": "Khufu",
+  "hint": "pharaoh",
+  "ar": "خوفو",
+  "logo": false
+ },
+ {
+  "name": "Hatshepsut",
+  "title": "Hatshepsut",
+  "hint": "pharaoh",
+  "ar": "حتشبسوت",
+  "logo": false
+ },
+ {
+  "name": "Akhenaten",
+  "title": "Akhenaten",
+  "hint": "pharaoh",
+  "ar": "إخناتون",
+  "logo": false
+ },
+ {
+  "name": "Tutankhamun",
+  "title": "Tutankhamun",
+  "hint": "pharaoh",
+  "ar": "توت عنخ آمون",
+  "logo": false
+ },
+ {
+  "name": "Ramesses II",
+  "title": "Ramesses II",
+  "hint": "pharaoh",
+  "ar": "رمسيس التاني",
+  "logo": false
+ },
+ {
+  "name": "Ptolemy I",
+  "title": "Ptolemy I Soter",
+  "hint": "pharaoh",
+  "ar": "بطليموس الأول",
+  "logo": false
+ },
+ {
+  "name": "Cleopatra",
+  "title": "Cleopatra",
+  "hint": "pharaoh",
+  "ar": "كليوباترا",
   "logo": false
  },
  {
