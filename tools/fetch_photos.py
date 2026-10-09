@@ -93,7 +93,7 @@ def to_uri(url):
     w, h = im.size
     if graphic:  # logos and flags: fit the whole thing on white instead of cropping
         im.thumbnail((int(SIZE * 0.86), int(SIZE * 0.86)), Image.LANCZOS)
-        bg = Image.new("RGB", (SIZE, SIZE), "white")
+        bg = Image.new("RGB", (SIZE, SIZE), "#ececec")  # light gray so white flags/logos keep their edges
         bg.paste(im, ((SIZE - im.width) // 2, (SIZE - im.height) // 2))
         im = bg
     else:  # photos and posters: square crop, keeping faces near the top
@@ -115,14 +115,14 @@ def main():
     for x in items:
         p = pages.get(x["name"])
         qid = p and (p.get("pageprops") or {}).get("wikibase_item")
-        # Order: logo for companies/apps, the article's lead image, Wikidata image/logo, Arabic Wikipedia, search.
+        # Order: logo for companies/apps, the article's lead image, Wikidata logo/image, Arabic Wikipedia, search.
         url = src = None
         try:
             if x.get("logo"):
                 url, src = wd_file(qid, "P154"), "wikidata logo"
             if not url and ok(p):
                 url, src = p["thumbnail"]["source"], p["title"]
-            for prop in ("P18", "P154"):
+            for prop in ("P154", "P18"):
                 if not url:
                     url, src = wd_file(qid, prop), "wikidata " + prop
             if not url:
