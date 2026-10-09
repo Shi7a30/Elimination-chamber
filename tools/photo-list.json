@@ -2,1316 +2,1842 @@
  {
   "name": "Ahmed Hegazi",
   "title": "Ahmed Hegazi",
-  "hint": "Egyptian footballer"
+  "hint": "Egyptian footballer",
+  "ar": "أحمد حجازي",
+  "logo": false
  },
  {
   "name": "Mohamed Salah",
   "title": "Mohamed Salah",
-  "hint": "Egyptian footballer"
+  "hint": "Egyptian footballer",
+  "ar": "محمد صلاح",
+  "logo": false
  },
  {
   "name": "Mahmoud 'Trezeguet' Hassan",
   "title": "Trézéguet (Egyptian footballer)",
-  "hint": "Egyptian footballer"
+  "hint": "Egyptian footballer",
+  "ar": "محمود حسن (تريزيجيه)",
+  "logo": false
  },
  {
   "name": "Mahmoud Hamdy 'El Wensh'",
   "title": "Mahmoud Hamdy",
-  "hint": "Egyptian footballer"
+  "hint": "Egyptian footballer",
+  "ar": "محمود حمدي (الونش)",
+  "logo": false
  },
  {
   "name": "Ahmed Sayed 'Zizo'",
   "title": "Zizo (footballer)",
-  "hint": "Egyptian footballer"
+  "hint": "Egyptian footballer",
+  "ar": "أحمد سيد (زيزو)",
+  "logo": false
  },
  {
   "name": "Mostafa Mohamed",
   "title": "Mostafa Mohamed (footballer)",
-  "hint": "Egyptian footballer"
+  "hint": "Egyptian footballer",
+  "ar": "مصطفى محمد",
+  "logo": false
  },
  {
   "name": "Ahmed Fatouh",
   "title": "Ahmed Fatouh",
-  "hint": "Egyptian footballer"
+  "hint": "Egyptian footballer",
+  "ar": "أحمد فتوح",
+  "logo": false
  },
  {
   "name": "Omar Marmoush",
   "title": "Omar Marmoush",
-  "hint": "Egyptian footballer"
+  "hint": "Egyptian footballer",
+  "ar": "عمر مرموش",
+  "logo": false
  },
  {
   "name": "Hamza Abdel Karim",
   "title": "Hamza Abdelkarim",
-  "hint": "Egyptian footballer"
+  "hint": "Egyptian footballer",
+  "ar": "حمزة عبد الكريم",
+  "logo": false
  },
  {
   "name": "Hassan Shehata",
   "title": "Hassan Shehata",
-  "hint": "Egyptian footballer"
+  "hint": "Egyptian footballer",
+  "ar": "حسن شحاتة",
+  "logo": false
  },
  {
   "name": "Mahmoud 'Bibo' El Khatib",
   "title": "Mahmoud El Khatib",
-  "hint": "Egyptian footballer"
+  "hint": "Egyptian footballer",
+  "ar": "محمود الخطيب (بيبو)",
+  "logo": false
  },
  {
   "name": "Hossam Hassan",
   "title": "Hossam Hassan",
-  "hint": "Egyptian footballer"
+  "hint": "Egyptian footballer",
+  "ar": "حسام حسن",
+  "logo": false
  },
  {
   "name": "Hany Ramzy",
   "title": "Hany Ramzy",
-  "hint": "Egyptian footballer"
+  "hint": "Egyptian footballer",
+  "ar": "هاني رمزي",
+  "logo": false
  },
  {
   "name": "Essam El-Hadary",
   "title": "Essam El Hadary",
-  "hint": "Egyptian footballer"
+  "hint": "Egyptian footballer",
+  "ar": "عصام الحضري",
+  "logo": false
  },
  {
   "name": "Ahmed Hassan",
   "title": "Ahmed Hassan (footballer, born 1975)",
-  "hint": "Egyptian footballer"
+  "hint": "Egyptian footballer",
+  "ar": "أحمد حسن",
+  "logo": false
  },
  {
   "name": "Mohamed Aboutrika",
   "title": "Mohamed Aboutrika",
-  "hint": "Egyptian footballer"
+  "hint": "Egyptian footballer",
+  "ar": "محمد أبو تريكة",
+  "logo": false
  },
  {
   "name": "Mohamed Zidan",
   "title": "Mohamed Zidan",
-  "hint": "Egyptian footballer"
+  "hint": "Egyptian footballer",
+  "ar": "محمد زيدان",
+  "logo": false
  },
  {
   "name": "Ahmed 'Mido' Hossam",
   "title": "Mido (footballer)",
-  "hint": "Egyptian footballer"
+  "hint": "Egyptian footballer",
+  "ar": "أحمد حسام (ميدو)",
+  "logo": false
  },
  {
   "name": "Al Ahly",
   "title": "Al Ahly SC",
-  "hint": "football club"
+  "hint": "football club",
+  "ar": "الأهلي",
+  "logo": false
  },
  {
   "name": "Zamalek",
   "title": "Zamalek SC",
-  "hint": "football club"
+  "hint": "football club",
+  "ar": "الزمالك",
+  "logo": false
  },
  {
   "name": "TP Mazembe",
   "title": "TP Mazembe",
-  "hint": "football club"
+  "hint": "football club",
+  "ar": "مازيمبي",
+  "logo": false
  },
  {
   "name": "Espérance de Tunis",
   "title": "Espérance Sportive de Tunis",
-  "hint": "football club"
+  "hint": "football club",
+  "ar": "الترجي التونسي",
+  "logo": false
  },
  {
   "name": "Wydad Casablanca",
   "title": "Wydad AC",
-  "hint": "football club"
+  "hint": "football club",
+  "ar": "الوداد البيضاوي",
+  "logo": false
  },
  {
   "name": "Raja Casablanca",
   "title": "Raja CA",
-  "hint": "football club"
+  "hint": "football club",
+  "ar": "الرجاء البيضاوي",
+  "logo": false
  },
  {
   "name": "Enyimba",
   "title": "Enyimba F.C.",
-  "hint": "football club"
+  "hint": "football club",
+  "ar": "إنيمبا",
+  "logo": false
  },
  {
   "name": "ES Sétif",
   "title": "ES Sétif",
-  "hint": "football club"
+  "hint": "football club",
+  "ar": "وفاق سطيف",
+  "logo": false
  },
  {
   "name": "Mamelodi Sundowns",
   "title": "Mamelodi Sundowns F.C.",
-  "hint": "football club"
+  "hint": "football club",
+  "ar": "صن داونز",
+  "logo": false
  },
  {
   "name": "Neymar Jr",
   "title": "Neymar",
-  "hint": "footballer"
+  "hint": "footballer",
+  "ar": "نيمار",
+  "logo": false
  },
  {
   "name": "Kylian Mbappé",
   "title": "Kylian Mbappé",
-  "hint": "footballer"
+  "hint": "footballer",
+  "ar": "كيليان مبابي",
+  "logo": false
  },
  {
   "name": "Erling Haaland",
   "title": "Erling Haaland",
-  "hint": "footballer"
+  "hint": "footballer",
+  "ar": "إيرلينج هالاند",
+  "logo": false
  },
  {
   "name": "Rodrygo Goes",
   "title": "Rodrygo",
-  "hint": "footballer"
+  "hint": "footballer",
+  "ar": "رودريجو",
+  "logo": false
  },
  {
   "name": "Pedri González",
   "title": "Pedri",
-  "hint": "footballer"
+  "hint": "footballer",
+  "ar": "بيدري",
+  "logo": false
  },
  {
   "name": "Jude Bellingham",
   "title": "Jude Bellingham",
-  "hint": "footballer"
+  "hint": "footballer",
+  "ar": "جود بيلينجهام",
+  "logo": false
  },
  {
   "name": "Pablo 'Gavi' Páez",
   "title": "Gavi (footballer, born 2004)",
-  "hint": "footballer"
+  "hint": "footballer",
+  "ar": "جافي",
+  "logo": false
  },
  {
   "name": "Endrick Felipe",
   "title": "Endrick (footballer)",
-  "hint": "footballer"
+  "hint": "footballer",
+  "ar": "إندريك",
+  "logo": false
  },
  {
   "name": "Lamine Yamal",
   "title": "Lamine Yamal",
-  "hint": "footballer"
+  "hint": "footballer",
+  "ar": "لامين يامال",
+  "logo": false
  },
  {
   "name": "Zinedine Zidane",
   "title": "Zinedine Zidane",
-  "hint": "footballer"
+  "hint": "footballer",
+  "ar": "زين الدين زيدان",
+  "logo": false
  },
  {
   "name": "David Beckham",
   "title": "David Beckham",
-  "hint": "footballer"
+  "hint": "footballer",
+  "ar": "ديفيد بيكهام",
+  "logo": false
  },
  {
   "name": "Ronaldo Nazário",
   "title": "Ronaldo (Brazilian footballer)",
-  "hint": "footballer"
+  "hint": "footballer",
+  "ar": "رونالدو الظاهرة",
+  "logo": false
  },
  {
   "name": "Thierry Henry",
   "title": "Thierry Henry",
-  "hint": "footballer"
+  "hint": "footballer",
+  "ar": "تييري هنري",
+  "logo": false
  },
  {
   "name": "Ronaldinho Gaúcho",
   "title": "Ronaldinho",
-  "hint": "footballer"
+  "hint": "footballer",
+  "ar": "رونالدينيو",
+  "logo": false
  },
  {
   "name": "Zlatan Ibrahimović",
   "title": "Zlatan Ibrahimović",
-  "hint": "footballer"
+  "hint": "footballer",
+  "ar": "زلاتان إبراهيموفيتش",
+  "logo": false
  },
  {
   "name": "Ricardo Kaká",
   "title": "Kaká",
-  "hint": "footballer"
+  "hint": "footballer",
+  "ar": "كاكا",
+  "logo": false
  },
  {
   "name": "Cristiano Ronaldo",
   "title": "Cristiano Ronaldo",
-  "hint": "footballer"
+  "hint": "footballer",
+  "ar": "كريستيانو رونالدو",
+  "logo": false
  },
  {
   "name": "Lionel Messi",
   "title": "Lionel Messi",
-  "hint": "footballer"
+  "hint": "footballer",
+  "ar": "ليونيل ميسي",
+  "logo": false
  },
  {
   "name": "Johan Cruyff",
   "title": "Johan Cruyff",
-  "hint": "footballer"
+  "hint": "footballer",
+  "ar": "يوهان كرويف",
+  "logo": false
  },
  {
   "name": "Michel Platini",
   "title": "Michel Platini",
-  "hint": "footballer"
+  "hint": "footballer",
+  "ar": "ميشيل بلاتيني",
+  "logo": false
  },
  {
   "name": "Marco van Basten",
   "title": "Marco van Basten",
-  "hint": "footballer"
+  "hint": "footballer",
+  "ar": "ماركو فان باستن",
+  "logo": false
  },
  {
   "name": "Franz Beckenbauer",
   "title": "Franz Beckenbauer",
-  "hint": "footballer"
+  "hint": "footballer",
+  "ar": "فرانز بيكنباور",
+  "logo": false
  },
  {
   "name": "Clint Eastwood",
   "title": "Clint Eastwood",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "كلينت إيستوود",
+  "logo": false
  },
  {
   "name": "Dustin Hoffman",
   "title": "Dustin Hoffman",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "داستن هوفمان",
+  "logo": false
  },
  {
   "name": "Al Pacino",
   "title": "Al Pacino",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "آل باتشينو",
+  "logo": false
  },
  {
   "name": "Harrison Ford",
   "title": "Harrison Ford",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "هاريسون فورد",
+  "logo": false
  },
  {
   "name": "Robert De Niro",
   "title": "Robert De Niro",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "روبرت دي نيرو",
+  "logo": false
  },
  {
   "name": "Sylvester Stallone",
   "title": "Sylvester Stallone",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "سيلفستر ستالون",
+  "logo": false
  },
  {
   "name": "Arnold Schwarzenegger",
   "title": "Arnold Schwarzenegger",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "أرنولد شوارزنيجر",
+  "logo": false
  },
  {
   "name": "Meryl Streep",
   "title": "Meryl Streep",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "ميريل ستريب",
+  "logo": false
  },
  {
   "name": "Jackie Chan",
   "title": "Jackie Chan",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "جاكي شان",
+  "logo": false
  },
  {
   "name": "Omar Sharif",
   "title": "Omar Sharif",
-  "hint": "Egyptian actor"
+  "hint": "Egyptian actor",
+  "ar": "عمر الشريف",
+  "logo": false
  },
  {
   "name": "Adel Imam",
   "title": "Adel Emam",
-  "hint": "Egyptian actor"
+  "hint": "Egyptian actor",
+  "ar": "عادل إمام",
+  "logo": false
  },
  {
   "name": "Mahmoud Yassin",
   "title": "Mahmoud Yassin",
-  "hint": "Egyptian actor"
+  "hint": "Egyptian actor",
+  "ar": "محمود ياسين",
+  "logo": false
  },
  {
   "name": "Ahmed Zaki",
   "title": "Ahmed Zaki (actor)",
-  "hint": "Egyptian actor"
+  "hint": "Egyptian actor",
+  "ar": "أحمد زكي",
+  "logo": false
  },
  {
   "name": "Mohamed Henedy",
   "title": "Mohamed Henedi",
-  "hint": "Egyptian actor"
+  "hint": "Egyptian actor",
+  "ar": "محمد هنيدي",
+  "logo": false
  },
  {
   "name": "Ahmed Helmy",
   "title": "Ahmed Helmy",
-  "hint": "Egyptian actor"
+  "hint": "Egyptian actor",
+  "ar": "أحمد حلمي",
+  "logo": false
  },
  {
   "name": "Ahmed El-Sakka",
   "title": "Ahmed El Sakka",
-  "hint": "Egyptian actor"
+  "hint": "Egyptian actor",
+  "ar": "أحمد السقا",
+  "logo": false
  },
  {
   "name": "Karim Abdel Aziz",
   "title": "Karim Abdel Aziz",
-  "hint": "Egyptian actor"
+  "hint": "Egyptian actor",
+  "ar": "كريم عبد العزيز",
+  "logo": false
  },
  {
   "name": "Mohamed Ramadan",
   "title": "Mohamed Ramadan (actor)",
-  "hint": "Egyptian actor"
+  "hint": "Egyptian actor",
+  "ar": "محمد رمضان",
+  "logo": false
  },
  {
   "name": "Avatar",
   "title": "Avatar (2009 film)",
-  "hint": "film"
+  "hint": "film",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Avengers: Endgame",
   "title": "Avengers: Endgame",
-  "hint": "film"
+  "hint": "film",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Titanic",
   "title": "Titanic (1997 film)",
-  "hint": "film"
+  "hint": "film",
+  "ar": "تايتانك",
+  "logo": false
  },
  {
   "name": "Star Wars: The Force Awakens",
   "title": "Star Wars: The Force Awakens",
-  "hint": "film"
+  "hint": "film",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Avengers: Infinity War",
   "title": "Avengers: Infinity War",
-  "hint": "film"
+  "hint": "film",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Spider-Man: No Way Home",
   "title": "Spider-Man: No Way Home",
-  "hint": "film"
+  "hint": "film",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Jurassic World",
   "title": "Jurassic World",
-  "hint": "film"
+  "hint": "film",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "The Lion King (2019)",
   "title": "The Lion King (2019 film)",
-  "hint": "film"
+  "hint": "film",
+  "ar": "الأسد الملك (2019)",
+  "logo": false
  },
  {
   "name": "Frozen II",
   "title": "Frozen II",
-  "hint": "film"
+  "hint": "film",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "The Godfather",
   "title": "The Godfather",
-  "hint": "film"
+  "hint": "film",
+  "ar": "الأب الروحي",
+  "logo": false
  },
  {
   "name": "Jaws",
   "title": "Jaws (film)",
-  "hint": "film"
+  "hint": "film",
+  "ar": "الفك المفترس",
+  "logo": false
  },
  {
   "name": "Star Wars",
   "title": "Star Wars (film)",
-  "hint": "film"
+  "hint": "film",
+  "ar": "حرب النجوم",
+  "logo": false
  },
  {
   "name": "E.T.",
   "title": "E.T. the Extra-Terrestrial",
-  "hint": "film"
+  "hint": "film",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Back to the Future",
   "title": "Back to the Future",
-  "hint": "film"
+  "hint": "film",
+  "ar": "العودة للمستقبل",
+  "logo": false
  },
  {
   "name": "Jurassic Park",
   "title": "Jurassic Park (film)",
-  "hint": "film"
+  "hint": "film",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Pulp Fiction",
   "title": "Pulp Fiction",
-  "hint": "film"
+  "hint": "film",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "The Matrix",
   "title": "The Matrix",
-  "hint": "film"
+  "hint": "film",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Sean Bean",
   "title": "Sean Bean",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "شون بين",
+  "logo": false
  },
  {
   "name": "Iain Glen",
   "title": "Iain Glen",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "إيان جلين",
+  "logo": false
  },
  {
   "name": "Peter Dinklage",
   "title": "Peter Dinklage",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "بيتر دينكليدج",
+  "logo": false
  },
  {
   "name": "Nikolaj Coster-Waldau",
   "title": "Nikolaj Coster-Waldau",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "نيكولاي كوستر والداو",
+  "logo": false
  },
  {
   "name": "Lena Headey",
   "title": "Lena Headey",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "لينا هيدي",
+  "logo": false
  },
  {
   "name": "Gwendoline Christie",
   "title": "Gwendoline Christie",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "جويندولين كريستي",
+  "logo": false
  },
  {
   "name": "Emilia Clarke",
   "title": "Emilia Clarke",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "إميليا كلارك",
+  "logo": false
  },
  {
   "name": "Sophie Turner",
   "title": "Sophie Turner",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "صوفي تيرنر",
+  "logo": false
  },
  {
   "name": "Maisie Williams",
   "title": "Maisie Williams",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "ميزي ويليامز",
+  "logo": false
  },
  {
   "name": "Lisa Kudrow",
   "title": "Lisa Kudrow",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "ليزا كودرو",
+  "logo": false
  },
  {
   "name": "Courteney Cox",
   "title": "Courteney Cox",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "كورتني كوكس",
+  "logo": false
  },
  {
   "name": "David Schwimmer",
   "title": "David Schwimmer",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "ديفيد شويمر",
+  "logo": false
  },
  {
   "name": "Matt LeBlanc",
   "title": "Matt LeBlanc",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "مات لوبلان",
+  "logo": false
  },
  {
   "name": "Jennifer Aniston",
   "title": "Jennifer Aniston",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "جينيفر أنيستون",
+  "logo": false
  },
  {
   "name": "Jim Parsons",
   "title": "Jim Parsons",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "جيم بارسونز",
+  "logo": false
  },
  {
   "name": "Johnny Galecki",
   "title": "Johnny Galecki",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "جوني جاليكي",
+  "logo": false
  },
  {
   "name": "Kunal Nayyar",
   "title": "Kunal Nayyar",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "كونال نايار",
+  "logo": false
  },
  {
   "name": "Kaley Cuoco",
   "title": "Kaley Cuoco",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "كايلي كوكو",
+  "logo": false
  },
  {
   "name": "The Big Bang Theory",
   "title": "The Big Bang Theory",
-  "hint": "TV series"
+  "hint": "TV series",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Two and a Half Men",
   "title": "Two and a Half Men",
-  "hint": "TV series"
+  "hint": "TV series",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Friends",
   "title": "Friends",
-  "hint": "TV series"
+  "hint": "TV series",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "How I Met Your Mother",
   "title": "How I Met Your Mother",
-  "hint": "TV series"
+  "hint": "TV series",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "The Office (US)",
   "title": "The Office (American TV series)",
-  "hint": "TV series"
+  "hint": "TV series",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Seinfeld",
   "title": "Seinfeld",
-  "hint": "TV series"
+  "hint": "TV series",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "The Sopranos",
   "title": "The Sopranos",
-  "hint": "TV series"
+  "hint": "TV series",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Game of Thrones",
   "title": "Game of Thrones",
-  "hint": "TV series"
+  "hint": "TV series",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Breaking Bad",
   "title": "Breaking Bad",
-  "hint": "TV series"
+  "hint": "TV series",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Bob Dylan",
   "title": "Bob Dylan",
-  "hint": "singer"
+  "hint": "singer",
+  "ar": "بوب ديلان",
+  "logo": false
  },
  {
   "name": "Paul McCartney",
   "title": "Paul McCartney",
-  "hint": "singer"
+  "hint": "singer",
+  "ar": "بول مكارتني",
+  "logo": false
  },
  {
   "name": "Mick Jagger",
   "title": "Mick Jagger",
-  "hint": "singer"
+  "hint": "singer",
+  "ar": "ميك جاجر",
+  "logo": false
  },
  {
   "name": "Rod Stewart",
   "title": "Rod Stewart",
-  "hint": "singer"
+  "hint": "singer",
+  "ar": "رود ستيوارت",
+  "logo": false
  },
  {
   "name": "Freddie Mercury",
   "title": "Freddie Mercury",
-  "hint": "singer"
+  "hint": "singer",
+  "ar": "فريدي ميركوري",
+  "logo": false
  },
  {
   "name": "Elton John",
   "title": "Elton John",
-  "hint": "singer"
+  "hint": "singer",
+  "ar": "إلتون جون",
+  "logo": false
  },
  {
   "name": "Ozzy Osbourne",
   "title": "Ozzy Osbourne",
-  "hint": "singer"
+  "hint": "singer",
+  "ar": "أوزي أوزبورن",
+  "logo": false
  },
  {
   "name": "Bruce Springsteen",
   "title": "Bruce Springsteen",
-  "hint": "singer"
+  "hint": "singer",
+  "ar": "بروس سبرينجستين",
+  "logo": false
  },
  {
   "name": "Stevie Wonder",
   "title": "Stevie Wonder",
-  "hint": "singer"
+  "hint": "singer",
+  "ar": "ستيفي وندر",
+  "logo": false
  },
  {
   "name": "Taylor Swift",
   "title": "Taylor Swift",
-  "hint": "singer"
+  "hint": "singer",
+  "ar": "تايلور سويفت",
+  "logo": false
  },
  {
   "name": "The Weeknd",
   "title": "The Weeknd",
-  "hint": "singer"
+  "hint": "singer",
+  "ar": "ذا ويكند",
+  "logo": false
  },
  {
   "name": "Ed Sheeran",
   "title": "Ed Sheeran",
-  "hint": "singer"
+  "hint": "singer",
+  "ar": "إد شيران",
+  "logo": false
  },
  {
   "name": "Ariana Grande",
   "title": "Ariana Grande",
-  "hint": "singer"
+  "hint": "singer",
+  "ar": "أريانا جراندي",
+  "logo": false
  },
  {
   "name": "Harry Styles",
   "title": "Harry Styles",
-  "hint": "singer"
+  "hint": "singer",
+  "ar": "هاري ستايلز",
+  "logo": false
  },
  {
   "name": "Dua Lipa",
   "title": "Dua Lipa",
-  "hint": "singer"
+  "hint": "singer",
+  "ar": "دوا ليبا",
+  "logo": false
  },
  {
   "name": "Shawn Mendes",
   "title": "Shawn Mendes",
-  "hint": "singer"
+  "hint": "singer",
+  "ar": "شون منديز",
+  "logo": false
  },
  {
   "name": "Billie Eilish",
   "title": "Billie Eilish",
-  "hint": "singer"
+  "hint": "singer",
+  "ar": "بيلي إيليش",
+  "logo": false
  },
  {
   "name": "Olivia Rodrigo",
   "title": "Olivia Rodrigo",
-  "hint": "singer"
+  "hint": "singer",
+  "ar": "أوليفيا رودريجو",
+  "logo": false
  },
  {
   "name": "Abdel Halim Hafez",
   "title": "Abdel Halim Hafez",
-  "hint": "Egyptian singer"
+  "hint": "Egyptian singer",
+  "ar": "عبد الحليم حافظ",
+  "logo": false
  },
  {
   "name": "Warda Al-Jazairia",
   "title": "Warda Al-Jazairia",
-  "hint": "Egyptian singer"
+  "hint": "Egyptian singer",
+  "ar": "وردة الجزائرية",
+  "logo": false
  },
  {
   "name": "Mohamed Mounir",
   "title": "Mohamed Mounir",
-  "hint": "Egyptian singer"
+  "hint": "Egyptian singer",
+  "ar": "محمد منير",
+  "logo": false
  },
  {
   "name": "Amr Diab",
   "title": "Amr Diab",
-  "hint": "Egyptian singer"
+  "hint": "Egyptian singer",
+  "ar": "عمرو دياب",
+  "logo": false
  },
  {
   "name": "Hakim",
   "title": "Hakim (singer)",
-  "hint": "Egyptian singer"
+  "hint": "Egyptian singer",
+  "ar": "حكيم",
+  "logo": false
  },
  {
   "name": "Angham",
   "title": "Angham",
-  "hint": "Egyptian singer"
+  "hint": "Egyptian singer",
+  "ar": "أنغام",
+  "logo": false
  },
  {
   "name": "Mohamed Hamaki",
   "title": "Mohamed Hamaki",
-  "hint": "Egyptian singer"
+  "hint": "Egyptian singer",
+  "ar": "محمد حماقي",
+  "logo": false
  },
  {
   "name": "Tamer Hosny",
   "title": "Tamer Hosny",
-  "hint": "Egyptian singer"
+  "hint": "Egyptian singer",
+  "ar": "تامر حسني",
+  "logo": false
  },
  {
   "name": "Sherine Abdel Wahab",
   "title": "Sherine",
-  "hint": "Egyptian singer"
+  "hint": "Egyptian singer",
+  "ar": "شيرين عبد الوهاب",
+  "logo": false
  },
  {
   "name": "Hey Jude",
   "title": "Hey Jude",
-  "hint": "song"
+  "hint": "song",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Bohemian Rhapsody",
   "title": "Bohemian Rhapsody",
-  "hint": "song"
+  "hint": "song",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Billie Jean",
   "title": "Billie Jean",
-  "hint": "song"
+  "hint": "song",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Like a Prayer",
   "title": "Like a Prayer (song)",
-  "hint": "song"
+  "hint": "song",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Smells Like Teen Spirit",
   "title": "Smells Like Teen Spirit",
-  "hint": "song"
+  "hint": "song",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Wannabe",
   "title": "Wannabe (Spice Girls song)",
-  "hint": "song"
+  "hint": "song",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Crazy in Love",
   "title": "Crazy in Love",
-  "hint": "song"
+  "hint": "song",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Rolling in the Deep",
   "title": "Rolling in the Deep",
-  "hint": "song"
+  "hint": "song",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Blinding Lights",
   "title": "Blinding Lights",
-  "hint": "song"
+  "hint": "song",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Elon Musk",
   "title": "Elon Musk",
-  "hint": "celebrity"
+  "hint": "celebrity",
+  "ar": "إيلون ماسك",
+  "logo": false
  },
  {
   "name": "Kim Kardashian",
   "title": "Kim Kardashian",
-  "hint": "celebrity"
+  "hint": "celebrity",
+  "ar": "كيم كارداشيان",
+  "logo": false
  },
  {
   "name": "PewDiePie",
   "title": "PewDiePie",
-  "hint": "celebrity"
+  "hint": "celebrity",
+  "ar": "بيوديباي",
+  "logo": false
  },
  {
   "name": "KSI",
   "title": "KSI",
-  "hint": "celebrity"
+  "hint": "celebrity",
+  "ar": "كيه إس آي",
+  "logo": false
  },
  {
   "name": "Timothée Chalamet",
   "title": "Timothée Chalamet",
-  "hint": "celebrity"
+  "hint": "celebrity",
+  "ar": "تيموثي شالاميه",
+  "logo": false
  },
  {
   "name": "Zendaya",
   "title": "Zendaya",
-  "hint": "celebrity"
+  "hint": "celebrity",
+  "ar": "زندايا",
+  "logo": false
  },
  {
   "name": "Kylie Jenner",
   "title": "Kylie Jenner",
-  "hint": "celebrity"
+  "hint": "celebrity",
+  "ar": "كايلي جينر",
+  "logo": false
  },
  {
   "name": "MrBeast",
   "title": "MrBeast",
-  "hint": "celebrity"
+  "hint": "celebrity",
+  "ar": "مستر بيست",
+  "logo": false
  },
  {
   "name": "Charli D'Amelio",
   "title": "Charli D'Amelio",
-  "hint": "celebrity"
+  "hint": "celebrity",
+  "ar": "تشارلي داميليو",
+  "logo": false
  },
  {
   "name": "Robert Downey Jr",
   "title": "Robert Downey Jr.",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "روبرت داوني جونيور",
+  "logo": false
  },
  {
   "name": "Mark Ruffalo",
   "title": "Mark Ruffalo",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "مارك روفالو",
+  "logo": false
  },
  {
   "name": "Paul Rudd",
   "title": "Paul Rudd",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "بول رود",
+  "logo": false
  },
  {
   "name": "Benedict Cumberbatch",
   "title": "Benedict Cumberbatch",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "بنديكت كامبرباتش",
+  "logo": false
  },
  {
   "name": "Chris Pratt",
   "title": "Chris Pratt",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "كريس برات",
+  "logo": false
  },
  {
   "name": "Chris Evans",
   "title": "Chris Evans (actor)",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "كريس إيفانز",
+  "logo": false
  },
  {
   "name": "Chris Hemsworth",
   "title": "Chris Hemsworth",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "كريس هيمسورث",
+  "logo": false
  },
  {
   "name": "Scarlett Johansson",
   "title": "Scarlett Johansson",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "سكارليت جوهانسون",
+  "logo": false
  },
  {
   "name": "Tom Holland",
   "title": "Tom Holland",
-  "hint": "actor"
+  "hint": "actor",
+  "ar": "توم هولاند",
+  "logo": false
  },
  {
   "name": "Mickey Mouse",
   "title": "Mickey Mouse",
-  "hint": "cartoon"
+  "hint": "cartoon",
+  "ar": "ميكي ماوس",
+  "logo": false
  },
  {
   "name": "Bugs Bunny",
   "title": "Bugs Bunny",
-  "hint": "cartoon"
+  "hint": "cartoon",
+  "ar": "باجز باني",
+  "logo": false
  },
  {
   "name": "Tom and Jerry",
   "title": "Tom and Jerry",
-  "hint": "cartoon"
+  "hint": "cartoon",
+  "ar": "توم وجيري",
+  "logo": false
  },
  {
   "name": "Scooby-Doo",
   "title": "Scooby-Doo",
-  "hint": "cartoon"
+  "hint": "cartoon",
+  "ar": "سكوبي دو",
+  "logo": false
  },
  {
   "name": "The Simpsons",
   "title": "The Simpsons",
-  "hint": "cartoon"
+  "hint": "cartoon",
+  "ar": "عيلة سيمبسون",
+  "logo": false
  },
  {
   "name": "SpongeBob",
   "title": "SpongeBob SquarePants",
-  "hint": "cartoon"
+  "hint": "cartoon",
+  "ar": "سبونج بوب",
+  "logo": false
  },
  {
   "name": "Shrek",
   "title": "Shrek",
-  "hint": "cartoon"
+  "hint": "cartoon",
+  "ar": "شريك",
+  "logo": false
  },
  {
   "name": "Peppa Pig",
   "title": "Peppa Pig",
-  "hint": "cartoon"
+  "hint": "cartoon",
+  "ar": "بيبا بيج",
+  "logo": false
  },
  {
   "name": "Bluey",
   "title": "Bluey (2018 TV series)",
-  "hint": "cartoon"
+  "hint": "cartoon",
+  "ar": "بلوي",
+  "logo": false
  },
  {
   "name": "Russia",
   "title": "Russia",
-  "hint": "country"
+  "hint": "country",
+  "ar": "روسيا",
+  "logo": false
  },
  {
   "name": "Canada",
   "title": "Canada",
-  "hint": "country"
+  "hint": "country",
+  "ar": "كندا",
+  "logo": false
  },
  {
   "name": "United States",
   "title": "United States",
-  "hint": "country"
+  "hint": "country",
+  "ar": "أمريكا",
+  "logo": false
  },
  {
   "name": "China",
   "title": "China",
-  "hint": "country"
+  "hint": "country",
+  "ar": "الصين",
+  "logo": false
  },
  {
   "name": "Brazil",
   "title": "Brazil",
-  "hint": "country"
+  "hint": "country",
+  "ar": "البرازيل",
+  "logo": false
  },
  {
   "name": "Australia",
   "title": "Australia",
-  "hint": "country"
+  "hint": "country",
+  "ar": "أستراليا",
+  "logo": false
  },
  {
   "name": "India",
   "title": "India",
-  "hint": "country"
+  "hint": "country",
+  "ar": "الهند",
+  "logo": false
  },
  {
   "name": "Saudi Arabia",
   "title": "Saudi Arabia",
-  "hint": "country"
+  "hint": "country",
+  "ar": "السعودية",
+  "logo": false
  },
  {
   "name": "Egypt",
   "title": "Egypt",
-  "hint": "country"
+  "hint": "country",
+  "ar": "مصر",
+  "logo": false
  },
  {
   "name": "Mount Everest",
   "title": "Mount Everest",
-  "hint": "mountain"
+  "hint": "mountain",
+  "ar": "جبل إيفرست",
+  "logo": false
  },
  {
   "name": "K2",
   "title": "K2",
-  "hint": "mountain"
+  "hint": "mountain",
+  "ar": "كي 2",
+  "logo": false
  },
  {
   "name": "Kangchenjunga",
   "title": "Kangchenjunga",
-  "hint": "mountain"
+  "hint": "mountain",
+  "ar": "كانشينجونجا",
+  "logo": false
  },
  {
   "name": "Aconcagua",
   "title": "Aconcagua",
-  "hint": "mountain"
+  "hint": "mountain",
+  "ar": "أكونكاجوا",
+  "logo": false
  },
  {
   "name": "Denali",
   "title": "Denali",
-  "hint": "mountain"
+  "hint": "mountain",
+  "ar": "دينالي",
+  "logo": false
  },
  {
   "name": "Kilimanjaro",
   "title": "Mount Kilimanjaro",
-  "hint": "mountain"
+  "hint": "mountain",
+  "ar": "كليمنجارو",
+  "logo": false
  },
  {
   "name": "Mont Blanc",
   "title": "Mont Blanc",
-  "hint": "mountain"
+  "hint": "mountain",
+  "ar": "مون بلان",
+  "logo": false
  },
  {
   "name": "Mount Fuji",
   "title": "Mount Fuji",
-  "hint": "mountain"
+  "hint": "mountain",
+  "ar": "جبل فوجي",
+  "logo": false
  },
  {
   "name": "Mount Sinai",
   "title": "Mount Sinai",
-  "hint": "mountain"
+  "hint": "mountain",
+  "ar": "جبل موسى (سيناء)",
+  "logo": false
  },
  {
   "name": "Vatican City",
   "title": "Vatican City",
-  "hint": "country"
+  "hint": "country",
+  "ar": "الفاتيكان",
+  "logo": false
  },
  {
   "name": "Monaco",
   "title": "Monaco",
-  "hint": "country"
+  "hint": "country",
+  "ar": "موناكو",
+  "logo": false
  },
  {
   "name": "Nauru",
   "title": "Nauru",
-  "hint": "country"
+  "hint": "country",
+  "ar": "ناورو",
+  "logo": false
  },
  {
   "name": "Tuvalu",
   "title": "Tuvalu",
-  "hint": "country"
+  "hint": "country",
+  "ar": "توفالو",
+  "logo": false
  },
  {
   "name": "San Marino",
   "title": "San Marino",
-  "hint": "country"
+  "hint": "country",
+  "ar": "سان مارينو",
+  "logo": false
  },
  {
   "name": "Liechtenstein",
   "title": "Liechtenstein",
-  "hint": "country"
+  "hint": "country",
+  "ar": "ليختنشتاين",
+  "logo": false
  },
  {
   "name": "Maldives",
   "title": "Maldives",
-  "hint": "country"
+  "hint": "country",
+  "ar": "المالديف",
+  "logo": false
  },
  {
   "name": "Malta",
   "title": "Malta",
-  "hint": "country"
+  "hint": "country",
+  "ar": "مالطا",
+  "logo": false
  },
  {
   "name": "Singapore",
   "title": "Singapore",
-  "hint": "country"
+  "hint": "country",
+  "ar": "سنغافورة",
+  "logo": false
  },
  {
   "name": "Cheetah",
   "title": "Cheetah",
-  "hint": "animal"
+  "hint": "animal",
+  "ar": "الشيتا",
+  "logo": false
  },
  {
   "name": "Pronghorn",
   "title": "Pronghorn",
-  "hint": "animal"
+  "hint": "animal",
+  "ar": "البرونجهورن",
+  "logo": false
  },
  {
   "name": "Racehorse",
   "title": "Thoroughbred",
-  "hint": "animal"
+  "hint": "animal",
+  "ar": "حصان السباق",
+  "logo": false
  },
  {
   "name": "Lion",
   "title": "Lion",
-  "hint": "animal"
+  "hint": "animal",
+  "ar": "الأسد",
+  "logo": false
  },
  {
   "name": "Greyhound",
   "title": "Greyhound",
-  "hint": "animal"
+  "hint": "animal",
+  "ar": "كلب الجراي هاوند",
+  "logo": false
  },
  {
   "name": "Kangaroo",
   "title": "Red kangaroo",
-  "hint": "animal"
+  "hint": "animal",
+  "ar": "الكنغر",
+  "logo": false
  },
  {
   "name": "Ostrich",
   "title": "Common ostrich",
-  "hint": "animal"
+  "hint": "animal",
+  "ar": "النعامة",
+  "logo": false
  },
  {
   "name": "Grizzly Bear",
   "title": "Grizzly bear",
-  "hint": "animal"
+  "hint": "animal",
+  "ar": "الدب الأشهب",
+  "logo": false
  },
  {
   "name": "Usain Bolt",
   "title": "Usain Bolt",
-  "hint": "animal"
+  "hint": "animal",
+  "ar": "يوسين بولت",
+  "logo": false
  },
  {
   "name": "Blue Whale",
   "title": "Blue whale",
-  "hint": "animal"
+  "hint": "animal",
+  "ar": "الحوت الأزرق",
+  "logo": false
  },
  {
   "name": "African Elephant",
   "title": "African bush elephant",
-  "hint": "animal"
+  "hint": "animal",
+  "ar": "الفيل الأفريقي",
+  "logo": false
  },
  {
   "name": "White Rhino",
   "title": "White rhinoceros",
-  "hint": "animal"
+  "hint": "animal",
+  "ar": "وحيد القرن الأبيض",
+  "logo": false
  },
  {
   "name": "Hippo",
   "title": "Hippopotamus",
-  "hint": "animal"
+  "hint": "animal",
+  "ar": "فرس النهر",
+  "logo": false
  },
  {
   "name": "Giraffe",
   "title": "Giraffe",
-  "hint": "animal"
+  "hint": "animal",
+  "ar": "الزرافة",
+  "logo": false
  },
  {
   "name": "Saltwater Crocodile",
   "title": "Saltwater crocodile",
-  "hint": "animal"
+  "hint": "animal",
+  "ar": "تمساح المية المالحة",
+  "logo": false
  },
  {
   "name": "Polar Bear",
   "title": "Polar bear",
-  "hint": "animal"
+  "hint": "animal",
+  "ar": "الدب القطبي",
+  "logo": false
  },
  {
   "name": "Gorilla",
   "title": "Gorilla",
-  "hint": "animal"
+  "hint": "animal",
+  "ar": "الغوريلا",
+  "logo": false
  },
  {
   "name": "Greenland Shark",
   "title": "Greenland shark",
-  "hint": "animal"
+  "hint": "animal",
+  "ar": "قرش جرينلاند",
+  "logo": false
  },
  {
   "name": "Bowhead Whale",
   "title": "Bowhead whale",
-  "hint": "animal"
+  "hint": "animal",
+  "ar": "حوت القوس",
+  "logo": false
  },
  {
   "name": "Giant Tortoise",
   "title": "Aldabra giant tortoise",
-  "hint": "animal"
+  "hint": "animal",
+  "ar": "السلحفاة العملاقة",
+  "logo": false
  },
  {
   "name": "Elephant",
   "title": "Elephant",
-  "hint": "animal"
+  "hint": "animal",
+  "ar": "الفيل",
+  "logo": false
  },
  {
   "name": "Macaw",
   "title": "Macaw",
-  "hint": "animal"
+  "hint": "animal",
+  "ar": "ببغاء المكاو",
+  "logo": false
  },
  {
   "name": "Horse",
   "title": "Horse",
-  "hint": "animal"
+  "hint": "animal",
+  "ar": "الحصان",
+  "logo": false
  },
  {
   "name": "Cat",
   "title": "Cat",
-  "hint": "animal"
+  "hint": "animal",
+  "ar": "القطة",
+  "logo": false
  },
  {
   "name": "Dog",
   "title": "Dog",
-  "hint": "animal"
+  "hint": "animal",
+  "ar": "الكلب",
+  "logo": false
  },
  {
   "name": "Hamster",
   "title": "Hamster",
-  "hint": "animal"
+  "hint": "animal",
+  "ar": "الهامستر",
+  "logo": false
  },
  {
   "name": "Pac-Man",
   "title": "Pac-Man",
-  "hint": "video game"
+  "hint": "video game",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Tetris",
   "title": "Tetris",
-  "hint": "video game"
+  "hint": "video game",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Super Mario Bros.",
   "title": "Super Mario Bros.",
-  "hint": "video game"
+  "hint": "video game",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "The Legend of Zelda",
   "title": "The Legend of Zelda (video game)",
-  "hint": "video game"
+  "hint": "video game",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Pokémon Red & Green",
   "title": "Pokémon Red and Blue",
-  "hint": "video game"
+  "hint": "video game",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Grand Theft Auto",
   "title": "Grand Theft Auto (video game)",
-  "hint": "video game"
+  "hint": "video game",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Minecraft",
   "title": "Minecraft",
-  "hint": "video game"
+  "hint": "video game",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Fortnite",
   "title": "Fortnite",
-  "hint": "video game"
+  "hint": "video game",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Among Us",
   "title": "Among Us",
-  "hint": "video game"
+  "hint": "video game",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Atari 2600",
   "title": "Atari 2600",
-  "hint": "video game console"
+  "hint": "video game console",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Nintendo NES",
   "title": "Nintendo Entertainment System",
-  "hint": "video game console"
+  "hint": "video game console",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Game Boy",
   "title": "Game Boy",
-  "hint": "video game console"
+  "hint": "video game console",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "PlayStation",
   "title": "PlayStation (console)",
-  "hint": "video game console"
+  "hint": "video game console",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Nintendo 64",
   "title": "Nintendo 64",
-  "hint": "video game console"
+  "hint": "video game console",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Xbox",
   "title": "Xbox (console)",
-  "hint": "video game console"
+  "hint": "video game console",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Wii",
   "title": "Wii",
-  "hint": "video game console"
+  "hint": "video game console",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "PlayStation 4",
   "title": "PlayStation 4",
-  "hint": "video game console"
+  "hint": "video game console",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Nintendo Switch",
   "title": "Nintendo Switch",
-  "hint": "video game console"
+  "hint": "video game console",
+  "ar": "",
+  "logo": false
  },
  {
   "name": "Nintendo",
   "title": "Nintendo",
-  "hint": "company"
+  "hint": "company",
+  "ar": "",
+  "logo": true
  },
  {
   "name": "Ford",
   "title": "Ford Motor Company",
-  "hint": "company"
+  "hint": "company",
+  "ar": "",
+  "logo": true
  },
  {
   "name": "IBM",
   "title": "IBM",
-  "hint": "company"
+  "hint": "company",
+  "ar": "",
+  "logo": true
  },
  {
   "name": "Disney",
   "title": "The Walt Disney Company",
-  "hint": "company"
+  "hint": "company",
+  "ar": "",
+  "logo": true
  },
  {
   "name": "Toyota",
   "title": "Toyota",
-  "hint": "company"
+  "hint": "company",
+  "ar": "",
+  "logo": true
  },
  {
   "name": "Samsung",
   "title": "Samsung",
-  "hint": "company"
+  "hint": "company",
+  "ar": "",
+  "logo": true
  },
  {
   "name": "Sony",
   "title": "Sony",
-  "hint": "company"
+  "hint": "company",
+  "ar": "",
+  "logo": true
  },
  {
   "name": "Apple",
   "title": "Apple Inc.",
-  "hint": "company"
+  "hint": "company",
+  "ar": "",
+  "logo": true
  },
  {
   "name": "Google",
   "title": "Google",
-  "hint": "company"
+  "hint": "company",
+  "ar": "",
+  "logo": true
  },
  {
   "name": "Facebook",
   "title": "Facebook",
-  "hint": "app"
+  "hint": "app",
+  "ar": "",
+  "logo": true
  },
  {
   "name": "YouTube",
   "title": "YouTube",
-  "hint": "app"
+  "hint": "app",
+  "ar": "",
+  "logo": true
  },
  {
   "name": "Twitter",
   "title": "Twitter",
-  "hint": "app"
+  "hint": "app",
+  "ar": "",
+  "logo": true
  },
  {
   "name": "WhatsApp",
   "title": "WhatsApp",
-  "hint": "app"
+  "hint": "app",
+  "ar": "",
+  "logo": true
  },
  {
   "name": "Instagram",
   "title": "Instagram",
-  "hint": "app"
+  "hint": "app",
+  "ar": "",
+  "logo": true
  },
  {
   "name": "Snapchat",
   "title": "Snapchat",
-  "hint": "app"
+  "hint": "app",
+  "ar": "",
+  "logo": true
  },
  {
   "name": "TikTok",
   "title": "TikTok",
-  "hint": "app"
+  "hint": "app",
+  "ar": "",
+  "logo": true
  },
  {
   "name": "ChatGPT",
   "title": "ChatGPT",
-  "hint": "app"
+  "hint": "app",
+  "ar": "",
+  "logo": true
  },
  {
   "name": "Threads",
   "title": "Threads (social network)",
-  "hint": "app"
+  "hint": "app",
+  "ar": "",
+  "logo": true
  }
 ]
