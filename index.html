@@ -3,48 +3,73 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Eliminate</title>
 <style>
-:root{--bg:#fafafa;--fg:#1c1c1c;--y:#f7c83d;--dark:#2a2a2a;--mut:#8a8a8a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root{--bg:#fafafa;--fg:#1c1c1c;--y:#f7c83d;--dark:#2a2a2a;--mut:#8a8a8a;--g:#3ecf6e;--r:#e5484d;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161616;--fg:#f2f2f2;--dark:#3a3a3a;--mut:#999}}
 :root[data-theme="dark"]{--bg:#161616;--fg:#f2f2f2;--dark:#3a3a3a;--mut:#999}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:800;display:flex;justify-content:center}
-#app{width:100%;max-width:440px;padding:14px 16px 24px;display:flex;flex-direction:column;align-items:center}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:800;display:flex;justify-content:center;overflow-x:hidden}
+button{cursor:pointer}
+#app{width:100%;max-width:440px;padding:14px 16px 120px;display:flex;flex-direction:column;align-items:center}
 .top{width:100%;display:flex;justify-content:space-between;align-items:center;gap:8px}
-.pill{border:3px solid var(--fg);border-radius:16px;background:var(--bg);color:var(--fg);font:inherit;font-size:20px;padding:8px 16px;box-shadow:0 5px 0 var(--fg);display:flex;align-items:center;gap:8px}
+.top .gap{flex:1}
+.pill{border:3px solid var(--fg);border-radius:16px;background:var(--bg);color:var(--fg);font:inherit;font-size:20px;padding:8px 14px;box-shadow:0 5px 0 var(--fg);display:flex;align-items:center;gap:8px}
+.pill:active,.btn:active,.cat:active{transform:translateY(3px);box-shadow:0 2px 0 var(--fg)}
 .pill.on{background:var(--y);color:#1c1c1c}
-.coin{width:20px;height:20px;border-radius:50%;background:var(--y);border:3px solid #d9a800;display:inline-block}
-.q{text-align:center;margin:18px 0 6px;font-size:18px}
+.pill.bump{animation:bump .45s}
+.coin{width:20px;height:20px;border-radius:50%;background:var(--y);border:3px solid #d9a800;display:inline-block;flex:none}
+.meta{width:100%;display:flex;justify-content:space-between;margin-top:16px;font-size:14px;color:var(--mut)}
+.streak{color:#f08c00}
+.q{text-align:center;margin:12px 0 6px;font-size:18px}
 .big{display:inline-block;text-align:center;background:var(--y);color:#1c1c1c;border:4px solid var(--fg);border-radius:18px;padding:12px 22px;font-size:24px;margin:8px 0}
 .sub{color:var(--mut);font-size:16px;margin:10px 0 16px;text-align:center}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px 12px;width:100%}
-.cell{display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer}
-.tile{width:100%;aspect-ratio:1;border-radius:20px;border:4px solid var(--dark);box-shadow:0 5px 0 var(--dark);display:flex;align-items:center;justify-content:center;font-size:44px;color:#fff;overflow:hidden;transition:.15s}
+.grid.shake{animation:shake .45s}
+.cell{display:flex;flex-direction:column;align-items:center;gap:8px;background:none;border:0;padding:0;font:inherit;color:inherit}
+.tile{position:relative;width:100%;aspect-ratio:1;border-radius:20px;border:4px solid var(--dark);box-shadow:0 5px 0 var(--dark);display:flex;align-items:center;justify-content:center;font-size:44px;color:#fff;overflow:hidden;transition:.15s}
 .tile img{width:100%;height:100%;object-fit:cover}
-.lab{width:100%;height:40px;display:flex;align-items:center;justify-content:center;text-align:center;background:var(--dark);color:#fff;border-radius:14px;padding:0 6px;font-size:12px;line-height:1.1;transition:.15s}
-.cell.out .tile{border-color:var(--y);box-shadow:0 5px 0 var(--y);opacity:.55}
-.cell.out .lab{background:var(--y);color:#1c1c1c;font-size:17px}
-.cell.win .tile{border-color:#3ecf6e;box-shadow:0 5px 0 #3ecf6e}
-.cell.win .lab{background:#3ecf6e;color:#06210f}
-.cell.bad .tile{border-color:#e5484d;box-shadow:0 5px 0 #e5484d}
-.cell.bad .lab{background:#e5484d}
+.lab{width:100%;min-height:40px;display:flex;align-items:center;justify-content:center;text-align:center;background:var(--dark);color:#fff;border-radius:14px;padding:3px 6px;font-size:12px;line-height:1.1;transition:.15s}
+.cell.out .tile{border-color:var(--y);box-shadow:0 5px 0 var(--y)}
+.cell.out .tile>*{opacity:.45}
+.cell.out .tile::after{content:"✕";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:58px;color:var(--y);text-shadow:0 3px 0 #0007}
+.cell.out .lab{background:var(--y);color:#1c1c1c;font-size:16px}
+.cell.win .tile{border-color:var(--g);box-shadow:0 5px 0 var(--g);animation:hop .6s .1s}
+.cell.win .lab{background:var(--g);color:#06210f}
+.cell.bad .tile{border-color:var(--r);box-shadow:0 5px 0 var(--r)}
+.cell.bad .tile::after{color:var(--r)}
+.cell.bad .lab{background:var(--r);color:#fff}
+.cell.pop .tile{animation:pop .3s}
 .cell:active .tile{transform:translateY(3px)}
-.cell.show .lab{font-size:17px}
+.cell.show .lab{font-size:16px}
 .bar{display:flex;gap:18px;margin-top:26px}
-.btn{border:3px solid var(--fg);background:var(--bg);color:var(--fg);font:inherit;font-size:19px;padding:11px 24px;border-radius:999px;box-shadow:0 5px 0 var(--fg);display:flex;gap:8px;align-items:center}
-.btn:disabled{opacity:.4}
+.btn{border:3px solid var(--fg);background:var(--bg);color:var(--fg);font:inherit;font-size:19px;padding:11px 22px;border-radius:999px;box-shadow:0 5px 0 var(--fg);display:flex;gap:8px;align-items:center;justify-content:center}
+.btn:disabled{opacity:.4;pointer-events:none}
+.btn.y{background:var(--y);color:#1c1c1c}
 #menu{width:100%;display:flex;flex-direction:column;gap:14px;align-items:stretch}
-#menu h1{text-align:center;font-size:30px;margin:20px 0 4px}
-.cat{background:var(--y);color:#1c1c1c;border:4px solid var(--fg);border-radius:20px;padding:16px;font:inherit;font-size:20px;box-shadow:0 5px 0 var(--fg);text-align:left}
-.cat small{display:block;font-size:13px;opacity:.7;margin-top:2px}
-#sheet{position:fixed;left:0;right:0;bottom:0;padding:22px 22px calc(26px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:4px solid var(--fg);border-radius:26px 26px 0 0;text-align:center;transform:translateY(110%);transition:.25s;font-size:22px}
+#menu h1{text-align:center;font-size:34px;margin:18px 0 0;letter-spacing:1px}
+.stats{display:flex;justify-content:center;gap:10px;margin-bottom:4px}
+.stat{border:3px solid var(--fg);border-radius:14px;padding:6px 12px;font-size:14px}
+.cat{background:var(--y);color:#1c1c1c;border:4px solid var(--fg);border-radius:20px;padding:14px 16px;font:inherit;font-size:20px;box-shadow:0 5px 0 var(--fg);text-align:left}
+.cat small{display:flex;justify-content:space-between;font-size:13px;opacity:.75;margin-top:4px}
+.pb{height:8px;border-radius:4px;background:#1c1c1c26;margin-top:8px;overflow:hidden}
+.pb i{display:block;height:100%;background:#1c1c1c;border-radius:4px}
+#sheet{position:fixed;left:0;right:0;bottom:0;z-index:5;padding:22px 22px calc(26px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:4px solid var(--fg);border-radius:26px 26px 0 0;text-align:center;transform:translateY(110%);transition:transform .3s cubic-bezier(.2,1.3,.5,1);font-size:24px}
 #sheet.show{transform:none}
 #sheet p{margin:6px 0 16px;font-size:16px;color:var(--mut)}
-#sheet .btn{margin:auto;background:var(--y);color:#1c1c1c}
+#sheet .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.float{position:fixed;z-index:6;pointer-events:none;font-size:22px;color:#d9a800;text-shadow:0 2px 0 var(--bg);animation:rise 1.1s forwards}
+#fx{position:fixed;inset:0;pointer-events:none;z-index:7}
+@keyframes pop{0%{transform:scale(1)}40%{transform:scale(.82)}75%{transform:scale(1.06)}100%{transform:scale(1)}}
+@keyframes hop{0%,100%{transform:none}30%{transform:translateY(-12px) scale(1.06)}60%{transform:translateY(2px)}}
+@keyframes shake{0%,100%{transform:none}20%{transform:translateX(-10px)}40%{transform:translateX(9px)}60%{transform:translateX(-6px)}80%{transform:translateX(4px)}}
+@keyframes bump{0%,100%{transform:none}40%{transform:scale(1.18)}}
+@keyframes rise{from{opacity:1;transform:none}to{opacity:0;transform:translateY(-50px)}}
+@media (prefers-reduced-motion:reduce){*,*::after{animation:none!important;transition:none!important}}
 </style></head><body>
 <div id="app">
- <div class="top"><button class="pill" id="home">⌂</button><button class="pill" id="cam" title="Add photos">📷</button><div class="pill"><span id="coins">28</span><i class="coin"></i></div></div>
+ <div class="top"><button class="pill" id="home" aria-label="Home">⌂</button><button class="pill" id="snd" aria-label="Sound">🔊</button><button class="pill" id="cam" title="Add photos" aria-label="Photo mode">📷</button><span class="gap"></span><div class="pill" id="cpill"><span id="coins">0</span><i class="coin"></i></div></div>
  <div id="menu"></div>
  <div id="game" style="display:none;width:100%;flex-direction:column;align-items:center">
+  <div class="meta"><span id="rn"></span><span class="streak" id="stk"></span></div>
   <div class="q" id="q1"></div><div class="big" id="q2"></div><div class="q" id="q3"></div>
   <div class="sub" id="sub"></div>
   <div class="grid" id="grid"></div>
@@ -52,71 +77,141 @@ body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-
  </div>
 </div>
 <input type="file" id="file" accept="image/*" style="display:none">
-<div id="sheet"><div id="st"></div><p id="sp"></p><button class="btn" id="next">NEXT</button></div>
+<div id="sheet" role="dialog"><div id="st"></div><p id="sp"></p><div class="row" id="sb"></div></div>
+<canvas id="fx"></canvas>
 <script>
-// Item = [name, value]. Photos are added in-app with the 📷 button and saved on this device.
-function Rd(a,b,c,best,items,o){o=o||{};return{q:[a,b,c],best:best,items:items,pre:o.pre,unit:o.unit}}
+// Item = [name, value]. Each round must have exactly one best answer.
+// Options: pre/suf wrap the shown value, dp fixes decimals. Photos are added in-app with 📷 and saved on this device.
+function Rd(a,b,c,best,items,o){o=o||{};return{q:[a,b,c],best:best,items:items,pre:o.pre,suf:o.suf,dp:o.dp}}
 var CATS=[
 {n:"Egyptian Football",e:"🇪🇬 ⚽",r:[
  Rd("WHO IS THE","YOUNGEST PLAYER","ON THIS LIST","max",[["Ahmed Hegazi",1991],["Mohamed Salah",1992],["Mahmoud 'Trezeguet' Hassan",1994],["Mahmoud Hamdy 'El Wensh'",1995],["Ahmed Sayed 'Zizo'",1996],["Mostafa Mohamed",1997],["Ahmed Fatouh",1998],["Omar Marmoush",1999],["Hamza Abdel Karim",2008]]),
- Rd("WHO IS THE","OLDEST LEGEND","ON THIS LIST","min",[["Hassan Shehata",1947],["Mahmoud 'Bibo' El Khatib",1954],["Hossam Hassan",1966],["Hany Ramzy",1969],["Essam El-Hadary",1973],["Ahmed Hassan",1975],["Mohamed Aboutrika",1978],["Mohamed Zidan",1981],["Ahmed 'Mido' Hossam",1983]])]},
+ Rd("WHO IS THE","OLDEST LEGEND","ON THIS LIST","min",[["Hassan Shehata",1949],["Mahmoud 'Bibo' El Khatib",1954],["Hossam Hassan",1966],["Hany Ramzy",1969],["Essam El-Hadary",1973],["Ahmed Hassan",1975],["Mohamed Aboutrika",1978],["Mohamed Zidan",1981],["Ahmed 'Mido' Hossam",1983]]),
+ Rd("WHICH CLUB HAS","MOST CAF CHAMPIONS LEAGUES","ON THIS LIST","max",[["Al Ahly",12],["Zamalek",5],["TP Mazembe",5],["Espérance de Tunis",4],["Wydad Casablanca",3],["Raja Casablanca",3],["Enyimba",2],["ES Sétif",2],["Mamelodi Sundowns",1]],{suf:" 🏆"})]},
 {n:"World Football",e:"🌍 ⚽",r:[
  Rd("WHO IS THE","YOUNGEST STAR","ON THIS LIST","max",[["Neymar Jr",1992],["Kylian Mbappé",1998],["Erling Haaland",2000],["Rodrygo Goes",2001],["Pedri González",2002],["Jude Bellingham",2003],["Pablo 'Gavi' Páez",2004],["Endrick Felipe",2006],["Lamine Yamal",2007]]),
- Rd("WHO IS THE","OLDEST LEGEND","ON THIS LIST","min",[["Zinedine Zidane",1972],["David Beckham",1975],["Ronaldo Nazário",1976],["Thierry Henry",1977],["Ronaldinho Gaúcho",1980],["Zlatan Ibrahimović",1981],["Ricardo Kaká",1982],["Cristiano Ronaldo",1985],["Lionel Messi",1987]])]},
+ Rd("WHO IS THE","OLDEST LEGEND","ON THIS LIST","min",[["Zinedine Zidane",1972],["David Beckham",1975],["Ronaldo Nazário",1976],["Thierry Henry",1977],["Ronaldinho Gaúcho",1980],["Zlatan Ibrahimović",1981],["Ricardo Kaká",1982],["Cristiano Ronaldo",1985],["Lionel Messi",1987]]),
+ Rd("WHO HAS THE","MOST BALLON D'ORS","ON THIS LIST","max",[["Lionel Messi",8],["Cristiano Ronaldo",5],["Johan Cruyff",3],["Michel Platini",3],["Marco van Basten",3],["Ronaldo Nazário",2],["Franz Beckenbauer",2],["Zinedine Zidane",1],["Ronaldinho Gaúcho",1]],{suf:" 🏆"})]},
 {n:"Cinema",e:"🎬",r:[
  Rd("WHO IS THE","OLDEST ACTOR","ON THIS LIST","min",[["Clint Eastwood",1930],["Dustin Hoffman",1937],["Al Pacino",1940],["Harrison Ford",1942],["Robert De Niro",1943],["Sylvester Stallone",1946],["Arnold Schwarzenegger",1947],["Meryl Streep",1949],["Jackie Chan",1954]]),
  Rd("WHO IS THE","OLDEST EGYPTIAN STAR","ON THIS LIST","min",[["Omar Sharif",1932],["Adel Imam",1940],["Mahmoud Yassin",1941],["Ahmed Zaki",1949],["Mohamed Henedy",1965],["Ahmed Helmy",1969],["Ahmed El-Sakka",1973],["Karim Abdel Aziz",1975],["Mohamed Ramadan",1988]]),
- Rd("WHICH IS THE","BIGGEST BLOCKBUSTER","ON THIS LIST","max",[["Avatar",2.924],["Avengers: Endgame",2.798],["Titanic",2.258],["Star Wars: The Force Awakens",2.07],["Avengers: Infinity War",2.05],["Spider-Man: No Way Home",1.92],["Jurassic World",1.67],["The Lion King (2019)",1.66],["Frozen II",1.450]],{pre:"$",unit:"B"})]},
+ Rd("WHICH IS THE","BIGGEST BLOCKBUSTER","ON THIS LIST","max",[["Avatar",2.923],["Avengers: Endgame",2.799],["Titanic",2.264],["Star Wars: The Force Awakens",2.071],["Avengers: Infinity War",2.052],["Spider-Man: No Way Home",1.92],["Jurassic World",1.671],["The Lion King (2019)",1.663],["Frozen II",1.453]],{pre:"$",suf:"B",dp:2}),
+ Rd("WHICH IS THE","OLDEST MOVIE","ON THIS LIST","min",[["The Godfather",1972],["Jaws",1975],["Star Wars",1977],["E.T.",1982],["Back to the Future",1985],["Jurassic Park",1993],["Pulp Fiction",1994],["Titanic",1997],["The Matrix",1999]])]},
 {n:"TV",e:"📺",r:[
  Rd("WHO IS THE","YOUNGEST STAR","ON THIS LIST","max",[["Sean Bean",1959],["Iain Glen",1961],["Peter Dinklage",1969],["Nikolaj Coster-Waldau",1970],["Lena Headey",1973],["Gwendoline Christie",1978],["Emilia Clarke",1986],["Sophie Turner",1996],["Maisie Williams",1997]]),
- Rd("WHO IS THE","OLDEST SITCOM STAR","ON THIS LIST","min",[["Lisa Kudrow",1963],["Courteney Cox",1964],["David Schwimmer",1966],["Matt LeBlanc",1967],["Jennifer Aniston",1969],["Jim Parsons",1973],["Johnny Galecki",1975],["Kunal Nayyar",1981],["Kaley Cuoco",1985]])]},
+ Rd("WHO IS THE","OLDEST SITCOM STAR","ON THIS LIST","min",[["Lisa Kudrow",1963],["Courteney Cox",1964],["David Schwimmer",1966],["Matt LeBlanc",1967],["Jennifer Aniston",1969],["Jim Parsons",1973],["Johnny Galecki",1975],["Kunal Nayyar",1981],["Kaley Cuoco",1985]]),
+ Rd("WHICH SHOW HAS","THE MOST EPISODES","ON THIS LIST","max",[["The Big Bang Theory",279],["Two and a Half Men",262],["Friends",236],["How I Met Your Mother",208],["The Office (US)",201],["Seinfeld",180],["The Sopranos",86],["Game of Thrones",73],["Breaking Bad",62]],{suf:" eps"})]},
 {n:"Music",e:"🎤",r:[
  Rd("WHO IS THE","OLDEST ICON","ON THIS LIST","min",[["Bob Dylan",1941],["Paul McCartney",1942],["Mick Jagger",1943],["Rod Stewart",1945],["Freddie Mercury",1946],["Elton John",1947],["Ozzy Osbourne",1948],["Bruce Springsteen",1949],["Stevie Wonder",1950]]),
  Rd("WHO IS THE","YOUNGEST POP STAR","ON THIS LIST","max",[["The Weeknd",1990],["Ed Sheeran",1991],["Ariana Grande",1993],["Harry Styles",1994],["Dua Lipa",1995],["Shawn Mendes",1998],["Billie Eilish",2001],["Olivia Rodrigo",2003],["Taylor Swift",1989]]),
- Rd("WHO IS THE","OLDEST EGYPTIAN ICON","ON THIS LIST","min",[["Abdel Halim Hafez",1929],["Warda Al-Jazairia",1939],["Mohamed Mounir",1954],["Amr Diab",1961],["Hakim",1962],["Angham",1972],["Mohamed Hamaki",1975],["Tamer Hosny",1977],["Sherine Abdel Wahab",1980]])]},
+ Rd("WHO IS THE","OLDEST EGYPTIAN ICON","ON THIS LIST","min",[["Abdel Halim Hafez",1929],["Warda Al-Jazairia",1939],["Mohamed Mounir",1954],["Amr Diab",1961],["Hakim",1962],["Angham",1972],["Mohamed Hamaki",1975],["Tamer Hosny",1977],["Sherine Abdel Wahab",1980]]),
+ Rd("WHICH IS THE","OLDEST SONG","ON THIS LIST","min",[["Hey Jude",1968],["Bohemian Rhapsody",1975],["Billie Jean",1983],["Like a Prayer",1989],["Smells Like Teen Spirit",1991],["Wannabe",1996],["Crazy in Love",2003],["Rolling in the Deep",2010],["Blinding Lights",2019]])]},
 {n:"Pop Culture",e:"🔥",r:[
  Rd("WHO IS THE","YOUNGEST ONLINE STAR","ON THIS LIST","max",[["Kim Kardashian",1980],["PewDiePie",1989],["KSI",1993],["Timothée Chalamet",1995],["Zendaya",1996],["Kylie Jenner",1997],["MrBeast",1998],["Charli D'Amelio",2004],["Elon Musk",1971]]),
- Rd("WHO IS THE","OLDEST MARVEL STAR","ON THIS LIST","min",[["Robert Downey Jr",1965],["Mark Ruffalo",1967],["Paul Rudd",1969],["Benedict Cumberbatch",1976],["Chris Pratt",1979],["Chris Evans",1981],["Chris Hemsworth",1983],["Scarlett Johansson",1984],["Tom Holland",1996]])]}
+ Rd("WHO IS THE","OLDEST MARVEL STAR","ON THIS LIST","min",[["Robert Downey Jr",1965],["Mark Ruffalo",1967],["Paul Rudd",1969],["Benedict Cumberbatch",1976],["Chris Pratt",1979],["Chris Evans",1981],["Chris Hemsworth",1983],["Scarlett Johansson",1984],["Tom Holland",1996]]),
+ Rd("WHICH IS THE","OLDEST CARTOON","ON THIS LIST","min",[["Mickey Mouse",1928],["Bugs Bunny",1940],["Tom and Jerry",1940],["Scooby-Doo",1969],["The Simpsons",1989],["SpongeBob",1999],["Shrek",2001],["Peppa Pig",2004],["Bluey",2018]])]},
+{n:"Geography",e:"🗺️",r:[
+ Rd("WHICH IS THE","BIGGEST COUNTRY","ON THIS LIST","max",[["Russia",17.1],["Canada",9.98],["United States",9.83],["China",9.6],["Brazil",8.52],["Australia",7.69],["India",3.29],["Saudi Arabia",2.15],["Egypt",1.0]],{suf:"M km²",dp:2}),
+ Rd("WHICH IS THE","TALLEST MOUNTAIN","ON THIS LIST","max",[["Mount Everest",8849],["K2",8611],["Kangchenjunga",8586],["Aconcagua",6961],["Denali",6190],["Kilimanjaro",5895],["Mont Blanc",4806],["Mount Fuji",3776],["Mount Sinai",2285]],{suf:" m"}),
+ Rd("WHICH IS THE","SMALLEST COUNTRY","ON THIS LIST","min",[["Vatican City",0.44],["Monaco",2.02],["Nauru",21],["Tuvalu",26],["San Marino",61],["Liechtenstein",160],["Maldives",298],["Malta",316],["Singapore",735]],{suf:" km²"})]},
+{n:"Animals",e:"🐾",r:[
+ Rd("WHICH IS THE","FASTEST RUNNER","ON THIS LIST","max",[["Cheetah",112],["Pronghorn",88],["Racehorse",88],["Lion",80],["Greyhound",72],["Kangaroo",70],["Ostrich",70],["Grizzly Bear",56],["Usain Bolt",44]],{suf:" km/h"}),
+ Rd("WHICH IS THE","HEAVIEST ANIMAL","ON THIS LIST","max",[["Blue Whale",150000],["African Elephant",6000],["White Rhino",2300],["Hippo",1500],["Giraffe",1200],["Saltwater Crocodile",1000],["Polar Bear",500],["Gorilla",200],["Lion",190]],{suf:" kg"}),
+ Rd("WHICH LIVES THE","LONGEST","ON THIS LIST","max",[["Greenland Shark",400],["Bowhead Whale",200],["Giant Tortoise",150],["Elephant",70],["Macaw",60],["Horse",30],["Cat",15],["Dog",13],["Hamster",2]],{suf:" yrs"})]},
+{n:"Games & Tech",e:"🎮",r:[
+ Rd("WHICH IS THE","OLDEST VIDEO GAME","ON THIS LIST","min",[["Pac-Man",1980],["Tetris",1984],["Super Mario Bros.",1985],["The Legend of Zelda",1986],["Pokémon Red & Green",1996],["Grand Theft Auto",1997],["Minecraft",2011],["Fortnite",2017],["Among Us",2018]]),
+ Rd("WHICH IS THE","OLDEST CONSOLE","ON THIS LIST","min",[["Atari 2600",1977],["Nintendo NES",1983],["Game Boy",1989],["PlayStation",1994],["Nintendo 64",1996],["Xbox",2001],["Wii",2006],["PlayStation 4",2013],["Nintendo Switch",2017]]),
+ Rd("WHICH IS THE","OLDEST COMPANY","ON THIS LIST","min",[["Nintendo",1889],["Ford",1903],["IBM",1911],["Disney",1923],["Toyota",1937],["Samsung",1938],["Sony",1946],["Apple",1976],["Google",1998]]),
+ Rd("WHICH IS THE","NEWEST APP","ON THIS LIST","max",[["Facebook",2004],["YouTube",2005],["Twitter",2006],["WhatsApp",2009],["Instagram",2010],["Snapchat",2011],["TikTok",2016],["ChatGPT",2022],["Threads",2023]])]}
 ];
+CATS.forEach(function(c){c.r.forEach(function(r){var v=r.items.map(function(x){return x[1]}),b=r.best==="min"?Math.min.apply(0,v):Math.max.apply(0,v);
+ if(v.filter(function(x){return x===b}).length!==1)console.warn("Round has a tied answer:",c.n,r.q[1])})});
+
+var START=50,UNDO=30,WIN=10;
 var $=function(i){return document.getElementById(i)};
-var coins=28,ci=0,ri=0,items,out,hist,over,corr,edit=false,pend=null,IM={};
-try{var c=localStorage.getItem("elim_coins");if(c!==null)coins=+c||28;IM=JSON.parse(localStorage.getItem("elim_img")||"{}")}catch(e){}
-function save(){try{localStorage.setItem("elim_coins",coins)}catch(e){}}
+var RM=matchMedia("(prefers-reduced-motion:reduce)").matches;
+var coins=START,streak=0,best=0,prog={},mute=false,IM={};
+var ci=0,ri=0,items,out,hist,over,corr,last,lostStreak,runOk,edit=false,pend=null,stT;
+function ld(k,d){try{var v=localStorage.getItem(k);return v===null?d:JSON.parse(v)}catch(e){return d}}
+coins=ld("elim_coins",START);if(typeof coins!=="number"||!(coins>=0))coins=START;
+streak=ld("elim_streak",0)|0;best=ld("elim_best",0)|0;prog=ld("elim_prog",{})||{};mute=!!ld("elim_mute",false);IM=ld("elim_img",{})||{};
+function save(){try{localStorage.setItem("elim_coins",coins);localStorage.setItem("elim_streak",streak);localStorage.setItem("elim_best",best);
+ localStorage.setItem("elim_prog",JSON.stringify(prog));localStorage.setItem("elim_mute",mute)}catch(e){}}
+function key(c,r){return c.n+"|"+r.q[1]}
+function solved(c){return c.r.filter(function(r){return prog[key(c,r)]}).length}
 function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a}
-function fmt(r,v){return(r.pre||"")+(r.unit==="B"?v.toFixed(2):v)+(r.unit||"")}
-function menu(){$("game").style.display="none";$("menu").style.display="flex";$("sheet").classList.remove("show");
- $("menu").innerHTML="<h1>ELIMINATE</h1>"+CATS.map(function(c,i){return '<button class="cat" data-c="'+i+'">'+c.e+" "+c.n.toUpperCase()+"<small>"+c.r.length+" rounds</small></button>"}).join("")+
- '<div class="sub">Tap 📷, then tap any tile to add a photo from your phone.</div>'}
-$("menu").onclick=function(e){var b=e.target.closest(".cat");if(!b)return;ci=+b.dataset.c;ri=0;start()};
-function start(){var r=CATS[ci].r[ri];$("menu").style.display="none";$("game").style.display="flex";
- items=shuffle(r.items);out=[];hist=[];over=false;
+function fmt(r,v){var s=r.dp!=null?v.toFixed(r.dp):v>=10000?v.toLocaleString("en-US"):String(v);return(r.pre||"")+s+(r.suf||"")}
+
+// --- sound, haptics, effects ---
+var AC;
+function tone(f,d,t,v,w){if(mute)return;try{AC=AC||new(window.AudioContext||window.webkitAudioContext)();if(AC.state==="suspended")AC.resume();
+ var o=AC.createOscillator(),g=AC.createGain(),s=AC.currentTime+(w||0);o.type=t||"sine";o.frequency.setValueAtTime(f,s);
+ g.gain.setValueAtTime(v||.12,s);g.gain.exponentialRampToValueAtTime(.001,s+d);o.connect(g);g.connect(AC.destination);o.start(s);o.stop(s+d+.02)}catch(e){}}
+function buzz(p){try{navigator.vibrate&&navigator.vibrate(p)}catch(e){}}
+var sfx={
+ elim:function(n){tone(260+n*55,.12,"square",.06);buzz(12)},
+ win:function(){[523,659,784,1047].forEach(function(f,k){tone(f,.28,"triangle",.16,k*.09)});tone(1568,.18,"sine",.08,.5);tone(2093,.25,"sine",.08,.58);buzz([20,40,20])},
+ lose:function(){tone(330,.3,"sawtooth",.07);tone(233,.5,"sawtooth",.07,.2);buzz([60,40,90])},
+ tap:function(){tone(520,.06,"sine",.06)}};
+function floatTxt(t){var p=$("cpill").getBoundingClientRect(),s=document.createElement("span");s.className="float";s.textContent=t;
+ s.style.left=(p.left+10)+"px";s.style.top=(p.bottom+4)+"px";document.body.appendChild(s);setTimeout(function(){s.remove()},1200)}
+function bump(){var p=$("cpill");p.classList.remove("bump");void p.offsetWidth;p.classList.add("bump")}
+function shake(){var g=$("grid");g.classList.remove("shake");void g.offsetWidth;g.classList.add("shake")}
+function confetti(){if(RM)return;var cv=$("fx"),x=cv.getContext("2d"),W=cv.width=innerWidth,H=cv.height=innerHeight,cols=["#f7c83d","#3ecf6e","#e5484d","#4c8dff","#ff7ac8"],P=[],t0=performance.now();
+ for(var i=0;i<140;i++)P.push({x:W/2,y:H*.35,vx:(Math.random()-.5)*14,vy:-Math.random()*14-4,r:Math.random()*6.28,vr:(Math.random()-.5)*.4,s:6+Math.random()*6,c:cols[i%5]});
+ (function f(t){x.clearRect(0,0,W,H);var k=(t-t0)/1800;if(k>1)return;P.forEach(function(p){p.vy+=.45;p.vx*=.99;p.x+=p.vx;p.y+=p.vy;p.r+=p.vr;
+  x.save();x.globalAlpha=1-k;x.translate(p.x,p.y);x.rotate(p.r);x.fillStyle=p.c;x.fillRect(-p.s/2,-p.s/4,p.s,p.s/2);x.restore()});requestAnimationFrame(f)})(t0)}
+
+// --- screens ---
+function menu(){hide();$("game").style.display="none";$("menu").style.display="flex";$("coins").textContent=coins;
+ $("menu").innerHTML="<h1>ELIMINATE</h1><div class='stats'><span class='stat streak'>🔥 STREAK "+streak+"</span><span class='stat'>🏅 BEST "+best+"</span></div>"+
+  CATS.map(function(c,i){var s=solved(c),n=c.r.length;return '<button class="cat" data-c="'+i+'">'+c.e+" "+c.n.toUpperCase()+
+   "<small><span>"+n+" rounds</span><span>"+(s===n?"★ COMPLETE":s+"/"+n+" solved")+'</span></small><div class="pb"><i style="width:'+(s/n*100)+'%"></i></div></button>'}).join("")+
+  '<div class="sub">Tap 📷 in a round, then tap any tile to add a photo from your phone.</div>'}
+$("menu").onclick=function(e){var b=e.target.closest(".cat");if(!b)return;sfx.tap();ci=+b.dataset.c;ri=0;runOk=0;start()};
+function start(){var c=CATS[ci],r=c.r[ri];hide();$("menu").style.display="none";$("game").style.display="flex";
+ items=shuffle(r.items);out=[];hist=[];over=false;last=-1;
  var v=items.map(function(x){return x[1]});corr=v.indexOf(r.best==="min"?Math.min.apply(0,v):Math.max.apply(0,v));
- $("q1").textContent=r.q[0];$("q2").textContent=r.q[1];$("q3").textContent=r.q[2];$("sheet").classList.remove("show");render()}
+ $("rn").textContent=c.e+" ROUND "+(ri+1)+"/"+c.r.length+(prog[key(c,r)]?" ★":"");
+ $("q1").textContent=r.q[0];$("q2").textContent=r.q[1];$("q3").textContent=r.q[2];render();scrollTo(0,0)}
 function render(){var r=CATS[ci].r[ri],left=items.length-out.length;
- $("sub").textContent=edit?"PHOTO MODE: TAP A TILE":(out.length?(left-1)+" TO ELIMINATE":"ELIMINATE ALL BUT ONE");
- $("coins").textContent=coins;$("undo").disabled=!hist.length||coins<30||over==="win";$("cam").className="pill"+(edit?" on":"");
+ $("sub").textContent=edit?"PHOTO MODE: TAP A TILE":over==="win"?"NAILED IT!":over==="lose"?"WRONG ONE!":(out.length?(left-1)+" TO ELIMINATE":"ELIMINATE ALL BUT ONE");
+ $("coins").textContent=coins;$("stk").textContent=streak?"🔥 "+streak:"";
+ $("undo").disabled=!hist.length||coins<UNDO||over==="win";$("skip").innerHTML=over?"NEXT ▶":"▶| SKIP";$("cam").className="pill"+(edit?" on":"");
  $("grid").innerHTML=items.map(function(it,i){var o=out.indexOf(i)>-1,cls=o?"out":"";
-  if(over==="win"&&!o)cls="win";if(over==="lose"&&i===corr)cls="win";if(over==="lose"&&!o)cls="bad";
-  var show=o||over;
-  var inner=IM[it[0]]?'<img src="'+IM[it[0]]+'" alt="">':it[0].charAt(0);
-  return '<div class="cell '+cls+(show?" show":"")+'" data-i="'+i+'"><div class="tile" style="background:hsl('+(i*47+20)+',45%,42%)">'+inner+'</div><div class="lab">'+(show?fmt(r,it[1]):it[0])+'</div></div>'}).join("")}
-$("grid").onclick=function(e){var c=e.target.closest(".cell");if(!c)return;var i=+c.dataset.i;
+  if(over==="win"&&!o)cls="win";if(over==="lose"&&i===corr)cls="out bad";
+  if(i===last)cls+=" pop";var show=o||over==="win";
+  var inner=IM[it[0]]?'<img src="'+IM[it[0]]+'" alt="">':"<span>"+it[0].charAt(0)+"</span>";
+  return '<button class="cell '+cls+(show?" show":"")+'" data-i="'+i+'"'+(o||over?" aria-disabled=true":"")+'><div class="tile" style="background:hsl('+(i*47+20)+',45%,42%)">'+inner+'</div><div class="lab">'+(show?fmt(r,it[1]):it[0])+'</div></button>'}).join("")}
+$("grid").onclick=function(e){var c=e.target.closest(".cell");if(!c)return;var i=+c.dataset.i,r=CATS[ci].r[ri];
  if(edit){pend=items[i][0];$("file").click();return}
  if(over||out.indexOf(i)>-1)return;
- out.push(i);hist.push(i);
- if(items.length-out.length===1){
-  if(out.indexOf(corr)>-1){over="lose";render();sheet("YOU LOST!","The answer was "+items[corr][0]+" ("+fmt(CATS[ci].r[ri],items[corr][1])+").")}
-  else{over="win";coins+=10;save();render();sheet("YOU GOT IT!","+10 coins")}
-  return}
- render()};
+ out.push(i);hist.push(i);last=i;
+ if(i===corr){over="lose";lostStreak=streak;streak=0;save();render();shake();sfx.lose();
+  var b=[["MOVE ON ▶",nxt,"y"]];if(coins>=UNDO)b.unshift(["↺ UNDO · 30",undo,""]);
+  sheet("❌ YOU LOST!","You knocked out the answer: "+items[corr][0]+" ("+fmt(r,items[corr][1])+")."+(lostStreak>1?" Undo to keep your 🔥"+lostStreak+" streak.":""),b,450)}
+ else if(items.length-out.length===1){over="win";var bonus=Math.min(streak,5)*2;streak++;best=Math.max(best,streak);coins+=WIN+bonus;
+  runOk++;prog[key(CATS[ci],r)]=1;save();render();sfx.win();confetti();bump();floatTxt("+"+(WIN+bonus));
+  sheet("🎉 YOU GOT IT!","+"+WIN+" coins"+(bonus?" · +"+bonus+" streak bonus":"")+(streak>1?" · 🔥 "+streak+" in a row":""),[["NEXT ▶",nxt,"y"]],600)}
+ else{render();sfx.elim(out.length)}};
 $("file").onchange=function(){var f=this.files[0];this.value="";if(!f||!pend)return;var n=pend,u=URL.createObjectURL(f),im=new Image();
  im.onload=function(){var s=Math.min(im.width,im.height),cv=document.createElement("canvas");cv.width=cv.height=220;
   cv.getContext("2d").drawImage(im,(im.width-s)/2,(im.height-s)/2,s,s,0,0,220,220);IM[n]=cv.toDataURL("image/jpeg",.8);
-  try{localStorage.setItem("elim_img",JSON.stringify(IM))}catch(e){}URL.revokeObjectURL(u);render()};im.src=u};
-$("cam").onclick=function(){edit=!edit;if($("game").style.display!=="none")render();else $("cam").className="pill"+(edit?" on":"")};
-$("undo").onclick=function(){if(!hist.length||coins<30||over==="win")return;coins-=30;save();var i=hist.pop();out.splice(out.indexOf(i),1);if(over){over=false;$("sheet").classList.remove("show")}render()};
-function nxt(){ri++;if(ri>=CATS[ci].r.length)menu();else start()}
-$("skip").onclick=nxt;$("next").onclick=nxt;$("home").onclick=menu;
-function sheet(t,p){$("st").textContent=t;$("sp").textContent=p;setTimeout(function(){$("sheet").classList.add("show")},500)}
+  try{localStorage.setItem("elim_img",JSON.stringify(IM))}catch(e){alert("Not enough space on this device to save more photos.")}URL.revokeObjectURL(u);render()};im.src=u};
+$("cam").onclick=function(){if($("game").style.display==="none")return;edit=!edit;render()};
+$("snd").onclick=function(){mute=!mute;save();$("snd").textContent=mute?"🔇":"🔊";sfx.tap()};
+function undo(){if(!hist.length||coins<UNDO||over==="win")return;coins-=UNDO;var i=hist.pop();out.splice(out.indexOf(i),1);last=-1;
+ if(over==="lose"){over=false;streak=lostStreak;hide()}save();sfx.tap();bump();floatTxt("−"+UNDO);render()}
+$("undo").onclick=undo;
+function nxt(){if(!over){streak=0;save()}ri++;if(ri>=CATS[ci].r.length)summary();else start()}
+function summary(){var c=CATS[ci],n=c.r.length,s=solved(c);
+ sheet(runOk===n?"🏆 PERFECT RUN!":"✅ CATEGORY DONE!","You got "+runOk+"/"+n+" this run · "+(s===n?"★ every round solved":s+"/"+n+" solved overall"),
+  [["↻ REPLAY",function(){ri=0;runOk=0;start()},""],["MENU",menu,"y"]],0);if(runOk===n){confetti();sfx.win()}}
+$("skip").onclick=function(){sfx.tap();nxt()};$("home").onclick=function(){edit=false;menu()};
+function sheet(t,p,btns,d){clearTimeout(stT);$("st").textContent=t;$("sp").textContent=p;var sb=$("sb");sb.innerHTML="";
+ btns.forEach(function(b){var e=document.createElement("button");e.className="btn "+b[2];e.textContent=b[0];e.onclick=b[1];sb.appendChild(e)});
+ stT=setTimeout(function(){$("sheet").classList.add("show")},d||0)}
+function hide(){clearTimeout(stT);$("sheet").classList.remove("show")}
+$("snd").textContent=mute?"🔇":"🔊";
 menu();
 </script></body></html>
