@@ -249,8 +249,7 @@
   "ar": "أحمد شوبير",
   "ar_hint": "لاعب كرة",
   "logo": false,
-  "skip": true,
-  "review": true
+  "skip": true
  },
  {
   "name": "Nader El-Sayed",
@@ -412,8 +411,7 @@
   "ar": "استاد الجيش بالسويس",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": false
  },
  {
   "name": "Arab Contractors Stadium",
@@ -485,8 +483,7 @@
   "ar": "شوقي غريب",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": false
  },
  {
   "name": "Hossam El-Badry",
@@ -495,8 +492,7 @@
   "ar": "حسام البدري",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": false
  },
  {
   "name": "Ehab Galal",
@@ -541,8 +537,7 @@
   "ar": "حسني عبد ربه",
   "ar_hint": "لاعب كرة",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": false
  },
  {
   "name": "Ahmed Fathy",
@@ -1532,8 +1527,7 @@
   "ar": "ياسمين عبد العزيز",
   "ar_hint": "ممثلة",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": false
  },
  {
   "name": "Menna Shalaby",
@@ -1588,8 +1582,7 @@
   "ar": "إسماعيلية رايح جاي",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": true,
-  "review": true
+  "skip": true
  },
  {
   "name": "El Limby",
@@ -1599,7 +1592,7 @@
   "ar_hint": "فيلم",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/ar/2/26/%D8%BA%D9%84%D8%A7%D9%81_%D8%A7%D9%84%D9%84%D9%85%D8%A8%D9%8A_%282002%29.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "The Yacoubian Building",
@@ -1717,8 +1710,7 @@
   "ar": "محمد سعد",
   "ar_hint": "ممثل",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": false
  },
  {
   "name": "Ahmed Ezz",
@@ -1800,7 +1792,7 @@
   "ar_hint": "فيلم",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/ar/5/59/%D8%BA%D9%84%D8%A7%D9%81_%D8%B5%D8%B9%D9%8A%D8%AF%D9%8A_%D9%81%D9%8A_%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D8%A9_%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A9_%281998%29.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Hammam fi Amsterdam",
@@ -1865,7 +1857,7 @@
   "ar_hint": "فيلم",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/en/7/7f/Sons_of_Rizk_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "El Mamar",
@@ -1913,8 +1905,7 @@
   "ar_hint": "فيلم",
   "logo": false,
   "skip": false,
-  "url": "https://upload.wikimedia.org/wikipedia/ar/d/d0/%D9%81%D9%8A%D9%84%D9%85_%D8%A7%D9%84%D8%B2%D9%88%D8%AC%D8%A9_%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/ar/d/d0/%D9%81%D9%8A%D9%84%D9%85_%D8%A7%D9%84%D8%B2%D9%88%D8%AC%D8%A9_%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Shei' Men El Khof",
@@ -2041,8 +2032,8 @@
   "ar": "علي ربيع",
   "ar_hint": "ممثل",
   "logo": false,
-  "skip": true,
-  "review": true
+  "skip": false,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Ali_Rabee.png/500px-Ali_Rabee.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Harameya fi KG2",
@@ -2114,8 +2105,8 @@
   "ar": "البدلة",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": true,
-  "review": true
+  "skip": false,
+  "url": "https://upload.wikimedia.org/wikipedia/ar/5/57/%D9%85%D9%84%D8%B5%D9%82_%D9%81%D9%8A%D9%84%D9%85_%D8%A7%D9%84%D8%A8%D8%AF%D9%84%D8%A9.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Wahed Tany",
@@ -2124,8 +2115,8 @@
   "ar": "واحد تاني",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": true,
-  "review": true
+  "skip": false,
+  "url": "https://upload.wikimedia.org/wikipedia/ar/e/ed/%D9%85%D9%84%D8%B5%D9%82_%D9%81%D9%8A%D9%84%D9%85_%D9%88%D8%A7%D8%AD%D8%AF_%D8%AA%D8%A7%D9%86%D9%8A.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Anthony Hopkins",
@@ -2549,7 +2540,7 @@
   "ar_hint": "مسلسل",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/ar/9/98/%D8%B9%D8%A8%D8%AF_%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86_%D8%A3%D8%A8%D9%88_%D8%B2%D9%87%D8%B1%D8%A9.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Bakkar",
@@ -2558,8 +2549,7 @@
   "ar": "بكار",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": false
  },
  {
   "name": "El Kabeer Awy",
@@ -2608,7 +2598,7 @@
   "ar_hint": "مسلسل",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/%D9%85%D8%AD%D9%85%D8%AF_%D8%B1%D9%85%D8%B6%D8%A7%D9%86.jpg/500px-%D9%85%D8%AD%D9%85%D8%AF_%D8%B1%D9%85%D8%B6%D8%A7%D9%86.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
  },
  {
   "name": "El Hashashin",
@@ -2689,8 +2679,8 @@
   "ar": "أرابيسك",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": true,
-  "review": true
+  "skip": false,
+  "url": "https://upload.wikimedia.org/wikipedia/ar/4/42/%D8%A3%D8%B1%D8%A7%D8%A8%D9%8A%D8%B3%D9%83.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Hadeeth El Sabah wel Masaa",
@@ -2735,8 +2725,7 @@
   "ar": "سابع جار",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": false
  },
  {
   "name": "Paranormal",
@@ -2755,7 +2744,7 @@
   "ar_hint": "مسلسل",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/ar/8/84/%D9%85%D9%84%D8%B5%D9%82_%D9%85%D8%B3%D9%84%D8%B3%D9%84_%D8%A3%D8%B4%D8%BA%D8%A7%D9%84_%D8%B4%D9%82%D8%A9.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Prison Break",
@@ -2773,8 +2762,8 @@
   "ar": "بيكي بلايندرز",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": true,
-  "review": true
+  "skip": false,
+  "url": "https://upload.wikimedia.org/wikipedia/ar/d/d0/Peaky_Blinders_The_Immortal_Man_AR_poster.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Stranger Things",
@@ -3027,7 +3016,7 @@
   "ar_hint": "مطرب",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Hamaki_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Tamer Hosny",
@@ -3135,8 +3124,7 @@
   "ar": "محمد فؤاد",
   "ar_hint": "مطرب",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": false
  },
  {
   "name": "Hisham Abbas",
@@ -3190,8 +3178,7 @@
   "ar": "مروان بابلو",
   "ar_hint": "مطرب",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": false
  },
  {
   "name": "Wegz",
@@ -3228,7 +3215,7 @@
   "ar_hint": "أغنية",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/ar/e/e0/Tamally-maak.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Allem Alby",
@@ -3292,7 +3279,7 @@
   "ar_hint": "أغنية",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Abdel_wahab.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Ahwak",
@@ -3364,8 +3351,7 @@
   "ar": "علّي صوتك",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": false
  },
  {
   "name": "Habibi Dah",
@@ -3375,7 +3361,7 @@
   "ar_hint": "أغنية",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Hisham_Abbas_2008-07-15_Cairo.jpg/500px-Hisham_Abbas_2008-07-15_Cairo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Garh Tany",
@@ -3403,7 +3389,7 @@
   "ar_hint": "أغنية",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/ar/5/57/Tamer_Hosny_Ennayah_Bethebbak.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Naweeha",
@@ -3413,7 +3399,7 @@
   "ar_hint": "أغنية",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Mohamed_Hamaki_2.jpg/500px-Mohamed_Hamaki_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Ya El Midan",
@@ -3422,8 +3408,8 @@
   "ar": "يا الميدان",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": true,
-  "review": true
+  "skip": false,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Cairokee.band.jpg/500px-Cairokee.band.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
  },
  {
   "name": "Ezzay",
@@ -3432,8 +3418,7 @@
   "ar": "إزاي",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": true,
-  "review": true
+  "skip": true
  },
  {
   "name": "Number One",
@@ -3442,8 +3427,8 @@
   "ar": "نمبر وان",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": true,
-  "review": true
+  "skip": false,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/%D9%85%D8%AD%D9%85%D8%AF_%D8%B1%D9%85%D8%B6%D8%A7%D9%86.jpg/500px-%D9%85%D8%AD%D9%85%D8%AF_%D8%B1%D9%85%D8%B6%D8%A7%D9%86.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
  },
  {
   "name": "El Bakht",
@@ -3623,8 +3608,8 @@
   "ar": "دكتور دري",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
-  "review": true
+  "skip": false,
+  "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Dr._Dre_in_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Jay-Z",
@@ -4011,8 +3996,7 @@
   "ar": "يحيى وكنوز",
   "ar_hint": "كرتون",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": false
  },
  {
   "name": "Mofeed Fawzy",
@@ -4048,8 +4032,7 @@
   "ar": "لميس الحديدي",
   "ar_hint": "مذيع",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": false
  },
  {
   "name": "Amr El-Leithy",
@@ -4067,8 +4050,7 @@
   "ar": "تامر أمين",
   "ar_hint": "مذيع",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": false
  },
  {
   "name": "Ramez Galal",
@@ -5877,8 +5859,7 @@
   "ar": "المنيوز",
   "ar_hint": "",
   "logo": true,
-  "skip": false,
-  "review": true
+  "skip": false
  },
  {
   "name": "Vezeeta",
@@ -5887,8 +5868,7 @@
   "ar": "فيزيتا",
   "ar_hint": "",
   "logo": true,
-  "skip": false,
-  "review": true
+  "skip": false
  },
  {
   "name": "Paymob",
@@ -5898,7 +5878,7 @@
   "ar_hint": "",
   "logo": true,
   "skip": false,
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Paymob.png/500px-Paymob.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Breadfast",
@@ -5907,8 +5887,7 @@
   "ar": "بريدفاست",
   "ar_hint": "",
   "logo": true,
-  "skip": false,
-  "review": true
+  "skip": false
  },
  {
   "name": "MaxAB",
@@ -5917,8 +5896,7 @@
   "ar": "ماكس أب",
   "ar_hint": "",
   "logo": true,
-  "skip": false,
-  "review": true
+  "skip": false
  },
  {
   "name": "Khazna",
@@ -5927,8 +5905,7 @@
   "ar": "خزنة",
   "ar_hint": "",
   "logo": true,
-  "skip": true,
-  "review": true
+  "skip": true
  },
  {
   "name": "Elsewedy Electric",
@@ -5955,8 +5932,7 @@
   "ar": "فلفلة",
   "ar_hint": "شركة",
   "logo": true,
-  "skip": false,
-  "review": true
+  "skip": false
  },
  {
   "name": "Elaraby",
@@ -5974,8 +5950,7 @@
   "ar": "مؤمن",
   "ar_hint": "شركة",
   "logo": true,
-  "skip": false,
-  "review": true
+  "skip": false
  },
  {
   "name": "Cook Door",
@@ -5993,8 +5968,7 @@
   "ar": "بافلو برجر",
   "ar_hint": "شركة",
   "logo": true,
-  "skip": true,
-  "review": true
+  "skip": true
  },
  {
   "name": "Zooba",
@@ -6003,7 +5977,7 @@
   "ar": "زووبا",
   "ar_hint": "شركة",
   "logo": true,
-  "skip": true,
-  "review": true
+  "skip": false,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Zooba-koshari.jpg/500px-Zooba-koshari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  }
 ]
