@@ -154,6 +154,18 @@ def main():
     for i in range(0, len(items), 40):
         pages.update(by_titles(items[i:i + 40]))
     out, report, miss, cands = {}, {}, [], {}
+    # A failed lookup or download keeps the photo from the last run, so a flaky request doesn't lose it.
+    try:
+        prev = json.load(open("tools/photos.json"))
+        prev_report = json.load(open("tools/photos-report.json"))
+    except (OSError, ValueError):
+        prev, prev_report = {}, {}
+
+    def keep_previous(name):
+        if name in prev:
+            out[name], report[name] = prev[name], prev_report.get(name, "previous run")
+        else:
+            miss.append(name)
     for x in items:
         if x.get("review"):
             try:
@@ -185,14 +197,14 @@ def main():
         except Exception as e:
             print("lookup failed", x["name"], e)
         if not url:
-            miss.append(x["name"])
+            keep_previous(x["name"])
             continue
         try:
             out[x["name"]] = to_uri(url)
             report[x["name"]] = src
         except Exception as e:
             print("failed", x["name"], e)
-            miss.append(x["name"])
+            keep_previous(x["name"])
         time.sleep(0.2)
     json.dump(out, open("tools/photos.json", "w"), ensure_ascii=False, separators=(",", ":"))
     json.dump(report, open("tools/photos-report.json", "w"), ensure_ascii=False, indent=1)
