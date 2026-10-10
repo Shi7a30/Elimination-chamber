@@ -352,6 +352,213 @@
   "skip": false
  },
  {
+  "name": "Olympic Club",
+  "title": "Olympic Club (Egypt)",
+  "hint": "Egyptian football club",
+  "ar": "الأوليمبي",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Tersana",
+  "title": "Tersana SC",
+  "hint": "Egyptian football club",
+  "ar": "الترسانة",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ghazl El Mahalla",
+  "title": "Ghazl El Mahalla SC",
+  "hint": "Egyptian football club",
+  "ar": "غزل المحلة",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Misr Stadium",
+  "title": "New Administrative Capital Stadium",
+  "hint": "stadium",
+  "ar": "استاد مصر (العاصمة الإدارية)",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Borg El Arab Stadium",
+  "title": "Borg El Arab Stadium",
+  "hint": "stadium",
+  "ar": "استاد برج العرب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Cairo International Stadium",
+  "title": "Cairo International Stadium",
+  "hint": "stadium",
+  "ar": "استاد القاهرة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Egyptian Army Stadium (Suez)",
+  "title": "Egyptian Army Stadium",
+  "hint": "stadium",
+  "ar": "استاد الجيش بالسويس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Arab Contractors Stadium",
+  "title": "Osman Ahmed Osman Stadium",
+  "hint": "stadium",
+  "ar": "استاد المقاولون العرب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Al Salam Stadium",
+  "title": "Al Salam Stadium (Egypt)",
+  "hint": "stadium",
+  "ar": "استاد السلام",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "30 June Stadium",
+  "title": "30 June Stadium",
+  "hint": "stadium",
+  "ar": "استاد 30 يونيو (الدفاع الجوي)",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Military Academy Stadium",
+  "title": "Cairo Military Academy Stadium",
+  "hint": "stadium",
+  "ar": "استاد الكلية الحربية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Suez Stadium",
+  "title": "Suez Stadium",
+  "hint": "stadium",
+  "ar": "استاد السويس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mahmoud El-Gohary",
+  "title": "Mahmoud El-Gohary",
+  "hint": "Egyptian football manager",
+  "ar": "محمود الجوهري",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Farouk Gaafar",
+  "title": "Farouk Gaafar",
+  "hint": "Egyptian football manager",
+  "ar": "فاروق جعفر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Shawky Gharib",
+  "title": "Shawky Gharieb",
+  "hint": "Egyptian football manager",
+  "ar": "شوقي غريب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Hossam El-Badry",
+  "title": "Hossam El Badry",
+  "hint": "Egyptian football manager",
+  "ar": "حسام البدري",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ehab Galal",
+  "title": "Ehab Galal",
+  "hint": "Egyptian football manager",
+  "ar": "إيهاب جلال",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Wael Gomaa",
+  "title": "Wael Gomaa",
+  "hint": "Egyptian footballer",
+  "ar": "وائل جمعة",
+  "ar_hint": "لاعب كرة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mohamed Barakat",
+  "title": "Mohamed Barakat",
+  "hint": "Egyptian footballer",
+  "ar": "محمد بركات",
+  "ar_hint": "لاعب كرة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Emad Moteab",
+  "title": "Emad Moteab",
+  "hint": "Egyptian footballer",
+  "ar": "عماد متعب",
+  "ar_hint": "لاعب كرة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Hosny Abd Rabo",
+  "title": "Hosny Abd Rabo",
+  "hint": "Egyptian footballer",
+  "ar": "حسني عبد ربه",
+  "ar_hint": "لاعب كرة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ahmed Fathy",
+  "title": "Ahmed Fathy",
+  "hint": "Egyptian footballer",
+  "ar": "أحمد فتحي",
+  "ar_hint": "لاعب كرة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mahmoud 'Shikabala' Abdel Razek",
+  "title": "Shikabala",
+  "hint": "Egyptian footballer",
+  "ar": "محمود عبد الرازق (شيكابالا)",
+  "ar_hint": "لاعب كرة",
+  "logo": false,
+  "skip": false
+ },
+ {
   "name": "TP Mazembe",
   "title": "TP Mazembe",
   "hint": "football club",
@@ -690,6 +897,249 @@
   "hint": "footballer",
   "ar": "فرانز بيكنباور",
   "ar_hint": "لاعب كرة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Brazil",
+  "title": "Brazil",
+  "hint": "country",
+  "ar": "البرازيل",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Germany",
+  "title": "Germany",
+  "hint": "country",
+  "ar": "ألمانيا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Italy",
+  "title": "Italy",
+  "hint": "country",
+  "ar": "إيطاليا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Argentina",
+  "title": "Argentina",
+  "hint": "country",
+  "ar": "الأرجنتين",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "France",
+  "title": "France",
+  "hint": "country",
+  "ar": "فرنسا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Uruguay",
+  "title": "Uruguay",
+  "hint": "country",
+  "ar": "أوروجواي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Spain",
+  "title": "Spain",
+  "hint": "country",
+  "ar": "إسبانيا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "England",
+  "title": "England",
+  "hint": "country",
+  "ar": "إنجلترا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Netherlands",
+  "title": "Netherlands",
+  "hint": "country",
+  "ar": "هولندا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Real Madrid",
+  "title": "Real Madrid CF",
+  "hint": "football club",
+  "ar": "ريال مدريد",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "AC Milan",
+  "title": "AC Milan",
+  "hint": "football club",
+  "ar": "ميلان",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Bayern Munich",
+  "title": "FC Bayern Munich",
+  "hint": "football club",
+  "ar": "بايرن ميونخ",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Liverpool",
+  "title": "Liverpool F.C.",
+  "hint": "football club",
+  "ar": "ليفربول",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Barcelona",
+  "title": "FC Barcelona",
+  "hint": "football club",
+  "ar": "برشلونة",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ajax",
+  "title": "AFC Ajax",
+  "hint": "football club",
+  "ar": "أياكس",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Inter Milan",
+  "title": "Inter Milan",
+  "hint": "football club",
+  "ar": "الإنتر",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Manchester United",
+  "title": "Manchester United F.C.",
+  "hint": "football club",
+  "ar": "مانشستر يونايتد",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Paris Saint-Germain",
+  "title": "Paris Saint-Germain F.C.",
+  "hint": "football club",
+  "ar": "باريس سان جيرمان",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Alex Ferguson",
+  "title": "Alex Ferguson",
+  "hint": "football manager",
+  "ar": "أليكس فيرجسون",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Arsène Wenger",
+  "title": "Arsène Wenger",
+  "hint": "football manager",
+  "ar": "أرسين فينجر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Carlo Ancelotti",
+  "title": "Carlo Ancelotti",
+  "hint": "football manager",
+  "ar": "كارلو أنشيلوتي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "José Mourinho",
+  "title": "José Mourinho",
+  "hint": "football manager",
+  "ar": "جوزيه مورينيو",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Jürgen Klopp",
+  "title": "Jürgen Klopp",
+  "hint": "football manager",
+  "ar": "يورجن كلوب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Antonio Conte",
+  "title": "Antonio Conte",
+  "hint": "football manager",
+  "ar": "أنطونيو كونتي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Diego Simeone",
+  "title": "Diego Simeone",
+  "hint": "football manager",
+  "ar": "دييجو سيميوني",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Pep Guardiola",
+  "title": "Pep Guardiola",
+  "hint": "football manager",
+  "ar": "بيب جوارديولا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mikel Arteta",
+  "title": "Mikel Arteta",
+  "hint": "football manager",
+  "ar": "ميكيل أرتيتا",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -1063,10 +1513,10 @@
   "skip": false
  },
  {
-  "name": "Hend Sabry",
-  "title": "Hend Sabry",
+  "name": "Mona Zaki",
+  "title": "Mona Zaki",
   "hint": "Egyptian actress",
-  "ar": "هند صبري",
+  "ar": "منى زكي",
   "ar_hint": "ممثلة",
   "logo": false,
   "skip": false
@@ -1116,7 +1566,7 @@
   "ar_hint": "فيلم",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/ar/9/97/%D8%BA%D9%84%D8%A7%D9%81_%D8%AE%D9%84%D9%8A_%D8%A8%D8%A7%D9%84%D9%83_%D9%85%D9%86_%D8%B2%D9%88%D8%B2%D9%88_%281972%29.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Terrorism and Kebab",
@@ -1236,7 +1686,7 @@
   "ar_hint": "ممثل",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Rushdy_Abaza.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Emad Hamdy",
@@ -1382,7 +1832,7 @@
   "ar_hint": "فيلم",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/ar/2/28/%D9%81%D9%8A%D9%84%D9%85_%D9%85%D8%A7%D9%81%D9%8A%D8%A7.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Tito",
@@ -1419,8 +1869,8 @@
   "ar": "الممر",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": true,
-  "review": true
+  "skip": false,
+  "url": "https://upload.wikimedia.org/wikipedia/ar/f/fb/%D8%A8%D9%88%D8%B3%D8%AA%D8%B1_%D9%81%D9%8A%D9%84%D9%85_%D8%A7%D9%84%D9%85%D9%85%D8%B1.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Ghazal El Banat",
@@ -1448,7 +1898,7 @@
   "ar_hint": "فيلم",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/ar/d/d4/%D9%85%D9%84%D8%B5%D9%82_%D9%81%D9%8A%D9%84%D9%85_%D8%A7%D9%84%D8%AD%D8%B1%D8%A7%D9%85_%281965%29.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "El Zoga El Tanya",
@@ -1457,8 +1907,8 @@
   "ar": "الزوجة الثانية",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": true,
-  "review": true
+  "skip": false,
+  "url": "https://upload.wikimedia.org/wikipedia/ar/d/d0/%D9%81%D9%8A%D9%84%D9%85_%D8%A7%D9%84%D8%B2%D9%88%D8%AC%D8%A9_%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Shei' Men El Khof",
@@ -1486,7 +1936,7 @@
   "ar_hint": "فيلم",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/ar/8/88/%D8%B3%D9%88%D8%A7%D9%82_%D8%A7%D9%84%D8%A3%D8%AA%D9%88%D8%A8%D9%8A%D8%B3.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "El Bary'",
@@ -1502,6 +1952,330 @@
   "title": "The Kit Kat",
   "hint": "Egyptian film",
   "ar": "الكيت كات",
+  "ar_hint": "فيلم",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Samir Ghanem",
+  "title": "Samir Ghanem",
+  "hint": "Egyptian actor",
+  "ar": "سمير غانم",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mohamed Sobhi",
+  "title": "Mohamed Sobhi (actor)",
+  "hint": "Egyptian actor",
+  "ar": "محمد صبحي",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Talaat Zakaria",
+  "title": "Talaat Zakaria",
+  "hint": "Egyptian actor",
+  "ar": "طلعت زكريا",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ashraf Abdel Baky",
+  "title": "Ashraf Abdel Baky",
+  "hint": "Egyptian actor",
+  "ar": "أشرف عبد الباقي",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Bayoumi Fouad",
+  "title": "Bayoumi Fouad",
+  "hint": "Egyptian actor",
+  "ar": "بيومي فؤاد",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Maged El Kedwany",
+  "title": "Maged El Kedwany",
+  "hint": "Egyptian actor",
+  "ar": "ماجد الكدواني",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Hisham Maged",
+  "title": "Hisham Maged",
+  "hint": "Egyptian actor",
+  "ar": "هشام ماجد",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mostafa Khater",
+  "title": "Mostafa Khater",
+  "hint": "Egyptian actor",
+  "ar": "مصطفى خاطر",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ali Rabie",
+  "title": "Ali Rabie",
+  "hint": "Egyptian actor",
+  "ar": "علي ربيع",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Harameya fi KG2",
+  "title": "Thieves in KG2",
+  "hint": "Egyptian film",
+  "ar": "حرامية في كي جي تو",
+  "ar_hint": "فيلم",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mido Mashakel",
+  "title": "Mido Mashakel",
+  "hint": "Egyptian film",
+  "ar": "ميدو مشاكل",
+  "ar_hint": "فيلم",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Zaki Chan",
+  "title": "Zaki Chan",
+  "hint": "Egyptian film",
+  "ar": "زكي شان",
+  "ar_hint": "فيلم",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Keda Reda",
+  "title": "Keda Reda",
+  "hint": "Egyptian film",
+  "ar": "كده رضا",
+  "ar_hint": "فيلم",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "1000 Mabrouk",
+  "title": "1000 Mabrouk",
+  "hint": "Egyptian film",
+  "ar": "ألف مبروك",
+  "ar_hint": "فيلم",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Asal Eswed",
+  "title": "Asal Eswed",
+  "hint": "Egyptian film",
+  "ar": "عسل إسود",
+  "ar_hint": "فيلم",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "X-Large",
+  "title": "X-Large (film)",
+  "hint": "Egyptian film",
+  "ar": "إكس لارج",
+  "ar_hint": "فيلم",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "El Badla",
+  "title": "El Badla",
+  "hint": "Egyptian film",
+  "ar": "البدلة",
+  "ar_hint": "فيلم",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Wahed Tany",
+  "title": "Wahed Tany",
+  "hint": "Egyptian film",
+  "ar": "واحد تاني",
+  "ar_hint": "فيلم",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Anthony Hopkins",
+  "title": "Anthony Hopkins",
+  "hint": "actor",
+  "ar": "أنتوني هوبكنز",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Denzel Washington",
+  "title": "Denzel Washington",
+  "hint": "actor",
+  "ar": "دنزل واشنطن",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Tom Hanks",
+  "title": "Tom Hanks",
+  "hint": "actor",
+  "ar": "توم هانكس",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Matthew McConaughey",
+  "title": "Matthew McConaughey",
+  "hint": "actor",
+  "ar": "ماثيو ماكونهي",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Leonardo DiCaprio",
+  "title": "Leonardo DiCaprio",
+  "hint": "actor",
+  "ar": "ليوناردو دي كابريو",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Cillian Murphy",
+  "title": "Cillian Murphy",
+  "hint": "actor",
+  "ar": "كيليان مورفي",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Natalie Portman",
+  "title": "Natalie Portman",
+  "hint": "actor",
+  "ar": "ناتالي بورتمان",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Emma Stone",
+  "title": "Emma Stone",
+  "hint": "actor",
+  "ar": "إيما ستون",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Jennifer Lawrence",
+  "title": "Jennifer Lawrence",
+  "hint": "actor",
+  "ar": "جينيفر لورانس",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Toy Story",
+  "title": "Toy Story",
+  "hint": "film",
+  "ar": "توي ستوري",
+  "ar_hint": "فيلم",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Monsters, Inc.",
+  "title": "Monsters, Inc.",
+  "hint": "film",
+  "ar": "مونسترز إنك",
+  "ar_hint": "فيلم",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Finding Nemo",
+  "title": "Finding Nemo",
+  "hint": "film",
+  "ar": "البحث عن نيمو",
+  "ar_hint": "فيلم",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "The Incredibles",
+  "title": "The Incredibles",
+  "hint": "film",
+  "ar": "ذا إنكريديبلز",
+  "ar_hint": "فيلم",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Cars",
+  "title": "Cars (film)",
+  "hint": "film",
+  "ar": "كارز",
+  "ar_hint": "فيلم",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ratatouille",
+  "title": "Ratatouille (film)",
+  "hint": "film",
+  "ar": "راتاتوي",
+  "ar_hint": "فيلم",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Up",
+  "title": "Up (2009 film)",
+  "hint": "film",
+  "ar": "أب",
+  "ar_hint": "فيلم",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Inside Out",
+  "title": "Inside Out (2015 film)",
+  "hint": "film",
+  "ar": "إنسايد آوت",
+  "ar_hint": "فيلم",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Coco",
+  "title": "Coco (2017 film)",
+  "hint": "film",
+  "ar": "كوكو",
   "ar_hint": "فيلم",
   "logo": false,
   "skip": false
@@ -1794,8 +2568,8 @@
   "ar": "جراند أوتيل",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": true,
-  "review": true
+  "skip": false,
+  "url": "https://upload.wikimedia.org/wikipedia/ar/3/3e/%D9%85%D9%84%D8%B5%D9%82_%D9%85%D8%B3%D9%84%D8%B3%D9%84_%D8%AC%D8%B1%D8%A7%D9%86%D8%AF_%D8%A3%D9%88%D8%AA%D9%8A%D9%84_%282016%29.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "El Ostoura",
@@ -1804,8 +2578,8 @@
   "ar": "الأسطورة",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": true,
-  "review": true
+  "skip": false,
+  "url": "https://upload.wikimedia.org/wikipedia/ar/b/b1/%D9%85%D9%84%D8%B5%D9%82_%D8%A7%D9%84%D9%85%D8%B3%D9%84%D8%B3%D9%84_%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A_%D8%A7%D9%84%D8%A3%D8%B3%D8%B7%D9%88%D8%B1%D8%A9.jpeg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "El Ikhtiyar",
@@ -1814,8 +2588,8 @@
   "ar": "الاختيار",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": true,
-  "review": true
+  "skip": false,
+  "url": "https://upload.wikimedia.org/wikipedia/ar/c/c1/%D9%85%D9%84%D8%B5%D9%82_%D9%85%D8%B3%D9%84%D8%B3%D9%84_%D8%A7%D9%84%D8%A7%D8%AE%D8%AA%D9%8A%D8%A7%D8%B1.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Gaafar El Omda",
@@ -1832,6 +2606,186 @@
   "title": "El Hashashin (TV series)",
   "hint": "Egyptian TV series",
   "ar": "الحشاشين",
+  "ar_hint": "مسلسل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Yehia El-Fakharany",
+  "title": "Yehia El-Fakharany",
+  "hint": "Egyptian actor",
+  "ar": "يحيى الفخراني",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mahmoud Hemida",
+  "title": "Mahmoud Hemida",
+  "hint": "Egyptian actor",
+  "ar": "محمود حميدة",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Khaled El Nabawy",
+  "title": "Khaled El Nabawy",
+  "hint": "Egyptian actor",
+  "ar": "خالد النبوي",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Yasser Galal",
+  "title": "Yasser Galal",
+  "hint": "Egyptian actor",
+  "ar": "ياسر جلال",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mostafa Shaban",
+  "title": "Mostafa Shaban",
+  "hint": "Egyptian actor",
+  "ar": "مصطفى شعبان",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Youssef El Sherif",
+  "title": "Youssef El Sherif",
+  "hint": "Egyptian actor",
+  "ar": "يوسف الشريف",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Raafat El Haggan",
+  "title": "Raafat El Haggan",
+  "hint": "Egyptian TV series",
+  "ar": "رأفت الهجان",
+  "ar_hint": "مسلسل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Arabesque",
+  "title": "Arabesque",
+  "hint": "Egyptian TV series",
+  "ar": "أرابيسك",
+  "ar_hint": "مسلسل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Hadeeth El Sabah wel Masaa",
+  "title": "Hadeeth El Sabah wel Masaa",
+  "hint": "Egyptian TV series",
+  "ar": "حديث الصباح والمساء",
+  "ar_hint": "مسلسل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ragel W Set Settat",
+  "title": "Ragel W Set Settat",
+  "hint": "Egyptian TV series",
+  "ar": "راجل وست ستات",
+  "ar_hint": "مسلسل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Taht El Saytara",
+  "title": "Taht El Saytara",
+  "hint": "Egyptian TV series",
+  "ar": "تحت السيطرة",
+  "ar_hint": "مسلسل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Nelly & Sherihan",
+  "title": "Nelly & Sherihan",
+  "hint": "Egyptian TV series",
+  "ar": "نيللي وشريهان",
+  "ar_hint": "مسلسل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Sabe' Gar",
+  "title": "Sabe' Gar",
+  "hint": "Egyptian TV series",
+  "ar": "سابع جار",
+  "ar_hint": "مسلسل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Paranormal",
+  "title": "Paranormal (TV series)",
+  "hint": "Egyptian TV series",
+  "ar": "ما وراء الطبيعة",
+  "ar_hint": "مسلسل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ashghal Shaqqa",
+  "title": "Ashghal Shaqqa",
+  "hint": "Egyptian TV series",
+  "ar": "أشغال شقة",
+  "ar_hint": "مسلسل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Prison Break",
+  "title": "Prison Break",
+  "hint": "TV series",
+  "ar": "بريزون بريك",
+  "ar_hint": "مسلسل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Peaky Blinders",
+  "title": "Peaky Blinders",
+  "hint": "TV series",
+  "ar": "بيكي بلايندرز",
+  "ar_hint": "مسلسل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Stranger Things",
+  "title": "Stranger Things",
+  "hint": "TV series",
+  "ar": "سترينجر ثينجز",
+  "ar_hint": "مسلسل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Money Heist",
+  "title": "Money Heist",
+  "hint": "TV series",
+  "ar": "لا كاسا دي بابيل",
+  "ar_hint": "مسلسل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Squid Game",
+  "title": "Squid Game",
+  "hint": "TV series",
+  "ar": "لعبة الحبار",
   "ar_hint": "مسلسل",
   "logo": false,
   "skip": false
@@ -2318,6 +3272,411 @@
   "skip": false
  },
  {
+  "name": "Ya Msafer Wahdak",
+  "title": "Ya Msafer Wahdak",
+  "hint": "Egyptian song",
+  "ar": "يا مسافر وحدك",
+  "ar_hint": "أغنية",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ahwak",
+  "title": "Ahwak",
+  "hint": "Egyptian song",
+  "ar": "أهواك",
+  "ar_hint": "أغنية",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Enta Omri",
+  "title": "Enta Omri",
+  "hint": "Egyptian song",
+  "ar": "إنت عمري",
+  "ar_hint": "أغنية",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Al Atlal",
+  "title": "Al Atlal",
+  "hint": "Egyptian song",
+  "ar": "الأطلال",
+  "ar_hint": "أغنية",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Alf Leila wa Leila",
+  "title": "Alf Leila wa Leila",
+  "hint": "Egyptian song",
+  "ar": "ألف ليلة وليلة",
+  "ar_hint": "أغنية",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Qariat al-Fingan",
+  "title": "Qariat al-Fingan",
+  "hint": "Egyptian song",
+  "ar": "قارئة الفنجان",
+  "ar_hint": "أغنية",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Shababeek",
+  "title": "Shababeek",
+  "hint": "Egyptian song",
+  "ar": "شبابيك",
+  "ar_hint": "أغنية",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Hadouta Masreya",
+  "title": "Hadouta Masreya",
+  "hint": "Egyptian song",
+  "ar": "حدوتة مصرية",
+  "ar_hint": "أغنية",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ali Sotak",
+  "title": "Ali Sotak",
+  "hint": "Egyptian song",
+  "ar": "علّي صوتك",
+  "ar_hint": "أغنية",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Habibi Dah",
+  "title": "Habibi Dah (Nari Narain)",
+  "hint": "Egyptian song",
+  "ar": "حبيبي ده (ناري نارين)",
+  "ar_hint": "أغنية",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Garh Tany",
+  "title": "Garh Tany",
+  "hint": "Egyptian song",
+  "ar": "جرح تاني",
+  "ar_hint": "أغنية",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Leih Beydary Keda",
+  "title": "Leih Beydary Keda",
+  "hint": "Egyptian song",
+  "ar": "ليه بيداري كده",
+  "ar_hint": "أغنية",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Einaya Bethebak",
+  "title": "Einaya Bethebak",
+  "hint": "Egyptian song",
+  "ar": "عينيا بتحبك",
+  "ar_hint": "أغنية",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Naweeha",
+  "title": "Naweeha",
+  "hint": "Egyptian song",
+  "ar": "ناويها",
+  "ar_hint": "أغنية",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ya El Midan",
+  "title": "Ya El Midan",
+  "hint": "Egyptian song",
+  "ar": "يا الميدان",
+  "ar_hint": "أغنية",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ezzay",
+  "title": "Ezzay",
+  "hint": "Egyptian song",
+  "ar": "إزاي",
+  "ar_hint": "أغنية",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Number One",
+  "title": "Number One",
+  "hint": "Egyptian song",
+  "ar": "نمبر وان",
+  "ar_hint": "أغنية",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "El Bakht",
+  "title": "El Bakht",
+  "hint": "Egyptian song",
+  "ar": "البخت",
+  "ar_hint": "أغنية",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Sayed Darwish",
+  "title": "Sayed Darwish",
+  "hint": "Egyptian singer",
+  "ar": "سيد درويش",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mohamed Abdel Muttalib",
+  "title": "Mohamed Abdel Muttalib",
+  "hint": "Egyptian singer",
+  "ar": "محمد عبد المطلب",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Laila Mourad",
+  "title": "Leila Mourad",
+  "hint": "Egyptian singer",
+  "ar": "ليلى مراد",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mohamed Fawzi",
+  "title": "Mohamed Fawzi (singer)",
+  "hint": "Egyptian singer",
+  "ar": "محمد فوزي",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mohamed Roshdy",
+  "title": "Mohamed Roshdy",
+  "hint": "Egyptian singer",
+  "ar": "محمد رشدي",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Shadia",
+  "title": "Shadia",
+  "hint": "Egyptian singer",
+  "ar": "شادية",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Najat Al Saghira",
+  "title": "Nagat El-Sagheera",
+  "hint": "Egyptian singer",
+  "ar": "نجاة الصغيرة",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ahmed Adaweya",
+  "title": "Ahmed Adaweya",
+  "hint": "Egyptian singer",
+  "ar": "أحمد عدوية",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ali El Haggar",
+  "title": "Ali El Haggar",
+  "hint": "Egyptian singer",
+  "ar": "علي الحجار",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Imagine",
+  "title": "Imagine (John Lennon song)",
+  "hint": "song",
+  "ar": "إيماجن",
+  "ar_hint": "أغنية",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Dancing Queen",
+  "title": "Dancing Queen",
+  "hint": "song",
+  "ar": "دانسينج كوين",
+  "ar_hint": "أغنية",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Careless Whisper",
+  "title": "Careless Whisper",
+  "hint": "song",
+  "ar": "كيرلس ويسبر",
+  "ar_hint": "أغنية",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "My Heart Will Go On",
+  "title": "My Heart Will Go On",
+  "hint": "song",
+  "ar": "ماي هارت ويل جو أون",
+  "ar_hint": "أغنية",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Hips Don't Lie",
+  "title": "Hips Don't Lie",
+  "hint": "song",
+  "ar": "هيبس دونت لاي",
+  "ar_hint": "أغنية",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Waka Waka",
+  "title": "Waka Waka (This Time for Africa)",
+  "hint": "song",
+  "ar": "واكا واكا",
+  "ar_hint": "أغنية",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Gangnam Style",
+  "title": "Gangnam Style",
+  "hint": "song",
+  "ar": "جانجنام ستايل",
+  "ar_hint": "أغنية",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Despacito",
+  "title": "Despacito",
+  "hint": "song",
+  "ar": "ديسباسيتو",
+  "ar_hint": "أغنية",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "APT.",
+  "title": "APT. (song)",
+  "hint": "song",
+  "ar": "آبت",
+  "ar_hint": "أغنية",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Dr. Dre",
+  "title": "Dr. Dre",
+  "hint": "rapper",
+  "ar": "دكتور دري",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Jay-Z",
+  "title": "Jay-Z",
+  "hint": "rapper",
+  "ar": "جاي زي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Tupac Shakur",
+  "title": "Tupac Shakur",
+  "hint": "rapper",
+  "ar": "توباك",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Snoop Dogg",
+  "title": "Snoop Dogg",
+  "hint": "rapper",
+  "ar": "سنوب دوج",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Eminem",
+  "title": "Eminem",
+  "hint": "rapper",
+  "ar": "إيمينيم",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "50 Cent",
+  "title": "50 Cent",
+  "hint": "rapper",
+  "ar": "فيفتي سنت",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Kanye West",
+  "title": "Kanye West",
+  "hint": "rapper",
+  "ar": "كانيي ويست",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Drake",
+  "title": "Drake (musician)",
+  "hint": "rapper",
+  "ar": "دريك",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Cardi B",
+  "title": "Cardi B",
+  "hint": "rapper",
+  "ar": "كاردي بي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
   "name": "Elon Musk",
   "title": "Elon Musk",
   "hint": "celebrity",
@@ -2561,6 +3920,240 @@
   "skip": false
  },
  {
+  "name": "Samir Magazine",
+  "title": "Samir (magazine)",
+  "hint": "Egyptian cartoon",
+  "ar": "مجلة سمير",
+  "ar_hint": "كرتون",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Bogy & Tamtam",
+  "title": "Bogy & Tamtam",
+  "hint": "Egyptian cartoon",
+  "ar": "بوجي وطمطم",
+  "ar_hint": "كرتون",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Alam Simsim",
+  "title": "Alam Simsim",
+  "hint": "Egyptian cartoon",
+  "ar": "عالم سمسم",
+  "ar_hint": "كرتون",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Super Henedy",
+  "title": "Super Henedy",
+  "hint": "Egyptian cartoon",
+  "ar": "سوبر هنيدي",
+  "ar_hint": "كرتون",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Abla Fahita",
+  "title": "Abla Fahita",
+  "hint": "Egyptian cartoon",
+  "ar": "أبلة فاهيتا",
+  "ar_hint": "كرتون",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Qesas El Hayawan fel Quran",
+  "title": "Qesas El Hayawan fel Quran",
+  "hint": "Egyptian cartoon",
+  "ar": "قصص الحيوان في القرآن",
+  "ar_hint": "كرتون",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "The Knight and the Princess",
+  "title": "The Knight and the Princess",
+  "hint": "Egyptian cartoon",
+  "ar": "الفارس والأميرة",
+  "ar_hint": "كرتون",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Yehia w Kenooz",
+  "title": "Yehia w Kenooz",
+  "hint": "Egyptian cartoon",
+  "ar": "يحيى وكنوز",
+  "ar_hint": "كرتون",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mofeed Fawzy",
+  "title": "Mofeed Fawzy",
+  "hint": "Egyptian TV presenter",
+  "ar": "مفيد فوزي",
+  "ar_hint": "مذيع",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Amr Adib",
+  "title": "Amr Adib",
+  "hint": "Egyptian TV presenter",
+  "ar": "عمرو أديب",
+  "ar_hint": "مذيع",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Esaad Younis",
+  "title": "Is'ad Younis",
+  "hint": "Egyptian TV presenter",
+  "ar": "إسعاد يونس",
+  "ar_hint": "مذيع",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Lamees El-Hadidi",
+  "title": "Lamis Elhadidy",
+  "hint": "Egyptian TV presenter",
+  "ar": "لميس الحديدي",
+  "ar_hint": "مذيع",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Amr El-Leithy",
+  "title": "Amr el-Leithy",
+  "hint": "Egyptian TV presenter",
+  "ar": "عمرو الليثي",
+  "ar_hint": "مذيع",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Tamer Amin",
+  "title": "Tamer Amin",
+  "hint": "Egyptian TV presenter",
+  "ar": "تامر أمين",
+  "ar_hint": "مذيع",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ramez Galal",
+  "title": "Ramez Galal",
+  "hint": "Egyptian TV presenter",
+  "ar": "رامز جلال",
+  "ar_hint": "مذيع",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Bassem Youssef",
+  "title": "Bassem Youssef",
+  "hint": "Egyptian TV presenter",
+  "ar": "باسم يوسف",
+  "ar_hint": "مذيع",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ahmed El-Ghandour (Da7ee7)",
+  "title": "Ahmed El-Ghandour",
+  "hint": "Egyptian TV presenter",
+  "ar": "أحمد الغندور (الدحيح)",
+  "ar_hint": "مذيع",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Grendizer",
+  "title": "Grendizer",
+  "hint": "anime",
+  "ar": "جريندايزر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Future Boy Conan",
+  "title": "Future Boy Conan",
+  "hint": "anime",
+  "ar": "عدنان ولينا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Captain Tsubasa (Captain Majed)",
+  "title": "Captain Tsubasa",
+  "hint": "anime",
+  "ar": "كابتن ماجد",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Dragon Ball",
+  "title": "Dragon Ball (TV series)",
+  "hint": "anime",
+  "ar": "دراجون بول",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Slam Dunk",
+  "title": "Slam Dunk (manga)",
+  "hint": "anime",
+  "ar": "سلام دانك",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Detective Conan",
+  "title": "Case Closed",
+  "hint": "anime",
+  "ar": "المحقق كونان",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Pokémon",
+  "title": "Pokémon (TV series)",
+  "hint": "anime",
+  "ar": "بوكيمون",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "One Piece",
+  "title": "One Piece (1999 TV series)",
+  "hint": "anime",
+  "ar": "ون بيس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Naruto",
+  "title": "Naruto (TV series)",
+  "hint": "anime",
+  "ar": "ناروتو",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
   "name": "Russia",
   "title": "Russia",
   "hint": "country",
@@ -2597,15 +4190,6 @@
   "skip": false
  },
  {
-  "name": "Brazil",
-  "title": "Brazil",
-  "hint": "country",
-  "ar": "البرازيل",
-  "ar_hint": "",
-  "logo": false,
-  "skip": false
- },
- {
   "name": "Australia",
   "title": "Australia",
   "hint": "country",
@@ -2628,15 +4212,6 @@
   "title": "Saudi Arabia",
   "hint": "country",
   "ar": "السعودية",
-  "ar_hint": "",
-  "logo": false,
-  "skip": false
- },
- {
-  "name": "Argentina",
-  "title": "Argentina",
-  "hint": "country",
-  "ar": "الأرجنتين",
   "ar_hint": "",
   "logo": false,
   "skip": false
@@ -2966,6 +4541,159 @@
   "skip": false
  },
  {
+  "name": "Suez",
+  "title": "Suez",
+  "hint": "Egypt",
+  "ar": "السويس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Port Said",
+  "title": "Port Said",
+  "hint": "Egypt",
+  "ar": "بورسعيد",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "El Arish",
+  "title": "Arish",
+  "hint": "Egypt",
+  "ar": "العريش",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Taba",
+  "title": "Taba",
+  "hint": "Egypt",
+  "ar": "طابا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Dahab",
+  "title": "Dahab",
+  "hint": "Egypt",
+  "ar": "دهب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ismailia",
+  "title": "Ismailia",
+  "hint": "Egypt",
+  "ar": "الإسماعيلية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Fayoum",
+  "title": "Faiyum",
+  "hint": "Egypt",
+  "ar": "الفيوم",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Marsa Matrouh",
+  "title": "Mersa Matruh",
+  "hint": "Egypt",
+  "ar": "مرسى مطروح",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Burj Khalifa",
+  "title": "Burj Khalifa",
+  "hint": "building",
+  "ar": "برج خليفة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Shanghai Tower",
+  "title": "Shanghai Tower",
+  "hint": "building",
+  "ar": "برج شنغهاي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Makkah Clock Tower",
+  "title": "Abraj Al-Bait",
+  "hint": "building",
+  "ar": "برج الساعة في مكة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Lotte World Tower",
+  "title": "Lotte World Tower",
+  "hint": "building",
+  "ar": "برج لوتي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "One World Trade Center",
+  "title": "One World Trade Center",
+  "hint": "building",
+  "ar": "وان ورلد تريد سنتر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Taipei 101",
+  "title": "Taipei 101",
+  "hint": "building",
+  "ar": "تايبيه 101",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Petronas Towers",
+  "title": "Petronas Towers",
+  "hint": "building",
+  "ar": "برجين بتروناس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Willis Tower",
+  "title": "Willis Tower",
+  "hint": "building",
+  "ar": "برج ويليس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Burj Al Arab",
+  "title": "Burj Al Arab",
+  "hint": "building",
+  "ar": "برج العرب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
   "name": "Narmer",
   "title": "Narmer",
   "hint": "pharaoh",
@@ -3209,6 +4937,168 @@
   "skip": false
  },
  {
+  "name": "Columbus reaches America",
+  "title": "Voyages of Christopher Columbus",
+  "hint": "history",
+  "ar": "كولومبوس يوصل أمريكا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "French Revolution",
+  "title": "French Revolution",
+  "hint": "history",
+  "ar": "الثورة الفرنسية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Titanic sinks",
+  "title": "Sinking of the Titanic",
+  "hint": "history",
+  "ar": "غرق تايتانيك",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "World War I begins",
+  "title": "World War I",
+  "hint": "history",
+  "ar": "بداية الحرب العالمية الأولى",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "World War II ends",
+  "title": "World War II",
+  "hint": "history",
+  "ar": "نهاية الحرب العالمية التانية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Moon landing",
+  "title": "Apollo 11",
+  "hint": "history",
+  "ar": "أول نزول على القمر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Chernobyl disaster",
+  "title": "Chernobyl disaster",
+  "hint": "history",
+  "ar": "كارثة تشيرنوبل",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Fall of the Berlin Wall",
+  "title": "Fall of the Berlin Wall",
+  "hint": "history",
+  "ar": "سقوط سور برلين",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "9/11 attacks",
+  "title": "September 11 attacks",
+  "hint": "history",
+  "ar": "أحداث 11 سبتمبر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Telescope",
+  "title": "Telescope",
+  "hint": "invention",
+  "ar": "التلسكوب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Steam train",
+  "title": "Steam locomotive",
+  "hint": "invention",
+  "ar": "قطر البخار",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Telephone",
+  "title": "Telephone",
+  "hint": "invention",
+  "ar": "التليفون",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Light bulb",
+  "title": "Incandescent light bulb",
+  "hint": "invention",
+  "ar": "اللمبة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Car (Benz patent)",
+  "title": "Benz Patent-Motorwagen",
+  "hint": "invention",
+  "ar": "العربية (براءة بنز)",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Airplane",
+  "title": "Wright Flyer",
+  "hint": "invention",
+  "ar": "الطيارة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Penicillin",
+  "title": "Penicillin",
+  "hint": "invention",
+  "ar": "البنسلين",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "World Wide Web",
+  "title": "World Wide Web",
+  "hint": "invention",
+  "ar": "الويب (الإنترنت)",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "iPhone",
+  "title": "iPhone (1st generation)",
+  "hint": "invention",
+  "ar": "الآيفون",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
   "name": "Cheetah",
   "title": "Cheetah",
   "hint": "animal",
@@ -3438,6 +5328,33 @@
   "title": "Hamster",
   "hint": "animal",
   "ar": "الهامستر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Camel",
+  "title": "Dromedary",
+  "hint": "animal",
+  "ar": "الجمل",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Cow",
+  "title": "Cattle",
+  "hint": "animal",
+  "ar": "البقرة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Rabbit",
+  "title": "Rabbit",
+  "hint": "animal",
+  "ar": "الأرنب",
   "ar_hint": "",
   "logo": false,
   "skip": false
@@ -3843,6 +5760,213 @@
   "title": "Swvl",
   "hint": "company",
   "ar": "سويفل",
+  "ar_hint": "شركة",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Snake (Nokia)",
+  "title": "Snake (video game genre)",
+  "hint": "video game",
+  "ar": "التعبان (سنيك)",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Angry Birds",
+  "title": "Angry Birds (video game)",
+  "hint": "video game",
+  "ar": "أنجري بيردز",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Fruit Ninja",
+  "title": "Fruit Ninja",
+  "hint": "video game",
+  "ar": "فروت نينجا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Temple Run",
+  "title": "Temple Run",
+  "hint": "video game",
+  "ar": "تمبل رن",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Subway Surfers",
+  "title": "Subway Surfers",
+  "hint": "video game",
+  "ar": "صبواي سيرفرز",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Flappy Bird",
+  "title": "Flappy Bird",
+  "hint": "video game",
+  "ar": "فلابي بيرد",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Pokémon Go",
+  "title": "Pokémon Go",
+  "hint": "video game",
+  "ar": "بوكيمون جو",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Free Fire",
+  "title": "Free Fire (video game)",
+  "hint": "video game",
+  "ar": "فري فاير",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "PUBG Mobile",
+  "title": "PUBG Mobile",
+  "hint": "video game",
+  "ar": "ببجي موبايل",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Elmenus",
+  "title": "Elmenus",
+  "hint": "app",
+  "ar": "المنيوز",
+  "ar_hint": "",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Vezeeta",
+  "title": "Vezeeta",
+  "hint": "app",
+  "ar": "فيزيتا",
+  "ar_hint": "",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Paymob",
+  "title": "Paymob",
+  "hint": "app",
+  "ar": "باي موب",
+  "ar_hint": "",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Breadfast",
+  "title": "Breadfast",
+  "hint": "app",
+  "ar": "بريدفاست",
+  "ar_hint": "",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "MaxAB",
+  "title": "MaxAB",
+  "hint": "app",
+  "ar": "ماكس أب",
+  "ar_hint": "",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Khazna",
+  "title": "Khazna",
+  "hint": "app",
+  "ar": "خزنة",
+  "ar_hint": "",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Elsewedy Electric",
+  "title": "Elsewedy Electric",
+  "hint": "company",
+  "ar": "السويدي",
+  "ar_hint": "شركة",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Bisco Misr",
+  "title": "BiscoMisr",
+  "hint": "company",
+  "ar": "بسكو مصر",
+  "ar_hint": "شركة",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Felfela",
+  "title": "Felfela",
+  "hint": "company",
+  "ar": "فلفلة",
+  "ar_hint": "شركة",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Elaraby",
+  "title": "Elaraby Group",
+  "hint": "company",
+  "ar": "العربي",
+  "ar_hint": "شركة",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Mo'men",
+  "title": "Mo'men",
+  "hint": "company",
+  "ar": "مؤمن",
+  "ar_hint": "شركة",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Cook Door",
+  "title": "Cook Door",
+  "hint": "company",
+  "ar": "كوك دور",
+  "ar_hint": "شركة",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Buffalo Burger",
+  "title": "Buffalo Burger",
+  "hint": "company",
+  "ar": "بافلو برجر",
+  "ar_hint": "شركة",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Zooba",
+  "title": "Zooba",
+  "hint": "company",
+  "ar": "زووبا",
   "ar_hint": "شركة",
   "logo": true,
   "skip": false
