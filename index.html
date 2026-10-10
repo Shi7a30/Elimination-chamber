@@ -28,6 +28,11 @@ button{cursor:pointer}
 .sub{color:var(--mut);font-size:16px;margin:10px 0 16px;text-align:center}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px 12px;width:100%}
 .grid.shake{animation:shake .45s}
+.grid.duo{grid-template-columns:1fr 1fr;gap:14px 18px}
+.duo .tile{font-size:64px}
+.duo .back b{font-size:26px}
+.duo .back small{font-size:13px}
+.duo .lab{font-size:15px;min-height:48px}
 .cell{display:flex;flex-direction:column;align-items:center;gap:8px;background:none;border:0;padding:0;font:inherit;color:inherit;min-width:0;perspective:700px}
 .card{position:relative;width:100%;aspect-ratio:1;transform-style:preserve-3d;transition:transform .55s cubic-bezier(.3,1.4,.5,1)}
 .cell.flip .card{transform:rotateY(180deg)}
@@ -336,7 +341,7 @@ var TX={
   row:function(n){return" · 🔥 "+n+" in a row"},perfect:"🏆 PERFECT RUN!",done:"✅ CATEGORY DONE!",got:function(a,b){return"You got "+a+"/"+b+" this run"},
   allSolved:" · ★ every round solved",overall:function(s,n){return" · "+s+"/"+n+" solved overall"},replay:"↻ REPLAY",menu:"MENU",full:"Not enough space on this device to save more photos.",lang:"ع",
   endless:"♾ ENDLESS",endlessSub:"Mixed rounds from every category",score:function(n){return"SCORE "+n},runOver:"💀 RUN OVER!",
-  runTxt:function(s,b){return" You cleared "+s+" rounds · best "+b+"."},newBest:" 🏅 New best!",newRun:"↻ NEW RUN",reg_eg:"🇪🇬 EGYPT",reg_w:"🌍 WORLD",reg_all:"🔀 BOTH"},
+  runTxt:function(s,b){return" You cleared "+s+" rounds · best "+b+"."},newBest:" 🏅 New best!",newRun:"↻ NEW RUN",duel:"🆚 ده ولا ده",duelSub:"This or that: pick 1 of 2 till you miss",pick:"PICK ONE",duelTxt:function(s,b){return"You got "+s+" in a row · best "+b+"."},reg_eg:"🇪🇬 EGYPT",reg_w:"🌍 WORLD",reg_all:"🔀 BOTH"},
  ar:{title:"شيلهم!",streak:"🔥 ورا بعض ",best:"🏅 أحسن رقم ",rounds:function(n){return n+" جولات"},solved:function(s,n){return"حليت "+s+" من "+n},complete:"★ خلّصتها",
   hint:"الكارت اللي بتشيله بيتقلب ويوريك إجابته، ودوس عليه تاني عشان ترجعه. دوس 📷 جوه أي جولة وبعدين على أي مربع عشان تحط صورة من عندك.",
   round:function(a,b){return"جولة "+a+"/"+b},photo:"وضع الصور: دوس على أي مربع",nailed:"جبتها!",wrong:"لأ، مش دي!",left:function(n){return"فاضل تشيل "+n},all:"شيل الكل وسيب واحد بس",
@@ -345,22 +350,22 @@ var TX={
   row:function(n){return" · 🔥 "+n+" ورا بعض"},perfect:"🏆 ولا غلطة!",done:"✅ خلّصت القسم!",got:function(a,b){return"جبت "+a+" من "+b+" المرة دي"},
   allSolved:" · ★ حليت كل الجولات",overall:function(s,n){return" · حليت "+s+" من "+n+" لحد دلوقتي"},replay:"↻ تاني",menu:"القايمة",full:"مفيش مساحة كفاية على الجهاز عشان تحفظ صور زيادة.",lang:"EN",
   endless:"♾ مالهاش آخر",endlessSub:"جولات متلخبطة من كل الأقسام",score:function(n){return"النتيجة "+n},runOver:"💀 اللعبة خلصت!",
-  runTxt:function(s,b){return" عدّيت "+s+" جولات · أحسن رقم "+b+"."},newBest:" 🏅 رقم قياسي جديد!",newRun:"↻ ابدأ من الأول",reg_eg:"🇪🇬 مصري",reg_w:"🌍 عالمي",reg_all:"🔀 الاتنين"}};
+  runTxt:function(s,b){return" عدّيت "+s+" جولات · أحسن رقم "+b+"."},newBest:" 🏅 رقم قياسي جديد!",newRun:"↻ ابدأ من الأول",duel:"🆚 ده ولا ده",duelSub:"اختار واحد من اتنين لحد ما تغلط",pick:"اختار واحد",duelTxt:function(s,b){return"جبت "+s+" ورا بعض · أحسن رقم "+b+"."},reg_eg:"🇪🇬 مصري",reg_w:"🌍 عالمي",reg_all:"🔀 الاتنين"}};
 
 var START=50,UNDO=30,WIN=10;
 var $=function(i){return document.getElementById(i)};
 var RM=matchMedia("(prefers-reduced-motion:reduce)").matches;
-var coins=START,streak=0,best=0,eBest={},REG="all",prog={},mute=false,IM={},WK={},L="en";
+var coins=START,streak=0,best=0,eBest={},dBest={},REG="all",prog={},mute=false,IM={},WK={},L="en";
 // mode "cat" plays the rounds in PL (one subcategory, SUB) in order; "end" is endless mode. cur = the round being played.
 // REG = region filter for everything: "eg" Egyptian rounds, "w" international, "all" both.
 var mode="cat",SUB=null,PL=[],ri=0,cur=null,eScore=0,eRecent=[],items,out,hist,peek,flipNow,over,corr,lostStreak,runOk,edit=false,pend=null,stT;
 function ld(k,d){try{var v=localStorage.getItem(k);return v===null?d:JSON.parse(v)}catch(e){return d}}
 function sv(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){return false}}
 coins=ld("elim_coins",START);if(typeof coins!=="number"||!(coins>=0))coins=START;
-streak=ld("elim_streak",0)|0;best=ld("elim_best",0)|0;eBest=ld("elim_endless",{});if(typeof eBest==="number")eBest={all:eBest};if(!eBest||typeof eBest!=="object")eBest={};
+streak=ld("elim_streak",0)|0;best=ld("elim_best",0)|0;eBest=ld("elim_endless",{});dBest=ld("elim_duel",{});if(!dBest||typeof dBest!=="object")dBest={};if(typeof eBest==="number")eBest={all:eBest};if(!eBest||typeof eBest!=="object")eBest={};
 REG=ld("elim_region","all");if(["eg","w","all"].indexOf(REG)<0)REG="all";prog=ld("elim_prog",{})||{};mute=!!ld("elim_mute",false);
 IM=ld("elim_img",{})||{};WK=ld("elim_wiki",{})||{};L=ld("elim_lang","en")==="ar"?"ar":"en";
-function save(){sv("elim_coins",coins);sv("elim_streak",streak);sv("elim_best",best);sv("elim_endless",eBest);sv("elim_prog",prog);sv("elim_mute",mute);sv("elim_lang",L);sv("elim_region",REG)}
+function save(){sv("elim_coins",coins);sv("elim_streak",streak);sv("elim_best",best);sv("elim_endless",eBest);sv("elim_duel",dBest);sv("elim_prog",prog);sv("elim_mute",mute);sv("elim_lang",L);sv("elim_region",REG)}
 function t(k){return TX[L][k]}
 function n(v,dp){return L==="ar"?v.toLocaleString("ar-EG",{useGrouping:v>=10000,minimumFractionDigits:dp||0,maximumFractionDigits:dp==null?2:dp}):dp!=null?v.toFixed(dp):v>=10000?v.toLocaleString("en-US"):String(v)}
 function li(p){return p?p[L==="ar"?1:0]:""}
@@ -387,6 +392,47 @@ function mix(){for(var k=0;k<300;k++){var g=Math.random()<.5?"p":"y",b=Math.rand
 function endlessRound(){var m=Math.random()<.5&&mix();if(m)return m;
  var all=rounds(),p=shuffle(all.filter(function(r){return eRecent.indexOf(r)<0}))[0]||all[0];
  eRecent.push(p);while(eRecent.length>Math.min(15,all.length>>1))eRecent.shift();return mk(p)}
+
+// --- duel mode (ده ولا ده): two cards, pick the right one, keep going until a miss ---
+// Pairs come from the endless pools (people by birth year, things by year) or from any other round.
+// In a pool the winning card stays for the next pair (up to 3 times) against a new card.
+var DQ={p:{min:[["WHO IS","OLDER?",""],["مين","الأكبر في السن؟",""]],max:[["WHO IS","YOUNGER?",""],["مين","الأصغر في السن؟",""]]},
+ y:{min:[["WHICH CAME","FIRST?",""],["أنهي","الأقدم؟",""]],max:[["WHICH IS","NEWER?",""],["أنهي","الأحدث؟",""]]}};
+var dScore=0,dNew=false,dSrc=null,dUsed={},dSlot=0,dKeep=0,dPick=-1,dTok=0;
+function dList(s){return s.g?pool(s.g):mk(s.r).items}
+function duelNext(keep){if(keep&&(!dSrc||!dSrc.g||dKeep>=3))keep=null;dKeep=keep?dKeep+1:0;
+ for(var k=0;k<50;k++){
+  if(!keep){var rs=rounds().filter(function(r){return!r.g}),ps=["p","y"].filter(function(g){return pool(g).length>1});
+   dSrc=Math.random()<.5&&ps.length?{g:ps[Math.random()*ps.length|0]}:{r:rs[Math.random()*rs.length|0]};dUsed={}}
+  var a=keep||shuffle(dList(dSrc).filter(function(x){return!dUsed[x.d[0]]}))[0];
+  var o=a&&shuffle(dList(dSrc).filter(function(x){return!dUsed[x.d[0]]&&x.d[0]!==a.d[0]&&x.d[1]!==a.d[1]}))[0];
+  if(o)break;keep=null;dKeep=0}
+ dUsed[a.d[0]]=dUsed[o.d[0]]=1;
+ var b=dSrc.g?(Math.random()<.5?"min":"max"):dSrc.r.best,q=dSrc.g?DQ[dSrc.g][b]:[[dSrc.r.q[0],dSrc.r.q[1]+"?",""],[dSrc.r.qa[0],dSrc.r.qa[1]+"؟",""]];
+ if(!keep)dSlot=Math.random()<.5?0:1;var pr=[];pr[dSlot]=a;pr[1-dSlot]=o;
+ cur={q:q[0],qa:q[1],best:b,items:pr};items=pr;out=[];peek=[];flipNow=[];over=false;dPick=-1;dTok++;
+ corr=(b==="min")===(pr[0].d[1]<pr[1].d[1])?0:1;
+ hide();$("menu").style.display="none";$("game").style.display="flex";loadPhotos(pr);render()}
+function duelRender(){var qq=L==="ar"?cur.qa:cur.q;
+ $("rn").textContent=t("duel")+" · "+t("score")(n(dScore));$("q1").textContent=qq[0];$("q2").textContent=qq[1];$("q3").textContent=qq[2];
+ $("sub").textContent=edit?t("photo"):over==="win"?t("nailed"):over==="lose"?t("wrong"):t("pick");
+ $("coins").textContent=n(coins);$("stk").textContent="";$("undo").style.display=$("skip").style.display="none";$("cam").className="pill"+(edit?" on":"");
+ $("grid").className="grid duo";
+ $("grid").innerHTML=items.map(function(x,i){var cls=over?(i===corr?"win":"out")+(over==="lose"&&i===dPick?" bad":""):"";
+  if(over&&flipNow.indexOf(i)<0)cls+=" flip";
+  var src=photo(x.d[0]),img=src?'<img src="'+esc(src)+'" alt="" onerror="this.remove()">':"";
+  return '<button class="cell '+cls+'" data-i="'+i+'" aria-label="'+esc(nm(x)+(over?": "+fmt(x):""))+'"><div class="card">'+
+   '<div class="tile" style="background:hsl('+(i*137+20)+',45%,42%)"><span>'+esc(nm(x).replace(/^[("']/,"").charAt(0))+"</span>"+img+"</div>"+
+   '<div class="back">'+img+"<i>"+(i===corr?"✓":"✕")+"</i><small>"+esc(li(x.r.k))+"</small><b>"+esc(fmt(x))+"</b></div>"+
+   '</div><div class="lab">'+esc(nm(x))+"</div></button>"}).join("");
+ if(flipNow.length){var g=$("grid"),fl=flipNow;flipNow=[];void g.offsetWidth;
+  fl.forEach(function(i){var c=g.querySelector('[data-i="'+i+'"]');if(c)c.classList.add("flip")})}}
+function duelPick(i){if(over)return;dPick=i;flipNow=[0,1];
+ if(i===corr){over="win";dScore++;if(dScore>(dBest[REG]||0)){dBest[REG]=dScore;dNew=true}save();render();sfx.ok();
+  var tk=dTok;setTimeout(function(){if(mode==="duel"&&tk===dTok&&inGame()&&!edit)duelNext(items[corr])},1400)}
+ else{over="lose";save();render();shake();sfx.lose();
+  sheet(t("runOver"),t("duelTxt")(n(dScore),n(dBest[REG]||0))+(dNew?t("newBest"):""),
+   [[t("newRun"),function(){dScore=0;dNew=false;duelNext()},"y"],[t("menu"),menu,""]],700)}}
 
 // --- photos: your own (📷) first, then the built-in set, then a Wikipedia lookup when online ---
 function photo(name){return IM[name]||(window.PH&&PH[name])||WK[name]}
@@ -419,7 +465,8 @@ var sfx={
  elim:function(k){tone(260+k*55,.12,"square",.06);buzz(12)},
  win:function(){[523,659,784,1047].forEach(function(f,k){tone(f,.28,"triangle",.16,k*.09)});tone(1568,.18,"sine",.08,.5);tone(2093,.25,"sine",.08,.58);buzz([20,40,20])},
  lose:function(){tone(330,.3,"sawtooth",.07);tone(233,.5,"sawtooth",.07,.2);buzz([60,40,90])},
- tap:function(){tone(520,.06,"sine",.06)}};
+ tap:function(){tone(520,.06,"sine",.06)},
+ ok:function(){tone(784,.12,"triangle",.14);tone(1047,.18,"triangle",.14,.08);buzz(15)}};
 function floatTxt(s){var p=$("cpill").getBoundingClientRect(),e=document.createElement("span");e.className="float";e.textContent=s;
  e.style.left=(p.left+10)+"px";e.style.top=(p.bottom+4)+"px";document.body.appendChild(e);setTimeout(function(){e.remove()},1200)}
 function bump(){var p=$("cpill");p.classList.remove("bump");void p.offsetWidth;p.classList.add("bump")}
@@ -436,6 +483,7 @@ function menu(){hide();edit=false;cur=null;$("game").style.display="none";$("men
  $("menu").innerHTML="<h1>"+t("title")+"</h1><div class='stats'><span class='stat streak'>"+t("streak")+n(streak)+"</span><span class='stat'>"+t("best")+n(best)+"</span></div>"+
   '<div class="seg">'+["eg","w","all"].map(function(m){return '<button data-reg="'+m+'"'+(REG===m?' class="on"':"")+">"+t("reg_"+m)+"</button>"}).join("")+"</div>"+
   '<button class="cat end" data-c="e">'+t("endless")+"<small><span>"+t("endlessSub")+"</span><span>🏅 "+n(eBest[REG]||0)+"</span></small></button>"+
+   '<button class="cat end" data-c="d">'+t("duel")+"<small><span>"+t("duelSub")+"</span><span>🏅 "+n(dBest[REG]||0)+"</span></small></button>"+
   GROUPS.map(function(g){var subs=g.s.filter(function(x){return subRounds(x[0]).length});if(!subs.length)return"";
    return '<div class="gh">'+g.e+" "+(L==="ar"?g.a:g.n)+'</div><div class="subs">'+subs.map(function(x){var rs=subRounds(x[0]),k=rs.length,d=solved(rs);
     return '<button class="cat sc" data-s="'+x[0]+'"><span class="se">'+x[1]+"</span>"+(L==="ar"?x[3]:x[2])+"<small><span>"+(d===k?t("complete"):t("solved")(n(d),n(k)))+
@@ -443,6 +491,7 @@ function menu(){hide();edit=false;cur=null;$("game").style.display="none";$("men
   '<div class="sub">'+t("hint")+'</div>'}
 $("menu").onclick=function(e){var rg=e.target.closest("[data-reg]");if(rg){REG=rg.dataset.reg;eRecent=[];save();sfx.tap();menu();return}
  var b=e.target.closest(".cat");if(!b)return;sfx.tap();
+ if(b.dataset.c==="d"){mode="duel";dScore=0;dNew=false;dKeep=0;duelNext();return}
  if(b.dataset.c==="e"){mode="end";eScore=0}
  else{mode="cat";var id=b.dataset.s;GROUPS.forEach(function(g){g.s.forEach(function(x){if(x[0]===id)SUB=x})});PL=subRounds(id);ri=0;runOk=0;
   loadPhotos([].concat.apply([],PL.map(function(r){return mk(r).items})))}
@@ -452,7 +501,7 @@ function start(){hide();$("menu").style.display="none";$("game").style.display="
  items=shuffle(cur.items);out=[];hist=[];peek=[];flipNow=[];over=false;
  var v=items.map(function(x){return x.d[1]});corr=v.indexOf(cur.best==="min"?Math.min.apply(0,v):Math.max.apply(0,v));
  render();scrollTo(0,0)}
-function render(){var left=items.length-out.length,qq=L==="ar"?cur.qa:cur.q;
+function render(){if(mode==="duel")return duelRender();$("grid").className="grid";$("undo").style.display="";var left=items.length-out.length,qq=L==="ar"?cur.qa:cur.q;
  $("rn").textContent=mode==="end"?t("endless")+" · "+t("score")(n(eScore)):SUB[1]+" "+t("round")(n(ri+1),n(PL.length))+(prog[key(cur.r)]?" ★":"");
  $("q1").textContent=qq[0];$("q2").textContent=qq[1];$("q3").textContent=qq[2];
  $("sub").textContent=edit?t("photo"):over==="win"?t("nailed"):over==="lose"?t("wrong"):(out.length?t("left")(n(left-1)):t("all"));
@@ -471,6 +520,7 @@ function render(){var left=items.length-out.length,qq=L==="ar"?cur.qa:cur.q;
   fl.forEach(function(i){var c=g.querySelector('[data-i="'+i+'"]');if(c)c.classList.add("flip")})}}
 $("grid").onclick=function(e){var c=e.target.closest(".cell");if(!c)return;var i=+c.dataset.i,x=items[i];
  if(edit){pend=x.d[0];$("file").click();return}
+ if(mode==="duel"){duelPick(i);return}
  if(out.indexOf(i)>-1||over==="win"){var p=peek.indexOf(i);if(p<0)peek.push(i);else peek.splice(p,1);
   c.classList.toggle("flip",p>-1);c.classList.toggle("peek",p<0);sfx.tap();return}
  if(over)return;
