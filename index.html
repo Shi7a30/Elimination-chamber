@@ -71,6 +71,16 @@ button{cursor:pointer}
 .seg button+button{border-inline-start:3px solid var(--fg)}
 .seg button.on{background:var(--y);color:#1c1c1c}
 .gh{font-size:19px;margin:10px 2px -4px}
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.modes .cat{font-size:17px;padding:12px;display:flex;flex-direction:column;justify-content:space-between;min-height:104px}
+.modes .cat small{flex-direction:column;gap:4px}
+.cat.grp{min-height:132px}
+.grp small{flex-direction:column;gap:2px}
+.subs .grp:last-child:nth-child(odd){grid-column:1/-1}
+.grp .se{font-size:34px}
+.ghead{display:flex;align-items:center;gap:12px;margin-top:14px}
+.ghead h2{margin:0;font-size:24px}
+.ghead .pill{flex:none}
 .subs{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .cat.sc{font-size:15px;padding:10px 12px 12px;display:flex;flex-direction:column;justify-content:space-between;min-height:118px}
 .sc .se{font-size:26px;margin-bottom:4px}
@@ -126,17 +136,12 @@ var CATS=[
   ["Hassan Shehata",1949,"حسن شحاتة"],["Mahmoud 'Bibo' El Khatib",1954,"محمود الخطيب (بيبو)","Mahmoud El Khatib"],["Hossam Hassan",1966,"حسام حسن"],
   ["Hany Ramzy",1969,"هاني رمزي"],["Essam El-Hadary",1973,"عصام الحضري","Essam El Hadary"],["Ahmed Hassan",1975,"أحمد حسن","Ahmed Hassan (footballer, born 1975)"],
   ["Mohamed Aboutrika",1978,"محمد أبو تريكة"],["Mohamed Zidan",1981,"محمد زيدان"],["Ahmed 'Mido' Hossam",1983,"أحمد حسام (ميدو)","Mido (footballer)"]],{h:"Egyptian footballer",k:BORN,g:"p",s:"players",m:"eg"}),
- Rd(["WHICH CLUB HAS","MOST CAF CHAMPIONS LEAGUES",Q],["أنهي نادي","عنده أكتر دوري أبطال أفريقيا",QA],"max",[
-  ["Al Ahly",12,"الأهلي","Al Ahly SC"],["Zamalek",5,"الزمالك","Zamalek SC"],["TP Mazembe",5,"مازيمبي"],["Espérance de Tunis",4,"الترجي التونسي","Espérance Sportive de Tunis"],
-  ["Wydad Casablanca",3,"الوداد البيضاوي","Wydad AC"],["Raja Casablanca",3,"الرجاء البيضاوي","Raja CA"],["Enyimba",2,"إنيمبا","Enyimba F.C."],["ES Sétif",2,"وفاق سطيف"],
-  ["Mamelodi Sundowns",2,"صن داونز","Mamelodi Sundowns F.C."]],{suf:TRA,h:"football club",k:["CAF TITLES","بطولات أفريقيا"],s:"trophies",m:"eg"}),
+ 
  Rd(["WHICH IS THE","OLDEST CLUB",Q],["أنهي","أقدم نادي",QA],"min",[
   ["Al Ahly",1907,"الأهلي","Al Ahly SC"],["Zamalek",1911,"الزمالك","Zamalek SC"],["Al Ittihad Alexandria",1914,"الاتحاد السكندري","Al Ittihad Alexandria Club"],
   ["Al Masry",1920,"المصري","Al Masry SC"],["Ismaily",1924,"الإسماعيلي","Ismaily SC"],["Smouha",1949,"سموحة","Smouha SC"],
   ["Arab Contractors",1973,"المقاولون العرب","Al Mokawloon Al Arab SC"],["ENPPI",1985,"إنبي","ENPPI SC"],["Pyramids FC",2008,"بيراميدز"]],{h:"Egyptian football club",k:["FOUNDED","اتأسس سنة"],g:"y",s:"trophies",m:"eg"}),
- Rd(["WHICH TEAM HAS","MOST AFRICA CUP TITLES",Q],["أنهي منتخب","عنده أكتر كاس أمم أفريقيا",QA],"max",[
-  ["Egypt",7,"مصر"],["Cameroon",5,"الكاميرون"],["Ghana",4,"غانا"],["Nigeria",3,"نيجيريا"],["Ivory Coast",3,"كوت ديفوار"],
-  ["Algeria",2,"الجزائر"],["DR Congo",2,"الكونغو الديمقراطية","Democratic Republic of the Congo"],["Tunisia",1,"تونس"],["Zambia",1,"زامبيا"]],{suf:TRA,h:"country",k:["AFRICA CUPS","كاسات أفريقيا"],s:"trophies",m:"eg"}),
+ 
   Rd(["WHO IS THE","YOUNGEST GOALKEEPER",Q],["مين","أصغر حارس مرمى",QA],"max",[
    ["Ahmed Shobeir",1960,"أحمد شوبير","Ahmed Shobair"],["Nader El-Sayed",1972,"نادر السيد"],["Essam El-Hadary",1973,"عصام الحضري","Essam El Hadary"],
    ["Sherif Ekramy",1983,"شريف إكرامي"],["Mohamed El Shenawy",1988,"محمد الشناوي"],["Mohamed 'Gabaski' Abou Gabal",1989,"محمد أبو جبل (جباسكي)","Mohamed Abou Gabal"],
@@ -144,12 +149,20 @@ var CATS=[
   Rd(["WHO PLAYED IN THE","PREMIER LEAGUE FIRST",Q],["مين","أول واحد لعب في الدوري الإنجليزي",QA],"min",[
    ["Ahmed 'Mido' Hossam",2005,"أحمد حسام (ميدو)","Mido (footballer)"],["Hossam Ghaly",2006,"حسام غالي"],["Amr Zaki",2008,"عمرو زكي"],["Ahmed Elmohamady",2010,"أحمد المحمدي"],
    ["Mohamed Salah",2014,"محمد صلاح"],["Mohamed Elneny",2016,"محمد النني"],["Ahmed Hegazi",2017,"أحمد حجازي"],["Mahmoud 'Trezeguet' Hassan",2019,"محمود حسن (تريزيجيه)","Trézéguet (Egyptian footballer)"],
-   ["Omar Marmoush",2025,"عمر مرموش"]],{h:"Egyptian footballer",k:["JOINED THE PREMIER LEAGUE","دخل البريميرليج سنة"],s:"players",m:"eg"}),
-  Rd(["WHICH CLUB WON","AFRICA FIRST",Q],["أنهي نادي","كسب أفريقيا الأول",QA],"min",[
+   ["Omar Marmoush",2025,"عمر مرموش"]],{h:"Egyptian footballer",k:["JOINED THE PREMIER LEAGUE","دخل البريميرليج سنة"],s:"players",m:"eg"})]},
+{n:"World Football",a:"الكورة العالمية",e:"🌍 ⚽",r:[
+ // African football is international: it lives under World so Egypt mode stays Egyptian-only.
+ Rd(["WHICH CLUB HAS","MOST CAF CHAMPIONS LEAGUES",Q],["أنهي نادي","عنده أكتر دوري أبطال أفريقيا",QA],"max",[
+  ["Al Ahly",12,"الأهلي","Al Ahly SC"],["Zamalek",5,"الزمالك","Zamalek SC"],["TP Mazembe",5,"مازيمبي"],["Espérance de Tunis",4,"الترجي التونسي","Espérance Sportive de Tunis"],
+  ["Wydad Casablanca",3,"الوداد البيضاوي","Wydad AC"],["Raja Casablanca",3,"الرجاء البيضاوي","Raja CA"],["Enyimba",2,"إنيمبا","Enyimba F.C."],["ES Sétif",2,"وفاق سطيف"],
+  ["Mamelodi Sundowns",2,"صن داونز","Mamelodi Sundowns F.C."]],{suf:TRA,h:"football club",k:["CAF TITLES","بطولات أفريقيا"],s:"trophies",m:"w"}),
+ Rd(["WHICH TEAM HAS","MOST AFRICA CUP TITLES",Q],["أنهي منتخب","عنده أكتر كاس أمم أفريقيا",QA],"max",[
+  ["Egypt",7,"مصر"],["Cameroon",5,"الكاميرون"],["Ghana",4,"غانا"],["Nigeria",3,"نيجيريا"],["Ivory Coast",3,"كوت ديفوار"],
+  ["Algeria",2,"الجزائر"],["DR Congo",2,"الكونغو الديمقراطية","Democratic Republic of the Congo"],["Tunisia",1,"تونس"],["Zambia",1,"زامبيا"]],{suf:TRA,h:"country",k:["AFRICA CUPS","كاسات أفريقيا"],s:"trophies",m:"w"}),
+ Rd(["WHICH CLUB WON","AFRICA FIRST",Q],["أنهي نادي","كسب أفريقيا الأول",QA],"min",[
    ["Ismaily",1969,"الإسماعيلي","Ismaily SC"],["Al Ahly",1982,"الأهلي","Al Ahly SC"],["Zamalek",1984,"الزمالك","Zamalek SC"],["Raja Casablanca",1989,"الرجاء البيضاوي","Raja CA"],
    ["Wydad Casablanca",1992,"الوداد البيضاوي","Wydad AC"],["Espérance de Tunis",1994,"الترجي التونسي","Espérance Sportive de Tunis"],["Enyimba",2003,"إنيمبا","Enyimba F.C."],
-   ["Mamelodi Sundowns",2016,"صن داونز","Mamelodi Sundowns F.C."],["Pyramids FC",2025,"بيراميدز"]],{h:"football club",k:["FIRST CAF TITLE","أول بطولة أفريقيا"],s:"trophies",m:"eg"})]},
-{n:"World Football",a:"الكورة العالمية",e:"🌍 ⚽",r:[
+   ["Mamelodi Sundowns",2016,"صن داونز","Mamelodi Sundowns F.C."],["Pyramids FC",2025,"بيراميدز"]],{h:"football club",k:["FIRST CAF TITLE","أول بطولة أفريقيا"],s:"trophies",m:"w"}),
  Rd(["WHO IS THE","YOUNGEST STAR",Q],["مين","أصغر نجم",QA],"max",[
   ["Neymar Jr",1992,"نيمار","Neymar"],["Kylian Mbappé",1998,"كيليان مبابي"],["Erling Haaland",2000,"إيرلينج هالاند"],["Rodrygo Goes",2001,"رودريجو","Rodrygo"],
   ["Pedri González",2002,"بيدري","Pedri"],["Jude Bellingham",2003,"جود بيلينجهام"],["Pablo 'Gavi' Páez",2004,"جافي","Gavi (footballer, born 2004)"],["Endrick Felipe",2006,"إندريك","Endrick (footballer)"],
@@ -262,10 +275,10 @@ var CATS=[
 {n:"Geography",a:"الجغرافيا",e:"🗺️",r:[
  Rd(["WHICH IS THE","BIGGEST COUNTRY",Q],["أنهي","أكبر دولة في المساحة",QA],"max",[
   ["Russia",17.1,"روسيا"],["Canada",9.98,"كندا"],["United States",9.83,"أمريكا"],["China",9.6,"الصين"],["Brazil",8.52,"البرازيل"],
-  ["Australia",7.69,"أستراليا"],["India",3.29,"الهند"],["Saudi Arabia",2.15,"السعودية"],["Egypt",1.0,"مصر"]],{suf:["M km²"," مليون كم²"],dp:2,h:"country",k:["AREA","المساحة"],s:"geo",m:"w"}),
+  ["Australia",7.69,"أستراليا"],["India",3.29,"الهند"],["Saudi Arabia",2.15,"السعودية"],["Argentina",2.78,"الأرجنتين"]],{suf:["M km²"," مليون كم²"],dp:2,h:"country",k:["AREA","المساحة"],s:"geo",m:"w"}),
  Rd(["WHICH IS THE","TALLEST MOUNTAIN",Q],["أنهي","أعلى جبل",QA],"max",[
   ["Mount Everest",8849,"جبل إيفرست"],["K2",8611,"كي 2"],["Kangchenjunga",8586,"كانشينجونجا"],["Aconcagua",6961,"أكونكاجوا"],["Denali",6190,"دينالي"],
-  ["Kilimanjaro",5895,"كليمنجارو","Mount Kilimanjaro"],["Mont Blanc",4806,"مون بلان"],["Mount Fuji",3776,"جبل فوجي"],["Mount Sinai",2285,"جبل موسى (سيناء)"]],{suf:[" m"," متر"],h:"mountain",k:["HEIGHT","الارتفاع"],s:"geo",m:"w"}),
+  ["Kilimanjaro",5895,"كليمنجارو","Mount Kilimanjaro"],["Mont Blanc",4806,"مون بلان"],["Mount Fuji",3776,"جبل فوجي"],["Matterhorn",4478,"الماترهورن"]],{suf:[" m"," متر"],h:"mountain",k:["HEIGHT","الارتفاع"],s:"geo",m:"w"}),
  Rd(["WHICH IS THE","SMALLEST COUNTRY",Q],["أنهي","أصغر دولة في المساحة",QA],"min",[
   ["Vatican City",0.44,"الفاتيكان"],["Monaco",2.02,"موناكو"],["Nauru",21,"ناورو"],["Tuvalu",26,"توفالو"],["San Marino",61,"سان مارينو"],
   ["Liechtenstein",160,"ليختنشتاين"],["Maldives",298,"المالديف"],["Malta",316,"مالطا"],["Singapore",735,"سنغافورة"]],{suf:[" km²"," كم²"],h:"country",k:["AREA","المساحة"],s:"geo",m:"w"}),
@@ -328,7 +341,7 @@ var GROUPS=[
  {e:"⚽",n:"FOOTBALL",a:"الكورة",s:[["players","👟","PLAYERS","اللعيبة"],["trophies","🏆","CLUBS & TROPHIES","الأندية والبطولات"]]},
  {e:"🎬",n:"MOVIES & TV",a:"سينما وتليفزيون",s:[["actors","⭐","STARS","النجوم"],["films","🎞️","FILMS","الأفلام"],["tv","📺","TV SHOWS","المسلسلات"]]},
  {e:"🎤",n:"MUSIC & POP",a:"مزيكا وتريند",s:[["singers","🎤","SINGERS","المطربين"],["songs","🎵","SONGS","الأغاني"],["celebs","🔥","CELEBS & CARTOONS","مشاهير وكرتون"]]},
- {e:"🌍",n:"WORLD",a:"الدنيا",s:[["geo","🗺️","GEOGRAPHY","الجغرافيا"],["history","🏛️","HISTORY","التاريخ"],["animals","🐾","ANIMALS","الحيوانات"]]},
+ {e:"🧠",n:"KNOWLEDGE",a:"معلومات عامة",s:[["geo","🗺️","GEOGRAPHY","الجغرافيا"],["history","🏛️","HISTORY","التاريخ"],["animals","🐾","ANIMALS","الحيوانات"]]},
  {e:"🎮",n:"GAMES & TECH",a:"ألعاب وتكنولوجيا",s:[["games","🕹️","GAMES & CONSOLES","ألعاب وأجهزة"],["brands","📱","BRANDS & APPS","شركات وأبلكيشنز"]]}];
 
 // Text in English and Egyptian Arabic. Functions take numbers already formatted.
@@ -341,7 +354,7 @@ var TX={
   row:function(n){return" · 🔥 "+n+" in a row"},perfect:"🏆 PERFECT RUN!",done:"✅ CATEGORY DONE!",got:function(a,b){return"You got "+a+"/"+b+" this run"},
   allSolved:" · ★ every round solved",overall:function(s,n){return" · "+s+"/"+n+" solved overall"},replay:"↻ REPLAY",menu:"MENU",full:"Not enough space on this device to save more photos.",lang:"ع",
   endless:"♾ ENDLESS",endlessSub:"Mixed rounds from every category",score:function(n){return"SCORE "+n},runOver:"💀 RUN OVER!",
-  runTxt:function(s,b){return" You cleared "+s+" rounds · best "+b+"."},newBest:" 🏅 New best!",newRun:"↻ NEW RUN",duel:"🆚 THIS OR THAT",duelSub:"Same question, the winner stays. Go till you miss",pick:"PICK ONE",newQ:"NEW QUESTION!",duelTxt:function(s,b){return"You got "+s+" in a row · best "+b+"."},reg_eg:"🇪🇬 EGYPT",reg_w:"🌍 WORLD",reg_all:"🔀 BOTH"},
+  runTxt:function(s,b){return" You cleared "+s+" rounds · best "+b+"."},newBest:" 🏅 New best!",newRun:"↻ NEW RUN",duel:"🆚 DUEL",duelSub:"Pick 1 of 2. The winner stays till you miss",pick:"PICK ONE",newQ:"NEW QUESTION!",duelTxt:function(s,b){return"You got "+s+" in a row · best "+b+"."},back:"‹",sections:function(k){return k===1?"1 section":n(k)+" sections"},reg_eg:"🇪🇬 EGYPT",reg_w:"🌍 WORLD",reg_all:"🔀 BOTH"},
  ar:{title:"شيلهم!",streak:"🔥 ورا بعض ",best:"🏅 أحسن رقم ",rounds:function(n){return n+" جولات"},solved:function(s,n){return"حليت "+s+" من "+n},complete:"★ خلّصتها",
   hint:"الكارت اللي بتشيله بيتقلب ويوريك إجابته، ودوس عليه تاني عشان ترجعه. دوس 📷 جوه أي جولة وبعدين على أي مربع عشان تحط صورة من عندك.",
   round:function(a,b){return"جولة "+a+"/"+b},photo:"وضع الصور: دوس على أي مربع",nailed:"جبتها!",wrong:"لأ، مش دي!",left:function(n){return"فاضل تشيل "+n},all:"شيل الكل وسيب واحد بس",
@@ -350,15 +363,15 @@ var TX={
   row:function(n){return" · 🔥 "+n+" ورا بعض"},perfect:"🏆 ولا غلطة!",done:"✅ خلّصت القسم!",got:function(a,b){return"جبت "+a+" من "+b+" المرة دي"},
   allSolved:" · ★ حليت كل الجولات",overall:function(s,n){return" · حليت "+s+" من "+n+" لحد دلوقتي"},replay:"↻ تاني",menu:"القايمة",full:"مفيش مساحة كفاية على الجهاز عشان تحفظ صور زيادة.",lang:"EN",
   endless:"♾ مالهاش آخر",endlessSub:"جولات متلخبطة من كل الأقسام",score:function(n){return"النتيجة "+n},runOver:"💀 اللعبة خلصت!",
-  runTxt:function(s,b){return" عدّيت "+s+" جولات · أحسن رقم "+b+"."},newBest:" 🏅 رقم قياسي جديد!",newRun:"↻ ابدأ من الأول",duel:"🆚 ده ولا ده",duelSub:"نفس السؤال، واللي يكسب يفضل. كمّل لحد ما تغلط",pick:"اختار واحد",newQ:"سؤال جديد!",duelTxt:function(s,b){return"جبت "+s+" ورا بعض · أحسن رقم "+b+"."},reg_eg:"🇪🇬 مصري",reg_w:"🌍 عالمي",reg_all:"🔀 الاتنين"}};
+  runTxt:function(s,b){return" عدّيت "+s+" جولات · أحسن رقم "+b+"."},newBest:" 🏅 رقم قياسي جديد!",newRun:"↻ ابدأ من الأول",duel:"🆚 ده ولا ده",duelSub:"اختار واحد من اتنين، واللي يكسب يفضل",pick:"اختار واحد",newQ:"سؤال جديد!",back:"›",sections:function(k){return k===1?"قسم واحد":n(k)+" أقسام"},duelTxt:function(s,b){return"جبت "+s+" ورا بعض · أحسن رقم "+b+"."},reg_eg:"🇪🇬 مصري",reg_w:"🌍 عالمي",reg_all:"🔀 الاتنين"}};
 
 var START=50,UNDO=30,WIN=10;
 var $=function(i){return document.getElementById(i)};
 var RM=matchMedia("(prefers-reduced-motion:reduce)").matches;
 var coins=START,streak=0,best=0,eBest={},dBest={},REG="all",prog={},mute=false,IM={},WK={},L="en";
-// mode "cat" plays the rounds in PL (one subcategory, SUB) in order; "end" is endless mode. cur = the round being played.
+// GRP = the menu group whose page is open (null = home). mode "cat" plays the rounds in PL (one subcategory, SUB) in order; "end" is endless mode. cur = the round being played.
 // REG = region filter for everything: "eg" Egyptian rounds, "w" international, "all" both.
-var mode="cat",SUB=null,PL=[],ri=0,cur=null,eScore=0,eRecent=[],items,out,hist,peek,flipNow,over,corr,lostStreak,runOk,edit=false,pend=null,stT;
+var GRP=null,mode="cat",SUB=null,PL=[],ri=0,cur=null,eScore=0,eRecent=[],items,out,hist,peek,flipNow,over,corr,lostStreak,runOk,edit=false,pend=null,stT;
 function ld(k,d){try{var v=localStorage.getItem(k);return v===null?d:JSON.parse(v)}catch(e){return d}}
 function sv(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){return false}}
 coins=ld("elim_coins",START);if(typeof coins!=="number"||!(coins>=0))coins=START;
@@ -488,20 +501,27 @@ function confetti(){if(RM)return;var cv=$("fx"),x=cv.getContext("2d"),W=cv.width
 // --- screens ---
 function applyLang(){var h=document.documentElement;h.lang=L;document.title=L==="ar"?"شيلهم!":"Shelhom!";h.dir=L==="ar"?"rtl":"ltr";$("lang").textContent=t("lang");$("snd").textContent=mute?"🔇":"🔊"}
 function inGame(){return $("game").style.display!=="none"}
+function grpSubs(g){return g.s.filter(function(x){return subRounds(x[0]).length})}
+function card(cls,data,emoji,label,left,d,k){return '<button class="cat '+cls+'" '+data+'><span class="se">'+emoji+"</span>"+label+"<small><span>"+left+"</span><span>"+
+ (d===k?t("complete"):t("solved")(n(d),n(k)))+'</span></small><div class="pb"><i style="width:'+(k?d/k*100:0)+'%"></i></div></button>'}
+// Home shows the play modes and the big groups; tapping a group opens its page of subcategories.
 function menu(){hide();edit=false;cur=null;$("game").style.display="none";$("menu").style.display="flex";$("coins").textContent=n(coins);$("cam").className="pill";
- $("menu").innerHTML="<h1>"+t("title")+"</h1><div class='stats'><span class='stat streak'>"+t("streak")+n(streak)+"</span><span class='stat'>"+t("best")+n(best)+"</span></div>"+
+ var g=GROUPS[GRP],subs=g&&grpSubs(g);if(subs&&!subs.length){GRP=null;g=null}
+ $("menu").innerHTML=g?'<div class="ghead"><button class="pill" data-back aria-label="Back">'+t("back")+"</button><h2>"+g.e+" "+(L==="ar"?g.a:g.n)+"</h2></div>"+
+   '<div class="subs">'+subs.map(function(x){var rs=subRounds(x[0]);return card("sc",'data-s="'+x[0]+'"',x[1],L==="ar"?x[3]:x[2],t("rounds")(n(rs.length)),solved(rs),rs.length)}).join("")+"</div>":
+  "<h1>"+t("title")+"</h1><div class='stats'><span class='stat streak'>"+t("streak")+n(streak)+"</span><span class='stat'>"+t("best")+n(best)+"</span></div>"+
   '<div class="seg">'+["eg","w","all"].map(function(m){return '<button data-reg="'+m+'"'+(REG===m?' class="on"':"")+">"+t("reg_"+m)+"</button>"}).join("")+"</div>"+
-  '<button class="cat end" data-c="e">'+t("endless")+"<small><span>"+t("endlessSub")+"</span><span>🏅 "+n(eBest[REG]||0)+"</span></small></button>"+
-   '<button class="cat end" data-c="d">'+t("duel")+"<small><span>"+t("duelSub")+"</span><span>🏅 "+n(dBest[REG]||0)+"</span></small></button>"+
-  GROUPS.map(function(g){var subs=g.s.filter(function(x){return subRounds(x[0]).length});if(!subs.length)return"";
-   return '<div class="gh">'+g.e+" "+(L==="ar"?g.a:g.n)+'</div><div class="subs">'+subs.map(function(x){var rs=subRounds(x[0]),k=rs.length,d=solved(rs);
-    return '<button class="cat sc" data-s="'+x[0]+'"><span class="se">'+x[1]+"</span>"+(L==="ar"?x[3]:x[2])+"<small><span>"+(d===k?t("complete"):t("solved")(n(d),n(k)))+
-     '</span></small><div class="pb"><i style="width:'+(d/k*100)+'%"></i></div></button>'}).join("")+"</div>"}).join("")+
-  '<div class="sub">'+t("hint")+'</div>'}
+  '<div class="modes"><button class="cat end" data-c="e">'+t("endless")+"<small><span>"+t("endlessSub")+"</span><span>🏅 "+n(eBest[REG]||0)+"</span></small></button>"+
+   '<button class="cat end" data-c="d">'+t("duel")+"<small><span>"+t("duelSub")+"</span><span>🏅 "+n(dBest[REG]||0)+"</span></small></button></div>"+
+  '<div class="subs">'+GROUPS.map(function(g,i){var ss=grpSubs(g);if(!ss.length)return"";var rs=[].concat.apply([],ss.map(function(x){return subRounds(x[0])}));
+   return card("sc grp",'data-g="'+i+'"',g.e,L==="ar"?g.a:g.n,t("sections")(ss.length),solved(rs),rs.length)}).join("")+"</div>"+
+  '<div class="sub">'+t("hint")+'</div>';scrollTo(0,0)}
 $("menu").onclick=function(e){var rg=e.target.closest("[data-reg]");if(rg){REG=rg.dataset.reg;eRecent=[];save();sfx.tap();menu();return}
+ if(e.target.closest("[data-back]")){GRP=null;sfx.tap();menu();return}
  var b=e.target.closest(".cat");if(!b)return;sfx.tap();
- if(b.dataset.c==="d"){mode="duel";dScore=0;dNew=false;dSrc=null;duelNext();return}
- if(b.dataset.c==="e"){mode="end";eScore=0}
+ if(b.dataset.g){GRP=+b.dataset.g;menu();return}
+ if(b.dataset.c==="d"){GRP=null;mode="duel";dScore=0;dNew=false;dSrc=null;duelNext();return}
+ if(b.dataset.c==="e"){GRP=null;mode="end";eScore=0}
  else{mode="cat";var id=b.dataset.s;GROUPS.forEach(function(g){g.s.forEach(function(x){if(x[0]===id)SUB=x})});PL=subRounds(id);ri=0;runOk=0;
   loadPhotos([].concat.apply([],PL.map(function(r){return mk(r).items})))}
  newRound()};

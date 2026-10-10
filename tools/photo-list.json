@@ -4,6 +4,7 @@
   "title": "Ahmed Hegazi",
   "hint": "Egyptian footballer",
   "ar": "أحمد حجازي",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -12,6 +13,7 @@
   "title": "Mohamed Salah",
   "hint": "Egyptian footballer",
   "ar": "محمد صلاح",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -20,6 +22,7 @@
   "title": "Trézéguet (Egyptian footballer)",
   "hint": "Egyptian footballer",
   "ar": "محمود حسن (تريزيجيه)",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -28,6 +31,7 @@
   "title": "Mahmoud Hamdy",
   "hint": "Egyptian footballer",
   "ar": "محمود حمدي (الونش)",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -36,6 +40,7 @@
   "title": "Zizo (footballer)",
   "hint": "Egyptian footballer",
   "ar": "أحمد سيد (زيزو)",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -44,6 +49,7 @@
   "title": "Mostafa Mohamed (footballer)",
   "hint": "Egyptian footballer",
   "ar": "مصطفى محمد",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -52,6 +58,7 @@
   "title": "Ahmed Fatouh",
   "hint": "Egyptian footballer",
   "ar": "أحمد فتوح",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -60,6 +67,7 @@
   "title": "Omar Marmoush",
   "hint": "Egyptian footballer",
   "ar": "عمر مرموش",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -68,6 +76,7 @@
   "title": "Hamza Abdelkarim",
   "hint": "Egyptian footballer",
   "ar": "حمزة عبد الكريم",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -76,6 +85,7 @@
   "title": "Hassan Shehata",
   "hint": "Egyptian footballer",
   "ar": "حسن شحاتة",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -84,6 +94,7 @@
   "title": "Mahmoud El Khatib",
   "hint": "Egyptian footballer",
   "ar": "محمود الخطيب (بيبو)",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -92,6 +103,7 @@
   "title": "Hossam Hassan",
   "hint": "Egyptian footballer",
   "ar": "حسام حسن",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -100,6 +112,7 @@
   "title": "Hany Ramzy",
   "hint": "Egyptian footballer",
   "ar": "هاني رمزي",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -108,6 +121,7 @@
   "title": "Essam El Hadary",
   "hint": "Egyptian footballer",
   "ar": "عصام الحضري",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -116,6 +130,7 @@
   "title": "Ahmed Hassan (footballer, born 1975)",
   "hint": "Egyptian footballer",
   "ar": "أحمد حسن",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -124,6 +139,7 @@
   "title": "Mohamed Aboutrika",
   "hint": "Egyptian footballer",
   "ar": "محمد أبو تريكة",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -132,6 +148,7 @@
   "title": "Mohamed Zidan",
   "hint": "Egyptian footballer",
   "ar": "محمد زيدان",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -140,78 +157,25 @@
   "title": "Mido (footballer)",
   "hint": "Egyptian footballer",
   "ar": "أحمد حسام (ميدو)",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
  {
   "name": "Al Ahly",
   "title": "Al Ahly SC",
-  "hint": "football club",
+  "hint": "Egyptian football club",
   "ar": "الأهلي",
+  "ar_hint": "نادي",
   "logo": false,
   "skip": false
  },
  {
   "name": "Zamalek",
   "title": "Zamalek SC",
-  "hint": "football club",
+  "hint": "Egyptian football club",
   "ar": "الزمالك",
-  "logo": false,
-  "skip": false
- },
- {
-  "name": "TP Mazembe",
-  "title": "TP Mazembe",
-  "hint": "football club",
-  "ar": "مازيمبي",
-  "logo": false,
-  "skip": false
- },
- {
-  "name": "Espérance de Tunis",
-  "title": "Espérance Sportive de Tunis",
-  "hint": "football club",
-  "ar": "الترجي التونسي",
-  "logo": false,
-  "skip": false
- },
- {
-  "name": "Wydad Casablanca",
-  "title": "Wydad AC",
-  "hint": "football club",
-  "ar": "الوداد البيضاوي",
-  "logo": false,
-  "skip": false
- },
- {
-  "name": "Raja Casablanca",
-  "title": "Raja CA",
-  "hint": "football club",
-  "ar": "الرجاء البيضاوي",
-  "logo": false,
-  "skip": false
- },
- {
-  "name": "Enyimba",
-  "title": "Enyimba F.C.",
-  "hint": "football club",
-  "ar": "إنيمبا",
-  "logo": false,
-  "skip": false
- },
- {
-  "name": "ES Sétif",
-  "title": "ES Sétif",
-  "hint": "football club",
-  "ar": "وفاق سطيف",
-  "logo": false,
-  "skip": false
- },
- {
-  "name": "Mamelodi Sundowns",
-  "title": "Mamelodi Sundowns F.C.",
-  "hint": "football club",
-  "ar": "صن داونز",
+  "ar_hint": "نادي",
   "logo": false,
   "skip": false
  },
@@ -220,6 +184,7 @@
   "title": "Al Ittihad Alexandria Club",
   "hint": "Egyptian football club",
   "ar": "الاتحاد السكندري",
+  "ar_hint": "نادي",
   "logo": false,
   "skip": false
  },
@@ -228,6 +193,7 @@
   "title": "Al Masry SC",
   "hint": "Egyptian football club",
   "ar": "المصري",
+  "ar_hint": "نادي",
   "logo": false,
   "skip": false
  },
@@ -236,6 +202,7 @@
   "title": "Ismaily SC",
   "hint": "Egyptian football club",
   "ar": "الإسماعيلي",
+  "ar_hint": "نادي",
   "logo": false,
   "skip": false
  },
@@ -244,6 +211,7 @@
   "title": "Smouha SC",
   "hint": "Egyptian football club",
   "ar": "سموحة",
+  "ar_hint": "نادي",
   "logo": false,
   "skip": false
  },
@@ -252,6 +220,7 @@
   "title": "Al Mokawloon Al Arab SC",
   "hint": "Egyptian football club",
   "ar": "المقاولون العرب",
+  "ar_hint": "نادي",
   "logo": false,
   "skip": false
  },
@@ -260,6 +229,7 @@
   "title": "ENPPI SC",
   "hint": "Egyptian football club",
   "ar": "إنبي",
+  "ar_hint": "نادي",
   "logo": false,
   "skip": false
  },
@@ -268,78 +238,7 @@
   "title": "Pyramids FC",
   "hint": "Egyptian football club",
   "ar": "بيراميدز",
-  "logo": false,
-  "skip": false
- },
- {
-  "name": "Egypt",
-  "title": "Egypt",
-  "hint": "country",
-  "ar": "مصر",
-  "logo": false,
-  "skip": false
- },
- {
-  "name": "Cameroon",
-  "title": "Cameroon",
-  "hint": "country",
-  "ar": "الكاميرون",
-  "logo": false,
-  "skip": false
- },
- {
-  "name": "Ghana",
-  "title": "Ghana",
-  "hint": "country",
-  "ar": "غانا",
-  "logo": false,
-  "skip": false
- },
- {
-  "name": "Nigeria",
-  "title": "Nigeria",
-  "hint": "country",
-  "ar": "نيجيريا",
-  "logo": false,
-  "skip": false
- },
- {
-  "name": "Ivory Coast",
-  "title": "Ivory Coast",
-  "hint": "country",
-  "ar": "كوت ديفوار",
-  "logo": false,
-  "skip": false
- },
- {
-  "name": "Algeria",
-  "title": "Algeria",
-  "hint": "country",
-  "ar": "الجزائر",
-  "logo": false,
-  "skip": false
- },
- {
-  "name": "DR Congo",
-  "title": "Democratic Republic of the Congo",
-  "hint": "country",
-  "ar": "الكونغو الديمقراطية",
-  "logo": false,
-  "skip": false
- },
- {
-  "name": "Tunisia",
-  "title": "Tunisia",
-  "hint": "country",
-  "ar": "تونس",
-  "logo": false,
-  "skip": false
- },
- {
-  "name": "Zambia",
-  "title": "Zambia",
-  "hint": "country",
-  "ar": "زامبيا",
+  "ar_hint": "نادي",
   "logo": false,
   "skip": false
  },
@@ -348,14 +247,17 @@
   "title": "Ahmed Shobair",
   "hint": "Egyptian footballer",
   "ar": "أحمد شوبير",
+  "ar_hint": "لاعب كرة",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "review": true
  },
  {
   "name": "Nader El-Sayed",
   "title": "Nader El-Sayed",
   "hint": "Egyptian footballer",
   "ar": "نادر السيد",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -364,6 +266,7 @@
   "title": "Sherif Ekramy",
   "hint": "Egyptian footballer",
   "ar": "شريف إكرامي",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -372,6 +275,7 @@
   "title": "Mohamed El Shenawy",
   "hint": "Egyptian footballer",
   "ar": "محمد الشناوي",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -380,6 +284,7 @@
   "title": "Mohamed Abou Gabal",
   "hint": "Egyptian footballer",
   "ar": "محمد أبو جبل (جباسكي)",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -388,6 +293,7 @@
   "title": "Ahmed El Shenawy",
   "hint": "Egyptian footballer",
   "ar": "أحمد الشناوي",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -396,6 +302,7 @@
   "title": "Mohamed Sobhy (footballer, born 1999)",
   "hint": "Egyptian footballer",
   "ar": "محمد صبحي",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -404,6 +311,7 @@
   "title": "Mostafa Shobeir",
   "hint": "Egyptian footballer",
   "ar": "مصطفى شوبير",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -412,6 +320,7 @@
   "title": "Hossam Ghaly",
   "hint": "Egyptian footballer",
   "ar": "حسام غالي",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -420,6 +329,7 @@
   "title": "Amr Zaki",
   "hint": "Egyptian footballer",
   "ar": "عمرو زكي",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -428,6 +338,7 @@
   "title": "Ahmed Elmohamady",
   "hint": "Egyptian footballer",
   "ar": "أحمد المحمدي",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -436,6 +347,151 @@
   "title": "Mohamed Elneny",
   "hint": "Egyptian footballer",
   "ar": "محمد النني",
+  "ar_hint": "لاعب كرة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "TP Mazembe",
+  "title": "TP Mazembe",
+  "hint": "football club",
+  "ar": "مازيمبي",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Espérance de Tunis",
+  "title": "Espérance Sportive de Tunis",
+  "hint": "football club",
+  "ar": "الترجي التونسي",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Wydad Casablanca",
+  "title": "Wydad AC",
+  "hint": "football club",
+  "ar": "الوداد البيضاوي",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Raja Casablanca",
+  "title": "Raja CA",
+  "hint": "football club",
+  "ar": "الرجاء البيضاوي",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Enyimba",
+  "title": "Enyimba F.C.",
+  "hint": "football club",
+  "ar": "إنيمبا",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "ES Sétif",
+  "title": "ES Sétif",
+  "hint": "football club",
+  "ar": "وفاق سطيف",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mamelodi Sundowns",
+  "title": "Mamelodi Sundowns F.C.",
+  "hint": "football club",
+  "ar": "صن داونز",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Egypt",
+  "title": "Egypt",
+  "hint": "country",
+  "ar": "مصر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Cameroon",
+  "title": "Cameroon",
+  "hint": "country",
+  "ar": "الكاميرون",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ghana",
+  "title": "Ghana",
+  "hint": "country",
+  "ar": "غانا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Nigeria",
+  "title": "Nigeria",
+  "hint": "country",
+  "ar": "نيجيريا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ivory Coast",
+  "title": "Ivory Coast",
+  "hint": "country",
+  "ar": "كوت ديفوار",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Algeria",
+  "title": "Algeria",
+  "hint": "country",
+  "ar": "الجزائر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "DR Congo",
+  "title": "Democratic Republic of the Congo",
+  "hint": "country",
+  "ar": "الكونغو الديمقراطية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Tunisia",
+  "title": "Tunisia",
+  "hint": "country",
+  "ar": "تونس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Zambia",
+  "title": "Zambia",
+  "hint": "country",
+  "ar": "زامبيا",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -444,6 +500,7 @@
   "title": "Neymar",
   "hint": "footballer",
   "ar": "نيمار",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -452,6 +509,7 @@
   "title": "Kylian Mbappé",
   "hint": "footballer",
   "ar": "كيليان مبابي",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -460,6 +518,7 @@
   "title": "Erling Haaland",
   "hint": "footballer",
   "ar": "إيرلينج هالاند",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -468,6 +527,7 @@
   "title": "Rodrygo",
   "hint": "footballer",
   "ar": "رودريجو",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -476,6 +536,7 @@
   "title": "Pedri",
   "hint": "footballer",
   "ar": "بيدري",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -484,6 +545,7 @@
   "title": "Jude Bellingham",
   "hint": "footballer",
   "ar": "جود بيلينجهام",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -492,6 +554,7 @@
   "title": "Gavi (footballer, born 2004)",
   "hint": "footballer",
   "ar": "جافي",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -500,6 +563,7 @@
   "title": "Endrick (footballer)",
   "hint": "footballer",
   "ar": "إندريك",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -508,6 +572,7 @@
   "title": "Lamine Yamal",
   "hint": "footballer",
   "ar": "لامين يامال",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -516,6 +581,7 @@
   "title": "Zinedine Zidane",
   "hint": "footballer",
   "ar": "زين الدين زيدان",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -524,6 +590,7 @@
   "title": "David Beckham",
   "hint": "footballer",
   "ar": "ديفيد بيكهام",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -532,6 +599,7 @@
   "title": "Ronaldo (Brazilian footballer)",
   "hint": "footballer",
   "ar": "رونالدو الظاهرة",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -540,6 +608,7 @@
   "title": "Thierry Henry",
   "hint": "footballer",
   "ar": "تييري هنري",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -548,6 +617,7 @@
   "title": "Ronaldinho",
   "hint": "footballer",
   "ar": "رونالدينيو",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -556,6 +626,7 @@
   "title": "Zlatan Ibrahimović",
   "hint": "footballer",
   "ar": "زلاتان إبراهيموفيتش",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -564,6 +635,7 @@
   "title": "Kaká",
   "hint": "footballer",
   "ar": "كاكا",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -572,6 +644,7 @@
   "title": "Cristiano Ronaldo",
   "hint": "footballer",
   "ar": "كريستيانو رونالدو",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -580,6 +653,7 @@
   "title": "Lionel Messi",
   "hint": "footballer",
   "ar": "ليونيل ميسي",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -588,6 +662,7 @@
   "title": "Johan Cruyff",
   "hint": "footballer",
   "ar": "يوهان كرويف",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -596,6 +671,7 @@
   "title": "Michel Platini",
   "hint": "footballer",
   "ar": "ميشيل بلاتيني",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -604,6 +680,7 @@
   "title": "Marco van Basten",
   "hint": "footballer",
   "ar": "ماركو فان باستن",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -612,6 +689,7 @@
   "title": "Franz Beckenbauer",
   "hint": "footballer",
   "ar": "فرانز بيكنباور",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -620,6 +698,7 @@
   "title": "Clint Eastwood",
   "hint": "actor",
   "ar": "كلينت إيستوود",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -628,6 +707,7 @@
   "title": "Dustin Hoffman",
   "hint": "actor",
   "ar": "داستن هوفمان",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -636,6 +716,7 @@
   "title": "Al Pacino",
   "hint": "actor",
   "ar": "آل باتشينو",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -644,6 +725,7 @@
   "title": "Harrison Ford",
   "hint": "actor",
   "ar": "هاريسون فورد",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -652,6 +734,7 @@
   "title": "Robert De Niro",
   "hint": "actor",
   "ar": "روبرت دي نيرو",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -660,6 +743,7 @@
   "title": "Sylvester Stallone",
   "hint": "actor",
   "ar": "سيلفستر ستالون",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -668,6 +752,7 @@
   "title": "Arnold Schwarzenegger",
   "hint": "actor",
   "ar": "أرنولد شوارزنيجر",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -676,6 +761,7 @@
   "title": "Meryl Streep",
   "hint": "actor",
   "ar": "ميريل ستريب",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -684,6 +770,7 @@
   "title": "Jackie Chan",
   "hint": "actor",
   "ar": "جاكي شان",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -692,6 +779,7 @@
   "title": "Omar Sharif",
   "hint": "Egyptian actor",
   "ar": "عمر الشريف",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -700,6 +788,7 @@
   "title": "Adel Emam",
   "hint": "Egyptian actor",
   "ar": "عادل إمام",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -708,6 +797,7 @@
   "title": "Mahmoud Yassin",
   "hint": "Egyptian actor",
   "ar": "محمود ياسين",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -716,6 +806,7 @@
   "title": "Ahmed Zaki (actor)",
   "hint": "Egyptian actor",
   "ar": "أحمد زكي",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -724,6 +815,7 @@
   "title": "Mohamed Henedi",
   "hint": "Egyptian actor",
   "ar": "محمد هنيدي",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -732,6 +824,7 @@
   "title": "Ahmed Helmy",
   "hint": "Egyptian actor",
   "ar": "أحمد حلمي",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -740,6 +833,7 @@
   "title": "Ahmed El Sakka",
   "hint": "Egyptian actor",
   "ar": "أحمد السقا",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -748,6 +842,7 @@
   "title": "Karim Abdel Aziz",
   "hint": "Egyptian actor",
   "ar": "كريم عبد العزيز",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -756,6 +851,7 @@
   "title": "Mohamed Ramadan (actor)",
   "hint": "Egyptian actor",
   "ar": "محمد رمضان",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -764,6 +860,7 @@
   "title": "Avatar (2009 film)",
   "hint": "film",
   "ar": "",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -772,6 +869,7 @@
   "title": "Avengers: Endgame",
   "hint": "film",
   "ar": "",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -779,7 +877,8 @@
   "name": "Titanic",
   "title": "Titanic (1997 film)",
   "hint": "film",
-  "ar": "تايتانك",
+  "ar": "تايتانيك",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -788,6 +887,7 @@
   "title": "Star Wars: The Force Awakens",
   "hint": "film",
   "ar": "",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -796,6 +896,7 @@
   "title": "Avengers: Infinity War",
   "hint": "film",
   "ar": "",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -804,6 +905,7 @@
   "title": "Spider-Man: No Way Home",
   "hint": "film",
   "ar": "",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -812,6 +914,7 @@
   "title": "Jurassic World",
   "hint": "film",
   "ar": "",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -820,6 +923,7 @@
   "title": "The Lion King (2019 film)",
   "hint": "film",
   "ar": "الأسد الملك (2019)",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -828,6 +932,7 @@
   "title": "Frozen II",
   "hint": "film",
   "ar": "",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -836,6 +941,7 @@
   "title": "The Godfather",
   "hint": "film",
   "ar": "الأب الروحي",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -844,6 +950,7 @@
   "title": "Jaws (film)",
   "hint": "film",
   "ar": "الفك المفترس",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -852,6 +959,7 @@
   "title": "Star Wars (film)",
   "hint": "film",
   "ar": "حرب النجوم",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -860,6 +968,7 @@
   "title": "E.T. the Extra-Terrestrial",
   "hint": "film",
   "ar": "",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -868,6 +977,7 @@
   "title": "Back to the Future",
   "hint": "film",
   "ar": "العودة للمستقبل",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -876,6 +986,7 @@
   "title": "Jurassic Park (film)",
   "hint": "film",
   "ar": "",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -884,6 +995,7 @@
   "title": "Pulp Fiction",
   "hint": "film",
   "ar": "",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -892,6 +1004,7 @@
   "title": "The Matrix",
   "hint": "film",
   "ar": "",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -900,6 +1013,7 @@
   "title": "Faten Hamama",
   "hint": "Egyptian actress",
   "ar": "فاتن حمامة",
+  "ar_hint": "ممثلة",
   "logo": false,
   "skip": false
  },
@@ -908,6 +1022,7 @@
   "title": "Soad Hosny",
   "hint": "Egyptian actress",
   "ar": "سعاد حسني",
+  "ar_hint": "ممثلة",
   "logo": false,
   "skip": false
  },
@@ -916,6 +1031,7 @@
   "title": "Yousra",
   "hint": "Egyptian actress",
   "ar": "يسرا",
+  "ar_hint": "ممثلة",
   "logo": false,
   "skip": false
  },
@@ -924,6 +1040,7 @@
   "title": "Elham Shahin",
   "hint": "Egyptian actress",
   "ar": "إلهام شاهين",
+  "ar_hint": "ممثلة",
   "logo": false,
   "skip": false
  },
@@ -932,6 +1049,7 @@
   "title": "Laila Elwi",
   "hint": "Egyptian actress",
   "ar": "ليلى علوي",
+  "ar_hint": "ممثلة",
   "logo": false,
   "skip": false
  },
@@ -940,6 +1058,7 @@
   "title": "Nelly Karim",
   "hint": "Egyptian actress",
   "ar": "نيللي كريم",
+  "ar_hint": "ممثلة",
   "logo": false,
   "skip": false
  },
@@ -948,6 +1067,7 @@
   "title": "Hend Sabry",
   "hint": "Egyptian actress",
   "ar": "هند صبري",
+  "ar_hint": "ممثلة",
   "logo": false,
   "skip": false
  },
@@ -956,14 +1076,17 @@
   "title": "Yasmin Abdulaziz",
   "hint": "Egyptian actress",
   "ar": "ياسمين عبد العزيز",
+  "ar_hint": "ممثلة",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Menna Shalaby",
   "title": "Menna Shalabi",
   "hint": "Egyptian actress",
   "ar": "منة شلبي",
+  "ar_hint": "ممثلة",
   "logo": false,
   "skip": false
  },
@@ -972,6 +1095,7 @@
   "title": "Cairo Station",
   "hint": "Egyptian film",
   "ar": "باب الحديد",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -980,6 +1104,7 @@
   "title": "The Nightingale's Prayer",
   "hint": "Egyptian film",
   "ar": "دعاء الكروان",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -988,14 +1113,17 @@
   "title": "Watch Out for Zouzou",
   "hint": "Egyptian film",
   "ar": "خلي بالك من زوزو",
+  "ar_hint": "فيلم",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Terrorism and Kebab",
   "title": "Terrorism and Kebab",
   "hint": "Egyptian film",
   "ar": "الإرهاب والكباب",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -1004,22 +1132,27 @@
   "title": "Round Trip to Ismailia",
   "hint": "Egyptian film",
   "ar": "إسماعيلية رايح جاي",
+  "ar_hint": "فيلم",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "review": true
  },
  {
   "name": "El Limby",
   "title": "El-Limby",
   "hint": "Egyptian film",
   "ar": "اللمبي",
+  "ar_hint": "فيلم",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "The Yacoubian Building",
   "title": "The Yacoubian Building (film)",
   "hint": "Egyptian film",
   "ar": "عمارة يعقوبيان",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -1028,6 +1161,7 @@
   "title": "The Blue Elephant (film)",
   "hint": "Egyptian film",
   "ar": "الفيل الأزرق",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -1036,6 +1170,7 @@
   "title": "Kira & El Gin",
   "hint": "Egyptian film",
   "ar": "كيرة والجن",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -1044,6 +1179,7 @@
   "title": "Anwar Wagdi",
   "hint": "Egyptian actor",
   "ar": "أنور وجدي",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1052,6 +1188,7 @@
   "title": "Ismail Yassine",
   "hint": "Egyptian actor",
   "ar": "إسماعيل ياسين",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1060,6 +1197,7 @@
   "title": "Ahmed Mazhar",
   "hint": "Egyptian actor",
   "ar": "أحمد مظهر",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1068,6 +1206,7 @@
   "title": "Farid Shawqi",
   "hint": "Egyptian actor",
   "ar": "فريد شوقي",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1076,6 +1215,7 @@
   "title": "Fouad el-Mohandes",
   "hint": "Egyptian actor",
   "ar": "فؤاد المهندس",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1084,6 +1224,7 @@
   "title": "Shoukry Sarhan",
   "hint": "Egyptian actor",
   "ar": "شكري سرحان",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1092,14 +1233,17 @@
   "title": "Rushdy Abaza",
   "hint": "Egyptian actor",
   "ar": "رشدي أباظة",
+  "ar_hint": "ممثل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Emad Hamdy",
   "title": "Emad Hamdy",
   "hint": "Egyptian actor",
   "ar": "عماد حمدي",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1108,6 +1252,7 @@
   "title": "Mahmoud el-Meliguy",
   "hint": "Egyptian actor",
   "ar": "محمود المليجي",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1116,14 +1261,17 @@
   "title": "Mohamed Saad (actor)",
   "hint": "Egyptian actor",
   "ar": "محمد سعد",
+  "ar_hint": "ممثل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Ahmed Ezz",
   "title": "Ahmed Ezz (actor)",
   "hint": "Egyptian actor",
   "ar": "أحمد عز",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1132,6 +1280,7 @@
   "title": "Amir Karara",
   "hint": "Egyptian actor",
   "ar": "أمير كرارة",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1140,6 +1289,7 @@
   "title": "Ahmed Mekky",
   "hint": "Egyptian actor",
   "ar": "أحمد مكي",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1148,6 +1298,7 @@
   "title": "Asser Yassin",
   "hint": "Egyptian actor",
   "ar": "آسر ياسين",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1156,6 +1307,7 @@
   "title": "Mohamed Farrag",
   "hint": "Egyptian actor",
   "ar": "محمد فراج",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1164,6 +1316,7 @@
   "title": "Karim Mahmoud Abdel Aziz",
   "hint": "Egyptian actor",
   "ar": "كريم محمود عبد العزيز",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1172,6 +1325,7 @@
   "title": "Ahmed Hatem (actor)",
   "hint": "Egyptian actor",
   "ar": "أحمد حاتم",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1180,6 +1334,7 @@
   "title": "Ahmed Malek",
   "hint": "Egyptian actor",
   "ar": "أحمد مالك",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1188,6 +1343,7 @@
   "title": "Saidi fil Gamaa el Amrikia",
   "hint": "Egyptian film",
   "ar": "صعيدي في الجامعة الأمريكية",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -1196,6 +1352,7 @@
   "title": "Hammam fi Amsterdam",
   "hint": "Egyptian film",
   "ar": "همام في أمستردام",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -1204,6 +1361,7 @@
   "title": "El Nazer (film)",
   "hint": "Egyptian film",
   "ar": "الناظر",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -1212,6 +1370,7 @@
   "title": "Africano (film)",
   "hint": "Egyptian film",
   "ar": "أفريكانو",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -1220,14 +1379,17 @@
   "title": "Mafia (2002 film)",
   "hint": "Egyptian film",
   "ar": "مافيا",
+  "ar_hint": "فيلم",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Tito",
   "title": "Tito (2004 film)",
   "hint": "Egyptian film",
   "ar": "تيتو",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -1236,6 +1398,7 @@
   "title": "The Island (2007 film)",
   "hint": "Egyptian film",
   "ar": "الجزيرة",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -1244,22 +1407,27 @@
   "title": "Sons of Rizk",
   "hint": "Egyptian film",
   "ar": "ولاد رزق",
+  "ar_hint": "فيلم",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "El Mamar",
   "title": "El Mamar (film)",
   "hint": "Egyptian film",
   "ar": "الممر",
+  "ar_hint": "فيلم",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "review": true
  },
  {
   "name": "Ghazal El Banat",
   "title": "The Flirtation of Girls",
   "hint": "Egyptian film",
   "ar": "غزل البنات",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -1268,6 +1436,7 @@
   "title": "Hamido's Son",
   "hint": "Egyptian film",
   "ar": "ابن حميدو",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -1276,22 +1445,27 @@
   "title": "The Sin (1965 film)",
   "hint": "Egyptian film",
   "ar": "الحرام",
+  "ar_hint": "فيلم",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "El Zoga El Tanya",
   "title": "The Second Wife (1967 film)",
   "hint": "Egyptian film",
   "ar": "الزوجة الثانية",
+  "ar_hint": "فيلم",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "review": true
  },
  {
   "name": "Shei' Men El Khof",
   "title": "A Taste of Fear",
   "hint": "Egyptian film",
   "ar": "شيء من الخوف",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -1300,6 +1474,7 @@
   "title": "Karnak (film)",
   "hint": "Egyptian film",
   "ar": "الكرنك",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -1308,14 +1483,17 @@
   "title": "Sawwak El Otobees (film)",
   "hint": "Egyptian film",
   "ar": "سواق الأتوبيس",
+  "ar_hint": "فيلم",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "El Bary'",
   "title": "The Innocent (1986 film)",
   "hint": "Egyptian film",
   "ar": "البريء",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -1324,6 +1502,7 @@
   "title": "The Kit Kat",
   "hint": "Egyptian film",
   "ar": "الكيت كات",
+  "ar_hint": "فيلم",
   "logo": false,
   "skip": false
  },
@@ -1332,6 +1511,7 @@
   "title": "Sean Bean",
   "hint": "actor",
   "ar": "شون بين",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1340,6 +1520,7 @@
   "title": "Iain Glen",
   "hint": "actor",
   "ar": "إيان جلين",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1348,6 +1529,7 @@
   "title": "Peter Dinklage",
   "hint": "actor",
   "ar": "بيتر دينكليدج",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1356,6 +1538,7 @@
   "title": "Nikolaj Coster-Waldau",
   "hint": "actor",
   "ar": "نيكولاي كوستر والداو",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1364,6 +1547,7 @@
   "title": "Lena Headey",
   "hint": "actor",
   "ar": "لينا هيدي",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1372,6 +1556,7 @@
   "title": "Gwendoline Christie",
   "hint": "actor",
   "ar": "جويندولين كريستي",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1380,6 +1565,7 @@
   "title": "Emilia Clarke",
   "hint": "actor",
   "ar": "إميليا كلارك",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1388,6 +1574,7 @@
   "title": "Sophie Turner",
   "hint": "actor",
   "ar": "صوفي تيرنر",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1396,6 +1583,7 @@
   "title": "Maisie Williams",
   "hint": "actor",
   "ar": "ميزي ويليامز",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1404,6 +1592,7 @@
   "title": "Lisa Kudrow",
   "hint": "actor",
   "ar": "ليزا كودرو",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1412,6 +1601,7 @@
   "title": "Courteney Cox",
   "hint": "actor",
   "ar": "كورتني كوكس",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1420,6 +1610,7 @@
   "title": "David Schwimmer",
   "hint": "actor",
   "ar": "ديفيد شويمر",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1428,6 +1619,7 @@
   "title": "Matt LeBlanc",
   "hint": "actor",
   "ar": "مات لوبلان",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1436,6 +1628,7 @@
   "title": "Jennifer Aniston",
   "hint": "actor",
   "ar": "جينيفر أنيستون",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1444,6 +1637,7 @@
   "title": "Jim Parsons",
   "hint": "actor",
   "ar": "جيم بارسونز",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1452,6 +1646,7 @@
   "title": "Johnny Galecki",
   "hint": "actor",
   "ar": "جوني جاليكي",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1460,6 +1655,7 @@
   "title": "Kunal Nayyar",
   "hint": "actor",
   "ar": "كونال نايار",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1468,6 +1664,7 @@
   "title": "Kaley Cuoco",
   "hint": "actor",
   "ar": "كايلي كوكو",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -1476,6 +1673,7 @@
   "title": "The Big Bang Theory",
   "hint": "TV series",
   "ar": "",
+  "ar_hint": "مسلسل",
   "logo": false,
   "skip": false
  },
@@ -1484,6 +1682,7 @@
   "title": "Two and a Half Men",
   "hint": "TV series",
   "ar": "",
+  "ar_hint": "مسلسل",
   "logo": false,
   "skip": false
  },
@@ -1492,6 +1691,7 @@
   "title": "Friends",
   "hint": "TV series",
   "ar": "",
+  "ar_hint": "مسلسل",
   "logo": false,
   "skip": false
  },
@@ -1500,6 +1700,7 @@
   "title": "How I Met Your Mother",
   "hint": "TV series",
   "ar": "",
+  "ar_hint": "مسلسل",
   "logo": false,
   "skip": false
  },
@@ -1508,6 +1709,7 @@
   "title": "The Office (American TV series)",
   "hint": "TV series",
   "ar": "",
+  "ar_hint": "مسلسل",
   "logo": false,
   "skip": false
  },
@@ -1516,6 +1718,7 @@
   "title": "Seinfeld",
   "hint": "TV series",
   "ar": "",
+  "ar_hint": "مسلسل",
   "logo": false,
   "skip": false
  },
@@ -1524,6 +1727,7 @@
   "title": "The Sopranos",
   "hint": "TV series",
   "ar": "",
+  "ar_hint": "مسلسل",
   "logo": false,
   "skip": false
  },
@@ -1532,6 +1736,7 @@
   "title": "Game of Thrones",
   "hint": "TV series",
   "ar": "",
+  "ar_hint": "مسلسل",
   "logo": false,
   "skip": false
  },
@@ -1540,6 +1745,7 @@
   "title": "Breaking Bad",
   "hint": "TV series",
   "ar": "",
+  "ar_hint": "مسلسل",
   "logo": false,
   "skip": false
  },
@@ -1548,6 +1754,7 @@
   "title": "Al Helmeya Nights",
   "hint": "Egyptian TV series",
   "ar": "ليالي الحلمية",
+  "ar_hint": "مسلسل",
   "logo": false,
   "skip": false
  },
@@ -1556,22 +1763,27 @@
   "title": "Lan Aish fi Gilbab Abi (TV series)",
   "hint": "Egyptian TV series",
   "ar": "لن أعيش في جلباب أبي",
+  "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Bakkar",
   "title": "Bakkar",
   "hint": "Egyptian TV series",
   "ar": "بكار",
+  "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "El Kabeer Awy",
   "title": "El Kabeer Awy",
   "hint": "Egyptian TV series",
   "ar": "الكبير أوي",
+  "ar_hint": "مسلسل",
   "logo": false,
   "skip": false
  },
@@ -1580,38 +1792,47 @@
   "title": "Grand Hotel (Egyptian TV series)",
   "hint": "Egyptian TV series",
   "ar": "جراند أوتيل",
+  "ar_hint": "مسلسل",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "review": true
  },
  {
   "name": "El Ostoura",
   "title": "El Ostoura",
   "hint": "Egyptian TV series",
   "ar": "الأسطورة",
+  "ar_hint": "مسلسل",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "review": true
  },
  {
   "name": "El Ikhtiyar",
   "title": "El Ikhtiyar (TV series)",
   "hint": "Egyptian TV series",
   "ar": "الاختيار",
+  "ar_hint": "مسلسل",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "review": true
  },
  {
   "name": "Gaafar El Omda",
   "title": "Gaafar El Omda",
   "hint": "Egyptian TV series",
   "ar": "جعفر العمدة",
+  "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "El Hashashin",
   "title": "El Hashashin (TV series)",
   "hint": "Egyptian TV series",
   "ar": "الحشاشين",
+  "ar_hint": "مسلسل",
   "logo": false,
   "skip": false
  },
@@ -1620,6 +1841,7 @@
   "title": "Bob Dylan",
   "hint": "singer",
   "ar": "بوب ديلان",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1628,6 +1850,7 @@
   "title": "Paul McCartney",
   "hint": "singer",
   "ar": "بول مكارتني",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1636,6 +1859,7 @@
   "title": "Mick Jagger",
   "hint": "singer",
   "ar": "ميك جاجر",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1644,6 +1868,7 @@
   "title": "Rod Stewart",
   "hint": "singer",
   "ar": "رود ستيوارت",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1652,6 +1877,7 @@
   "title": "Freddie Mercury",
   "hint": "singer",
   "ar": "فريدي ميركوري",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1660,6 +1886,7 @@
   "title": "Elton John",
   "hint": "singer",
   "ar": "إلتون جون",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1668,6 +1895,7 @@
   "title": "Ozzy Osbourne",
   "hint": "singer",
   "ar": "أوزي أوزبورن",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1676,6 +1904,7 @@
   "title": "Bruce Springsteen",
   "hint": "singer",
   "ar": "بروس سبرينجستين",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1684,6 +1913,7 @@
   "title": "Stevie Wonder",
   "hint": "singer",
   "ar": "ستيفي وندر",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1692,6 +1922,7 @@
   "title": "Taylor Swift",
   "hint": "singer",
   "ar": "تايلور سويفت",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1700,6 +1931,7 @@
   "title": "The Weeknd",
   "hint": "singer",
   "ar": "ذا ويكند",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1708,6 +1940,7 @@
   "title": "Ed Sheeran",
   "hint": "singer",
   "ar": "إد شيران",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1716,6 +1949,7 @@
   "title": "Ariana Grande",
   "hint": "singer",
   "ar": "أريانا جراندي",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1724,6 +1958,7 @@
   "title": "Harry Styles",
   "hint": "singer",
   "ar": "هاري ستايلز",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1732,6 +1967,7 @@
   "title": "Dua Lipa",
   "hint": "singer",
   "ar": "دوا ليبا",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1740,6 +1976,7 @@
   "title": "Shawn Mendes",
   "hint": "singer",
   "ar": "شون منديز",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1748,6 +1985,7 @@
   "title": "Billie Eilish",
   "hint": "singer",
   "ar": "بيلي إيليش",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1756,6 +1994,7 @@
   "title": "Olivia Rodrigo",
   "hint": "singer",
   "ar": "أوليفيا رودريجو",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1764,6 +2003,7 @@
   "title": "Abdel Halim Hafez",
   "hint": "Egyptian singer",
   "ar": "عبد الحليم حافظ",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1772,6 +2012,7 @@
   "title": "Hany Shaker",
   "hint": "Egyptian singer",
   "ar": "هاني شاكر",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1780,6 +2021,7 @@
   "title": "Mohamed Mounir",
   "hint": "Egyptian singer",
   "ar": "محمد منير",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1788,6 +2030,7 @@
   "title": "Amr Diab",
   "hint": "Egyptian singer",
   "ar": "عمرو دياب",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1796,6 +2039,7 @@
   "title": "Hakim (singer)",
   "hint": "Egyptian singer",
   "ar": "حكيم",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1804,6 +2048,7 @@
   "title": "Angham",
   "hint": "Egyptian singer",
   "ar": "أنغام",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1812,14 +2057,17 @@
   "title": "Mohamed Hamaki",
   "hint": "Egyptian singer",
   "ar": "محمد حماقي",
+  "ar_hint": "مطرب",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Tamer Hosny",
   "title": "Tamer Hosny",
   "hint": "Egyptian singer",
   "ar": "تامر حسني",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1828,6 +2076,7 @@
   "title": "Sherine",
   "hint": "Egyptian singer",
   "ar": "شيرين عبد الوهاب",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1836,6 +2085,7 @@
   "title": "Hey Jude",
   "hint": "song",
   "ar": "",
+  "ar_hint": "أغنية",
   "logo": false,
   "skip": false
  },
@@ -1844,6 +2094,7 @@
   "title": "Bohemian Rhapsody",
   "hint": "song",
   "ar": "",
+  "ar_hint": "أغنية",
   "logo": false,
   "skip": false
  },
@@ -1852,6 +2103,7 @@
   "title": "Billie Jean",
   "hint": "song",
   "ar": "",
+  "ar_hint": "أغنية",
   "logo": false,
   "skip": false
  },
@@ -1860,6 +2112,7 @@
   "title": "Like a Prayer (song)",
   "hint": "song",
   "ar": "",
+  "ar_hint": "أغنية",
   "logo": false,
   "skip": false
  },
@@ -1868,6 +2121,7 @@
   "title": "Smells Like Teen Spirit",
   "hint": "song",
   "ar": "",
+  "ar_hint": "أغنية",
   "logo": false,
   "skip": false
  },
@@ -1876,6 +2130,7 @@
   "title": "Wannabe (Spice Girls song)",
   "hint": "song",
   "ar": "",
+  "ar_hint": "أغنية",
   "logo": false,
   "skip": false
  },
@@ -1884,6 +2139,7 @@
   "title": "Crazy in Love",
   "hint": "song",
   "ar": "",
+  "ar_hint": "أغنية",
   "logo": false,
   "skip": false
  },
@@ -1892,6 +2148,7 @@
   "title": "Rolling in the Deep",
   "hint": "song",
   "ar": "",
+  "ar_hint": "أغنية",
   "logo": false,
   "skip": false
  },
@@ -1900,6 +2157,7 @@
   "title": "Blinding Lights",
   "hint": "song",
   "ar": "",
+  "ar_hint": "أغنية",
   "logo": false,
   "skip": false
  },
@@ -1908,14 +2166,17 @@
   "title": "Mohamed Fouad",
   "hint": "Egyptian singer",
   "ar": "محمد فؤاد",
+  "ar_hint": "مطرب",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Hisham Abbas",
   "title": "Hisham Abbas",
   "hint": "Egyptian singer",
   "ar": "هشام عباس",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1924,6 +2185,7 @@
   "title": "Ehab Tawfik",
   "hint": "Egyptian singer",
   "ar": "إيهاب توفيق",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1932,6 +2194,7 @@
   "title": "Moustafa Amar",
   "hint": "Egyptian singer",
   "ar": "مصطفى قمر",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1940,6 +2203,7 @@
   "title": "Ruby (Egyptian singer)",
   "hint": "Egyptian singer",
   "ar": "روبي",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1948,6 +2212,7 @@
   "title": "Ahmed Saad (singer)",
   "hint": "Egyptian singer",
   "ar": "أحمد سعد",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1956,14 +2221,17 @@
   "title": "Marwan Pablo",
   "hint": "Egyptian singer",
   "ar": "مروان بابلو",
+  "ar_hint": "مطرب",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Wegz",
   "title": "Wegz",
   "hint": "Egyptian singer",
   "ar": "ويجز",
+  "ar_hint": "مطرب",
   "logo": false,
   "skip": false
  },
@@ -1972,6 +2240,7 @@
   "title": "Mayal (album)",
   "hint": "Amr Diab song",
   "ar": "ميال",
+  "ar_hint": "أغنية",
   "logo": false,
   "skip": false
  },
@@ -1980,6 +2249,7 @@
   "title": "Nour El Ain",
   "hint": "Amr Diab song",
   "ar": "نور العين",
+  "ar_hint": "أغنية",
   "logo": false,
   "skip": false
  },
@@ -1988,14 +2258,17 @@
   "title": "Tamally Maak",
   "hint": "Amr Diab song",
   "ar": "تملي معاك",
+  "ar_hint": "أغنية",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Allem Alby",
   "title": "Allem Alby",
   "hint": "Amr Diab song",
   "ar": "علم قلبي",
+  "ar_hint": "أغنية",
   "logo": false,
   "skip": false
  },
@@ -2004,6 +2277,7 @@
   "title": "Leily Nahary",
   "hint": "Amr Diab song",
   "ar": "ليلي نهاري",
+  "ar_hint": "أغنية",
   "logo": false,
   "skip": false
  },
@@ -2012,6 +2286,7 @@
   "title": "Wayah",
   "hint": "Amr Diab song",
   "ar": "وياه",
+  "ar_hint": "أغنية",
   "logo": false,
   "skip": false
  },
@@ -2020,6 +2295,7 @@
   "title": "Banadeek Ta'ala",
   "hint": "Amr Diab song",
   "ar": "بناديك تعالى",
+  "ar_hint": "أغنية",
   "logo": false,
   "skip": false
  },
@@ -2028,6 +2304,7 @@
   "title": "Sahran (album)",
   "hint": "Amr Diab song",
   "ar": "سهران",
+  "ar_hint": "أغنية",
   "logo": false,
   "skip": false
  },
@@ -2036,6 +2313,7 @@
   "title": "Khatfoony (song)",
   "hint": "Amr Diab song",
   "ar": "خطفوني",
+  "ar_hint": "أغنية",
   "logo": false,
   "skip": false
  },
@@ -2044,6 +2322,7 @@
   "title": "Elon Musk",
   "hint": "celebrity",
   "ar": "إيلون ماسك",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2052,6 +2331,7 @@
   "title": "Kim Kardashian",
   "hint": "celebrity",
   "ar": "كيم كارداشيان",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2060,6 +2340,7 @@
   "title": "PewDiePie",
   "hint": "celebrity",
   "ar": "بيوديباي",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2068,6 +2349,7 @@
   "title": "KSI",
   "hint": "celebrity",
   "ar": "كيه إس آي",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2076,6 +2358,7 @@
   "title": "Timothée Chalamet",
   "hint": "celebrity",
   "ar": "تيموثي شالاميه",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2084,6 +2367,7 @@
   "title": "Zendaya",
   "hint": "celebrity",
   "ar": "زندايا",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2092,6 +2376,7 @@
   "title": "Kylie Jenner",
   "hint": "celebrity",
   "ar": "كايلي جينر",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2100,6 +2385,7 @@
   "title": "MrBeast",
   "hint": "celebrity",
   "ar": "مستر بيست",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2108,6 +2394,7 @@
   "title": "Charli D'Amelio",
   "hint": "celebrity",
   "ar": "تشارلي داميليو",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2116,6 +2403,7 @@
   "title": "Robert Downey Jr.",
   "hint": "actor",
   "ar": "روبرت داوني جونيور",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -2124,6 +2412,7 @@
   "title": "Mark Ruffalo",
   "hint": "actor",
   "ar": "مارك روفالو",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -2132,6 +2421,7 @@
   "title": "Paul Rudd",
   "hint": "actor",
   "ar": "بول رود",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -2140,6 +2430,7 @@
   "title": "Benedict Cumberbatch",
   "hint": "actor",
   "ar": "بنديكت كامبرباتش",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -2148,6 +2439,7 @@
   "title": "Chris Pratt",
   "hint": "actor",
   "ar": "كريس برات",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -2156,6 +2448,7 @@
   "title": "Chris Evans (actor)",
   "hint": "actor",
   "ar": "كريس إيفانز",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -2164,6 +2457,7 @@
   "title": "Chris Hemsworth",
   "hint": "actor",
   "ar": "كريس هيمسورث",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -2172,6 +2466,7 @@
   "title": "Scarlett Johansson",
   "hint": "actor",
   "ar": "سكارليت جوهانسون",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -2180,6 +2475,7 @@
   "title": "Tom Holland",
   "hint": "actor",
   "ar": "توم هولاند",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -2188,6 +2484,7 @@
   "title": "Mickey Mouse",
   "hint": "cartoon",
   "ar": "ميكي ماوس",
+  "ar_hint": "كرتون",
   "logo": false,
   "skip": false
  },
@@ -2196,6 +2493,7 @@
   "title": "Bugs Bunny",
   "hint": "cartoon",
   "ar": "باجز باني",
+  "ar_hint": "كرتون",
   "logo": false,
   "skip": false
  },
@@ -2204,6 +2502,7 @@
   "title": "Tom and Jerry",
   "hint": "cartoon",
   "ar": "توم وجيري",
+  "ar_hint": "كرتون",
   "logo": false,
   "skip": false
  },
@@ -2212,6 +2511,7 @@
   "title": "Scooby-Doo",
   "hint": "cartoon",
   "ar": "سكوبي دو",
+  "ar_hint": "كرتون",
   "logo": false,
   "skip": false
  },
@@ -2220,6 +2520,7 @@
   "title": "The Simpsons",
   "hint": "cartoon",
   "ar": "عيلة سيمبسون",
+  "ar_hint": "كرتون",
   "logo": false,
   "skip": false
  },
@@ -2228,6 +2529,7 @@
   "title": "SpongeBob SquarePants",
   "hint": "cartoon",
   "ar": "سبونج بوب",
+  "ar_hint": "كرتون",
   "logo": false,
   "skip": false
  },
@@ -2236,6 +2538,7 @@
   "title": "Shrek",
   "hint": "cartoon",
   "ar": "شريك",
+  "ar_hint": "كرتون",
   "logo": false,
   "skip": false
  },
@@ -2244,6 +2547,7 @@
   "title": "Peppa Pig",
   "hint": "cartoon",
   "ar": "بيبا بيج",
+  "ar_hint": "كرتون",
   "logo": false,
   "skip": false
  },
@@ -2252,6 +2556,7 @@
   "title": "Bluey (2018 TV series)",
   "hint": "cartoon",
   "ar": "بلوي",
+  "ar_hint": "كرتون",
   "logo": false,
   "skip": false
  },
@@ -2260,6 +2565,7 @@
   "title": "Russia",
   "hint": "country",
   "ar": "روسيا",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2268,6 +2574,7 @@
   "title": "Canada",
   "hint": "country",
   "ar": "كندا",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2276,6 +2583,7 @@
   "title": "United States",
   "hint": "country",
   "ar": "أمريكا",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2284,6 +2592,7 @@
   "title": "China",
   "hint": "country",
   "ar": "الصين",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2292,6 +2601,7 @@
   "title": "Brazil",
   "hint": "country",
   "ar": "البرازيل",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2300,6 +2610,7 @@
   "title": "Australia",
   "hint": "country",
   "ar": "أستراليا",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2308,6 +2619,7 @@
   "title": "India",
   "hint": "country",
   "ar": "الهند",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2316,6 +2628,16 @@
   "title": "Saudi Arabia",
   "hint": "country",
   "ar": "السعودية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Argentina",
+  "title": "Argentina",
+  "hint": "country",
+  "ar": "الأرجنتين",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2324,6 +2646,7 @@
   "title": "Mount Everest",
   "hint": "mountain",
   "ar": "جبل إيفرست",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2332,6 +2655,7 @@
   "title": "K2",
   "hint": "mountain",
   "ar": "كي 2",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2340,6 +2664,7 @@
   "title": "Kangchenjunga",
   "hint": "mountain",
   "ar": "كانشينجونجا",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2348,6 +2673,7 @@
   "title": "Aconcagua",
   "hint": "mountain",
   "ar": "أكونكاجوا",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2356,6 +2682,7 @@
   "title": "Denali",
   "hint": "mountain",
   "ar": "دينالي",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2364,6 +2691,7 @@
   "title": "Mount Kilimanjaro",
   "hint": "mountain",
   "ar": "كليمنجارو",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2372,6 +2700,7 @@
   "title": "Mont Blanc",
   "hint": "mountain",
   "ar": "مون بلان",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2380,14 +2709,16 @@
   "title": "Mount Fuji",
   "hint": "mountain",
   "ar": "جبل فوجي",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
  {
-  "name": "Mount Sinai",
-  "title": "Mount Sinai",
+  "name": "Matterhorn",
+  "title": "Matterhorn",
   "hint": "mountain",
-  "ar": "جبل موسى (سيناء)",
+  "ar": "الماترهورن",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2396,6 +2727,7 @@
   "title": "Vatican City",
   "hint": "country",
   "ar": "الفاتيكان",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2404,6 +2736,7 @@
   "title": "Monaco",
   "hint": "country",
   "ar": "موناكو",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2412,6 +2745,7 @@
   "title": "Nauru",
   "hint": "country",
   "ar": "ناورو",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2420,6 +2754,7 @@
   "title": "Tuvalu",
   "hint": "country",
   "ar": "توفالو",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2428,6 +2763,7 @@
   "title": "San Marino",
   "hint": "country",
   "ar": "سان مارينو",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2436,6 +2772,7 @@
   "title": "Liechtenstein",
   "hint": "country",
   "ar": "ليختنشتاين",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2444,6 +2781,7 @@
   "title": "Maldives",
   "hint": "country",
   "ar": "المالديف",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2452,6 +2790,7 @@
   "title": "Malta",
   "hint": "country",
   "ar": "مالطا",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2460,6 +2799,7 @@
   "title": "Singapore",
   "hint": "country",
   "ar": "سنغافورة",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2468,6 +2808,7 @@
   "title": "Abu Simbel temples",
   "hint": "Egypt",
   "ar": "أبو سمبل",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2476,6 +2817,7 @@
   "title": "Aswan",
   "hint": "Egypt",
   "ar": "أسوان",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2484,6 +2826,7 @@
   "title": "Marsa Alam",
   "hint": "Egypt",
   "ar": "مرسى علم",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2492,6 +2835,7 @@
   "title": "Luxor",
   "hint": "Egypt",
   "ar": "الأقصر",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2500,6 +2844,7 @@
   "title": "Hurghada",
   "hint": "Egypt",
   "ar": "الغردقة",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2508,6 +2853,7 @@
   "title": "Sharm El Sheikh",
   "hint": "Egypt",
   "ar": "شرم الشيخ",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2516,6 +2862,7 @@
   "title": "Siwa Oasis",
   "hint": "Egypt",
   "ar": "سيوة",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2524,6 +2871,7 @@
   "title": "Cairo",
   "hint": "Egypt",
   "ar": "القاهرة",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2532,6 +2880,7 @@
   "title": "Alexandria",
   "hint": "Egypt",
   "ar": "إسكندرية",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2540,6 +2889,7 @@
   "title": "Iconic Tower (Egypt)",
   "hint": "landmark",
   "ar": "البرج الأيقوني",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2548,6 +2898,7 @@
   "title": "Cairo Tower",
   "hint": "landmark",
   "ar": "برج القاهرة",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2556,6 +2907,7 @@
   "title": "Great Pyramid of Giza",
   "hint": "landmark",
   "ar": "الهرم الأكبر (خوفو)",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2564,6 +2916,7 @@
   "title": "Pyramid of Khafre",
   "hint": "landmark",
   "ar": "هرم خفرع",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2572,6 +2925,7 @@
   "title": "Red Pyramid",
   "hint": "landmark",
   "ar": "الهرم الأحمر",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2580,6 +2934,7 @@
   "title": "Pyramid of Djoser",
   "hint": "landmark",
   "ar": "الهرم المدرج (زوسر)",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2588,6 +2943,7 @@
   "title": "Pyramid of Menkaure",
   "hint": "landmark",
   "ar": "هرم منكاورع",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2596,6 +2952,7 @@
   "title": "Pompey's Pillar",
   "hint": "landmark",
   "ar": "عمود السواري",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2604,6 +2961,7 @@
   "title": "Great Sphinx of Giza",
   "hint": "landmark",
   "ar": "أبو الهول",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2611,7 +2969,8 @@
   "name": "Narmer",
   "title": "Narmer",
   "hint": "pharaoh",
-  "ar": "نعرمر (مينا)",
+  "ar": "نارمر (مينا)",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2620,6 +2979,7 @@
   "title": "Djoser",
   "hint": "pharaoh",
   "ar": "زوسر",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2628,6 +2988,7 @@
   "title": "Khufu",
   "hint": "pharaoh",
   "ar": "خوفو",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2636,6 +2997,7 @@
   "title": "Hatshepsut",
   "hint": "pharaoh",
   "ar": "حتشبسوت",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2644,6 +3006,7 @@
   "title": "Akhenaten",
   "hint": "pharaoh",
   "ar": "إخناتون",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2652,6 +3015,7 @@
   "title": "Tutankhamun",
   "hint": "pharaoh",
   "ar": "توت عنخ آمون",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2660,6 +3024,7 @@
   "title": "Ramesses II",
   "hint": "pharaoh",
   "ar": "رمسيس التاني",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2668,6 +3033,7 @@
   "title": "Ptolemy I Soter",
   "hint": "pharaoh",
   "ar": "بطليموس الأول",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2676,6 +3042,7 @@
   "title": "Cleopatra",
   "hint": "pharaoh",
   "ar": "كليوباترا",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2684,6 +3051,7 @@
   "title": "Suez Canal",
   "hint": "Egypt",
   "ar": "افتتاح قناة السويس",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2692,6 +3060,7 @@
   "title": "Cairo University",
   "hint": "Egypt",
   "ar": "تأسيس جامعة القاهرة",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2700,6 +3069,7 @@
   "title": "Egyptian revolution of 1919",
   "hint": "Egypt",
   "ar": "ثورة 1919",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2708,6 +3078,7 @@
   "title": "KV62",
   "hint": "Egypt",
   "ar": "اكتشاف مقبرة توت عنخ آمون",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2716,6 +3087,7 @@
   "title": "Egyptian revolution of 1952",
   "hint": "Egypt",
   "ar": "ثورة 23 يوليو",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2724,6 +3096,7 @@
   "title": "Aswan Dam",
   "hint": "Egypt",
   "ar": "اكتمال السد العالي",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2732,6 +3105,7 @@
   "title": "Yom Kippur War",
   "hint": "Egypt",
   "ar": "حرب أكتوبر",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2740,6 +3114,7 @@
   "title": "Naguib Mahfouz",
   "hint": "Egypt",
   "ar": "نجيب محفوظ ياخد نوبل",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2748,6 +3123,7 @@
   "title": "Grand Egyptian Museum",
   "hint": "Egypt",
   "ar": "افتتاح المتحف المصري الكبير",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2756,6 +3132,7 @@
   "title": "Muhammad Ali of Egypt",
   "hint": "ruler of Egypt",
   "ar": "محمد علي باشا",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2764,6 +3141,7 @@
   "title": "Isma'il Pasha",
   "hint": "ruler of Egypt",
   "ar": "الخديوي إسماعيل",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2772,6 +3150,7 @@
   "title": "Fuad I of Egypt",
   "hint": "ruler of Egypt",
   "ar": "الملك فؤاد الأول",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2780,6 +3159,7 @@
   "title": "Farouk of Egypt",
   "hint": "ruler of Egypt",
   "ar": "الملك فاروق",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2788,6 +3168,7 @@
   "title": "Mohamed Naguib",
   "hint": "ruler of Egypt",
   "ar": "محمد نجيب",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2796,6 +3177,7 @@
   "title": "Gamal Abdel Nasser",
   "hint": "ruler of Egypt",
   "ar": "جمال عبد الناصر",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2804,6 +3186,7 @@
   "title": "Anwar Sadat",
   "hint": "ruler of Egypt",
   "ar": "أنور السادات",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2812,6 +3195,7 @@
   "title": "Hosni Mubarak",
   "hint": "ruler of Egypt",
   "ar": "حسني مبارك",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2820,6 +3204,7 @@
   "title": "Abdel Fattah el-Sisi",
   "hint": "ruler of Egypt",
   "ar": "عبد الفتاح السيسي",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2828,6 +3213,7 @@
   "title": "Cheetah",
   "hint": "animal",
   "ar": "الشيتا",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2835,7 +3221,8 @@
   "name": "Pronghorn",
   "title": "Pronghorn",
   "hint": "animal",
-  "ar": "البرونجهورن",
+  "ar": "ظبي البرونجهورن",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2844,6 +3231,7 @@
   "title": "Thoroughbred",
   "hint": "animal",
   "ar": "حصان السباق",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2852,6 +3240,7 @@
   "title": "Lion",
   "hint": "animal",
   "ar": "الأسد",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2860,6 +3249,7 @@
   "title": "Greyhound",
   "hint": "animal",
   "ar": "كلب الجراي هاوند",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2868,6 +3258,7 @@
   "title": "Red kangaroo",
   "hint": "animal",
   "ar": "الكنغر",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2876,6 +3267,7 @@
   "title": "Common ostrich",
   "hint": "animal",
   "ar": "النعامة",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2884,6 +3276,7 @@
   "title": "Grizzly bear",
   "hint": "animal",
   "ar": "الدب الأشهب",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2892,6 +3285,7 @@
   "title": "Usain Bolt",
   "hint": "animal",
   "ar": "يوسين بولت",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2900,6 +3294,7 @@
   "title": "Blue whale",
   "hint": "animal",
   "ar": "الحوت الأزرق",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2908,6 +3303,7 @@
   "title": "African bush elephant",
   "hint": "animal",
   "ar": "الفيل الأفريقي",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2916,6 +3312,7 @@
   "title": "White rhinoceros",
   "hint": "animal",
   "ar": "وحيد القرن الأبيض",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2924,6 +3321,7 @@
   "title": "Hippopotamus",
   "hint": "animal",
   "ar": "فرس النهر",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2932,6 +3330,7 @@
   "title": "Giraffe",
   "hint": "animal",
   "ar": "الزرافة",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2940,6 +3339,7 @@
   "title": "Saltwater crocodile",
   "hint": "animal",
   "ar": "تمساح المية المالحة",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2948,6 +3348,7 @@
   "title": "Polar bear",
   "hint": "animal",
   "ar": "الدب القطبي",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2956,6 +3357,7 @@
   "title": "Gorilla",
   "hint": "animal",
   "ar": "الغوريلا",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2964,6 +3366,7 @@
   "title": "Greenland shark",
   "hint": "animal",
   "ar": "قرش جرينلاند",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2971,7 +3374,8 @@
   "name": "Bowhead Whale",
   "title": "Bowhead whale",
   "hint": "animal",
-  "ar": "حوت القوس",
+  "ar": "الحوت مقوّس الرأس",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2980,6 +3384,7 @@
   "title": "Aldabra giant tortoise",
   "hint": "animal",
   "ar": "السلحفاة العملاقة",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2988,6 +3393,7 @@
   "title": "Elephant",
   "hint": "animal",
   "ar": "الفيل",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -2996,6 +3402,7 @@
   "title": "Macaw",
   "hint": "animal",
   "ar": "ببغاء المكاو",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -3004,6 +3411,7 @@
   "title": "Horse",
   "hint": "animal",
   "ar": "الحصان",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -3012,6 +3420,7 @@
   "title": "Cat",
   "hint": "animal",
   "ar": "القطة",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -3020,6 +3429,7 @@
   "title": "Dog",
   "hint": "animal",
   "ar": "الكلب",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -3028,6 +3438,7 @@
   "title": "Hamster",
   "hint": "animal",
   "ar": "الهامستر",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -3036,6 +3447,7 @@
   "title": "Pac-Man",
   "hint": "video game",
   "ar": "",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -3044,6 +3456,7 @@
   "title": "Tetris",
   "hint": "video game",
   "ar": "",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -3052,6 +3465,7 @@
   "title": "Super Mario Bros.",
   "hint": "video game",
   "ar": "",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -3060,6 +3474,7 @@
   "title": "The Legend of Zelda (video game)",
   "hint": "video game",
   "ar": "",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -3068,6 +3483,7 @@
   "title": "Pokémon Red and Blue",
   "hint": "video game",
   "ar": "",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -3076,6 +3492,7 @@
   "title": "Grand Theft Auto (video game)",
   "hint": "video game",
   "ar": "",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -3084,6 +3501,7 @@
   "title": "Minecraft",
   "hint": "video game",
   "ar": "",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -3092,6 +3510,7 @@
   "title": "Fortnite",
   "hint": "video game",
   "ar": "",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -3100,6 +3519,7 @@
   "title": "Among Us",
   "hint": "video game",
   "ar": "",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -3108,6 +3528,7 @@
   "title": "Atari 2600",
   "hint": "video game console",
   "ar": "",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -3116,6 +3537,7 @@
   "title": "Nintendo Entertainment System",
   "hint": "video game console",
   "ar": "",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -3124,6 +3546,7 @@
   "title": "Game Boy",
   "hint": "video game console",
   "ar": "",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -3132,6 +3555,7 @@
   "title": "PlayStation (console)",
   "hint": "video game console",
   "ar": "",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -3140,6 +3564,7 @@
   "title": "Nintendo 64",
   "hint": "video game console",
   "ar": "",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -3148,6 +3573,7 @@
   "title": "Xbox (console)",
   "hint": "video game console",
   "ar": "",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -3156,6 +3582,7 @@
   "title": "Wii",
   "hint": "video game console",
   "ar": "",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -3164,6 +3591,7 @@
   "title": "PlayStation 4",
   "hint": "video game console",
   "ar": "",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -3172,6 +3600,7 @@
   "title": "Nintendo Switch",
   "hint": "video game console",
   "ar": "",
+  "ar_hint": "",
   "logo": false,
   "skip": false
  },
@@ -3180,6 +3609,7 @@
   "title": "Nintendo",
   "hint": "company",
   "ar": "",
+  "ar_hint": "شركة",
   "logo": true,
   "skip": false
  },
@@ -3188,6 +3618,7 @@
   "title": "Ford Motor Company",
   "hint": "company",
   "ar": "",
+  "ar_hint": "شركة",
   "logo": true,
   "skip": false
  },
@@ -3196,6 +3627,7 @@
   "title": "IBM",
   "hint": "company",
   "ar": "",
+  "ar_hint": "شركة",
   "logo": true,
   "skip": false
  },
@@ -3204,6 +3636,7 @@
   "title": "The Walt Disney Company",
   "hint": "company",
   "ar": "",
+  "ar_hint": "شركة",
   "logo": true,
   "skip": false
  },
@@ -3212,6 +3645,7 @@
   "title": "Toyota",
   "hint": "company",
   "ar": "",
+  "ar_hint": "شركة",
   "logo": true,
   "skip": false
  },
@@ -3220,6 +3654,7 @@
   "title": "Samsung",
   "hint": "company",
   "ar": "",
+  "ar_hint": "شركة",
   "logo": true,
   "skip": false
  },
@@ -3228,6 +3663,7 @@
   "title": "Sony",
   "hint": "company",
   "ar": "",
+  "ar_hint": "شركة",
   "logo": true,
   "skip": false
  },
@@ -3236,6 +3672,7 @@
   "title": "Apple Inc.",
   "hint": "company",
   "ar": "",
+  "ar_hint": "شركة",
   "logo": true,
   "skip": false
  },
@@ -3244,6 +3681,7 @@
   "title": "Google",
   "hint": "company",
   "ar": "",
+  "ar_hint": "شركة",
   "logo": true,
   "skip": false
  },
@@ -3252,6 +3690,7 @@
   "title": "Facebook",
   "hint": "app",
   "ar": "",
+  "ar_hint": "",
   "logo": true,
   "skip": false
  },
@@ -3260,6 +3699,7 @@
   "title": "YouTube",
   "hint": "app",
   "ar": "",
+  "ar_hint": "",
   "logo": true,
   "skip": false
  },
@@ -3268,6 +3708,7 @@
   "title": "Twitter",
   "hint": "app",
   "ar": "",
+  "ar_hint": "",
   "logo": true,
   "skip": false
  },
@@ -3276,6 +3717,7 @@
   "title": "WhatsApp",
   "hint": "app",
   "ar": "",
+  "ar_hint": "",
   "logo": true,
   "skip": false
  },
@@ -3284,6 +3726,7 @@
   "title": "Instagram",
   "hint": "app",
   "ar": "",
+  "ar_hint": "",
   "logo": true,
   "skip": false
  },
@@ -3292,6 +3735,7 @@
   "title": "Snapchat",
   "hint": "app",
   "ar": "",
+  "ar_hint": "",
   "logo": true,
   "skip": false
  },
@@ -3300,6 +3744,7 @@
   "title": "TikTok",
   "hint": "app",
   "ar": "",
+  "ar_hint": "",
   "logo": true,
   "skip": false
  },
@@ -3308,6 +3753,7 @@
   "title": "ChatGPT",
   "hint": "app",
   "ar": "",
+  "ar_hint": "",
   "logo": true,
   "skip": false
  },
@@ -3316,6 +3762,7 @@
   "title": "Threads (social network)",
   "hint": "app",
   "ar": "",
+  "ar_hint": "",
   "logo": true,
   "skip": false
  },
@@ -3324,6 +3771,7 @@
   "title": "Al-Ahram",
   "hint": "company",
   "ar": "الأهرام",
+  "ar_hint": "شركة",
   "logo": true,
   "skip": false
  },
@@ -3331,7 +3779,8 @@
   "name": "National Bank of Egypt",
   "title": "National Bank of Egypt",
   "hint": "company",
-  "ar": "البنك الأهلي",
+  "ar": "البنك الأهلي المصري",
+  "ar_hint": "شركة",
   "logo": true,
   "skip": false
  },
@@ -3340,6 +3789,7 @@
   "title": "Banque Misr",
   "hint": "company",
   "ar": "بنك مصر",
+  "ar_hint": "شركة",
   "logo": true,
   "skip": false
  },
@@ -3348,6 +3798,7 @@
   "title": "EgyptAir",
   "hint": "company",
   "ar": "مصر للطيران",
+  "ar_hint": "شركة",
   "logo": true,
   "skip": false
  },
@@ -3356,6 +3807,7 @@
   "title": "Juhayna Food Industries",
   "hint": "company",
   "ar": "جهينة",
+  "ar_hint": "شركة",
   "logo": true,
   "skip": false
  },
@@ -3364,6 +3816,7 @@
   "title": "Edita Food Industries",
   "hint": "company",
   "ar": "إيديتا",
+  "ar_hint": "شركة",
   "logo": true,
   "skip": false
  },
@@ -3372,6 +3825,7 @@
   "title": "Vodafone Egypt",
   "hint": "company",
   "ar": "فودافون مصر",
+  "ar_hint": "شركة",
   "logo": true,
   "skip": false
  },
@@ -3380,6 +3834,7 @@
   "title": "Fawry",
   "hint": "company",
   "ar": "فوري",
+  "ar_hint": "شركة",
   "logo": true,
   "skip": false
  },
@@ -3388,6 +3843,7 @@
   "title": "Swvl",
   "hint": "company",
   "ar": "سويفل",
+  "ar_hint": "شركة",
   "logo": true,
   "skip": false
  }

@@ -1,7 +1,9 @@
 """Download one photo per game item from Wikipedia and save them as small JPEG data URIs.
 
-Reads tools/photo-list.json ([{name, title, hint}]) and writes tools/photos.json ({name: data URI})
-plus tools/photos-report.json ({name: wikipedia page used}) so the picks can be reviewed.
+Reads tools/photo-list.json ([{name, title, hint, ar, ar_hint, logo, skip, url, review}]) and writes tools/photos.json
+({name: data URI}) plus tools/photos-report.json ({name: wikipedia page used}) so the picks can be reviewed.
+An item with "url" uses that image directly. Items with "review" also get several candidate images in
+tools/photo-candidates.json ({name: [{src, url, uri}]}) so a person can pick the right one and save it as "url".
 Run by .github/workflows/photos.yml (Wikipedia isn't reachable from every dev environment).
 """
 import base64, io, json, sys, time
@@ -75,6 +77,40 @@ def by_search(x):
     return p if ok(p) else None
 
 
+def candidates(x, p):
+    """Every plausible image for an item: its pages on both Wikipedias, Wikidata image/logo/poster, and top search hits."""
+    c = []
+
+    def add(src, url):
+        if url and all(u != url for _, u in c):
+            c.append((src, url))
+
+    qids = []
+    if ok(p) or (p and not p.get("missing")):
+        if ok(p):
+            add(p["title"], p["thumbnail"]["source"])
+        qids.append((p.get("pageprops") or {}).get("wikibase_item"))
+    a = None
+    if x.get("ar"):
+        a = (api(AR_API, titles=x["ar"], redirects=1, **PI).get("query", {}).get("pages") or [None])[0]
+        if a and not a.get("missing"):
+            if ok(a):
+                add("ar:" + a["title"], a["thumbnail"]["source"])
+            qids.append((a.get("pageprops") or {}).get("wikibase_item"))
+    for qid in dict.fromkeys(q for q in qids if q):
+        for prop in ("P3383", "P18", "P154"):
+            add("wikidata %s %s" % (qid, prop), wd_file(qid, prop))
+    for url, q, tag in ((AR_API, (x.get("ar") or "") + " " + x.get("ar_hint", ""), "ar-search:"),
+                        (API, x["name"].replace("'", "") + " " + x["hint"], "search:")):
+        if not q.strip():
+            continue
+        d = api(url, generator="search", gsrsearch=q, gsrlimit=4, **PI).get("query", {})
+        for pg in sorted(d.get("pages") or [], key=lambda g: g.get("index", 0)):
+            if ok(pg):
+                add(tag + pg["title"], pg["thumbnail"]["source"])
+    return c
+
+
 def to_uri(url):
     for i in range(4):
         r = S.get(url, timeout=30)
@@ -111,16 +147,23 @@ def main():
     pages = {}
     for i in range(0, len(items), 40):
         pages.update(by_titles(items[i:i + 40]))
-    out, report, miss = {}, {}, []
+    out, report, miss, cands = {}, {}, [], {}
     for x in items:
+        if x.get("review"):
+            try:
+                cands[x["name"]] = [{"src": s, "url": u, "uri": to_uri(u)} for s, u in candidates(x, pages.get(x["name"]))[:8]]
+            except Exception as e:
+                print("candidates failed", x["name"], e)
         if x.get("skip"):  # known bad matches: show a letter instead
             continue
         p = pages.get(x["name"])
         qid = p and (p.get("pageprops") or {}).get("wikibase_item")
         # Order: logo for companies/apps, the article's lead image, Wikidata logo/image, Arabic Wikipedia, search.
         url = src = None
+        if x.get("url"):
+            url, src = x["url"], "url"
         try:
-            if x.get("logo"):
+            if not url and x.get("logo"):
                 url, src = wd_file(qid, "P154"), "wikidata logo"
             if not url and ok(p):
                 url, src = p["thumbnail"]["source"], p["title"]
@@ -147,6 +190,7 @@ def main():
         time.sleep(0.2)
     json.dump(out, open("tools/photos.json", "w"), ensure_ascii=False, separators=(",", ":"))
     json.dump(report, open("tools/photos-report.json", "w"), ensure_ascii=False, indent=1)
+    json.dump(cands, open("tools/photo-candidates.json", "w"), ensure_ascii=False, indent=0)
     print(len(out), "photos;", "missing:", miss)
 
 
