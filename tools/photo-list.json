@@ -4701,6 +4701,636 @@
   "skip": false
  },
  {
+  "name": "Giza",
+  "title": "Giza Governorate",
+  "hint": "Egypt governorate",
+  "ar": "الجيزة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Sharqia",
+  "title": "Sharqia Governorate",
+  "hint": "Egypt governorate",
+  "ar": "الشرقية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Dakahlia",
+  "title": "Dakahlia Governorate",
+  "hint": "Egypt governorate",
+  "ar": "الدقهلية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Beheira",
+  "title": "Beheira Governorate",
+  "hint": "Egypt governorate",
+  "ar": "البحيرة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Qalyubia",
+  "title": "Qalyubia Governorate",
+  "hint": "Egypt governorate",
+  "ar": "القليوبية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Gharbia",
+  "title": "Gharbia Governorate",
+  "hint": "Egypt governorate",
+  "ar": "الغربية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Monufia",
+  "title": "Monufia Governorate",
+  "hint": "Egypt governorate",
+  "ar": "المنوفية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ras Mohammed",
+  "title": "Ras Muhammad National Park",
+  "hint": "Egypt nature reserve",
+  "ar": "رأس محمد",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Saint Catherine",
+  "title": "Saint Catherine",
+  "hint": "Egypt nature reserve",
+  "ar": "سانت كاترين",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Wadi El Rayan",
+  "title": "Wadi El Rayan",
+  "hint": "Egypt nature reserve",
+  "ar": "وادي الريان",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Lake Qarun",
+  "title": "Lake Moeris",
+  "hint": "Egypt nature reserve",
+  "ar": "بحيرة قارون",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Nabq",
+  "title": "Nabq",
+  "hint": "Egypt nature reserve",
+  "ar": "نبق",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Wadi Degla",
+  "title": "Wadi Degla",
+  "hint": "Egypt nature reserve",
+  "ar": "وادي دجلة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "White Desert",
+  "title": "White Desert National Park",
+  "hint": "Egypt nature reserve",
+  "ar": "الصحرا البيضا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Wadi El Gemal",
+  "title": "Wadi El Gemal National Park",
+  "hint": "Egypt nature reserve",
+  "ar": "وادي الجمال",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Gilf Kebir",
+  "title": "Gilf Kebir",
+  "hint": "Egypt nature reserve",
+  "ar": "الجلف الكبير",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Cairo–Alexandria Desert Road",
+  "title": "Cairo–Alexandria desert road",
+  "hint": "Egypt landmark",
+  "ar": "الطريق الصحراوي (القاهرة–إسكندرية)",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Suez Canal",
+  "title": "Suez Canal",
+  "hint": "Egypt landmark",
+  "ar": "قناة السويس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "New Suez Canal (2015)",
+  "title": "New Suez Canal",
+  "hint": "Egypt landmark",
+  "ar": "قناة السويس الجديدة (2015)",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Cairo Metro Line 1",
+  "title": "Cairo Metro Line 1",
+  "hint": "Egypt landmark",
+  "ar": "الخط الأول للمترو",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "6th October Bridge",
+  "title": "6th October Bridge",
+  "hint": "Egypt landmark",
+  "ar": "كوبري 6 أكتوبر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Aswan High Dam",
+  "title": "Aswan High Dam",
+  "hint": "Egypt landmark",
+  "ar": "السد العالي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Avenue of Sphinxes (Luxor)",
+  "title": "Avenue of Sphinxes",
+  "hint": "Egypt landmark",
+  "ar": "طريق الكباش",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ahmed Hamdi Tunnel",
+  "title": "Ahmed Hamdi Tunnel",
+  "hint": "Egypt landmark",
+  "ar": "نفق الشهيد أحمد حمدي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Great Pyramid (one side of base)",
+  "title": "Great Pyramid of Giza",
+  "hint": "Egypt landmark",
+  "ar": "الهرم الأكبر (ضلع القاعدة)",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Heliopolis",
+  "title": "Heliopolis, Cairo",
+  "hint": "Egyptian city",
+  "ar": "مصر الجديدة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "10th of Ramadan City",
+  "title": "10th of Ramadan",
+  "hint": "Egyptian city",
+  "ar": "العاشر من رمضان",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "6th of October City",
+  "title": "6th of October (city)",
+  "hint": "Egyptian city",
+  "ar": "6 أكتوبر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Sheikh Zayed City",
+  "title": "Sheikh Zayed City",
+  "hint": "Egyptian city",
+  "ar": "الشيخ زايد",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "New Cairo",
+  "title": "New Cairo",
+  "hint": "Egyptian city",
+  "ar": "القاهرة الجديدة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "New Administrative Capital",
+  "title": "New Administrative Capital",
+  "hint": "Egyptian city",
+  "ar": "العاصمة الإدارية الجديدة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "New Alamein",
+  "title": "New Alamein",
+  "hint": "Egyptian city",
+  "ar": "العلمين الجديدة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Greenland",
+  "title": "Greenland",
+  "hint": "island",
+  "ar": "جرينلاند",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "New Guinea",
+  "title": "New Guinea",
+  "hint": "island",
+  "ar": "غينيا الجديدة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Borneo",
+  "title": "Borneo",
+  "hint": "island",
+  "ar": "بورنيو",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Madagascar",
+  "title": "Madagascar",
+  "hint": "island",
+  "ar": "مدغشقر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Sumatra",
+  "title": "Sumatra",
+  "hint": "island",
+  "ar": "سومطرة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Great Britain",
+  "title": "Great Britain",
+  "hint": "island",
+  "ar": "بريطانيا العظمى",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Cuba",
+  "title": "Cuba",
+  "hint": "island",
+  "ar": "كوبا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Iceland",
+  "title": "Iceland",
+  "hint": "island",
+  "ar": "أيسلندا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Sicily",
+  "title": "Sicily",
+  "hint": "island",
+  "ar": "صقلية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Lake Baikal",
+  "title": "Lake Baikal",
+  "hint": "lake",
+  "ar": "بحيرة بايكال",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Lake Tanganyika",
+  "title": "Lake Tanganyika",
+  "hint": "lake",
+  "ar": "بحيرة تنجانيقا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Caspian Sea",
+  "title": "Caspian Sea",
+  "hint": "lake",
+  "ar": "بحر قزوين",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Lake Malawi",
+  "title": "Lake Malawi",
+  "hint": "lake",
+  "ar": "بحيرة ملاوي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Crater Lake",
+  "title": "Crater Lake",
+  "hint": "lake",
+  "ar": "كريتر ليك",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Lake Tahoe",
+  "title": "Lake Tahoe",
+  "hint": "lake",
+  "ar": "بحيرة تاهو",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Lake Superior",
+  "title": "Lake Superior",
+  "hint": "lake",
+  "ar": "بحيرة سوبيريور",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Lake Geneva",
+  "title": "Lake Geneva",
+  "hint": "lake",
+  "ar": "بحيرة جنيف",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Loch Ness",
+  "title": "Loch Ness",
+  "hint": "lake",
+  "ar": "بحيرة لوخ نيس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Angel Falls",
+  "title": "Angel Falls",
+  "hint": "waterfall",
+  "ar": "شلالات أنجل",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Yosemite Falls",
+  "title": "Yosemite Falls",
+  "hint": "waterfall",
+  "ar": "شلالات يوسمايت",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Sutherland Falls",
+  "title": "Sutherland Falls",
+  "hint": "waterfall",
+  "ar": "شلالات ساذرلاند",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Kaieteur Falls",
+  "title": "Kaieteur Falls",
+  "hint": "waterfall",
+  "ar": "شلالات كايتور",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Multnomah Falls",
+  "title": "Multnomah Falls",
+  "hint": "waterfall",
+  "ar": "شلالات مولتنوما",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Victoria Falls",
+  "title": "Victoria Falls",
+  "hint": "waterfall",
+  "ar": "شلالات فيكتوريا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Iguazu Falls",
+  "title": "Iguazu Falls",
+  "hint": "waterfall",
+  "ar": "شلالات إجوازو",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Niagara Falls",
+  "title": "Niagara Falls",
+  "hint": "waterfall",
+  "ar": "شلالات نياجرا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Rhine Falls",
+  "title": "Rhine Falls",
+  "hint": "waterfall",
+  "ar": "شلالات الراين",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Turkey",
+  "title": "Turkey",
+  "hint": "country",
+  "ar": "تركيا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Portugal",
+  "title": "Portugal",
+  "hint": "country",
+  "ar": "البرتغال",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Quito",
+  "title": "Quito",
+  "hint": "city",
+  "ar": "كيتو",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Bogotá",
+  "title": "Bogotá",
+  "hint": "city",
+  "ar": "بوجوتا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Addis Ababa",
+  "title": "Addis Ababa",
+  "hint": "city",
+  "ar": "أديس أبابا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mexico City",
+  "title": "Mexico City",
+  "hint": "city",
+  "ar": "مكسيكو سيتي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Nairobi",
+  "title": "Nairobi",
+  "hint": "city",
+  "ar": "نيروبي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Brasília",
+  "title": "Brasília",
+  "hint": "city",
+  "ar": "برازيليا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ankara",
+  "title": "Ankara",
+  "hint": "city",
+  "ar": "أنقرة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Madrid",
+  "title": "Madrid",
+  "hint": "city",
+  "ar": "مدريد",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Rome",
+  "title": "Rome",
+  "hint": "city",
+  "ar": "روما",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
   "name": "Narmer",
   "title": "Narmer",
   "hint": "pharaoh",
@@ -5106,6 +5736,744 @@
   "skip": false
  },
  {
+  "name": "Amr ibn al-As Mosque",
+  "title": "Amr ibn al-As Mosque",
+  "hint": "Egypt landmark",
+  "ar": "جامع عمرو بن العاص",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mosque of Ibn Tulun",
+  "title": "Mosque of Ibn Tulun",
+  "hint": "Egypt landmark",
+  "ar": "جامع ابن طولون",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Al-Azhar Mosque",
+  "title": "Al-Azhar Mosque",
+  "hint": "Egypt landmark",
+  "ar": "الجامع الأزهر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Sultan Hassan Mosque",
+  "title": "Mosque–Madrasa of Sultan Hasan",
+  "hint": "Egypt landmark",
+  "ar": "جامع السلطان حسن",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Qaitbay Citadel",
+  "title": "Citadel of Qaitbay",
+  "hint": "Egypt landmark",
+  "ar": "قلعة قايتباي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Egyptian Museum",
+  "title": "Egyptian Museum",
+  "hint": "Egypt landmark",
+  "ar": "المتحف المصري في التحرير",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Baron Empain Palace",
+  "title": "Baron Empain Palace",
+  "hint": "Egypt landmark",
+  "ar": "قصر البارون",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Cairo Opera House",
+  "title": "Cairo Opera House",
+  "hint": "Egypt landmark",
+  "ar": "دار الأوبرا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Rifa'a al-Tahtawi",
+  "title": "Rifa'a al-Tahtawi",
+  "hint": "Egyptian historical figure",
+  "ar": "رفاعة الطهطاوي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ahmed Orabi",
+  "title": "Ahmed Urabi",
+  "hint": "Egyptian historical figure",
+  "ar": "أحمد عرابي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Talaat Harb",
+  "title": "Talaat Harb",
+  "hint": "Egyptian historical figure",
+  "ar": "طلعت حرب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mostafa Kamel",
+  "title": "Mustafa Kamil Pasha",
+  "hint": "Egyptian historical figure",
+  "ar": "مصطفى كامل",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ali Moustafa Mosharafa",
+  "title": "Ali Moustafa Mosharafa",
+  "hint": "Egyptian historical figure",
+  "ar": "علي مصطفى مشرفة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Samira Moussa",
+  "title": "Samira Moussa",
+  "hint": "Egyptian historical figure",
+  "ar": "سميرة موسى",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Magdi Yacoub",
+  "title": "Magdi Yacoub",
+  "hint": "Egyptian historical figure",
+  "ar": "مجدي يعقوب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Farouk El-Baz",
+  "title": "Farouk El-Baz",
+  "hint": "Egyptian historical figure",
+  "ar": "فاروق الباز",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ahmed Zewail",
+  "title": "Ahmed Zewail",
+  "hint": "Egyptian historical figure",
+  "ar": "أحمد زويل",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Taha Hussein",
+  "title": "Taha Hussein",
+  "hint": "Egyptian writer",
+  "ar": "طه حسين",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Naguib Mahfouz",
+  "title": "Naguib Mahfouz",
+  "hint": "Egyptian writer",
+  "ar": "نجيب محفوظ",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ihsan Abdel Quddous",
+  "title": "Ihsan Abdel Quddous",
+  "hint": "Egyptian writer",
+  "ar": "إحسان عبد القدوس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Youssef Idris",
+  "title": "Yusuf Idris",
+  "hint": "Egyptian writer",
+  "ar": "يوسف إدريس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Salah Jahin",
+  "title": "Salah Jahin",
+  "hint": "Egyptian writer",
+  "ar": "صلاح جاهين",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Abdel Rahman el-Abnudi",
+  "title": "Abdel Rahman el-Abnudi",
+  "hint": "Egyptian writer",
+  "ar": "عبد الرحمن الأبنودي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Alaa Al Aswany",
+  "title": "Alaa Al Aswany",
+  "hint": "Egyptian writer",
+  "ar": "علاء الأسواني",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ahmed Khaled Tawfik",
+  "title": "Ahmed Khaled Tawfik",
+  "hint": "Egyptian writer",
+  "ar": "أحمد خالد توفيق",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ahmed Mourad",
+  "title": "Ahmed Mourad",
+  "hint": "Egyptian writer",
+  "ar": "أحمد مراد",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Tulunid era",
+  "title": "Tulunid dynasty",
+  "hint": "Egypt history",
+  "ar": "الدولة الطولونية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Fatimid era",
+  "title": "Fatimid Caliphate",
+  "hint": "Egypt history",
+  "ar": "الدولة الفاطمية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ayyubid era",
+  "title": "Ayyubid dynasty",
+  "hint": "Egypt history",
+  "ar": "الدولة الأيوبية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mamluk era",
+  "title": "Mamluk Sultanate",
+  "hint": "Egypt history",
+  "ar": "دولة المماليك",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ottoman rule",
+  "title": "Ottoman Egypt",
+  "hint": "Egypt history",
+  "ar": "الحكم العثماني",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "French campaign",
+  "title": "French campaign in Egypt and Syria",
+  "hint": "Egypt history",
+  "ar": "الحملة الفرنسية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Muhammad Ali dynasty",
+  "title": "Muhammad Ali dynasty",
+  "hint": "Egypt history",
+  "ar": "أسرة محمد علي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "British occupation",
+  "title": "History of Egypt under the British",
+  "hint": "Egypt history",
+  "ar": "الاحتلال الإنجليزي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Republic declared",
+  "title": "Republic of Egypt (1953–1958)",
+  "hint": "Egypt history",
+  "ar": "إعلان الجمهورية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Aswan Low Dam",
+  "title": "Aswan Low Dam",
+  "hint": "Egypt landmark",
+  "ar": "خزان أسوان",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Cairo International Airport",
+  "title": "Cairo International Airport",
+  "hint": "Egypt landmark",
+  "ar": "مطار القاهرة الدولي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Cairo Metro (Line 1)",
+  "title": "Cairo Metro Line 1",
+  "hint": "Egypt landmark",
+  "ar": "مترو الأنفاق (الخط الأول)",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Bibliotheca Alexandrina",
+  "title": "Bibliotheca Alexandrina",
+  "hint": "Egypt landmark",
+  "ar": "مكتبة إسكندرية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Al-Azhar Park",
+  "title": "Al-Azhar Park",
+  "hint": "Egypt landmark",
+  "ar": "حديقة الأزهر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "New Suez Canal",
+  "title": "New Suez Canal",
+  "hint": "Egypt landmark",
+  "ar": "قناة السويس الجديدة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Rod El Farag Axis",
+  "title": "Rod El Farag Axis Bridge",
+  "hint": "Egypt landmark",
+  "ar": "محور روض الفرج",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Leaning Tower of Pisa",
+  "title": "Leaning Tower of Pisa",
+  "hint": "landmark",
+  "ar": "برج بيزا المايل",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Forbidden City",
+  "title": "Forbidden City",
+  "hint": "landmark",
+  "ar": "المدينة المحرمة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "St. Peter's Basilica",
+  "title": "St. Peter's Basilica",
+  "hint": "landmark",
+  "ar": "كنيسة القديس بطرس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Big Ben",
+  "title": "Big Ben",
+  "hint": "landmark",
+  "ar": "بيج بن",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Statue of Liberty",
+  "title": "Statue of Liberty",
+  "hint": "landmark",
+  "ar": "تمثال الحرية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Eiffel Tower",
+  "title": "Eiffel Tower",
+  "hint": "landmark",
+  "ar": "برج إيفل",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Empire State Building",
+  "title": "Empire State Building",
+  "hint": "landmark",
+  "ar": "مبنى إمباير ستيت",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Golden Gate Bridge",
+  "title": "Golden Gate Bridge",
+  "hint": "landmark",
+  "ar": "كوبري الجولدن جيت",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Sydney Opera House",
+  "title": "Sydney Opera House",
+  "hint": "landmark",
+  "ar": "دار أوبرا سيدني",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Leonardo da Vinci",
+  "title": "Leonardo da Vinci",
+  "hint": "scientist",
+  "ar": "ليوناردو دافنشي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Galileo Galilei",
+  "title": "Galileo Galilei",
+  "hint": "scientist",
+  "ar": "جاليليو",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Charles Darwin",
+  "title": "Charles Darwin",
+  "hint": "scientist",
+  "ar": "تشارلز داروين",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Louis Pasteur",
+  "title": "Louis Pasteur",
+  "hint": "scientist",
+  "ar": "لويس باستير",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Thomas Edison",
+  "title": "Thomas Edison",
+  "hint": "scientist",
+  "ar": "توماس إديسون",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Nikola Tesla",
+  "title": "Nikola Tesla",
+  "hint": "scientist",
+  "ar": "نيكولا تيسلا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Marie Curie",
+  "title": "Marie Curie",
+  "hint": "scientist",
+  "ar": "ماري كوري",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Albert Einstein",
+  "title": "Albert Einstein",
+  "hint": "scientist",
+  "ar": "ألبرت أينشتاين",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Stephen Hawking",
+  "title": "Stephen Hawking",
+  "hint": "scientist",
+  "ar": "ستيفن هوكينج",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "USA",
+  "title": "United States",
+  "hint": "country flag",
+  "ar": "أمريكا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Finland",
+  "title": "Finland",
+  "hint": "country flag",
+  "ar": "فنلندا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Libya",
+  "title": "Libya",
+  "hint": "country flag",
+  "ar": "ليبيا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Morocco",
+  "title": "Morocco",
+  "hint": "country flag",
+  "ar": "المغرب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Kuwait",
+  "title": "Kuwait",
+  "hint": "country flag",
+  "ar": "الكويت",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "UAE",
+  "title": "United Arab Emirates",
+  "hint": "country flag",
+  "ar": "الإمارات",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Sputnik launched",
+  "title": "Sputnik 1",
+  "hint": "space",
+  "ar": "إطلاق سبوتنيك",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Gagarin, first man in space",
+  "title": "Yuri Gagarin",
+  "hint": "space",
+  "ar": "جاجارين أول إنسان في الفضاء",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Tereshkova, first woman in space",
+  "title": "Valentina Tereshkova",
+  "hint": "space",
+  "ar": "تيريشكوفا أول ست في الفضاء",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Voyager 1 launched",
+  "title": "Voyager 1",
+  "hint": "space",
+  "ar": "إطلاق فوياجر 1",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "First Space Shuttle flight",
+  "title": "STS-1",
+  "hint": "space",
+  "ar": "أول رحلة لمكوك الفضاء",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Hubble launched",
+  "title": "Hubble Space Telescope",
+  "hint": "space",
+  "ar": "إطلاق تلسكوب هابل",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "First ISS module launched",
+  "title": "Zarya",
+  "hint": "space",
+  "ar": "أول جزء من محطة الفضاء الدولية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "First photo of a black hole",
+  "title": "Event Horizon Telescope",
+  "hint": "space",
+  "ar": "أول صورة لثقب أسود",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "James Webb launched",
+  "title": "James Webb Space Telescope",
+  "hint": "space",
+  "ar": "إطلاق تلسكوب جيمس ويب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Paris",
+  "title": "Paris",
+  "hint": "city",
+  "ar": "باريس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "London",
+  "title": "London",
+  "hint": "city",
+  "ar": "لندن",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Los Angeles",
+  "title": "Los Angeles",
+  "hint": "city",
+  "ar": "لوس أنجلوس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Berlin",
+  "title": "Berlin",
+  "hint": "city",
+  "ar": "برلين",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Tokyo",
+  "title": "Tokyo",
+  "hint": "city",
+  "ar": "طوكيو",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Sydney",
+  "title": "Sydney",
+  "hint": "city",
+  "ar": "سيدني",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Rio de Janeiro",
+  "title": "Rio de Janeiro",
+  "hint": "city",
+  "ar": "ريو دي جانيرو",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
   "name": "Cheetah",
   "title": "Cheetah",
   "hint": "animal",
@@ -5362,6 +6730,519 @@
   "title": "Rabbit",
   "hint": "animal",
   "ar": "الأرنب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Koala",
+  "title": "Koala",
+  "hint": "animal",
+  "ar": "الكوالا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Newborn baby",
+  "title": "Infant",
+  "hint": "animal",
+  "ar": "البيبي حديث الولادة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Chimpanzee",
+  "title": "Chimpanzee",
+  "hint": "animal",
+  "ar": "الشمبانزي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Adult human",
+  "title": "Human",
+  "hint": "animal",
+  "ar": "الإنسان البالغ",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Alligator",
+  "title": "American alligator",
+  "hint": "animal",
+  "ar": "التمساح الأمريكي (الأليجيتور)",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Pig",
+  "title": "Pig",
+  "hint": "animal",
+  "ar": "الخنزير",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Human",
+  "title": "Human",
+  "hint": "animal",
+  "ar": "الإنسان",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mouse",
+  "title": "House mouse",
+  "hint": "animal",
+  "ar": "الفار",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Giant anteater",
+  "title": "Giant anteater",
+  "hint": "animal",
+  "ar": "آكل النمل",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Rat",
+  "title": "Brown rat",
+  "hint": "animal",
+  "ar": "الجرذ",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Albatross",
+  "title": "Wandering albatross",
+  "hint": "bird",
+  "ar": "القطرس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Swan",
+  "title": "Mute swan",
+  "hint": "bird",
+  "ar": "البجعة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Bald eagle",
+  "title": "Bald eagle",
+  "hint": "bird",
+  "ar": "النسر الأصلع",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Flamingo",
+  "title": "Greater flamingo",
+  "hint": "bird",
+  "ar": "البشاروش (الفلامنجو)",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Seagull",
+  "title": "European herring gull",
+  "hint": "bird",
+  "ar": "النورس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Crow",
+  "title": "Carrion crow",
+  "hint": "bird",
+  "ar": "الغراب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Pigeon",
+  "title": "Rock dove",
+  "hint": "bird",
+  "ar": "الحمامة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Sparrow",
+  "title": "House sparrow",
+  "hint": "bird",
+  "ar": "العصفورة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Hummingbird",
+  "title": "Ruby-throated hummingbird",
+  "hint": "bird",
+  "ar": "الطائر الطنان",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Emu",
+  "title": "Emu",
+  "hint": "bird",
+  "ar": "الإيمو",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Emperor penguin",
+  "title": "Emperor penguin",
+  "hint": "bird",
+  "ar": "البطريق الإمبراطور",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Goose",
+  "title": "Domestic goose",
+  "hint": "bird",
+  "ar": "الوزة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Chicken",
+  "title": "Chicken",
+  "hint": "bird",
+  "ar": "الفرخة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Quail",
+  "title": "Common quail",
+  "hint": "bird",
+  "ar": "السمان",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Saltwater crocodile",
+  "title": "Saltwater crocodile",
+  "hint": "animal",
+  "ar": "تمساح المية المالحة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Jaguar",
+  "title": "Jaguar",
+  "hint": "animal",
+  "ar": "الجاجوار",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Polar bear",
+  "title": "Polar bear",
+  "hint": "animal",
+  "ar": "الدب القطبي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Tiger",
+  "title": "Bengal tiger",
+  "hint": "animal",
+  "ar": "النمر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Rottweiler",
+  "title": "Rottweiler",
+  "hint": "animal",
+  "ar": "الروت وايلر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Sperm whale",
+  "title": "Sperm whale",
+  "hint": "animal",
+  "ar": "حوت العنبر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Dolphin",
+  "title": "Common bottlenose dolphin",
+  "hint": "animal",
+  "ar": "الدولفين",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Hippo (Taweret)",
+  "title": "Hippopotamus",
+  "hint": "animal",
+  "ar": "فرس النهر (تاورت)",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Crocodile (Sobek)",
+  "title": "Nile crocodile",
+  "hint": "animal",
+  "ar": "التمساح (سوبك)",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Lion (Sekhmet)",
+  "title": "Lion",
+  "hint": "animal",
+  "ar": "الأسد (سخمت)",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Baboon (Thoth)",
+  "title": "Hamadryas baboon",
+  "hint": "animal",
+  "ar": "القرد البابون (تحوت)",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Jackal (Anubis)",
+  "title": "Golden jackal",
+  "hint": "animal",
+  "ar": "ابن آوى (أنوبيس)",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Vulture (Nekhbet)",
+  "title": "Griffon vulture",
+  "hint": "animal",
+  "ar": "النسر (نخبت)",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Cat (Bastet)",
+  "title": "Cat",
+  "hint": "animal",
+  "ar": "القطة (باستت)",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ibis (Thoth)",
+  "title": "African sacred ibis",
+  "hint": "animal",
+  "ar": "أبو منجل (تحوت)",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Falcon (Horus)",
+  "title": "Peregrine falcon",
+  "hint": "animal",
+  "ar": "الصقر (حورس)",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Nile crocodile",
+  "title": "Nile crocodile",
+  "hint": "animal",
+  "ar": "تمساح النيل",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Donkey",
+  "title": "Donkey",
+  "hint": "animal",
+  "ar": "الحمار",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Arabian horse",
+  "title": "Arabian horse",
+  "hint": "animal",
+  "ar": "الحصان العربي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Gamoosa (water buffalo)",
+  "title": "Water buffalo",
+  "hint": "animal",
+  "ar": "الجاموسة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Nubian ibex",
+  "title": "Nubian ibex",
+  "hint": "animal",
+  "ar": "الوعل النوبي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Egyptian Mau",
+  "title": "Egyptian Mau",
+  "hint": "animal",
+  "ar": "القطة المصري (الماو)",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Dorcas gazelle",
+  "title": "Dorcas gazelle",
+  "hint": "animal",
+  "ar": "الغزال المصري",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Egyptian mongoose",
+  "title": "Egyptian mongoose",
+  "hint": "animal",
+  "ar": "النمس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Fennec fox",
+  "title": "Fennec fox",
+  "hint": "animal",
+  "ar": "الفنك (ثعلب الصحرا)",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Whale shark",
+  "title": "Whale shark",
+  "hint": "sea animal",
+  "ar": "القرش الحوتي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Oceanic whitetip shark",
+  "title": "Oceanic whitetip shark",
+  "hint": "sea animal",
+  "ar": "قرش الوايت تيب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Dugong",
+  "title": "Dugong",
+  "hint": "sea animal",
+  "ar": "عروس البحر (الأطوم)",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Moray eel",
+  "title": "Giant moray",
+  "hint": "sea animal",
+  "ar": "ثعبان البحر (الموراي)",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Barracuda",
+  "title": "Great barracuda",
+  "hint": "sea animal",
+  "ar": "الباراكودا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Green sea turtle",
+  "title": "Green sea turtle",
+  "hint": "sea animal",
+  "ar": "السلحفاة الخضرا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Lionfish",
+  "title": "Pterois miles",
+  "hint": "sea animal",
+  "ar": "سمكة الأسد",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Clownfish (Nemo)",
+  "title": "Red Sea clownfish",
+  "hint": "sea animal",
+  "ar": "سمكة المهرج (نيمو)",
   "ar_hint": "",
   "logo": false,
   "skip": false
