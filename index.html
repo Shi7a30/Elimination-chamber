@@ -81,6 +81,11 @@ button{cursor:pointer}
 .ghead{display:flex;align-items:center;gap:12px;margin-top:14px}
 .ghead h2{margin:0;font-size:24px}
 .ghead .pill{flex:none}
+.dgh{margin:16px 0 0;font-size:17px}
+.subs.dsubs{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.dsubs .cat.sc{font-size:clamp(11px,3.4vw,14px);overflow-wrap:break-word;padding:10px 6px;line-height:1.2;border-width:3px;border-radius:16px;min-height:0;justify-content:flex-start}
+.subs.dsubs .cat:last-child:nth-child(odd){grid-column:auto}
+.dsubs .sc .se{display:block;font-size:24px;margin-bottom:4px}
 .subs{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .cat.sc{font-size:15px;padding:10px 12px 12px;display:flex;flex-direction:column;justify-content:space-between;min-height:118px}
 .sc .se{font-size:26px;margin-bottom:4px}
@@ -489,7 +494,7 @@ var TX={
   row:function(n){return" · 🔥 "+n+" in a row"},perfect:"🏆 PERFECT RUN!",done:"✅ CATEGORY DONE!",got:function(a,b){return"You got "+a+"/"+b+" this run"},
   allSolved:" · ★ every round solved",overall:function(s,n){return" · "+s+"/"+n+" solved overall"},replay:"↻ REPLAY",menu:"MENU",full:"Not enough space on this device to save more photos.",lang:"ع",
   endless:"♾ ENDLESS",endlessSub:"Mixed rounds from every category",score:function(n){return"SCORE "+n},runOver:"💀 RUN OVER!",
-  runTxt:function(s,b){return" You cleared "+s+" rounds · best "+b+"."},newBest:" 🏅 New best!",newRun:"↻ NEW RUN",duel:"🆚 DUEL",duelSub:"Pick 1 of 2. The winner stays till you miss",pick:"PICK ONE",newQ:"NEW QUESTION!",duelTxt:function(s,b){return"You got "+s+" in a row · best "+b+"."},back:"‹",sections:function(k){return k===1?"1 section":n(k)+" sections"},reg_eg:"🇪🇬 EGYPT",reg_w:"🌍 WORLD",reg_all:"🔀 BOTH"},
+  runTxt:function(s,b){return" You cleared "+s+" rounds · best "+b+"."},newBest:" 🏅 New best!",newRun:"↻ NEW RUN",duel:"🆚 DUEL",duelSub:"Pick 1 of 2. The winner stays till you miss",anyCat:"EVERYTHING",anyCatSub:"Questions from every category",pick:"PICK ONE",newQ:"NEW QUESTION!",duelTxt:function(s,b){return"You got "+s+" in a row · best "+b+"."},back:"‹",sections:function(k){return k===1?"1 section":n(k)+" sections"},reg_eg:"🇪🇬 EGYPT",reg_w:"🌍 WORLD",reg_all:"🔀 BOTH"},
  ar:{title:"شيلهم!",streak:"🔥 ورا بعض ",best:"🏅 أحسن رقم ",rounds:function(n){return n+" جولات"},solved:function(s,n){return"حليت "+s+" من "+n},complete:"★ خلّصتها",
   hint:"الكارت اللي بتشيله بيتقلب ويوريك إجابته، ودوس عليه تاني عشان ترجعه. دوس 📷 جوه أي جولة وبعدين على أي مربع عشان تحط صورة من عندك.",
   round:function(a,b){return"جولة "+a+"/"+b},photo:"وضع الصور: دوس على أي مربع",nailed:"جبتها!",wrong:"لأ، مش دي!",left:function(n){return"فاضل تشيل "+n},all:"شيل الكل وسيب واحد بس",
@@ -498,15 +503,15 @@ var TX={
   row:function(n){return" · 🔥 "+n+" ورا بعض"},perfect:"🏆 ولا غلطة!",done:"✅ خلّصت القسم!",got:function(a,b){return"جبت "+a+" من "+b+" المرة دي"},
   allSolved:" · ★ حليت كل الجولات",overall:function(s,n){return" · حليت "+s+" من "+n+" لحد دلوقتي"},replay:"↻ تاني",menu:"القايمة",full:"مفيش مساحة كفاية على الجهاز عشان تحفظ صور زيادة.",lang:"EN",
   endless:"♾ مالهاش آخر",endlessSub:"جولات متلخبطة من كل الأقسام",score:function(n){return"النتيجة "+n},runOver:"💀 اللعبة خلصت!",
-  runTxt:function(s,b){return" عدّيت "+s+" جولات · أحسن رقم "+b+"."},newBest:" 🏅 رقم قياسي جديد!",newRun:"↻ ابدأ من الأول",duel:"🆚 ده ولا ده",duelSub:"اختار واحد من اتنين، واللي يكسب يفضل",pick:"اختار واحد",newQ:"سؤال جديد!",back:"›",sections:function(k){return k===1?"قسم واحد":n(k)+" أقسام"},duelTxt:function(s,b){return"جبت "+s+" ورا بعض · أحسن رقم "+b+"."},reg_eg:"🇪🇬 مصري",reg_w:"🌍 عالمي",reg_all:"🔀 الاتنين"}};
+  runTxt:function(s,b){return" عدّيت "+s+" جولات · أحسن رقم "+b+"."},newBest:" 🏅 رقم قياسي جديد!",newRun:"↻ ابدأ من الأول",duel:"🆚 ده ولا ده",duelSub:"اختار واحد من اتنين، واللي يكسب يفضل",anyCat:"كل حاجة",anyCatSub:"أسئلة من كل الأقسام",pick:"اختار واحد",newQ:"سؤال جديد!",back:"›",sections:function(k){return k===1?"قسم واحد":n(k)+" أقسام"},duelTxt:function(s,b){return"جبت "+s+" ورا بعض · أحسن رقم "+b+"."},reg_eg:"🇪🇬 مصري",reg_w:"🌍 عالمي",reg_all:"🔀 الاتنين"}};
 
 var START=50,UNDO=30,WIN=10;
 var $=function(i){return document.getElementById(i)};
 var RM=matchMedia("(prefers-reduced-motion:reduce)").matches;
 var coins=START,streak=0,best=0,eBest={},dBest={},REG="all",prog={},mute=false,IM={},WK={},L="en";
-// GRP = the menu group whose page is open (null = home). mode "cat" plays the rounds in PL (one subcategory, SUB) in order; "end" is endless mode. cur = the round being played.
+// GRP = the menu group whose page is open (null = home, "d" = the duel page). DCAT = the duel's subcategory (null = everything). mode "cat" plays the rounds in PL (one subcategory, SUB) in order; "end" is endless mode. cur = the round being played.
 // REG = region filter for everything: "eg" Egyptian rounds, "w" international, "all" both.
-var GRP=null,mode="cat",SUB=null,PL=[],ri=0,cur=null,eScore=0,eRecent=[],items,out,hist,peek,flipNow,over,corr,lostStreak,runOk,edit=false,pend=null,stT;
+var GRP=null,DCAT=null,mode="cat",SUB=null,PL=[],ri=0,cur=null,eScore=0,eRecent=[],items,out,hist,peek,flipNow,over,corr,lostStreak,runOk,edit=false,pend=null,stT;
 function ld(k,d){try{var v=localStorage.getItem(k);return v===null?d:JSON.parse(v)}catch(e){return d}}
 function sv(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){return false}}
 coins=ld("elim_coins",START);if(typeof coins!=="number"||!(coins>=0))coins=START;
@@ -531,7 +536,7 @@ var ALL=[].concat.apply([],CATS.map(function(c){return c.r}));
 function inReg(r){return REG==="all"||r.m===REG}
 function rounds(){return ALL.filter(inReg)}
 function subRounds(id){return rounds().filter(function(r){return r.s===id})}
-function pool(g){var seen={},p=[];rounds().forEach(function(r){if(r.g===g)r.items.forEach(function(d){if(!seen[d[0]]){seen[d[0]]=1;p.push({d:d,r:r})}})});return p}
+function pool(g,rs){var seen={},p=[];(rs||rounds()).forEach(function(r){if(r.g===g)r.items.forEach(function(d){if(!seen[d[0]]){seen[d[0]]=1;p.push({d:d,r:r})}})});return p}
 var GQ={p:{min:[["WHO IS THE","OLDEST",Q],["مين","الأكبر في السن",QA]],max:[["WHO IS THE","YOUNGEST",Q],["مين","الأصغر في السن",QA]]},
  y:{min:[["WHAT CAME","FIRST",Q],["أنهي","الأقدم",QA]],max:[["WHAT IS THE","NEWEST",Q],["أنهي","الأحدث",QA]]}};
 function mix(){for(var k=0;k<300;k++){var g=Math.random()<.5?"p":"y",b=Math.random()<.5?"min":"max",P=pool(g),pick=shuffle(P).slice(0,9);if(P.length<9)continue;var
@@ -547,7 +552,10 @@ function endlessRound(){var m=Math.random()<.5&&mix();if(m)return m;
 var DQ={p:{min:[["WHO IS","OLDER?",""],["مين","الأكبر في السن؟",""]],max:[["WHO IS","YOUNGER?",""],["مين","الأصغر في السن؟",""]]},
  y:{min:[["WHICH CAME","FIRST?",""],["أنهي","الأقدم؟",""]],max:[["WHICH IS","NEWER?",""],["أنهي","الأحدث؟",""]]}};
 var dScore=0,dNew=false,dSrc=null,dUsed={},dSlot=0,dPick=-1,dTok=0,dSwap=false;
-function dList(s){return s.g?pool(s.g):mk(s.r).items}
+function dRounds(){return DCAT?subRounds(DCAT):rounds()}
+function dList(s){return s.g?pool(s.g,dRounds()):mk(s.r).items}
+// best duel score per region, and per subcategory when one is chosen
+function dKey(){return REG+(DCAT?"|"+DCAT:"")}
 function dFree(a){return dList(dSrc).filter(function(x){return!dUsed[x.d[0]]&&(!a||x.d[0]!==a.d[0]&&x.d[1]!==a.d[1])})}
 function dBeats(x,a){return dSrc.b==="min"?x.d[1]<a.d[1]:x.d[1]>a.d[1]}
 // a new card for the kept answer: half the time one that beats it, so always picking the kept card doesn't work
@@ -555,8 +563,8 @@ function dRival(a){var f=dFree(a),w=f.filter(function(x){return dBeats(x,a)}),l=
  // a card that beats it comes from the closer half, so the kept card climbs slowly and the question lasts longer
  w.sort(function(x,y){return Math.abs(x.d[1]-a.d[1])-Math.abs(y.d[1]-a.d[1])});w=w.slice(0,Math.ceil(w.length/2));
  return w.length?shuffle(Math.random()<.5&&l.length?l:w)[0]:null}
-function dPickSrc(){var rs=rounds().filter(function(r){return!r.g}),ps=["p","y"].filter(function(g){return pool(g).length>1}),old=dSrc;
- for(var k=0;k<20;k++){dSrc=Math.random()<.67&&ps.length?{g:ps[Math.random()*ps.length|0]}:{r:rs[Math.random()*rs.length|0]};
+function dPickSrc(){var all=dRounds(),rs=all.filter(function(r){return!r.g}),ps=["p","y"].filter(function(g){return pool(g,all).length>1}),old=dSrc;
+ for(var k=0;k<20;k++){dSrc=ps.length&&(Math.random()<.67||!rs.length)?{g:ps[Math.random()*ps.length|0]}:{r:rs[Math.random()*rs.length|0]};
   if(!old||dSrc.g!==old.g||dSrc.r!==old.r)break}
  dSrc.b=dSrc.g?(Math.random()<.5?"min":"max"):dSrc.r.best;
  dSrc.q=dSrc.g?DQ[dSrc.g][dSrc.b]:[[dSrc.r.q[0],dSrc.r.q[1]+"?",""],[dSrc.r.qa[0],dSrc.r.qa[1]+"؟",""]];dUsed={}}
@@ -571,7 +579,8 @@ function duelNext(keep){var a=keep,o=keep&&dSrc&&dRival(keep);dSwap=!!keep&&!o;
  corr=(dSrc.b==="min")===(pr[0].d[1]<pr[1].d[1])?0:1;
  hide();$("menu").style.display="none";$("game").style.display="flex";loadPhotos(pr);render()}
 function duelRender(){var qq=L==="ar"?cur.qa:cur.q;
- $("rn").textContent=dSwap?t("newQ")+" · "+t("score")(n(dScore)):t("duel")+" · "+t("score")(n(dScore));$("q1").textContent=qq[0];$("q2").textContent=qq[1];$("q3").textContent=qq[2];
+ var dc=DCAT&&subInfo(DCAT),dl=dc?dc[1]+" "+(L==="ar"?dc[3]:dc[2]):t("duel");
+ $("rn").textContent=(dSwap?t("newQ"):dl)+" · "+t("score")(n(dScore));$("q1").textContent=qq[0];$("q2").textContent=qq[1];$("q3").textContent=qq[2];
  $("sub").textContent=edit?t("photo"):over==="win"?t("nailed"):over==="lose"?t("wrong"):t("pick");
  $("coins").textContent=n(coins);$("stk").textContent="";$("undo").style.display=$("skip").style.display="none";$("cam").className="pill"+(edit?" on":"");
  $("grid").className="grid duo";
@@ -585,10 +594,10 @@ function duelRender(){var qq=L==="ar"?cur.qa:cur.q;
  if(flipNow.length){var g=$("grid"),fl=flipNow;flipNow=[];void g.offsetWidth;
   fl.forEach(function(i){var c=g.querySelector('[data-i="'+i+'"]');if(c)c.classList.add("flip")})}}
 function duelPick(i){if(over)return;dPick=i;flipNow=[0,1];
- if(i===corr){over="win";dScore++;if(dScore>(dBest[REG]||0)){dBest[REG]=dScore;dNew=true}save();render();sfx.ok();
+ if(i===corr){over="win";dScore++;if(dScore>(dBest[dKey()]||0)){dBest[dKey()]=dScore;dNew=true}save();render();sfx.ok();
   var tk=dTok;setTimeout(function(){if(mode==="duel"&&tk===dTok&&inGame()&&!edit)duelNext(items[corr])},1400)}
  else{over="lose";save();render();shake();sfx.lose();
-  sheet(t("runOver"),t("duelTxt")(n(dScore),n(dBest[REG]||0))+(dNew?t("newBest"):""),
+  sheet(t("runOver"),t("duelTxt")(n(dScore),n(dBest[dKey()]||0))+(dNew?t("newBest"):""),
    [[t("newRun"),function(){dScore=0;dNew=false;dSrc=null;duelNext()},"y"],[t("menu"),menu,""]],700)}}
 
 // --- photos: your own (📷) first, then the built-in set, then a Wikipedia lookup when online ---
@@ -637,12 +646,20 @@ function confetti(){if(RM)return;var cv=$("fx"),x=cv.getContext("2d"),W=cv.width
 function applyLang(){var h=document.documentElement;h.lang=L;document.title=L==="ar"?"شيلهم!":"Shelhom!";h.dir=L==="ar"?"rtl":"ltr";$("lang").textContent=t("lang");$("snd").textContent=mute?"🔇":"🔊"}
 function inGame(){return $("game").style.display!=="none"}
 function grpSubs(g){return g.s.filter(function(x){return subRounds(x[0]).length})}
+function subInfo(id){var r=null;GROUPS.forEach(function(g){g.s.forEach(function(x){if(x[0]===id)r=x})});return r}
+function ghead(e,label){return '<div class="ghead"><button class="pill" data-back aria-label="Back">'+t("back")+"</button><h2>"+(e?e+" ":"")+label+"</h2></div>"}
+// Duel page: everything, or one subcategory (under its group's heading); each shows its best duel run.
+function duelPage(){var b=function(k){return"🏅 "+n(dBest[REG+(k?"|"+k:"")]||0)};
+ return ghead("",t("duel"))+'<div class="subs"><button class="cat end" data-dc="">🎲 '+t("anyCat")+"<small><span>"+t("anyCatSub")+"</span><span>"+b("")+"</span></small></button></div>"+
+  GROUPS.map(function(g){var ss=grpSubs(g);if(!ss.length)return"";
+   return '<h3 class="dgh">'+g.e+" "+(L==="ar"?g.a:g.n)+'</h3><div class="subs dsubs">'+ss.map(function(x){
+    return '<button class="cat sc" data-dc="'+x[0]+'"><span class="se">'+x[1]+"</span>"+(L==="ar"?x[3]:x[2])+"<small><span>"+b(x[0])+"</span></small></button>"}).join("")+"</div>"}).join("")}
 function card(cls,data,emoji,label,left,d,k){return '<button class="cat '+cls+'" '+data+'><span class="se">'+emoji+"</span>"+label+"<small><span>"+left+"</span><span>"+
  (d===k?t("complete"):t("solved")(n(d),n(k)))+'</span></small><div class="pb"><i style="width:'+(k?d/k*100:0)+'%"></i></div></button>'}
 // Home shows the play modes and the big groups; tapping a group opens its page of subcategories.
 function menu(){hide();edit=false;cur=null;$("game").style.display="none";$("menu").style.display="flex";$("coins").textContent=n(coins);$("cam").className="pill";
- var g=GROUPS[GRP],subs=g&&grpSubs(g);if(subs&&!subs.length){GRP=null;g=null}
- $("menu").innerHTML=g?'<div class="ghead"><button class="pill" data-back aria-label="Back">'+t("back")+"</button><h2>"+g.e+" "+(L==="ar"?g.a:g.n)+"</h2></div>"+
+ var g=GRP!=="d"&&GROUPS[GRP],subs=g&&grpSubs(g);if(subs&&!subs.length){GRP=null;g=null}
+ $("menu").innerHTML=GRP==="d"?duelPage():g?ghead(g.e,L==="ar"?g.a:g.n)+
    '<div class="subs">'+subs.map(function(x){var rs=subRounds(x[0]);return card("sc",'data-s="'+x[0]+'"',x[1],L==="ar"?x[3]:x[2],t("rounds")(n(rs.length)),solved(rs),rs.length)}).join("")+"</div>":
   "<h1>"+t("title")+"</h1><div class='stats'><span class='stat streak'>"+t("streak")+n(streak)+"</span><span class='stat'>"+t("best")+n(best)+"</span></div>"+
   '<div class="seg">'+["eg","w","all"].map(function(m){return '<button data-reg="'+m+'"'+(REG===m?' class="on"':"")+">"+t("reg_"+m)+"</button>"}).join("")+"</div>"+
@@ -655,9 +672,10 @@ $("menu").onclick=function(e){var rg=e.target.closest("[data-reg]");if(rg){REG=r
  if(e.target.closest("[data-back]")){GRP=null;sfx.tap();menu();return}
  var b=e.target.closest(".cat");if(!b)return;sfx.tap();
  if(b.dataset.g){GRP=+b.dataset.g;menu();return}
- if(b.dataset.c==="d"){GRP=null;mode="duel";dScore=0;dNew=false;dSrc=null;duelNext();return}
+ if(b.dataset.c==="d"){GRP="d";menu();return}
+ if(b.dataset.dc!==undefined){DCAT=b.dataset.dc||null;mode="duel";dScore=0;dNew=false;dSrc=null;duelNext();return}
  if(b.dataset.c==="e"){GRP=null;mode="end";eScore=0}
- else{mode="cat";var id=b.dataset.s;GROUPS.forEach(function(g){g.s.forEach(function(x){if(x[0]===id)SUB=x})});PL=subRounds(id);ri=0;runOk=0;
+ else{mode="cat";var id=b.dataset.s;SUB=subInfo(id);PL=subRounds(id);ri=0;runOk=0;
   loadPhotos([].concat.apply([],PL.map(function(r){return mk(r).items})))}
  newRound()};
 function newRound(){cur=mode==="end"?endlessRound():mk(PL[ri]);if(mode==="end")loadPhotos(cur.items);start()}
@@ -716,7 +734,7 @@ function nxt(){if(mode==="end"){if(over!=="win"){eScore=0;streak=0;save()}newRou
 function summary(){var k=PL.length,s=solved(PL);cur=null;
  sheet(runOk===k?t("perfect"):t("done"),t("got")(n(runOk),n(k))+(s===k?t("allSolved"):t("overall")(n(s),n(k))),
   [[t("replay"),function(){ri=0;runOk=0;newRound()},""],[t("menu"),menu,"y"]],0);if(runOk===k){confetti();sfx.win()}}
-$("skip").onclick=function(){sfx.tap();nxt()};$("home").onclick=menu;
+$("skip").onclick=function(){sfx.tap();nxt()};$("home").onclick=function(){if($("menu").style.display==="flex")GRP=null;menu()};
 function sheet(ti,p,btns,d){clearTimeout(stT);$("st").textContent=ti;$("sp").textContent=p;var sb=$("sb");sb.innerHTML="";
  btns.forEach(function(b){var e=document.createElement("button");e.className="btn "+b[2];e.textContent=b[0];e.onclick=b[1];sb.appendChild(e)});
  stT=setTimeout(function(){$("sheet").classList.add("show")},d||0)}
