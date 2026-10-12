@@ -7819,8 +7819,7 @@
   "ar": "رابيت",
   "ar_hint": "",
   "logo": true,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Elsewedy Electric",
