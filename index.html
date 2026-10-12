@@ -551,29 +551,48 @@ function endlessRound(){var m=Math.random()<.5&&mix();if(m)return m;
 // when nothing left can beat it, the run moves on to a new question.
 var DQ={p:{min:[["WHO IS","OLDER?",""],["مين","الأكبر في السن؟",""]],max:[["WHO IS","YOUNGER?",""],["مين","الأصغر في السن؟",""]]},
  y:{min:[["WHICH CAME","FIRST?",""],["أنهي","الأقدم؟",""]],max:[["WHICH IS","NEWER?",""],["أنهي","الأحدث؟",""]]}};
-var dScore=0,dNew=false,dSrc=null,dUsed={},dSlot=0,dPick=-1,dTok=0,dSwap=false;
+var dScore=0,dNew=false,dSrc=null,dUsed={},dAsked={},dPairs={},dSlot=0,dPick=-1,dTok=0,dSwap=false;
 function dRounds(){return DCAT?subRounds(DCAT):rounds()}
 function dList(s){return s.g?pool(s.g,dRounds()):mk(s.r).items}
 // best duel score per region, and per subcategory when one is chosen
 function dKey(){return REG+(DCAT?"|"+DCAT:"")}
-function dFree(a){return dList(dSrc).filter(function(x){return!dUsed[x.d[0]]&&(!a||x.d[0]!==a.d[0]&&x.d[1]!==a.d[1])})}
+// a run never shows the same two cards together twice (either direction of the question);
+// it prefers cards and questions it hasn't used yet, and only comes back to a question once the fresh ones run out
+function dLK(s){return s.g?"g"+s.g:s.r.key}
+function dPK(lk,a,b){return lk+"|"+(a<b?a+"|"+b:b+"|"+a)}
+function dOk(x,a,s){return x.d[0]!==a.d[0]&&x.d[1]!==a.d[1]&&!dPairs[dPK(dLK(s),x.d[0],a.d[0])]}
+// cards that can go next to a: unused ones, or if none are left, any that make a new pair
+function dFree(a,s){s=s||dSrc;var lk=dLK(s),l=dList(s),f=l.filter(function(x){return!dUsed[lk+"|"+x.d[0]]&&(!a||dOk(x,a,s))});
+ return a&&!f.length?l.filter(function(x){return dOk(x,a,s)}):f}
 function dBeats(x,a){return dSrc.b==="min"?x.d[1]<a.d[1]:x.d[1]>a.d[1]}
 // a new card for the kept answer: half the time one that beats it, so always picking the kept card doesn't work
 function dRival(a){var f=dFree(a),w=f.filter(function(x){return dBeats(x,a)}),l=f.filter(function(x){return!dBeats(x,a)});
  // a card that beats it comes from the closer half, so the kept card climbs slowly and the question lasts longer
  w.sort(function(x,y){return Math.abs(x.d[1]-a.d[1])-Math.abs(y.d[1]-a.d[1])});w=w.slice(0,Math.ceil(w.length/2));
  return w.length?shuffle(Math.random()<.5&&l.length?l:w)[0]:null}
-function dPickSrc(){var all=dRounds(),rs=all.filter(function(r){return!r.g}),ps=["p","y"].filter(function(g){return pool(g,all).length>1}),old=dSrc;
- for(var k=0;k<20;k++){dSrc=ps.length&&(Math.random()<.67||!rs.length)?{g:ps[Math.random()*ps.length|0]}:{r:rs[Math.random()*rs.length|0]};
-  if(!old||dSrc.g!==old.g||dSrc.r!==old.r)break}
- dSrc.b=dSrc.g?(Math.random()<.5?"min":"max"):dSrc.r.best;
- dSrc.q=dSrc.g?DQ[dSrc.g][dSrc.b]:[[dSrc.r.q[0],dSrc.r.q[1]+"?",""],[dSrc.r.qa[0],dSrc.r.qa[1]+"؟",""]];dUsed={}}
-function duelNext(keep){var a=keep,o=keep&&dSrc&&dRival(keep);dSwap=!!keep&&!o;
+// a new pair for question s, fresh cards first
+function dPair(s){var l=dList(s),lk=dLK(s),fr=shuffle(l.filter(function(x){return!dUsed[lk+"|"+x.d[0]]})),i,o;
+ for(i=0;i<fr.length;i++){o=shuffle(dFree(fr[i],s))[0];if(o)return[fr[i],o]}
+ l=shuffle(l);for(i=0;i<l.length;i++){o=shuffle(dFree(l[i],s))[0];if(o)return[l[i],o]}
+ return null}
+function dPickSrc(again){var all=dRounds(),c=[],k=dSrc&&dLK(dSrc)+"|"+dSrc.b;
+ ["p","y"].forEach(function(g){["min","max"].forEach(function(b){c.push({g:g,b:b})})});
+ all.forEach(function(r){if(!r.g)c.push({r:r,b:r.best})});
+ var sk=function(s){return dLK(s)+"|"+s.b},
+  // unasked questions first, then asked ones other than the current, then the current one
+  tiers=[c.filter(function(s){return!dAsked[sk(s)]}),c.filter(function(s){return dAsked[sk(s)]&&sk(s)!==k}),c.filter(function(s){return sk(s)===k})];
+ for(var t=0;t<3;t++){var ps=shuffle(tiers[t].filter(function(s){return s.g})),rs=shuffle(tiers[t].filter(function(s){return!s.g})),
+   order=ps.length&&Math.random()<.67?ps.concat(rs):rs.concat(ps);
+  for(var i=0;i<order.length;i++){var pr=dPair(order[i]);if(pr){dSet(order[i]);return pr}}}
+ // every pair in the category has been shown: start over
+ if(!again){dPairs={};dUsed={};dAsked={};return dPickSrc(1)}}
+function dSet(s){dSrc=s;dAsked[dLK(s)+"|"+s.b]=1;
+ s.q=s.g?DQ[s.g][s.b]:[[s.r.q[0],s.r.q[1]+"?",""],[s.r.qa[0],s.r.qa[1]+"؟",""]]}
+function duelNext(keep){if(!keep){dUsed={};dAsked={};dPairs={}}
+ var a=keep,o=keep&&dSrc&&dRival(keep);dSwap=!!keep&&!o;
  if(o)dSlot=items.indexOf(keep); // the kept card stays where it was
- if(!o){if(!keep||dSwap)dPickSrc();
-  for(var k=0;k<50&&!o;k++){a=shuffle(dFree())[0];o=a&&shuffle(dFree(a))[0];if(!o)dPickSrc()}
-  dSlot=Math.random()<.5?0:1}
- dUsed[a.d[0]]=dUsed[o.d[0]]=1;
+ else{var np=dPickSrc();a=np[0];o=np[1];dSlot=Math.random()<.5?0:1}
+ var lk=dLK(dSrc);dUsed[lk+"|"+a.d[0]]=dUsed[lk+"|"+o.d[0]]=1;dPairs[dPK(lk,a.d[0],o.d[0])]=1;
  var pr=[];pr[dSlot]=a;pr[1-dSlot]=o;
  cur={q:dSrc.q[0],qa:dSrc.q[1],best:dSrc.b,items:pr};items=pr;out=[];peek=[];flipNow=[];over=false;dPick=-1;dTok++;
  corr=(dSrc.b==="min")===(pr[0].d[1]<pr[1].d[1])?0:1;
