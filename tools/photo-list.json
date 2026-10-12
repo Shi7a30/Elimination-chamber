@@ -1017,7 +1017,7 @@
   "skip": false
  },
  {
-  "name": "Barcelona",
+  "name": "FC Barcelona",
   "title": "FC Barcelona",
   "hint": "football club",
   "ar": "برشلونة",
@@ -6462,6 +6462,15 @@
   "skip": false
  },
  {
+  "name": "Barcelona",
+  "title": "Barcelona",
+  "hint": "city",
+  "ar": "برشلونة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
   "name": "Sydney",
   "title": "Sydney",
   "hint": "city",
@@ -6934,6 +6943,15 @@
   "title": "Domestic goose",
   "hint": "bird",
   "ar": "الوزة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Turkey (bird)",
+  "title": "Domestic turkey",
+  "hint": "bird",
+  "ar": "الديك الرومي",
   "ar_hint": "",
   "logo": false,
   "skip": false
@@ -7793,6 +7811,16 @@
   "ar_hint": "",
   "logo": true,
   "skip": true
+ },
+ {
+  "name": "Rabbit Mart",
+  "title": "Rabbit Mart",
+  "hint": "app",
+  "ar": "رابيت",
+  "ar_hint": "",
+  "logo": true,
+  "skip": false,
+  "review": true
  },
  {
   "name": "Elsewedy Electric",
