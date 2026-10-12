@@ -4774,12 +4774,13 @@
  },
  {
   "name": "Saint Catherine",
-  "title": "Saint Catherine",
+  "title": "Saint Catherine, Egypt",
   "hint": "Egypt nature reserve",
   "ar": "سانت كاترين",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Wadi El Rayan",
@@ -4801,21 +4802,23 @@
  },
  {
   "name": "Nabq",
-  "title": "Nabq",
+  "title": "Nabq Protected Area",
   "hint": "Egypt nature reserve",
   "ar": "نبق",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Wadi Degla",
-  "title": "Wadi Degla",
+  "title": "Wadi Degla Protected Area",
   "hint": "Egypt nature reserve",
   "ar": "وادي دجلة",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "White Desert",
@@ -4869,7 +4872,8 @@
   "ar": "قناة السويس الجديدة (2015)",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Cairo Metro Line 1",
@@ -5787,7 +5791,8 @@
   "ar": "المتحف المصري في التحرير",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Baron Empain Palace",
@@ -6102,7 +6107,8 @@
   "ar": "قناة السويس الجديدة",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Rod El Farag Axis",
@@ -6165,7 +6171,8 @@
   "ar": "برج إيفل",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Empire State Building",
@@ -6399,7 +6406,8 @@
   "ar": "أول صورة لثقب أسود",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "James Webb launched",
