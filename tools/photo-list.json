@@ -4779,8 +4779,7 @@
   "ar": "سانت كاترين",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": false
  },
  {
   "name": "Wadi El Rayan",
@@ -4807,8 +4806,7 @@
   "ar": "نبق",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": false
  },
  {
   "name": "Wadi Degla",
@@ -4818,7 +4816,7 @@
   "ar_hint": "",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Wadi_Degla_Protected_area_01.jpg/500px-Wadi_Degla_Protected_area_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "White Desert",
@@ -4873,7 +4871,7 @@
   "ar_hint": "",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/The_New_Suez_Canal.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Cairo Metro Line 1",
@@ -5792,7 +5790,7 @@
   "ar_hint": "",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/The_Egyptian_Museum.jpg/500px-The_Egyptian_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Baron Empain Palace",
@@ -6108,7 +6106,7 @@
   "ar_hint": "",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/The_New_Suez_Canal.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Rod El Farag Axis",
@@ -6172,7 +6170,7 @@
   "ar_hint": "",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg/500px-Tour_Eiffel_Wikimedia_Commons.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Empire State Building",
@@ -6407,7 +6405,7 @@
   "ar_hint": "",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Black_hole_-_Messier_87.jpg/500px-Black_hole_-_Messier_87.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
  },
  {
   "name": "James Webb launched",
