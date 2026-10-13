@@ -564,7 +564,8 @@
   "ar": "إبراهيم حسن",
   "ar_hint": "لاعب كرة",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Ali Maaloul",
@@ -582,7 +583,8 @@
   "ar": "رمضان صبحي",
   "ar_hint": "لاعب كرة",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "TP Mazembe",
@@ -8288,7 +8290,8 @@
   "ar": "كورونا",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Spiro Spathis",
@@ -8306,7 +8309,8 @@
   "ar": "فرجللو",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Vitrac",
@@ -8315,7 +8319,8 @@
   "ar": "فيتراك",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Regina",
@@ -8324,7 +8329,8 @@
   "ar": "ريجينا",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Panda (Arab Dairy)",
@@ -8333,7 +8339,8 @@
   "ar": "باندا",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Dina Farms",
@@ -8342,7 +8349,8 @@
   "ar": "دينا فارمز",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Domty",
@@ -8351,7 +8359,8 @@
   "ar": "دومتي",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Obour Land",
@@ -8360,7 +8369,8 @@
   "ar": "عبور لاند",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Beyti",
@@ -8369,7 +8379,8 @@
   "ar": "بيتي",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Seoudi",
@@ -8378,7 +8389,8 @@
   "ar": "سعودي ماركت",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Awlad Ragab",
@@ -8387,7 +8399,8 @@
   "ar": "أولاد رجب",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Metro Market",
@@ -8396,7 +8409,8 @@
   "ar": "مترو ماركت",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Carrefour",
@@ -8414,7 +8428,8 @@
   "ar": "هايبر وان",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Gourmet",
@@ -8423,7 +8438,8 @@
   "ar": "جورميه",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Kheir Zaman",
@@ -8432,7 +8448,8 @@
   "ar": "خير زمان",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "LuLu Hypermarket",
@@ -8540,7 +8557,8 @@
   "ar": "سيموندس",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Café Riche",
@@ -8558,7 +8576,8 @@
   "ar": "البن البرازيلي",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "El Horreya Café",
@@ -8567,7 +8586,8 @@
   "ar": "قهوة الحرية",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Naguib Mahfouz Café",
@@ -8585,7 +8605,8 @@
   "ar": "سيلانترو",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Costa Coffee",
@@ -8621,7 +8642,8 @@
   "ar": "المالكي",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Mandarine Koueider",
@@ -8630,7 +8652,8 @@
   "ar": "مندرين قويدر",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "El Abd",
@@ -8639,7 +8662,8 @@
   "ar": "العبد",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "La Poire",
@@ -8657,7 +8681,8 @@
   "ar": "ساليه سكريه",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Sedra",
@@ -8666,7 +8691,8 @@
   "ar": "سيدرا",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "TBS",
@@ -8675,7 +8701,8 @@
   "ar": "تي بي إس",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "KFC",
@@ -8756,7 +8783,8 @@
   "ar": "أبو شقرة",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Abou Tarek",
@@ -8765,7 +8793,8 @@
   "ar": "أبو طارق",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Mohamed Ahmed",
@@ -8774,7 +8803,8 @@
   "ar": "محمد أحمد",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Gad",
@@ -8783,7 +8813,8 @@
   "ar": "جاد",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Abou El Sid",
@@ -8792,7 +8823,8 @@
   "ar": "أبو السيد",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Tholathy Adwaa El Masrah",
@@ -8810,7 +8842,8 @@
   "ar": "نيللي",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Fatouta",
@@ -8828,7 +8861,8 @@
   "ar": "شريهان",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Sabreen",
@@ -8855,7 +8889,8 @@
   "ar": "جيهان نصر",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Ghada Abdel Razek",
@@ -8882,7 +8917,8 @@
   "ar": "القناة الأولى",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Egyptian Satellite Channel",
@@ -8909,7 +8945,8 @@
   "ar": "دريم",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Al Hayat TV",
@@ -8918,7 +8955,8 @@
   "ar": "الحياة",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "ON TV",
@@ -8963,7 +9001,8 @@
   "ar": "الإذاعة المصرية",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Voice of the Arabs",
@@ -8981,7 +9020,8 @@
   "ar": "إذاعة الإسكندرية",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Quran Radio",
@@ -8990,7 +9030,8 @@
   "ar": "إذاعة القرآن الكريم",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Middle East Radio",
@@ -8999,7 +9040,8 @@
   "ar": "إذاعة الشرق الأوسط",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Al Aghani Radio",
@@ -9026,7 +9068,8 @@
   "ar": "راديو مصر",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Mega FM",
@@ -9044,7 +9087,8 @@
   "ar": "سيدتي الجميلة",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Madraset El Moshaghebeen",
@@ -9062,7 +9106,8 @@
   "ar": "انتهى الدرس يا غبي",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Shahed Mashafsh Haga",
@@ -9107,7 +9152,8 @@
   "ar": "الزعيم",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Bodyguard",
@@ -9125,7 +9171,8 @@
   "ar": "أبلة فضيلة",
   "ar_hint": "ممثل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Abdel Rahman Abu Zahra",
@@ -9152,7 +9199,8 @@
   "ar": "ماما نجوى",
   "ar_hint": "ممثل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Hala Fakher",
@@ -9197,7 +9245,8 @@
   "ar": "الكواكب",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Sabah El Kheir",
@@ -9206,7 +9255,8 @@
   "ar": "صباح الخير",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Mickey Magazine",
@@ -9233,7 +9283,8 @@
   "ar": "علاء الدين",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "review": true
  },
  {
   "name": "Peugeot 404",
