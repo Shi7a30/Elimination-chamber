@@ -100,14 +100,17 @@ def candidates(x, p):
     for qid in dict.fromkeys(q for q in qids if q):
         for prop in ("P3383", "P18", "P154"):
             add("wikidata %s %s" % (qid, prop), wd_file(qid, prop))
-    d = api(COMMONS_API, generator="search", gsrnamespace=6, gsrsearch=x["name"].replace("'", ""), gsrlimit=4,
-            prop="imageinfo", iiprop="url", iiurlwidth=400).get("query", {})
-    for pg in sorted(d.get("pages") or [], key=lambda g: g.get("index", 0)):
-        ii = (pg.get("imageinfo") or [{}])[0]
-        if (ii.get("thumburl") or "").lower().split("?")[0].endswith((".jpg", ".jpeg", ".png")):
-            add("commons:" + pg["title"], ii["thumburl"])
-    for url, q, tag in ((AR_API, (x.get("ar") or "") + " " + x.get("ar_hint", ""), "ar-search:"),
-                        (API, x["name"].replace("'", "") + " " + x["hint"], "search:")):
+    # "q" holds extra search phrases (e.g. "Sekhmet statue") for items whose own name finds the wrong thing.
+    for q in x.get("q", []) + [x["name"].replace("'", "")]:
+        d = api(COMMONS_API, generator="search", gsrnamespace=6, gsrsearch=q, gsrlimit=4,
+                prop="imageinfo", iiprop="url", iiurlwidth=400).get("query", {})
+        for pg in sorted(d.get("pages") or [], key=lambda g: g.get("index", 0)):
+            ii = (pg.get("imageinfo") or [{}])[0]
+            if (ii.get("thumburl") or "").lower().split("?")[0].endswith((".jpg", ".jpeg", ".png")):
+                add("commons:" + pg["title"], ii["thumburl"])
+    searches = [(API if q.isascii() else AR_API, q, "q-search:") for q in x.get("q", [])]
+    for url, q, tag in searches + [(AR_API, (x.get("ar") or "") + " " + x.get("ar_hint", ""), "ar-search:"),
+                                   (API, x["name"].replace("'", "") + " " + x["hint"], "search:")]:
         if not q.strip():
             continue
         d = api(url, generator="search", gsrsearch=q, gsrlimit=4, **PI).get("query", {})
@@ -169,7 +172,7 @@ def main():
     for x in items:
         if x.get("review"):
             try:
-                cands[x["name"]] = [{"src": s, "url": u, "uri": to_uri(u)} for s, u in candidates(x, pages.get(x["name"]))[:8]]
+                cands[x["name"]] = [{"src": s, "url": u, "uri": to_uri(u)} for s, u in candidates(x, pages.get(x["name"]))[:12]]
             except Exception as e:
                 print("candidates failed", x["name"], e)
         if x.get("skip"):  # known bad matches: show a letter instead

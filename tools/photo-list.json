@@ -249,7 +249,12 @@
   "ar": "أحمد شوبير",
   "ar_hint": "لاعب كرة",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "أحمد شوبير",
+   "Ahmed Shobeir goalkeeper"
+  ],
+  "review": true
  },
  {
   "name": "Nader El-Sayed",
@@ -411,7 +416,12 @@
   "ar": "استاد الجيش بالسويس",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Suez Stadium",
+   "استاد السويس"
+  ],
+  "review": true
  },
  {
   "name": "Arab Contractors Stadium",
@@ -483,7 +493,12 @@
   "ar": "شوقي غريب",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "شوقي غريب",
+   "Shawky Gharieb"
+  ],
+  "review": true
  },
  {
   "name": "Hossam El-Badry",
@@ -492,7 +507,12 @@
   "ar": "حسام البدري",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "حسام البدري",
+   "Hossam El Badry coach"
+  ],
+  "review": true
  },
  {
   "name": "Ehab Galal",
@@ -537,7 +557,12 @@
   "ar": "حسني عبد ربه",
   "ar_hint": "لاعب كرة",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "حسني عبد ربه",
+   "Hosny Abd Rabou"
+  ],
+  "review": true
  },
  {
   "name": "Ahmed Fathy",
@@ -564,7 +589,12 @@
   "ar": "إبراهيم حسن",
   "ar_hint": "لاعب كرة",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "إبراهيم حسن لاعب",
+   "Ibrahim Hassan footballer Egypt"
+  ],
+  "review": true
  },
  {
   "name": "Ali Maaloul",
@@ -582,7 +612,12 @@
   "ar": "رمضان صبحي",
   "ar_hint": "لاعب كرة",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "رمضان صبحي",
+   "Ramadan Sobhi footballer"
+  ],
+  "review": true
  },
  {
   "name": "TP Mazembe",
@@ -1617,7 +1652,12 @@
   "ar": "ياسمين عبد العزيز",
   "ar_hint": "ممثلة",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "ياسمين عبد العزيز",
+   "Yasmine Abdel Aziz actress"
+  ],
+  "review": true
  },
  {
   "name": "Menna Shalaby",
@@ -1672,7 +1712,12 @@
   "ar": "إسماعيلية رايح جاي",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "إسماعيلية رايح جاي فيلم",
+   "Ismailia Rayeh Gay"
+  ],
+  "review": true
  },
  {
   "name": "El Limby",
@@ -1800,7 +1845,12 @@
   "ar": "محمد سعد",
   "ar_hint": "ممثل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "محمد سعد ممثل",
+   "Mohamed Saad actor Limby"
+  ],
+  "review": true
  },
  {
   "name": "Ahmed Ezz",
@@ -2177,7 +2227,12 @@
   "ar": "عسل إسود",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Asal Eswed film poster",
+   "عسل أسود فيلم"
+  ],
+  "review": true
  },
  {
   "name": "X-Large",
@@ -2711,7 +2766,12 @@
   "ar_hint": "مسلسل",
   "logo": false,
   "skip": false,
-  "url": "https://upload.wikimedia.org/wikipedia/ar/9/98/%D8%B9%D8%A8%D8%AF_%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86_%D8%A3%D8%A8%D9%88_%D8%B2%D9%87%D8%B1%D8%A9.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  "url": "https://upload.wikimedia.org/wikipedia/ar/9/98/%D8%B9%D8%A8%D8%AF_%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86_%D8%A3%D8%A8%D9%88_%D8%B2%D9%87%D8%B1%D8%A9.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "q": [
+   "لن أعيش في جلباب أبي مسلسل",
+   "Lan Aish fi Gilbab Abi Nour El-Sherif"
+  ],
+  "review": true
  },
  {
   "name": "Bakkar",
@@ -2720,7 +2780,12 @@
   "ar": "بكار",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "بكار كرتون",
+   "Bakkar cartoon"
+  ],
+  "review": true
  },
  {
   "name": "El Kabeer Awy",
@@ -2769,7 +2834,12 @@
   "ar_hint": "مسلسل",
   "logo": false,
   "skip": false,
-  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/%D9%85%D8%AD%D9%85%D8%AF_%D8%B1%D9%85%D8%B6%D8%A7%D9%86.jpg/500px-%D9%85%D8%AD%D9%85%D8%AF_%D8%B1%D9%85%D8%B6%D8%A7%D9%86.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/%D9%85%D8%AD%D9%85%D8%AF_%D8%B1%D9%85%D8%B6%D8%A7%D9%86.jpg/500px-%D9%85%D8%AD%D9%85%D8%AF_%D8%B1%D9%85%D8%B6%D8%A7%D9%86.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "q": [
+   "Gaafar El Omda series",
+   "جعفر العمدة مسلسل"
+  ],
+  "review": true
  },
  {
   "name": "El Hashashin",
@@ -2878,7 +2948,12 @@
   "ar": "تحت السيطرة",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Taht El Saytara series Nelly Karim",
+   "تحت السيطرة مسلسل"
+  ],
+  "review": true
  },
  {
   "name": "Nelly & Sherihan",
@@ -2896,7 +2971,12 @@
   "ar": "سابع جار",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "سابع جار مسلسل",
+   "Sabe Gar series"
+  ],
+  "review": true
  },
  {
   "name": "Paranormal",
@@ -3295,7 +3375,12 @@
   "ar": "محمد فؤاد",
   "ar_hint": "مطرب",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "محمد فؤاد مطرب",
+   "Mohamed Fouad singer"
+  ],
+  "review": true
  },
  {
   "name": "Hisham Abbas",
@@ -3349,7 +3434,12 @@
   "ar": "مروان بابلو",
   "ar_hint": "مطرب",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "مروان بابلو",
+   "Marwan Pablo rapper"
+  ],
+  "review": true
  },
  {
   "name": "Wegz",
@@ -3431,7 +3521,12 @@
   "ar": "سهران",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Sahran Amr Diab album",
+   "سهران عمرو دياب ألبوم"
+  ],
+  "review": true
  },
  {
   "name": "Khatfoony",
@@ -3522,7 +3617,12 @@
   "ar": "علّي صوتك",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "علي صوتك محمد منير",
+   "Mohamed Mounir"
+  ],
+  "review": true
  },
  {
   "name": "Habibi Dah",
@@ -3532,7 +3632,12 @@
   "ar_hint": "أغنية",
   "logo": false,
   "skip": false,
-  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Hisham_Abbas_2008-07-15_Cairo.jpg/500px-Hisham_Abbas_2008-07-15_Cairo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Hisham_Abbas_2008-07-15_Cairo.jpg/500px-Hisham_Abbas_2008-07-15_Cairo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "q": [
+   "Habibi Dah Hisham Abbas",
+   "حبيبي ده هشام عباس"
+  ],
+  "review": true
  },
  {
   "name": "Garh Tany",
@@ -3541,7 +3646,12 @@
   "ar": "جرح تاني",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Garh Tany Sherine song",
+   "جرح تاني شيرين"
+  ],
+  "review": true
  },
  {
   "name": "Leih Beydary Keda",
@@ -3589,7 +3699,12 @@
   "ar": "إزاي",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "إزاي محمد منير",
+   "Mohamed Mounir singer"
+  ],
+  "review": true
  },
  {
   "name": "Number One",
@@ -3599,7 +3714,12 @@
   "ar_hint": "أغنية",
   "logo": false,
   "skip": false,
-  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/%D9%85%D8%AD%D9%85%D8%AF_%D8%B1%D9%85%D8%B6%D8%A7%D9%86.jpg/500px-%D9%85%D8%AD%D9%85%D8%AF_%D8%B1%D9%85%D8%B6%D8%A7%D9%86.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/%D9%85%D8%AD%D9%85%D8%AF_%D8%B1%D9%85%D8%B6%D8%A7%D9%86.jpg/500px-%D9%85%D8%AD%D9%85%D8%AF_%D8%B1%D9%85%D8%B6%D8%A7%D9%86.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "q": [
+   "Number One Mohamed Ramadan song",
+   "نمبر وان محمد رمضان"
+  ],
+  "review": true
  },
  {
   "name": "El Bakht",
@@ -3608,7 +3728,12 @@
   "ar": "البخت",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "El Bakht Wegz",
+   "البخت ويجز"
+  ],
+  "review": true
  },
  {
   "name": "Sayed Darwish",
@@ -4248,7 +4373,12 @@
   "ar": "يحيى وكنوز",
   "ar_hint": "كرتون",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "يحيى وكنوز",
+   "Yehia and Kenooz cartoon"
+  ],
+  "review": true
  },
  {
   "name": "Mofeed Fawzy",
@@ -4284,7 +4414,12 @@
   "ar": "لميس الحديدي",
   "ar_hint": "مذيع",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "لميس الحديدي",
+   "Lamees Hadidi"
+  ],
+  "review": true
  },
  {
   "name": "Amr El-Leithy",
@@ -4302,7 +4437,12 @@
   "ar": "تامر أمين",
   "ar_hint": "مذيع",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "تامر أمين",
+   "Tamer Amin presenter"
+  ],
+  "review": true
  },
  {
   "name": "Ramez Galal",
@@ -5258,7 +5398,12 @@
   "ar_hint": "",
   "logo": false,
   "skip": false,
-  "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/The_New_Suez_Canal.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+  "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/The_New_Suez_Canal.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "q": [
+   "New Suez Canal ships",
+   "قناة السويس الجديدة"
+  ],
+  "review": true
  },
  {
   "name": "Cairo Metro Line 1",
@@ -5267,7 +5412,12 @@
   "ar": "الخط الأول للمترو",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Cairo Metro Line 1 train",
+   "مترو أنفاق القاهرة الخط الأول"
+  ],
+  "review": true
  },
  {
   "name": "6th October Bridge",
@@ -5312,7 +5462,12 @@
   "ar": "الهرم الأكبر (ضلع القاعدة)",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Great Pyramid of Giza base side",
+   "Great Pyramid Giza"
+  ],
+  "review": true
  },
  {
   "name": "Heliopolis",
@@ -5807,7 +5962,13 @@
   "ar": "افتتاح قناة السويس",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Inauguration of the Suez Canal 1869",
+   "Opening of the Suez Canal painting",
+   "افتتاح قناة السويس 1869"
+  ],
+  "review": true
  },
  {
   "name": "Cairo University founded",
@@ -5852,7 +6013,13 @@
   "ar": "اكتمال السد العالي",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Lotus Flower Tower Aswan",
+   "Aswan High Dam construction",
+   "Monument of Arab-Soviet Friendship"
+  ],
+  "review": true
  },
  {
   "name": "October War",
@@ -5870,7 +6037,12 @@
   "ar": "نجيب محفوظ ياخد نوبل",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Nobel Prize medal literature",
+   "Nobel medal"
+  ],
+  "review": true
  },
  {
   "name": "Grand Egyptian Museum opens",
@@ -6674,7 +6846,12 @@
   "ar": "أمريكا",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Declaration of Independence",
+   "United States Declaration of Independence painting"
+  ],
+  "review": true
  },
  {
   "name": "Finland",
@@ -7008,7 +7185,11 @@
   "ar": "الدب القطبي",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "polar bear walking"
+  ],
+  "review": true
  },
  {
   "name": "Gorilla",
@@ -7188,7 +7369,12 @@
   "ar": "الإنسان",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "human anatomy",
+   "Human"
+  ],
+  "review": true
  },
  {
   "name": "Mouse",
@@ -7359,7 +7545,11 @@
   "ar": "تمساح المية المالحة",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "saltwater crocodile jaws"
+  ],
+  "review": true
  },
  {
   "name": "Jaguar",
@@ -7422,7 +7612,12 @@
   "ar": "فرس النهر (تاورت)",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Taweret statue",
+   "Taweret"
+  ],
+  "review": true
  },
  {
   "name": "Crocodile (Sobek)",
@@ -7431,7 +7626,12 @@
   "ar": "التمساح (سوبك)",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Sobek statue",
+   "Sobek Kom Ombo relief"
+  ],
+  "review": true
  },
  {
   "name": "Lion (Sekhmet)",
@@ -7440,7 +7640,12 @@
   "ar": "الأسد (سخمت)",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Sekhmet statue",
+   "Sekhmet"
+  ],
+  "review": true
  },
  {
   "name": "Baboon (Thoth)",
@@ -7476,7 +7681,12 @@
   "ar": "القطة (باستت)",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Bastet statue",
+   "Gayer-Anderson cat"
+  ],
+  "review": true
  },
  {
   "name": "Ibis (Thoth)",
@@ -8142,7 +8352,12 @@
   "ar": "المنيوز",
   "ar_hint": "",
   "logo": true,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Elmenus logo",
+   "المنيوز"
+  ],
+  "review": true
  },
  {
   "name": "Vezeeta",
@@ -8151,7 +8366,12 @@
   "ar": "فيزيتا",
   "ar_hint": "",
   "logo": true,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Vezeeta logo",
+   "فيزيتا"
+  ],
+  "review": true
  },
  {
   "name": "Paymob",
@@ -8170,7 +8390,12 @@
   "ar": "بريدفاست",
   "ar_hint": "",
   "logo": true,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Breadfast logo",
+   "بريدفاست"
+  ],
+  "review": true
  },
  {
   "name": "MaxAB",
@@ -8179,7 +8404,12 @@
   "ar": "ماكس أب",
   "ar_hint": "",
   "logo": true,
-  "skip": false
+  "skip": false,
+  "q": [
+   "MaxAB logo",
+   "ماكس أب"
+  ],
+  "review": true
  },
  {
   "name": "Khazna",
@@ -8188,7 +8418,12 @@
   "ar": "خزنة",
   "ar_hint": "",
   "logo": true,
-  "skip": true
+  "skip": true,
+  "q": [
+   "Khazna app",
+   "خزنة تطبيق"
+  ],
+  "review": true
  },
  {
   "name": "Rabbit Mart",
@@ -8197,7 +8432,12 @@
   "ar": "رابيت",
   "ar_hint": "",
   "logo": true,
-  "skip": true
+  "skip": true,
+  "q": [
+   "Rabbit Mart logo",
+   "رابيت ماركت"
+  ],
+  "review": true
  },
  {
   "name": "Elsewedy Electric",
@@ -8224,7 +8464,12 @@
   "ar": "فلفلة",
   "ar_hint": "شركة",
   "logo": true,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Felfela restaurant Cairo",
+   "مطعم فلفلة"
+  ],
+  "review": true
  },
  {
   "name": "Elaraby",
@@ -8242,7 +8487,12 @@
   "ar": "مؤمن",
   "ar_hint": "شركة",
   "logo": true,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Momen restaurant Egypt",
+   "مطاعم مؤمن"
+  ],
+  "review": true
  },
  {
   "name": "Cook Door",
@@ -8260,7 +8510,12 @@
   "ar": "بافلو برجر",
   "ar_hint": "شركة",
   "logo": true,
-  "skip": true
+  "skip": true,
+  "q": [
+   "Buffalo Burger Egypt",
+   "بافلو برجر"
+  ],
+  "review": true
  },
  {
   "name": "Zooba",
@@ -8288,7 +8543,12 @@
   "ar": "كورونا",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "Corona chocolate Egypt",
+   "شيكولاتة كورونا"
+  ],
+  "review": true
  },
  {
   "name": "Spiro Spathis",
@@ -8316,7 +8576,12 @@
   "ar": "فيتراك",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "Vitrac jam",
+   "فيتراك"
+  ],
+  "review": true
  },
  {
   "name": "Regina",
@@ -8325,7 +8590,12 @@
   "ar": "ريجينا",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "Regina pasta Egypt",
+   "مكرونة ريجينا"
+  ],
+  "review": true
  },
  {
   "name": "Panda (Arab Dairy)",
@@ -8334,7 +8604,12 @@
   "ar": "باندا",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "Panda cheese Arab Dairy",
+   "جبنة باندا"
+  ],
+  "review": true
  },
  {
   "name": "Dina Farms",
@@ -8343,7 +8618,12 @@
   "ar": "دينا فارمز",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "Dina Farms Egypt",
+   "مزارع دينا"
+  ],
+  "review": true
  },
  {
   "name": "Domty",
@@ -8352,7 +8632,12 @@
   "ar": "دومتي",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "Domty cheese",
+   "دومتي"
+  ],
+  "review": true
  },
  {
   "name": "Obour Land",
@@ -8361,7 +8646,12 @@
   "ar": "عبور لاند",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "Obour Land cheese",
+   "عبور لاند"
+  ],
+  "review": true
  },
  {
   "name": "Beyti",
@@ -8370,7 +8660,12 @@
   "ar": "بيتي",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "Beyti milk Egypt",
+   "بيتي لبن"
+  ],
+  "review": true
  },
  {
   "name": "Seoudi",
@@ -8379,7 +8674,12 @@
   "ar": "سعودي ماركت",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "Seoudi Market",
+   "سعودي ماركت"
+  ],
+  "review": true
  },
  {
   "name": "Awlad Ragab",
@@ -8388,7 +8688,12 @@
   "ar": "أولاد رجب",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "أولاد رجب",
+   "Awlad Ragab supermarket"
+  ],
+  "review": true
  },
  {
   "name": "Metro Market",
@@ -8397,7 +8702,12 @@
   "ar": "مترو ماركت",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "Metro Market Egypt",
+   "مترو ماركت"
+  ],
+  "review": true
  },
  {
   "name": "Carrefour",
@@ -8415,7 +8725,12 @@
   "ar": "هايبر وان",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "Hyper One Sheikh Zayed",
+   "هايبر وان"
+  ],
+  "review": true
  },
  {
   "name": "Gourmet",
@@ -8424,7 +8739,12 @@
   "ar": "جورميه",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "Gourmet Egypt supermarket",
+   "جورميه مصر"
+  ],
+  "review": true
  },
  {
   "name": "Kheir Zaman",
@@ -8433,7 +8753,12 @@
   "ar": "خير زمان",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "خير زمان",
+   "Kheir Zaman supermarket"
+  ],
+  "review": true
  },
  {
   "name": "LuLu Hypermarket",
@@ -8541,7 +8866,12 @@
   "ar": "سيموندس",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "Simonds cafe Zamalek",
+   "سيموندس"
+  ],
+  "review": true
  },
  {
   "name": "Café Riche",
@@ -8569,7 +8899,12 @@
   "ar": "قهوة الحرية",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "Horreya cafe Bab el Louk",
+   "مقهى الحرية القاهرة"
+  ],
+  "review": true
  },
  {
   "name": "Naguib Mahfouz Café",
@@ -8578,7 +8913,12 @@
   "ar": "قهوة نجيب محفوظ",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Naguib Mahfouz Cafe Khan el-Khalili",
+   "مقهى نجيب محفوظ"
+  ],
+  "review": true
  },
  {
   "name": "Cilantro",
@@ -8587,7 +8927,12 @@
   "ar": "سيلانترو",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "Cilantro cafe Egypt",
+   "Cilantro coffee Cairo"
+  ],
+  "review": true
  },
  {
   "name": "Costa Coffee",
@@ -8623,7 +8968,12 @@
   "ar": "المالكي",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "حلواني المالكي",
+   "El Malky sweets"
+  ],
+  "review": true
  },
  {
   "name": "Mandarine Koueider",
@@ -8632,7 +8982,12 @@
   "ar": "مندرين قويدر",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "Mandarine Koueider",
+   "مندرين قويدر"
+  ],
+  "review": true
  },
  {
   "name": "El Abd",
@@ -8641,7 +8996,12 @@
   "ar": "العبد",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "حلواني العبد",
+   "El Abd patisserie Cairo"
+  ],
+  "review": true
  },
  {
   "name": "La Poire",
@@ -8659,7 +9019,12 @@
   "ar": "ساليه سكريه",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "Salé Sucré patisserie Cairo",
+   "ساليه سكريه"
+  ],
+  "review": true
  },
  {
   "name": "Sedra",
@@ -8668,7 +9033,12 @@
   "ar": "سيدرا",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "Sedra patisserie",
+   "سيدرا حلويات"
+  ],
+  "review": true
  },
  {
   "name": "TBS",
@@ -8677,7 +9047,12 @@
   "ar": "تي بي إس",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "TBS bakery Cairo",
+   "The Bakery Shop Egypt"
+  ],
+  "review": true
  },
  {
   "name": "KFC",
@@ -8758,7 +9133,12 @@
   "ar": "أبو شقرة",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "Abou Shakra restaurant",
+   "أبو شقرة مطعم"
+  ],
+  "review": true
  },
  {
   "name": "Abou Tarek",
@@ -8777,7 +9157,12 @@
   "ar": "محمد أحمد",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "Mohamed Ahmed foul restaurant Alexandria",
+   "مطعم محمد أحمد الإسكندرية"
+  ],
+  "review": true
  },
  {
   "name": "Gad",
@@ -8786,7 +9171,12 @@
   "ar": "جاد",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "مطعم جاد",
+   "Gad restaurant Egypt"
+  ],
+  "review": true
  },
  {
   "name": "Abou El Sid",
@@ -8795,7 +9185,12 @@
   "ar": "أبو السيد",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "Abou El Sid restaurant",
+   "أبو السيد مطعم"
+  ],
+  "review": true
  },
  {
   "name": "Tholathy Adwaa El Masrah",
@@ -8823,7 +9218,12 @@
   "ar": "فطوطة",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Fatouta Samir Ghanem",
+   "فطوطة"
+  ],
+  "review": true
  },
  {
   "name": "Sherihan",
@@ -8832,7 +9232,12 @@
   "ar": "شريهان",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "شريهان",
+   "Sherihan actress"
+  ],
+  "review": true
  },
  {
   "name": "Sabreen",
@@ -8859,7 +9264,12 @@
   "ar": "جيهان نصر",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "جيهان نصر",
+   "Gihan Nasr fawazeer"
+  ],
+  "review": true
  },
  {
   "name": "Ghada Abdel Razek",
@@ -8886,7 +9296,12 @@
   "ar": "القناة الأولى",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "القناة الأولى المصرية",
+   "Egyptian Channel 1 logo"
+  ],
+  "review": true
  },
  {
   "name": "Egyptian Satellite Channel",
@@ -8922,7 +9337,12 @@
   "ar": "الحياة",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "قناة الحياة",
+   "Al Hayat TV Egypt logo"
+  ],
+  "review": true
  },
  {
   "name": "ON TV",
@@ -8986,7 +9406,12 @@
   "ar": "إذاعة الإسكندرية",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "إذاعة الإسكندرية",
+   "Alexandria radio"
+  ],
+  "review": true
  },
  {
   "name": "Quran Radio",
@@ -9005,7 +9430,12 @@
   "ar": "إذاعة الشرق الأوسط",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "إذاعة الشرق الأوسط",
+   "Middle East Radio Egypt"
+  ],
+  "review": true
  },
  {
   "name": "Al Aghani Radio",
@@ -9032,7 +9462,12 @@
   "ar": "راديو مصر",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "راديو مصر",
+   "Radio Masr logo"
+  ],
+  "review": true
  },
  {
   "name": "Mega FM",
@@ -9050,7 +9485,12 @@
   "ar": "سيدتي الجميلة",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "مسرحية سيدتي الجميلة",
+   "Sayedati El Gameela play Fouad El-Mohandes"
+  ],
+  "review": true
  },
  {
   "name": "Madraset El Moshaghebeen",
@@ -9096,7 +9536,12 @@
   "ar": "سك على بناتك",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Sok Ala Banatak play",
+   "مسرحية سك على بناتك"
+  ],
+  "review": true
  },
  {
   "name": "El Wad Sayed El Shaghal",
@@ -9115,7 +9560,12 @@
   "ar_hint": "",
   "logo": false,
   "skip": false,
-  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Adel_Imam_2009.jpg/500px-Adel_Imam_2009.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Adel_Imam_2009.jpg/500px-Adel_Imam_2009.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "q": [
+   "El Zaeem play Adel Imam",
+   "مسرحية الزعيم"
+  ],
+  "review": true
  },
  {
   "name": "Bodyguard",
@@ -9124,7 +9574,12 @@
   "ar": "بودي جارد",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Bodyguard play Adel Imam",
+   "مسرحية بودي جارد"
+  ],
+  "review": true
  },
  {
   "name": "Abla Fadila",
@@ -9133,7 +9588,12 @@
   "ar": "أبلة فضيلة",
   "ar_hint": "ممثل",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "أبلة فضيلة",
+   "Fadila Tawfik"
+  ],
+  "review": true
  },
  {
   "name": "Abdel Rahman Abu Zahra",
@@ -9216,7 +9676,12 @@
   "ar": "صباح الخير",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "مجلة صباح الخير",
+   "Sabah El Kheir magazine"
+  ],
+  "review": true
  },
  {
   "name": "Mickey Magazine",
@@ -9243,7 +9708,12 @@
   "ar": "علاء الدين",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": true,
+  "q": [
+   "مجلة علاء الدين",
+   "Alaa El Din magazine"
+  ],
+  "review": true
  },
  {
   "name": "Peugeot 404",
@@ -9342,7 +9812,13 @@
   "ar": "التليفون",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "old telephone Egypt",
+   "Egyptian telephone exchange historic",
+   "antique telephone"
+  ],
+  "review": true
  },
  {
   "name": "Cinema",
@@ -9405,7 +9881,12 @@
   "ar": "نوكيا 3210",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Nokia 3210 phone",
+   "Nokia 3210"
+  ],
+  "review": true
  },
  {
   "name": "Nokia 3310",
@@ -9414,7 +9895,12 @@
   "ar": "نوكيا 3310",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Nokia 3310 phone",
+   "Nokia 3310 blue"
+  ],
+  "review": true
  },
  {
   "name": "Nokia 1100",
