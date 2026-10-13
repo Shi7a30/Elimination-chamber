@@ -253,8 +253,7 @@
   "q": [
    "أحمد شوبير",
    "Ahmed Shobeir goalkeeper"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Nader El-Sayed",
@@ -420,8 +419,7 @@
   "q": [
    "Suez Stadium",
    "استاد السويس"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Arab Contractors Stadium",
@@ -497,8 +495,7 @@
   "q": [
    "شوقي غريب",
    "Shawky Gharieb"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Hossam El-Badry",
@@ -511,8 +508,7 @@
   "q": [
    "حسام البدري",
    "Hossam El Badry coach"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Ehab Galal",
@@ -561,8 +557,7 @@
   "q": [
    "حسني عبد ربه",
    "Hosny Abd Rabou"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Ahmed Fathy",
@@ -593,8 +588,7 @@
   "q": [
    "إبراهيم حسن لاعب",
    "Ibrahim Hassan footballer Egypt"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Ali Maaloul",
@@ -616,8 +610,7 @@
   "q": [
    "رمضان صبحي",
    "Ramadan Sobhi footballer"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "TP Mazembe",
@@ -1656,8 +1649,7 @@
   "q": [
    "ياسمين عبد العزيز",
    "Yasmine Abdel Aziz actress"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Menna Shalaby",
@@ -1716,8 +1708,7 @@
   "q": [
    "إسماعيلية رايح جاي فيلم",
    "Ismailia Rayeh Gay"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "El Limby",
@@ -1849,8 +1840,7 @@
   "q": [
    "محمد سعد ممثل",
    "Mohamed Saad actor Limby"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Ahmed Ezz",
@@ -2229,8 +2219,8 @@
   "logo": false,
   "skip": false,
   "q": [
-   "Asal Eswed film poster",
-   "عسل أسود فيلم"
+   "عسل إسود (فيلم)",
+   "عسل أسود"
   ],
   "review": true
  },
@@ -2768,8 +2758,7 @@
   "skip": false,
   "url": "https://upload.wikimedia.org/wikipedia/ar/9/98/%D8%B9%D8%A8%D8%AF_%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86_%D8%A3%D8%A8%D9%88_%D8%B2%D9%87%D8%B1%D8%A9.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
   "q": [
-   "لن أعيش في جلباب أبي مسلسل",
-   "Lan Aish fi Gilbab Abi Nour El-Sherif"
+   "لن أعيش في جلباب أبي"
   ],
   "review": true
  },
@@ -2784,8 +2773,7 @@
   "q": [
    "بكار كرتون",
    "Bakkar cartoon"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "El Kabeer Awy",
@@ -2836,8 +2824,7 @@
   "skip": false,
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/%D9%85%D8%AD%D9%85%D8%AF_%D8%B1%D9%85%D8%B6%D8%A7%D9%86.jpg/500px-%D9%85%D8%AD%D9%85%D8%AF_%D8%B1%D9%85%D8%B6%D8%A7%D9%86.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "q": [
-   "Gaafar El Omda series",
-   "جعفر العمدة مسلسل"
+   "جعفر العمدة"
   ],
   "review": true
  },
@@ -2953,7 +2940,7 @@
    "Taht El Saytara series Nelly Karim",
    "تحت السيطرة مسلسل"
   ],
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/ar/1/13/Ta%27t_Elsaytara.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Nelly & Sherihan",
@@ -2975,8 +2962,7 @@
   "q": [
    "سابع جار مسلسل",
    "Sabe Gar series"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Paranormal",
@@ -3379,8 +3365,7 @@
   "q": [
    "محمد فؤاد مطرب",
    "Mohamed Fouad singer"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Hisham Abbas",
@@ -3438,8 +3423,7 @@
   "q": [
    "مروان بابلو",
    "Marwan Pablo rapper"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Wegz",
@@ -3526,7 +3510,7 @@
    "Sahran Amr Diab album",
    "سهران عمرو دياب ألبوم"
   ],
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Sahran-1.jpg/500px-Sahran-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Khatfoony",
@@ -3621,8 +3605,7 @@
   "q": [
    "علي صوتك محمد منير",
    "Mohamed Mounir"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Habibi Dah",
@@ -3636,8 +3619,7 @@
   "q": [
    "Habibi Dah Hisham Abbas",
    "حبيبي ده هشام عباس"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Garh Tany",
@@ -3648,8 +3630,8 @@
   "logo": false,
   "skip": false,
   "q": [
-   "Garh Tany Sherine song",
-   "جرح تاني شيرين"
+   "جرح تاني (ألبوم)",
+   "جرح تاني"
   ],
   "review": true
  },
@@ -3703,8 +3685,7 @@
   "q": [
    "إزاي محمد منير",
    "Mohamed Mounir singer"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Number One",
@@ -3716,8 +3697,7 @@
   "skip": false,
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/%D9%85%D8%AD%D9%85%D8%AF_%D8%B1%D9%85%D8%B6%D8%A7%D9%86.jpg/500px-%D9%85%D8%AD%D9%85%D8%AF_%D8%B1%D9%85%D8%B6%D8%A7%D9%86.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "q": [
-   "Number One Mohamed Ramadan song",
-   "نمبر وان محمد رمضان"
+   "نمبر وان (أغنية)"
   ],
   "review": true
  },
@@ -3730,8 +3710,7 @@
   "logo": false,
   "skip": false,
   "q": [
-   "El Bakht Wegz",
-   "البخت ويجز"
+   "البخت (أغنية)"
   ],
   "review": true
  },
@@ -4377,8 +4356,7 @@
   "q": [
    "يحيى وكنوز",
    "Yehia and Kenooz cartoon"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Mofeed Fawzy",
@@ -4418,8 +4396,7 @@
   "q": [
    "لميس الحديدي",
    "Lamees Hadidi"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Amr El-Leithy",
@@ -4441,8 +4418,7 @@
   "q": [
    "تامر أمين",
    "Tamer Amin presenter"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Ramez Galal",
@@ -5398,12 +5374,11 @@
   "ar_hint": "",
   "logo": false,
   "skip": false,
-  "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/The_New_Suez_Canal.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/New_Suez_Canal_aerial.jpeg/500px-New_Suez_Canal_aerial.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "q": [
    "New Suez Canal ships",
    "قناة السويس الجديدة"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Cairo Metro Line 1",
@@ -5417,7 +5392,7 @@
    "Cairo Metro Line 1 train",
    "مترو أنفاق القاهرة الخط الأول"
   ],
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Cairo_Metro_Line_1_Mar_Girgis.jpg/500px-Cairo_Metro_Line_1_Mar_Girgis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "6th October Bridge",
@@ -5467,7 +5442,7 @@
    "Great Pyramid of Giza base side",
    "Great Pyramid Giza"
   ],
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Pyramid_of_Cheops_-_side.jpg/500px-Pyramid_of_Cheops_-_side.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Heliopolis",
@@ -5968,7 +5943,7 @@
    "Opening of the Suez Canal painting",
    "افتتاح قناة السويس 1869"
   ],
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/%D0%9A%D0%BB%D0%B8%D0%BF%D0%B5%D1%80_%D0%AF%D1%85%D0%BE%D0%BD%D1%82_%D0%BD%D0%B0_%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B8_%D0%A1%D1%83%D1%8D%D1%86%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0%2C_17_%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8F_1869_%D0%B3%D0%BE%D0%B4%D0%B0.jpg/500px-%D0%9A%D0%BB%D0%B8%D0%BF%D0%B5%D1%80_%D0%AF%D1%85%D0%BE%D0%BD%D1%82_%D0%BD%D0%B0_%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B8_%D0%A1%D1%83%D1%8D%D1%86%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0%2C_17_%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8F_1869_%D0%B3%D0%BE%D0%B4%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Cairo University founded",
@@ -6019,7 +5994,7 @@
    "Aswan High Dam construction",
    "Monument of Arab-Soviet Friendship"
   ],
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Aswan_High_Dam%2C_Construction%2C_1964_%282%29.jpg/500px-Aswan_High_Dam%2C_Construction%2C_1964_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "October War",
@@ -6042,7 +6017,7 @@
    "Nobel Prize medal literature",
    "Nobel medal"
   ],
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Alfred_Nobel_Medal_1975_by_Richard_Renninger.jpg/500px-Alfred_Nobel_Medal_1975_by_Richard_Renninger.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Grand Egyptian Museum opens",
@@ -6851,7 +6826,7 @@
    "Declaration of Independence",
    "United States Declaration of Independence painting"
   ],
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Declaration_of_Independence_%281819%29%2C_by_John_Trumbull.jpg/500px-Declaration_of_Independence_%281819%29%2C_by_John_Trumbull.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Finland",
@@ -7189,7 +7164,7 @@
   "q": [
    "polar bear walking"
   ],
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Polar_Bear_-_Alaska.jpg/500px-Polar_Bear_-_Alaska.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Gorilla",
@@ -7373,8 +7348,7 @@
   "q": [
    "human anatomy",
    "Human"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Mouse",
@@ -7549,7 +7523,7 @@
   "q": [
    "saltwater crocodile jaws"
   ],
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Saltwater_Crocodile_%28Crocodylus_porosus%29_%2810106331165%29.jpg/500px-Saltwater_Crocodile_%28Crocodylus_porosus%29_%2810106331165%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Jaguar",
@@ -7617,7 +7591,7 @@
    "Taweret statue",
    "Taweret"
   ],
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Luxor_Museum_Statue_Taweret_01.jpg/500px-Luxor_Museum_Statue_Taweret_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Crocodile (Sobek)",
@@ -7631,7 +7605,7 @@
    "Sobek statue",
    "Sobek Kom Ombo relief"
   ],
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Statuette_of_the_crocodile_Sobek%2C_limestone_-_Museo_Egizio%2C_Turin_C_934_p01.jpg/500px-Statuette_of_the_crocodile_Sobek%2C_limestone_-_Museo_Egizio%2C_Turin_C_934_p01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Lion (Sekhmet)",
@@ -7645,7 +7619,7 @@
    "Sekhmet statue",
    "Sekhmet"
   ],
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Statue_of_the_goddess_Sekhmet%2C_granodiorite_-_Museo_Egizio_Turin_C_257_p01.jpg/500px-Statue_of_the_goddess_Sekhmet%2C_granodiorite_-_Museo_Egizio_Turin_C_257_p01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Baboon (Thoth)",
@@ -7686,7 +7660,7 @@
    "Bastet statue",
    "Gayer-Anderson cat"
   ],
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Gayer-Anderson_Cat%2C_British_Museum.jpg/500px-Gayer-Anderson_Cat%2C_British_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Ibis (Thoth)",
@@ -8356,8 +8330,7 @@
   "q": [
    "Elmenus logo",
    "المنيوز"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Vezeeta",
@@ -8370,8 +8343,7 @@
   "q": [
    "Vezeeta logo",
    "فيزيتا"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Paymob",
@@ -8394,8 +8366,7 @@
   "q": [
    "Breadfast logo",
    "بريدفاست"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "MaxAB",
@@ -8408,8 +8379,7 @@
   "q": [
    "MaxAB logo",
    "ماكس أب"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Khazna",
@@ -8422,8 +8392,7 @@
   "q": [
    "Khazna app",
    "خزنة تطبيق"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Rabbit Mart",
@@ -8436,8 +8405,7 @@
   "q": [
    "Rabbit Mart logo",
    "رابيت ماركت"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Elsewedy Electric",
@@ -8469,7 +8437,7 @@
    "Felfela restaurant Cairo",
    "مطعم فلفلة"
   ],
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Fattah_at_Felfela_Restaurant_-_Cairo_Egypt_October_2009.jpg/500px-Fattah_at_Felfela_Restaurant_-_Cairo_Egypt_October_2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Elaraby",
@@ -8492,7 +8460,7 @@
    "Momen restaurant Egypt",
    "مطاعم مؤمن"
   ],
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Momen_New_Logo.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Cook Door",
@@ -8514,8 +8482,7 @@
   "q": [
    "Buffalo Burger Egypt",
    "بافلو برجر"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Zooba",
@@ -8547,8 +8514,7 @@
   "q": [
    "Corona chocolate Egypt",
    "شيكولاتة كورونا"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Spiro Spathis",
@@ -8576,12 +8542,12 @@
   "ar": "فيتراك",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "Vitrac jam",
    "فيتراك"
   ],
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Vitrac-Logo.png/500px-Vitrac-Logo.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Regina",
@@ -8594,8 +8560,7 @@
   "q": [
    "Regina pasta Egypt",
    "مكرونة ريجينا"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Panda (Arab Dairy)",
@@ -8608,8 +8573,7 @@
   "q": [
    "Panda cheese Arab Dairy",
    "جبنة باندا"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Dina Farms",
@@ -8622,8 +8586,7 @@
   "q": [
    "Dina Farms Egypt",
    "مزارع دينا"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Domty",
@@ -8636,8 +8599,7 @@
   "q": [
    "Domty cheese",
    "دومتي"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Obour Land",
@@ -8650,8 +8612,7 @@
   "q": [
    "Obour Land cheese",
    "عبور لاند"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Beyti",
@@ -8664,8 +8625,7 @@
   "q": [
    "Beyti milk Egypt",
    "بيتي لبن"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Seoudi",
@@ -8678,8 +8638,7 @@
   "q": [
    "Seoudi Market",
    "سعودي ماركت"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Awlad Ragab",
@@ -8692,8 +8651,7 @@
   "q": [
    "أولاد رجب",
    "Awlad Ragab supermarket"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Metro Market",
@@ -8706,8 +8664,7 @@
   "q": [
    "Metro Market Egypt",
    "مترو ماركت"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Carrefour",
@@ -8729,8 +8686,7 @@
   "q": [
    "Hyper One Sheikh Zayed",
    "هايبر وان"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Gourmet",
@@ -8743,8 +8699,7 @@
   "q": [
    "Gourmet Egypt supermarket",
    "جورميه مصر"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Kheir Zaman",
@@ -8757,8 +8712,7 @@
   "q": [
    "خير زمان",
    "Kheir Zaman supermarket"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "LuLu Hypermarket",
@@ -8870,8 +8824,7 @@
   "q": [
    "Simonds cafe Zamalek",
    "سيموندس"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Café Riche",
@@ -8903,8 +8856,7 @@
   "q": [
    "Horreya cafe Bab el Louk",
    "مقهى الحرية القاهرة"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Naguib Mahfouz Café",
@@ -8918,7 +8870,7 @@
    "Naguib Mahfouz Cafe Khan el-Khalili",
    "مقهى نجيب محفوظ"
   ],
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/%D9%85%D9%82%D9%87%D9%89_%D9%86%D8%AC%D9%8A%D8%A8_%D9%85%D8%AD%D9%81%D9%88%D8%B8-_%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9.jpg/500px-%D9%85%D9%82%D9%87%D9%89_%D9%86%D8%AC%D9%8A%D8%A8_%D9%85%D8%AD%D9%81%D9%88%D8%B8-_%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Cilantro",
@@ -8927,12 +8879,12 @@
   "ar": "سيلانترو",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "Cilantro cafe Egypt",
    "Cilantro coffee Cairo"
   ],
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Flickr_-_dlisbona_-_Cafe_Cilantro_in_Mohandessin.jpg/500px-Flickr_-_dlisbona_-_Cafe_Cilantro_in_Mohandessin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Costa Coffee",
@@ -8972,8 +8924,7 @@
   "q": [
    "حلواني المالكي",
    "El Malky sweets"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Mandarine Koueider",
@@ -8986,8 +8937,7 @@
   "q": [
    "Mandarine Koueider",
    "مندرين قويدر"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "El Abd",
@@ -9000,8 +8950,7 @@
   "q": [
    "حلواني العبد",
    "El Abd patisserie Cairo"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "La Poire",
@@ -9023,8 +8972,7 @@
   "q": [
    "Salé Sucré patisserie Cairo",
    "ساليه سكريه"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Sedra",
@@ -9037,8 +8985,7 @@
   "q": [
    "Sedra patisserie",
    "سيدرا حلويات"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "TBS",
@@ -9051,8 +8998,7 @@
   "q": [
    "TBS bakery Cairo",
    "The Bakery Shop Egypt"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "KFC",
@@ -9137,8 +9083,7 @@
   "q": [
    "Abou Shakra restaurant",
    "أبو شقرة مطعم"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Abou Tarek",
@@ -9157,12 +9102,12 @@
   "ar": "محمد أحمد",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "Mohamed Ahmed foul restaurant Alexandria",
    "مطعم محمد أحمد الإسكندرية"
   ],
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Foul_Mohamed_Ahmed_-_foul.jpg/500px-Foul_Mohamed_Ahmed_-_foul.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Gad",
@@ -9171,12 +9116,12 @@
   "ar": "جاد",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "مطعم جاد",
    "Gad restaurant Egypt"
   ],
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Mostafa_Gad_restaurant_branch_at_Al_Iskandar_Al_Akbar_Street%2C_Raml_Station%2C_Alexandria.jpg/500px-Mostafa_Gad_restaurant_branch_at_Al_Iskandar_Al_Akbar_Street%2C_Raml_Station%2C_Alexandria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Abou El Sid",
@@ -9189,8 +9134,7 @@
   "q": [
    "Abou El Sid restaurant",
    "أبو السيد مطعم"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Tholathy Adwaa El Masrah",
@@ -9223,7 +9167,7 @@
    "Fatouta Samir Ghanem",
    "فطوطة"
   ],
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/ar/d/d1/%D8%B4%D8%AE%D8%B5%D9%8A%D8%A9_%D9%81%D8%B7%D9%88%D8%B7%D8%A9.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Sherihan",
@@ -9236,8 +9180,7 @@
   "q": [
    "شريهان",
    "Sherihan actress"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Sabreen",
@@ -9268,8 +9211,7 @@
   "q": [
    "جيهان نصر",
    "Gihan Nasr fawazeer"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Ghada Abdel Razek",
@@ -9296,12 +9238,12 @@
   "ar": "القناة الأولى",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "القناة الأولى المصرية",
    "Egyptian Channel 1 logo"
   ],
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89_%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Egyptian Satellite Channel",
@@ -9337,12 +9279,12 @@
   "ar": "الحياة",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "قناة الحياة",
    "Al Hayat TV Egypt logo"
   ],
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/%D9%82_%D8%A7%D9%84%D8%AD%D9%8A%D8%A7%D8%A9.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
  },
  {
   "name": "ON TV",
@@ -9410,8 +9352,7 @@
   "q": [
    "إذاعة الإسكندرية",
    "Alexandria radio"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Quran Radio",
@@ -9434,8 +9375,7 @@
   "q": [
    "إذاعة الشرق الأوسط",
    "Middle East Radio Egypt"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Al Aghani Radio",
@@ -9466,8 +9406,7 @@
   "q": [
    "راديو مصر",
    "Radio Masr logo"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Mega FM",
@@ -9489,8 +9428,7 @@
   "q": [
    "مسرحية سيدتي الجميلة",
    "Sayedati El Gameela play Fouad El-Mohandes"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Madraset El Moshaghebeen",
@@ -9541,7 +9479,7 @@
    "Sok Ala Banatak play",
    "مسرحية سك على بناتك"
   ],
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Fouad_El-Mohandes_in_%22Sukk_%27Ala_Banatak%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
  },
  {
   "name": "El Wad Sayed El Shaghal",
@@ -9560,12 +9498,11 @@
   "ar_hint": "",
   "logo": false,
   "skip": false,
-  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Adel_Imam_2009.jpg/500px-Adel_Imam_2009.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://upload.wikimedia.org/wikipedia/ar/0/0e/%D9%85%D9%84%D8%B5%D9%82_%D9%85%D8%B3%D8%B1%D8%AD%D9%8A%D8%A9_%D8%A7%D9%84%D8%B2%D8%B9%D9%8A%D9%85.jpeg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
   "q": [
    "El Zaeem play Adel Imam",
    "مسرحية الزعيم"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Bodyguard",
@@ -9576,8 +9513,8 @@
   "logo": false,
   "skip": false,
   "q": [
-   "Bodyguard play Adel Imam",
-   "مسرحية بودي جارد"
+   "بودي جارد (مسرحية)",
+   "بودي جارد"
   ],
   "review": true
  },
@@ -9592,8 +9529,7 @@
   "q": [
    "أبلة فضيلة",
    "Fadila Tawfik"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Abdel Rahman Abu Zahra",
@@ -9676,12 +9612,12 @@
   "ar": "صباح الخير",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "مجلة صباح الخير",
    "Sabah El Kheir magazine"
   ],
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Sabah_Alhkeir.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Mickey Magazine",
@@ -9712,8 +9648,7 @@
   "q": [
    "مجلة علاء الدين",
    "Alaa El Din magazine"
-  ],
-  "review": true
+  ]
  },
  {
   "name": "Peugeot 404",
@@ -9818,7 +9753,7 @@
    "Egyptian telephone exchange historic",
    "antique telephone"
   ],
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Old_telephone_switchboard_found_in_Cairo%2C_Egypt.jpg/500px-Old_telephone_switchboard_found_in_Cairo%2C_Egypt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Cinema",
@@ -9886,7 +9821,7 @@
    "Nokia 3210 phone",
    "Nokia 3210"
   ],
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Nokia_3210.jpg/500px-Nokia_3210.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Nokia 3310",
@@ -9900,7 +9835,7 @@
    "Nokia 3310 phone",
    "Nokia 3310 blue"
   ],
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Nokia_3310_grey_front_%28tidied_and_enhanced%29.jpg/500px-Nokia_3310_grey_front_%28tidied_and_enhanced%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Nokia 1100",
