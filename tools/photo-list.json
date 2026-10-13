@@ -564,8 +564,7 @@
   "ar": "إبراهيم حسن",
   "ar_hint": "لاعب كرة",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Ali Maaloul",
@@ -583,8 +582,7 @@
   "ar": "رمضان صبحي",
   "ar_hint": "لاعب كرة",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "TP Mazembe",
@@ -8290,8 +8288,7 @@
   "ar": "كورونا",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Spiro Spathis",
@@ -8310,7 +8307,7 @@
   "ar_hint": "",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Farag_Allah_factory_1.jpg/500px-Farag_Allah_factory_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Vitrac",
@@ -8319,8 +8316,7 @@
   "ar": "فيتراك",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Regina",
@@ -8329,8 +8325,7 @@
   "ar": "ريجينا",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Panda (Arab Dairy)",
@@ -8339,8 +8334,7 @@
   "ar": "باندا",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Dina Farms",
@@ -8349,8 +8343,7 @@
   "ar": "دينا فارمز",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Domty",
@@ -8359,8 +8352,7 @@
   "ar": "دومتي",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Obour Land",
@@ -8369,8 +8361,7 @@
   "ar": "عبور لاند",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Beyti",
@@ -8379,8 +8370,7 @@
   "ar": "بيتي",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Seoudi",
@@ -8389,8 +8379,7 @@
   "ar": "سعودي ماركت",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Awlad Ragab",
@@ -8399,8 +8388,7 @@
   "ar": "أولاد رجب",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Metro Market",
@@ -8409,8 +8397,7 @@
   "ar": "مترو ماركت",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Carrefour",
@@ -8428,8 +8415,7 @@
   "ar": "هايبر وان",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Gourmet",
@@ -8438,8 +8424,7 @@
   "ar": "جورميه",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Kheir Zaman",
@@ -8448,8 +8433,7 @@
   "ar": "خير زمان",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "LuLu Hypermarket",
@@ -8557,8 +8541,7 @@
   "ar": "سيموندس",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Café Riche",
@@ -8577,7 +8560,7 @@
   "ar_hint": "",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Brazilian_Coffee_Stores_coffeehouse_in_Saad_Zaghloul_Street%2C_Alexandria_at_night.jpg/500px-Brazilian_Coffee_Stores_coffeehouse_in_Saad_Zaghloul_Street%2C_Alexandria_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "El Horreya Café",
@@ -8586,8 +8569,7 @@
   "ar": "قهوة الحرية",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Naguib Mahfouz Café",
@@ -8605,8 +8587,7 @@
   "ar": "سيلانترو",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Costa Coffee",
@@ -8642,8 +8623,7 @@
   "ar": "المالكي",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Mandarine Koueider",
@@ -8652,8 +8632,7 @@
   "ar": "مندرين قويدر",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "El Abd",
@@ -8662,8 +8641,7 @@
   "ar": "العبد",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "La Poire",
@@ -8681,8 +8659,7 @@
   "ar": "ساليه سكريه",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Sedra",
@@ -8691,8 +8668,7 @@
   "ar": "سيدرا",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "TBS",
@@ -8701,8 +8677,7 @@
   "ar": "تي بي إس",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "KFC",
@@ -8783,8 +8758,7 @@
   "ar": "أبو شقرة",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Abou Tarek",
@@ -8794,7 +8768,7 @@
   "ar_hint": "",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Flickr_-_Gaspa_-_Cairo%2C_Abou_Tarek_restourant.jpg/500px-Flickr_-_Gaspa_-_Cairo%2C_Abou_Tarek_restourant.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Mohamed Ahmed",
@@ -8803,8 +8777,7 @@
   "ar": "محمد أحمد",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Gad",
@@ -8813,8 +8786,7 @@
   "ar": "جاد",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Abou El Sid",
@@ -8823,8 +8795,7 @@
   "ar": "أبو السيد",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Tholathy Adwaa El Masrah",
@@ -8843,7 +8814,7 @@
   "ar_hint": "",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Real_pictures_cart_postal_Egyptian_1970s.jpg/500px-Real_pictures_cart_postal_Egyptian_1970s.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Fatouta",
@@ -8861,8 +8832,7 @@
   "ar": "شريهان",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Sabreen",
@@ -8889,8 +8859,7 @@
   "ar": "جيهان نصر",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Ghada Abdel Razek",
@@ -8917,8 +8886,7 @@
   "ar": "القناة الأولى",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Egyptian Satellite Channel",
@@ -8945,8 +8913,7 @@
   "ar": "دريم",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": false
  },
  {
   "name": "Al Hayat TV",
@@ -8955,8 +8922,7 @@
   "ar": "الحياة",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "ON TV",
@@ -9002,7 +8968,7 @@
   "ar_hint": "",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Kairo_01.jpg/500px-Kairo_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
  },
  {
   "name": "Voice of the Arabs",
@@ -9020,8 +8986,7 @@
   "ar": "إذاعة الإسكندرية",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Quran Radio",
@@ -9031,7 +8996,7 @@
   "ar_hint": "",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/ar/3/34/%D8%A5%D8%B0%D8%A7%D8%B9%D8%A9_%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86_%D8%A7%D9%84%D9%83%D8%B1%D9%8A%D9%85_%D9%85%D9%86_%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9.png?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Middle East Radio",
@@ -9040,8 +9005,7 @@
   "ar": "إذاعة الشرق الأوسط",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Al Aghani Radio",
@@ -9068,8 +9032,7 @@
   "ar": "راديو مصر",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Mega FM",
@@ -9088,7 +9051,7 @@
   "ar_hint": "",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Harry_Stradling-Audrey_Hepburn_in_My_Fair_Lady.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Madraset El Moshaghebeen",
@@ -9107,7 +9070,7 @@
   "ar_hint": "",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/ar/8/8e/%D9%85%D9%84%D8%B5%D9%82_%D9%85%D8%B3%D8%B1%D8%AD%D9%8A%D8%A9_%D8%A7%D9%86%D8%AA%D9%87%D9%89_%D8%A7%D9%84%D8%AF%D8%B1%D8%B3_%D9%8A%D8%A7_%D8%BA%D8%A8%D9%8A.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Shahed Mashafsh Haga",
@@ -9153,7 +9116,7 @@
   "ar_hint": "",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Adel_Imam_2009.jpg/500px-Adel_Imam_2009.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
  },
  {
   "name": "Bodyguard",
@@ -9171,8 +9134,7 @@
   "ar": "أبلة فضيلة",
   "ar_hint": "ممثل",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Abdel Rahman Abu Zahra",
@@ -9200,7 +9162,7 @@
   "ar_hint": "ممثل",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Nagwa_Ibrahim_%282023%29.png?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Hala Fakher",
@@ -9246,7 +9208,7 @@
   "ar_hint": "",
   "logo": false,
   "skip": false,
-  "review": true
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Al-Kawakeb_Magazine_cover%2C_Issue_42%2C_1933_-_Fatima_Rushdi.jpg/500px-Al-Kawakeb_Magazine_cover%2C_Issue_42%2C_1933_-_Fatima_Rushdi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Sabah El Kheir",
@@ -9255,8 +9217,7 @@
   "ar": "صباح الخير",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Mickey Magazine",
@@ -9283,8 +9244,7 @@
   "ar": "علاء الدين",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "review": true
+  "skip": true
  },
  {
   "name": "Peugeot 404",
