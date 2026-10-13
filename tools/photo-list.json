@@ -9050,8 +9050,7 @@
   "ar": "سيدتي الجميلة",
   "ar_hint": "",
   "logo": false,
-  "skip": false,
-  "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Harry_Stradling-Audrey_Hepburn_in_My_Fair_Lady.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  "skip": true
  },
  {
   "name": "Madraset El Moshaghebeen",
