@@ -8427,12 +8427,11 @@
   "ar": "فلفلة",
   "ar_hint": "شركة",
   "logo": true,
-  "skip": false,
+  "skip": true,
   "q": [
    "Felfela restaurant Cairo",
    "مطعم فلفلة"
-  ],
-  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Fattah_at_Felfela_Restaurant_-_Cairo_Egypt_October_2009.jpg/500px-Fattah_at_Felfela_Restaurant_-_Cairo_Egypt_October_2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  ]
  },
  {
   "name": "Elaraby",
