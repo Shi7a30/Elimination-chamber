@@ -17,6 +17,7 @@ COMMONS_API = "https://commons.wikimedia.org/w/api.php"
 S = requests.Session()
 S.headers["User-Agent"] = "EliminateTriviaGame/1.0 (https://github.com/shi7a30/elimination-chamber; personal use)"
 SIZE = 200
+OTHER_WIKIS = ("arwiki", "fawiki", "hewiki", "ruwiki", "ukwiki", "trwiki", "kowiki", "zhwiki", "idwiki", "viwiki")
 PI = {"prop": "pageimages|pageprops", "ppprop": "disambiguation|wikibase_item", "piprop": "thumbnail", "pithumbsize": 400, "pilicense": "any"}
 
 
@@ -100,6 +101,14 @@ def candidates(x, p):
     for qid in dict.fromkeys(q for q in qids if q):
         for prop in ("P3383", "P18", "P154"):
             add("wikidata %s %s" % (qid, prop), wd_file(qid, prop))
+        # other Wikipedias often use a poster or cover where English has a title card or a photo of the star
+        links = api(WD_API, action="wbgetentities", ids=qid, props="sitelinks").get("entities", {}).get(qid, {}).get("sitelinks", {})
+        for site in OTHER_WIKIS:
+            if site in links:
+                pg = (api("https://%s.wikipedia.org/w/api.php" % site[:-4], titles=links[site]["title"], **PI)
+                      .get("query", {}).get("pages") or [None])[0]
+                if ok(pg):
+                    add(site + ":" + pg["title"], pg["thumbnail"]["source"])
     # "q" holds extra search phrases (e.g. "Sekhmet statue") for items whose own name finds the wrong thing.
     for q in x.get("q", []) + [x["name"].replace("'", "")]:
         d = api(COMMONS_API, generator="search", gsrnamespace=6, gsrsearch=q, gsrlimit=4,
@@ -172,7 +181,7 @@ def main():
     for x in items:
         if x.get("review"):
             try:
-                cands[x["name"]] = [{"src": s, "url": u, "uri": to_uri(u)} for s, u in candidates(x, pages.get(x["name"]))[:12]]
+                cands[x["name"]] = [{"src": s, "url": u, "uri": to_uri(u)} for s, u in candidates(x, pages.get(x["name"]))[:16]]
             except Exception as e:
                 print("candidates failed", x["name"], e)
         if x.get("skip"):  # known bad matches: show a letter instead

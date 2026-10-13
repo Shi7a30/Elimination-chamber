@@ -1706,9 +1706,10 @@
   "logo": false,
   "skip": true,
   "q": [
-   "إسماعيلية رايح جاي فيلم",
-   "Ismailia Rayeh Gay"
-  ]
+   "إسماعيلية رايح جاي (فيلم)",
+   "Ismailia Rayeh Gai film poster"
+  ],
+  "review": true
  },
  {
   "name": "El Limby",
@@ -2674,7 +2675,11 @@
   "ar": "",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Two and a Half Men poster"
+  ],
+  "review": true
  },
  {
   "name": "Friends",
@@ -2683,7 +2688,12 @@
   "ar": "",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Friends TV series cast poster",
+   "فريندز"
+  ],
+  "review": true
  },
  {
   "name": "How I Met Your Mother",
@@ -2692,7 +2702,11 @@
   "ar": "",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "How I Met Your Mother poster"
+  ],
+  "review": true
  },
  {
   "name": "The Office (US)",
@@ -2701,7 +2715,11 @@
   "ar": "",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "The Office US poster"
+  ],
+  "review": true
  },
  {
   "name": "Seinfeld",
@@ -2710,7 +2728,11 @@
   "ar": "",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Seinfeld poster"
+  ],
+  "review": true
  },
  {
   "name": "The Sopranos",
@@ -2719,7 +2741,12 @@
   "ar": "",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "The Sopranos poster",
+   "آل سوبرانو"
+  ],
+  "review": true
  },
  {
   "name": "Game of Thrones",
@@ -2728,7 +2755,12 @@
   "ar": "",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Game of Thrones poster",
+   "صراع العروش"
+  ],
+  "review": true
  },
  {
   "name": "Breaking Bad",
@@ -2737,7 +2769,12 @@
   "ar": "",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Breaking Bad poster",
+   "بريكنج باد"
+  ],
+  "review": true
  },
  {
   "name": "Layali El Helmeya",
@@ -2758,8 +2795,9 @@
   "skip": false,
   "url": "https://upload.wikimedia.org/wikipedia/ar/9/98/%D8%B9%D8%A8%D8%AF_%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86_%D8%A3%D8%A8%D9%88_%D8%B2%D9%87%D8%B1%D8%A9.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
   "q": [
-   "لن أعيش في جلباب أبي"
-  ]
+   "لن أعيش في جلباب أبي (مسلسل)"
+  ],
+  "review": true
  },
  {
   "name": "Bakkar",
@@ -2770,9 +2808,10 @@
   "logo": false,
   "skip": false,
   "q": [
-   "بكار كرتون",
-   "Bakkar cartoon"
-  ]
+   "بكار (مسلسل)",
+   "بكار"
+  ],
+  "review": true
  },
  {
   "name": "El Kabeer Awy",
@@ -2781,7 +2820,12 @@
   "ar": "الكبير أوي",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "الكبير أوي (مسلسل)",
+   "الكبير أوي"
+  ],
+  "review": true
  },
  {
   "name": "Grand Hotel",
@@ -2823,8 +2867,9 @@
   "skip": false,
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/%D9%85%D8%AD%D9%85%D8%AF_%D8%B1%D9%85%D8%B6%D8%A7%D9%86.jpg/500px-%D9%85%D8%AD%D9%85%D8%AF_%D8%B1%D9%85%D8%B6%D8%A7%D9%86.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "q": [
-   "جعفر العمدة"
-  ]
+   "جعفر العمدة (مسلسل)"
+  ],
+  "review": true
  },
  {
   "name": "El Hashashin",
@@ -2833,7 +2878,12 @@
   "ar": "الحشاشين",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "الحشاشين (مسلسل)",
+   "El Hashashin TV series poster"
+  ],
+  "review": true
  },
  {
   "name": "Yehia El-Fakharany",
@@ -2896,7 +2946,12 @@
   "ar": "رأفت الهجان",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "رأفت الهجان (مسلسل)",
+   "Raafat El Haggan series"
+  ],
+  "review": true
  },
  {
   "name": "Arabesque",
@@ -2906,7 +2961,11 @@
   "ar_hint": "مسلسل",
   "logo": false,
   "skip": false,
-  "url": "https://upload.wikimedia.org/wikipedia/ar/4/42/%D8%A3%D8%B1%D8%A7%D8%A8%D9%8A%D8%B3%D9%83.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  "url": "https://upload.wikimedia.org/wikipedia/ar/4/42/%D8%A3%D8%B1%D8%A7%D8%A8%D9%8A%D8%B3%D9%83.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "q": [
+   "أرابيسك (مسلسل)"
+  ],
+  "review": true
  },
  {
   "name": "Hadeeth El Sabah wel Masaa",
@@ -2958,9 +3017,9 @@
   "logo": false,
   "skip": false,
   "q": [
-   "سابع جار مسلسل",
-   "Sabe Gar series"
-  ]
+   "سابع جار (مسلسل)"
+  ],
+  "review": true
  },
  {
   "name": "Paranormal",
@@ -2988,7 +3047,12 @@
   "ar": "بريزون بريك",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Prison Break poster",
+   "بريزن بريك"
+  ],
+  "review": true
  },
  {
   "name": "Peaky Blinders",
@@ -3007,7 +3071,12 @@
   "ar": "سترينجر ثينجز",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Stranger Things poster",
+   "أشياء غريبة (مسلسل)"
+  ],
+  "review": true
  },
  {
   "name": "Money Heist",
@@ -3016,7 +3085,12 @@
   "ar": "لا كاسا دي بابيل",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Money Heist poster",
+   "البروفيسور (مسلسل)"
+  ],
+  "review": true
  },
  {
   "name": "Squid Game",
@@ -3025,7 +3099,12 @@
   "ar": "لعبة الحبار",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Squid Game poster",
+   "لعبة الحبار"
+  ],
+  "review": true
  },
  {
   "name": "Bob Dylan",
@@ -3517,7 +3596,12 @@
   "ar": "خطفوني",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "خطفوني (أغنية)",
+   "عمرو دياب خطفوني"
+  ],
+  "review": true
  },
  {
   "name": "Ya Msafer Wahdak",
@@ -3527,7 +3611,12 @@
   "ar_hint": "أغنية",
   "logo": false,
   "skip": false,
-  "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Abdel_wahab.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Abdel_wahab.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "q": [
+   "يا مسافر وحدك",
+   "محمد عبد الوهاب أسطوانة"
+  ],
+  "review": true
  },
  {
   "name": "Ahwak",
@@ -3536,7 +3625,13 @@
   "ar": "أهواك",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "بنات اليوم (فيلم)",
+   "Banat El Yom 1957 film",
+   "أهواك (أغنية)"
+  ],
+  "review": true
  },
  {
   "name": "Enta Omri",
@@ -3545,7 +3640,11 @@
   "ar": "إنت عمري",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "إنت عمري (أغنية)"
+  ],
+  "review": true
  },
  {
   "name": "Al Atlal",
@@ -3554,7 +3653,12 @@
   "ar": "الأطلال",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "الأطلال (أغنية)",
+   "الأطلال أم كلثوم أسطوانة"
+  ],
+  "review": true
  },
  {
   "name": "Alf Leila wa Leila",
@@ -3563,7 +3667,12 @@
   "ar": "ألف ليلة وليلة",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "ألف ليلة وليلة (أغنية)",
+   "ألف ليلة وليلة أم كلثوم"
+  ],
+  "review": true
  },
  {
   "name": "Qariat al-Fingan",
@@ -3590,7 +3699,12 @@
   "ar": "حدوتة مصرية",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "حدوتة مصرية (ألبوم)",
+   "محمد منير حدوتة مصرية"
+  ],
+  "review": true
  },
  {
   "name": "Ali Sotak",
@@ -3601,9 +3715,10 @@
   "logo": false,
   "skip": false,
   "q": [
-   "علي صوتك محمد منير",
-   "Mohamed Mounir"
-  ]
+   "المصير (فيلم)",
+   "Destiny 1997 Youssef Chahine film"
+  ],
+  "review": true
  },
  {
   "name": "Habibi Dah",
@@ -3615,9 +3730,10 @@
   "skip": false,
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Hisham_Abbas_2008-07-15_Cairo.jpg/500px-Hisham_Abbas_2008-07-15_Cairo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "q": [
-   "Habibi Dah Hisham Abbas",
-   "حبيبي ده هشام عباس"
-  ]
+   "حبيبي ده (ألبوم)",
+   "هشام عباس ألبوم"
+  ],
+  "review": true
  },
  {
   "name": "Garh Tany",
@@ -3629,8 +3745,9 @@
   "skip": false,
   "q": [
    "جرح تاني (ألبوم)",
-   "جرح تاني"
-  ]
+   "شيرين ألبوم جرح تاني"
+  ],
+  "review": true
  },
  {
   "name": "Leih Beydary Keda",
@@ -3659,7 +3776,12 @@
   "ar_hint": "أغنية",
   "logo": false,
   "skip": false,
-  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Mohamed_Hamaki_2.jpg/500px-Mohamed_Hamaki_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Mohamed_Hamaki_2.jpg/500px-Mohamed_Hamaki_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "q": [
+   "ناويها (ألبوم)",
+   "حماقي ناويها"
+  ],
+  "review": true
  },
  {
   "name": "Ya El Midan",
@@ -3669,7 +3791,12 @@
   "ar_hint": "أغنية",
   "logo": false,
   "skip": false,
-  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Cairokee.band.jpg/500px-Cairokee.band.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Cairokee.band.jpg/500px-Cairokee.band.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "q": [
+   "يا الميدان (أغنية)",
+   "كايروكي"
+  ],
+  "review": true
  },
  {
   "name": "Ezzay",
@@ -3680,9 +3807,10 @@
   "logo": false,
   "skip": true,
   "q": [
-   "إزاي محمد منير",
-   "Mohamed Mounir singer"
-  ]
+   "إزاي (أغنية)",
+   "محمد منير إزاي"
+  ],
+  "review": true
  },
  {
   "name": "Number One",
@@ -3695,7 +3823,8 @@
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/%D9%85%D8%AD%D9%85%D8%AF_%D8%B1%D9%85%D8%B6%D8%A7%D9%86.jpg/500px-%D9%85%D8%AD%D9%85%D8%AF_%D8%B1%D9%85%D8%B6%D8%A7%D9%86.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "q": [
    "نمبر وان (أغنية)"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "El Bakht",
@@ -3706,8 +3835,10 @@
   "logo": false,
   "skip": false,
   "q": [
-   "البخت (أغنية)"
-  ]
+   "البخت (أغنية)",
+   "ويجز البخت"
+  ],
+  "review": true
  },
  {
   "name": "Sayed Darwish",
@@ -4221,7 +4352,12 @@
   "ar": "توم وجيري",
   "ar_hint": "كرتون",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Tom and Jerry poster",
+   "توم وجيري"
+  ],
+  "review": true
  },
  {
   "name": "Scooby-Doo",
@@ -4230,7 +4366,12 @@
   "ar": "سكوبي دو",
   "ar_hint": "كرتون",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Scooby-Doo poster",
+   "سكوبي دو"
+  ],
+  "review": true
  },
  {
   "name": "The Simpsons",
@@ -4239,7 +4380,12 @@
   "ar": "عيلة سيمبسون",
   "ar_hint": "كرتون",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "The Simpsons family",
+   "عائلة سيمبسون"
+  ],
+  "review": true
  },
  {
   "name": "SpongeBob",
@@ -4248,7 +4394,12 @@
   "ar": "سبونج بوب",
   "ar_hint": "كرتون",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "SpongeBob SquarePants poster",
+   "سبونج بوب"
+  ],
+  "review": true
  },
  {
   "name": "Shrek",
@@ -4266,7 +4417,12 @@
   "ar": "بيبا بيج",
   "ar_hint": "كرتون",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Peppa Pig family",
+   "بيبا بيج"
+  ],
+  "review": true
  },
  {
   "name": "Bluey",
@@ -4349,9 +4505,9 @@
   "logo": false,
   "skip": false,
   "q": [
-   "يحيى وكنوز",
-   "Yehia and Kenooz cartoon"
-  ]
+   "يحيى وكنوز (مسلسل)"
+  ],
+  "review": true
  },
  {
   "name": "Mofeed Fawzy",
@@ -4449,7 +4605,12 @@
   "ar": "جريندايزر",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "UFO Robot Grendizer",
+   "جريندايزر"
+  ],
+  "review": true
  },
  {
   "name": "Future Boy Conan",
@@ -4503,7 +4664,12 @@
   "ar": "بوكيمون",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Pokémon anime poster",
+   "بوكيمون (مسلسل)"
+  ],
+  "review": true
  },
  {
   "name": "One Piece",
@@ -4512,7 +4678,12 @@
   "ar": "ون بيس",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "One Piece anime poster",
+   "ون بيس"
+  ],
+  "review": true
  },
  {
   "name": "Naruto",
@@ -4521,7 +4692,12 @@
   "ar": "ناروتو",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "Naruto anime poster",
+   "ناروتو"
+  ],
+  "review": true
  },
  {
   "name": "Shaquille O'Neal",
@@ -9420,9 +9596,9 @@
   "logo": false,
   "skip": true,
   "q": [
-   "مسرحية سيدتي الجميلة",
-   "Sayedati El Gameela play Fouad El-Mohandes"
-  ]
+   "سيدتي الجميلة (مسرحية)"
+  ],
+  "review": true
  },
  {
   "name": "Madraset El Moshaghebeen",
@@ -9431,7 +9607,11 @@
   "ar": "مدرسة المشاغبين",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "q": [
+   "مدرسة المشاغبين (مسرحية)"
+  ],
+  "review": true
  },
  {
   "name": "Intaha El Dars Ya Ghabi",
@@ -9507,10 +9687,10 @@
   "logo": false,
   "skip": false,
   "q": [
-   "بودي جارد (مسرحية)",
-   "بودي جارد"
+   "بودي جارد (مسرحية)"
   ],
-  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Adel_Emam_%2834408206514%29.jpg/500px-Adel_Emam_%2834408206514%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Adel_Emam_%2834408206514%29.jpg/500px-Adel_Emam_%2834408206514%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "review": true
  },
  {
   "name": "Abla Fadila",
