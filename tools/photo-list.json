@@ -558,6 +558,33 @@
   "skip": false
  },
  {
+  "name": "Ibrahim Hassan",
+  "title": "Ibrahim Hassan",
+  "hint": "footballer",
+  "ar": "إبراهيم حسن",
+  "ar_hint": "لاعب كرة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ali Maaloul",
+  "title": "Ali Maâloul",
+  "hint": "footballer",
+  "ar": "علي معلول",
+  "ar_hint": "لاعب كرة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ramadan Sobhi",
+  "title": "Ramadan Sobhi",
+  "hint": "footballer",
+  "ar": "رمضان صبحي",
+  "ar_hint": "لاعب كرة",
+  "logo": false,
+  "skip": false
+ },
+ {
   "name": "TP Mazembe",
   "title": "TP Mazembe",
   "hint": "football club",
@@ -1139,6 +1166,69 @@
   "hint": "football manager",
   "ar": "ميكيل أرتيتا",
   "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Miroslav Klose",
+  "title": "Miroslav Klose",
+  "hint": "footballer",
+  "ar": "ميروسلاف كلوزه",
+  "ar_hint": "لاعب كرة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Harry Kane",
+  "title": "Harry Kane",
+  "hint": "footballer",
+  "ar": "هاري كين",
+  "ar_hint": "لاعب كرة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Pelé",
+  "title": "Pelé",
+  "hint": "footballer",
+  "ar": "بيليه",
+  "ar_hint": "لاعب كرة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Diego Maradona",
+  "title": "Diego Maradona",
+  "hint": "footballer",
+  "ar": "دييجو مارادونا",
+  "ar_hint": "لاعب كرة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Peter Crouch",
+  "title": "Peter Crouch",
+  "hint": "footballer",
+  "ar": "بيتر كراوتش",
+  "ar_hint": "لاعب كرة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Virgil van Dijk",
+  "title": "Virgil van Dijk",
+  "hint": "footballer",
+  "ar": "فيرجيل فان دايك",
+  "ar_hint": "لاعب كرة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Paul Pogba",
+  "title": "Paul Pogba",
+  "hint": "footballer",
+  "ar": "بول بوجبا",
+  "ar_hint": "لاعب كرة",
   "logo": false,
   "skip": false
  },
@@ -2277,6 +2367,87 @@
   "hint": "film",
   "ar": "كوكو",
   "ar_hint": "فيلم",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Walt Disney",
+  "title": "Walt Disney",
+  "hint": "film legend",
+  "ar": "والت ديزني",
+  "ar_hint": "فيلم",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "John Williams",
+  "title": "John Williams",
+  "hint": "film legend",
+  "ar": "جون ويليامز",
+  "ar_hint": "فيلم",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Steven Spielberg",
+  "title": "Steven Spielberg",
+  "hint": "film legend",
+  "ar": "ستيفن سبيلبرج",
+  "ar_hint": "فيلم",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "James Cameron",
+  "title": "James Cameron",
+  "hint": "film legend",
+  "ar": "جيمس كاميرون",
+  "ar_hint": "فيلم",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Daniel Day-Lewis",
+  "title": "Daniel Day-Lewis",
+  "hint": "film legend",
+  "ar": "دانيال داي لويس",
+  "ar_hint": "فيلم",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Christopher Nolan",
+  "title": "Christopher Nolan",
+  "hint": "film legend",
+  "ar": "كريستوفر نولان",
+  "ar_hint": "فيلم",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Jack Nicholson",
+  "title": "Jack Nicholson",
+  "hint": "actor",
+  "ar": "جاك نيكلسون",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Cate Blanchett",
+  "title": "Cate Blanchett",
+  "hint": "actor",
+  "ar": "كيت بلانشيت",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Brad Pitt",
+  "title": "Brad Pitt",
+  "hint": "actor",
+  "ar": "براد بيت",
+  "ar_hint": "ممثل",
   "logo": false,
   "skip": false
  },
@@ -3684,6 +3855,87 @@
   "skip": false
  },
  {
+  "name": "Beyoncé",
+  "title": "Beyoncé",
+  "hint": "singer",
+  "ar": "بيونسيه",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Kendrick Lamar",
+  "title": "Kendrick Lamar",
+  "hint": "singer",
+  "ar": "كندريك لامار",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Adele",
+  "title": "Adele",
+  "hint": "singer",
+  "ar": "أديل",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Rihanna",
+  "title": "Rihanna",
+  "hint": "singer",
+  "ar": "ريهانا",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mariah Carey",
+  "title": "Mariah Carey",
+  "hint": "singer",
+  "ar": "ماريا كاري",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Michael Jackson",
+  "title": "Michael Jackson",
+  "hint": "singer",
+  "ar": "مايكل جاكسون",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Madonna",
+  "title": "Madonna",
+  "hint": "singer",
+  "ar": "مادونا",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Whitney Houston",
+  "title": "Whitney Houston",
+  "hint": "singer",
+  "ar": "ويتني هيوستن",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Bruno Mars",
+  "title": "Bruno Mars",
+  "hint": "singer",
+  "ar": "برونو مارس",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
   "name": "Elon Musk",
   "title": "Elon Musk",
   "hint": "celebrity",
@@ -4156,6 +4408,141 @@
   "title": "Naruto (TV series)",
   "hint": "anime",
   "ar": "ناروتو",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Shaquille O'Neal",
+  "title": "Shaquille O'Neal",
+  "hint": "athlete",
+  "ar": "شاكيل أونيل",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "LeBron James",
+  "title": "LeBron James",
+  "hint": "athlete",
+  "ar": "ليبرون جيمس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Michael Jordan",
+  "title": "Michael Jordan",
+  "hint": "athlete",
+  "ar": "مايكل جوردان",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Kobe Bryant",
+  "title": "Kobe Bryant",
+  "hint": "athlete",
+  "ar": "كوبي براينت",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Usain Bolt",
+  "title": "Usain Bolt",
+  "hint": "athlete",
+  "ar": "يوسين بولت",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Novak Djokovic",
+  "title": "Novak Djokovic",
+  "hint": "athlete",
+  "ar": "نوفاك ديوكوفيتش",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Roger Federer",
+  "title": "Roger Federer",
+  "hint": "athlete",
+  "ar": "روجر فيدرر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mike Tyson",
+  "title": "Mike Tyson",
+  "hint": "athlete",
+  "ar": "مايك تايسون",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Simone Biles",
+  "title": "Simone Biles",
+  "hint": "athlete",
+  "ar": "سيمون بايلز",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Michael Phelps",
+  "title": "Michael Phelps",
+  "hint": "athlete",
+  "ar": "مايكل فيلبس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Carl Lewis",
+  "title": "Carl Lewis",
+  "hint": "athlete",
+  "ar": "كارل لويس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Katie Ledecky",
+  "title": "Katie Ledecky",
+  "hint": "athlete",
+  "ar": "كاتي ليديكي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Serena Williams",
+  "title": "Serena Williams",
+  "hint": "athlete",
+  "ar": "سيرينا ويليامز",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mo Farah",
+  "title": "Mo Farah",
+  "hint": "athlete",
+  "ar": "مو فرح",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Rafael Nadal",
+  "title": "Rafael Nadal",
+  "hint": "athlete",
+  "ar": "رافاييل نادال",
   "ar_hint": "",
   "logo": false,
   "skip": false
@@ -6561,15 +6948,6 @@
   "skip": false
  },
  {
-  "name": "Usain Bolt",
-  "title": "Usain Bolt",
-  "hint": "animal",
-  "ar": "يوسين بولت",
-  "ar_hint": "",
-  "logo": false,
-  "skip": false
- },
- {
   "name": "Blue Whale",
   "title": "Blue whale",
   "hint": "animal",
@@ -7893,5 +8271,1184 @@
   "logo": true,
   "skip": false,
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Zooba-koshari.jpg/500px-Zooba-koshari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+ },
+ {
+  "name": "El Rashidi El Mizan",
+  "title": "El Rashidi El Mizan",
+  "hint": "Egyptian food brand",
+  "ar": "الرشيدي الميزان",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Corona",
+  "title": "Corona",
+  "hint": "Egyptian food brand",
+  "ar": "كورونا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Spiro Spathis",
+  "title": "Spiro Spathis",
+  "hint": "Egyptian food brand",
+  "ar": "سبيرو سباتس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Faragello",
+  "title": "Faragello",
+  "hint": "Egyptian food brand",
+  "ar": "فرجللو",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Vitrac",
+  "title": "Vitrac",
+  "hint": "Egyptian food brand",
+  "ar": "فيتراك",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Regina",
+  "title": "Regina",
+  "hint": "Egyptian food brand",
+  "ar": "ريجينا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Panda (Arab Dairy)",
+  "title": "Panda (Arab Dairy)",
+  "hint": "Egyptian drink or dairy brand",
+  "ar": "باندا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Dina Farms",
+  "title": "Dina Farms",
+  "hint": "Egyptian drink or dairy brand",
+  "ar": "دينا فارمز",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Domty",
+  "title": "Domty",
+  "hint": "Egyptian drink or dairy brand",
+  "ar": "دومتي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Obour Land",
+  "title": "Obour Land",
+  "hint": "Egyptian drink or dairy brand",
+  "ar": "عبور لاند",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Beyti",
+  "title": "Beyti",
+  "hint": "Egyptian drink or dairy brand",
+  "ar": "بيتي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Seoudi",
+  "title": "Seoudi",
+  "hint": "supermarket chain in Egypt",
+  "ar": "سعودي ماركت",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Awlad Ragab",
+  "title": "Awlad Ragab",
+  "hint": "supermarket chain in Egypt",
+  "ar": "أولاد رجب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Metro Market",
+  "title": "Metro Market",
+  "hint": "supermarket chain in Egypt",
+  "ar": "مترو ماركت",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Carrefour",
+  "title": "Carrefour",
+  "hint": "supermarket chain in Egypt",
+  "ar": "كارفور",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Hyper One",
+  "title": "Hyper One",
+  "hint": "supermarket chain in Egypt",
+  "ar": "هايبر وان",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Gourmet",
+  "title": "Gourmet",
+  "hint": "supermarket chain in Egypt",
+  "ar": "جورميه",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Kheir Zaman",
+  "title": "Kheir Zaman",
+  "hint": "supermarket chain in Egypt",
+  "ar": "خير زمان",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "LuLu Hypermarket",
+  "title": "LuLu Hypermarket",
+  "hint": "supermarket chain in Egypt",
+  "ar": "لولو هايبر ماركت",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Nestlé",
+  "title": "Nestlé",
+  "hint": "food company in Egypt",
+  "ar": "نستله",
+  "ar_hint": "شركة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Coca-Cola",
+  "title": "Coca-Cola",
+  "hint": "food company in Egypt",
+  "ar": "كوكاكولا",
+  "ar_hint": "شركة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Heinz",
+  "title": "Heinz",
+  "hint": "food company in Egypt",
+  "ar": "هاينز",
+  "ar_hint": "شركة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Afia (Savola)",
+  "title": "Savola Group",
+  "hint": "food company in Egypt",
+  "ar": "عافية",
+  "ar_hint": "شركة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Heineken",
+  "title": "Heineken",
+  "hint": "food company in Egypt",
+  "ar": "هاينكن",
+  "ar_hint": "شركة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Hero",
+  "title": "Hero Group",
+  "hint": "food company in Egypt",
+  "ar": "هيرو",
+  "ar_hint": "شركة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Danone",
+  "title": "Danone",
+  "hint": "food company in Egypt",
+  "ar": "دانون",
+  "ar_hint": "شركة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Almarai",
+  "title": "Almarai",
+  "hint": "food company in Egypt",
+  "ar": "المراعي",
+  "ar_hint": "شركة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Kellogg's",
+  "title": "Kellogg's",
+  "hint": "food company in Egypt",
+  "ar": "كيلوجز",
+  "ar_hint": "شركة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "El Fishawy",
+  "title": "El-Fishawy Café",
+  "hint": "café in Egypt",
+  "ar": "قهوة الفيشاوي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Simonds",
+  "title": "Simonds",
+  "hint": "café in Egypt",
+  "ar": "سيموندس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Café Riche",
+  "title": "Café Riche",
+  "hint": "café in Egypt",
+  "ar": "كافيه ريش",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Brazilian Coffee Stores",
+  "title": "Brazilian Coffee Stores",
+  "hint": "café in Egypt",
+  "ar": "البن البرازيلي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "El Horreya Café",
+  "title": "El Horreya Café",
+  "hint": "café in Egypt",
+  "ar": "قهوة الحرية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Naguib Mahfouz Café",
+  "title": "Naguib Mahfouz Café",
+  "hint": "café in Egypt",
+  "ar": "قهوة نجيب محفوظ",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Cilantro",
+  "title": "Cilantro",
+  "hint": "café in Egypt",
+  "ar": "سيلانترو",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Costa Coffee",
+  "title": "Costa Coffee",
+  "hint": "café in Egypt",
+  "ar": "كوستا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Starbucks",
+  "title": "Starbucks",
+  "hint": "café in Egypt",
+  "ar": "ستاربكس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Groppi",
+  "title": "Groppi",
+  "hint": "Egyptian patisserie",
+  "ar": "جروبي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "El Malky",
+  "title": "El Malky",
+  "hint": "Egyptian patisserie",
+  "ar": "المالكي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mandarine Koueider",
+  "title": "Mandarine Koueider",
+  "hint": "Egyptian patisserie",
+  "ar": "مندرين قويدر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "El Abd",
+  "title": "El Abd",
+  "hint": "Egyptian patisserie",
+  "ar": "العبد",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "La Poire",
+  "title": "La Poire",
+  "hint": "Egyptian patisserie",
+  "ar": "لابوار",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Salé Sucré",
+  "title": "Salé Sucré",
+  "hint": "Egyptian patisserie",
+  "ar": "ساليه سكريه",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Sedra",
+  "title": "Sedra",
+  "hint": "Egyptian patisserie",
+  "ar": "سيدرا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "TBS",
+  "title": "TBS",
+  "hint": "Egyptian patisserie",
+  "ar": "تي بي إس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "KFC",
+  "title": "KFC",
+  "hint": "international restaurant chain",
+  "ar": "كنتاكي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "McDonald's",
+  "title": "McDonald's",
+  "hint": "international restaurant chain",
+  "ar": "ماكدونالدز",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "TGI Fridays",
+  "title": "TGI Fridays",
+  "hint": "international restaurant chain",
+  "ar": "تي جي آي فرايدايز",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Burger King",
+  "title": "Burger King",
+  "hint": "international restaurant chain",
+  "ar": "برجر كينج",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Fatburger",
+  "title": "Fatburger",
+  "hint": "international restaurant chain",
+  "ar": "فات برجر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Dunkin'",
+  "title": "Dunkin'",
+  "hint": "international restaurant chain",
+  "ar": "دانكن",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Arby's",
+  "title": "Arby's",
+  "hint": "international restaurant chain",
+  "ar": "آربيز",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Krispy Kreme",
+  "title": "Krispy Kreme",
+  "hint": "international restaurant chain",
+  "ar": "كريسبي كريم",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Abou Shakra",
+  "title": "Abou Shakra",
+  "hint": "Egyptian restaurant",
+  "ar": "أبو شقرة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Abou Tarek",
+  "title": "Abou Tarek",
+  "hint": "Egyptian restaurant",
+  "ar": "أبو طارق",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mohamed Ahmed",
+  "title": "Mohamed Ahmed",
+  "hint": "Egyptian restaurant",
+  "ar": "محمد أحمد",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Gad",
+  "title": "Gad",
+  "hint": "Egyptian restaurant",
+  "ar": "جاد",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Abou El Sid",
+  "title": "Abou El Sid",
+  "hint": "Egyptian restaurant",
+  "ar": "أبو السيد",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Tholathy Adwaa El Masrah",
+  "title": "Tholathy Adwaa El Masrah",
+  "hint": "Egyptian Ramadan fawazeer TV",
+  "ar": "ثلاثي أضواء المسرح",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Nelly",
+  "title": "Nelly (Egyptian actress)",
+  "hint": "Egyptian Ramadan fawazeer TV",
+  "ar": "نيللي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Fatouta",
+  "title": "Samir Ghanem",
+  "hint": "Egyptian Ramadan fawazeer TV",
+  "ar": "فطوطة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Sherihan",
+  "title": "Sherihan",
+  "hint": "Egyptian Ramadan fawazeer TV",
+  "ar": "شريهان",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Sabreen",
+  "title": "Sabreen (actress)",
+  "hint": "Egyptian Ramadan fawazeer TV",
+  "ar": "صابرين",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Sherine Reda",
+  "title": "Sherine Reda",
+  "hint": "Egyptian Ramadan fawazeer TV",
+  "ar": "شيرين رضا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Gihan Nasr",
+  "title": "Gihan Nasr",
+  "hint": "Egyptian Ramadan fawazeer TV",
+  "ar": "جيهان نصر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ghada Abdel Razek",
+  "title": "Ghada Abdel Razek",
+  "hint": "Egyptian Ramadan fawazeer TV",
+  "ar": "غادة عبد الرازق",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Myriam Fares",
+  "title": "Myriam Fares",
+  "hint": "Egyptian Ramadan fawazeer TV",
+  "ar": "ميريام فارس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Channel 1",
+  "title": "Channel 1 (Egypt)",
+  "hint": "Egyptian TV channel",
+  "ar": "القناة الأولى",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Egyptian Satellite Channel",
+  "title": "Egyptian Satellite Channel",
+  "hint": "Egyptian TV channel",
+  "ar": "الفضائية المصرية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Nile TV International",
+  "title": "Nile TV International",
+  "hint": "Egyptian TV channel",
+  "ar": "نايل تي في",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Dream TV",
+  "title": "Dream TV (Egypt)",
+  "hint": "Egyptian TV channel",
+  "ar": "دريم",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Al Hayat TV",
+  "title": "Al Hayat TV",
+  "hint": "Egyptian TV channel",
+  "ar": "الحياة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "ON TV",
+  "title": "ON E",
+  "hint": "Egyptian TV channel",
+  "ar": "أون تي في",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "CBC",
+  "title": "Capital Broadcasting Center",
+  "hint": "Egyptian TV channel",
+  "ar": "سي بي سي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "MBC Masr",
+  "title": "MBC Masr",
+  "hint": "Egyptian TV channel",
+  "ar": "إم بي سي مصر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "DMC",
+  "title": "DMC",
+  "hint": "Egyptian TV channel",
+  "ar": "دي إم سي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Egyptian Radio",
+  "title": "Egyptian Radio",
+  "hint": "Egyptian radio station",
+  "ar": "الإذاعة المصرية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Voice of the Arabs",
+  "title": "Voice of the Arabs",
+  "hint": "Egyptian radio station",
+  "ar": "صوت العرب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Alexandria Radio",
+  "title": "Alexandria Radio",
+  "hint": "Egyptian radio station",
+  "ar": "إذاعة الإسكندرية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Quran Radio",
+  "title": "Quran Radio",
+  "hint": "Egyptian radio station",
+  "ar": "إذاعة القرآن الكريم",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Middle East Radio",
+  "title": "Middle East Radio",
+  "hint": "Egyptian radio station",
+  "ar": "إذاعة الشرق الأوسط",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Al Aghani Radio",
+  "title": "Al Aghani Radio",
+  "hint": "Egyptian radio station",
+  "ar": "إذاعة الأغاني",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Nogoum FM",
+  "title": "Nogoum FM",
+  "hint": "Egyptian radio station",
+  "ar": "نجوم إف إم",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Radio Masr",
+  "title": "Radio Masr",
+  "hint": "Egyptian radio station",
+  "ar": "راديو مصر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mega FM",
+  "title": "Nile Radio Network",
+  "hint": "Egyptian radio station",
+  "ar": "ميجا إف إم",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Sayedati El Gameela",
+  "title": "Sayedati El Gameela",
+  "hint": "Egyptian comedy play",
+  "ar": "سيدتي الجميلة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Madraset El Moshaghebeen",
+  "title": "Madraset El Moshaghebeen",
+  "hint": "Egyptian comedy play",
+  "ar": "مدرسة المشاغبين",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Intaha El Dars Ya Ghabi",
+  "title": "Intaha El Dars Ya Ghabi",
+  "hint": "Egyptian comedy play",
+  "ar": "انتهى الدرس يا غبي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Shahed Mashafsh Haga",
+  "title": "Shahed Mashafsh Haga",
+  "hint": "Egyptian comedy play",
+  "ar": "شاهد ماشافش حاجة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "El Eyal Kebret",
+  "title": "El Eyal Kebret",
+  "hint": "Egyptian comedy play",
+  "ar": "العيال كبرت",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Sok Ala Banatak",
+  "title": "Sok Ala Banatak",
+  "hint": "Egyptian comedy play",
+  "ar": "سك على بناتك",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "El Wad Sayed El Shaghal",
+  "title": "El Wad Sayed El Shaghal",
+  "hint": "Egyptian comedy play",
+  "ar": "الواد سيد الشغال",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "El Zaeem",
+  "title": "El Zaeem",
+  "hint": "Egyptian comedy play",
+  "ar": "الزعيم",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Bodyguard",
+  "title": "Adel Emam",
+  "hint": "Egyptian comedy play",
+  "ar": "بودي جارد",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Abla Fadila",
+  "title": "Abla Fadila",
+  "hint": "Egyptian actor or TV presenter",
+  "ar": "أبلة فضيلة",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Abdel Rahman Abu Zahra",
+  "title": "Abdel Rahman Abu Zahra",
+  "hint": "Egyptian actor or TV presenter",
+  "ar": "عبد الرحمن أبو زهرة",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Younes Shalaby",
+  "title": "Younes Shalaby",
+  "hint": "Egyptian actor or TV presenter",
+  "ar": "يونس شلبي",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mama Nagwa",
+  "title": "Mama Nagwa",
+  "hint": "Egyptian actor or TV presenter",
+  "ar": "ماما نجوى",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Hala Fakher",
+  "title": "Hala Fakher",
+  "hint": "Egyptian actor or TV presenter",
+  "ar": "هالة فاخر",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Al-Hilal",
+  "title": "Al-Hilal (magazine)",
+  "hint": "Egyptian magazine",
+  "ar": "الهلال",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Al-Musawar",
+  "title": "Al-Musawar",
+  "hint": "Egyptian magazine",
+  "ar": "المصور",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Rose al-Youssef",
+  "title": "Rose al Yusuf (magazine)",
+  "hint": "Egyptian magazine",
+  "ar": "روز اليوسف",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Al-Kawakeb",
+  "title": "Al-Kawakeb",
+  "hint": "Egyptian magazine",
+  "ar": "الكواكب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Sabah El Kheir",
+  "title": "Sabah El Kheir",
+  "hint": "Egyptian magazine",
+  "ar": "صباح الخير",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mickey Magazine",
+  "title": "Mickey Magazine",
+  "hint": "Egyptian magazine",
+  "ar": "مجلة ميكي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Nus El Donya",
+  "title": "Nesf El Donya",
+  "hint": "Egyptian magazine",
+  "ar": "نصف الدنيا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Alaa El-Din",
+  "title": "Alaa El-Din",
+  "hint": "Egyptian magazine",
+  "ar": "علاء الدين",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Peugeot 404",
+  "title": "Peugeot 404",
+  "hint": "classic car model",
+  "ar": "بيجو 404",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Peugeot 504",
+  "title": "Peugeot 504",
+  "hint": "classic car model",
+  "ar": "بيجو 504",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Fiat 128",
+  "title": "Fiat 128",
+  "hint": "classic car model",
+  "ar": "فيات 128",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Fiat 127",
+  "title": "Fiat 127",
+  "hint": "classic car model",
+  "ar": "فيات 127",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mercedes-Benz W123",
+  "title": "Mercedes-Benz W123",
+  "hint": "classic car model",
+  "ar": "مرسيدس W123",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Lada 2107",
+  "title": "Lada Riva",
+  "hint": "classic car model",
+  "ar": "لادا 2107",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Peugeot 405",
+  "title": "Peugeot 405",
+  "hint": "classic car model",
+  "ar": "بيجو 405",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Daewoo Lanos",
+  "title": "Daewoo Lanos",
+  "hint": "classic car model",
+  "ar": "دايو لانوس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Hyundai Verna",
+  "title": "Hyundai Accent",
+  "hint": "classic car model",
+  "ar": "هيونداي فيرنا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Telegraph",
+  "title": "Electrical telegraph",
+  "hint": "technology in Egypt",
+  "ar": "التلغراف",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Telephone (in Egypt)",
+  "title": "Telephone",
+  "hint": "technology in Egypt",
+  "ar": "التليفون",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Cinema",
+  "title": "Cinema of Egypt",
+  "hint": "technology in Egypt",
+  "ar": "السينما",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Television",
+  "title": "Egyptian Television Network",
+  "hint": "technology in Egypt",
+  "ar": "التليفزيون",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Internet",
+  "title": "Internet in Egypt",
+  "hint": "technology in Egypt",
+  "ar": "الإنترنت",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mobile phones",
+  "title": "Mobile phone",
+  "hint": "technology in Egypt",
+  "ar": "الموبايل",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Nilesat",
+  "title": "Nilesat",
+  "hint": "technology in Egypt",
+  "ar": "نايل سات",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Nokia 5110",
+  "title": "Nokia 5110",
+  "hint": "mobile phone model",
+  "ar": "نوكيا 5110",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Nokia 3210",
+  "title": "Nokia 3210",
+  "hint": "mobile phone model",
+  "ar": "نوكيا 3210",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Nokia 3310",
+  "title": "Nokia 3310",
+  "hint": "mobile phone model",
+  "ar": "نوكيا 3310",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Nokia 1100",
+  "title": "Nokia 1100",
+  "hint": "mobile phone model",
+  "ar": "نوكيا 1100",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Motorola Razr V3",
+  "title": "Motorola Razr V3",
+  "hint": "mobile phone model",
+  "ar": "موتورولا رازر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Sony Ericsson K750",
+  "title": "Sony Ericsson K750",
+  "hint": "mobile phone model",
+  "ar": "سوني إريكسون K750",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Nokia N73",
+  "title": "Nokia N73",
+  "hint": "mobile phone model",
+  "ar": "نوكيا N73",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "BlackBerry Curve 8520",
+  "title": "BlackBerry Curve",
+  "hint": "mobile phone model",
+  "ar": "بلاك بيري كيرف",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
  }
 ]
