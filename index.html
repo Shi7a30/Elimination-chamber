@@ -803,7 +803,7 @@ function subRounds(id){return rounds().filter(function(r){return r.s===id})}
 function pool(g,rs){var seen={},p=[];(rs||rounds()).forEach(function(r){if(r.g===g)r.items.forEach(function(d){if(!seen[d[0]]){seen[d[0]]=1;p.push({d:d,r:r})}})});return p}
 var GQ={p:{min:[["WHO IS THE","OLDEST",Q],["مين","الأكبر في السن",QA]],max:[["WHO IS THE","YOUNGEST",Q],["مين","الأصغر في السن",QA]]},
  y:{min:[["WHAT CAME","FIRST",Q],["أنهي","الأقدم",QA]],max:[["WHAT IS THE","NEWEST",Q],["أنهي","الأحدث",QA]]}};
-function mix(){for(var k=0;k<300;k++){var g=Math.random()<.5?"p":"y",b=Math.random()<.5?"min":"max",P=pool(g),pick=shuffle(P).slice(0,9);if(P.length<9)continue;var
+function mix(){for(var k=0;k<300;k++){var g=Math.random()<.5?"p":"y",b=Math.random()<.5?"min":"max",P=pool(g),pick=shuffle(P).slice(0,9);if(P.length<9||dupPhoto(pick))continue;var
   v=pick.map(function(x){return x.d[1]}),e=b==="min"?Math.min.apply(0,v):Math.max.apply(0,v);
   if(v.filter(function(x){return x===e}).length===1)return{q:GQ[g][b][0],qa:GQ[g][b][1],best:b,items:pick}}}
 function endlessRound(){var m=Math.random()<.5&&mix();if(m)return m;
@@ -824,7 +824,7 @@ function dKey(){return REG+(DCAT?"|"+DCAT:"")}
 // it prefers cards and questions it hasn't used yet, and only comes back to a question once the fresh ones run out
 function dLK(s){return s.g?"g"+s.g:s.r.key}
 function dPK(lk,a,b){return lk+"|"+(a<b?a+"|"+b:b+"|"+a)}
-function dOk(x,a,s){return x.d[0]!==a.d[0]&&x.d[1]!==a.d[1]&&!dPairs[dPK(dLK(s),x.d[0],a.d[0])]}
+function dOk(x,a,s){return x.d[0]!==a.d[0]&&x.d[1]!==a.d[1]&&!samePhoto(x,a)&&!dPairs[dPK(dLK(s),x.d[0],a.d[0])]}
 // cards that can go next to a: unused ones, or if none are left, any that make a new pair
 function dFree(a,s){s=s||dSrc;var lk=dLK(s),l=dList(s),f=l.filter(function(x){return!dUsed[lk+"|"+x.d[0]]&&(!a||dOk(x,a,s))});
  return a&&!f.length?l.filter(function(x){return dOk(x,a,s)}):f}
@@ -885,6 +885,9 @@ function duelPick(i){if(over)return;dPick=i;flipNow=[0,1];
 
 // --- photos: your own (📷) first, then the built-in set, then a Wikipedia lookup when online ---
 function photo(name){return IM[name]||(window.PH&&PH[name])||WK[name]}
+// two different cards that ended up with the same picture (a film and its star) never go on the board together
+function samePhoto(x,y){var a=photo(x.d[0]);return!!a&&a===photo(y.d[0])}
+function dupPhoto(l){return l.some(function(x,i){return l.slice(i+1).some(function(y){return samePhoto(x,y)})})}
 function wapi(p){return fetch("https://en.wikipedia.org/w/api.php?origin=*&format=json&formatversion=2&"+p).then(function(r){return r.json()})}
 var PI="prop=pageimages|pageprops&ppprop=disambiguation&piprop=thumbnail&pithumbsize=400&pilicense=any";
 function gotPhoto(name,url){WK[name]=url;sv("elim_wiki",WK);
