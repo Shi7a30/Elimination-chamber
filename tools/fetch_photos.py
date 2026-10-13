@@ -181,7 +181,12 @@ def main():
     for x in items:
         if x.get("review"):
             try:
-                cands[x["name"]] = [{"src": s, "url": u, "uri": to_uri(u)} for s, u in candidates(x, pages.get(x["name"]))[:16]]
+                cands[x["name"]] = []
+                for s, u in candidates(x, pages.get(x["name"]))[:16]:
+                    try:  # one broken image shouldn't lose the rest
+                        cands[x["name"]].append({"src": s, "url": u, "uri": to_uri(u)})
+                    except Exception as e:
+                        print("candidate failed", x["name"], u, e)
             except Exception as e:
                 print("candidates failed", x["name"], e)
         if x.get("skip"):  # known bad matches: show a letter instead
