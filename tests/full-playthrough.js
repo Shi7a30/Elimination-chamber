@@ -59,7 +59,7 @@ for(const [rg,exp] of [['eg',r=>r.m==='eg'],['w',r=>r.m==='w']]){if(await pg.$('
  const okSubs=await pg.evaluate(([rg,ids])=>ids.every(id=>subRounds(id).length&&subRounds(id).every(r=>r.m===rg))&&ALL.filter(r=>r.m===rg).every(r=>ids.indexOf(r.s)>-1),[rg,ids]);
  ok(okSubs,'region '+rg+' subs '+ids.join(','));
  ok(await pg.evaluate(()=>{for(let k=0;k<500;k++){const m=endlessRound();const rs=m.r?[m.r]:m.items.map(x=>x.r);if(!rs.every(inReg))return false}return true}),'endless respects region '+rg);
- await pg.screenshot({path:'menu_'+rg+'.png',fullPage:true})}
+ await pg.screenshot({path:shot('menu_'+rg+'.png'),fullPage:true})}
 await pg.click('[data-reg="all"]');
 // skip resets streak
 await openSub(0);let s1=await S();ok(s1.streak>0,'streak>0 before skip');await pg.click('#skip');ok((await S()).streak===0,'skip resets streak');
