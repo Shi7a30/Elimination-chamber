@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shelhom!</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#1c1c1c">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Shelhom">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fafafa;--fg:#1c1c1c;--y:#f7c83d;--dark:#2a2a2a;--mut:#8a8a8a;--g:#3ecf6e;--r:#e5484d;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161616;--fg:#f2f2f2;--dark:#3a3a3a;--mut:#999}}
+:root[data-theme="dark"]{--bg:#161616;--fg:#f2f2f2;--dark:#3a3a3a;--mut:#999}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:800;display:flex;justify-content:center;overflow-x:hidden}
+html[lang=ar] body{font-family:"Cairo",system-ui,-apple-system,"Segoe UI",sans-serif}
+button{cursor:pointer}
+#app{width:100%;max-width:440px;padding:14px 16px 120px;display:flex;flex-direction:column;align-items:center}
+.top{width:100%;display:flex;justify-content:space-between;align-items:center;gap:7px}
+.top .gap{flex:1}
+.pill{border:3px solid var(--fg);border-radius:16px;background:var(--bg);color:var(--fg);font:inherit;font-size:19px;min-width:46px;height:46px;padding:0 11px;box-shadow:0 5px 0 var(--fg);display:flex;align-items:center;justify-content:center;gap:8px}
+.pill:active,.btn:active,.cat:active{transform:translateY(3px);box-shadow:0 2px 0 var(--fg)}
+.pill.on{background:var(--y);color:#1c1c1c}
+.pill.bump{animation:bump .45s}
+#lang{font-size:16px}
+.coin{width:20px;height:20px;border-radius:50%;background:var(--y);border:3px solid #d9a800;display:inline-block;flex:none}
+.meta{width:100%;display:flex;justify-content:space-between;margin-top:16px;font-size:14px;color:var(--mut)}
+.streak{color:#f08c00}
+.q{text-align:center;margin:12px 0 6px;font-size:18px}
+.big{display:inline-block;text-align:center;background:var(--y);color:#1c1c1c;border:4px solid var(--fg);border-radius:18px;padding:12px 22px;font-size:24px;margin:8px 0}
+.sub{color:var(--mut);font-size:16px;margin:10px 0 16px;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px 12px;width:100%}
+.grid.shake{animation:shake .45s}
+.grid.duo{grid-template-columns:1fr 1fr;gap:14px 18px}
+.duo .tile{font-size:64px}
+.duo .back b{font-size:26px}
+.duo .back small{font-size:13px}
+.duo .lab{font-size:15px;min-height:48px}
+.lab .dt{display:block;font-size:10px;font-weight:600;opacity:.72;margin-top:2px;line-height:1.1}
+.duo .lab .dt{font-size:12px}
+.cell{display:flex;flex-direction:column;align-items:center;gap:8px;background:none;border:0;padding:0;font:inherit;color:inherit;min-width:0;perspective:700px}
+.card{position:relative;width:100%;aspect-ratio:1;transform-style:preserve-3d;transition:transform .55s cubic-bezier(.3,1.4,.5,1)}
+.cell.flip .card{transform:rotateY(180deg)}
+.tile,.back{position:absolute;inset:0;border-radius:20px;border:4px solid var(--dark);box-shadow:0 5px 0 var(--dark);overflow:hidden;-webkit-backface-visibility:hidden;backface-visibility:hidden}
+.tile{display:flex;align-items:center;justify-content:center;font-size:44px;color:#fff}
+.tile img,.back img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%;background:#fff}
+.back{transform:rotateY(180deg);background:#1c1c1c;color:#fff;border-color:var(--y);box-shadow:0 5px 0 var(--y);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:6px;gap:2px}
+.back img{opacity:.28;filter:grayscale(1)}
+.back small,.back b,.back i{position:relative}
+.back small{font-size:11px;color:var(--y);letter-spacing:.5px;text-transform:uppercase}
+.back b{font-size:19px;line-height:1.1;overflow-wrap:anywhere}
+.back i{position:absolute;top:4px;inset-inline-end:8px;font-style:normal;font-size:15px;color:var(--y)}
+.lab{width:100%;min-height:40px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:var(--dark);color:#fff;border-radius:14px;padding:3px 6px;font-size:12px;line-height:1.15;transition:.15s;overflow-wrap:anywhere}
+.cell.out .lab{background:var(--y);color:#1c1c1c}
+.cell.out.peek .tile{opacity:.75}
+.cell.win{animation:hop .6s .1s}
+.cell.win .back{border-color:var(--g);box-shadow:0 5px 0 var(--g)}
+.cell.win .back small,.cell.win .back i{color:var(--g)}
+.cell.win .lab{background:var(--g);color:#06210f}
+.cell.bad .back{border-color:var(--r);box-shadow:0 5px 0 var(--r)}
+.cell.bad .back small,.cell.bad .back i{color:var(--r)}
+.cell.bad .lab{background:var(--r);color:#fff}
+.cell:active .card{translate:0 3px}
+.bar{display:flex;gap:18px;margin-top:26px}
+.btn{border:3px solid var(--fg);background:var(--bg);color:var(--fg);font:inherit;font-size:19px;padding:11px 22px;border-radius:999px;box-shadow:0 5px 0 var(--fg);display:flex;gap:8px;align-items:center;justify-content:center}
+.btn:disabled{opacity:.4;pointer-events:none}
+.btn.y{background:var(--y);color:#1c1c1c}
+#menu{width:100%;display:flex;flex-direction:column;gap:14px;align-items:stretch}
+#menu h1{text-align:center;font-size:34px;margin:18px 0 0;letter-spacing:1px}
+.stats{display:flex;justify-content:center;gap:10px;margin-bottom:4px}
+.stat{border:3px solid var(--fg);border-radius:14px;padding:6px 12px;font-size:14px}
+.cat{background:var(--y);color:#1c1c1c;border:4px solid var(--fg);border-radius:20px;padding:14px 16px;font:inherit;font-size:20px;box-shadow:0 5px 0 var(--fg);text-align:start}
+.cat.end{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.seg{display:flex;border:3px solid var(--fg);border-radius:16px;overflow:hidden;box-shadow:0 4px 0 var(--fg)}
+.seg button{flex:1;border:0;background:var(--bg);color:var(--fg);font:inherit;font-size:15px;padding:10px 2px}
+.seg button+button{border-inline-start:3px solid var(--fg)}
+.seg button.on{background:var(--y);color:#1c1c1c}
+.gh{font-size:19px;margin:10px 2px -4px}
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.modes .cat{font-size:17px;padding:12px;display:flex;flex-direction:column;justify-content:space-between;min-height:104px}
+.modes .cat small{flex-direction:column;gap:4px}
+.cat.grp{min-height:132px}
+.subs .cat small{flex-direction:column;gap:2px}
+.subs .cat:last-child:nth-child(odd){grid-column:1/-1}
+.grp .se{font-size:34px}
+.ghead{display:flex;align-items:center;gap:12px;margin-top:14px}
+.ghead h2{margin:0;font-size:24px}
+.ghead .pill{flex:none}
+.dgh{margin:16px 0 0;font-size:17px}
+.subs.dsubs{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.dsubs .cat.sc{font-size:clamp(11px,3.4vw,14px);overflow-wrap:break-word;padding:10px 6px;line-height:1.2;border-width:3px;border-radius:16px;min-height:0;justify-content:flex-start}
+.subs.dsubs .cat:last-child:nth-child(odd){grid-column:auto}
+.dsubs .sc .se{display:block;font-size:24px;margin-bottom:4px}
+.subs{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cat.sc{font-size:15px;padding:10px 12px 12px;display:flex;flex-direction:column;justify-content:space-between;min-height:118px}
+.sc .se{font-size:26px;margin-bottom:4px}
+.cat small{display:flex;justify-content:space-between;font-size:13px;opacity:.75;margin-top:4px}
+.pb{height:8px;border-radius:4px;background:#1c1c1c26;margin-top:8px;overflow:hidden}
+.pb i{display:block;height:100%;background:#1c1c1c;border-radius:4px}
+#sheet{position:fixed;left:0;right:0;bottom:0;z-index:5;padding:22px 22px calc(26px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:4px solid var(--fg);border-radius:26px 26px 0 0;text-align:center;transform:translateY(110%);visibility:hidden;transition:transform .3s cubic-bezier(.2,1.3,.5,1),visibility 0s .3s;font-size:24px}
+#sheet.show{transform:none;visibility:visible;transition:transform .3s cubic-bezier(.2,1.3,.5,1)}
+#sheet p{margin:6px 0 16px;font-size:16px;color:var(--mut)}
+#sheet .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.float{position:fixed;z-index:6;pointer-events:none;font-size:22px;color:#d9a800;text-shadow:0 2px 0 var(--bg);animation:rise 1.1s forwards}
+#fx{position:fixed;inset:0;pointer-events:none;z-index:7}
+@keyframes pop{0%{transform:scale(1)}40%{transform:scale(.82)}75%{transform:scale(1.06)}100%{transform:scale(1)}}
+@keyframes hop{0%,100%{transform:none}30%{transform:translateY(-12px) scale(1.06)}60%{transform:translateY(2px)}}
+@keyframes shake{0%,100%{transform:none}20%{transform:translateX(-10px)}40%{transform:translateX(9px)}60%{transform:translateX(-6px)}80%{transform:translateX(4px)}}
+@keyframes bump{0%,100%{transform:none}40%{transform:scale(1.18)}}
+@keyframes rise{from{opacity:1;transform:none}to{opacity:0;transform:translateY(-50px)}}
+@media (prefers-reduced-motion:reduce){*,*::after{animation:none!important;transition:none!important}}
+</style>
+<script>window.onerror=function(m,u,l){var e=document.getElementById("menu");if(e)e.insertAdjacentHTML("beforeend","<p class='sub'>Error: "+String(m).replace(/</g,"&lt;")+" (line "+l+")</p>")}</script>
+</head><body>
+<div id="app">
+ <div class="top"><button class="pill" id="home" aria-label="Home">⌂</button><button class="pill" id="snd" aria-label="Sound">🔊</button><button class="pill" id="cam" aria-label="Photo mode">📷</button><button class="pill" id="lang" aria-label="Language">ع</button><span class="gap"></span><div class="pill" id="cpill"><span id="coins">0</span><i class="coin"></i></div></div>
+ <div id="menu"><p class="sub">Loading… If nothing else shows up, this viewer isn't running the game. Open it in Safari or Chrome instead of a file preview.<br><br>لو مفيش حاجة ظهرت، افتح الملف في Safari أو Chrome بدل المعاينة.</p></div>
+ <div id="game" style="display:none;width:100%;flex-direction:column;align-items:center">
+  <div class="meta"><span id="rn"></span><span class="streak" id="stk"></span></div>
+  <div class="q" id="q1"></div><div class="big" id="q2"></div><div class="q" id="q3"></div>
+  <div class="sub" id="sub"></div>
+  <div class="grid" id="grid"></div>
+  <div class="bar"><button class="btn" id="undo"></button><button class="btn" id="skip"></button></div>
+ </div>
+</div>
+<input type="file" id="file" accept="image/*" style="display:none">
+<div id="sheet" role="dialog"><div id="st"></div><p id="sp"></p><div class="row" id="sb"></div></div>
+<canvas id="fx"></canvas>
+<script id="photos"></script><script src="photos/p1.js"></script><script src="photos/p2.js"></script><script src="photos/p3.js"></script><script src="photos/p4.js"></script>
+<script>
+// Round: Rd([en question], [Egyptian Arabic question], "min"|"max", items, options).
+// Item: [English name, value, Arabic name (optional, falls back to English), Wikipedia article title (optional, defaults to English name)].
+// Options: h = search hint used if the Wikipedia title isn't found; pre/suf = [en, ar] text around the shown value; dp = fixed decimals;
+// k = [en, ar] label for the value on the flipped card; g = endless-mode mix pool ("p" people by birth year, "y" things by year);
+// dt = [en, ar] what the year means ("Film released"), shown under each card when "y" rounds are mixed;
+// s = menu subcategory (see GROUPS); m = "eg" Egyptian or "w" international.
+// Each round must have exactly one best answer (checked on load).
+function Rd(q,qa,best,items,o){o=o||{};return{q:q,qa:qa,best:best,items:items,h:o.h||"",pre:o.pre,suf:o.suf,dp:o.dp,k:o.k,g:o.g,dt:o.dt,s:o.s,m:o.m}}
+var BORN=["BORN","مواليد"],Q="ON THIS LIST",QA="في القايمة دي؟",TR=" 🏆",TRA=[TR,TR];
+var CATS=[
+{n:"Egyptian Football",a:"الكورة المصرية",e:"🇪🇬 ⚽",r:[
+ Rd(["WHO IS THE","YOUNGEST PLAYER",Q],["مين","أصغر لاعب",QA],"max",[
+  ["Ahmed Hegazi",1991,"أحمد حجازي"],["Mohamed Salah",1992,"محمد صلاح"],["Mahmoud 'Trezeguet' Hassan",1994,"محمود حسن (تريزيجيه)","Trézéguet (Egyptian footballer)"],
+  ["Mahmoud Hamdy 'El Wensh'",1995,"محمود حمدي (الونش)","Mahmoud Hamdy"],["Ahmed Sayed 'Zizo'",1996,"أحمد سيد (زيزو)","Zizo (footballer)"],["Mostafa Mohamed",1997,"مصطفى محمد","Mostafa Mohamed (footballer)"],
+  ["Ahmed Fatouh",1998,"أحمد فتوح"],["Omar Marmoush",1999,"عمر مرموش"],["Hamza Abdel Karim",2008,"حمزة عبد الكريم","Hamza Abdelkarim"]],{h:"Egyptian footballer",k:BORN,g:"p",s:"players",m:"eg"}),
+ Rd(["WHO IS THE","OLDEST LEGEND",Q],["مين","أكبر أسطورة في السن",QA],"min",[
+  ["Hassan Shehata",1949,"حسن شحاتة"],["Mahmoud 'Bibo' El Khatib",1954,"محمود الخطيب (بيبو)","Mahmoud El Khatib"],["Hossam Hassan",1966,"حسام حسن"],
+  ["Hany Ramzy",1969,"هاني رمزي"],["Essam El-Hadary",1973,"عصام الحضري","Essam El Hadary"],["Ahmed Hassan",1975,"أحمد حسن","Ahmed Hassan (footballer, born 1975)"],
+  ["Mohamed Aboutrika",1978,"محمد أبو تريكة"],["Mohamed Zidan",1981,"محمد زيدان"],["Ahmed 'Mido' Hossam",1983,"أحمد حسام (ميدو)","Mido (footballer)"]],{h:"Egyptian footballer",k:BORN,g:"p",s:"players",m:"eg"}),
+ 
+ Rd(["WHICH IS THE","OLDEST CLUB",Q],["أنهي","أقدم نادي",QA],"min",[
+  ["Al Ahly",1907,"الأهلي","Al Ahly SC"],["Zamalek",1911,"الزمالك","Zamalek SC"],["Al Ittihad Alexandria",1914,"الاتحاد السكندري","Al Ittihad Alexandria Club"],
+  ["Al Masry",1920,"المصري","Al Masry SC"],["Ismaily",1924,"الإسماعيلي","Ismaily SC"],["Smouha",1949,"سموحة","Smouha SC"],
+  ["Arab Contractors",1973,"المقاولون العرب","Al Mokawloon Al Arab SC"],["ENPPI",1985,"إنبي","ENPPI SC"],["Pyramids FC",2008,"بيراميدز"]],{h:"Egyptian football club",k:["FOUNDED","اتأسس سنة"],dt:["Club founded", "تأسيس النادي"],g:"y",s:"trophies",m:"eg"}),
+ 
+  Rd(["WHO IS THE","YOUNGEST GOALKEEPER",Q],["مين","أصغر حارس مرمى",QA],"max",[
+   ["Ahmed Shobeir",1960,"أحمد شوبير","Ahmed Shobair"],["Nader El-Sayed",1972,"نادر السيد"],["Essam El-Hadary",1973,"عصام الحضري","Essam El Hadary"],
+   ["Sherif Ekramy",1983,"شريف إكرامي"],["Mohamed El Shenawy",1988,"محمد الشناوي"],["Mohamed 'Gabaski' Abou Gabal",1989,"محمد أبو جبل (جباسكي)","Mohamed Abou Gabal"],
+   ["Ahmed El Shenawy",1991,"أحمد الشناوي"],["Mohamed Sobhy",1999,"محمد صبحي","Mohamed Sobhy (footballer, born 1999)"],["Mostafa Shobeir",2000,"مصطفى شوبير"]],{h:"Egyptian footballer",k:BORN,g:"p",s:"players",m:"eg"}),
+  Rd(["WHO PLAYED IN THE","PREMIER LEAGUE FIRST",Q],["مين","أول واحد لعب في الدوري الإنجليزي",QA],"min",[
+   ["Ahmed 'Mido' Hossam",2005,"أحمد حسام (ميدو)","Mido (footballer)"],["Hossam Ghaly",2006,"حسام غالي"],["Amr Zaki",2008,"عمرو زكي"],["Ahmed Elmohamady",2010,"أحمد المحمدي"],
+   ["Mohamed Salah",2014,"محمد صلاح"],["Mohamed Elneny",2016,"محمد النني"],["Ahmed Hegazi",2017,"أحمد حجازي"],["Mahmoud 'Trezeguet' Hassan",2019,"محمود حسن (تريزيجيه)","Trézéguet (Egyptian footballer)"],
+   ["Omar Marmoush",2025,"عمر مرموش"]],{h:"Egyptian footballer",k:["JOINED THE PREMIER LEAGUE","دخل البريميرليج سنة"],s:"players",m:"eg"}),
+ Rd(["WHICH CLUB HAS","MOST LEAGUE TITLES",Q],["أنهي نادي","عنده أكتر دوري مصري",QA],"max",[
+  ["Al Ahly",45,"الأهلي","Al Ahly SC"],["Zamalek",15,"الزمالك","Zamalek SC"],["Ismaily",3,"الإسماعيلي","Ismaily SC"],
+  ["Olympic Club",1,"الأوليمبي","Olympic Club (Egypt)"],["Tersana",1,"الترسانة","Tersana SC"],["Ghazl El Mahalla",1,"غزل المحلة","Ghazl El Mahalla SC"],
+  ["Arab Contractors",1,"المقاولون العرب","Al Mokawloon Al Arab SC"],["Al Masry",0,"المصري","Al Masry SC"],["Pyramids FC",0,"بيراميدز"]],{suf:TRA,h:"Egyptian football club",k:["LEAGUE TITLES","بطولات دوري"],s:"trophies",m:"eg"}),
+ Rd(["WHICH CLUB HAS","MOST EGYPT CUPS",Q],["أنهي نادي","عنده أكتر كاس مصر",QA],"max",[
+  ["Al Ahly",39,"الأهلي","Al Ahly SC"],["Zamalek",29,"الزمالك","Zamalek SC"],["Al Ittihad Alexandria",6,"الاتحاد السكندري","Al Ittihad Alexandria Club"],
+  ["Tersana",6,"الترسانة","Tersana SC"],["Arab Contractors",3,"المقاولون العرب","Al Mokawloon Al Arab SC"],["Ismaily",2,"الإسماعيلي","Ismaily SC"],
+  ["ENPPI",2,"إنبي","ENPPI SC"],["Pyramids FC",2,"بيراميدز"],["Al Masry",1,"المصري","Al Masry SC"]],{suf:TRA,h:"Egyptian football club",k:["EGYPT CUPS","كاسات مصر"],s:"trophies",m:"eg"}),
+ Rd(["WHICH IS THE","BIGGEST STADIUM",Q],["أنهي","أكبر استاد",QA],"max",[
+  ["Misr Stadium",93940,"استاد مصر (العاصمة الإدارية)","New Administrative Capital Stadium"],["Borg El Arab Stadium",86000,"استاد برج العرب"],["Cairo International Stadium",75000,"استاد القاهرة"],
+  ["Egyptian Army Stadium (Suez)",45000,"استاد الجيش بالسويس","Egyptian Army Stadium"],["Arab Contractors Stadium",35000,"استاد المقاولون العرب","Osman Ahmed Osman Stadium"],["Al Salam Stadium",30000,"استاد السلام","Al Salam Stadium (Egypt)"],
+  ["30 June Stadium",30000,"استاد 30 يونيو (الدفاع الجوي)"],["Military Academy Stadium",28500,"استاد الكلية الحربية","Cairo Military Academy Stadium"],["Suez Stadium",27000,"استاد السويس"]],{h:"stadium",k:["CAPACITY","بيشيل"],suf:[" fans"," متفرج"],s:"trophies",m:"eg"}),
+ Rd(["WHO IS THE","OLDEST COACH",Q],["مين","أكبر مدرب في السن",QA],"min",[
+  ["Mahmoud El-Gohary",1938,"محمود الجوهري"],["Hassan Shehata",1949,"حسن شحاتة"],["Farouk Gaafar",1952,"فاروق جعفر"],
+  ["Shawky Gharib",1959,"شوقي غريب","Shawky Gharieb"],["Hossam El-Badry",1960,"حسام البدري","Hossam El Badry"],["Hossam Hassan",1966,"حسام حسن"],
+  ["Ehab Galal",1967,"إيهاب جلال"],["Hany Ramzy",1969,"هاني رمزي"],["Ahmed 'Mido' Hossam",1983,"أحمد حسام (ميدو)","Mido (footballer)"]],{h:"Egyptian football manager",k:BORN,g:"p",s:"players",m:"eg"}),
+ Rd(["WHO IS THE","OLDEST PHARAOH",Q],["مين","أكبر فرعون في السن",QA],"min",[
+  ["Wael Gomaa",1975,"وائل جمعة"],["Mohamed Barakat",1976,"محمد بركات"],["Hossam Ghaly",1981,"حسام غالي"],
+  ["Mohamed Zidan",1981,"محمد زيدان"],["Emad Moteab",1983,"عماد متعب"],["Hosny Abd Rabo",1984,"حسني عبد ربه"],
+  ["Ahmed Fathy",1984,"أحمد فتحي"],["Mahmoud 'Shikabala' Abdel Razek",1986,"محمود عبد الرازق (شيكابالا)","Shikabala"],["Mohamed Elneny",1992,"محمد النني"]],{h:"Egyptian footballer",k:BORN,g:"p",s:"players",m:"eg"}),
+ Rd(["WHO HAS THE","MOST CAPS FOR EGYPT",Q],["مين","عنده أكتر ماتشات دولية",QA],"max",[
+  ["Ahmed Hassan",184,"أحمد حسن","Ahmed Hassan (footballer, born 1975)"],["Hossam Hassan",177,"حسام حسن"],["Essam El-Hadary",159,"عصام الحضري","Essam El Hadary"],
+  ["Ahmed Fathy",135,"أحمد فتحي"],["Ibrahim Hassan",131,"إبراهيم حسن"],["Hany Ramzy",122,"هاني رمزي"],
+  ["Wael Gomaa",114,"وائل جمعة"],["Mohamed Aboutrika",100,"محمد أبو تريكة"],["Ahmed 'Mido' Hossam",51,"أحمد حسام (ميدو)","Mido (footballer)"]],
+  {h:"footballer",k:["EGYPT CAPS","ماتشات دولية"],suf:[" caps"," ماتش"],s:"players",m:"eg"}),
+ Rd(["WHO HAS THE","MOST AFCON TITLES",Q],["مين","عنده أكتر كاسات أمم",QA],"max",[
+  ["Ahmed Hassan",4,"أحمد حسن","Ahmed Hassan (footballer, born 1975)"],["Hossam Hassan",3,"حسام حسن"],["Wael Gomaa",3,"وائل جمعة"],
+  ["Ahmed Fathy",3,"أحمد فتحي"],["Mohamed Aboutrika",2,"محمد أبو تريكة"],["Mohamed Zidan",2,"محمد زيدان"],
+  ["Mahmoud 'Bibo' El Khatib",1,"محمود الخطيب (بيبو)","Mahmoud El Khatib"],["Mohamed Salah",0,"محمد صلاح"],["Omar Marmoush",0,"عمر مرموش"]],
+  {suf:TRA,h:"footballer",k:["AFCON TITLES","كاسات أمم أفريقيا"],s:"trophies",m:"eg"}),
+ Rd(["WHO HAS THE","MOST AFRICAN CL TITLES",Q],["مين","عنده أكتر دوري أبطال",QA],"max",[
+  ["Wael Gomaa",6,"وائل جمعة"],["Mohamed Aboutrika",5,"محمد أبو تريكة"],["Mohamed El Shenawy",4,"محمد الشناوي"],
+  ["Ali Maaloul",4,"علي معلول","Ali Maâloul"],["Hossam Hassan",2,"حسام حسن"],["Mahmoud 'Bibo' El Khatib",2,"محمود الخطيب (بيبو)","Mahmoud El Khatib"],
+  ["Mohamed Salah",0,"محمد صلاح"],["Ahmed 'Mido' Hossam",0,"أحمد حسام (ميدو)","Mido (footballer)"],["Omar Marmoush",0,"عمر مرموش"]],
+  {suf:TRA,h:"footballer",k:["CAF CL TITLES","دوري أبطال أفريقيا"],s:"trophies",m:"eg"}),
+ Rd(["WHO SCORED THE","MOST EPL GOALS",Q],["مين","جاب أكتر أهداف بريميرليج",QA],"max",[
+  ["Mohamed Salah",193,"محمد صلاح"],["Ahmed 'Mido' Hossam",22,"أحمد حسام (ميدو)","Mido (footballer)"],["Amr Zaki",10,"عمرو زكي"],
+  ["Mahmoud 'Trezeguet' Hassan",8,"محمود حسن (تريزيجيه)","Trézéguet (Egyptian footballer)"],["Ahmed Elmohamady",6,"أحمد المحمدي"],["Ahmed Hegazi",2,"أحمد حجازي"],
+  ["Ramadan Sobhi",2,"رمضان صبحي"],["Mohamed Elneny",1,"محمد النني"],["Hossam Ghaly",1,"حسام غالي"]],
+  {h:"footballer",k:["PREMIER LEAGUE GOALS","أهداف البريميرليج"],suf:[" goals"," هدف"],s:"players",m:"eg"})]},
+{n:"World Football",a:"الكورة العالمية",e:"🌍 ⚽",r:[
+ // African football is international: it lives under World so Egypt mode stays Egyptian-only.
+ Rd(["WHICH CLUB HAS","MOST CAF CHAMPIONS LEAGUES",Q],["أنهي نادي","عنده أكتر دوري أبطال أفريقيا",QA],"max",[
+  ["Al Ahly",12,"الأهلي","Al Ahly SC"],["Zamalek",5,"الزمالك","Zamalek SC"],["TP Mazembe",5,"مازيمبي"],["Espérance de Tunis",4,"الترجي التونسي","Espérance Sportive de Tunis"],
+  ["Wydad Casablanca",3,"الوداد البيضاوي","Wydad AC"],["Raja Casablanca",3,"الرجاء البيضاوي","Raja CA"],["Enyimba",2,"إنيمبا","Enyimba F.C."],["ES Sétif",2,"وفاق سطيف"],
+  ["Mamelodi Sundowns",2,"صن داونز","Mamelodi Sundowns F.C."]],{suf:TRA,h:"football club",k:["CAF TITLES","بطولات أفريقيا"],s:"trophies",m:"w"}),
+ Rd(["WHICH TEAM HAS","MOST AFRICA CUP TITLES",Q],["أنهي منتخب","عنده أكتر كاس أمم أفريقيا",QA],"max",[
+  ["Egypt",7,"مصر"],["Cameroon",5,"الكاميرون"],["Ghana",4,"غانا"],["Nigeria",3,"نيجيريا"],["Ivory Coast",3,"كوت ديفوار"],
+  ["Algeria",2,"الجزائر"],["DR Congo",2,"الكونغو الديمقراطية","Democratic Republic of the Congo"],["Tunisia",1,"تونس"],["Zambia",1,"زامبيا"]],{suf:TRA,h:"country",k:["AFRICA CUPS","كاسات أفريقيا"],s:"trophies",m:"w"}),
+ Rd(["WHICH CLUB WON","AFRICA FIRST",Q],["أنهي نادي","كسب أفريقيا الأول",QA],"min",[
+   ["Ismaily",1969,"الإسماعيلي","Ismaily SC"],["Al Ahly",1982,"الأهلي","Al Ahly SC"],["Zamalek",1984,"الزمالك","Zamalek SC"],["Raja Casablanca",1989,"الرجاء البيضاوي","Raja CA"],
+   ["Wydad Casablanca",1992,"الوداد البيضاوي","Wydad AC"],["Espérance de Tunis",1994,"الترجي التونسي","Espérance Sportive de Tunis"],["Enyimba",2003,"إنيمبا","Enyimba F.C."],
+   ["Mamelodi Sundowns",2016,"صن داونز","Mamelodi Sundowns F.C."],["Pyramids FC",2025,"بيراميدز"]],{h:"football club",k:["FIRST CAF TITLE","أول بطولة أفريقيا"],s:"trophies",m:"w"}),
+ Rd(["WHO IS THE","YOUNGEST STAR",Q],["مين","أصغر نجم",QA],"max",[
+  ["Neymar Jr",1992,"نيمار","Neymar"],["Kylian Mbappé",1998,"كيليان مبابي"],["Erling Haaland",2000,"إيرلينج هالاند"],["Rodrygo Goes",2001,"رودريجو","Rodrygo"],
+  ["Pedri González",2002,"بيدري","Pedri"],["Jude Bellingham",2003,"جود بيلينجهام"],["Pablo 'Gavi' Páez",2004,"جافي","Gavi (footballer, born 2004)"],["Endrick Felipe",2006,"إندريك","Endrick (footballer)"],
+  ["Lamine Yamal",2007,"لامين يامال"]],{h:"footballer",k:BORN,g:"p",s:"players",m:"w"}),
+ Rd(["WHO IS THE","OLDEST LEGEND",Q],["مين","أكبر أسطورة في السن",QA],"min",[
+  ["Zinedine Zidane",1972,"زين الدين زيدان"],["David Beckham",1975,"ديفيد بيكهام"],["Ronaldo Nazário",1976,"رونالدو الظاهرة","Ronaldo (Brazilian footballer)"],["Thierry Henry",1977,"تييري هنري"],
+  ["Ronaldinho Gaúcho",1980,"رونالدينيو","Ronaldinho"],["Zlatan Ibrahimović",1981,"زلاتان إبراهيموفيتش"],["Ricardo Kaká",1982,"كاكا","Kaká"],["Cristiano Ronaldo",1985,"كريستيانو رونالدو"],
+  ["Lionel Messi",1987,"ليونيل ميسي"]],{h:"footballer",k:BORN,g:"p",s:"players",m:"w"}),
+ Rd(["WHO HAS THE","MOST BALLON D'ORS",Q],["مين","عنده أكتر كور دهبية",QA],"max",[
+  ["Lionel Messi",8,"ليونيل ميسي"],["Cristiano Ronaldo",5,"كريستيانو رونالدو"],["Johan Cruyff",3,"يوهان كرويف"],["Michel Platini",3,"ميشيل بلاتيني"],
+  ["Marco van Basten",3,"ماركو فان باستن"],["Ronaldo Nazário",2,"رونالدو الظاهرة","Ronaldo (Brazilian footballer)"],["Franz Beckenbauer",2,"فرانز بيكنباور"],
+  ["Zinedine Zidane",1,"زين الدين زيدان"],["Ronaldinho Gaúcho",1,"رونالدينيو","Ronaldinho"]],{suf:TRA,h:"footballer",k:["BALLON D'ORS","كور دهبية"],s:"trophies",m:"w"}),
+ Rd(["WHICH COUNTRY HAS","MOST WORLD CUPS",Q],["أنهي منتخب","عنده أكتر كاس عالم",QA],"max",[
+  ["Brazil",5,"البرازيل"],["Germany",4,"ألمانيا"],["Italy",4,"إيطاليا"],
+  ["Argentina",3,"الأرجنتين"],["France",2,"فرنسا"],["Uruguay",2,"أوروجواي"],
+  ["Spain",2,"إسبانيا"],["England",1,"إنجلترا"],["Netherlands",0,"هولندا"]],{suf:TRA,h:"country",k:["WORLD CUPS","كاسات عالم"],s:"trophies",m:"w"}),
+ Rd(["WHICH CLUB HAS","MOST CHAMPIONS LEAGUES",Q],["أنهي نادي","عنده أكتر دوري أبطال أوروبا",QA],"max",[
+  ["Real Madrid",15,"ريال مدريد","Real Madrid CF"],["AC Milan",7,"ميلان"],["Bayern Munich",6,"بايرن ميونخ","FC Bayern Munich"],
+  ["Liverpool",6,"ليفربول","Liverpool F.C."],["FC Barcelona",5,"برشلونة"],["Ajax",4,"أياكس","AFC Ajax"],
+  ["Inter Milan",3,"الإنتر"],["Manchester United",3,"مانشستر يونايتد","Manchester United F.C."],["Paris Saint-Germain",2,"باريس سان جيرمان","Paris Saint-Germain F.C."]],{suf:TRA,h:"football club",k:["EUROPEAN CUPS","دوري أبطال"],s:"trophies",m:"w"}),
+ Rd(["WHO IS THE","YOUNGEST MANAGER",Q],["مين","أصغر مدرب",QA],"max",[
+  ["Alex Ferguson",1941,"أليكس فيرجسون"],["Arsène Wenger",1949,"أرسين فينجر"],["Carlo Ancelotti",1959,"كارلو أنشيلوتي"],
+  ["José Mourinho",1963,"جوزيه مورينيو"],["Jürgen Klopp",1967,"يورجن كلوب"],["Antonio Conte",1969,"أنطونيو كونتي"],
+  ["Diego Simeone",1970,"دييجو سيميوني"],["Pep Guardiola",1971,"بيب جوارديولا"],["Mikel Arteta",1982,"ميكيل أرتيتا"]],{h:"football manager",k:BORN,g:"p",s:"players",m:"w"}),
+ Rd(["WHO HAS THE","MOST WORLD CUP GOALS",Q],["مين","أكتر أهداف في المونديال",QA],"max",[
+  ["Kylian Mbappé",22,"كيليان مبابي"],["Lionel Messi",21,"ليونيل ميسي"],["Miroslav Klose",16,"ميروسلاف كلوزه"],["Ronaldo Nazário",15,"رونالدو نازاريو","Ronaldo (Brazilian footballer)"],["Harry Kane",14,"هاري كين"],["Pelé",12,"بيليه"],["Cristiano Ronaldo",11,"كريستيانو رونالدو"],["Neymar Jr",9,"نيمار","Neymar"],["Diego Maradona",8,"دييجو مارادونا"]],
+  {h:"footballer",k:["WORLD CUP GOALS","أهداف المونديال"],s:"players",m:"w"}),
+ Rd(["WHO IS THE","TALLEST",Q],["مين","الأطول",QA],"max",[
+  ["Peter Crouch",201,"بيتر كراوتش"],["Zlatan Ibrahimović",195,"زلاتان إبراهيموفيتش"],["Erling Haaland",195,"إيرلينج هالاند"],["Virgil van Dijk",193,"فيرجيل فان دايك"],["Paul Pogba",191,"بول بوجبا"],["Cristiano Ronaldo",187,"كريستيانو رونالدو"],["Mohamed Salah",175,"محمد صلاح"],["Neymar Jr",175,"نيمار","Neymar"],["Lionel Messi",170,"ليونيل ميسي"]],
+  {h:"footballer",k:["HEIGHT","الطول"],suf:[" cm"," سم"],s:"players",m:"w"})]},
+{n:"Cinema",a:"السينما",e:"🎬",r:[
+ Rd(["WHO IS THE","OLDEST MOVIE STAR",Q],["مين","أكبر نجم في السن",QA],"min",[
+  ["Clint Eastwood",1930,"كلينت إيستوود"],["Dustin Hoffman",1937,"داستن هوفمان"],["Al Pacino",1940,"آل باتشينو"],["Harrison Ford",1942,"هاريسون فورد"],
+  ["Robert De Niro",1943,"روبرت دي نيرو"],["Sylvester Stallone",1946,"سيلفستر ستالون"],["Arnold Schwarzenegger",1947,"أرنولد شوارزنيجر"],["Meryl Streep",1949,"ميريل ستريب"],
+  ["Jackie Chan",1954,"جاكي شان"]],{h:"actor",k:BORN,g:"p",s:"actors",m:"w"}),
+ Rd(["WHO IS THE","OLDEST EGYPTIAN STAR",Q],["مين","أكبر نجم مصري في السن",QA],"min",[
+  ["Omar Sharif",1932,"عمر الشريف"],["Adel Imam",1940,"عادل إمام","Adel Emam"],["Mahmoud Yassin",1941,"محمود ياسين"],["Ahmed Zaki",1949,"أحمد زكي","Ahmed Zaki (actor)"],
+  ["Mohamed Henedy",1965,"محمد هنيدي","Mohamed Henedi"],["Ahmed Helmy",1969,"أحمد حلمي"],["Ahmed El-Sakka",1973,"أحمد السقا","Ahmed El Sakka"],["Karim Abdel Aziz",1975,"كريم عبد العزيز"],
+  ["Mohamed Ramadan",1988,"محمد رمضان","Mohamed Ramadan (actor)"]],{h:"Egyptian actor",k:BORN,g:"p",s:"actors",m:"eg"}),
+ Rd(["WHICH IS THE","BIGGEST BLOCKBUSTER",Q],["أنهي","أكتر فيلم كسّب فلوس",QA],"max",[
+  ["Avatar",2.923,0,"Avatar (2009 film)"],["Avengers: Endgame",2.799],["Titanic",2.264,"تايتانيك","Titanic (1997 film)"],["Star Wars: The Force Awakens",2.071],
+  ["Avengers: Infinity War",2.052],["Spider-Man: No Way Home",1.921],["Jurassic World",1.671],["The Lion King (2019)",1.662,"الأسد الملك (2019)","The Lion King (2019 film)"],
+  ["Frozen II",1.453]],{pre:["$",""],suf:["B"," مليار دولار"],dp:2,h:"film",k:["BOX OFFICE","الإيرادات"],s:"films",m:"w"}),
+ Rd(["WHICH IS THE","OLDEST MOVIE",Q],["أنهي","أقدم فيلم",QA],"min",[
+  ["The Godfather",1972,"الأب الروحي"],["Jaws",1975,"الفك المفترس","Jaws (film)"],["Star Wars",1977,"حرب النجوم","Star Wars (film)"],["E.T.",1982,0,"E.T. the Extra-Terrestrial"],
+  ["Back to the Future",1985,"العودة للمستقبل"],["Jurassic Park",1993,0,"Jurassic Park (film)"],["Pulp Fiction",1994],["Titanic",1997,"تايتانيك","Titanic (1997 film)"],
+  ["The Matrix",1999]],{h:"film",k:["RELEASED","نزل سنة"],dt:["Film released", "نزول الفيلم"],g:"y",s:"films",m:"w"}),
+ Rd(["WHO IS THE","YOUNGEST ACTRESS",Q],["مين","أصغر ممثلة",QA],"max",[
+  ["Faten Hamama",1931,"فاتن حمامة"],["Soad Hosny",1943,"سعاد حسني"],["Yousra",1955,"يسرا"],["Elham Shahin",1961,"إلهام شاهين"],
+  ["Laila Elwi",1962,"ليلى علوي"],["Nelly Karim",1974,"نيللي كريم"],["Mona Zaki",1976,"منى زكي"],["Yasmin Abdulaziz",1980,"ياسمين عبد العزيز","Yasmin Abdulaziz"],
+  ["Menna Shalaby",1982,"منة شلبي","Menna Shalabi"]],{h:"Egyptian actress",k:BORN,g:"p",s:"actors",m:"eg"}),
+ Rd(["WHICH IS THE","OLDEST EGYPTIAN FILM",Q],["أنهي","أقدم فيلم مصري",QA],"min",[
+  ["Cairo Station",1958,"باب الحديد"],["The Nightingale's Prayer",1959,"دعاء الكروان"],["Watch Out for Zouzou",1972,"خلي بالك من زوزو"],
+  ["Terrorism and Kebab",1992,"الإرهاب والكباب"],["Ismailia Rayeh Gai",1997,"إسماعيلية رايح جاي","Round Trip to Ismailia"],["El Limby",2002,"اللمبي","El-Limby"],
+  ["The Yacoubian Building",2006,"عمارة يعقوبيان","The Yacoubian Building (film)"],["The Blue Elephant",2014,"الفيل الأزرق","The Blue Elephant (film)"],
+  ["Kira & El Gin",2022,"كيرة والجن"]],{h:"Egyptian film",k:["RELEASED","نزل سنة"],dt:["Film released", "نزول الفيلم"],g:"y",s:"films",m:"eg"}),
+  Rd(["WHO IS THE","OLDEST GOLDEN-ERA STAR",Q],["مين","أكبر نجم من الزمن الجميل",QA],"min",[
+   ["Anwar Wagdi",1904,"أنور وجدي"],["Ismail Yassine",1912,"إسماعيل ياسين"],["Ahmed Mazhar",1917,"أحمد مظهر"],["Farid Shawqi",1920,"فريد شوقي"],
+   ["Fouad El-Mohandes",1924,"فؤاد المهندس","Fouad el-Mohandes"],["Shoukry Sarhan",1925,"شكري سرحان"],["Rushdy Abaza",1926,"رشدي أباظة"],
+   ["Emad Hamdy",1909,"عماد حمدي"],["Mahmoud el-Meliguy",1910,"محمود المليجي"]],{h:"Egyptian actor",k:BORN,g:"p",s:"actors",m:"eg"}),
+  Rd(["WHO IS THE","YOUNGEST NEW STAR",Q],["مين","أصغر نجم في الجيل الجديد",QA],"max",[
+   ["Mohamed Saad",1968,"محمد سعد","Mohamed Saad (actor)"],["Ahmed Ezz",1971,"أحمد عز","Ahmed Ezz (actor)"],["Amir Karara",1977,"أمير كرارة"],["Ahmed Mekky",1980,"أحمد مكي"],
+   ["Asser Yassin",1981,"آسر ياسين"],["Mohamed Farrag",1982,"محمد فراج"],["Karim Mahmoud Abdel Aziz",1985,"كريم محمود عبد العزيز"],
+   ["Ahmed Hatem",1987,"أحمد حاتم","Ahmed Hatem (actor)"],["Ahmed Malek",1995,"أحمد مالك"]],{h:"Egyptian actor",k:BORN,g:"p",s:"actors",m:"eg"}),
+  Rd(["WHICH HIT FILM","CAME OUT FIRST",Q],["أنهي فيلم","نزل الأول",QA],"min",[
+   ["Saidi fil Gamaa el Amrikia",1998,"صعيدي في الجامعة الأمريكية"],["Hammam fi Amsterdam",1999,"همام في أمستردام"],["El Nazer",2000,"الناظر","El Nazer (film)"],
+   ["Africano",2001,"أفريكانو","Africano (film)"],["Mafia",2002,"مافيا","Mafia (2002 film)"],["Tito",2004,"تيتو","Tito (2004 film)"],["El Gezira",2007,"الجزيرة","The Island (2007 film)"],
+   ["Welad Rizk",2015,"ولاد رزق","Sons of Rizk"],["El Mamar",2019,"الممر","El Mamar (film)"]],{h:"Egyptian film",k:["RELEASED","نزل سنة"],dt:["Film released", "نزول الفيلم"],g:"y",s:"films",m:"eg"}),
+  Rd(["WHICH IS THE","OLDEST CLASSIC",Q],["أنهي","أقدم فيلم من الكلاسيكيات",QA],"min",[
+   ["Ghazal El Banat",1949,"غزل البنات","The Flirtation of Girls"],["Ibn Hamido",1957,"ابن حميدو","Hamido's Son"],["El Haram",1965,"الحرام","The Sin (1965 film)"],
+   ["El Zoga El Tanya",1967,"الزوجة الثانية","The Second Wife (1967 film)"],["Shei' Men El Khof",1969,"شيء من الخوف","A Taste of Fear"],["El Karnak",1975,"الكرنك","Karnak (film)"],
+   ["Sawwak El Otobees",1982,"سواق الأتوبيس","Sawwak El Otobees (film)"],["El Bary'",1986,"البريء","The Innocent (1986 film)"],["El Kit Kat",1991,"الكيت كات","The Kit Kat"]],
+   {h:"Egyptian film",k:["RELEASED","نزل سنة"],dt:["Film released", "نزول الفيلم"],g:"y",s:"films",m:"eg"}),
+ Rd(["WHO IS THE","OLDEST COMEDIAN",Q],["مين","أكبر كوميديان في السن",QA],"min",[
+  ["Samir Ghanem",1937,"سمير غانم"],["Mohamed Sobhi",1948,"محمد صبحي","Mohamed Sobhi (actor)"],["Talaat Zakaria",1960,"طلعت زكريا"],
+  ["Ashraf Abdel Baky",1963,"أشرف عبد الباقي"],["Bayoumi Fouad",1965,"بيومي فؤاد"],["Maged El Kedwany",1967,"ماجد الكدواني"],
+  ["Hisham Maged",1980,"هشام ماجد"],["Mostafa Khater",1985,"مصطفى خاطر"],["Ali Rabie",1989,"علي ربيع"]],{h:"Egyptian actor",k:BORN,g:"p",s:"actors",m:"eg"}),
+ Rd(["WHICH COMEDY","CAME OUT LAST",Q],["أنهي فيلم كوميدي","نزل الأخير",QA],"max",[
+  ["Harameya fi KG2",2001,"حرامية في كي جي تو","Thieves in KG2"],["Mido Mashakel",2003,"ميدو مشاكل"],["Zaki Chan",2005,"زكي شان"],
+  ["Keda Reda",2007,"كده رضا"],["1000 Mabrouk",2009,"ألف مبروك"],["Asal Eswed",2010,"عسل إسود"],
+  ["X-Large",2011,"إكس لارج","X-Large (film)"],["El Badla",2018,"البدلة"],["Wahed Tany",2022,"واحد تاني"]],{h:"Egyptian film",k:["RELEASED","نزل سنة"],dt:["Film released", "نزول الفيلم"],g:"y",s:"films",m:"eg"}),
+ Rd(["WHO IS THE","YOUNGEST OSCAR WINNER",Q],["مين","أصغر واحد كسب أوسكار",QA],"max",[
+  ["Anthony Hopkins",1937,"أنتوني هوبكنز"],["Denzel Washington",1954,"دنزل واشنطن"],["Tom Hanks",1956,"توم هانكس"],
+  ["Matthew McConaughey",1969,"ماثيو ماكونهي"],["Leonardo DiCaprio",1974,"ليوناردو دي كابريو"],["Cillian Murphy",1976,"كيليان مورفي"],
+  ["Natalie Portman",1981,"ناتالي بورتمان"],["Emma Stone",1988,"إيما ستون"],["Jennifer Lawrence",1990,"جينيفر لورانس"]],{h:"actor",k:BORN,g:"p",s:"actors",m:"w"}),
+ Rd(["WHICH PIXAR FILM","CAME OUT FIRST",Q],["أنهي فيلم بيكسار","نزل الأول",QA],"min",[
+  ["Toy Story",1995,"توي ستوري"],["Monsters, Inc.",2001,"مونسترز إنك"],["Finding Nemo",2003,"البحث عن نيمو"],
+  ["The Incredibles",2004,"ذا إنكريديبلز"],["Cars",2006,"كارز","Cars (film)"],["Ratatouille",2007,"راتاتوي","Ratatouille (film)"],
+  ["Up",2009,"أب","Up (2009 film)"],["Inside Out",2015,"إنسايد آوت","Inside Out (2015 film)"],["Coco",2017,"كوكو","Coco (2017 film)"]],{h:"film",k:["RELEASED","نزل سنة"],dt:["Film released", "نزول الفيلم"],g:"y",s:"films",m:"w"}),
+ Rd(["WHO HAS WON THE","MOST OSCARS",Q],["مين","كسب أكتر أوسكارات",QA],"max",[
+  ["Walt Disney",22,"والت ديزني"],["John Williams",5,"جون ويليامز"],["Steven Spielberg",3,"ستيفن سبيلبرج"],["James Cameron",3,"جيمس كاميرون"],["Meryl Streep",3,"ميريل ستريب"],["Daniel Day-Lewis",3,"دانيال داي لويس"],["Christopher Nolan",2,"كريستوفر نولان"],["Tom Hanks",2,"توم هانكس"],["Leonardo DiCaprio",1,"ليوناردو دي كابريو"]],
+  {h:"film legend",k:["OSCARS WON","أوسكارات"],suf:TRA,s:"actors",m:"w"}),
+ Rd(["WHO HAS THE","MOST ACTING OSCAR NOMS",Q],["مين","عنده أكتر ترشيحات أوسكار",QA],"max",[
+  ["Meryl Streep",21,"ميريل ستريب"],["Jack Nicholson",12,"جاك نيكلسون"],["Denzel Washington",9,"دينزل واشنطن"],["Al Pacino",9,"آل باتشينو"],["Robert De Niro",8,"روبرت دي نيرو"],["Cate Blanchett",8,"كيت بلانشيت"],["Leonardo DiCaprio",7,"ليوناردو دي كابريو"],["Tom Hanks",6,"توم هانكس"],["Brad Pitt",4,"براد بيت"]],
+  {h:"actor",k:["ACTING NOMINATIONS","ترشيحات تمثيل"],s:"actors",m:"w"})]},
+{n:"TV",a:"التليفزيون",e:"📺",r:[
+ Rd(["WHO IS THE","YOUNGEST STAR",Q],["مين","أصغر نجم",QA],"max",[
+  ["Sean Bean",1959,"شون بين"],["Iain Glen",1961,"إيان جلين"],["Peter Dinklage",1969,"بيتر دينكليدج"],["Nikolaj Coster-Waldau",1970,"نيكولاي كوستر والداو"],
+  ["Lena Headey",1973,"لينا هيدي"],["Gwendoline Christie",1978,"جويندولين كريستي"],["Emilia Clarke",1986,"إميليا كلارك"],["Sophie Turner",1996,"صوفي تيرنر"],
+  ["Maisie Williams",1997,"ميزي ويليامز"]],{h:"actor",k:BORN,g:"p",s:"tv",m:"w"}),
+ Rd(["WHO IS THE","OLDEST SITCOM STAR",Q],["مين","أكبر نجم سيتكوم في السن",QA],"min",[
+  ["Lisa Kudrow",1963,"ليزا كودرو"],["Courteney Cox",1964,"كورتني كوكس"],["David Schwimmer",1966,"ديفيد شويمر"],["Matt LeBlanc",1967,"مات لوبلان"],
+  ["Jennifer Aniston",1969,"جينيفر أنيستون"],["Jim Parsons",1973,"جيم بارسونز"],["Johnny Galecki",1975,"جوني جاليكي"],["Kunal Nayyar",1981,"كونال نايار"],
+  ["Kaley Cuoco",1985,"كايلي كوكو"]],{h:"actor",k:BORN,g:"p",s:"tv",m:"w"}),
+ Rd(["WHICH SHOW HAS","THE MOST EPISODES",Q],["أنهي مسلسل","عنده أكتر حلقات",QA],"max",[
+  ["The Big Bang Theory",279],["Two and a Half Men",262],["Friends",236],["How I Met Your Mother",208],["The Office (US)",201,0,"The Office (American TV series)"],
+  ["Seinfeld",180],["The Sopranos",86],["Game of Thrones",73],["Breaking Bad",62]],{suf:[" eps"," حلقة"],h:"TV series",k:["EPISODES","عدد الحلقات"],s:"tv",m:"w"}),
+  Rd(["WHICH RAMADAN SHOW","CAME OUT FIRST",Q],["أنهي مسلسل رمضان","نزل الأول",QA],"min",[
+   ["Layali El Helmeya",1987,"ليالي الحلمية","Al Helmeya Nights"],["Lan Aish fi Gilbab Abi",1996,"لن أعيش في جلباب أبي","Lan Aish fi Gilbab Abi (TV series)"],["Bakkar",1998,"بكار"],
+   ["El Kabeer Awy",2010,"الكبير أوي"],["Grand Hotel",2016,"جراند أوتيل","Grand Hotel (Egyptian TV series)"],["El Ostoura",2016,"الأسطورة"],
+   ["El Ikhtiyar",2020,"الاختيار","El Ikhtiyar (TV series)"],["Gaafar El Omda",2023,"جعفر العمدة"],["El Hashashin",2024,"الحشاشين","El Hashashin (TV series)"]],
+   {h:"Egyptian TV series",k:["FIRST AIRED","أول عرض"],dt:["Series first aired", "أول عرض للمسلسل"],g:"y",s:"tv",m:"eg"}),
+ Rd(["WHO IS THE","OLDEST SERIES STAR",Q],["مين","أكبر نجم مسلسلات في السن",QA],"min",[
+  ["Yehia El-Fakharany",1945,"يحيى الفخراني"],["Mohamed Sobhi",1948,"محمد صبحي","Mohamed Sobhi (actor)"],["Mahmoud Hemida",1953,"محمود حميدة"],
+  ["Ashraf Abdel Baky",1963,"أشرف عبد الباقي"],["Khaled El Nabawy",1966,"خالد النبوي"],["Yasser Galal",1969,"ياسر جلال"],
+  ["Mostafa Shaban",1970,"مصطفى شعبان"],["Youssef El Sherif",1978,"يوسف الشريف"],["Mohamed Ramadan",1988,"محمد رمضان","Mohamed Ramadan (actor)"]],{h:"Egyptian actor",k:BORN,g:"p",s:"tv",m:"eg"}),
+ Rd(["WHICH SERIES","CAME OUT LAST",Q],["أنهي مسلسل","نزل الأخير",QA],"max",[
+  ["Raafat El Haggan",1988,"رأفت الهجان"],["Arabesque",1994,"أرابيسك"],["Hadeeth El Sabah wel Masaa",2001,"حديث الصباح والمساء"],
+  ["Ragel W Set Settat",2006,"راجل وست ستات"],["Taht El Saytara",2015,"تحت السيطرة"],["Nelly & Sherihan",2016,"نيللي وشريهان"],
+  ["Sabe' Gar",2017,"سابع جار"],["Paranormal",2020,"ما وراء الطبيعة","Paranormal (TV series)"],["Ashghal Shaqqa",2024,"أشغال شقة"]],{h:"Egyptian TV series",k:["FIRST AIRED","أول عرض"],dt:["Series first aired", "أول عرض للمسلسل"],g:"y",s:"tv",m:"eg"}),
+ Rd(["WHICH SERIES","IS THE NEWEST",Q],["أنهي مسلسل","الأحدث",QA],"max",[
+  ["Friends",1994,"فريندز"],["The Sopranos",1999,"ذا سوبرانوز"],["Prison Break",2005,"بريزون بريك"],
+  ["Breaking Bad",2008,"بريكنج باد"],["Game of Thrones",2011,"جيم أوف ثرونز"],["Peaky Blinders",2013,"بيكي بلايندرز"],
+  ["Stranger Things",2016,"سترينجر ثينجز"],["Money Heist",2017,"لا كاسا دي بابيل"],["Squid Game",2021,"لعبة الحبار"]],{h:"TV series",k:["FIRST AIRED","أول عرض"],dt:["Series first aired", "أول عرض للمسلسل"],g:"y",s:"tv",m:"w"})]},
+{n:"Music",a:"المزيكا",e:"🎤",r:[
+ Rd(["WHO IS THE","OLDEST ICON",Q],["مين","أكبر نجم في السن",QA],"min",[
+  ["Bob Dylan",1941,"بوب ديلان"],["Paul McCartney",1942,"بول مكارتني"],["Mick Jagger",1943,"ميك جاجر"],["Rod Stewart",1945,"رود ستيوارت"],
+  ["Freddie Mercury",1946,"فريدي ميركوري"],["Elton John",1947,"إلتون جون"],["Ozzy Osbourne",1948,"أوزي أوزبورن"],["Bruce Springsteen",1949,"بروس سبرينجستين"],
+  ["Stevie Wonder",1950,"ستيفي وندر"]],{h:"singer",k:BORN,g:"p",s:"singers",m:"w"}),
+ Rd(["WHO IS THE","YOUNGEST POP STAR",Q],["مين","أصغر نجم بوب",QA],"max",[
+  ["Taylor Swift",1989,"تايلور سويفت"],["The Weeknd",1990,"ذا ويكند"],["Ed Sheeran",1991,"إد شيران"],["Ariana Grande",1993,"أريانا جراندي"],
+  ["Harry Styles",1994,"هاري ستايلز"],["Dua Lipa",1995,"دوا ليبا"],["Shawn Mendes",1998,"شون منديز"],["Billie Eilish",2001,"بيلي إيليش"],
+  ["Olivia Rodrigo",2003,"أوليفيا رودريجو"]],{h:"singer",k:BORN,g:"p",s:"singers",m:"w"}),
+ Rd(["WHO IS THE","OLDEST EGYPTIAN ICON",Q],["مين","أكبر مطرب في السن",QA],"min",[
+  ["Abdel Halim Hafez",1929,"عبد الحليم حافظ"],["Hany Shaker",1952,"هاني شاكر"],["Mohamed Mounir",1954,"محمد منير"],["Amr Diab",1961,"عمرو دياب"],
+  ["Hakim",1962,"حكيم","Hakim (singer)"],["Angham",1972,"أنغام"],["Mohamed Hamaki",1975,"محمد حماقي"],["Tamer Hosny",1977,"تامر حسني"],
+  ["Sherine Abdel Wahab",1980,"شيرين عبد الوهاب","Sherine"]],{h:"Egyptian singer",k:BORN,g:"p",s:"singers",m:"eg"}),
+ Rd(["WHICH IS THE","OLDEST SONG",Q],["أنهي","أقدم أغنية",QA],"min",[
+  ["Hey Jude",1968],["Bohemian Rhapsody",1975],["Billie Jean",1983],["Like a Prayer",1989,0,"Like a Prayer (song)"],["Smells Like Teen Spirit",1991],
+  ["Wannabe",1996,0,"Wannabe (Spice Girls song)"],["Crazy in Love",2003],["Rolling in the Deep",2010],["Blinding Lights",2019]],{h:"song",k:["RELEASED","نزلت سنة"],dt:["Song released", "نزول الأغنية"],g:"y",s:"songs",m:"w"}),
+  Rd(["WHO IS THE","YOUNGEST EGYPTIAN SINGER",Q],["مين","أصغر مطرب",QA],"max",[
+   ["Hany Shaker",1952,"هاني شاكر"],["Mohamed Fouad",1961,"محمد فؤاد"],["Hisham Abbas",1963,"هشام عباس"],["Ehab Tawfik",1966,"إيهاب توفيق"],
+   ["Moustafa Amar",1966,"مصطفى قمر"],["Ruby",1981,"روبي","Ruby (Egyptian singer)"],["Ahmed Saad",1981,"أحمد سعد","Ahmed Saad (singer)"],["Marwan Pablo",1995,"مروان بابلو"],
+   ["Wegz",1998,"ويجز"]],{h:"Egyptian singer",k:BORN,g:"p",s:"singers",m:"eg"}),
+  Rd(["WHICH AMR DIAB HIT","CAME OUT FIRST",Q],["أنهي أغنية لعمرو دياب","نزلت الأول",QA],"min",[
+   ["Mayal",1988,"ميال","Mayal (album)"],["Nour El Ein",1996,"نور العين","Nour El Ain"],["Tamally Maak",2000,"تملي معاك"],["Allem Alby",2003,"علم قلبي"],
+   ["Leily Nahary",2004,"ليلي نهاري"],["Wayah",2009,"وياه"],["Banadeek Ta'ala",2011,"بناديك تعالى"],["Sahran",2020,"سهران","Sahran (album)"],["Khatfoony",2025,"خطفوني","Khatfoony (song)"]],
+   {h:"Amr Diab song",k:["RELEASED","نزلت سنة"],dt:["Song released", "نزول الأغنية"],g:"y",s:"songs",m:"eg"}),
+ Rd(["WHICH CLASSIC SONG","CAME OUT FIRST",Q],["أنهي أغنية من الزمن الجميل","نزلت الأول",QA],"min",[
+  ["Ya Msafer Wahdak",1942,"يا مسافر وحدك"],["Ahwak",1957,"أهواك"],["Enta Omri",1964,"إنت عمري"],["Al Atlal",1966,"الأطلال"],
+  ["Alf Leila wa Leila",1969,"ألف ليلة وليلة"],["Qariat al-Fingan",1976,"قارئة الفنجان"],["Shababeek",1981,"شبابيك"],["Hadouta Masreya",1982,"حدوتة مصرية"],
+  ["Ali Sotak",1997,"علّي صوتك"]],{h:"Egyptian song",k:["RELEASED","نزلت سنة"],dt:["Song released", "نزول الأغنية"],g:"y",s:"songs",m:"eg"}),
+ Rd(["WHICH EGYPTIAN HIT","IS THE NEWEST",Q],["أنهي أغنية مصرية","هي الأحدث",QA],"max",[
+  ["Habibi Dah",2001,"حبيبي ده (ناري نارين)","Habibi Dah (Nari Narain)"],["Garh Tany",2003,"جرح تاني"],["Leih Beydary Keda",2004,"ليه بيداري كده"],["Einaya Bethebak",2006,"عينيا بتحبك"],
+  ["Naweeha",2008,"ناويها"],["Ya El Midan",2011,"يا الميدان"],["Ezzay",2011,"إزاي"],["Number One",2018,"نمبر وان"],
+  ["El Bakht",2022,"البخت"]],{h:"Egyptian song",k:["RELEASED","نزلت سنة"],dt:["Song released", "نزول الأغنية"],g:"y",s:"songs",m:"eg"}),
+ Rd(["WHICH SINGER","WAS BORN FIRST",Q],["مين من المطربين","اتولد الأول",QA],"min",[
+  ["Sayed Darwish",1892,"سيد درويش"],["Mohamed Abdel Muttalib",1910,"محمد عبد المطلب"],["Laila Mourad",1918,"ليلى مراد","Leila Mourad"],["Mohamed Fawzi",1918,"محمد فوزي","Mohamed Fawzi (singer)"],
+  ["Mohamed Roshdy",1928,"محمد رشدي"],["Shadia",1931,"شادية"],["Najat Al Saghira",1938,"نجاة الصغيرة","Nagat El-Sagheera"],["Ahmed Adaweya",1945,"أحمد عدوية"],
+  ["Ali El Haggar",1954,"علي الحجار"]],{h:"Egyptian singer",k:BORN,g:"p",s:"singers",m:"eg"}),
+ Rd(["WHICH WORLD HIT","CAME OUT LAST",Q],["أنهي أغنية عالمية","نزلت الآخر",QA],"max",[
+  ["Imagine",1971,"إيماجن","Imagine (John Lennon song)"],["Dancing Queen",1976,"دانسينج كوين"],["Careless Whisper",1984,"كيرلس ويسبر"],["My Heart Will Go On",1997,"ماي هارت ويل جو أون"],
+  ["Hips Don't Lie",2006,"هيبس دونت لاي"],["Waka Waka",2010,"واكا واكا","Waka Waka (This Time for Africa)"],["Gangnam Style",2012,"جانجنام ستايل"],["Despacito",2017,"ديسباسيتو"],
+  ["APT.",2024,"آبت","APT. (song)"]],{h:"song",k:["RELEASED","نزلت سنة"],dt:["Song released", "نزول الأغنية"],g:"y",s:"songs",m:"w"}),
+ Rd(["WHO IS THE","YOUNGEST RAPPER",Q],["مين","أصغر رابر",QA],"max",[
+  ["Dr. Dre",1965,"دكتور دري"],["Jay-Z",1969,"جاي زي"],["Tupac Shakur",1971,"توباك"],["Snoop Dogg",1971,"سنوب دوج"],
+  ["Eminem",1972,"إيمينيم"],["50 Cent",1975,"فيفتي سنت"],["Kanye West",1977,"كانيي ويست"],["Drake",1986,"دريك","Drake (musician)"],
+  ["Cardi B",1992,"كاردي بي"]],{h:"rapper",k:BORN,g:"p",s:"singers",m:"w"}),
+ Rd(["WHO HAS WON THE","MOST GRAMMYS",Q],["مين","كسب أكتر جرامي",QA],"max",[
+  ["Beyoncé",35,"بيونسيه"],["Kendrick Lamar",27,"كندريك لامار"],["Jay-Z",25,"جاي زي"],["Stevie Wonder",25,"ستيفي وندر"],["Kanye West",24,"كانييه ويست"],["Adele",16,"أديل"],["Eminem",15,"إيمينم"],["Taylor Swift",14,"تايلور سويفت"],["Rihanna",9,"ريهانا"]],
+  {h:"singer",k:["GRAMMYS WON","جوايز جرامي"],suf:TRA,s:"singers",m:"w"}),
+ Rd(["WHO HAS THE","MOST US NO. 1 HITS",Q],["مين","أكتر نمبر وان في أمريكا",QA],"max",[
+  ["Mariah Carey",19,"ماريا كاري"],["Drake",14,"دريك","Drake (musician)"],["Rihanna",14,"ريهانا"],["Michael Jackson",13,"مايكل جاكسون"],["Madonna",12,"مادونا"],["Whitney Houston",11,"ويتني هيوستن"],["Stevie Wonder",10,"ستيفي وندر"],["Bruno Mars",10,"برونو مارس"],["Ariana Grande",10,"أريانا جراندي"]],
+  {h:"singer",k:["HOT 100 NO. 1s","نمبر وان"],s:"singers",m:"w"})]},
+{n:"Pop Culture",a:"المشاهير والتريند",e:"🔥",r:[
+ Rd(["WHO IS THE","YOUNGEST CELEBRITY",Q],["مين","أصغر مشهور",QA],"max",[
+  ["Elon Musk",1971,"إيلون ماسك"],["Kim Kardashian",1980,"كيم كارداشيان"],["PewDiePie",1989,"بيوديباي"],["KSI",1993,"كيه إس آي"],
+  ["Timothée Chalamet",1995,"تيموثي شالاميه"],["Zendaya",1996,"زندايا"],["Kylie Jenner",1997,"كايلي جينر"],["MrBeast",1998,"مستر بيست"],
+  ["Charli D'Amelio",2004,"تشارلي داميليو"]],{h:"celebrity",k:BORN,g:"p",s:"celebs",m:"w"}),
+ Rd(["WHO IS THE","OLDEST MARVEL STAR",Q],["مين","أكبر نجم مارفل في السن",QA],"min",[
+  ["Robert Downey Jr",1965,"روبرت داوني جونيور","Robert Downey Jr."],["Mark Ruffalo",1967,"مارك روفالو"],["Paul Rudd",1969,"بول رود"],["Benedict Cumberbatch",1976,"بنديكت كامبرباتش"],
+  ["Chris Pratt",1979,"كريس برات"],["Chris Evans",1981,"كريس إيفانز","Chris Evans (actor)"],["Chris Hemsworth",1983,"كريس هيمسورث"],["Scarlett Johansson",1984,"سكارليت جوهانسون"],
+  ["Tom Holland",1996,"توم هولاند"]],{h:"actor",k:BORN,g:"p",s:"actors",m:"w"}),
+ Rd(["WHICH IS THE","OLDEST CARTOON",Q],["أنهي","أقدم كرتون",QA],"min",[
+  ["Mickey Mouse",1928,"ميكي ماوس"],["Bugs Bunny",1940,"باجز باني"],["Tom and Jerry",1940,"توم وجيري"],["Scooby-Doo",1969,"سكوبي دو"],
+  ["The Simpsons",1987,"عيلة سيمبسون"],["SpongeBob",1999,"سبونج بوب","SpongeBob SquarePants"],["Shrek",2001,"شريك"],["Peppa Pig",2004,"بيبا بيج"],
+  ["Bluey",2018,"بلوي","Bluey (2018 TV series)"]],{h:"cartoon",k:["FIRST SHOWN","أول ظهور"],dt:["Cartoon first shown", "أول ظهور للكرتون"],g:"y",s:"celebs",m:"w"}),
+ Rd(["WHICH CHILDHOOD ICON","CAME OUT FIRST",Q],["أنهي حاجة من أيام الطفولة","ظهرت الأول",QA],"min",[
+  ["Samir Magazine",1956,"مجلة سمير","Samir (magazine)"],["Bogy & Tamtam",1983,"بوجي وطمطم"],["Bakkar",1998,"بكار"],["Alam Simsim",2000,"عالم سمسم"],
+  ["Super Henedy",2007,"سوبر هنيدي"],["Abla Fahita",2010,"أبلة فاهيتا"],["Qesas El Hayawan fel Quran",2011,"قصص الحيوان في القرآن"],["The Knight and the Princess",2019,"الفارس والأميرة"],
+  ["Yehia w Kenooz",2022,"يحيى وكنوز"]],{h:"Egyptian cartoon",k:["DEBUT","أول ظهور"],dt:["First appeared", "أول ظهور"],g:"y",s:"celebs",m:"eg"}),
+ Rd(["WHO IS THE","OLDEST TV PERSONALITY",Q],["مين","أكبر نجم تلفزيون في السن",QA],"min",[
+  ["Mofeed Fawzy",1933,"مفيد فوزي"],["Amr Adib",1963,"عمرو أديب"],["Hamdi Qandil",1936,"حمدي قنديل"],["Lamees El-Hadidi",1969,"لميس الحديدي","Lamis Elhadidy"],
+  ["Amr El-Leithy",1970,"عمرو الليثي","Amr el-Leithy"],["Tamer Amin",1971,"تامر أمين"],["Ramez Galal",1973,"رامز جلال"],["Bassem Youssef",1974,"باسم يوسف"],
+  ["Ahmed El-Ghandour (Da7ee7)",1994,"أحمد الغندور (الدحيح)","Ahmed El-Ghandour"]],{h:"Egyptian TV presenter",k:BORN,g:"p",s:"celebs",m:"eg"}),
+ Rd(["WHICH ANIME","CAME OUT FIRST",Q],["أنهي أنمي","ظهر الأول",QA],"min",[
+  ["Grendizer",1975,"جريندايزر"],["Future Boy Conan",1978,"عدنان ولينا"],["Captain Tsubasa (Captain Majed)",1983,"كابتن ماجد","Captain Tsubasa"],["Dragon Ball",1986,"دراجون بول","Dragon Ball (TV series)"],
+  ["Slam Dunk",1993,"سلام دانك","Slam Dunk (manga)"],["Detective Conan",1996,"المحقق كونان","Case Closed"],["Pokémon",1997,"بوكيمون","Pokémon (TV series)"],["One Piece",1999,"ون بيس","One Piece (1999 TV series)"],
+  ["Naruto",2002,"ناروتو","Naruto (TV series)"]],{h:"anime",k:["FIRST SHOWN","أول ظهور"],dt:["Anime first aired", "أول عرض للأنمي"],g:"y",s:"celebs",m:"w"}),
+ Rd(["WHO IS THE","TALLEST ATHLETE",Q],["مين","الرياضي الأطول",QA],"max",[
+  ["Shaquille O'Neal",216,"شاكيل أونيل"],["LeBron James",206,"ليبرون جيمس"],["Michael Jordan",198,"مايكل جوردان"],["Kobe Bryant",198,"كوبي براينت"],["Usain Bolt",195,"يوسين بولت"],["Novak Djokovic",188,"نوفاك ديوكوفيتش"],["Roger Federer",185,"روجر فيدرر"],["Mike Tyson",178,"مايك تايسون"],["Simone Biles",142,"سيمون بايلز"]],
+  {h:"athlete",k:["HEIGHT","الطول"],suf:[" cm"," سم"],s:"celebs",m:"w"}),
+ Rd(["WHO HAS THE","MOST OLYMPIC GOLDS",Q],["مين","عنده أكتر دهبيات أولمبية",QA],"max",[
+  ["Michael Phelps",23,"مايكل فيلبس"],["Carl Lewis",9,"كارل لويس"],["Katie Ledecky",9,"كاتي ليديكي"],["Usain Bolt",8,"يوسين بولت"],["Simone Biles",7,"سيمون بايلز"],["Serena Williams",4,"سيرينا ويليامز"],["Mo Farah",4,"مو فرح"],["LeBron James",3,"ليبرون جيمس"],["Rafael Nadal",2,"رافاييل نادال"]],
+  {h:"athlete",k:["OLYMPIC GOLDS","دهبيات أولمبية"],suf:TRA,s:"celebs",m:"w"})]},
+{n:"Geography",a:"الجغرافيا",e:"🗺️",r:[
+ Rd(["WHICH IS THE","BIGGEST COUNTRY",Q],["أنهي","أكبر دولة في المساحة",QA],"max",[
+  ["Russia",17.1,"روسيا"],["Canada",9.98,"كندا"],["United States",9.83,"أمريكا"],["China",9.6,"الصين"],["Brazil",8.52,"البرازيل"],
+  ["Australia",7.69,"أستراليا"],["India",3.29,"الهند"],["Saudi Arabia",2.15,"السعودية"],["Argentina",2.78,"الأرجنتين"]],{suf:["M km²"," مليون كم²"],dp:2,h:"country",k:["AREA","المساحة"],s:"geo",m:"w"}),
+ Rd(["WHICH IS THE","TALLEST MOUNTAIN",Q],["أنهي","أعلى جبل",QA],"max",[
+  ["Mount Everest",8849,"جبل إيفرست"],["K2",8611,"كي 2"],["Kangchenjunga",8586,"كانشينجونجا"],["Aconcagua",6961,"أكونكاجوا"],["Denali",6190,"دينالي"],
+  ["Kilimanjaro",5895,"كليمنجارو","Mount Kilimanjaro"],["Mont Blanc",4806,"مون بلان"],["Mount Fuji",3776,"جبل فوجي"],["Matterhorn",4478,"الماترهورن"]],{suf:[" m"," متر"],h:"mountain",k:["HEIGHT","الارتفاع"],s:"geo",m:"w"}),
+ Rd(["WHICH IS THE","SMALLEST COUNTRY",Q],["أنهي","أصغر دولة في المساحة",QA],"min",[
+  ["Vatican City",0.44,"الفاتيكان"],["Monaco",2.08,"موناكو"],["Nauru",21,"ناورو"],["Tuvalu",26,"توفالو"],["San Marino",61,"سان مارينو"],
+  ["Liechtenstein",160,"ليختنشتاين"],["Maldives",298,"المالديف"],["Malta",316,"مالطا"],["Singapore",735,"سنغافورة"]],{suf:[" km²"," كم²"],h:"country",k:["AREA","المساحة"],s:"geo",m:"w"}),
+  Rd(["WHICH CITY IS","FURTHEST SOUTH",Q],["أنهي مدينة","في أقصى الجنوب",QA],"min",[
+   ["Abu Simbel",22.3,"أبو سمبل","Abu Simbel temples"],["Aswan",24.1,"أسوان"],["Marsa Alam",25.1,"مرسى علم"],["Luxor",25.7,"الأقصر"],["Hurghada",27.3,"الغردقة"],
+   ["Sharm El Sheikh",27.9,"شرم الشيخ"],["Siwa",29.2,"سيوة","Siwa Oasis"],["Cairo",30,"القاهرة"],["Alexandria",31.2,"إسكندرية"]],
+   {suf:["° N","° شمال"],dp:1,h:"Egypt",k:["LATITUDE","خط العرض"],s:"geo",m:"eg"}),
+  Rd(["WHICH IS THE","TALLEST LANDMARK",Q],["أنهي","أعلى معلم",QA],"max",[
+   ["Iconic Tower",394,"البرج الأيقوني","Iconic Tower (Egypt)"],["Cairo Tower",187,"برج القاهرة"],["Great Pyramid",138.5,"الهرم الأكبر (خوفو)","Great Pyramid of Giza"],
+   ["Pyramid of Khafre",136.4,"هرم خفرع"],["Red Pyramid",105,"الهرم الأحمر"],["Step Pyramid",62.5,"الهرم المدرج (زوسر)","Pyramid of Djoser"],["Pyramid of Menkaure",61,"هرم منكاورع"],
+   ["Pompey's Pillar",27,"عمود السواري"],["Great Sphinx",20,"أبو الهول","Great Sphinx of Giza"]],{suf:[" m"," متر"],h:"landmark",k:["HEIGHT","الارتفاع"],s:"geo",m:"eg"}),
+ Rd(["WHICH CITY IS","FURTHEST FROM CAIRO",Q],["أنهي مدينة","أبعد واحدة عن القاهرة",QA],"max",[
+  ["Suez",130,"السويس"],["Port Said",170,"بورسعيد"],["Alexandria",180,"إسكندرية"],["El Arish",270,"العريش","Arish"],["Sharm El Sheikh",380,"شرم الشيخ"],
+  ["Hurghada",400,"الغردقة"],["Luxor",500,"الأقصر"],["Siwa",560,"سيوة","Siwa Oasis"],["Aswan",680,"أسوان"]],
+  {pre:["~","~"],suf:[" km"," كم"],h:"Egypt",k:["STRAIGHT-LINE DISTANCE","المسافة في خط مستقيم"],s:"geo",m:"eg"}),
+ Rd(["WHICH CITY IS","FURTHEST EAST",Q],["أنهي مدينة","في أقصى الشرق",QA],"max",[
+  ["Taba",34.9,"طابا"],["Dahab",34.5,"دهب"],["El Arish",33.8,"العريش","Arish"],["Ismailia",32.3,"الإسماعيلية"],["Cairo",31.2,"القاهرة"],
+  ["Fayoum",30.8,"الفيوم","Faiyum"],["Alexandria",29.9,"إسكندرية"],["Marsa Matrouh",27.2,"مرسى مطروح","Mersa Matruh"],["Siwa",25.5,"سيوة","Siwa Oasis"]],
+  {suf:["° E","° شرق"],dp:1,h:"Egypt",k:["LONGITUDE","خط الطول"],s:"geo",m:"eg"}),
+ Rd(["WHICH IS THE","TALLEST BUILDING",Q],["أنهي","أطول برج",QA],"max",[
+  ["Burj Khalifa",828,"برج خليفة"],["Shanghai Tower",632,"برج شنغهاي"],["Makkah Clock Tower",601,"برج الساعة في مكة","Abraj Al-Bait"],
+  ["Lotte World Tower",555,"برج لوتي"],["One World Trade Center",541,"وان ورلد تريد سنتر"],["Taipei 101",508,"تايبيه 101"],
+  ["Petronas Towers",452,"برجين بتروناس"],["Willis Tower",442,"برج ويليس"],["Burj Al Arab",321,"برج العرب"]],
+  {suf:[" m"," متر"],h:"building",k:["HEIGHT","الارتفاع"],s:"geo",m:"w"}),
+ Rd(["WHICH GOVERNORATE HAS","THE MOST PEOPLE",Q],["أنهي محافظة","فيها أكتر سكان",QA],"max",[
+  ["Cairo",9.5,"القاهرة","Cairo Governorate"],["Giza",8.6,"الجيزة","Giza Governorate"],["Sharqia",7.2,"الشرقية","Sharqia Governorate"],
+  ["Dakahlia",6.5,"الدقهلية","Dakahlia Governorate"],["Beheira",6.2,"البحيرة","Beheira Governorate"],["Qalyubia",5.6,"القليوبية","Qalyubia Governorate"],
+  ["Alexandria",5.2,"إسكندرية","Alexandria Governorate"],["Gharbia",5.0,"الغربية","Gharbia Governorate"],["Monufia",4.3,"المنوفية","Monufia Governorate"]],
+  {suf:[" M"," مليون"],dp:1,h:"Egypt governorate",k:["2017 CENSUS","تعداد 2017"],s:"geo",m:"eg"}),
+ Rd(["WHICH NATURE RESERVE","WAS PROTECTED FIRST",Q],["أنهي محمية","اتعملت الأول",QA],"min",[
+  ["Ras Mohammed",1983,"رأس محمد","Ras Muhammad National Park"],["Saint Catherine",1988,"سانت كاترين","Saint Catherine, Egypt"],["Wadi El Rayan",1989,"وادي الريان"],
+  ["Lake Qarun",1989,"بحيرة قارون","Lake Moeris"],["Nabq",1992,"نبق","Nabq Protected Area"],["Wadi Degla",1999,"وادي دجلة","Wadi Degla Protected Area"],
+  ["White Desert",2002,"الصحرا البيضا","White Desert National Park"],["Wadi El Gemal",2003,"وادي الجمال","Wadi El Gemal National Park"],["Gilf Kebir",2007,"الجلف الكبير"]],
+  {h:"Egypt nature reserve",k:["DECLARED A RESERVE","اتعلنت محمية سنة"],dt:["Declared a reserve", "إعلانها محمية"],g:"y",s:"geo",m:"eg"}),
+ Rd(["WHAT IS THE","LONGEST",Q],["أنهي","أطول حاجة",QA],"max",[
+  ["Cairo–Alexandria Desert Road",220,"الطريق الصحراوي (القاهرة–إسكندرية)","Cairo–Alexandria desert road"],["Suez Canal",193.3,"قناة السويس"],
+  ["New Suez Canal (2015)",72,"قناة السويس الجديدة (2015)","New Suez Canal"],["Cairo Metro Line 1",44.3,"الخط الأول للمترو"],["6th October Bridge",20.5,"كوبري 6 أكتوبر"],
+  ["Aswan High Dam",3.83,"السد العالي"],["Avenue of Sphinxes (Luxor)",2.7,"طريق الكباش","Avenue of Sphinxes"],
+  ["Ahmed Hamdi Tunnel",1.63,"نفق الشهيد أحمد حمدي"],["Great Pyramid (one side of base)",0.23,"الهرم الأكبر (ضلع القاعدة)","Great Pyramid of Giza"]],
+  {pre:["~","~"],suf:[" km"," كم"],h:"Egypt landmark",k:["LENGTH","الطول"],s:"geo",m:"eg"}),
+ Rd(["WHICH CITY WAS","BUILT FIRST",Q],["أنهي مدينة","اتبنت الأول",QA],"min",[
+  ["Port Said",1859,"بورسعيد"],["Ismailia",1863,"الإسماعيلية"],["Heliopolis",1905,"مصر الجديدة","Heliopolis, Cairo"],
+  ["10th of Ramadan City",1977,"العاشر من رمضان","10th of Ramadan"],["6th of October City",1979,"6 أكتوبر","6th of October (city)"],
+  ["Sheikh Zayed City",1995,"الشيخ زايد"],["New Cairo",2000,"القاهرة الجديدة"],["New Administrative Capital",2015,"العاصمة الإدارية الجديدة"],
+  ["New Alamein",2018,"العلمين الجديدة"]],
+  {h:"Egyptian city",k:["FOUNDED","اتأسست سنة"],dt:["City founded", "تأسيس المدينة"],g:"y",s:"geo",m:"eg"}),
+ Rd(["WHICH IS THE","BIGGEST ISLAND",Q],["أنهي","أكبر جزيرة",QA],"max",[
+  ["Greenland",2130,"جرينلاند"],["New Guinea",786,"غينيا الجديدة"],["Borneo",748,"بورنيو"],["Madagascar",587,"مدغشقر"],
+  ["Sumatra",443,"سومطرة"],["Great Britain",209,"بريطانيا العظمى"],["Cuba",105,"كوبا"],["Iceland",102,"أيسلندا"],["Sicily",26,"صقلية"]],
+  {pre:["~","~"],suf:[" K km²"," ألف كم²"],h:"island",k:["AREA","المساحة"],s:"geo",m:"w"}),
+ Rd(["WHICH IS THE","DEEPEST LAKE",Q],["أنهي","أعمق بحيرة",QA],"max",[
+  ["Lake Baikal",1642,"بحيرة بايكال"],["Lake Tanganyika",1470,"بحيرة تنجانيقا"],["Caspian Sea",1025,"بحر قزوين"],["Lake Malawi",706,"بحيرة ملاوي"],
+  ["Crater Lake",594,"كريتر ليك"],["Lake Tahoe",501,"بحيرة تاهو"],["Lake Superior",406,"بحيرة سوبيريور"],["Lake Geneva",310,"بحيرة جنيف"],["Loch Ness",230,"بحيرة لوخ نيس"]],
+  {pre:["~","~"],suf:[" m"," متر"],h:"lake",k:["MAX DEPTH","أقصى عمق"],s:"geo",m:"w"}),
+ Rd(["WHICH IS THE","HIGHEST WATERFALL",Q],["أنهي","أعلى شلال",QA],"max",[
+  ["Angel Falls",979,"شلالات أنجل"],["Yosemite Falls",739,"شلالات يوسمايت"],["Sutherland Falls",580,"شلالات ساذرلاند"],["Kaieteur Falls",226,"شلالات كايتور"],
+  ["Multnomah Falls",189,"شلالات مولتنوما"],["Victoria Falls",108,"شلالات فيكتوريا"],["Iguazu Falls",82,"شلالات إجوازو"],["Niagara Falls",51,"شلالات نياجرا"],["Rhine Falls",23,"شلالات الراين"]],
+  {pre:["~","~"],suf:[" m"," متر"],h:"waterfall",k:["HEIGHT","الارتفاع"],s:"geo",m:"w"}),
+ Rd(["WHICH COUNTRY HAS THE","MOST NEIGHBOURS",Q],["أنهي دولة","ليها أكتر جيران",QA],"max",[
+  ["China",14,"الصين"],["Brazil",10,"البرازيل"],["Germany",9,"ألمانيا"],["Turkey",8,"تركيا"],["Saudi Arabia",7,"السعودية"],
+  ["Italy",6,"إيطاليا"],["Argentina",5,"الأرجنتين"],["Portugal",1,"البرتغال"],["Australia",0,"أستراليا"]],
+  {h:"country",k:["LAND NEIGHBOURS","دول على حدودها"],s:"geo",m:"w"}),
+ Rd(["WHICH CAPITAL IS","HIGHEST ABOVE SEA LEVEL",Q],["أنهي عاصمة","أعلى من سطح البحر",QA],"max",[
+  ["Quito",2850,"كيتو"],["Bogotá",2600,"بوجوتا"],["Addis Ababa",2350,"أديس أبابا"],["Mexico City",2240,"مكسيكو سيتي"],["Nairobi",1700,"نيروبي"],
+  ["Brasília",1100,"برازيليا"],["Ankara",900,"أنقرة"],["Madrid",650,"مدريد"],["Rome",20,"روما"]],
+  {pre:["~","~"],suf:[" m"," متر"],h:"city",k:["ELEVATION","الارتفاع عن البحر"],s:"geo",m:"w"})]},
+{n:"History",a:"التاريخ",e:"🏛️",r:[
+ Rd(["WHICH PHARAOH","RULED FIRST",Q],["أنهي فرعون","حكم الأول",QA],"max",[
+  ["Narmer",3100,"نارمر (مينا)"],["Djoser",2670,"زوسر"],["Khufu",2589,"خوفو"],["Hatshepsut",1479,"حتشبسوت"],["Akhenaten",1353,"إخناتون"],
+  ["Tutankhamun",1332,"توت عنخ آمون"],["Ramesses II",1279,"رمسيس التاني"],["Ptolemy I",305,"بطليموس الأول","Ptolemy I Soter"],["Cleopatra",51,"كليوباترا"]],
+  {pre:["c. ",""],suf:[" BC"," ق.م"],h:"pharaoh",k:["CAME TO POWER","بدأ يحكم"],s:"history",m:"eg"}),
+  Rd(["WHAT","HAPPENED FIRST",Q],["أنهي حدث","حصل الأول",QA],"min",[
+   ["Suez Canal opens",1869,"افتتاح قناة السويس","Suez Canal"],["Cairo University founded",1908,"تأسيس جامعة القاهرة","Cairo University"],["1919 Revolution",1919,"ثورة 1919","Egyptian revolution of 1919"],
+   ["Tutankhamun's tomb found",1922,"اكتشاف مقبرة توت عنخ آمون","KV62"],["July Revolution",1952,"ثورة 23 يوليو","Egyptian revolution of 1952"],["High Dam completed",1970,"اكتمال السد العالي","Aswan Dam"],
+   ["October War",1973,"حرب أكتوبر","Yom Kippur War"],["Mahfouz wins the Nobel",1988,"نجيب محفوظ ياخد نوبل","Naguib Mahfouz"],["Grand Egyptian Museum opens",2025,"افتتاح المتحف المصري الكبير","Grand Egyptian Museum"]],
+   {h:"Egypt",k:["YEAR","السنة"],dt:["Event in Egypt", "حدث في مصر"],g:"y",s:"history",m:"eg"}),
+  Rd(["WHO","RULED EGYPT FIRST",Q],["مين","حكم مصر الأول",QA],"min",[
+   ["Muhammad Ali Pasha",1805,"محمد علي باشا","Muhammad Ali of Egypt"],["Khedive Ismail",1863,"الخديوي إسماعيل","Isma'il Pasha"],["King Fuad I",1917,"الملك فؤاد الأول","Fuad I of Egypt"],
+   ["King Farouk",1936,"الملك فاروق","Farouk of Egypt"],["Mohamed Naguib",1953,"محمد نجيب"],["Gamal Abdel Nasser",1954,"جمال عبد الناصر"],["Anwar Sadat",1970,"أنور السادات"],
+   ["Hosni Mubarak",1981,"حسني مبارك"],["Abdel Fattah el-Sisi",2014,"عبد الفتاح السيسي"]],{h:"ruler of Egypt",k:["CAME TO POWER","بدأ يحكم"],s:"history",m:"eg"}),
+ Rd(["WHICH WORLD EVENT","HAPPENED FIRST",Q],["أنهي حدث عالمي","حصل الأول",QA],"min",[
+  ["Columbus reaches America",1492,"كولومبوس يوصل أمريكا","Voyages of Christopher Columbus"],["French Revolution",1789,"الثورة الفرنسية"],
+  ["Titanic sinks",1912,"غرق تايتانيك","Sinking of the Titanic"],["World War I begins",1914,"بداية الحرب العالمية الأولى","World War I"],
+  ["World War II ends",1945,"نهاية الحرب العالمية التانية","World War II"],["Moon landing",1969,"أول نزول على القمر","Apollo 11"],
+  ["Chernobyl disaster",1986,"كارثة تشيرنوبل"],["Fall of the Berlin Wall",1989,"سقوط سور برلين"],["9/11 attacks",2001,"أحداث 11 سبتمبر","September 11 attacks"]],
+  {h:"history",k:["YEAR","السنة"],dt:["World event", "حدث عالمي"],g:"y",s:"history",m:"w"}),
+ Rd(["WHICH INVENTION","CAME FIRST",Q],["أنهي اختراع","ظهر الأول",QA],"min",[
+  ["Telescope",1608,"التلسكوب"],["Steam train",1804,"قطر البخار","Steam locomotive"],["Telephone",1876,"التليفون"],
+  ["Light bulb",1879,"اللمبة","Incandescent light bulb"],["Car (Benz patent)",1886,"العربية (براءة بنز)","Benz Patent-Motorwagen"],["Airplane",1903,"الطيارة","Wright Flyer"],
+  ["Penicillin",1928,"البنسلين"],["World Wide Web",1989,"الويب (الإنترنت)"],["iPhone",2007,"الآيفون","iPhone (1st generation)"]],
+  {h:"invention",k:["INVENTED","اتخترع سنة"],dt:["Invented", "الاختراع"],g:"y",s:"history",m:"w"}),
+ Rd(["WHICH LANDMARK","IS THE OLDEST",Q],["أنهي معلم","الأقدم",QA],"min",[
+  ["Amr ibn al-As Mosque",642,"جامع عمرو بن العاص"],["Mosque of Ibn Tulun",879,"جامع ابن طولون"],["Al-Azhar Mosque",972,"الجامع الأزهر"],
+  ["Sultan Hassan Mosque",1363,"جامع السلطان حسن","Mosque–Madrasa of Sultan Hasan"],["Qaitbay Citadel",1479,"قلعة قايتباي","Citadel of Qaitbay"],["Egyptian Museum",1902,"المتحف المصري في التحرير"],
+  ["Baron Empain Palace",1911,"قصر البارون"],["Cairo Tower",1961,"برج القاهرة"],["Cairo Opera House",1988,"دار الأوبرا"]],
+  {h:"Egypt landmark",k:["COMPLETED","خلص بناؤه سنة"],dt:["Building completed", "خلص بناؤه"],g:"y",s:"history",m:"eg"}),
+ Rd(["WHICH PIONEER WAS","BORN FIRST",Q],["مين من الرواد","اتولد الأول",QA],"min",[
+  ["Rifa'a al-Tahtawi",1801,"رفاعة الطهطاوي"],["Ahmed Orabi",1841,"أحمد عرابي","Ahmed Urabi"],["Talaat Harb",1867,"طلعت حرب"],
+  ["Mostafa Kamel",1874,"مصطفى كامل","Mustafa Kamil Pasha"],["Ali Moustafa Mosharafa",1898,"علي مصطفى مشرفة"],["Samira Moussa",1917,"سميرة موسى"],
+  ["Magdi Yacoub",1935,"مجدي يعقوب"],["Farouk El-Baz",1938,"فاروق الباز"],["Ahmed Zewail",1946,"أحمد زويل"]],
+  {h:"Egyptian historical figure",k:BORN,g:"p",s:"history",m:"eg"}),
+ Rd(["WHICH WRITER WAS","BORN LAST",Q],["مين من الكتّاب","اتولد الآخر",QA],"max",[
+  ["Taha Hussein",1889,"طه حسين"],["Naguib Mahfouz",1911,"نجيب محفوظ"],["Ihsan Abdel Quddous",1919,"إحسان عبد القدوس"],
+  ["Youssef Idris",1927,"يوسف إدريس","Yusuf Idris"],["Salah Jahin",1930,"صلاح جاهين"],["Abdel Rahman el-Abnudi",1938,"عبد الرحمن الأبنودي"],
+  ["Alaa Al Aswany",1957,"علاء الأسواني"],["Ahmed Khaled Tawfik",1962,"أحمد خالد توفيق"],["Ahmed Mourad",1978,"أحمد مراد"]],
+  {h:"Egyptian writer",k:BORN,g:"p",s:"history",m:"eg"}),
+ Rd(["WHICH ERA","BEGAN FIRST",Q],["أنهي عصر","بدأ الأول",QA],"min",[
+  ["Tulunid era",868,"الدولة الطولونية","Tulunid dynasty"],["Fatimid era",969,"الدولة الفاطمية","Fatimid Caliphate"],["Ayyubid era",1171,"الدولة الأيوبية","Ayyubid dynasty"],
+  ["Mamluk era",1250,"دولة المماليك","Mamluk Sultanate"],["Ottoman rule",1517,"الحكم العثماني","Ottoman Egypt"],["French campaign",1798,"الحملة الفرنسية","French campaign in Egypt and Syria"],
+  ["Muhammad Ali dynasty",1805,"أسرة محمد علي","Muhammad Ali dynasty"],["British occupation",1882,"الاحتلال الإنجليزي","History of Egypt under the British"],["Republic declared",1953,"إعلان الجمهورية","Republic of Egypt (1953–1958)"]],
+  {h:"Egypt history",k:["BEGAN IN EGYPT","بدأ في مصر سنة"],dt:["Era began in Egypt", "بداية العصر في مصر"],g:"y",s:"history",m:"eg"}),
+ Rd(["WHICH PROJECT","OPENED LAST",Q],["أنهي مشروع","اتفتح آخر واحد",QA],"max",[
+  ["Suez Canal",1869,"قناة السويس"],["Aswan Low Dam",1902,"خزان أسوان"],["Cairo International Stadium",1960,"استاد القاهرة"],
+  ["Cairo International Airport",1963,"مطار القاهرة الدولي"],["Cairo Metro (Line 1)",1987,"مترو الأنفاق (الخط الأول)","Cairo Metro Line 1"],["Bibliotheca Alexandrina",2002,"مكتبة إسكندرية"],
+  ["Al-Azhar Park",2005,"حديقة الأزهر"],["New Suez Canal",2015,"قناة السويس الجديدة"],["Rod El Farag Axis",2019,"محور روض الفرج","Rod El Farag Axis Bridge"]],
+  {h:"Egypt landmark",k:["OPENED","اتفتح سنة"],dt:["Project opened", "افتتاح المشروع"],g:"y",s:"history",m:"eg"}),
+ Rd(["WHICH LANDMARK WAS","FINISHED FIRST",Q],["أنهي معلم","خلص بناؤه الأول",QA],"min",[
+  ["Leaning Tower of Pisa",1372,"برج بيزا المايل"],["Forbidden City",1420,"المدينة المحرمة"],["St. Peter's Basilica",1626,"كنيسة القديس بطرس"],
+  ["Big Ben",1859,"بيج بن"],["Statue of Liberty",1886,"تمثال الحرية"],["Eiffel Tower",1889,"برج إيفل"],
+  ["Empire State Building",1931,"مبنى إمباير ستيت"],["Golden Gate Bridge",1937,"كوبري الجولدن جيت"],["Sydney Opera House",1973,"دار أوبرا سيدني"]],
+  {h:"landmark",k:["COMPLETED","خلص بناؤه سنة"],dt:["Building completed", "خلص بناؤه"],g:"y",s:"history",m:"w"}),
+ Rd(["WHICH GENIUS WAS","BORN FIRST",Q],["مين من العباقرة","اتولد الأول",QA],"min",[
+  ["Leonardo da Vinci",1452,"ليوناردو دافنشي"],["Galileo Galilei",1564,"جاليليو"],["Charles Darwin",1809,"تشارلز داروين"],
+  ["Louis Pasteur",1822,"لويس باستير"],["Thomas Edison",1847,"توماس إديسون"],["Nikola Tesla",1856,"نيكولا تيسلا"],
+  ["Marie Curie",1867,"ماري كوري"],["Albert Einstein",1879,"ألبرت أينشتاين"],["Stephen Hawking",1942,"ستيفن هوكينج"]],
+  {h:"scientist",k:BORN,g:"p",s:"history",m:"w"}),
+ Rd(["WHICH COUNTRY BECAME","INDEPENDENT LAST",Q],["أنهي دولة","استقلت آخر واحدة",QA],"max",[
+  ["USA",1776,"أمريكا","United States"],["Brazil",1822,"البرازيل"],["Finland",1917,"فنلندا"],
+  ["India",1947,"الهند"],["Libya",1951,"ليبيا"],["Morocco",1956,"المغرب"],
+  ["Kuwait",1961,"الكويت"],["Algeria",1962,"الجزائر"],["UAE",1971,"الإمارات","United Arab Emirates"]],
+  {h:"country flag",k:["INDEPENDENCE","استقلت سنة"],dt:["Independence", "الاستقلال"],g:"y",s:"history",m:"w"}),
+ Rd(["WHICH SPACE MOMENT","IS THE MOST RECENT",Q],["أنهي حدث في الفضاء","الأحدث",QA],"max",[
+  ["Sputnik launched",1957,"إطلاق سبوتنيك","Sputnik 1"],["Gagarin, first man in space",1961,"جاجارين أول إنسان في الفضاء","Yuri Gagarin"],["Tereshkova, first woman in space",1963,"تيريشكوفا أول ست في الفضاء","Valentina Tereshkova"],
+  ["Voyager 1 launched",1977,"إطلاق فوياجر 1","Voyager 1"],["First Space Shuttle flight",1981,"أول رحلة لمكوك الفضاء","STS-1"],["Hubble launched",1990,"إطلاق تلسكوب هابل","Hubble Space Telescope"],
+  ["First ISS module launched",1998,"أول جزء من محطة الفضاء الدولية","Zarya"],["First photo of a black hole",2019,"أول صورة لثقب أسود","Event Horizon Telescope"],["James Webb launched",2021,"إطلاق تلسكوب جيمس ويب","James Webb Space Telescope"]],
+  {h:"space",k:["YEAR","السنة"],dt:["Space milestone", "حدث في الفضاء"],g:"y",s:"history",m:"w"}),
+ Rd(["WHICH CITY HOSTED","THE OLYMPICS FIRST",Q],["أنهي مدينة","استضافت الأولمبياد الأول",QA],"min",[
+  ["Paris",1900,"باريس"],["London",1908,"لندن"],["Los Angeles",1932,"لوس أنجلوس"],
+  ["Berlin",1936,"برلين"],["Rome",1960,"روما"],["Tokyo",1964,"طوكيو"],
+  ["Barcelona",1992,"برشلونة"],["Sydney",2000,"سيدني"],["Rio de Janeiro",2016,"ريو دي جانيرو"]],
+  {h:"city",k:["FIRST HOSTED","أول أولمبياد سنة"],dt:["First hosted the Olympics", "أول أولمبياد فيها"],g:"y",s:"history",m:"w"})]},
+{n:"Animals",a:"الحيوانات",e:"🐾",r:[
+ Rd(["WHICH IS THE","FASTEST RUNNER",Q],["مين","أسرع واحد في الجري",QA],"max",[
+  ["Cheetah",112,"الشيتا"],["Pronghorn",88,"ظبي البرونجهورن"],["Racehorse",70,"حصان السباق","Thoroughbred"],["Lion",80,"الأسد"],["Greyhound",72,"كلب الجراي هاوند"],
+  ["Kangaroo",60,"الكنغر","Red kangaroo"],["Ostrich",70,"النعامة","Common ostrich"],["Grizzly Bear",56,"الدب الأشهب","Grizzly bear"],["Usain Bolt",45,"يوسين بولت"]],{suf:[" km/h"," كم/ساعة"],h:"animal",k:["TOP SPEED","أقصى سرعة"],s:"animals",m:"w"}),
+ Rd(["WHICH IS THE","HEAVIEST ANIMAL",Q],["أنهي","أتقل حيوان",QA],"max",[
+  ["Blue Whale",150000,"الحوت الأزرق","Blue whale"],["African Elephant",6000,"الفيل الأفريقي","African bush elephant"],["White Rhino",2300,"وحيد القرن الأبيض","White rhinoceros"],
+  ["Hippo",1500,"فرس النهر","Hippopotamus"],["Giraffe",1200,"الزرافة"],["Saltwater Crocodile",450,"تمساح المية المالحة","Saltwater crocodile"],
+  ["Polar Bear",500,"الدب القطبي","Polar bear"],["Gorilla",180,"الغوريلا"],["Lion",190,"الأسد"]],{suf:[" kg"," كيلو"],h:"animal",k:["WEIGHT","الوزن"],s:"animals",m:"w"}),
+ Rd(["WHICH ANIMAL","LIVES THE LONGEST",Q],["أنهي حيوان","بيعيش أطول عمر",QA],"max",[
+  ["Greenland Shark",400,"قرش جرينلاند","Greenland shark"],["Bowhead Whale",200,"الحوت مقوّس الرأس","Bowhead whale"],["Giant Tortoise",190,"السلحفاة العملاقة","Aldabra giant tortoise"],
+  ["Elephant",70,"الفيل"],["Macaw",60,"ببغاء المكاو"],["Horse",40,"الحصان"],["Cat",20,"القطة"],["Dog",16,"الكلب"],["Hamster",3,"الهامستر"]],{suf:[" yrs"," سنة"],h:"animal",k:["LIVES UP TO","بيعيش لحد"],s:"animals",m:"w"}),
+ Rd(["WHICH ANIMAL HAS THE","LONGEST PREGNANCY",Q],["أنهي حيوان","حمله بياخد أطول وقت",QA],"max",[
+  ["African Elephant",650,"الفيل الأفريقي","African bush elephant"],["Giraffe",430,"الزرافة"],["Camel",390,"الجمل","Dromedary"],
+  ["Horse",340,"الحصان"],["Cow",280,"البقرة","Cattle"],["Lion",110,"الأسد"],["Dog",63,"الكلب"],["Rabbit",31,"الأرنب"],["Hamster",16,"الهامستر","Golden hamster"]],
+  {pre:["~","~"],suf:[" days"," يوم"],h:"animal",k:["PREGNANCY","مدة الحمل"],s:"animals",m:"w"}),
+ Rd(["WHICH ANIMAL","SLEEPS THE MOST",Q],["أنهي حيوان","بينام أكتر",QA],"max",[
+  ["Koala",20,"الكوالا"],["Newborn baby",16,"البيبي حديث الولادة","Infant"],["Cat",14,"القطة"],
+  ["Dog",12,"الكلب"],["Chimpanzee",10,"الشمبانزي"],["Adult human",8,"الإنسان البالغ","Human"],
+  ["Cow",4,"البقرة","Cattle"],["Horse",3,"الحصان"],["Elephant",2,"الفيل","African bush elephant"]],
+  {pre:["~","~"],suf:[" hrs"," ساعة"],h:"animal",k:["SLEEP PER DAY","النوم في اليوم"],s:"animals",m:"w"}),
+ Rd(["WHICH ANIMAL HAS THE","MOST TEETH",Q],["أنهي حيوان","عنده سنان أكتر",QA],"max",[
+  ["Alligator",80,"التمساح الأمريكي (الأليجيتور)","American alligator"],["Pig",44,"الخنزير"],["Dog",42,"الكلب"],
+  ["Human",32,"الإنسان"],["Cow",32,"البقرة","Cattle"],["Cat",30,"القطة"],
+  ["Rabbit",28,"الأرنب"],["Mouse",16,"الفار","House mouse"],["Giant anteater",0,"آكل النمل"]],
+  {suf:[" teeth"," سنّة"],h:"animal",k:["ADULT TEETH","عدد السنان"],s:"animals",m:"w"}),
+ Rd(["AT REST, WHOSE HEART","BEATS THE FASTEST",Q],["وهو مرتاح، مين","قلبه بيدق أسرع",QA],"max",[
+  ["Mouse",600,"الفار","House mouse"],["Rat",350,"الجرذ","Brown rat"],["Rabbit",250,"الأرنب"],
+  ["Cat",130,"القطة"],["Dog",100,"الكلب"],["Human",70,"الإنسان"],
+  ["Cow",65,"البقرة","Cattle"],["Horse",35,"الحصان"],["Elephant",30,"الفيل","African bush elephant"]],
+  {pre:["~","~"],suf:[" bpm"," نبضة/دقيقة"],h:"animal",k:["RESTING HEART RATE","النبض وهو مرتاح"],s:"animals",m:"w"}),
+ Rd(["WHICH BIRD HAS THE","WIDEST WINGSPAN",Q],["أنهي طير","جناحاته أعرض",QA],"max",[
+  ["Albatross",300,"القطرس","Wandering albatross"],["Swan",220,"البجعة","Mute swan"],["Bald eagle",200,"النسر الأصلع"],
+  ["Flamingo",155,"البشاروش (الفلامنجو)","Greater flamingo"],["Seagull",140,"النورس","European herring gull"],["Crow",100,"الغراب","Carrion crow"],
+  ["Pigeon",65,"الحمامة","Rock dove"],["Sparrow",22,"العصفورة","House sparrow"],["Hummingbird",10,"الطائر الطنان","Ruby-throated hummingbird"]],
+  {pre:["~","~"],suf:[" cm"," سم"],h:"bird",k:["WINGSPAN","فردة الجناحين"],s:"animals",m:"w"}),
+ Rd(["WHICH BIRD LAYS THE","HEAVIEST EGG",Q],["أنهي طير","بيضته أتقل",QA],"max",[
+  ["Ostrich",1400,"النعامة","Common ostrich"],["Emu",550,"الإيمو"],["Emperor penguin",450,"البطريق الإمبراطور"],
+  ["Goose",160,"الوزة","Domestic goose"],["Turkey (bird)",80,"الديك الرومي","Domestic turkey"],["Chicken",55,"الفرخة"],
+  ["Pigeon",17,"الحمامة","Rock dove"],["Quail",9,"السمان","Common quail"],["Hummingbird",0.5,"الطائر الطنان"]],
+  {pre:["~","~"],suf:[" g"," جرام"],h:"bird",k:["EGG WEIGHT","وزن البيضة"],s:"animals",m:"w"}),
+ Rd(["WHICH ANIMAL HAS THE","STRONGEST BITE",Q],["أنهي حيوان","عضته أقوى",QA],"max",[
+  ["Saltwater crocodile",3700,"تمساح المية المالحة"],["Hippo",1800,"فرس النهر","Hippopotamus"],["Jaguar",1500,"الجاجوار"],
+  ["Gorilla",1300,"الغوريلا"],["Polar bear",1200,"الدب القطبي"],["Tiger",1050,"النمر","Bengal tiger"],
+  ["Lion",650,"الأسد"],["Rottweiler",330,"الروت وايلر"],["Human",150,"الإنسان"]],
+  {pre:["~","~"],suf:[" PSI"," PSI"],h:"animal",k:["BITE FORCE","قوة العضة"],s:"animals",m:"w"}),
+ Rd(["WHICH ANIMAL HAS THE","HEAVIEST BRAIN",Q],["أنهي حيوان","مخه أتقل",QA],"max",[
+  ["Sperm whale",7800,"حوت العنبر"],["Elephant",4800,"الفيل","African bush elephant"],["Dolphin",1600,"الدولفين","Common bottlenose dolphin"],
+  ["Human",1350,"الإنسان"],["Horse",530,"الحصان"],["Gorilla",500,"الغوريلا"],
+  ["Lion",240,"الأسد"],["Dog",70,"الكلب"],["Cat",30,"القطة"]],
+  {pre:["~","~"],suf:[" g"," جرام"],h:"animal",k:["BRAIN WEIGHT","وزن المخ"],s:"animals",m:"w"}),
+ Rd(["WHICH SACRED PHARAONIC ANIMAL","IS THE HEAVIEST",Q],["أنهي حيوان مقدّس عند الفراعنة","الأتقل",QA],"max",[
+  ["Hippo (Taweret)",1500,"فرس النهر (تاورت)","Hippopotamus"],["Crocodile (Sobek)",400,"التمساح (سوبك)","Nile crocodile"],["Lion (Sekhmet)",190,"الأسد (سخمت)","Lion"],
+  ["Baboon (Thoth)",20,"القرد البابون (تحوت)","Hamadryas baboon"],["Jackal (Anubis)",10,"ابن آوى (أنوبيس)","Golden jackal"],["Vulture (Nekhbet)",8,"النسر (نخبت)","Griffon vulture"],
+  ["Cat (Bastet)",4,"القطة (باستت)","Cat"],["Ibis (Thoth)",1.5,"أبو منجل (تحوت)","African sacred ibis"],["Falcon (Horus)",0.8,"الصقر (حورس)","Peregrine falcon"]],
+  {pre:["~","~"],suf:[" kg"," كيلو"],h:"animal",k:["WEIGHT","الوزن"],s:"animals",m:"eg"}),
+ Rd(["WHICH ANIMAL OF EGYPT","LIVES THE LONGEST",Q],["أنهي حيوان مصري","بيعيش أطول",QA],"max",[
+  ["Nile crocodile",50,"تمساح النيل"],["Donkey",30,"الحمار"],["Arabian horse",27,"الحصان العربي"],
+  ["Gamoosa (water buffalo)",25,"الجاموسة","Water buffalo"],["Nubian ibex",15,"الوعل النوبي"],["Egyptian Mau",14,"القطة المصري (الماو)"],
+  ["Dorcas gazelle",12,"الغزال المصري"],["Egyptian mongoose",12,"النمس"],["Fennec fox",10,"الفنك (ثعلب الصحرا)"]],
+  {pre:["~","~"],suf:[" yrs"," سنة"],h:"animal",k:["TYPICAL LIFESPAN","متوسط العمر"],s:"animals",m:"eg"}),
+ Rd(["WHICH RED SEA CREATURE","IS THE LONGEST",Q],["أنهي كائن في البحر الأحمر","الأطول",QA],"max",[
+  ["Whale shark",10,"القرش الحوتي"],["Oceanic whitetip shark",3,"قرش الوايت تيب"],["Dugong",3,"عروس البحر (الأطوم)"],
+  ["Dolphin",2.6,"الدولفين","Indo-Pacific bottlenose dolphin"],["Moray eel",2,"ثعبان البحر (الموراي)","Giant moray"],["Barracuda",1.4,"الباراكودا","Great barracuda"],
+  ["Green sea turtle",1,"السلحفاة الخضرا"],["Lionfish",0.3,"سمكة الأسد","Pterois miles"],["Clownfish (Nemo)",0.1,"سمكة المهرج (نيمو)","Red Sea clownfish"]],
+  {pre:["~","~"],suf:[" m"," متر"],h:"sea animal",k:["LENGTH","الطول"],s:"animals",m:"eg"})]},
+{n:"Games & Tech",a:"الألعاب والتكنولوجيا",e:"🎮",r:[
+ Rd(["WHICH IS THE","OLDEST VIDEO GAME",Q],["أنهي","أقدم لعبة فيديو",QA],"min",[
+  ["Pac-Man",1980],["Tetris",1984],["Super Mario Bros.",1985],["The Legend of Zelda",1986,0,"The Legend of Zelda (video game)"],["Pokémon Red & Green",1996,0,"Pokémon Red and Blue"],
+  ["Grand Theft Auto",1997,0,"Grand Theft Auto (video game)"],["Minecraft",2011],["Fortnite",2017],["Among Us",2018]],{h:"video game",k:["RELEASED","نزلت سنة"],dt:["Game released", "نزول اللعبة"],g:"y",s:"games",m:"w"}),
+ Rd(["WHICH IS THE","OLDEST CONSOLE",Q],["أنهي","أقدم جهاز ألعاب",QA],"min",[
+  ["Atari 2600",1977],["NES / Famicom",1983,0,"Nintendo Entertainment System"],["Game Boy",1989],["PlayStation",1994,0,"PlayStation (console)"],["Nintendo 64",1996],
+  ["Xbox",2001,0,"Xbox (console)"],["Wii",2006],["PlayStation 4",2013],["Nintendo Switch",2017]],{h:"video game console",k:["RELEASED","نزل سنة"],dt:["Console released", "نزول الجهاز"],g:"y",s:"games",m:"w"}),
+ Rd(["WHICH IS THE","OLDEST COMPANY",Q],["أنهي","أقدم شركة",QA],"min",[
+  ["Nintendo",1889],["Ford",1903,0,"Ford Motor Company"],["IBM",1911],["Disney",1923,0,"The Walt Disney Company"],["Toyota",1937],["Samsung",1938],
+  ["Sony",1946],["Apple",1976,0,"Apple Inc."],["Google",1998]],{h:"company",k:["FOUNDED","اتأسست سنة"],dt:["Company founded", "تأسيس الشركة"],g:"y",s:"brands",m:"w"}),
+ Rd(["WHICH IS THE","NEWEST APP",Q],["أنهي","أحدث أبلكيشن",QA],"max",[
+  ["Facebook",2004],["YouTube",2005],["Twitter",2006],["WhatsApp",2009],["Instagram",2010],["Snapchat",2011],["TikTok",2016],["ChatGPT",2022],
+  ["Threads",2023,0,"Threads (social network)"]],{h:"app",k:["LAUNCHED","نزل سنة"],dt:["App launched", "نزول الأبلكيشن"],g:"y",s:"brands",m:"w"}),
+  Rd(["WHICH IS THE","OLDEST EGYPTIAN BRAND",Q],["أنهي","أقدم براند مصري",QA],"min",[
+   ["Al-Ahram",1875,"الأهرام"],["National Bank of Egypt",1898,"البنك الأهلي المصري"],["Banque Misr",1920,"بنك مصر"],["EgyptAir",1932,"مصر للطيران"],
+   ["Juhayna",1983,"جهينة","Juhayna Food Industries"],["Edita",1996,"إيديتا","Edita Food Industries"],["Vodafone Egypt",1998,"فودافون مصر"],["Fawry",2008,"فوري"],["Swvl",2017,"سويفل"]],
+   {h:"company",k:["FOUNDED","اتأسس سنة"],dt:["Brand founded", "تأسيس البراند"],g:"y",s:"brands",m:"eg"}),
+ Rd(["WHICH MOBILE GAME","CAME OUT FIRST",Q],["أنهي لعبة موبايل","نزلت الأول",QA],"min",[
+  ["Snake (Nokia)",1997,"التعبان (سنيك)","Snake (video game genre)"],["Angry Birds",2009,"أنجري بيردز","Angry Birds (video game)"],["Fruit Ninja",2010,"فروت نينجا"],
+  ["Temple Run",2011,"تمبل رن"],["Subway Surfers",2012,"صبواي سيرفرز"],["Flappy Bird",2013,"فلابي بيرد"],["Pokémon Go",2016,"بوكيمون جو"],
+  ["Free Fire",2017,"فري فاير","Free Fire (video game)"],["PUBG Mobile",2018,"ببجي موبايل"]],
+  {h:"video game",k:["RELEASED","نزلت سنة"],dt:["Game released", "نزول اللعبة"],g:"y",s:"games",m:"w"}),
+ Rd(["WHICH STARTUP","WAS FOUNDED FIRST",Q],["أنهي ستارتب","اتأسست الأول",QA],"min",[
+  ["Fawry",2008,"فوري"],["Elmenus",2011,"المنيوز"],["Vezeeta",2012,"فيزيتا"],["Paymob",2015,"باي موب"],["Swvl",2017,"سويفل"],
+  ["Breadfast",2017,"بريدفاست"],["MaxAB",2018,"ماكس أب"],["Khazna",2019,"خزنة"],["Rabbit Mart",2021,"رابيت"]],
+  {h:"app",k:["FOUNDED","اتأسست سنة"],dt:["Startup founded", "تأسيس الشركة"],g:"y",s:"brands",m:"eg"}),
+ Rd(["WHICH BRAND","STARTED MOST RECENTLY",Q],["أنهي براند","اتأسس آخر واحد",QA],"max",[
+  ["Elsewedy Electric",1938,"السويدي"],["Bisco Misr",1957,"بسكو مصر","BiscoMisr"],["Felfela",1959,"فلفلة"],["Elaraby",1964,"العربي","Elaraby Group"],
+  ["Mo'men",1988,"مؤمن"],["Cook Door",1988,"كوك دور"],["Edita",1996,"إيديتا","Edita Food Industries"],["Buffalo Burger",2008,"بافلو برجر"],["Zooba",2012,"زووبا"]],
+  {h:"company",k:["FOUNDED","اتأسس سنة"],dt:["Brand founded", "تأسيس البراند"],g:"y",s:"brands",m:"eg"})]},
+{n:"Food & Drinks",a:"أكل وشرب",e:"🍲",r:[
+ Rd(["WHICH EGYPTIAN BRAND","WAS FOUNDED FIRST",Q],["أنهي براند مصري","اتأسس الأول",QA],"min",[
+  ["El Rashidi El Mizan",1889,"الرشيدي الميزان"],["Corona",1919,"كورونا"],["Spiro Spathis",1920,"سبيرو سباتس"],["Bisco Misr",1957,"بسكو مصر","BiscoMisr"],["Faragello",1973,"فرجللو"],["Vitrac",1982,"فيتراك"],["Juhayna",1983,"جهينة","Juhayna Food Industries"],["Regina",1986,"ريجينا"],["Edita",1996,"إيديتا"]],
+  {h:"Egyptian food brand",k:["FOUNDED","اتأسس سنة"],g:"y",dt:["Company founded","تأسيس الشركة"],s:"snacks",m:"eg"}),
+ Rd(["WHICH DRINK OR DAIRY BRAND","WAS FOUNDED LAST",Q],["أنهي براند عصير أو ألبان","اتأسس آخر واحد",QA],"max",[
+  ["Spiro Spathis",1920,"سبيرو سباتس"],["Faragello",1973,"فرجللو"],["Juhayna",1983,"جهينة","Juhayna Food Industries"],["Panda (Arab Dairy)",1985,"باندا"],["Dina Farms",1987,"دينا فارمز"],["Domty",1990,"دومتي"],["Greenland",1995,"جرين لاند"],["Obour Land",1997,"عبور لاند"],["Beyti",1998,"بيتي"]],
+  {h:"Egyptian drink or dairy brand",k:["FOUNDED","اتأسس سنة"],g:"y",dt:["Company founded","تأسيس الشركة"],s:"snacks",m:"eg"}),
+ Rd(["WHICH GROCER","STARTED MOST RECENTLY",Q],["أنهي سوبرماركت","بدأ في مصر آخر واحد",QA],"max",[
+  ["Seoudi",1938,"سعودي ماركت"],["Awlad Ragab",1970,"أولاد رجب"],["Metro Market",1998,"مترو ماركت"],["Carrefour",2002,"كارفور"],["Hyper One",2005,"هايبر وان"],["Gourmet",2006,"جورميه"],["Kheir Zaman",2006,"خير زمان"],["LuLu Hypermarket",2010,"لولو هايبر ماركت"],["Breadfast",2017,"بريدفاست"]],
+  {h:"supermarket chain in Egypt",k:["STARTED IN EGYPT","بدأ في مصر سنة"],g:"y",dt:["Started in Egypt","البداية في مصر"],s:"snacks",m:"eg"}),
+ Rd(["WHICH GLOBAL GIANT","CAME TO EGYPT FIRST",Q],["أنهي شركة عالمية","دخلت مصر الأول",QA],"min",[
+  ["Nestlé",1900,"نستله"],["Coca-Cola",1942,"كوكاكولا"],["Heinz",1989,"هاينز"],["Afia (Savola)",1995,"عافية","Savola Group"],["Heineken",2002,"هاينكن"],["Hero",2005,"هيرو","Hero Group"],["Danone",2006,"دانون"],["Almarai",2009,"المراعي"],["Kellogg's",2015,"كيلوجز"]],
+  {h:"food company in Egypt",k:["CAME TO EGYPT","دخلت مصر سنة"],g:"y",dt:["Arrived in Egypt","دخول مصر"],s:"snacks",m:"eg"}),
+ Rd(["WHICH CAFÉ","OPENED IN EGYPT FIRST",Q],["أنهي قهوة أو كافيه","اتفتح في مصر الأول",QA],"min",[
+  ["El Fishawy",1797,"قهوة الفيشاوي","El-Fishawy Café"],["Simonds",1898,"سيموندس"],["Café Riche",1908,"كافيه ريش"],["Brazilian Coffee Stores",1929,"البن البرازيلي"],["El Horreya Café",1936,"قهوة الحرية"],["Naguib Mahfouz Café",1989,"قهوة نجيب محفوظ"],["Cilantro",2000,"سيلانترو"],["Costa Coffee",2004,"كوستا"],["Starbucks",2006,"ستاربكس"]],
+  {h:"café in Egypt",k:["OPENED IN EGYPT","اتفتح في مصر سنة"],g:"y",dt:["Café opened in Egypt","افتتاح الكافيه في مصر"],s:"eats",m:"eg"}),
+ Rd(["WHICH PATISSERIE","IS THE NEWEST",Q],["أنهي محل حلويات","الأحدث",QA],"max",[
+  ["Groppi",1891,"جروبي"],["Simonds",1898,"سيموندس"],["El Malky",1917,"المالكي"],["Mandarine Koueider",1928,"مندرين قويدر"],["El Abd",1974,"العبد"],["La Poire",1975,"لابوار"],["Salé Sucré",1999,"ساليه سكريه"],["Sedra",2003,"سيدرا"],["TBS",2008,"تي بي إس"]],
+  {h:"Egyptian patisserie",k:["FOUNDED","اتأسس سنة"],g:"y",dt:["Patisserie founded","تأسيس محل الحلويات"],s:"eats",m:"eg"}),
+ Rd(["WHICH CHAIN","CAME TO EGYPT LAST",Q],["أنهي سلسلة مطاعم","دخلت مصر آخر واحدة",QA],"max",[
+  ["KFC",1973,"كنتاكي"],["McDonald's",1994,"ماكدونالدز"],["TGI Fridays",1997,"تي جي آي فرايدايز"],["Starbucks",2006,"ستاربكس"],["Burger King",2007,"برجر كينج"],["Fatburger",2013,"فات برجر"],["Dunkin'",2015,"دانكن"],["Arby's",2018,"آربيز"],["Krispy Kreme",2021,"كريسبي كريم"]],
+  {h:"international restaurant chain",k:["CAME TO EGYPT","دخلت مصر سنة"],g:"y",dt:["Arrived in Egypt","دخول مصر"],s:"eats",m:"eg"}),
+ Rd(["WHICH RESTAURANT","IS THE OLDEST",Q],["أنهي مطعم","الأقدم",QA],"min",[
+  ["Café Riche",1908,"كافيه ريش"],["Abou Shakra",1947,"أبو شقرة"],["Abou Tarek",1950,"أبو طارق"],["Mohamed Ahmed",1957,"محمد أحمد"],["Felfela",1959,"فلفلة"],["Gad",1969,"جاد"],["Mo'men",1988,"مؤمن"],["Abou El Sid",1999,"أبو السيد"],["Zooba",2012,"زووبا"]],
+  {h:"Egyptian restaurant",k:["OPENED","اتفتح سنة"],g:"y",dt:["Restaurant opened","افتتاح المطعم"],s:"eats",m:"eg"})]},
+{n:"Nostalgia",a:"ذكريات الطفولة",e:"📼",r:[
+ Rd(["WHO DID RAMADAN","FAWAZEER FIRST",Q],["مين عمل","فوازير رمضان الأول",QA],"min",[
+  ["Tholathy Adwaa El Masrah",1967,"ثلاثي أضواء المسرح"],["Nelly",1975,"نيللي","Nelly (Egyptian actress)"],["Fatouta",1982,"فطوطة","Samir Ghanem"],
+  ["Sherihan",1985,"شريهان"],["Sabreen",1988,"صابرين","Sabreen (actress)"],["Sherine Reda",1989,"شيرين رضا"],
+  ["Gihan Nasr",1997,"جيهان نصر"],["Ghada Abdel Razek",2003,"غادة عبد الرازق"],["Myriam Fares",2010,"ميريام فارس"]],
+  {h:"Egyptian Ramadan fawazeer TV",k:["FIRST FAWAZEER","أول فوازير"],g:"y",dt:["First Fawazeer","أول فوازير"],s:"kidstv",m:"eg"}),
+ Rd(["WHICH EGYPTIAN TV CHANNEL","LAUNCHED LAST",Q],["أنهي قناة مصرية","بدأت الآخر",QA],"max",[
+  ["Channel 1",1960,"القناة الأولى","Channel 1 (Egypt)"],["Egyptian Satellite Channel",1990,"الفضائية المصرية"],["Nile TV International",1994,"نايل تي في"],
+  ["Dream TV",2001,"دريم","Dream TV (Egypt)"],["Al Hayat TV",2008,"الحياة"],["ON TV",2008,"أون تي في","ON E"],
+  ["CBC",2011,"سي بي سي","Capital Broadcasting Center"],["MBC Masr",2012,"إم بي سي مصر"],["DMC",2017,"دي إم سي"]],
+  {h:"Egyptian TV channel",k:["LAUNCHED","بدأت سنة"],g:"y",dt:["Channel launched","انطلاق القناة"],s:"kidstv",m:"eg"}),
+ Rd(["WHICH EGYPTIAN RADIO STATION","WENT ON AIR LAST",Q],["أنهي إذاعة","بدأت تذيع الآخر",QA],"max",[
+  ["Egyptian Radio",1934,"الإذاعة المصرية"],["Voice of the Arabs",1953,"صوت العرب"],["Alexandria Radio",1954,"إذاعة الإسكندرية"],
+  ["Quran Radio",1964,"إذاعة القرآن الكريم"],["Middle East Radio",1964,"إذاعة الشرق الأوسط"],["Al Aghani Radio",2000,"إذاعة الأغاني"],
+  ["Nogoum FM",2003,"نجوم إف إم"],["Radio Masr",2009,"راديو مصر"],["Mega FM",2010,"ميجا إف إم","Nile Radio Network"]],
+  {h:"Egyptian radio station",k:["ON AIR SINCE","بدأت سنة"],g:"y",dt:["Radio station launched","انطلاق الإذاعة"],s:"kidstv",m:"eg"}),
+ Rd(["WHICH CLASSIC PLAY","OPENED LAST",Q],["أنهي مسرحية","اتعرضت الآخر",QA],"max",[
+  ["Sayedati El Gameela",1969,"سيدتي الجميلة"],["Madraset El Moshaghebeen",1973,"مدرسة المشاغبين"],["Intaha El Dars Ya Ghabi",1975,"انتهى الدرس يا غبي"],
+  ["Shahed Mashafsh Haga",1976,"شاهد ماشافش حاجة"],["El Eyal Kebret",1979,"العيال كبرت"],["Sok Ala Banatak",1980,"سك على بناتك"],
+  ["El Wad Sayed El Shaghal",1985,"الواد سيد الشغال"],["El Zaeem",1993,"الزعيم"],["Bodyguard",1999,"بودي جارد","Adel Emam"]],
+  {h:"Egyptian comedy play",k:["OPENED","اتعرضت سنة"],g:"y",dt:["Play opened","عرض المسرحية"],s:"kidstv",m:"eg"}),
+ Rd(["WHICH CHILDHOOD STAR","WAS BORN FIRST",Q],["مين من نجوم طفولتنا","اتولد الأول",QA],"min",[
+  ["Fouad El-Mohandes",1924,"فؤاد المهندس"],["Abla Fadila",1929,"أبلة فضيلة"],["Abdel Rahman Abu Zahra",1934,"عبد الرحمن أبو زهرة"],
+  ["Samir Ghanem",1937,"سمير غانم"],["Younes Shalaby",1941,"يونس شلبي"],["Yehia El-Fakharany",1945,"يحيى الفخراني"],
+  ["Mama Nagwa",1946,"ماما نجوى"],["Hala Fakher",1946,"هالة فاخر"],["Mohamed Henedy",1965,"محمد هنيدي"]],
+  {h:"Egyptian actor or TV presenter",k:BORN,g:"p",s:"kidstv",m:"eg"}),
+ Rd(["WHICH EGYPTIAN MAGAZINE","CAME OUT LAST",Q],["أنهي مجلة","نزلت الآخر",QA],"max",[
+  ["Al-Hilal",1892,"الهلال","Al-Hilal (magazine)"],["Al-Musawar",1924,"المصور"],["Rose al-Youssef",1925,"روز اليوسف","Rose al Yusuf (magazine)"],
+  ["Al-Kawakeb",1932,"الكواكب"],["Samir Magazine",1956,"مجلة سمير"],["Sabah El Kheir",1956,"صباح الخير"],
+  ["Mickey Magazine",1959,"مجلة ميكي"],["Nus El Donya",1990,"نصف الدنيا","Nesf El Donya"],["Alaa El-Din",1993,"علاء الدين"]],
+  {h:"Egyptian magazine",k:["FIRST ISSUE","أول عدد"],g:"y",dt:["First issue","أول عدد"],s:"zaman",m:"eg"}),
+ Rd(["WHICH CLASSIC CAR MODEL","HIT THE ROAD FIRST",Q],["أنهي عربية","نزلت الأول",QA],"min",[
+  ["Peugeot 404",1960,"بيجو 404"],["Peugeot 504",1968,"بيجو 504"],["Fiat 128",1969,"فيات 128"],
+  ["Fiat 127",1971,"فيات 127"],["Mercedes-Benz W123",1976,"مرسيدس W123"],["Lada 2107",1982,"لادا 2107","Lada Riva"],
+  ["Peugeot 405",1987,"بيجو 405"],["Daewoo Lanos",1997,"دايو لانوس"],["Hyundai Verna",1999,"هيونداي فيرنا","Hyundai Accent"]],
+  {h:"classic car model",k:["MODEL LAUNCHED","الموديل نزل سنة"],g:"y",dt:["Car model launched","نزول الموديل"],s:"zaman",m:"eg"}),
+ Rd(["WHICH OF THESE","CAME TO EGYPT FIRST",Q],["أنهي حاجة","وصلت مصر الأول",QA],"min",[
+  ["Telegraph",1854,"التلغراف","Electrical telegraph"],["Telephone (in Egypt)",1881,"التليفون","Telephone"],["Cinema",1896,"السينما","Cinema of Egypt"],
+  ["Egyptian Radio",1934,"الإذاعة المصرية"],["Television",1960,"التليفزيون","Egyptian Television Network"],["Cairo Metro (Line 1)",1987,"مترو الأنفاق","Line 1 (Cairo Metro)"],
+  ["Internet",1993,"الإنترنت","Internet in Egypt"],["Mobile phones",1996,"الموبايل","Mobile phone"],["Nilesat",1998,"نايل سات"]],
+  {h:"technology in Egypt",k:["STARTED IN EGYPT","بدأت في مصر سنة"],g:"y",dt:["Started in Egypt","بدايتها في مصر"],s:"zaman",m:"eg"}),
+ Rd(["WHICH MOBILE PHONE","WAS RELEASED FIRST",Q],["أنهي موبايل","نزل الأول",QA],"min",[
+  ["Nokia 5110",1998,"نوكيا 5110"],["Nokia 3210",1999,"نوكيا 3210"],["Nokia 3310",2000,"نوكيا 3310"],
+  ["Nokia 1100",2003,"نوكيا 1100"],["Motorola Razr V3",2004,"موتورولا رازر"],["Sony Ericsson K750",2005,"سوني إريكسون K750"],
+  ["Nokia N73",2006,"نوكيا N73"],["iPhone",2007,"آيفون"],["BlackBerry Curve 8520",2009,"بلاك بيري كيرف","BlackBerry Curve"]],
+  {h:"mobile phone model",k:["RELEASED","نزل سنة"],g:"y",dt:["Phone released","نزول الموبايل"],s:"zaman",m:"eg"})]}
+];
+// Progress key: category + second question line; a later round that repeats that line also gets its first line, so older saves still match.
+var KEYS={};
+CATS.forEach(function(c){c.r.forEach(function(r){r.c=c;r.key=c.n+"|"+r.q[1];if(KEYS[r.key])r.key+="|"+r.q[0];KEYS[r.key]=1;var v=r.items.map(function(x){return x[1]}),b=r.best==="min"?Math.min.apply(0,v):Math.max.apply(0,v);
+ if(r.g==="y"&&!r.dt)console.warn("Mixed year round needs dt:",c.n,r.q[1]);if(r.items.length!==9||v.filter(function(x){return x===b}).length!==1)console.warn("Round needs 9 items and one answer:",c.n,r.q[1])})});
+
+// Home menu: broad groups, each with subcategories. A subcategory plays every round tagged with its id (s) in the chosen region.
+var GROUPS=[
+ {e:"⚽",n:"FOOTBALL",a:"الكورة",s:[["players","👟","PLAYERS","اللعيبة"],["trophies","🏆","CLUBS & TROPHIES","الأندية والبطولات"]]},
+ {e:"🎬",n:"MOVIES & TV",a:"سينما وتليفزيون",s:[["actors","⭐","STARS","النجوم"],["films","🎞️","FILMS","الأفلام"],["tv","📺","TV SHOWS","المسلسلات"]]},
+ {e:"🎤",n:"MUSIC & POP",a:"مزيكا وتريند",s:[["singers","🎤","SINGERS","المطربين"],["songs","🎵","SONGS","الأغاني"],["celebs","🔥","CELEBS & CARTOONS","مشاهير وكرتون"]]},
+ {e:"🧠",n:"KNOWLEDGE",a:"معلومات عامة",s:[["geo","🗺️","GEOGRAPHY","الجغرافيا"],["history","🏛️","HISTORY","التاريخ"],["animals","🐾","ANIMALS","الحيوانات"]]},
+ {e:"🎮",n:"GAMES & TECH",a:"ألعاب وتكنولوجيا",s:[["games","🕹️","GAMES & CONSOLES","ألعاب وأجهزة"],["brands","📱","BRANDS & APPS","شركات وأبلكيشنز"]]},
+ {e:"🍲",n:"FOOD & DRINKS",a:"أكل وشرب",s:[["snacks","🍫","BRANDS & SNACKS","براندات وسناكس"],["eats","🍽️","RESTAURANTS & CAFÉS","مطاعم وكافيهات"]]},
+ {e:"📼",n:"CHILDHOOD & NOSTALGIA",a:"ذكريات الطفولة",s:[["kidstv","📺","TV, RADIO & CARTOONS","تليفزيون وراديو وكرتون"],["zaman","🕰️","THINGS FROM BACK THEN","حاجات زمان"]]}];
+
+// Text in English and Egyptian Arabic. Functions take numbers already formatted.
+var TX={
+ en:{title:"SHELHOM!",streak:"🔥 STREAK ",best:"🏅 BEST ",rounds:function(n){return n+" rounds"},solved:function(s,n){return s+"/"+n+" solved"},complete:"★ COMPLETE",
+  hint:"Eliminated cards flip to show their answer. Tap one to flip it back. Tap 📷 in a round, then a tile, to use your own photo.",
+  round:function(a,b){return"ROUND "+a+"/"+b},photo:"PHOTO MODE: TAP A TILE",nailed:"NAILED IT!",wrong:"WRONG ONE!",left:function(n){return n+" TO ELIMINATE"},all:"ELIMINATE ALL BUT ONE",
+  undo:"↺",skip:"▶| SKIP",next:"NEXT ▶",lost:"❌ YOU LOST!",knocked:function(x){return"You knocked out the answer: "+x+"."},keep:function(n){return" Undo to keep your 🔥"+n+" streak."},
+  undoBtn:function(n){return"↺ UNDO · "+n},moveOn:"MOVE ON ▶",won:"🎉 YOU GOT IT!",coins:function(n){return"+"+n+" coins"},bonus:function(n){return" · +"+n+" streak bonus"},
+  row:function(n){return" · 🔥 "+n+" in a row"},perfect:"🏆 PERFECT RUN!",done:"✅ CATEGORY DONE!",got:function(a,b){return"You got "+a+"/"+b+" this run"},
+  allSolved:" · ★ every round solved",overall:function(s,n){return" · "+s+"/"+n+" solved overall"},replay:"↻ REPLAY",menu:"MENU",full:"Not enough space on this device to save more photos.",lang:"ع",
+  endless:"♾ ENDLESS",endlessSub:"Mixed rounds from every category",score:function(n){return"SCORE "+n},runOver:"💀 RUN OVER!",
+  runTxt:function(s,b){return" You cleared "+s+" rounds · best "+b+"."},newBest:" 🏅 New best!",newRun:"↻ NEW RUN",duel:"🆚 DUEL",duelSub:"Pick 1 of 2. The winner stays till you miss",anyCat:"EVERYTHING",anyCatSub:"Questions from every category",pick:"PICK ONE",newQ:"NEW QUESTION!",duelTxt:function(s,b){return"You got "+s+" in a row · best "+b+"."},back:"‹",sections:function(k){return k===1?"1 section":n(k)+" sections"},reg_eg:"🇪🇬 EGYPT",reg_w:"🌍 WORLD",reg_all:"🔀 BOTH"},
+ ar:{title:"شيلهم!",streak:"🔥 ورا بعض ",best:"🏅 أحسن رقم ",rounds:function(n){return n+" جولات"},solved:function(s,n){return"حليت "+s+" من "+n},complete:"★ خلّصتها",
+  hint:"الكارت اللي بتشيله بيتقلب ويوريك إجابته، ودوس عليه تاني عشان ترجعه. دوس 📷 جوه أي جولة وبعدين على أي مربع عشان تحط صورة من عندك.",
+  round:function(a,b){return"جولة "+a+"/"+b},photo:"وضع الصور: دوس على أي مربع",nailed:"جبتها!",wrong:"لأ، مش دي!",left:function(n){return"فاضل تشيل "+n},all:"شيل الكل وسيب واحد بس",
+  undo:"↺",skip:"عدّي ⏭",next:"اللي بعده ◀",lost:"❌ خسرت!",knocked:function(x){return"شلت الإجابة الصح: "+x+"."},keep:function(n){return" دوس رجوع عشان متضيّعش الـ 🔥"+n+" اللي ورا بعض."},
+  undoBtn:function(n){return"↺ رجوع · "+n},moveOn:"كمّل ◀",won:"🎉 جبتها!",coins:function(n){return"+"+n+" كوينز"},bonus:function(n){return" · +"+n+" بونص"},
+  row:function(n){return" · 🔥 "+n+" ورا بعض"},perfect:"🏆 ولا غلطة!",done:"✅ خلّصت القسم!",got:function(a,b){return"جبت "+a+" من "+b+" المرة دي"},
+  allSolved:" · ★ حليت كل الجولات",overall:function(s,n){return" · حليت "+s+" من "+n+" لحد دلوقتي"},replay:"↻ تاني",menu:"القايمة",full:"مفيش مساحة كفاية على الجهاز عشان تحفظ صور زيادة.",lang:"EN",
+  endless:"♾ مالهاش آخر",endlessSub:"جولات متلخبطة من كل الأقسام",score:function(n){return"النتيجة "+n},runOver:"💀 اللعبة خلصت!",
+  runTxt:function(s,b){return" عدّيت "+s+" جولات · أحسن رقم "+b+"."},newBest:" 🏅 رقم قياسي جديد!",newRun:"↻ ابدأ من الأول",duel:"🆚 ده ولا ده",duelSub:"اختار واحد من اتنين، واللي يكسب يفضل",anyCat:"كل حاجة",anyCatSub:"أسئلة من كل الأقسام",pick:"اختار واحد",newQ:"سؤال جديد!",back:"›",sections:function(k){return k===1?"قسم واحد":n(k)+" أقسام"},duelTxt:function(s,b){return"جبت "+s+" ورا بعض · أحسن رقم "+b+"."},reg_eg:"🇪🇬 مصري",reg_w:"🌍 عالمي",reg_all:"🔀 الاتنين"}};
+
+var START=50,UNDO=30,WIN=10;
+var $=function(i){return document.getElementById(i)};
+var RM=matchMedia("(prefers-reduced-motion:reduce)").matches;
+var coins=START,streak=0,best=0,eBest={},dBest={},REG="all",prog={},mute=false,IM={},WK={},L="en";
+// GRP = the menu group whose page is open (null = home, "d" = the duel page). DCAT = the duel's subcategory (null = everything). mode "cat" plays the rounds in PL (one subcategory, SUB) in order; "end" is endless mode. cur = the round being played.
+// REG = region filter for everything: "eg" Egyptian rounds, "w" international, "all" both.
+var GRP=null,DCAT=null,mode="cat",SUB=null,PL=[],ri=0,cur=null,eScore=0,eRecent=[],items,out,hist,peek,flipNow,over,corr,lostStreak,runOk,edit=false,pend=null,stT;
+function ld(k,d){try{var v=localStorage.getItem(k);return v===null?d:JSON.parse(v)}catch(e){return d}}
+function sv(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){return false}}
+coins=ld("elim_coins",START);if(typeof coins!=="number"||!(coins>=0))coins=START;
+streak=ld("elim_streak",0)|0;best=ld("elim_best",0)|0;eBest=ld("elim_endless",{});dBest=ld("elim_duel",{});if(!dBest||typeof dBest!=="object")dBest={};if(typeof eBest==="number")eBest={all:eBest};if(!eBest||typeof eBest!=="object")eBest={};
+REG=ld("elim_region","all");if(["eg","w","all"].indexOf(REG)<0)REG="all";prog=ld("elim_prog",{})||{};mute=!!ld("elim_mute",false);
+IM=ld("elim_img",{})||{};WK=ld("elim_wiki",{})||{};L=ld("elim_lang","en")==="ar"?"ar":"en";
+function save(){sv("elim_coins",coins);sv("elim_streak",streak);sv("elim_best",best);sv("elim_endless",eBest);sv("elim_duel",dBest);sv("elim_prog",prog);sv("elim_mute",mute);sv("elim_lang",L);sv("elim_region",REG)}
+function t(k){return TX[L][k]}
+function n(v,dp){return L==="ar"?v.toLocaleString("ar-EG",{useGrouping:v>=10000,minimumFractionDigits:dp||0,maximumFractionDigits:dp==null?2:dp}):dp!=null?v.toFixed(dp):v>=10000?v.toLocaleString("en-US"):String(v)}
+function li(p){return p?p[L==="ar"?1:0]:""}
+// x = {d: item array, r: the round it comes from (for formatting)}
+function fmt(x){return li(x.r.pre)+n(x.d[1],x.r.dp)+li(x.r.suf)}
+function nm(x){return L==="ar"&&x.d[2]?x.d[2]:x.d[0]}
+// in a mixed "what came first" question, each card says what its year means ("Film released", "First hosted the Olympics")
+function dtag(x){var mixed=mode==="duel"?dSrc&&dSrc.g:mode==="end"&&!cur.r;return mixed&&x.r.dt?'<small class="dt">'+esc(li(x.r.dt))+"</small>":""}
+function key(r){return r.key}
+function solved(rs){return rs.filter(function(r){return prog[key(r)]}).length}
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var x=a[i];a[i]=a[j];a[j]=x}return a}
+function esc(s){return String(s).replace(/[&<>"]/g,function(ch){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[ch]})}
+
+// --- rounds: a category round, or for endless mode a random round or a generated mix ---
+function mk(r){return{r:r,q:r.q,qa:r.qa,best:r.best,items:r.items.map(function(d){return{d:d,r:r}})}}
+var ALL=[].concat.apply([],CATS.map(function(c){return c.r}));
+function inReg(r){return REG==="all"||r.m===REG}
+function rounds(){return ALL.filter(inReg)}
+function subRounds(id){return rounds().filter(function(r){return r.s===id})}
+function pool(g,rs){var seen={},p=[];(rs||rounds()).forEach(function(r){if(r.g===g)r.items.forEach(function(d){if(!seen[d[0]]){seen[d[0]]=1;p.push({d:d,r:r})}})});return p}
+var GQ={p:{min:[["WHO IS THE","OLDEST",Q],["مين","الأكبر في السن",QA]],max:[["WHO IS THE","YOUNGEST",Q],["مين","الأصغر في السن",QA]]},
+ y:{min:[["WHAT CAME","FIRST",Q],["أنهي","الأقدم",QA]],max:[["WHAT IS THE","NEWEST",Q],["أنهي","الأحدث",QA]]}};
+function mix(){for(var k=0;k<300;k++){var g=Math.random()<.5?"p":"y",b=Math.random()<.5?"min":"max",P=pool(g),pick=shuffle(P).slice(0,9);if(P.length<9||dupPhoto(pick))continue;var
+  v=pick.map(function(x){return x.d[1]}),e=b==="min"?Math.min.apply(0,v):Math.max.apply(0,v);
+  if(v.filter(function(x){return x===e}).length===1)return{q:GQ[g][b][0],qa:GQ[g][b][1],best:b,items:pick}}}
+function endlessRound(){var m=Math.random()<.5&&mix();if(m)return m;
+ var all=rounds(),p=shuffle(all.filter(function(r){return eRecent.indexOf(r)<0}))[0]||all[0];
+ eRecent.push(p);while(eRecent.length>Math.min(15,all.length>>1))eRecent.shift();return mk(p)}
+
+// --- duel mode (ده ولا ده / This or That): two cards, pick the right one, keep going until a miss ---
+// A run sticks to one question (an endless pool or one round). The right answer stays and faces a new card;
+// when nothing left can beat it, the run moves on to a new question.
+var DQ={p:{min:[["WHO IS","OLDER?",""],["مين","الأكبر في السن؟",""]],max:[["WHO IS","YOUNGER?",""],["مين","الأصغر في السن؟",""]]},
+ y:{min:[["WHICH CAME","FIRST?",""],["أنهي","الأقدم؟",""]],max:[["WHICH IS","NEWER?",""],["أنهي","الأحدث؟",""]]}};
+var dScore=0,dNew=false,dSrc=null,dUsed={},dAsked={},dPairs={},dSlot=0,dPick=-1,dTok=0,dSwap=false;
+function dRounds(){return DCAT?subRounds(DCAT):rounds()}
+function dList(s){return s.g?pool(s.g,dRounds()):mk(s.r).items}
+// best duel score per region, and per subcategory when one is chosen
+function dKey(){return REG+(DCAT?"|"+DCAT:"")}
+// a run never shows the same two cards together twice (either direction of the question);
+// it prefers cards and questions it hasn't used yet, and only comes back to a question once the fresh ones run out
+function dLK(s){return s.g?"g"+s.g:s.r.key}
+function dPK(lk,a,b){return lk+"|"+(a<b?a+"|"+b:b+"|"+a)}
+function dOk(x,a,s){return x.d[0]!==a.d[0]&&x.d[1]!==a.d[1]&&!samePhoto(x,a)&&!dPairs[dPK(dLK(s),x.d[0],a.d[0])]}
+// cards that can go next to a: unused ones, or if none are left, any that make a new pair
+function dFree(a,s){s=s||dSrc;var lk=dLK(s),l=dList(s),f=l.filter(function(x){return!dUsed[lk+"|"+x.d[0]]&&(!a||dOk(x,a,s))});
+ return a&&!f.length?l.filter(function(x){return dOk(x,a,s)}):f}
+function dBeats(x,a){return dSrc.b==="min"?x.d[1]<a.d[1]:x.d[1]>a.d[1]}
+// a new card for the kept answer: half the time one that beats it, so always picking the kept card doesn't work
+function dRival(a){var f=dFree(a),w=f.filter(function(x){return dBeats(x,a)}),l=f.filter(function(x){return!dBeats(x,a)});
+ // a card that beats it comes from the closer half, so the kept card climbs slowly and the question lasts longer
+ w.sort(function(x,y){return Math.abs(x.d[1]-a.d[1])-Math.abs(y.d[1]-a.d[1])});w=w.slice(0,Math.ceil(w.length/2));
+ return w.length?shuffle(Math.random()<.5&&l.length?l:w)[0]:null}
+// a new pair for question s, fresh cards first
+function dPair(s){var l=dList(s),lk=dLK(s),fr=shuffle(l.filter(function(x){return!dUsed[lk+"|"+x.d[0]]})),i,o;
+ for(i=0;i<fr.length;i++){o=shuffle(dFree(fr[i],s))[0];if(o)return[fr[i],o]}
+ l=shuffle(l);for(i=0;i<l.length;i++){o=shuffle(dFree(l[i],s))[0];if(o)return[l[i],o]}
+ return null}
+function dPickSrc(again){var all=dRounds(),c=[],k=dSrc&&dLK(dSrc)+"|"+dSrc.b;
+ ["p","y"].forEach(function(g){["min","max"].forEach(function(b){c.push({g:g,b:b})})});
+ all.forEach(function(r){if(!r.g)c.push({r:r,b:r.best})});
+ var sk=function(s){return dLK(s)+"|"+s.b},
+  // unasked questions first, then asked ones other than the current, then the current one
+  tiers=[c.filter(function(s){return!dAsked[sk(s)]}),c.filter(function(s){return dAsked[sk(s)]&&sk(s)!==k}),c.filter(function(s){return sk(s)===k})];
+ for(var t=0;t<3;t++){var ps=shuffle(tiers[t].filter(function(s){return s.g})),rs=shuffle(tiers[t].filter(function(s){return!s.g})),
+   order=ps.length&&Math.random()<.67?ps.concat(rs):rs.concat(ps);
+  for(var i=0;i<order.length;i++){var pr=dPair(order[i]);if(pr){dSet(order[i]);return pr}}}
+ // every pair in the category has been shown: start over
+ if(!again){dPairs={};dUsed={};dAsked={};return dPickSrc(1)}}
+function dSet(s){dSrc=s;dAsked[dLK(s)+"|"+s.b]=1;
+ s.q=s.g?DQ[s.g][s.b]:[[s.r.q[0],s.r.q[1]+"?",""],[s.r.qa[0],s.r.qa[1]+"؟",""]]}
+function duelNext(keep){if(!keep){dUsed={};dAsked={};dPairs={}}
+ var a=keep,o=keep&&dSrc&&dRival(keep);dSwap=!!keep&&!o;
+ if(o)dSlot=items.indexOf(keep); // the kept card stays where it was
+ else{var np=dPickSrc();a=np[0];o=np[1];dSlot=Math.random()<.5?0:1}
+ var lk=dLK(dSrc);dUsed[lk+"|"+a.d[0]]=dUsed[lk+"|"+o.d[0]]=1;dPairs[dPK(lk,a.d[0],o.d[0])]=1;
+ var pr=[];pr[dSlot]=a;pr[1-dSlot]=o;
+ cur={q:dSrc.q[0],qa:dSrc.q[1],best:dSrc.b,items:pr};items=pr;out=[];peek=[];flipNow=[];over=false;dPick=-1;dTok++;
+ corr=(dSrc.b==="min")===(pr[0].d[1]<pr[1].d[1])?0:1;
+ hide();$("menu").style.display="none";$("game").style.display="flex";loadPhotos(pr);render()}
+function duelRender(){var qq=L==="ar"?cur.qa:cur.q;
+ var dc=DCAT&&subInfo(DCAT),dl=dc?dc[1]+" "+(L==="ar"?dc[3]:dc[2]):t("duel");
+ $("rn").textContent=(dSwap?t("newQ"):dl)+" · "+t("score")(n(dScore));$("q1").textContent=qq[0];$("q2").textContent=qq[1];$("q3").textContent=qq[2];
+ $("sub").textContent=edit?t("photo"):over==="win"?t("nailed"):over==="lose"?t("wrong"):t("pick");
+ $("coins").textContent=n(coins);$("stk").textContent="";$("undo").style.display=$("skip").style.display="none";$("cam").className="pill"+(edit?" on":"");
+ $("grid").className="grid duo";
+ $("grid").innerHTML=items.map(function(x,i){var cls=over?(i===corr?"win":"out")+(over==="lose"&&i===dPick?" bad":""):"";
+  if(over&&flipNow.indexOf(i)<0)cls+=" flip";
+  var src=photo(x.d[0]),img=src?'<img src="'+esc(src)+'" alt="" onerror="this.remove()">':"";
+  return '<button class="cell '+cls+'" data-i="'+i+'" aria-label="'+esc(nm(x)+(over?": "+fmt(x):""))+'"><div class="card">'+
+   '<div class="tile" style="background:hsl('+(i*137+20)+',45%,42%)"><span>'+esc(nm(x).replace(/^[("']/,"").charAt(0))+"</span>"+img+"</div>"+
+   '<div class="back">'+img+"<i>"+(i===corr?"✓":"✕")+"</i><small>"+esc(li(x.r.k))+"</small><b>"+esc(fmt(x))+"</b></div>"+
+   '</div><div class="lab">'+esc(nm(x))+dtag(x)+"</div></button>"}).join("");
+ if(flipNow.length){var g=$("grid"),fl=flipNow;flipNow=[];void g.offsetWidth;
+  fl.forEach(function(i){var c=g.querySelector('[data-i="'+i+'"]');if(c)c.classList.add("flip")})}}
+function duelPick(i){if(over)return;dPick=i;flipNow=[0,1];
+ if(i===corr){over="win";dScore++;if(dScore>(dBest[dKey()]||0)){dBest[dKey()]=dScore;dNew=true}save();render();sfx.ok();
+  var tk=dTok;setTimeout(function(){if(mode==="duel"&&tk===dTok&&inGame()&&!edit)duelNext(items[corr])},1400)}
+ else{over="lose";save();render();shake();sfx.lose();
+  sheet(t("runOver"),t("duelTxt")(n(dScore),n(dBest[dKey()]||0))+(dNew?t("newBest"):""),
+   [[t("newRun"),function(){dScore=0;dNew=false;dSrc=null;duelNext()},"y"],[t("menu"),menu,""]],700)}}
+
+// --- photos: your own (📷) first, then the built-in set, then a Wikipedia lookup when online ---
+function photo(name){return IM[name]||(window.PH&&PH[name])||WK[name]}
+// two different cards that ended up with the same picture (a film and its star) never go on the board together
+function samePhoto(x,y){var a=photo(x.d[0]);return!!a&&a===photo(y.d[0])}
+function dupPhoto(l){return l.some(function(x,i){return l.slice(i+1).some(function(y){return samePhoto(x,y)})})}
+function wapi(p){return fetch("https://en.wikipedia.org/w/api.php?origin=*&format=json&formatversion=2&"+p).then(function(r){return r.json()})}
+var PI="prop=pageimages|pageprops&ppprop=disambiguation&piprop=thumbnail&pithumbsize=400&pilicense=any";
+function gotPhoto(name,url){WK[name]=url;sv("elim_wiki",WK);
+ if(!inGame())return;
+ [].forEach.call(document.querySelectorAll(".cell"),function(c){if(items[+c.dataset.i].d[0]===name&&photo(name)===url){setImg(c.querySelector(".tile"),url);setImg(c.querySelector(".back"),url)}})}
+function setImg(el,url){var o=el.querySelector("img");if(o)o.remove();var im=new Image();im.alt="";im.onerror=function(){im.remove()};im.src=url;el.insertBefore(im,el.firstChild)}
+function okPage(p){return p&&!p.missing&&p.thumbnail&&!(p.pageprops&&"disambiguation" in p.pageprops)}
+function loadPhotos(list){var need=[],seen={};
+ list.forEach(function(x){if(!photo(x.d[0])&&!(window.PH&&x.d[0] in PH)&&!seen[x.d[0]]){seen[x.d[0]]=1;need.push({it:x.d,h:x.r.h})}});
+ if(!need.length||typeof fetch!=="function")return;
+ wapi("action=query&redirects=1&"+PI+"&titles="+encodeURIComponent(need.map(function(x){return x.it[3]||x.it[0]}).join("|"))).then(function(d){
+  var q=d.query||{},map={},pg={};
+  (q.normalized||[]).concat(q.redirects||[]).forEach(function(x){map[x.from]=x.to});
+  (q.pages||[]).forEach(function(p){pg[p.title]=p});
+  need.forEach(function(x){var ti=x.it[3]||x.it[0];ti=map[ti]||ti;ti=map[ti]||ti;var p=pg[ti];
+   if(okPage(p))gotPhoto(x.it[0],p.thumbnail.source);else searchPhoto(x)})}).catch(function(){})}
+function searchPhoto(x){wapi("action=query&generator=search&gsrlimit=1&gsrsearch="+encodeURIComponent(x.it[0].replace(/'/g,"")+" "+x.h)+"&"+PI).then(function(d){
+ var p=d.query&&d.query.pages&&d.query.pages[0];if(okPage(p))gotPhoto(x.it[0],p.thumbnail.source)}).catch(function(){})}
+
+// --- sound, haptics, effects ---
+var AC;
+function tone(f,d,ty,v,w){if(mute)return;try{AC=AC||new(window.AudioContext||window.webkitAudioContext)();if(AC.state==="suspended")AC.resume();
+ var o=AC.createOscillator(),g=AC.createGain(),s=AC.currentTime+(w||0);o.type=ty||"sine";o.frequency.setValueAtTime(f,s);
+ g.gain.setValueAtTime(v||.12,s);g.gain.exponentialRampToValueAtTime(.001,s+d);o.connect(g);g.connect(AC.destination);o.start(s);o.stop(s+d+.02)}catch(e){}}
+function buzz(p){try{navigator.vibrate&&navigator.vibrate(p)}catch(e){}}
+var sfx={
+ elim:function(k){tone(260+k*55,.12,"square",.06);buzz(12)},
+ win:function(){[523,659,784,1047].forEach(function(f,k){tone(f,.28,"triangle",.16,k*.09)});tone(1568,.18,"sine",.08,.5);tone(2093,.25,"sine",.08,.58);buzz([20,40,20])},
+ lose:function(){tone(330,.3,"sawtooth",.07);tone(233,.5,"sawtooth",.07,.2);buzz([60,40,90])},
+ tap:function(){tone(520,.06,"sine",.06)},
+ ok:function(){tone(784,.12,"triangle",.14);tone(1047,.18,"triangle",.14,.08);buzz(15)}};
+function floatTxt(s){var p=$("cpill").getBoundingClientRect(),e=document.createElement("span");e.className="float";e.textContent=s;
+ e.style.left=(p.left+10)+"px";e.style.top=(p.bottom+4)+"px";document.body.appendChild(e);setTimeout(function(){e.remove()},1200)}
+function bump(){var p=$("cpill");p.classList.remove("bump");void p.offsetWidth;p.classList.add("bump")}
+function shake(){var g=$("grid");g.classList.remove("shake");void g.offsetWidth;g.classList.add("shake")}
+function confetti(){if(RM)return;var cv=$("fx"),x=cv.getContext("2d"),W=cv.width=innerWidth,H=cv.height=innerHeight,cols=["#f7c83d","#3ecf6e","#e5484d","#4c8dff","#ff7ac8"],P=[],t0=performance.now();
+ for(var i=0;i<140;i++)P.push({x:W/2,y:H*.35,vx:(Math.random()-.5)*14,vy:-Math.random()*14-4,r:Math.random()*6.28,vr:(Math.random()-.5)*.4,s:6+Math.random()*6,c:cols[i%5]});
+ (function f(tm){x.clearRect(0,0,W,H);var k=(tm-t0)/1800;if(k>1)return;P.forEach(function(p){p.vy+=.45;p.vx*=.99;p.x+=p.vx;p.y+=p.vy;p.r+=p.vr;
+  x.save();x.globalAlpha=1-k;x.translate(p.x,p.y);x.rotate(p.r);x.fillStyle=p.c;x.fillRect(-p.s/2,-p.s/4,p.s,p.s/2);x.restore()});requestAnimationFrame(f)})(t0)}
+
+// --- screens ---
+function applyLang(){var h=document.documentElement;h.lang=L;document.title=L==="ar"?"شيلهم!":"Shelhom!";h.dir=L==="ar"?"rtl":"ltr";$("lang").textContent=t("lang");$("snd").textContent=mute?"🔇":"🔊"}
+function inGame(){return $("game").style.display!=="none"}
+function grpSubs(g){return g.s.filter(function(x){return subRounds(x[0]).length})}
+function subInfo(id){var r=null;GROUPS.forEach(function(g){g.s.forEach(function(x){if(x[0]===id)r=x})});return r}
+function ghead(e,label){return '<div class="ghead"><button class="pill" data-back aria-label="Back">'+t("back")+"</button><h2>"+(e?e+" ":"")+label+"</h2></div>"}
+// Duel page: everything, or one subcategory (under its group's heading); each shows its best duel run.
+function duelPage(){var b=function(k){return"🏅 "+n(dBest[REG+(k?"|"+k:"")]||0)};
+ return ghead("",t("duel"))+'<div class="subs"><button class="cat end" data-dc="">🎲 '+t("anyCat")+"<small><span>"+t("anyCatSub")+"</span><span>"+b("")+"</span></small></button></div>"+
+  GROUPS.map(function(g){var ss=grpSubs(g);if(!ss.length)return"";
+   return '<h3 class="dgh">'+g.e+" "+(L==="ar"?g.a:g.n)+'</h3><div class="subs dsubs">'+ss.map(function(x){
+    return '<button class="cat sc" data-dc="'+x[0]+'"><span class="se">'+x[1]+"</span>"+(L==="ar"?x[3]:x[2])+"<small><span>"+b(x[0])+"</span></small></button>"}).join("")+"</div>"}).join("")}
+function card(cls,data,emoji,label,left,d,k){return '<button class="cat '+cls+'" '+data+'><span class="se">'+emoji+"</span>"+label+"<small><span>"+left+"</span><span>"+
+ (d===k?t("complete"):t("solved")(n(d),n(k)))+'</span></small><div class="pb"><i style="width:'+(k?d/k*100:0)+'%"></i></div></button>'}
+// Home shows the play modes and the big groups; tapping a group opens its page of subcategories.
+function menu(){hide();edit=false;cur=null;$("game").style.display="none";$("menu").style.display="flex";$("coins").textContent=n(coins);$("cam").className="pill";
+ var g=GRP!=="d"&&GROUPS[GRP],subs=g&&grpSubs(g);if(subs&&!subs.length){GRP=null;g=null}
+ $("menu").innerHTML=GRP==="d"?duelPage():g?ghead(g.e,L==="ar"?g.a:g.n)+
+   '<div class="subs">'+subs.map(function(x){var rs=subRounds(x[0]);return card("sc",'data-s="'+x[0]+'"',x[1],L==="ar"?x[3]:x[2],t("rounds")(n(rs.length)),solved(rs),rs.length)}).join("")+"</div>":
+  "<h1>"+t("title")+"</h1><div class='stats'><span class='stat streak'>"+t("streak")+n(streak)+"</span><span class='stat'>"+t("best")+n(best)+"</span></div>"+
+  '<div class="seg">'+["eg","w","all"].map(function(m){return '<button data-reg="'+m+'"'+(REG===m?' class="on"':"")+">"+t("reg_"+m)+"</button>"}).join("")+"</div>"+
+  '<div class="modes"><button class="cat end" data-c="e">'+t("endless")+"<small><span>"+t("endlessSub")+"</span><span>🏅 "+n(eBest[REG]||0)+"</span></small></button>"+
+   '<button class="cat end" data-c="d">'+t("duel")+"<small><span>"+t("duelSub")+"</span><span>🏅 "+n(dBest[REG]||0)+"</span></small></button></div>"+
+  '<div class="subs">'+GROUPS.map(function(g,i){var ss=grpSubs(g);if(!ss.length)return"";var rs=[].concat.apply([],ss.map(function(x){return subRounds(x[0])}));
+   return card("sc grp",'data-g="'+i+'"',g.e,L==="ar"?g.a:g.n,t("sections")(ss.length),solved(rs),rs.length)}).join("")+"</div>"+
+  '<div class="sub">'+t("hint")+'</div>';scrollTo(0,0)}
+$("menu").onclick=function(e){var rg=e.target.closest("[data-reg]");if(rg){REG=rg.dataset.reg;eRecent=[];save();sfx.tap();menu();return}
+ if(e.target.closest("[data-back]")){GRP=null;sfx.tap();menu();return}
+ var b=e.target.closest(".cat");if(!b)return;sfx.tap();
+ if(b.dataset.g){GRP=+b.dataset.g;menu();return}
+ if(b.dataset.c==="d"){GRP="d";menu();return}
+ if(b.dataset.dc!==undefined){DCAT=b.dataset.dc||null;mode="duel";dScore=0;dNew=false;dSrc=null;duelNext();return}
+ if(b.dataset.c==="e"){GRP=null;mode="end";eScore=0}
+ else{mode="cat";var id=b.dataset.s;SUB=subInfo(id);PL=subRounds(id);ri=0;runOk=0;
+  loadPhotos([].concat.apply([],PL.map(function(r){return mk(r).items})))}
+ newRound()};
+function newRound(){cur=mode==="end"?endlessRound():mk(PL[ri]);if(mode==="end")loadPhotos(cur.items);start()}
+function start(){hide();$("menu").style.display="none";$("game").style.display="flex";
+ items=shuffle(cur.items);out=[];hist=[];peek=[];flipNow=[];over=false;
+ var v=items.map(function(x){return x.d[1]});corr=v.indexOf(cur.best==="min"?Math.min.apply(0,v):Math.max.apply(0,v));
+ render();scrollTo(0,0)}
+function render(){if(mode==="duel")return duelRender();$("grid").className="grid";$("undo").style.display="";var left=items.length-out.length,qq=L==="ar"?cur.qa:cur.q;
+ $("rn").textContent=mode==="end"?t("endless")+" · "+t("score")(n(eScore)):SUB[1]+" "+t("round")(n(ri+1),n(PL.length))+(prog[key(cur.r)]?" ★":"");
+ $("q1").textContent=qq[0];$("q2").textContent=qq[1];$("q3").textContent=qq[2];
+ $("sub").textContent=edit?t("photo"):over==="win"?t("nailed"):over==="lose"?t("wrong"):(out.length?t("left")(n(left-1)):t("all"));
+ $("coins").textContent=n(coins);$("stk").textContent=streak?"🔥 "+n(streak):"";
+ $("undo").innerHTML=t("undo")+' <i class="coin"></i>'+n(UNDO);$("undo").disabled=!hist.length||coins<UNDO||over==="win";
+ $("skip").textContent=over?t("next"):t("skip");$("skip").style.display=mode==="end"&&!over?"none":"";$("cam").className="pill"+(edit?" on":"");
+ // Eliminated cards (and every card left after a win) flip over to show their value; tapping one flips it back (peek).
+ $("grid").innerHTML=items.map(function(x,i){var o=out.indexOf(i)>-1,w=over==="win"&&!o,f=(o||w)&&peek.indexOf(i)<0,cls=o?"out":w?"win":"";
+  if(over==="lose"&&i===corr)cls+=" bad";if(f&&flipNow.indexOf(i)<0)cls+=" flip";if((o||w)&&!f)cls+=" peek";
+  var src=photo(x.d[0]),img=src?'<img src="'+esc(src)+'" alt="" onerror="this.remove()">':"";
+  return '<button class="cell '+cls+'" data-i="'+i+'" aria-label="'+esc(nm(x)+(o||w?": "+fmt(x):""))+'"><div class="card">'+
+   '<div class="tile" style="background:hsl('+(i*47+20)+',45%,42%)"><span>'+esc(nm(x).replace(/^[("']/,"").charAt(0))+"</span>"+img+"</div>"+
+   '<div class="back">'+img+"<i>"+(w?"✓":"✕")+"</i><small>"+esc(li(x.r.k))+"</small><b>"+esc(fmt(x))+"</b></div>"+
+   '</div><div class="lab">'+esc(nm(x))+dtag(x)+"</div></button>"}).join("");
+ if(flipNow.length){var g=$("grid"),fl=flipNow;flipNow=[];void g.offsetWidth;
+  fl.forEach(function(i){var c=g.querySelector('[data-i="'+i+'"]');if(c)c.classList.add("flip")})}}
+$("grid").onclick=function(e){var c=e.target.closest(".cell");if(!c)return;var i=+c.dataset.i,x=items[i];
+ if(edit){pend=x.d[0];$("file").click();return}
+ if(mode==="duel"){duelPick(i);return}
+ if(out.indexOf(i)>-1||over==="win"){var p=peek.indexOf(i);if(p<0)peek.push(i);else peek.splice(p,1);
+  c.classList.toggle("flip",p>-1);c.classList.toggle("peek",p<0);sfx.tap();return}
+ if(over)return;
+ out.push(i);hist.push(i);flipNow=[i];
+ if(i===corr){over="lose";lostStreak=streak;streak=0;save();render();shake();sfx.lose();
+  var b=[[mode==="end"?t("newRun"):t("moveOn"),nxt,"y"]],msg=t("knocked")(nm(x)+" ("+fmt(x)+")");if(coins>=UNDO)b.unshift([t("undoBtn")(n(UNDO)),undo,""]);
+  if(mode==="end"){b.push([t("menu"),menu,""]);msg+=t("runTxt")(n(eScore),n(eBest[REG]||0))}else if(lostStreak>1&&coins>=UNDO)msg+=t("keep")(n(lostStreak));
+  sheet(mode==="end"?t("runOver"):t("lost"),msg,b,450)}
+ else if(items.length-out.length===1){over="win";var bonus=Math.min(streak,5)*2,nb=false;streak++;best=Math.max(best,streak);coins+=WIN+bonus;
+  flipNow=[corr];if(cur.r)prog[key(cur.r)]=1;
+  if(mode==="end"){eScore++;if(eScore>(eBest[REG]||0)){eBest[REG]=eScore;nb=true}}else runOk++;
+  save();render();sfx.win();confetti();bump();floatTxt("+"+n(WIN+bonus));
+  sheet(t("won"),t("coins")(n(WIN))+(bonus?t("bonus")(n(bonus)):"")+(streak>1?t("row")(n(streak)):"")+(mode==="end"?" · "+t("score")(n(eScore))+(nb?t("newBest"):""):""),[[t("next"),nxt,"y"]],600)}
+ else{render();sfx.elim(out.length)}};
+$("file").onchange=function(){var f=this.files[0];this.value="";if(!f||!pend)return;var nmK=pend,u=URL.createObjectURL(f),im=new Image();
+ im.onload=function(){var s=Math.min(im.width,im.height),cv=document.createElement("canvas");cv.width=cv.height=220;
+  cv.getContext("2d").drawImage(im,(im.width-s)/2,(im.height-s)/2,s,s,0,0,220,220);IM[nmK]=cv.toDataURL("image/jpeg",.8);
+  if(!sv("elim_img",IM)){delete IM[nmK];alert(t("full"))}URL.revokeObjectURL(u);render()};im.src=u};
+$("cam").onclick=function(){if(!inGame())return;edit=!edit;render()};
+$("snd").onclick=function(){mute=!mute;save();applyLang();sfx.tap()};
+$("lang").onclick=function(){L=L==="ar"?"en":"ar";save();applyLang();sfx.tap();
+ if(inGame()&&cur){render();hide()}else menu()};
+function undo(){if(!hist.length||coins<UNDO||over==="win")return;coins-=UNDO;var i=hist.pop();out.splice(out.indexOf(i),1);
+ if(peek.indexOf(i)>-1)peek.splice(peek.indexOf(i),1);
+ if(over==="lose"){over=false;streak=lostStreak;hide()}save();sfx.tap();bump();floatTxt("−"+n(UNDO));render()}
+$("undo").onclick=undo;
+function nxt(){if(mode==="end"){if(over!=="win"){eScore=0;streak=0;save()}newRound();return}
+ if(!over){streak=0;save()}ri++;if(ri>=PL.length)summary();else newRound()}
+function summary(){var k=PL.length,s=solved(PL);cur=null;
+ sheet(runOk===k?t("perfect"):t("done"),t("got")(n(runOk),n(k))+(s===k?t("allSolved"):t("overall")(n(s),n(k))),
+  [[t("replay"),function(){ri=0;runOk=0;newRound()},""],[t("menu"),menu,"y"]],0);if(runOk===k){confetti();sfx.win()}}
+$("skip").onclick=function(){sfx.tap();nxt()};$("home").onclick=function(){if($("menu").style.display==="flex")GRP=null;menu()};
+function sheet(ti,p,btns,d){clearTimeout(stT);$("st").textContent=ti;$("sp").textContent=p;var sb=$("sb");sb.innerHTML="";
+ btns.forEach(function(b){var e=document.createElement("button");e.className="btn "+b[2];e.textContent=b[0];e.onclick=b[1];sb.appendChild(e)});
+ stT=setTimeout(function(){$("sheet").classList.add("show")},d||0)}
+function hide(){clearTimeout(stT);$("sheet").classList.remove("show")}
+applyLang();menu();
+</script><script>if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol))addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));</script>
+</body></html>
