@@ -1,4 +1,22 @@
-# Elimination-chamber
+# Shelhom! (شيلهم)
+
+A bilingual trivia elimination game: one page (`index.html`) plus built-in photos (`photos/`).
+
+## Install on a phone
+
+Open the published site, then:
+- **Android (Chrome):** menu ⋮ → *Install app* (or *Add to Home screen*).
+- **iPhone (Safari):** Share → *Add to Home Screen*.
+
+After the first visit it works offline. `sw.js` caches the page, photos and font; `manifest.webmanifest` and `icons/` give it its name and icon.
+
+## Publishing
+
+Every push to `main` runs the tests and, if they pass, publishes the game to GitHub Pages (`.github/workflows/pages.yml`).
+
+## Tests
+
+`npm test` — see [tests/README.md](tests/README.md).
 
 ## Photos
 

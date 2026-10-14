@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#1c1c1c"/>
+  <g transform="translate(116 116)" stroke="#fafafa" stroke-width="7">
+    <rect x="0"   y="0"   width="80" height="80" rx="16" fill="#3a3a3a"/>
+    <rect x="100" y="0"   width="80" height="80" rx="16" fill="#3a3a3a"/>
+    <rect x="200" y="0"   width="80" height="80" rx="16" fill="#3a3a3a"/>
+    <rect x="0"   y="100" width="80" height="80" rx="16" fill="#3a3a3a"/>
+    <rect x="100" y="100" width="80" height="80" rx="16" fill="#f7c83d"/>
+    <rect x="200" y="100" width="80" height="80" rx="16" fill="#3a3a3a"/>
+    <rect x="0"   y="200" width="80" height="80" rx="16" fill="#3a3a3a"/>
+    <rect x="100" y="200" width="80" height="80" rx="16" fill="#3a3a3a"/>
+    <rect x="200" y="200" width="80" height="80" rx="16" fill="#3a3a3a"/>
+  </g>
+  <g stroke="#e5484d" stroke-width="12" stroke-linecap="round">
+    <path d="M136 136l40 40M176 136l-40 40"/><path d="M336 136l40 40M376 136l-40 40"/>
+    <path d="M136 336l40 40M176 336l-40 40"/><path d="M236 336l40 40M276 336l-40 40"/>
+    <path d="M336 236l40 40M376 236l-40 40"/>
+    <path d="M236 136l40 40M276 136l-40 40"/><path d="M136 236l40 40M176 236l-40 40"/>
+    <path d="M336 336l40 40M376 336l-40 40"/>
+  </g>
+</svg>
