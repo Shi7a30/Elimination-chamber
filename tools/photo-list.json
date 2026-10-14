@@ -253,7 +253,8 @@
   "q": [
    "أحمد شوبير",
    "Ahmed Shobeir goalkeeper"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Nader El-Sayed",
@@ -419,7 +420,8 @@
   "q": [
    "Suez Stadium",
    "استاد السويس"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Arab Contractors Stadium",
@@ -495,7 +497,8 @@
   "q": [
    "شوقي غريب",
    "Shawky Gharieb"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Hossam El-Badry",
@@ -508,7 +511,8 @@
   "q": [
    "حسام البدري",
    "Hossam El Badry coach"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Ehab Galal",
@@ -557,7 +561,8 @@
   "q": [
    "حسني عبد ربه",
    "Hosny Abd Rabou"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Ahmed Fathy",
@@ -588,7 +593,8 @@
   "q": [
    "إبراهيم حسن لاعب",
    "Ibrahim Hassan footballer Egypt"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Ali Maaloul",
@@ -610,7 +616,8 @@
   "q": [
    "رمضان صبحي",
    "Ramadan Sobhi footballer"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "TP Mazembe",
@@ -1649,7 +1656,8 @@
   "q": [
    "ياسمين عبد العزيز",
    "Yasmine Abdel Aziz actress"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Menna Shalaby",
@@ -1708,7 +1716,8 @@
   "q": [
    "إسماعيلية رايح جاي",
    "Ismailia Rayeh Gai 1997"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "El Limby",
@@ -1840,7 +1849,8 @@
   "q": [
    "محمد سعد ممثل",
    "Mohamed Saad actor Limby"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Ahmed Ezz",
@@ -2809,7 +2819,8 @@
   "q": [
    "بكار (مسلسل رسوم متحركة)",
    "Bakkar cartoon"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "El Kabeer Awy",
@@ -3014,7 +3025,8 @@
   "skip": false,
   "q": [
    "سابع جار"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Paranormal",
@@ -3437,7 +3449,8 @@
   "q": [
    "محمد فؤاد مطرب",
    "Mohamed Fouad singer"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Hisham Abbas",
@@ -3495,7 +3508,8 @@
   "q": [
    "مروان بابلو",
    "Marwan Pablo rapper"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Wegz",
@@ -3797,7 +3811,8 @@
   "q": [
    "إزاي (أغنية)",
    "محمد منير إزاي"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Number One",
@@ -4491,7 +4506,8 @@
   "skip": false,
   "q": [
    "يحيى وكنوز"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Mofeed Fawzy",
@@ -4531,7 +4547,8 @@
   "q": [
    "لميس الحديدي",
    "Lamees Hadidi"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Amr El-Leithy",
@@ -4553,7 +4570,8 @@
   "q": [
    "تامر أمين",
    "Tamer Amin presenter"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Ramez Galal",
@@ -8484,8 +8502,10 @@
   "skip": false,
   "q": [
    "Elmenus logo",
-   "المنيوز"
-  ]
+   "المنيوز",
+   "Elmenus logo"
+  ],
+  "review": true
  },
  {
   "name": "Vezeeta",
@@ -8497,8 +8517,10 @@
   "skip": false,
   "q": [
    "Vezeeta logo",
-   "فيزيتا"
-  ]
+   "فيزيتا",
+   "Vezeeta logo"
+  ],
+  "review": true
  },
  {
   "name": "Paymob",
@@ -8520,8 +8542,10 @@
   "skip": false,
   "q": [
    "Breadfast logo",
-   "بريدفاست"
-  ]
+   "بريدفاست",
+   "Breadfast logo"
+  ],
+  "review": true
  },
  {
   "name": "MaxAB",
@@ -8533,8 +8557,10 @@
   "skip": false,
   "q": [
    "MaxAB logo",
-   "ماكس أب"
-  ]
+   "ماكس أب",
+   "MaxAB logo"
+  ],
+  "review": true
  },
  {
   "name": "Khazna",
@@ -8546,8 +8572,10 @@
   "skip": true,
   "q": [
    "Khazna app",
-   "خزنة تطبيق"
-  ]
+   "خزنة تطبيق",
+   "Khazna logo"
+  ],
+  "review": true
  },
  {
   "name": "Rabbit Mart",
@@ -8559,8 +8587,10 @@
   "skip": true,
   "q": [
    "Rabbit Mart logo",
-   "رابيت ماركت"
-  ]
+   "رابيت ماركت",
+   "Rabbit Mart logo"
+  ],
+  "review": true
  },
  {
   "name": "Elsewedy Electric",
@@ -8590,8 +8620,10 @@
   "skip": true,
   "q": [
    "Felfela restaurant Cairo",
-   "مطعم فلفلة"
-  ]
+   "مطعم فلفلة",
+   "Felfela logo"
+  ],
+  "review": true
  },
  {
   "name": "Elaraby",
@@ -8635,8 +8667,10 @@
   "skip": true,
   "q": [
    "Buffalo Burger Egypt",
-   "بافلو برجر"
-  ]
+   "بافلو برجر",
+   "Buffalo Burger logo"
+  ],
+  "review": true
  },
  {
   "name": "Zooba",
@@ -8668,7 +8702,8 @@
   "q": [
    "Corona chocolate Egypt",
    "شيكولاتة كورونا"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Spiro Spathis",
@@ -8714,7 +8749,8 @@
   "q": [
    "Regina pasta Egypt",
    "مكرونة ريجينا"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Panda (Arab Dairy)",
@@ -8727,7 +8763,8 @@
   "q": [
    "Panda cheese Arab Dairy",
    "جبنة باندا"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Dina Farms",
@@ -8740,7 +8777,8 @@
   "q": [
    "Dina Farms Egypt",
    "مزارع دينا"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Domty",
@@ -8753,7 +8791,8 @@
   "q": [
    "Domty cheese",
    "دومتي"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Obour Land",
@@ -8766,7 +8805,8 @@
   "q": [
    "Obour Land cheese",
    "عبور لاند"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Beyti",
@@ -8779,7 +8819,8 @@
   "q": [
    "Beyti milk Egypt",
    "بيتي لبن"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Seoudi",
@@ -8792,7 +8833,8 @@
   "q": [
    "Seoudi Market",
    "سعودي ماركت"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Awlad Ragab",
@@ -8805,7 +8847,8 @@
   "q": [
    "أولاد رجب",
    "Awlad Ragab supermarket"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Metro Market",
@@ -8818,7 +8861,8 @@
   "q": [
    "Metro Market Egypt",
    "مترو ماركت"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Carrefour",
@@ -8840,7 +8884,8 @@
   "q": [
    "Hyper One Sheikh Zayed",
    "هايبر وان"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Gourmet",
@@ -8853,7 +8898,8 @@
   "q": [
    "Gourmet Egypt supermarket",
    "جورميه مصر"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Kheir Zaman",
@@ -8866,7 +8912,8 @@
   "q": [
    "خير زمان",
    "Kheir Zaman supermarket"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "LuLu Hypermarket",
@@ -8978,7 +9025,8 @@
   "q": [
    "Simonds cafe Zamalek",
    "سيموندس"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Café Riche",
@@ -9010,7 +9058,8 @@
   "q": [
    "Horreya cafe Bab el Louk",
    "مقهى الحرية القاهرة"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Naguib Mahfouz Café",
@@ -9078,7 +9127,8 @@
   "q": [
    "حلواني المالكي",
    "El Malky sweets"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Mandarine Koueider",
@@ -9091,7 +9141,8 @@
   "q": [
    "Mandarine Koueider",
    "مندرين قويدر"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "El Abd",
@@ -9104,7 +9155,8 @@
   "q": [
    "حلواني العبد",
    "El Abd patisserie Cairo"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "La Poire",
@@ -9126,7 +9178,8 @@
   "q": [
    "Salé Sucré patisserie Cairo",
    "ساليه سكريه"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Sedra",
@@ -9139,7 +9192,8 @@
   "q": [
    "Sedra patisserie",
    "سيدرا حلويات"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "TBS",
@@ -9152,7 +9206,8 @@
   "q": [
    "TBS bakery Cairo",
    "The Bakery Shop Egypt"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "KFC",
@@ -9237,7 +9292,8 @@
   "q": [
    "Abou Shakra restaurant",
    "أبو شقرة مطعم"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Abou Tarek",
@@ -9288,7 +9344,8 @@
   "q": [
    "Abou El Sid restaurant",
    "أبو السيد مطعم"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Tholathy Adwaa El Masrah",
@@ -9334,7 +9391,8 @@
   "q": [
    "شريهان",
    "Sherihan actress"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Sabreen",
@@ -9365,7 +9423,8 @@
   "q": [
    "جيهان نصر",
    "Gihan Nasr fawazeer"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Ghada Abdel Razek",
@@ -9506,7 +9565,8 @@
   "q": [
    "إذاعة الإسكندرية",
    "Alexandria radio"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Quran Radio",
@@ -9529,7 +9589,8 @@
   "q": [
    "إذاعة الشرق الأوسط",
    "Middle East Radio Egypt"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Al Aghani Radio",
@@ -9560,7 +9621,8 @@
   "q": [
    "راديو مصر",
    "Radio Masr logo"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Mega FM",
@@ -9582,7 +9644,8 @@
   "q": [
    "سيدتي الجميلة مسرحية",
    "فؤاد المهندس شويكار مسرحية"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Madraset El Moshaghebeen",
@@ -9686,7 +9749,8 @@
   "q": [
    "أبلة فضيلة",
    "Fadila Tawfik"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Abdel Rahman Abu Zahra",
@@ -9805,7 +9869,8 @@
   "q": [
    "مجلة علاء الدين",
    "Alaa El Din magazine"
-  ]
+  ],
+  "review": true
  },
  {
   "name": "Peugeot 404",
@@ -10038,5 +10103,329 @@
   "ar_hint": "",
   "logo": false,
   "skip": false
+ },
+ {
+  "name": "Crash Bandicoot",
+  "title": "Crash Bandicoot (video game)",
+  "hint": "video game",
+  "ar": "كراش",
+  "ar_hint": "لعبة فيديو",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "Crash Bandicoot (video game) cover art"
+  ]
+ },
+ {
+  "name": "Age of Empires II",
+  "title": "Age of Empires II: The Age of Kings",
+  "hint": "video game",
+  "ar": "إيدج أوف إمباير 2",
+  "ar_hint": "لعبة فيديو",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "Age of Empires II: The Age of Kings cover art"
+  ]
+ },
+ {
+  "name": "GTA Vice City",
+  "title": "Grand Theft Auto: Vice City",
+  "hint": "video game",
+  "ar": "جاتا فايس سيتي",
+  "ar_hint": "لعبة فيديو",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "Grand Theft Auto: Vice City cover art"
+  ]
+ },
+ {
+  "name": "Counter-Strike 1.6",
+  "title": "Counter-Strike (video game)",
+  "hint": "video game",
+  "ar": "كاونتر سترايك 1.6",
+  "ar_hint": "لعبة فيديو",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "Counter-Strike (video game) cover art"
+  ]
+ },
+ {
+  "name": "GTA San Andreas",
+  "title": "Grand Theft Auto: San Andreas",
+  "hint": "video game",
+  "ar": "جاتا سان أندرياس",
+  "ar_hint": "لعبة فيديو",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "Grand Theft Auto: San Andreas cover art"
+  ]
+ },
+ {
+  "name": "Need for Speed: Most Wanted",
+  "title": "Need for Speed: Most Wanted (2005 video game)",
+  "hint": "video game",
+  "ar": "نيد فور سبيد موست وانتد",
+  "ar_hint": "لعبة فيديو",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "Need for Speed: Most Wanted (2005 video game) cover art"
+  ]
+ },
+ {
+  "name": "Call of Duty 4",
+  "title": "Call of Duty 4: Modern Warfare",
+  "hint": "video game",
+  "ar": "كول أوف ديوتي 4",
+  "ar_hint": "لعبة فيديو",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "Call of Duty 4: Modern Warfare cover art"
+  ]
+ },
+ {
+  "name": "GTA IV",
+  "title": "Grand Theft Auto IV",
+  "hint": "video game",
+  "ar": "جاتا 4",
+  "ar_hint": "لعبة فيديو",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "Grand Theft Auto IV cover art"
+  ]
+ },
+ {
+  "name": "League of Legends",
+  "title": "League of Legends",
+  "hint": "video game",
+  "ar": "ليج أوف ليجندز",
+  "ar_hint": "لعبة فيديو",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "League of Legends cover art"
+  ]
+ },
+ {
+  "name": "FIFA International Soccer",
+  "title": "FIFA International Soccer",
+  "hint": "video game",
+  "ar": "فيفا إنترناشونال سوكر",
+  "ar_hint": "لعبة فيديو",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "FIFA International Soccer cover art"
+  ]
+ },
+ {
+  "name": "FIFA 98",
+  "title": "FIFA: Road to World Cup 98",
+  "hint": "video game",
+  "ar": "فيفا 98",
+  "ar_hint": "لعبة فيديو",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "FIFA: Road to World Cup 98 cover art"
+  ]
+ },
+ {
+  "name": "Pro Evolution Soccer",
+  "title": "Pro Evolution Soccer (video game)",
+  "hint": "video game",
+  "ar": "بيس 1",
+  "ar_hint": "لعبة فيديو",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "Pro Evolution Soccer (video game) cover art"
+  ]
+ },
+ {
+  "name": "PES 5",
+  "title": "Pro Evolution Soccer 5",
+  "hint": "video game",
+  "ar": "بيس 5",
+  "ar_hint": "لعبة فيديو",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "Pro Evolution Soccer 5 cover art"
+  ]
+ },
+ {
+  "name": "PES 6",
+  "title": "Pro Evolution Soccer 6",
+  "hint": "video game",
+  "ar": "بيس 6",
+  "ar_hint": "لعبة فيديو",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "Pro Evolution Soccer 6 cover art"
+  ]
+ },
+ {
+  "name": "FIFA 10",
+  "title": "FIFA 10",
+  "hint": "video game",
+  "ar": "فيفا 10",
+  "ar_hint": "لعبة فيديو",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "FIFA 10 cover art"
+  ]
+ },
+ {
+  "name": "PES 2013",
+  "title": "Pro Evolution Soccer 2013",
+  "hint": "video game",
+  "ar": "بيس 2013",
+  "ar_hint": "لعبة فيديو",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "Pro Evolution Soccer 2013 cover art"
+  ]
+ },
+ {
+  "name": "FIFA 18",
+  "title": "FIFA 18",
+  "hint": "video game",
+  "ar": "فيفا 18",
+  "ar_hint": "لعبة فيديو",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "FIFA 18 cover art"
+  ]
+ },
+ {
+  "name": "eFootball",
+  "title": "eFootball (video game)",
+  "hint": "video game",
+  "ar": "إي فوتبول",
+  "ar_hint": "لعبة فيديو",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "eFootball (video game) cover art"
+  ]
+ },
+ {
+  "name": "Sega Mega Drive",
+  "title": "Sega Genesis",
+  "hint": "video game console",
+  "ar": "سيجا",
+  "ar_hint": "جهاز ألعاب",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "Sega Genesis console"
+  ]
+ },
+ {
+  "name": "Game Boy Color",
+  "title": "Game Boy Color",
+  "hint": "video game console",
+  "ar": "جيم بوي كالر",
+  "ar_hint": "جهاز ألعاب",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "Game Boy Color console"
+  ]
+ },
+ {
+  "name": "PlayStation 2",
+  "title": "PlayStation 2",
+  "hint": "video game console",
+  "ar": "بلايستيشن 2",
+  "ar_hint": "جهاز ألعاب",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "PlayStation 2 console"
+  ]
+ },
+ {
+  "name": "Game Boy Advance",
+  "title": "Game Boy Advance",
+  "hint": "video game console",
+  "ar": "جيم بوي أدفانس",
+  "ar_hint": "جهاز ألعاب",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "Game Boy Advance console"
+  ]
+ },
+ {
+  "name": "PSP",
+  "title": "PlayStation Portable",
+  "hint": "video game console",
+  "ar": "بي إس بي",
+  "ar_hint": "جهاز ألعاب",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "PlayStation Portable console"
+  ]
+ },
+ {
+  "name": "Xbox 360",
+  "title": "Xbox 360",
+  "hint": "video game console",
+  "ar": "إكس بوكس 360",
+  "ar_hint": "جهاز ألعاب",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "Xbox 360 console"
+  ]
+ },
+ {
+  "name": "PlayStation 3",
+  "title": "PlayStation 3",
+  "hint": "video game console",
+  "ar": "بلايستيشن 3",
+  "ar_hint": "جهاز ألعاب",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "PlayStation 3 console"
+  ]
+ },
+ {
+  "name": "PS Vita",
+  "title": "PlayStation Vita",
+  "hint": "video game console",
+  "ar": "بي إس فيتا",
+  "ar_hint": "جهاز ألعاب",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "PlayStation Vita console"
+  ]
+ },
+ {
+  "name": "PlayStation 5",
+  "title": "PlayStation 5",
+  "hint": "video game console",
+  "ar": "بلايستيشن 5",
+  "ar_hint": "جهاز ألعاب",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "PlayStation 5 console"
+  ]
  }
 ]
