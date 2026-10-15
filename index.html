@@ -794,7 +794,7 @@ var TX={
   allSolved:" · ★ حليت كل الجولات",overall:function(s,n){return" · حليت "+s+" من "+n+" لحد دلوقتي"},replay:"↻ تاني",menu:"القايمة",full:"مفيش مساحة كفاية على الجهاز عشان تحفظ صور زيادة.",lang:"EN",
   endless:"♾ مالهاش آخر",endlessSub:"جولات متلخبطة من كل الأقسام",score:function(n){return"النتيجة "+n},runOver:"💀 اللعبة خلصت!",
   runTxt:function(s,b){return" عدّيت "+s+" جولات · أحسن رقم "+b+"."},newBest:" 🏅 رقم قياسي جديد!",newRun:"↻ ابدأ من الأول",duel:"🆚 ده ولا ده",duelSub:"اختار واحد من اتنين، واللي يكسب يفضل",anyCat:"كل حاجة",anyCatSub:"أسئلة من كل الأقسام",pick:"اختار واحد",newQ:"سؤال جديد!",back:"›",sections:function(k){return k===1?"قسم واحد":n(k)+" أقسام"},duelTxt:function(s,b){return"جبت "+s+" ورا بعض · أحسن رقم "+b+"."},reg_eg:"🇪🇬 مصري",reg_w:"🌍 عالمي",reg_all:"🔀 الاتنين",
-  mp:"👥 مع صحابك",cats:"📚 الأقسام",hot:"🥔 البطاطس السخنة",hotSub:"لفّوا الموبايل، واللي يشيل الإجابة الصح يطلع برا",chal:"🔗 تحدّي",chalSub:"العب ١٠ وابعت اللينك، وصحابك ياخدوا نفس الأسئلة",
+  mp:"👥 مع صحابك",cats:"📚 الأقسام",hot:"🥔 البطاطس سخنة خالص",hotSub:"لفّوا الموبايل، واللي يشيل الإجابة الصح يطلع برا",chal:"🔗 تحدّي",chalSub:"العب ١٠ وابعت اللينك، وصحابك ياخدوا نفس الأسئلة",
   players:"اللعيبة",addP:"+ لاعب كمان",pName:function(k){return"لاعب "+k},pickCat:"اختار قسم",pLeft:function(k){return"فاضل "+k},
   hRound:function(a){return"جولة "+a},turn:function(x){return"🥔 "+x+": شيل واحد"},isOut:function(x){return"💥 "+x+" طلع برا!"},
   outTxt:function(x,y){return x+" شال الإجابة الصح: "+y+"."},safe:"😅 محدش وقع!",safeTxt:"محدش لمس الإجابة الصح.",nextRound:"الجولة اللي بعدها ◀",
@@ -925,7 +925,7 @@ function duelPick(i){if(over)return;dPick=i;flipNow=[0,1];
   sheet(t("runOver"),t("duelTxt")(n(dScore),n(dBest[dKey()]||0))+(dNew?t("newBest"):""),
    [[t("newRun"),function(){dScore=0;dNew=false;dSrc=null;duelNext()},"y"],[t("menu"),menu,""]],700)}}
 
-// --- hot potato (البطاطس السخنة): players take turns knocking out one card; whoever knocks out the answer is out ---
+// --- hot potato (البطاطس سخنة خالص): players take turns knocking out one card; whoever knocks out the answer is out ---
 var HCAT=null,hPl=[],hTurn=0,hRn=0;
 function alive(){return hPl.filter(function(p){return!p.out})}
 function hNext(){do{hTurn=(hTurn+1)%hPl.length}while(hPl[hTurn].out)}
