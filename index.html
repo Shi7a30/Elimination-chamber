@@ -98,6 +98,17 @@ button{cursor:pointer}
 .cat.sc{font-size:15px;padding:10px 12px 12px;display:flex;flex-direction:column;justify-content:space-between;min-height:118px}
 .sc .se{font-size:26px;margin-bottom:4px}
 .cat small{display:flex;justify-content:space-between;font-size:13px;opacity:.75;margin-top:4px}
+.plist{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:10px;width:100%}
+.plist span{border:3px solid var(--fg);border-radius:999px;padding:3px 11px;font-size:14px;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.plist .now{background:var(--y);color:#1c1c1c}
+.plist .ko{opacity:.4;text-decoration:line-through}
+.plyrs{display:flex;flex-direction:column;gap:10px;margin-top:10px}
+.prow{display:flex;gap:8px;align-items:center}
+.pin{flex:1;min-width:0;width:100%;border:3px solid var(--fg);border-radius:14px;background:var(--bg);color:var(--fg);font:inherit;font-size:17px;padding:9px 12px}
+.plyrs .btn{align-self:center;font-size:16px;padding:8px 18px}
+.chv{text-align:center}
+.chv .big{display:block;font-size:22px}
+.chv .btn{margin:6px auto 0}
 .pb{height:8px;border-radius:4px;background:#1c1c1c26;margin-top:8px;overflow:hidden}
 .pb i{display:block;height:100%;background:#1c1c1c;border-radius:4px}
 #sheet{position:fixed;left:0;right:0;bottom:0;z-index:5;padding:22px 22px calc(26px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:4px solid var(--fg);border-radius:26px 26px 0 0;text-align:center;transform:translateY(110%);visibility:hidden;transition:transform .3s cubic-bezier(.2,1.3,.5,1),visibility 0s .3s;font-size:24px}
@@ -120,6 +131,7 @@ button{cursor:pointer}
  <div id="menu"><p class="sub">Loading… If nothing else shows up, this viewer isn't running the game. Open it in Safari or Chrome instead of a file preview.<br><br>لو مفيش حاجة ظهرت، افتح الملف في Safari أو Chrome بدل المعاينة.</p></div>
  <div id="game" style="display:none;width:100%;flex-direction:column;align-items:center">
   <div class="meta"><span id="rn"></span><span class="streak" id="stk"></span></div>
+  <div class="plist" id="pl" style="display:none"></div>
   <div class="q" id="q1"></div><div class="big" id="q2"></div><div class="q" id="q3"></div>
   <div class="sub" id="sub"></div>
   <div class="grid" id="grid"></div>
@@ -762,7 +774,17 @@ var TX={
   row:function(n){return" · 🔥 "+n+" in a row"},perfect:"🏆 PERFECT RUN!",done:"✅ CATEGORY DONE!",got:function(a,b){return"You got "+a+"/"+b+" this run"},
   allSolved:" · ★ every round solved",overall:function(s,n){return" · "+s+"/"+n+" solved overall"},replay:"↻ REPLAY",menu:"MENU",full:"Not enough space on this device to save more photos.",lang:"ع",
   endless:"♾ ENDLESS",endlessSub:"Mixed rounds from every category",score:function(n){return"SCORE "+n},runOver:"💀 RUN OVER!",
-  runTxt:function(s,b){return" You cleared "+s+" rounds · best "+b+"."},newBest:" 🏅 New best!",newRun:"↻ NEW RUN",duel:"🆚 DUEL",duelSub:"Pick 1 of 2. The winner stays till you miss",anyCat:"EVERYTHING",anyCatSub:"Questions from every category",pick:"PICK ONE",newQ:"NEW QUESTION!",duelTxt:function(s,b){return"You got "+s+" in a row · best "+b+"."},back:"‹",sections:function(k){return k===1?"1 section":n(k)+" sections"},reg_eg:"🇪🇬 EGYPT",reg_w:"🌍 WORLD",reg_all:"🔀 BOTH"},
+  runTxt:function(s,b){return" You cleared "+s+" rounds · best "+b+"."},newBest:" 🏅 New best!",newRun:"↻ NEW RUN",duel:"🆚 DUEL",duelSub:"Pick 1 of 2. The winner stays till you miss",anyCat:"EVERYTHING",anyCatSub:"Questions from every category",pick:"PICK ONE",newQ:"NEW QUESTION!",duelTxt:function(s,b){return"You got "+s+" in a row · best "+b+"."},back:"‹",sections:function(k){return k===1?"1 section":n(k)+" sections"},reg_eg:"🇪🇬 EGYPT",reg_w:"🌍 WORLD",reg_all:"🔀 BOTH",
+  mp:"👥 MULTIPLAYER",cats:"📚 CATEGORIES",hot:"🥔 HOT POTATO",hotSub:"Pass the phone. Knock out the answer and you're out",chal:"🔗 CHALLENGE",chalSub:"Play 10, send the link. Friends get the same questions",
+  players:"PLAYERS",addP:"+ ADD PLAYER",pName:function(k){return"Player "+k},pickCat:"PICK A CATEGORY",pLeft:function(k){return k+" left"},
+  hRound:function(a){return"ROUND "+a},turn:function(x){return"🥔 "+x+": knock one out"},isOut:function(x){return"💥 "+x+" IS OUT!"},
+  outTxt:function(x,y){return x+" knocked out the answer: "+y+"."},safe:"😅 EVERYONE'S SAFE!",safeTxt:"Nobody touched the answer.",nextRound:"NEXT ROUND ▶",
+  winner:function(x){return"🏆 "+x+" WINS!"},winTxt:"Last one standing.",again:"↻ PLAY AGAIN",
+  yourName:"YOUR NAME",namePh:"Name",friend:"A friend",chFrom:function(x){return x+" challenged you!"},chBeat:function(s,k){return"Score to beat: "+s+"/"+k},
+  chSame:"Same questions, no undo. Can you beat it?",play:"▶ PLAY",chBad:"This challenge link doesn't work with this version of the game.",
+  chRound:function(a,b,s){return"🔗 ROUND "+a+"/"+b+" · SCORE "+s},chDone:"✅ CHALLENGE DONE!",chYou:function(s,k){return"You got "+s+"/"+k+". Send the link and see if your friends can beat it."},
+  chWin:"🏆 YOU WIN!",chLose:"😬 YOU LOST!",chDraw:"🤝 DRAW!",vs:function(s,b,x,k){return"You "+s+"/"+k+" · "+x+" "+b+"/"+k},
+  share:"🔗 SEND CHALLENGE",shareBack:"🔗 SEND YOUR SCORE",copied:"Link copied!",msg:function(s,k){return"I got "+s+"/"+k+" on Shelhom! Can you beat me? 🔥"}},
  ar:{title:"شيلهم!",streak:"🔥 ورا بعض ",best:"🏅 أحسن رقم ",rounds:function(n){return n+" جولات"},solved:function(s,n){return"حليت "+s+" من "+n},complete:"★ خلّصتها",
   hint:"الكارت اللي بتشيله بيتقلب ويوريك إجابته، ودوس عليه تاني عشان ترجعه. دوس 📷 جوه أي جولة وبعدين على أي مربع عشان تحط صورة من عندك.",
   round:function(a,b){return"جولة "+a+"/"+b},photo:"وضع الصور: دوس على أي مربع",nailed:"جبتها!",wrong:"لأ، مش دي!",left:function(n){return"فاضل تشيل "+n},all:"شيل الكل وسيب واحد بس",
@@ -771,7 +793,17 @@ var TX={
   row:function(n){return" · 🔥 "+n+" ورا بعض"},perfect:"🏆 ولا غلطة!",done:"✅ خلّصت القسم!",got:function(a,b){return"جبت "+a+" من "+b+" المرة دي"},
   allSolved:" · ★ حليت كل الجولات",overall:function(s,n){return" · حليت "+s+" من "+n+" لحد دلوقتي"},replay:"↻ تاني",menu:"القايمة",full:"مفيش مساحة كفاية على الجهاز عشان تحفظ صور زيادة.",lang:"EN",
   endless:"♾ مالهاش آخر",endlessSub:"جولات متلخبطة من كل الأقسام",score:function(n){return"النتيجة "+n},runOver:"💀 اللعبة خلصت!",
-  runTxt:function(s,b){return" عدّيت "+s+" جولات · أحسن رقم "+b+"."},newBest:" 🏅 رقم قياسي جديد!",newRun:"↻ ابدأ من الأول",duel:"🆚 ده ولا ده",duelSub:"اختار واحد من اتنين، واللي يكسب يفضل",anyCat:"كل حاجة",anyCatSub:"أسئلة من كل الأقسام",pick:"اختار واحد",newQ:"سؤال جديد!",back:"›",sections:function(k){return k===1?"قسم واحد":n(k)+" أقسام"},duelTxt:function(s,b){return"جبت "+s+" ورا بعض · أحسن رقم "+b+"."},reg_eg:"🇪🇬 مصري",reg_w:"🌍 عالمي",reg_all:"🔀 الاتنين"}};
+  runTxt:function(s,b){return" عدّيت "+s+" جولات · أحسن رقم "+b+"."},newBest:" 🏅 رقم قياسي جديد!",newRun:"↻ ابدأ من الأول",duel:"🆚 ده ولا ده",duelSub:"اختار واحد من اتنين، واللي يكسب يفضل",anyCat:"كل حاجة",anyCatSub:"أسئلة من كل الأقسام",pick:"اختار واحد",newQ:"سؤال جديد!",back:"›",sections:function(k){return k===1?"قسم واحد":n(k)+" أقسام"},duelTxt:function(s,b){return"جبت "+s+" ورا بعض · أحسن رقم "+b+"."},reg_eg:"🇪🇬 مصري",reg_w:"🌍 عالمي",reg_all:"🔀 الاتنين",
+  mp:"👥 مع صحابك",cats:"📚 الأقسام",hot:"🥔 البطاطس السخنة",hotSub:"لفّوا الموبايل، واللي يشيل الإجابة الصح يطلع برا",chal:"🔗 تحدّي",chalSub:"العب ١٠ وابعت اللينك، وصحابك ياخدوا نفس الأسئلة",
+  players:"اللعيبة",addP:"+ لاعب كمان",pName:function(k){return"لاعب "+k},pickCat:"اختار قسم",pLeft:function(k){return"فاضل "+k},
+  hRound:function(a){return"جولة "+a},turn:function(x){return"🥔 "+x+": شيل واحد"},isOut:function(x){return"💥 "+x+" طلع برا!"},
+  outTxt:function(x,y){return x+" شال الإجابة الصح: "+y+"."},safe:"😅 محدش وقع!",safeTxt:"محدش لمس الإجابة الصح.",nextRound:"الجولة اللي بعدها ◀",
+  winner:function(x){return"🏆 "+x+" كسب!"},winTxt:"آخر واحد فاضل.",again:"↻ تاني",
+  yourName:"اسمك",namePh:"الاسم",friend:"واحد صاحبك",chFrom:function(x){return x+" بيتحداك!"},chBeat:function(s,k){return"لازم تعدّي "+s+" من "+k},
+  chSame:"نفس الأسئلة ومن غير رجوع. تقدر تكسب؟",play:"▶ يلا",chBad:"لينك التحدي ده مش شغال مع النسخة دي من اللعبة.",
+  chRound:function(a,b,s){return"🔗 جولة "+a+"/"+b+" · النتيجة "+s},chDone:"✅ خلصت التحدي!",chYou:function(s,k){return"جبت "+s+" من "+k+". ابعت اللينك وشوف صحابك هيعدّوك ولا لأ."},
+  chWin:"🏆 كسبت!",chLose:"😬 خسرت!",chDraw:"🤝 تعادل!",vs:function(s,b,x,k){return"إنت "+s+" · "+x+" "+b+" (من "+k+")"},
+  share:"🔗 ابعت التحدي",shareBack:"🔗 ابعت نتيجتك",copied:"اتنسخ اللينك!",msg:function(s,k){return"جبت "+s+" من "+k+" في شيلهم! تقدر تعدّيني؟ 🔥"}}};
 
 var START=50,UNDO=30,WIN=10;
 var $=function(i){return document.getElementById(i)};
@@ -786,6 +818,8 @@ coins=ld("elim_coins",START);if(typeof coins!=="number"||!(coins>=0))coins=START
 streak=ld("elim_streak",0)|0;best=ld("elim_best",0)|0;eBest=ld("elim_endless",{});dBest=ld("elim_duel",{});if(!dBest||typeof dBest!=="object")dBest={};if(typeof eBest==="number")eBest={all:eBest};if(!eBest||typeof eBest!=="object")eBest={};
 REG=ld("elim_region","all");if(["eg","w","all"].indexOf(REG)<0)REG="all";prog=ld("elim_prog",{})||{};mute=!!ld("elim_mute",false);
 IM=ld("elim_img",{})||{};WK=ld("elim_wiki",{})||{};L=ld("elim_lang","en")==="ar"?"ar":"en";
+// multiplayer: HP = hot potato player names ("" = default name), ME = your name on challenge links
+var HP=ld("elim_players",["",""]),ME=ld("elim_name","");if(!Array.isArray(HP)||HP.length<2||HP.length>8)HP=["",""];HP=HP.map(function(v){return String(v||"").slice(0,16)});if(typeof ME!=="string")ME="";
 function save(){sv("elim_coins",coins);sv("elim_streak",streak);sv("elim_best",best);sv("elim_endless",eBest);sv("elim_duel",dBest);sv("elim_prog",prog);sv("elim_mute",mute);sv("elim_lang",L);sv("elim_region",REG)}
 function t(k){return TX[L][k]}
 function n(v,dp){return L==="ar"?v.toLocaleString("ar-EG",{useGrouping:v>=10000,minimumFractionDigits:dp||0,maximumFractionDigits:dp==null?2:dp}):dp!=null?v.toFixed(dp):v>=10000?v.toLocaleString("en-US"):String(v)}
@@ -794,10 +828,11 @@ function li(p){return p?p[L==="ar"?1:0]:""}
 function fmt(x){return li(x.r.pre)+n(x.d[1],x.r.dp)+li(x.r.suf)}
 function nm(x){return L==="ar"&&x.d[2]?x.d[2]:x.d[0]}
 // in a mixed "what came first" question, each card says what its year means ("Film released", "First hosted the Olympics")
-function dtag(x){var mixed=mode==="duel"?dSrc&&dSrc.g:mode==="end"&&!cur.r;return mixed&&x.r.dt?'<small class="dt">'+esc(li(x.r.dt))+"</small>":""}
+function dtag(x){var mixed=mode==="duel"?dSrc&&dSrc.g:(mode==="end"||mode==="hot")&&!cur.r;return mixed&&x.r.dt?'<small class="dt">'+esc(li(x.r.dt))+"</small>":""}
 function key(r){return r.key}
 function solved(rs){return rs.filter(function(r){return prog[key(r)]}).length}
-function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var x=a[i];a[i]=a[j];a[j]=x}return a}
+// R = an optional seeded random function (challenge links); Math.random otherwise
+function shuffle(a,R){R=R||Math.random;a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(R()*(i+1));var x=a[i];a[i]=a[j];a[j]=x}return a}
 function esc(s){return String(s).replace(/[&<>"]/g,function(ch){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[ch]})}
 
 // --- rounds: a category round, or for endless mode a random round or a generated mix ---
@@ -812,8 +847,9 @@ var GQ={p:{min:[["WHO IS THE","OLDEST",Q],["مين","الأكبر في السن"
 function mix(){for(var k=0;k<300;k++){var g=Math.random()<.5?"p":"y",b=Math.random()<.5?"min":"max",P=pool(g),pick=shuffle(P).slice(0,9);if(P.length<9||dupPhoto(pick))continue;var
   v=pick.map(function(x){return x.d[1]}),e=b==="min"?Math.min.apply(0,v):Math.max.apply(0,v);
   if(v.filter(function(x){return x===e}).length===1)return{q:GQ[g][b][0],qa:GQ[g][b][1],best:b,items:pick}}}
-function endlessRound(){var m=Math.random()<.5&&mix();if(m)return m;
- var all=rounds(),p=shuffle(all.filter(function(r){return eRecent.indexOf(r)<0}))[0]||all[0];
+// id = limit to one subcategory (hot potato); generated mixes only when playing everything
+function endlessRound(id){var m=!id&&Math.random()<.5&&mix();if(m)return m;
+ var all=id?subRounds(id):rounds(),p=shuffle(all.filter(function(r){return eRecent.indexOf(r)<0}))[0]||all[0];
  eRecent.push(p);while(eRecent.length>Math.min(15,all.length>>1))eRecent.shift();return mk(p)}
 
 // --- duel mode (ده ولا ده / This or That): two cards, pick the right one, keep going until a miss ---
@@ -872,7 +908,7 @@ function duelRender(){var qq=L==="ar"?cur.qa:cur.q;
  $("rn").textContent=(dSwap?t("newQ"):dl)+" · "+t("score")(n(dScore));$("q1").textContent=qq[0];$("q2").textContent=qq[1];$("q3").textContent=qq[2];
  $("sub").textContent=edit?t("photo"):over==="win"?t("nailed"):over==="lose"?t("wrong"):t("pick");
  $("coins").textContent=n(coins);$("stk").textContent="";$("undo").style.display=$("skip").style.display="none";$("cam").className="pill"+(edit?" on":"");
- $("grid").className="grid duo";
+ $("grid").className="grid duo";$("pl").style.display="none";
  $("grid").innerHTML=items.map(function(x,i){var cls=over?(i===corr?"win":"out")+(over==="lose"&&i===dPick?" bad":""):"";
   if(over&&flipNow.indexOf(i)<0)cls+=" flip";
   var src=photo(x.d[0]),img=src?'<img src="'+esc(src)+'" alt="" onerror="this.remove()">':"";
@@ -888,6 +924,53 @@ function duelPick(i){if(over)return;dPick=i;flipNow=[0,1];
  else{over="lose";save();render();shake();sfx.lose();
   sheet(t("runOver"),t("duelTxt")(n(dScore),n(dBest[dKey()]||0))+(dNew?t("newBest"):""),
    [[t("newRun"),function(){dScore=0;dNew=false;dSrc=null;duelNext()},"y"],[t("menu"),menu,""]],700)}}
+
+// --- hot potato (البطاطس السخنة): players take turns knocking out one card; whoever knocks out the answer is out ---
+var HCAT=null,hPl=[],hTurn=0,hRn=0;
+function alive(){return hPl.filter(function(p){return!p.out})}
+function hNext(){do{hTurn=(hTurn+1)%hPl.length}while(hPl[hTurn].out)}
+function hotStart(id){HCAT=id;mode="hot";eRecent=[];hTurn=0;hRn=0;
+ hPl=HP.map(function(v,i){return{n:v.trim()||t("pName")(n(i+1)),out:false}});hotRound()}
+function hotRound(){hRn++;cur=endlessRound(HCAT);loadPhotos(cur.items);start()}
+function hotPick(i,x){var p=hPl[hTurn];out.push(i);flipNow=[i];
+ if(i===corr){over="lose";p.out=true;var al=alive(),msg=t("outTxt")(p.n,nm(x)+" ("+fmt(x)+")");render();shake();sfx.lose();
+  if(al.length===1){sheet(t("winner")(al[0].n),msg+" "+t("winTxt"),[[t("again"),function(){hotStart(HCAT)},"y"],[t("menu"),menu,""]],450);
+   setTimeout(function(){if(mode==="hot"&&over)confetti()},450)}
+  else{hNext();sheet(t("isOut")(p.n),msg+" "+t("pLeft")(n(al.length)),[[t("nextRound"),hotRound,"y"]],450)}}
+ else if(items.length-out.length===1){over="win";flipNow=[corr];hNext();render();sfx.win();sheet(t("safe"),t("safeTxt"),[[t("nextRound"),hotRound,"y"]],600)}
+ else{hNext();render();sfx.elim(out.length)}}
+
+// --- challenge links: play up to 10 rounds, then send a link; whoever opens it gets the same rounds with the same card order ---
+// A link names its rounds by a short hash of their key, so adding rounds to the game later doesn't change old links.
+var CH=null;
+function hk(s){var h=2166136261;for(var i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}return(h>>>0).toString(36)}
+var BYH={};ALL.forEach(function(r){var k=hk(r.key);if(BYH[k])console.warn("Round hash clash:",r.key);BYH[k]=r});
+// mulberry32: a small seeded random number generator
+function rng(a){return function(){a=a+0x6D2B79F5|0;var x=Math.imul(a^a>>>15,1|a);x=x+Math.imul(x^x>>>7,61|x)^x;return((x^x>>>14)>>>0)/4294967296}}
+function chalNew(id){CH={seed:Math.floor(Math.random()*2147483647),list:shuffle(id?subRounds(id):rounds()).slice(0,10),sub:id,from:null};chalGo()}
+function chalGo(){mode="chal";CH.i=0;CH.score=0;loadPhotos([].concat.apply([],CH.list.map(function(r){return mk(r).items})));chalRound()}
+function chalRound(){cur=mk(CH.list[CH.i]);start()}
+function chalPick(i,x){out.push(i);flipNow=[i];
+ if(i===corr){over="lose";render();shake();sfx.lose();sheet(t("lost"),t("knocked")(nm(x)+" ("+fmt(x)+")"),[[t("next"),chalNext,"y"]],450)}
+ else if(items.length-out.length===1){over="win";CH.score++;flipNow=[corr];render();sfx.win();confetti();sheet(t("won"),"",[[t("next"),chalNext,"y"]],600)}
+ else{render();sfx.elim(out.length)}}
+function chalNext(){CH.i++;if(CH.i<CH.list.length){chalRound();return}
+ var k=CH.list.length,s=CH.score,f=CH.from;cur=null;
+ sheet(f?(s>f.s?t("chWin"):s<f.s?t("chLose"):t("chDraw")):t("chDone"),f?t("vs")(n(s),n(f.s),f.n||t("friend"),n(k)):t("chYou")(n(s),n(k)),
+  [[f?t("shareBack"):t("share"),chalShare,"y"],[t("menu"),menu,""]],0);
+ if(!f||s>f.s){confetti();sfx.win()}}
+function chalURL(){var q="ch="+CH.seed.toString(36)+"."+CH.list.map(function(r){return hk(r.key)}).join(".")+"&s="+CH.score;
+ if(CH.sub)q+="&c="+encodeURIComponent(CH.sub);if(ME.trim())q+="&n="+encodeURIComponent(ME.trim());
+ return location.href.split(/[?#]/)[0]+"?"+q}
+function chalShare(){var u=chalURL(),m=t("msg")(n(CH.score),n(CH.list.length));
+ var copy=function(){if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(m+" "+u).then(function(){$("sp").textContent=t("copied")},function(){prompt("",u)});else prompt("",u)};
+ if(navigator.share)navigator.share({text:m+" "+u}).catch(function(e){if(e&&e.name!=="AbortError")copy()});else copy()}
+// opening a challenge link: read it, tidy the address bar, and show the invite page
+function chalLoad(){var q=new URLSearchParams(location.search),c=q.get("ch");if(!c)return;
+ try{history.replaceState(null,"",location.href.split(/[?#]/)[0])}catch(e){}
+ var pt=c.split("."),list=pt.slice(1).map(function(h){return BYH[h]}),seed=parseInt(pt[0],36),ok=list.length&&list.length<=10&&list.every(Boolean)&&seed>=0;
+ list=list.filter(Boolean);
+ CH={seed:seed,list:list,sub:subInfo(q.get("c"))?q.get("c"):null,bad:!ok,from:{n:(q.get("n")||"").trim().slice(0,16),s:Math.max(0,Math.min(list.length,parseInt(q.get("s"),10)||0))}};GRP="cr"}
 
 // --- photos: your own (📷) first, then the built-in set, then a Wikipedia lookup when online ---
 function photo(name){return IM[name]||(window.PH&&PH[name])||WK[name]}
@@ -940,48 +1023,74 @@ function inGame(){return $("game").style.display!=="none"}
 function grpSubs(g){return g.s.filter(function(x){return subRounds(x[0]).length})}
 function subInfo(id){var r=null;GROUPS.forEach(function(g){g.s.forEach(function(x){if(x[0]===id)r=x})});return r}
 function ghead(e,label){return '<div class="ghead"><button class="pill" data-back aria-label="Back">'+t("back")+"</button><h2>"+(e?e+" ":"")+label+"</h2></div>"}
-// Duel page: everything, or one subcategory (under its group's heading); each shows its best duel run.
-function duelPage(){var b=function(k){return"🏅 "+n(dBest[REG+(k?"|"+k:"")]||0)};
- return ghead("",t("duel"))+'<div class="subs"><button class="cat end" data-dc="">🎲 '+t("anyCat")+"<small><span>"+t("anyCatSub")+"</span><span>"+b("")+"</span></small></button></div>"+
+// Category picker for duel, hot potato and challenge: everything, or one subcategory (under its group's heading).
+// at = the data attribute the buttons carry, b = an optional badge (the duel's best run), top = anything shown above the list.
+function catPage(head,at,b,top){var bd=function(k){return b?"<small><span>"+b(k)+"</span></small>":""};
+ return ghead("",head)+(top||"")+'<div class="subs"><button class="cat end" data-'+at+'="">🎲 '+t("anyCat")+"<small><span>"+t("anyCatSub")+"</span>"+(b?"<span>"+b("")+"</span>":"")+"</small></button></div>"+
   GROUPS.map(function(g){var ss=grpSubs(g);if(!ss.length)return"";
    return '<h3 class="dgh">'+g.e+" "+(L==="ar"?g.a:g.n)+'</h3><div class="subs dsubs">'+ss.map(function(x){
-    return '<button class="cat sc" data-dc="'+x[0]+'"><span class="se">'+x[1]+"</span>"+(L==="ar"?x[3]:x[2])+"<small><span>"+b(x[0])+"</span></small></button>"}).join("")+"</div>"}).join("")}
+    return '<button class="cat sc" data-'+at+'="'+x[0]+'"><span class="se">'+x[1]+"</span>"+(L==="ar"?x[3]:x[2])+bd(x[0])+"</button>"}).join("")+"</div>"}).join("")}
+// Duel page: each choice shows its best duel run.
+function duelPage(){return catPage(t("duel"),"dc",function(k){return"🏅 "+n(dBest[REG+(k?"|"+k:"")]||0)})}
+function hotPage(){return catPage(t("hot"),"hc",null,'<p class="sub">'+t("hotSub")+'</p><h3 class="dgh">'+t("players")+'</h3><div class="plyrs">'+
+ HP.map(function(v,i){return '<div class="prow"><input class="pin" data-pi="'+i+'" maxlength="16" value="'+esc(v)+'" placeholder="'+esc(t("pName")(n(i+1)))+'">'+
+  (HP.length>2?'<button class="pill" data-pdel="'+i+'" aria-label="Remove">✕</button>':"")+"</div>"}).join("")+
+ (HP.length<8?'<button class="btn" data-padd>'+t("addP")+"</button>":"")+'</div><h3 class="dgh">'+t("pickCat")+"</h3>")}
+function nameBox(){return '<h3 class="dgh">'+t("yourName")+'</h3><div class="plyrs"><input class="pin" data-me maxlength="16" value="'+esc(ME)+'" placeholder="'+esc(t("namePh"))+'"></div>'}
+function chalPage(){return catPage(t("chal"),"cc",null,'<p class="sub">'+t("chalSub")+"</p>"+nameBox()+'<h3 class="dgh">'+t("pickCat")+"</h3>")}
+function chalInvite(){var c=CH.sub&&subInfo(CH.sub),k=CH.list.length;
+ return ghead("",t("chal"))+(CH.bad?'<p class="sub">'+t("chBad")+"</p>":'<div class="chv"><div class="big">'+esc(t("chFrom")(CH.from.n||t("friend")))+'</div><p class="sub">'+
+  esc(t("chBeat")(n(CH.from.s),n(k)))+(c?" · "+c[1]+" "+esc(L==="ar"?c[3]:c[2]):"")+"<br>"+t("chSame")+"</p>"+nameBox()+'<p></p><button class="btn y" data-cplay>'+t("play")+"</button></div>")}
 function card(cls,data,emoji,label,left,d,k){return '<button class="cat '+cls+'" '+data+'><span class="se">'+emoji+"</span>"+label+"<small><span>"+left+"</span><span>"+
  (d===k?t("complete"):t("solved")(n(d),n(k)))+'</span></small><div class="pb"><i style="width:'+(k?d/k*100:0)+'%"></i></div></button>'}
 // Home shows the play modes and the big groups; tapping a group opens its page of subcategories.
 function menu(){hide();edit=false;cur=null;$("game").style.display="none";$("menu").style.display="flex";$("coins").textContent=n(coins);$("cam").className="pill";
  var g=GRP!=="d"&&GROUPS[GRP],subs=g&&grpSubs(g);if(subs&&!subs.length){GRP=null;g=null}
- $("menu").innerHTML=GRP==="d"?duelPage():g?ghead(g.e,L==="ar"?g.a:g.n)+
+ $("menu").innerHTML=GRP==="d"?duelPage():GRP==="h"?hotPage():GRP==="c"?chalPage():GRP==="cr"&&CH?chalInvite():g?ghead(g.e,L==="ar"?g.a:g.n)+
    '<div class="subs">'+subs.map(function(x){var rs=subRounds(x[0]);return card("sc",'data-s="'+x[0]+'"',x[1],L==="ar"?x[3]:x[2],t("rounds")(n(rs.length)),solved(rs),rs.length)}).join("")+"</div>":
   "<h1>"+t("title")+"</h1><div class='stats'><span class='stat streak'>"+t("streak")+n(streak)+"</span><span class='stat'>"+t("best")+n(best)+"</span></div>"+
   '<div class="seg">'+["eg","w","all"].map(function(m){return '<button data-reg="'+m+'"'+(REG===m?' class="on"':"")+">"+t("reg_"+m)+"</button>"}).join("")+"</div>"+
   '<div class="modes"><button class="cat end" data-c="e">'+t("endless")+"<small><span>"+t("endlessSub")+"</span><span>🏅 "+n(eBest[REG]||0)+"</span></small></button>"+
    '<button class="cat end" data-c="d">'+t("duel")+"<small><span>"+t("duelSub")+"</span><span>🏅 "+n(dBest[REG]||0)+"</span></small></button></div>"+
-  '<div class="subs">'+GROUPS.map(function(g,i){var ss=grpSubs(g);if(!ss.length)return"";var rs=[].concat.apply([],ss.map(function(x){return subRounds(x[0])}));
+  '<h3 class="gh">'+t("mp")+'</h3><div class="modes"><button class="cat end" data-c="h">'+t("hot")+"<small><span>"+t("hotSub")+"</span></small></button>"+
+   '<button class="cat end" data-c="c">'+t("chal")+"<small><span>"+t("chalSub")+"</span></small></button></div>"+
+  '<h3 class="gh">'+t("cats")+'</h3><div class="subs">'+GROUPS.map(function(g,i){var ss=grpSubs(g);if(!ss.length)return"";var rs=[].concat.apply([],ss.map(function(x){return subRounds(x[0])}));
    return card("sc grp",'data-g="'+i+'"',g.e,L==="ar"?g.a:g.n,t("sections")(ss.length),solved(rs),rs.length)}).join("")+"</div>"+
   '<div class="sub">'+t("hint")+'</div>';scrollTo(0,0)}
 $("menu").onclick=function(e){var rg=e.target.closest("[data-reg]");if(rg){REG=rg.dataset.reg;eRecent=[];save();sfx.tap();menu();return}
  if(e.target.closest("[data-back]")){GRP=null;sfx.tap();menu();return}
+ if(e.target.closest("[data-padd]")){HP.push("");sv("elim_players",HP);sfx.tap();menu();return}
+ var pd=e.target.closest("[data-pdel]");if(pd){HP.splice(+pd.dataset.pdel,1);sv("elim_players",HP);sfx.tap();menu();return}
+ if(e.target.closest("[data-cplay]")){sfx.tap();chalGo();return}
  var b=e.target.closest(".cat");if(!b)return;sfx.tap();
  if(b.dataset.g){GRP=+b.dataset.g;menu();return}
- if(b.dataset.c==="d"){GRP="d";menu();return}
+ if(b.dataset.c==="d"||b.dataset.c==="h"||b.dataset.c==="c"){GRP=b.dataset.c;menu();return}
+ if(b.dataset.hc!==undefined){hotStart(b.dataset.hc||null);return}
+ if(b.dataset.cc!==undefined){chalNew(b.dataset.cc||null);return}
  if(b.dataset.dc!==undefined){DCAT=b.dataset.dc||null;mode="duel";dScore=0;dNew=false;dSrc=null;duelNext();return}
  if(b.dataset.c==="e"){GRP=null;mode="end";eScore=0}
  else{mode="cat";var id=b.dataset.s;SUB=subInfo(id);PL=subRounds(id);ri=0;runOk=0;
   loadPhotos([].concat.apply([],PL.map(function(r){return mk(r).items})))}
  newRound()};
+$("menu").oninput=function(e){var el=e.target;
+ if(el.dataset.pi!==undefined){HP[+el.dataset.pi]=el.value.slice(0,16);sv("elim_players",HP)}
+ if(el.dataset.me!==undefined){ME=el.value.slice(0,16);sv("elim_name",ME)}};
 function newRound(){cur=mode==="end"?endlessRound():mk(PL[ri]);if(mode==="end")loadPhotos(cur.items);start()}
 function start(){hide();$("menu").style.display="none";$("game").style.display="flex";
- items=shuffle(cur.items);out=[];hist=[];peek=[];flipNow=[];over=false;
+ items=shuffle(cur.items,mode==="chal"&&rng(CH.seed+CH.i));out=[];hist=[];peek=[];flipNow=[];over=false;
  var v=items.map(function(x){return x.d[1]});corr=v.indexOf(cur.best==="min"?Math.min.apply(0,v):Math.max.apply(0,v));
  render();scrollTo(0,0)}
-function render(){if(mode==="duel")return duelRender();$("grid").className="grid";$("undo").style.display="";var left=items.length-out.length,qq=L==="ar"?cur.qa:cur.q;
- $("rn").textContent=mode==="end"?t("endless")+" · "+t("score")(n(eScore)):SUB[1]+" "+t("round")(n(ri+1),n(PL.length))+(prog[key(cur.r)]?" ★":"");
+function render(){if(mode==="duel")return duelRender();var mp=mode==="hot"||mode==="chal";
+ $("grid").className="grid";$("undo").style.display=mp?"none":"";var left=items.length-out.length,qq=L==="ar"?cur.qa:cur.q;
+ $("rn").textContent=mode==="end"?t("endless")+" · "+t("score")(n(eScore)):mode==="hot"?"🥔 "+t("hRound")(n(hRn))+" · "+t("pLeft")(n(alive().length)):
+  mode==="chal"?t("chRound")(n(CH.i+1),n(CH.list.length),n(CH.score)):SUB[1]+" "+t("round")(n(ri+1),n(PL.length))+(prog[key(cur.r)]?" ★":"");
+ $("pl").style.display=mode==="hot"?"flex":"none";
+ if(mode==="hot")$("pl").innerHTML=hPl.map(function(p,i){return '<span class="'+(p.out?"ko":i===hTurn&&!over?"now":"")+'">'+esc(p.n)+"</span>"}).join("");
  $("q1").textContent=qq[0];$("q2").textContent=qq[1];$("q3").textContent=qq[2];
- $("sub").textContent=edit?t("photo"):over==="win"?t("nailed"):over==="lose"?t("wrong"):(out.length?t("left")(n(left-1)):t("all"));
- $("coins").textContent=n(coins);$("stk").textContent=streak?"🔥 "+n(streak):"";
+ $("sub").textContent=edit?t("photo"):over==="win"?t("nailed"):over==="lose"?t("wrong"):mode==="hot"?t("turn")(hPl[hTurn].n):(out.length?t("left")(n(left-1)):t("all"));
+ $("coins").textContent=n(coins);$("stk").textContent=streak&&!mp?"🔥 "+n(streak):"";
  $("undo").innerHTML=t("undo")+' <i class="coin"></i>'+n(UNDO);$("undo").disabled=!hist.length||coins<UNDO||over==="win";
- $("skip").textContent=over?t("next"):t("skip");$("skip").style.display=mode==="end"&&!over?"none":"";$("cam").className="pill"+(edit?" on":"");
+ $("skip").textContent=over?t("next"):t("skip");$("skip").style.display=mode!=="cat"&&!over?"none":"";$("cam").className="pill"+(edit?" on":"");
  // Eliminated cards (and every card left after a win) flip over to show their value; tapping one flips it back (peek).
  $("grid").innerHTML=items.map(function(x,i){var o=out.indexOf(i)>-1,w=over==="win"&&!o,f=(o||w)&&peek.indexOf(i)<0,cls=o?"out":w?"win":"";
   if(over==="lose"&&i===corr)cls+=" bad";if(f&&flipNow.indexOf(i)<0)cls+=" flip";if((o||w)&&!f)cls+=" peek";
@@ -998,6 +1107,8 @@ $("grid").onclick=function(e){var c=e.target.closest(".cell");if(!c)return;var i
  if(out.indexOf(i)>-1||over==="win"){var p=peek.indexOf(i);if(p<0)peek.push(i);else peek.splice(p,1);
   c.classList.toggle("flip",p>-1);c.classList.toggle("peek",p<0);sfx.tap();return}
  if(over)return;
+ if(mode==="hot"){hotPick(i,x);return}
+ if(mode==="chal"){chalPick(i,x);return}
  out.push(i);hist.push(i);flipNow=[i];
  if(i===corr){over="lose";lostStreak=streak;streak=0;save();render();shake();sfx.lose();
   var b=[[mode==="end"?t("newRun"):t("moveOn"),nxt,"y"]],msg=t("knocked")(nm(x)+" ("+fmt(x)+")");if(coins>=UNDO)b.unshift([t("undoBtn")(n(UNDO)),undo,""]);
@@ -1021,7 +1132,9 @@ function undo(){if(!hist.length||coins<UNDO||over==="win")return;coins-=UNDO;var
  if(peek.indexOf(i)>-1)peek.splice(peek.indexOf(i),1);
  if(over==="lose"){over=false;streak=lostStreak;hide()}save();sfx.tap();bump();floatTxt("−"+n(UNDO));render()}
 $("undo").onclick=undo;
-function nxt(){if(mode==="end"){if(over!=="win"){eScore=0;streak=0;save()}newRound();return}
+function nxt(){if(mode==="hot"){if(alive().length<2)hotStart(HCAT);else hotRound();return}
+ if(mode==="chal"){chalNext();return}
+ if(mode==="end"){if(over!=="win"){eScore=0;streak=0;save()}newRound();return}
  if(!over){streak=0;save()}ri++;if(ri>=PL.length)summary();else newRound()}
 function summary(){var k=PL.length,s=solved(PL);cur=null;
  sheet(runOk===k?t("perfect"):t("done"),t("got")(n(runOk),n(k))+(s===k?t("allSolved"):t("overall")(n(s),n(k))),
@@ -1031,6 +1144,6 @@ function sheet(ti,p,btns,d){clearTimeout(stT);$("st").textContent=ti;$("sp").tex
  btns.forEach(function(b){var e=document.createElement("button");e.className="btn "+b[2];e.textContent=b[0];e.onclick=b[1];sb.appendChild(e)});
  stT=setTimeout(function(){$("sheet").classList.add("show")},d||0)}
 function hide(){clearTimeout(stT);$("sheet").classList.remove("show")}
-applyLang();menu();
+applyLang();chalLoad();menu();
 </script><script>if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol))addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));</script>
 </body></html>
