@@ -49,7 +49,7 @@ for(let c=0;c<subs.length;c++){
   await pg.waitForTimeout(650);await pg.click('#sb .btn.y');
  }
  await pg.waitForTimeout(100);const txt=await pg.textContent('#sheet');ok(txt.length>5,'summary');
- if(c===1){await pg.click('#lang');ok(await pg.isVisible('#menu'),'lang toggle on summary returns to menu');await pg.click('#lang');}
+ if(c===1){await pg.click('#lang');ok((await pg.textContent('#sheet'))!==txt&&await pg.isVisible('#sb .btn'),'lang toggle on summary keeps the summary, translated');await pg.click('#lang');await pg.click('#sb .btn.y')}
  else if(c===2){await pg.click('#sb .btn:not(.y)');ok((await S()).ri===0,'replay');await pg.click('#home')} else await pg.click('#sb .btn.y');
 }
 ok(roundNo===rounds,'played every round: '+roundNo+'/'+rounds);
