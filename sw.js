@@ -2,7 +2,7 @@
 const VERSION = 'shelhom-v1';
 const FONTS = 'shelhom-fonts';
 const FILES = ['./', 'index.html', 'manifest.webmanifest', 'photos/p1.js', 'photos/p2.js', 'photos/p3.js', 'photos/p4.js',
-  'icons/icon-192.png', 'icons/icon-512.png', 'icons/icon-180.png', 'icons/icon.svg'];
+  'icons/icon-192.png', 'icons/icon-512.png', 'icons/icon-180.png', 'icons/icon-maskable-512.png', 'icons/icon.svg'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));

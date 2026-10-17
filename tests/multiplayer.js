@@ -10,11 +10,11 @@ const wide=p=>p.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
 
 // --- home shows the section in both languages
 let p=await open(PAGE);
-if(!(await p.textContent('#menu')).includes('MULTIPLAYER'))bad.push('no multiplayer heading');
+if(!/multiplayer/i.test(await p.textContent('#menu')))bad.push('no multiplayer heading');
 await p.tap('#lang');if(!(await p.textContent('#menu')).includes('مع صحابك'))bad.push('no arabic multiplayer heading');await p.tap('#lang');
 
 // --- hot potato: 3 players, names saved, turns rotate, the one who knocks out the answer is out, last one wins
-await p.tap('.cat[data-c="h"]');await p.tap('[data-padd]');
+await p.tap('.cat[data-c="mp"]');await p.tap('.cat[data-c="h"]');await p.tap('[data-padd]');
 if(await p.locator('[data-pi]').count()!==3)bad.push('add player failed');
 for(const [i,nm] of [['0','Shiha'],['1','Omar'],['2','Mona']])await p.fill(`[data-pi="${i}"]`,nm);
 await p.screenshot({path:shot('hot-setup.png')});if(await wide(p))bad.push('hot page scrolls sideways');
@@ -22,7 +22,7 @@ await p.tap('[data-hc=""]');await p.waitForTimeout(300);
 const names=[];let winner=null;
 for(let step=0;step<200&&!winner;step++){
  const s=await p.evaluate(()=>({turn:hPl[hTurn].n,corr,out:out.slice(),n:items.length,over,now:document.querySelector('#pl .now')&&document.querySelector('#pl .now').textContent}));
- if(s.over){const t=await p.textContent('#st');if(t.includes('WINS')){winner=t;break}await p.tap('#sb .btn.y');await p.waitForTimeout(250);continue}
+ if(s.over){const t=await p.textContent('#st');if(/wins!/i.test(t)){winner=t;break}await p.tap('#sb .btn.y');await p.waitForTimeout(250);continue}
  if(s.now!==s.turn)bad.push('turn chip wrong');names.push(s.turn);
  // mostly safe picks, sometimes the answer
  const free=[...Array(s.n).keys()].filter(i=>i!==s.corr&&!s.out.includes(i));
@@ -52,7 +52,7 @@ const play=async(pg,winMask)=>{const keys=[];for(let r=0;r<10;r++){
  await pg.waitForTimeout(700);await pg.tap('#sb .btn.y');await pg.waitForTimeout(250)}return keys};
 const k1=await play(p,[1,1,0,1,1,1,0,1,1,1]);
 console.log('sender sheet',await p.textContent('#sheet'));
-if(!(await p.textContent('#st')).includes('CHALLENGE DONE'))bad.push('no challenge done sheet');
+if(!/challenge done/i.test(await p.textContent('#st')))bad.push('no challenge done sheet');
 await p.tap('#sb .btn.y');await p.waitForTimeout(200);
 const shared=await p.evaluate(()=>window.__shared[0]||'');console.log('shared',shared);
 const url=(shared.match(/\S+\?ch=\S+/)||[])[0];if(!url)bad.push('no link shared');
@@ -68,7 +68,7 @@ await q.fill('[data-me]','Omar');await q.tap('[data-cplay]');await q.waitForTime
 const k2=await play(q,[1,1,1,1,1,1,1,1,1,0]);
 if(JSON.stringify(k1)!==JSON.stringify(k2))bad.push('friend got different rounds or card order');
 const res=await q.textContent('#sheet');console.log('friend sheet',res);
-if(!res.includes('YOU WIN')||!res.includes('Shiha 8/10'))bad.push('result sheet wrong');
+if(!/you win/i.test(res)||!res.includes('Shiha 8/10'))bad.push('result sheet wrong');
 await q.tap('#sb .btn.y');const back=await q.evaluate(()=>window.__shared[0]||'');
 if(!back.includes('9/10')||!back.includes('n=Omar'))bad.push('send-back link wrong: '+back);
 

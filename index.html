@@ -22,7 +22,7 @@ body{margin:0;background:var(--bg);color:var(--fg);font-family:"Rubik",system-ui
 html[lang=ar] body{font-family:"Cairo","Rubik",system-ui,-apple-system,"Segoe UI",sans-serif}
 button{cursor:pointer;transition:transform .12s ease,box-shadow .12s ease,background-color .15s}
 button:focus-visible,.pin:focus-visible{outline:3px solid var(--y);outline-offset:2px}
-#app{width:100%;max-width:440px;padding:14px 16px 120px;display:flex;flex-direction:column;align-items:center}
+#app{width:100%;max-width:440px;padding:14px 16px 240px;display:flex;flex-direction:column;align-items:center}
 .top{width:100%;display:flex;justify-content:space-between;align-items:center;gap:8px}
 .top .gap{flex:1}
 .pill{border:1.5px solid var(--line);border-radius:14px;background:var(--surf);color:var(--fg);font:inherit;font-weight:700;font-size:17px;min-width:44px;height:44px;padding:0 11px;box-shadow:0 3px 0 var(--edge);display:flex;align-items:center;justify-content:center;gap:8px}
@@ -32,7 +32,8 @@ button:focus-visible,.pin:focus-visible{outline:3px solid var(--y);outline-offse
 .pill.bump{animation:bump .45s}
 #lang{font-size:16px;font-weight:800}
 #cpill{font-variant-numeric:tabular-nums;font-weight:800}
-.coin{width:18px;height:18px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ffe58a,var(--y) 55%);border:2.5px solid #d9a800;display:inline-block;flex:none}
+/* The coin is the Egyptian 1-pound coin: silver ring, gold middle with Tutankhamun's mask. */
+.coin{width:20px;height:20px;border-radius:50%;background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJnIiBjeD0iLjM1IiBjeT0iLjMiIHI9Ii44Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmU5YTMiLz48c3RvcCBvZmZzZXQ9Ii41NSIgc3RvcC1jb2xvcj0iI2U4YjkyMyIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2I4ODcwZiIvPjwvcmFkaWFsR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJzIiBjeD0iLjM1IiBjeT0iLjMiIHI9Ii44Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiLz48c3RvcCBvZmZzZXQ9Ii42IiBzdG9wLWNvbG9yPSIjZDNkOGRjIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjOTU5ZGE0Ii8+PC9yYWRpYWxHcmFkaWVudD48Y2xpcFBhdGggaWQ9ImMiPjxjaXJjbGUgY3g9IjMyIiBjeT0iMzIiIHI9IjIwIi8+PC9jbGlwUGF0aD48L2RlZnM+PGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMzEiIGZpbGw9InVybCgjcykiIHN0cm9rZT0iIzdkODU4YyIgc3Ryb2tlLXdpZHRoPSIyIi8+PGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMjAuNSIgZmlsbD0idXJsKCNnKSIgc3Ryb2tlPSIjOWM3MjBhIiBzdHJva2Utd2lkdGg9IjEuNSIvPjxnIGNsaXAtcGF0aD0idXJsKCNjKSI+PHBhdGggZD0iTTMyIDE2Yy02IDAtOS41IDMuNS0xMCA4bC01IDEwIDUgMnYxNmgyMFYzNmw1LTItNS0xMGMtLjUtNC41LTQtOC0xMC04eiIgZmlsbD0iI2I5OGExMiIvPjxwYXRoIGQ9Ik0yMi41IDI1LjVoMTlNMjAuNSAyOS41aDIzTTE4LjggMzMuNWgyNi40TTIyIDM4aDMuNU0zOC41IDM4aDMuNU0yMiA0MmgzLjVNMzguNSA0MmgzLjVNMjIgNDZoMy41TTM4LjUgNDZoMy41IiBzdHJva2U9IiNmMmNmNWMiIHN0cm9rZS13aWR0aD0iMS42Ii8+PHBhdGggZD0iTTI2IDI3LjVjMC0zIDIuNi00LjUgNi00LjVzNiAxLjUgNiA0LjV2OGMwIDQtMi42IDYuNS02IDYuNXMtNi0yLjUtNi02LjV6IiBmaWxsPSIjZmZlN2EwIiBzdHJva2U9IiM4YTY0MDgiIHN0cm9rZS13aWR0aD0iMSIvPjxwYXRoIGQ9Ik0yOC40IDMwLjZoMi40TTMzLjIgMzAuNmgyLjQiIHN0cm9rZT0iIzVjNDMwNSIgc3Ryb2tlLXdpZHRoPSIxLjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0zMiAzMS41djMuMiIgc3Ryb2tlPSIjYzk5YTFjIiBzdHJva2Utd2lkdGg9IjEiLz48cGF0aCBkPSJNMzAuMiA0MmgzLjZsLS42IDdoLTIuNHoiIGZpbGw9IiM4YTY0MDgiLz48Y2lyY2xlIGN4PSIzMiIgY3k9IjE5LjgiIHI9IjEuNiIgZmlsbD0iIzhhNjQwOCIvPjwvZz48L3N2Zz4=") center/contain no-repeat;display:inline-block;flex:none}
 .meta{width:100%;display:flex;justify-content:space-between;align-items:center;margin-top:18px;font-size:13px;font-weight:700;color:var(--mut);letter-spacing:.3px}
 .streak{color:#e8800c}
 .q{text-align:center;margin:12px 0 4px;font-size:15px;font-weight:700;color:var(--mut);letter-spacing:.6px}
@@ -60,6 +61,7 @@ button:focus-visible,.pin:focus-visible{outline:3px solid var(--y);outline-offse
 .back b{font-size:19px;font-weight:800;line-height:1.1;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
 .back i{position:absolute;top:5px;inset-inline-end:8px;font-style:normal;font-size:14px;color:var(--y)}
 .lab{width:100%;min-height:38px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:var(--dark);color:#fff;border-radius:11px;padding:4px 6px;font-size:12px;font-weight:600;line-height:1.15;transition:.15s;overflow-wrap:anywhere}
+.lab .ln{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .cell.out .lab{background:var(--y);color:var(--ink)}
 .cell.out.peek .tile{opacity:.75}
 .cell.win{animation:hop .6s .1s}
@@ -84,10 +86,23 @@ button:focus-visible,.pin:focus-visible{outline:3px solid var(--y);outline-offse
 .cat.end{background:var(--inv);color:var(--invfg);border-color:var(--inv);box-shadow:0 3px 0 var(--invedge)}
 .cat.end:active{box-shadow:0 1px 0 var(--invedge)}
 .cat.end small{color:var(--invmut);opacity:1}
+.cat.hero{background:var(--y);border-color:var(--y);color:var(--ink);box-shadow:0 4px 0 var(--yedge);padding:16px 20px 18px;display:flex;flex-direction:column;gap:2px;margin-top:2px}
+.cat.hero:active{box-shadow:0 1px 0 var(--yedge)}
+.hero .eb{display:block;font-size:12px;font-weight:700;letter-spacing:1px;color:rgba(28,28,28,.65);margin:0}
+.hero .ht{font-size:34px;font-weight:900;line-height:1.15}
+.hero small{color:rgba(28,28,28,.7)}
+.cat.slim{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;font-size:16px}
+.slim small{display:block;margin-top:2px}
+.slim b{flex:none;font-size:15px}
 .seg{display:flex;gap:4px;padding:4px;background:var(--surf2);border:1.5px solid var(--line);border-radius:16px}
 .seg button{flex:1;border:0;border-radius:11px;background:none;color:var(--mut);font:inherit;font-size:14px;font-weight:700;padding:9px 2px}
 .seg button.on{background:var(--y);color:var(--ink);box-shadow:0 2px 0 var(--yedge)}
 .gh{font-size:13px;font-weight:700;color:var(--mut);letter-spacing:1px;margin:14px 4px -2px}
+.hubs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.cat.hub{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;padding:14px 6px 12px;min-height:118px;justify-content:center}
+.hub .se{width:48px;height:48px;font-size:24px;border-radius:14px}
+.hub .tl{font-size:15px;font-weight:800;line-height:1.15}
+.hub small{font-size:11.5px;justify-content:center}
 .modes{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .modes .cat{font-size:16px;padding:14px;display:flex;flex-direction:column;justify-content:space-between;min-height:104px}
 .modes .cat small{flex-direction:column;gap:6px}
@@ -124,11 +139,13 @@ button:focus-visible,.pin:focus-visible{outline:3px solid var(--y);outline-offse
 .chv .btn{margin:6px auto 0}
 .pb{height:6px;border-radius:3px;background:var(--surf2);margin-top:10px;overflow:hidden}
 .pb i{display:block;height:100%;background:var(--y);border-radius:3px}
-#sheet{position:fixed;left:0;right:0;bottom:0;z-index:5;max-width:520px;margin:0 auto;padding:26px 22px calc(26px + env(safe-area-inset-bottom,0px));background:var(--surf);border-radius:26px 26px 0 0;box-shadow:0 -1px 0 var(--line),0 -14px 40px rgba(0,0,0,.18);text-align:center;transform:translateY(110%);visibility:hidden;transition:transform .3s cubic-bezier(.2,1.3,.5,1),visibility 0s .3s;font-size:24px;font-weight:800}
+#sheet{position:fixed;left:0;right:0;bottom:0;z-index:5;max-width:520px;margin:0 auto;padding:24px 18px calc(16px + env(safe-area-inset-bottom,0px));background:var(--surf);border-radius:26px 26px 0 0;box-shadow:0 -1px 0 var(--line),0 -14px 40px rgba(0,0,0,.18);text-align:center;transform:translateY(110%);visibility:hidden;transition:transform .3s cubic-bezier(.2,1.3,.5,1),visibility 0s .3s;font-size:20px;font-weight:800}
 #sheet::before{content:"";position:absolute;top:9px;left:50%;width:40px;height:5px;margin-left:-20px;border-radius:3px;background:var(--line)}
 #sheet.show{transform:none;visibility:visible;transition:transform .3s cubic-bezier(.2,1.3,.5,1)}
-#sheet p{margin:8px 0 18px;font-size:15px;font-weight:600;line-height:1.4;color:var(--mut)}
-#sheet .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+#sheet p{margin:4px 0 14px;font-size:14px;font-weight:600;line-height:1.4;color:var(--mut)}
+#sheet .row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+#sheet .btn{font-size:16px;padding:10px 22px}
+#sheet p:empty{display:none}
 .float{position:fixed;z-index:6;pointer-events:none;font-size:22px;font-weight:800;color:#d9a800;text-shadow:0 2px 0 var(--bg);animation:rise 1.1s forwards}
 #fx{position:fixed;inset:0;pointer-events:none;z-index:7}
 @keyframes pop{0%{transform:scale(1)}40%{transform:scale(.82)}75%{transform:scale(1.06)}100%{transform:scale(1)}}
@@ -782,25 +799,25 @@ var GROUPS=[
 
 // Text in English and Egyptian Arabic. Functions take numbers already formatted.
 var TX={
- en:{title:"SHELHOM!",streak:"🔥 STREAK ",best:"🏅 BEST ",rounds:function(n){return n+" rounds"},solved:function(s,n){return s+"/"+n+" solved"},complete:"★ COMPLETE",
+ en:{title:"SHELHOM!",streak:"🔥 Streak ",best:"🏅 Best ",rounds:function(n){return n+" rounds"},solved:function(s,n){return s+"/"+n+" solved"},complete:"★ Complete",
   hint:"Eliminated cards flip to show their answer. Tap one to flip it back. Tap 📷 in a round, then a tile, to use your own photo.",
-  round:function(a,b){return"ROUND "+a+"/"+b},photo:"PHOTO MODE: TAP A TILE",nailed:"NAILED IT!",wrong:"WRONG ONE!",left:function(n){return n+" TO ELIMINATE"},all:"ELIMINATE ALL BUT ONE",
-  undo:"↺",skip:"▶| SKIP",next:"NEXT ▶",lost:"❌ YOU LOST!",knocked:function(x){return"You knocked out the answer: "+x+"."},keep:function(n){return" Undo to keep your 🔥"+n+" streak."},
-  undoBtn:function(n){return"↺ UNDO · "+n},moveOn:"MOVE ON ▶",won:"🎉 YOU GOT IT!",coins:function(n){return"+"+n+" coins"},bonus:function(n){return" · +"+n+" streak bonus"},
-  row:function(n){return" · 🔥 "+n+" in a row"},perfect:"🏆 PERFECT RUN!",done:"✅ CATEGORY DONE!",got:function(a,b){return"You got "+a+"/"+b+" this run"},
-  allSolved:" · ★ every round solved",overall:function(s,n){return" · "+s+"/"+n+" solved overall"},replay:"↻ REPLAY",menu:"MENU",full:"Not enough space on this device to save more photos.",lang:"ع",
-  endless:"♾ ENDLESS",endlessSub:"Mixed rounds from every category",score:function(n){return"SCORE "+n},runOver:"💀 RUN OVER!",
-  runTxt:function(s,b){return" You cleared "+s+" rounds · best "+b+"."},newBest:" 🏅 New best!",newRun:"↻ NEW RUN",duel:"🆚 DUEL",duelSub:"Pick 1 of 2. The winner stays till you miss",anyCat:"EVERYTHING",anyCatSub:"Questions from every category",pick:"PICK ONE",newQ:"NEW QUESTION!",duelTxt:function(s,b){return"You got "+s+" in a row · best "+b+"."},back:"‹",sections:function(k){return k===1?"1 section":n(k)+" sections"},reg_eg:"🇪🇬 EGYPT",reg_w:"🌍 WORLD",reg_all:"🔀 BOTH",
+  round:function(a,b){return"Round "+a+"/"+b},photo:"Photo mode: tap a card",nailed:"Nailed it!",wrong:"Wrong one!",left:function(n){return n+" left to knock out"},all:"Knock out all but one",
+  undo:"↺",skip:"Skip ▶|",next:"Next ▶",lost:"❌ You lost!",knocked:function(x){return"You knocked out the answer: "+x+"."},keep:function(n){return" Undo to keep your 🔥"+n+" streak."},
+  undoBtn:function(n){return"↺ Undo · "+n},moveOn:"Move on ▶",won:"🎉 You got it!",coins:function(n){return"+"+n+" coins"},bonus:function(n){return" · +"+n+" streak bonus"},
+  row:function(n){return" · 🔥 "+n+" in a row"},perfect:"🏆 Perfect run!",done:"✅ Category done!",got:function(a,b){return"You got "+a+"/"+b+" this run"},
+  allSolved:" · ★ every round solved",overall:function(s,n){return" · "+s+"/"+n+" solved overall"},replay:"↻ Replay",menu:"Menu",full:"Not enough space on this device to save more photos.",lang:"ع",
+  endless:"♾ ENDLESS",endlessSub:"Mixed rounds from every category",score:function(n){return"Score "+n},runOver:"💀 Run over!",
+  runTxt:function(s,b){return" You cleared "+s+" rounds · best "+b+"."},newBest:" 🏅 New best!",newRun:"↻ New run",duel:"🆚 DUEL",duelSub:"Pick 1 of 2. The winner stays till you miss",anyCat:"EVERYTHING",anyCatSub:"Questions from every category",pick:"Pick one",newQ:"New question!",duelTxt:function(s,b){return"You got "+s+" in a row · best "+b+"."},back:"‹",sections:function(k){return k===1?"1 section":n(k)+" sections"},reg_eg:"🇪🇬 Egypt",reg_w:"🌍 World",reg_all:"🔀 Both",
   mp:"👥 MULTIPLAYER",cats:"📚 CATEGORIES",hot:"🥔 HOT POTATO",hotSub:"Pass the phone. Knock out the answer and you're out",chal:"🔗 CHALLENGE",chalSub:"Play 10, send the link. Friends get the same questions",
-  players:"PLAYERS",addP:"+ ADD PLAYER",pName:function(k){return"Player "+k},pickCat:"PICK A CATEGORY",pLeft:function(k){return k+" left"},
-  hRound:function(a){return"ROUND "+a},turn:function(x){return"🥔 "+x+": knock one out"},isOut:function(x){return"💥 "+x+" IS OUT!"},
-  outTxt:function(x,y){return x+" knocked out the answer: "+y+"."},safe:"😅 EVERYONE'S SAFE!",safeTxt:"Nobody touched the answer.",nextRound:"NEXT ROUND ▶",
-  winner:function(x){return"🏆 "+x+" WINS!"},winTxt:"Last one standing.",again:"↻ PLAY AGAIN",
-  yourName:"YOUR NAME",namePh:"Name",friend:"A friend",chFrom:function(x){return x+" challenged you!"},chBeat:function(s,k){return"Score to beat: "+s+"/"+k},
-  chSame:"Same questions, no undo. Can you beat it?",play:"▶ PLAY",chBad:"This challenge link doesn't work with this version of the game.",
-  chRound:function(a,b,s){return"🔗 ROUND "+a+"/"+b+" · SCORE "+s},chDone:"✅ CHALLENGE DONE!",chYou:function(s,k){return"You got "+s+"/"+k+". Send the link and see if your friends can beat it."},
-  chWin:"🏆 YOU WIN!",chLose:"😬 YOU LOST!",chDraw:"🤝 DRAW!",vs:function(s,b,x,k){return"You "+s+"/"+k+" · "+x+" "+b+"/"+k},
-  share:"🔗 SEND CHALLENGE",shareBack:"🔗 SEND YOUR SCORE",copied:"Link copied!",msg:function(s,k){return"I got "+s+"/"+k+" on Shelhom! Can you beat me? 🔥"}},
+  players:"Players",addP:"+ Add player",pName:function(k){return"Player "+k},pickCat:"Pick a category",pLeft:function(k){return k+" left"},
+  hRound:function(a){return"Round "+a},turn:function(x){return"🥔 "+x+": knock one out"},isOut:function(x){return"💥 "+x+" is out!"},
+  outTxt:function(x,y){return x+" knocked out the answer: "+y+"."},safe:"😅 Everyone's safe!",safeTxt:"Nobody touched the answer.",nextRound:"Next round ▶",
+  winner:function(x){return"🏆 "+x+" wins!"},winTxt:"Last one standing.",again:"↻ Play again",
+  yourName:"Your name",namePh:"Name",friend:"A friend",chFrom:function(x){return x+" challenged you!"},chBeat:function(s,k){return"Score to beat: "+s+"/"+k},
+  chSame:"Same questions, no undo. Can you beat it?",play:"▶ Play",heroPlay:"▶ Play",tDuel:"Duel",tCats:"Categories",tCatsSub:function(n){return n+" groups"},tMp:"Multiplayer",tMpSub:"2 to 8 players",chBad:"This challenge link doesn't work with this version of the game.",
+  chRound:function(a,b,s){return"🔗 Round "+a+"/"+b+" · Score "+s},chDone:"✅ Challenge done!",chYou:function(s,k){return"You got "+s+"/"+k+". Send the link and see if your friends can beat it."},
+  chWin:"🏆 You win!",chLose:"😬 You lost!",chDraw:"🤝 Draw!",vs:function(s,b,x,k){return"You "+s+"/"+k+" · "+x+" "+b+"/"+k},
+  share:"🔗 Send challenge",shareBack:"🔗 Send your score",copied:"Link copied!",msg:function(s,k){return"I got "+s+"/"+k+" on Shelhom! Can you beat me? 🔥"}},
  ar:{title:"شيلهم!",streak:"🔥 ورا بعض ",best:"🏅 أحسن رقم ",rounds:function(n){return n+" جولات"},solved:function(s,n){return"حليت "+s+" من "+n},complete:"★ خلّصتها",
   hint:"الكارت اللي بتشيله بيتقلب ويوريك إجابته، ودوس عليه تاني عشان ترجعه. دوس 📷 جوه أي جولة وبعدين على أي مربع عشان تحط صورة من عندك.",
   round:function(a,b){return"جولة "+a+"/"+b},photo:"وضع الصور: دوس على أي مربع",nailed:"جبتها!",wrong:"لأ، مش دي!",left:function(n){return"فاضل تشيل "+n},all:"شيل الكل وسيب واحد بس",
@@ -816,7 +833,7 @@ var TX={
   outTxt:function(x,y){return x+" شال الإجابة الصح: "+y+"."},safe:"😅 محدش وقع!",safeTxt:"محدش لمس الإجابة الصح.",nextRound:"الجولة اللي بعدها ◀",
   winner:function(x){return"🏆 "+x+" كسب!"},winTxt:"آخر واحد فاضل.",again:"↻ تاني",
   yourName:"اسمك",namePh:"الاسم",friend:"واحد صاحبك",chFrom:function(x){return x+" بيتحداك!"},chBeat:function(s,k){return"لازم تعدّي "+s+" من "+k},
-  chSame:"نفس الأسئلة ومن غير رجوع. تقدر تكسب؟",play:"▶ يلا",chBad:"لينك التحدي ده مش شغال مع النسخة دي من اللعبة.",
+  chSame:"نفس الأسئلة ومن غير رجوع. تقدر تكسب؟",play:"▶ يلا",heroPlay:"يلا نلعب ◀",tDuel:"ده ولا ده",tCats:"الأقسام",tCatsSub:function(n){return n+" مجموعات"},tMp:"مع صحابك",tMpSub:"من ٢ لـ ٨ لاعيبة",chBad:"لينك التحدي ده مش شغال مع النسخة دي من اللعبة.",
   chRound:function(a,b,s){return"🔗 جولة "+a+"/"+b+" · النتيجة "+s},chDone:"✅ خلصت التحدي!",chYou:function(s,k){return"جبت "+s+" من "+k+". ابعت اللينك وشوف صحابك هيعدّوك ولا لأ."},
   chWin:"🏆 كسبت!",chLose:"😬 خسرت!",chDraw:"🤝 تعادل!",vs:function(s,b,x,k){return"إنت "+s+" · "+x+" "+b+" (من "+k+")"},
   share:"🔗 ابعت التحدي",shareBack:"🔗 ابعت نتيجتك",copied:"اتنسخ اللينك!",msg:function(s,k){return"جبت "+s+" من "+k+" في شيلهم! تقدر تعدّيني؟ 🔥"}}};
@@ -825,7 +842,7 @@ var START=50,UNDO=30,WIN=10;
 var $=function(i){return document.getElementById(i)};
 var RM=matchMedia("(prefers-reduced-motion:reduce)").matches;
 var coins=START,streak=0,best=0,eBest={},dBest={},REG="all",prog={},mute=false,IM={},WK={},L="en";
-// GRP = the menu group whose page is open (null = home, "d" = the duel page). DCAT = the duel's subcategory (null = everything). mode "cat" plays the rounds in PL (one subcategory, SUB) in order; "end" is endless mode. cur = the round being played.
+// GRP = the menu page that is open (null = home, a number = a category group, "cats" = all groups, "mp" = multiplayer, "d" = the duel page). DCAT = the duel's subcategory (null = everything). mode "cat" plays the rounds in PL (one subcategory, SUB) in order; "end" is endless mode. cur = the round being played.
 // REG = region filter for everything: "eg" Egyptian rounds, "w" international, "all" both.
 var GRP=null,DCAT=null,mode="cat",SUB=null,PL=[],ri=0,cur=null,eScore=0,eRecent=[],items,out,hist,peek,flipNow,over,corr,lostStreak,runOk,edit=false,pend=null,stT;
 function ld(k,d){try{var v=localStorage.getItem(k);return v===null?d:JSON.parse(v)}catch(e){return d}}
@@ -843,6 +860,8 @@ function li(p){return p?p[L==="ar"?1:0]:""}
 // x = {d: item array, r: the round it comes from (for formatting)}
 function fmt(x){return li(x.r.pre)+n(x.d[1],x.r.dp)+li(x.r.suf)}
 function nm(x){return L==="ar"&&x.d[2]?x.d[2]:x.d[0]}
+// Card label: just the nickname for players known by one ("Mahmoud 'Trezeguet' Hassan" shows as Trezeguet); the full name stays in the aria-label.
+function lbl(x){var k=x.d[0].match(/'([^']+)'/);if(!k)return nm(x);if(L!=="ar")return k[1];var a=(x.d[2]||"").match(/\(([^)]+)\)\s*$/);return a?a[1]:nm(x)}
 // in a mixed "what came first" question, each card says what its year means ("Film released", "First hosted the Olympics")
 function dtag(x){var mixed=mode==="duel"?dSrc&&dSrc.g:(mode==="end"||mode==="hot")&&!cur.r;return mixed&&x.r.dt?'<small class="dt">'+esc(li(x.r.dt))+"</small>":""}
 function key(r){return r.key}
@@ -931,7 +950,7 @@ function duelRender(){var qq=L==="ar"?cur.qa:cur.q;
   return '<button class="cell '+cls+'" data-i="'+i+'" aria-label="'+esc(nm(x)+(over?": "+fmt(x):""))+'"><div class="card">'+
    '<div class="tile" style="background:hsl('+(i*137+20)+',45%,42%)"><span>'+esc(nm(x).replace(/^[("']/,"").charAt(0))+"</span>"+img+"</div>"+
    '<div class="back">'+img+"<i>"+(i===corr?"✓":"✕")+"</i><small>"+esc(li(x.r.k))+"</small><b>"+esc(fmt(x))+"</b></div>"+
-   '</div><div class="lab">'+esc(nm(x))+dtag(x)+"</div></button>"}).join("");
+   '</div><div class="lab"><span class="ln">'+esc(lbl(x))+"</span>"+dtag(x)+"</div></button>"}).join("");
  if(flipNow.length){var g=$("grid"),fl=flipNow;flipNow=[];void g.offsetWidth;
   fl.forEach(function(i){var c=g.querySelector('[data-i="'+i+'"]');if(c)c.classList.add("flip")})}}
 function duelPick(i){if(over)return;dPick=i;flipNow=[0,1];
@@ -1062,26 +1081,30 @@ function card(cls,data,emoji,label,left,d,k){return '<button class="cat '+cls+'"
  (d===k?t("complete"):t("solved")(n(d),n(k)))+'</span></small><div class="pb"><i style="width:'+(k?d/k*100:0)+'%"></i></div></button>'}
 // Home shows the play modes and the big groups; tapping a group opens its page of subcategories.
 function menu(){hide();edit=false;cur=null;$("game").style.display="none";$("menu").style.display="flex";$("coins").textContent=n(coins);$("cam").className="pill";
- var g=GRP!=="d"&&GROUPS[GRP],subs=g&&grpSubs(g);if(subs&&!subs.length){GRP=null;g=null}
- $("menu").innerHTML=GRP==="d"?duelPage():GRP==="h"?hotPage():GRP==="c"?chalPage():GRP==="cr"&&CH?chalInvite():g?ghead(g.e,L==="ar"?g.a:g.n)+
+ var g=typeof GRP==="number"&&GROUPS[GRP],subs=g&&grpSubs(g);if(subs&&!subs.length){GRP=null;g=null}
+ $("menu").innerHTML=GRP==="d"?duelPage():GRP==="h"?hotPage():GRP==="c"?chalPage():GRP==="cr"&&CH?chalInvite():GRP==="cats"?catsPage():GRP==="mp"?mpPage():g?ghead(g.e,L==="ar"?g.a:g.n)+
    '<div class="subs">'+subs.map(function(x){var rs=subRounds(x[0]);return card("sc",'data-s="'+x[0]+'"',x[1],L==="ar"?x[3]:x[2],t("rounds")(n(rs.length)),solved(rs),rs.length)}).join("")+"</div>":
   "<h1>"+t("title")+"</h1><div class='stats'><span class='stat streak'>"+t("streak")+n(streak)+"</span><span class='stat'>"+t("best")+n(best)+"</span></div>"+
   '<div class="seg">'+["eg","w","all"].map(function(m){return '<button data-reg="'+m+'"'+(REG===m?' class="on"':"")+">"+t("reg_"+m)+"</button>"}).join("")+"</div>"+
-  '<div class="modes"><button class="cat end" data-c="e">'+t("endless")+"<small><span>"+t("endlessSub")+"</span><span>🏅 "+n(eBest[REG]||0)+"</span></small></button>"+
-   '<button class="cat end" data-c="d">'+t("duel")+"<small><span>"+t("duelSub")+"</span><span>🏅 "+n(dBest[REG]||0)+"</span></small></button></div>"+
-  '<h3 class="gh">'+t("mp")+'</h3><div class="modes"><button class="cat end" data-c="h">'+t("hot")+"<small><span>"+t("hotSub")+"</span></small></button>"+
-   '<button class="cat end" data-c="c">'+t("chal")+"<small><span>"+t("chalSub")+"</span></small></button></div>"+
-  '<h3 class="gh">'+t("cats")+'</h3><div class="subs">'+GROUPS.map(function(g,i){var ss=grpSubs(g);if(!ss.length)return"";var rs=[].concat.apply([],ss.map(function(x){return subRounds(x[0])}));
-   return card("sc grp",'data-g="'+i+'"',g.e,L==="ar"?g.a:g.n,t("sections")(ss.length),solved(rs),rs.length)}).join("")+"</div>"+
+  '<button class="cat hero" data-c="e"><small class="eb">'+t("endless")+'</small><span class="ht">'+t("heroPlay")+"</span><small><span>"+t("endlessSub")+"</span><span>🏅 "+n(eBest[REG]||0)+"</span></small></button>"+
+  '<div class="hubs">'+hub("d","🆚",t("tDuel"),"🏅 "+n(dBest[REG]||0))+hub("cats","📚",t("tCats"),t("tCatsSub")(n(GROUPS.filter(function(g){return grpSubs(g).length}).length)))+
+   hub("mp","👥",t("tMp"),t("tMpSub"))+"</div>"+
   '<div class="sub">'+t("hint")+'</div>';scrollTo(0,0)}
+// The big category groups, opened from the Categories tile.
+function catsPage(){return ghead("",t("cats"))+'<div class="subs">'+GROUPS.map(function(g,i){var ss=grpSubs(g);if(!ss.length)return"";var rs=[].concat.apply([],ss.map(function(x){return subRounds(x[0])}));
+ return card("sc grp",'data-g="'+i+'"',g.e,L==="ar"?g.a:g.n,t("sections")(ss.length),solved(rs),rs.length)}).join("")+"</div>"}
+// Hot potato and challenge, opened from the Multiplayer tile.
+function mpPage(){return ghead("",t("mp"))+'<div class="modes"><button class="cat end" data-c="h">'+t("hot")+"<small><span>"+t("hotSub")+"</span></small></button>"+
+ '<button class="cat end" data-c="c">'+t("chal")+"<small><span>"+t("chalSub")+"</span></small></button></div>"}
+function hub(c,e,label,sub){return '<button class="cat hub" data-c="'+c+'"><span class="se">'+e+'</span><span class="tl">'+label+"</span><small>"+sub+"</small></button>"}
 $("menu").onclick=function(e){var rg=e.target.closest("[data-reg]");if(rg){REG=rg.dataset.reg;eRecent=[];save();sfx.tap();menu();return}
- if(e.target.closest("[data-back]")){GRP=null;sfx.tap();menu();return}
+ if(e.target.closest("[data-back]")){GRP=typeof GRP==="number"?"cats":GRP==="h"||GRP==="c"?"mp":null;sfx.tap();menu();return}
  if(e.target.closest("[data-padd]")){HP.push("");sv("elim_players",HP);sfx.tap();menu();return}
  var pd=e.target.closest("[data-pdel]");if(pd){HP.splice(+pd.dataset.pdel,1);sv("elim_players",HP);sfx.tap();menu();return}
  if(e.target.closest("[data-cplay]")){sfx.tap();chalGo();return}
  var b=e.target.closest(".cat");if(!b)return;sfx.tap();
  if(b.dataset.g){GRP=+b.dataset.g;menu();return}
- if(b.dataset.c==="d"||b.dataset.c==="h"||b.dataset.c==="c"){GRP=b.dataset.c;menu();return}
+ if(["d","h","c","cats","mp"].indexOf(b.dataset.c)>=0){GRP=b.dataset.c;menu();return}
  if(b.dataset.hc!==undefined){hotStart(b.dataset.hc||null);return}
  if(b.dataset.cc!==undefined){chalNew(b.dataset.cc||null);return}
  if(b.dataset.dc!==undefined){DCAT=b.dataset.dc||null;mode="duel";dScore=0;dNew=false;dSrc=null;duelNext();return}
@@ -1115,7 +1138,7 @@ function render(){if(mode==="duel")return duelRender();var mp=mode==="hot"||mode
   return '<button class="cell '+cls+'" data-i="'+i+'" aria-label="'+esc(nm(x)+(o||w?": "+fmt(x):""))+'"><div class="card">'+
    '<div class="tile" style="background:hsl('+(i*47+20)+',45%,42%)"><span>'+esc(nm(x).replace(/^[("']/,"").charAt(0))+"</span>"+img+"</div>"+
    '<div class="back">'+img+"<i>"+(w?"✓":"✕")+"</i><small>"+esc(li(x.r.k))+"</small><b>"+esc(fmt(x))+"</b></div>"+
-   '</div><div class="lab">'+esc(nm(x))+dtag(x)+"</div></button>"}).join("");
+   '</div><div class="lab"><span class="ln">'+esc(lbl(x))+"</span>"+dtag(x)+"</div></button>"}).join("");
  if(flipNow.length){var g=$("grid"),fl=flipNow;flipNow=[];void g.offsetWidth;
   fl.forEach(function(i){var c=g.querySelector('[data-i="'+i+'"]');if(c)c.classList.add("flip")})}}
 $("grid").onclick=function(e){var c=e.target.closest(".cell");if(!c)return;var i=+c.dataset.i,x=items[i];
@@ -1159,7 +1182,10 @@ function summary(){var k=PL.length,s=solved(PL);cur=null;
 $("skip").onclick=function(){sfx.tap();nxt()};$("home").onclick=function(){if($("menu").style.display==="flex")GRP=null;menu()};
 function sheet(ti,p,btns,d){clearTimeout(stT);$("st").textContent=ti;$("sp").textContent=p;var sb=$("sb");sb.innerHTML="";
  btns.forEach(function(b){var e=document.createElement("button");e.className="btn "+b[2];e.textContent=b[0];e.onclick=b[1];sb.appendChild(e)});
- stT=setTimeout(function(){$("sheet").classList.add("show")},d||0)}
+ stT=setTimeout(function(){$("sheet").classList.add("show");
+  // keep the answer card in view above the popup
+  var c=document.querySelector(".cell.bad,.cell.win");if(c){var r=c.getBoundingClientRect(),top=innerHeight-$("sheet").offsetHeight-12;
+   if(r.bottom>top)scrollBy({top:r.bottom-top,behavior:RM?"auto":"smooth"})}},d||0)}
 function hide(){clearTimeout(stT);$("sheet").classList.remove("show")}
 applyLang();chalLoad();menu();
 </script><script>if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol))addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));</script>

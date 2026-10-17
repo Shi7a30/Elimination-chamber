@@ -8485,7 +8485,8 @@
   "q": [
    "Elmenus logo",
    "المنيوز"
-  ]
+  ],
+  "url": "https://elmenus.com/public/img/favicons/apple-touch-icon.png"
  },
  {
   "name": "Vezeeta",
@@ -8498,7 +8499,8 @@
   "q": [
    "Vezeeta logo",
    "فيزيتا"
-  ]
+  ],
+  "url": "https://cdn-react.vezeeta.com/vezeeta-web-reactjs/jenkins-110/images/favicon-96x96.png"
  },
  {
   "name": "Paymob",
@@ -8521,7 +8523,8 @@
   "q": [
    "Breadfast logo",
    "بريدفاست"
-  ]
+  ],
+  "url": "https://cdn.breadfast.com/wp-content/uploads/2019/02/cropped-favicon-1-150x150-1-180x180.png"
  },
  {
   "name": "MaxAB",
@@ -8534,7 +8537,8 @@
   "q": [
    "MaxAB logo",
    "ماكس أب"
-  ]
+  ],
+  "url": "https://www.google.com/s2/favicons?domain=maxab.io&sz=256"
  },
  {
   "name": "Khazna",
@@ -8543,11 +8547,12 @@
   "ar": "خزنة",
   "ar_hint": "",
   "logo": true,
-  "skip": true,
+  "skip": false,
   "q": [
    "Khazna app",
    "خزنة تطبيق"
-  ]
+  ],
+  "url": "https://khazna.app/favicon.ico"
  },
  {
   "name": "Rabbit Mart",
@@ -8556,11 +8561,12 @@
   "ar": "رابيت",
   "ar_hint": "",
   "logo": true,
-  "skip": true,
+  "skip": false,
   "q": [
    "Rabbit Mart logo",
    "رابيت ماركت"
-  ]
+  ],
+  "url": "https://www.rabbitmart.com/wp-content/uploads/2021/06/New-Project-6-250x250.png"
  },
  {
   "name": "Elsewedy Electric",
@@ -8723,11 +8729,12 @@
   "ar": "باندا",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "Panda cheese Arab Dairy",
    "جبنة باندا"
-  ]
+  ],
+  "url": "https://arabdairy.com/assets/home/logos/panda.webp"
  },
  {
   "name": "Dina Farms",
@@ -8749,11 +8756,12 @@
   "ar": "دومتي",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "Domty cheese",
    "دومتي"
-  ]
+  ],
+  "url": "https://domty.org/wp-content/uploads/2026/04/cropped-Fav-180x180.webp"
  },
  {
   "name": "Obour Land",
@@ -8762,11 +8770,12 @@
   "ar": "عبور لاند",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "Obour Land cheese",
    "عبور لاند"
-  ]
+  ],
+  "url": "https://obourland.com/wp-content/uploads/2024/09/cropped-Untitled-design-10-180x180.png"
  },
  {
   "name": "Beyti",
@@ -8788,11 +8797,12 @@
   "ar": "سعودي ماركت",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "Seoudi Market",
    "سعودي ماركت"
-  ]
+  ],
+  "url": "https://seoudisupermarket.com/favicon.ico"
  },
  {
   "name": "Awlad Ragab",
@@ -8801,11 +8811,12 @@
   "ar": "أولاد رجب",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "أولاد رجب",
    "Awlad Ragab supermarket"
-  ]
+  ],
+  "url": "https://www.google.com/s2/favicons?domain=awladragab.com&sz=256"
  },
  {
   "name": "Metro Market",
@@ -8836,11 +8847,12 @@
   "ar": "هايبر وان",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "Hyper One Sheikh Zayed",
    "هايبر وان"
-  ]
+  ],
+  "url": "https://www.hyperone.com.eg/apple-touch-icon.png"
  },
  {
   "name": "Gourmet",
@@ -8862,11 +8874,12 @@
   "ar": "خير زمان",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "خير زمان",
    "Kheir Zaman supermarket"
-  ]
+  ],
+  "url": "https://www.kheirzaman.com/images/apple-icon-152x152.png"
  },
  {
   "name": "LuLu Hypermarket",
@@ -9087,11 +9100,12 @@
   "ar": "مندرين قويدر",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "Mandarine Koueider",
    "مندرين قويدر"
-  ]
+  ],
+  "url": "https://www.mandarinekoueider.com/favicon.ico"
  },
  {
   "name": "El Abd",
@@ -9122,11 +9136,12 @@
   "ar": "ساليه سكريه",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "Salé Sucré patisserie Cairo",
    "ساليه سكريه"
-  ]
+  ],
+  "url": "https://www.salesucre.com/favicons/android-icon-192x192.png"
  },
  {
   "name": "Sedra",
@@ -9148,11 +9163,12 @@
   "ar": "تي بي إس",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "TBS bakery Cairo",
    "The Bakery Shop Egypt"
-  ]
+  ],
+  "url": "https://static.wixstatic.com/media/313d80_906da77e14b94968942b4217d3cf4aef~mv2.png/v1/fill/w_193,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/TBS%20Logo%20PDF%20Original-02.png"
  },
  {
   "name": "KFC",
@@ -9556,11 +9572,12 @@
   "ar": "راديو مصر",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "راديو مصر",
    "Radio Masr logo"
-  ]
+  ],
+  "url": "https://www.radiomasr.net/wp-content/themes/wpradiomasr/images/logo.png"
  },
  {
   "name": "Mega FM",
