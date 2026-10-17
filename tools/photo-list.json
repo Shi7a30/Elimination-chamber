@@ -8811,11 +8811,12 @@
   "ar": "أولاد رجب",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "أولاد رجب",
    "Awlad Ragab supermarket"
-  ]
+  ],
+  "url": "https://www.google.com/s2/favicons?domain=awladragab.com&sz=256"
  },
  {
   "name": "Metro Market",
@@ -8846,11 +8847,12 @@
   "ar": "هايبر وان",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "Hyper One Sheikh Zayed",
    "هايبر وان"
-  ]
+  ],
+  "url": "https://www.hyperone.com.eg/apple-touch-icon.png"
  },
  {
   "name": "Gourmet",
@@ -8872,11 +8874,12 @@
   "ar": "خير زمان",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "خير زمان",
    "Kheir Zaman supermarket"
-  ]
+  ],
+  "url": "https://www.kheirzaman.com/images/apple-icon-152x152.png"
  },
  {
   "name": "LuLu Hypermarket",
@@ -9097,11 +9100,12 @@
   "ar": "مندرين قويدر",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "Mandarine Koueider",
    "مندرين قويدر"
-  ]
+  ],
+  "url": "https://www.mandarinekoueider.com/favicon.ico"
  },
  {
   "name": "El Abd",
@@ -9132,11 +9136,12 @@
   "ar": "ساليه سكريه",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "Salé Sucré patisserie Cairo",
    "ساليه سكريه"
-  ]
+  ],
+  "url": "https://www.salesucre.com/favicons/android-icon-192x192.png"
  },
  {
   "name": "Sedra",
@@ -9158,11 +9163,12 @@
   "ar": "تي بي إس",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "TBS bakery Cairo",
    "The Bakery Shop Egypt"
-  ]
+  ],
+  "url": "https://static.wixstatic.com/media/313d80_906da77e14b94968942b4217d3cf4aef~mv2.png/v1/fill/w_193,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/TBS%20Logo%20PDF%20Original-02.png"
  },
  {
   "name": "KFC",
@@ -9566,11 +9572,12 @@
   "ar": "راديو مصر",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "راديو مصر",
    "Radio Masr logo"
-  ]
+  ],
+  "url": "https://www.radiomasr.net/wp-content/themes/wpradiomasr/images/logo.png"
  },
  {
   "name": "Mega FM",
