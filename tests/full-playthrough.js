@@ -23,8 +23,8 @@ let rounds=0;for(const c of data){ok(c.a,'arabic cat name '+c.n);for(const r of 
 console.log('categories',ncat,'rounds',rounds);
 // Play every subcategory (region BOTH) in both languages: win odd rounds, lose+undo+win even
 let roundNo=0;const SG=await pg.evaluate(()=>{const o=[];GROUPS.forEach((g,i)=>g.s.forEach(s=>{if(ALL.some(r=>r.s===s[0]))o.push([i,s[0]])}));return o});const subs=SG.map(x=>x[1]);
-// subcategories live on group pages: go home, then open the sub's group
-const openSub=async c=>{if(!await pg.$(`.cat.sc[data-s="${subs[c]}"]`)){if(await pg.$('[data-back]'))await pg.click('[data-back]');await pg.click(`.cat[data-g="${SG[c][0]}"]`)}await pg.click(`.cat.sc[data-s="${subs[c]}"]`)};console.log('subs',subs.length);
+// subcategories live on group pages, and groups on the Categories page: get there, then open the sub's group
+const openSub=async c=>{if(!await pg.$(`.cat.sc[data-s="${subs[c]}"]`)){if(await pg.$('[data-back]')&&!await pg.$('.cat[data-g]'))await pg.click('[data-back]');if(!await pg.$('.cat[data-g]'))await pg.click('.cat[data-c="cats"]');await pg.click(`.cat[data-g="${SG[c][0]}"]`)}await pg.click(`.cat.sc[data-s="${subs[c]}"]`)};console.log('subs',subs.length);
 for(let c=0;c<subs.length;c++){
  const lang=c%2?'ar':'en';const cur=await pg.evaluate(()=>L);if(cur!==lang)await pg.click('#lang');
  await openSub(c);
@@ -54,13 +54,13 @@ for(let c=0;c<subs.length;c++){
 }
 ok(roundNo===rounds,'played every round: '+roundNo+'/'+rounds);
 // regions
-for(const [rg,exp] of [['eg',r=>r.m==='eg'],['w',r=>r.m==='w']]){if(await pg.$('[data-back]'))await pg.click('[data-back]');await pg.click(`[data-reg="${rg}"]`);
- if(await pg.$('[data-back]'))await pg.click('[data-back]');const ids=[];for(let gi=0;gi<SG[SG.length-1][0]+1;gi++){const gc=await pg.$(`.cat[data-g="${gi}"]`);if(!gc)continue;await gc.click();ids.push(...await pg.$$eval('.cat.sc',e=>e.map(x=>x.dataset.s)));await pg.click('[data-back]')}
+for(const [rg,exp] of [['eg',r=>r.m==='eg'],['w',r=>r.m==='w']]){while(await pg.$('[data-back]'))await pg.click('[data-back]');await pg.click(`[data-reg="${rg}"]`);
+ await pg.click('.cat[data-c="cats"]');const ids=[];for(let gi=0;gi<SG[SG.length-1][0]+1;gi++){const gc=await pg.$(`.cat[data-g="${gi}"]`);if(!gc)continue;await gc.click();ids.push(...await pg.$$eval('.cat.sc',e=>e.map(x=>x.dataset.s)));await pg.click('[data-back]')}
  const okSubs=await pg.evaluate(([rg,ids])=>ids.every(id=>subRounds(id).length&&subRounds(id).every(r=>r.m===rg))&&ALL.filter(r=>r.m===rg).every(r=>ids.indexOf(r.s)>-1),[rg,ids]);
  ok(okSubs,'region '+rg+' subs '+ids.join(','));
  ok(await pg.evaluate(()=>{for(let k=0;k<500;k++){const m=endlessRound();const rs=m.r?[m.r]:m.items.map(x=>x.r);if(!rs.every(inReg))return false}return true}),'endless respects region '+rg);
  await pg.screenshot({path:shot('menu_'+rg+'.png'),fullPage:true})}
-await pg.click('[data-reg="all"]');
+while(await pg.$('[data-back]'))await pg.click('[data-back]');await pg.click('[data-reg="all"]');
 // skip resets streak
 await openSub(0);let s1=await S();ok(s1.streak>0,'streak>0 before skip');await pg.click('#skip');ok((await S()).streak===0,'skip resets streak');
 // photos: wait for mocked loading, check images in tiles

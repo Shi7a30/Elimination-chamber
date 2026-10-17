@@ -10,11 +10,11 @@ const wide=p=>p.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
 
 // --- home shows the section in both languages
 let p=await open(PAGE);
-if(!(await p.textContent('#menu')).includes('MULTIPLAYER'))bad.push('no multiplayer heading');
+if(!/multiplayer/i.test(await p.textContent('#menu')))bad.push('no multiplayer heading');
 await p.tap('#lang');if(!(await p.textContent('#menu')).includes('مع صحابك'))bad.push('no arabic multiplayer heading');await p.tap('#lang');
 
 // --- hot potato: 3 players, names saved, turns rotate, the one who knocks out the answer is out, last one wins
-await p.tap('.cat[data-c="h"]');await p.tap('[data-padd]');
+await p.tap('.cat[data-c="mp"]');await p.tap('.cat[data-c="h"]');await p.tap('[data-padd]');
 if(await p.locator('[data-pi]').count()!==3)bad.push('add player failed');
 for(const [i,nm] of [['0','Shiha'],['1','Omar'],['2','Mona']])await p.fill(`[data-pi="${i}"]`,nm);
 await p.screenshot({path:shot('hot-setup.png')});if(await wide(p))bad.push('hot page scrolls sideways');

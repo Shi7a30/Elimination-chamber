@@ -98,6 +98,11 @@ button:focus-visible,.pin:focus-visible{outline:3px solid var(--y);outline-offse
 .seg button{flex:1;border:0;border-radius:11px;background:none;color:var(--mut);font:inherit;font-size:14px;font-weight:700;padding:9px 2px}
 .seg button.on{background:var(--y);color:var(--ink);box-shadow:0 2px 0 var(--yedge)}
 .gh{font-size:13px;font-weight:700;color:var(--mut);letter-spacing:1px;margin:14px 4px -2px}
+.hubs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.cat.hub{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;padding:14px 6px 12px;min-height:118px;justify-content:center}
+.hub .se{width:48px;height:48px;font-size:24px;border-radius:14px}
+.hub .tl{font-size:15px;font-weight:800;line-height:1.15}
+.hub small{font-size:11.5px;justify-content:center}
 .modes{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .modes .cat{font-size:16px;padding:14px;display:flex;flex-direction:column;justify-content:space-between;min-height:104px}
 .modes .cat small{flex-direction:column;gap:6px}
@@ -809,7 +814,7 @@ var TX={
   outTxt:function(x,y){return x+" knocked out the answer: "+y+"."},safe:"😅 Everyone's safe!",safeTxt:"Nobody touched the answer.",nextRound:"Next round ▶",
   winner:function(x){return"🏆 "+x+" wins!"},winTxt:"Last one standing.",again:"↻ Play again",
   yourName:"Your name",namePh:"Name",friend:"A friend",chFrom:function(x){return x+" challenged you!"},chBeat:function(s,k){return"Score to beat: "+s+"/"+k},
-  chSame:"Same questions, no undo. Can you beat it?",play:"▶ Play",heroPlay:"▶ Play",chBad:"This challenge link doesn't work with this version of the game.",
+  chSame:"Same questions, no undo. Can you beat it?",play:"▶ Play",heroPlay:"▶ Play",tDuel:"Duel",tCats:"Categories",tCatsSub:function(n){return n+" groups"},tMp:"Multiplayer",tMpSub:"2 to 8 players",chBad:"This challenge link doesn't work with this version of the game.",
   chRound:function(a,b,s){return"🔗 Round "+a+"/"+b+" · Score "+s},chDone:"✅ Challenge done!",chYou:function(s,k){return"You got "+s+"/"+k+". Send the link and see if your friends can beat it."},
   chWin:"🏆 You win!",chLose:"😬 You lost!",chDraw:"🤝 Draw!",vs:function(s,b,x,k){return"You "+s+"/"+k+" · "+x+" "+b+"/"+k},
   share:"🔗 Send challenge",shareBack:"🔗 Send your score",copied:"Link copied!",msg:function(s,k){return"I got "+s+"/"+k+" on Shelhom! Can you beat me? 🔥"}},
@@ -828,7 +833,7 @@ var TX={
   outTxt:function(x,y){return x+" شال الإجابة الصح: "+y+"."},safe:"😅 محدش وقع!",safeTxt:"محدش لمس الإجابة الصح.",nextRound:"الجولة اللي بعدها ◀",
   winner:function(x){return"🏆 "+x+" كسب!"},winTxt:"آخر واحد فاضل.",again:"↻ تاني",
   yourName:"اسمك",namePh:"الاسم",friend:"واحد صاحبك",chFrom:function(x){return x+" بيتحداك!"},chBeat:function(s,k){return"لازم تعدّي "+s+" من "+k},
-  chSame:"نفس الأسئلة ومن غير رجوع. تقدر تكسب؟",play:"▶ يلا",heroPlay:"يلا نلعب ◀",chBad:"لينك التحدي ده مش شغال مع النسخة دي من اللعبة.",
+  chSame:"نفس الأسئلة ومن غير رجوع. تقدر تكسب؟",play:"▶ يلا",heroPlay:"يلا نلعب ◀",tDuel:"ده ولا ده",tCats:"الأقسام",tCatsSub:function(n){return n+" مجموعات"},tMp:"مع صحابك",tMpSub:"من ٢ لـ ٨ لاعيبة",chBad:"لينك التحدي ده مش شغال مع النسخة دي من اللعبة.",
   chRound:function(a,b,s){return"🔗 جولة "+a+"/"+b+" · النتيجة "+s},chDone:"✅ خلصت التحدي!",chYou:function(s,k){return"جبت "+s+" من "+k+". ابعت اللينك وشوف صحابك هيعدّوك ولا لأ."},
   chWin:"🏆 كسبت!",chLose:"😬 خسرت!",chDraw:"🤝 تعادل!",vs:function(s,b,x,k){return"إنت "+s+" · "+x+" "+b+" (من "+k+")"},
   share:"🔗 ابعت التحدي",shareBack:"🔗 ابعت نتيجتك",copied:"اتنسخ اللينك!",msg:function(s,k){return"جبت "+s+" من "+k+" في شيلهم! تقدر تعدّيني؟ 🔥"}}};
@@ -837,7 +842,7 @@ var START=50,UNDO=30,WIN=10;
 var $=function(i){return document.getElementById(i)};
 var RM=matchMedia("(prefers-reduced-motion:reduce)").matches;
 var coins=START,streak=0,best=0,eBest={},dBest={},REG="all",prog={},mute=false,IM={},WK={},L="en";
-// GRP = the menu group whose page is open (null = home, "d" = the duel page). DCAT = the duel's subcategory (null = everything). mode "cat" plays the rounds in PL (one subcategory, SUB) in order; "end" is endless mode. cur = the round being played.
+// GRP = the menu page that is open (null = home, a number = a category group, "cats" = all groups, "mp" = multiplayer, "d" = the duel page). DCAT = the duel's subcategory (null = everything). mode "cat" plays the rounds in PL (one subcategory, SUB) in order; "end" is endless mode. cur = the round being played.
 // REG = region filter for everything: "eg" Egyptian rounds, "w" international, "all" both.
 var GRP=null,DCAT=null,mode="cat",SUB=null,PL=[],ri=0,cur=null,eScore=0,eRecent=[],items,out,hist,peek,flipNow,over,corr,lostStreak,runOk,edit=false,pend=null,stT;
 function ld(k,d){try{var v=localStorage.getItem(k);return v===null?d:JSON.parse(v)}catch(e){return d}}
@@ -1076,26 +1081,30 @@ function card(cls,data,emoji,label,left,d,k){return '<button class="cat '+cls+'"
  (d===k?t("complete"):t("solved")(n(d),n(k)))+'</span></small><div class="pb"><i style="width:'+(k?d/k*100:0)+'%"></i></div></button>'}
 // Home shows the play modes and the big groups; tapping a group opens its page of subcategories.
 function menu(){hide();edit=false;cur=null;$("game").style.display="none";$("menu").style.display="flex";$("coins").textContent=n(coins);$("cam").className="pill";
- var g=GRP!=="d"&&GROUPS[GRP],subs=g&&grpSubs(g);if(subs&&!subs.length){GRP=null;g=null}
- $("menu").innerHTML=GRP==="d"?duelPage():GRP==="h"?hotPage():GRP==="c"?chalPage():GRP==="cr"&&CH?chalInvite():g?ghead(g.e,L==="ar"?g.a:g.n)+
+ var g=typeof GRP==="number"&&GROUPS[GRP],subs=g&&grpSubs(g);if(subs&&!subs.length){GRP=null;g=null}
+ $("menu").innerHTML=GRP==="d"?duelPage():GRP==="h"?hotPage():GRP==="c"?chalPage():GRP==="cr"&&CH?chalInvite():GRP==="cats"?catsPage():GRP==="mp"?mpPage():g?ghead(g.e,L==="ar"?g.a:g.n)+
    '<div class="subs">'+subs.map(function(x){var rs=subRounds(x[0]);return card("sc",'data-s="'+x[0]+'"',x[1],L==="ar"?x[3]:x[2],t("rounds")(n(rs.length)),solved(rs),rs.length)}).join("")+"</div>":
   "<h1>"+t("title")+"</h1><div class='stats'><span class='stat streak'>"+t("streak")+n(streak)+"</span><span class='stat'>"+t("best")+n(best)+"</span></div>"+
   '<div class="seg">'+["eg","w","all"].map(function(m){return '<button data-reg="'+m+'"'+(REG===m?' class="on"':"")+">"+t("reg_"+m)+"</button>"}).join("")+"</div>"+
   '<button class="cat hero" data-c="e"><small class="eb">'+t("endless")+'</small><span class="ht">'+t("heroPlay")+"</span><small><span>"+t("endlessSub")+"</span><span>🏅 "+n(eBest[REG]||0)+"</span></small></button>"+
-  '<button class="cat end slim" data-c="d"><span>'+t("duel")+"<small><span>"+t("duelSub")+"</span></small></span><b>🏅 "+n(dBest[REG]||0)+"</b></button>"+
-  '<h3 class="gh">'+t("mp")+'</h3><div class="modes"><button class="cat end" data-c="h">'+t("hot")+"<small><span>"+t("hotSub")+"</span></small></button>"+
-   '<button class="cat end" data-c="c">'+t("chal")+"<small><span>"+t("chalSub")+"</span></small></button></div>"+
-  '<h3 class="gh">'+t("cats")+'</h3><div class="subs">'+GROUPS.map(function(g,i){var ss=grpSubs(g);if(!ss.length)return"";var rs=[].concat.apply([],ss.map(function(x){return subRounds(x[0])}));
-   return card("sc grp",'data-g="'+i+'"',g.e,L==="ar"?g.a:g.n,t("sections")(ss.length),solved(rs),rs.length)}).join("")+"</div>"+
+  '<div class="hubs">'+hub("d","🆚",t("tDuel"),"🏅 "+n(dBest[REG]||0))+hub("cats","📚",t("tCats"),t("tCatsSub")(n(GROUPS.filter(function(g){return grpSubs(g).length}).length)))+
+   hub("mp","👥",t("tMp"),t("tMpSub"))+"</div>"+
   '<div class="sub">'+t("hint")+'</div>';scrollTo(0,0)}
+// The big category groups, opened from the Categories tile.
+function catsPage(){return ghead("",t("cats"))+'<div class="subs">'+GROUPS.map(function(g,i){var ss=grpSubs(g);if(!ss.length)return"";var rs=[].concat.apply([],ss.map(function(x){return subRounds(x[0])}));
+ return card("sc grp",'data-g="'+i+'"',g.e,L==="ar"?g.a:g.n,t("sections")(ss.length),solved(rs),rs.length)}).join("")+"</div>"}
+// Hot potato and challenge, opened from the Multiplayer tile.
+function mpPage(){return ghead("",t("mp"))+'<div class="modes"><button class="cat end" data-c="h">'+t("hot")+"<small><span>"+t("hotSub")+"</span></small></button>"+
+ '<button class="cat end" data-c="c">'+t("chal")+"<small><span>"+t("chalSub")+"</span></small></button></div>"}
+function hub(c,e,label,sub){return '<button class="cat hub" data-c="'+c+'"><span class="se">'+e+'</span><span class="tl">'+label+"</span><small>"+sub+"</small></button>"}
 $("menu").onclick=function(e){var rg=e.target.closest("[data-reg]");if(rg){REG=rg.dataset.reg;eRecent=[];save();sfx.tap();menu();return}
- if(e.target.closest("[data-back]")){GRP=null;sfx.tap();menu();return}
+ if(e.target.closest("[data-back]")){GRP=typeof GRP==="number"?"cats":GRP==="h"||GRP==="c"?"mp":null;sfx.tap();menu();return}
  if(e.target.closest("[data-padd]")){HP.push("");sv("elim_players",HP);sfx.tap();menu();return}
  var pd=e.target.closest("[data-pdel]");if(pd){HP.splice(+pd.dataset.pdel,1);sv("elim_players",HP);sfx.tap();menu();return}
  if(e.target.closest("[data-cplay]")){sfx.tap();chalGo();return}
  var b=e.target.closest(".cat");if(!b)return;sfx.tap();
  if(b.dataset.g){GRP=+b.dataset.g;menu();return}
- if(b.dataset.c==="d"||b.dataset.c==="h"||b.dataset.c==="c"){GRP=b.dataset.c;menu();return}
+ if(["d","h","c","cats","mp"].indexOf(b.dataset.c)>=0){GRP=b.dataset.c;menu();return}
  if(b.dataset.hc!==undefined){hotStart(b.dataset.hc||null);return}
  if(b.dataset.cc!==undefined){chalNew(b.dataset.cc||null);return}
  if(b.dataset.dc!==undefined){DCAT=b.dataset.dc||null;mode="duel";dScore=0;dNew=false;dSrc=null;duelNext();return}
