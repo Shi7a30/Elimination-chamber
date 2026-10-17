@@ -74,7 +74,13 @@ def links(domain):
 
 def main():
     out, stop = {}, time.time() + 11 * 60  # finish before the workflow's time limit
+    try:  # keep what earlier runs found and carry on with the rest
+        out = json.load(open("tools/logo-candidates.json"))
+    except (OSError, ValueError):
+        pass
     for name, domains in SITES.items():
+        if name in out:
+            continue
         if time.time() > stop:
             print("out of time before", name)
             break
