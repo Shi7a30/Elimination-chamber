@@ -14,6 +14,7 @@ jobs:
         with: {python-version: "3.12"}
       - run: pip install requests pillow
       - run: python -u tools/find_logos.py
+        env: {PYTHONDONTWRITEBYTECODE: "1"}
         timeout-minutes: 15
       - name: Commit logo candidates
         if: always()
@@ -22,4 +23,4 @@ jobs:
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
           git add tools/logo-candidates.json
           git diff --cached --quiet || git commit -m "Update logo candidates"
-          git pull --rebase && git push
+          git checkout -- . && git pull --rebase && git push

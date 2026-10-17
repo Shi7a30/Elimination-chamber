@@ -4,7 +4,7 @@ Visits each brand's official site (a few guessed domains per item) and saves its
 large favicon as small data URIs in tools/logo-candidates.json ({name: [{src, url, uri}]}) for a person to review.
 Run by .github/workflows/find-logos.yml.
 """
-import json, os, re, sys
+import json, os, re, sys, time
 from urllib.parse import urljoin
 import requests
 
@@ -73,8 +73,11 @@ def links(domain):
 
 
 def main():
-    out = {}
+    out, stop = {}, time.time() + 11 * 60  # finish before the workflow's time limit
     for name, domains in SITES.items():
+        if time.time() > stop:
+            print("out of time before", name)
+            break
         seen, c = set(), []
         for d in domains:
             for kind, url in links(d):
