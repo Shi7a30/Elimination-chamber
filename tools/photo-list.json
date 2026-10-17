@@ -22601,5 +22601,590 @@
   "ar_hint": "كتب",
   "logo": false,
   "skip": false
+ },
+ {
+  "name": "Anfield",
+  "title": "Anfield",
+  "hint": "stadium",
+  "ar": "آنفيلد",
+  "ar_hint": "استاد",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Old Trafford",
+  "title": "Old Trafford",
+  "hint": "stadium",
+  "ar": "أولد ترافورد",
+  "ar_hint": "استاد",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "San Siro",
+  "title": "San Siro",
+  "hint": "stadium",
+  "ar": "سان سيرو",
+  "ar_hint": "استاد",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Santiago Bernabéu",
+  "title": "Santiago Bernabéu Stadium",
+  "hint": "stadium",
+  "ar": "سانتياجو برنابيو",
+  "ar_hint": "استاد",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Camp Nou",
+  "title": "Camp Nou",
+  "hint": "stadium",
+  "ar": "كامب نو",
+  "ar_hint": "استاد",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Signal Iduna Park",
+  "title": "Westfalenstadion",
+  "hint": "stadium",
+  "ar": "سيجنال إيدونا بارك",
+  "ar_hint": "استاد",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Allianz Arena",
+  "title": "Allianz Arena",
+  "hint": "stadium",
+  "ar": "أليانز أرينا",
+  "ar_hint": "استاد",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Emirates Stadium",
+  "title": "Emirates Stadium",
+  "hint": "stadium",
+  "ar": "استاد الإمارات",
+  "ar_hint": "استاد",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Tottenham Hotspur Stadium",
+  "title": "Tottenham Hotspur Stadium",
+  "hint": "stadium",
+  "ar": "استاد توتنهام",
+  "ar_hint": "استاد",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Al Ittihad (Jeddah)",
+  "title": "Ittihad Club",
+  "hint": "football club",
+  "ar": "الاتحاد السعودي",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Al Nassr",
+  "title": "Al Nassr FC",
+  "hint": "football club",
+  "ar": "النصر",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Al Hilal",
+  "title": "Al Hilal SFC",
+  "hint": "football club",
+  "ar": "الهلال",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Al Sadd",
+  "title": "Al Sadd SC",
+  "hint": "football club",
+  "ar": "السد",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Genoa",
+  "title": "Genoa CFC",
+  "hint": "football club",
+  "ar": "جنوى",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Torino",
+  "title": "Torino FC",
+  "hint": "football club",
+  "ar": "تورينو",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Bologna",
+  "title": "Bologna FC 1909",
+  "hint": "football club",
+  "ar": "بولونيا",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Napoli",
+  "title": "SSC Napoli",
+  "hint": "football club",
+  "ar": "نابولي",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Roma",
+  "title": "AS Roma",
+  "hint": "football club",
+  "ar": "روما",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Lazio",
+  "title": "SS Lazio",
+  "hint": "football club",
+  "ar": "لاتسيو",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Hugh Jackman",
+  "title": "Hugh Jackman",
+  "hint": "actor",
+  "ar": "هيو جاكمان",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Danny DeVito",
+  "title": "Danny DeVito",
+  "hint": "actor",
+  "ar": "داني ديفيتو",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Christopher Reeve",
+  "title": "Christopher Reeve",
+  "hint": "actor",
+  "ar": "كريستوفر ريف",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Michael Keaton",
+  "title": "Michael Keaton",
+  "hint": "actor",
+  "ar": "مايكل كيتون",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Tobey Maguire",
+  "title": "Tobey Maguire",
+  "hint": "actor",
+  "ar": "توبي ماجواير",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Gal Gadot",
+  "title": "Gal Gadot",
+  "hint": "actor",
+  "ar": "جال جادوت",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Robert Pattinson",
+  "title": "Robert Pattinson",
+  "hint": "actor",
+  "ar": "روبرت باتينسون",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Henry Barakat",
+  "title": "Henry Barakat",
+  "hint": "Egyptian film director",
+  "ar": "هنري بركات",
+  "ar_hint": "مخرج",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Salah Abu Seif",
+  "title": "Salah Abu Seif",
+  "hint": "Egyptian film director",
+  "ar": "صلاح أبو سيف",
+  "ar_hint": "مخرج",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Kamal El Sheikh",
+  "title": "Kamal El Sheikh",
+  "hint": "Egyptian film director",
+  "ar": "كمال الشيخ",
+  "ar_hint": "مخرج",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mohamed Khan",
+  "title": "Mohamed Khan (director)",
+  "hint": "Egyptian film director",
+  "ar": "محمد خان",
+  "ar_hint": "مخرج",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Daoud Abdel Sayed",
+  "title": "Daoud Abdel Sayed",
+  "hint": "Egyptian film director",
+  "ar": "داود عبد السيد",
+  "ar_hint": "مخرج",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Atef El Tayeb",
+  "title": "Atef El Tayeb",
+  "hint": "Egyptian film director",
+  "ar": "عاطف الطيب",
+  "ar_hint": "مخرج",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Sherif Arafa",
+  "title": "Sherif Arafa",
+  "hint": "Egyptian film director",
+  "ar": "شريف عرفة",
+  "ar_hint": "مخرج",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Marwan Hamed",
+  "title": "Marwan Hamed",
+  "hint": "Egyptian film director",
+  "ar": "مروان حامد",
+  "ar_hint": "مخرج",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Tyson Gay",
+  "title": "Tyson Gay",
+  "hint": "athlete",
+  "ar": "تايسون جاي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Yohan Blake",
+  "title": "Yohan Blake",
+  "hint": "athlete",
+  "ar": "يوهان بليك",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Asafa Powell",
+  "title": "Asafa Powell",
+  "hint": "athlete",
+  "ar": "أسافا باول",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Justin Gatlin",
+  "title": "Justin Gatlin",
+  "hint": "athlete",
+  "ar": "جاستن جاتلين",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Noah Lyles",
+  "title": "Noah Lyles",
+  "hint": "athlete",
+  "ar": "نوح لايلز",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Maurice Greene",
+  "title": "Maurice Greene (sprinter)",
+  "hint": "athlete",
+  "ar": "موريس جرين",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Florence Griffith-Joyner",
+  "title": "Florence Griffith-Joyner",
+  "hint": "athlete",
+  "ar": "فلورنس جريفيث جوينر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Thutmose III",
+  "title": "Thutmose III",
+  "hint": "pharaoh",
+  "ar": "تحتمس التالت",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Amenhotep III",
+  "title": "Amenhotep III",
+  "hint": "pharaoh",
+  "ar": "أمنحتب التالت",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Seti I",
+  "title": "Seti I",
+  "hint": "pharaoh",
+  "ar": "سيتي الأول",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Millipede",
+  "title": "Millipede",
+  "hint": "animal",
+  "ar": "أم ألف رجل",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Centipede",
+  "title": "Centipede",
+  "hint": "animal",
+  "ar": "أم أربعة وأربعين",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Crab",
+  "title": "Crab",
+  "hint": "animal",
+  "ar": "الكابوريا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Lobster",
+  "title": "Lobster",
+  "hint": "animal",
+  "ar": "الاستاكوزا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Spider",
+  "title": "Spider",
+  "hint": "animal",
+  "ar": "العنكبوت",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Scorpion",
+  "title": "Scorpion",
+  "hint": "animal",
+  "ar": "العقرب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ant",
+  "title": "Ant",
+  "hint": "animal",
+  "ar": "النملة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Butterfly",
+  "title": "Butterfly",
+  "hint": "animal",
+  "ar": "الفراشة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Barbary sheep",
+  "title": "Barbary sheep",
+  "hint": "animal",
+  "ar": "الكبش الأروي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Striped hyena",
+  "title": "Striped hyena",
+  "hint": "animal",
+  "ar": "الضبع المخطط",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "African golden wolf",
+  "title": "African golden wolf",
+  "hint": "animal",
+  "ar": "الديب المصري",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Sand cat",
+  "title": "Sand cat",
+  "hint": "animal",
+  "ar": "قط الرمال",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Desert hedgehog",
+  "title": "Desert hedgehog",
+  "hint": "animal",
+  "ar": "القنفد الصحراوي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Egypt at the 1990 World Cup",
+  "title": "1990 FIFA World Cup",
+  "hint": "Egypt",
+  "ar": "مصر في كاس العالم 90",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "The 1992 Cairo earthquake",
+  "title": "1992 Cairo earthquake",
+  "hint": "Egypt",
+  "ar": "زلزال 92",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Egypt wins AFCON at home",
+  "title": "2006 Africa Cup of Nations",
+  "hint": "Egypt",
+  "ar": "مصر تكسب أمم أفريقيا في القاهرة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Obama's Cairo speech",
+  "title": "A New Beginning (speech)",
+  "hint": "Egypt",
+  "ar": "خطاب أوباما في جامعة القاهرة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Salah joins Liverpool",
+  "title": "Mohamed Salah",
+  "hint": "Egypt",
+  "ar": "صلاح يروح ليفربول",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Egypt at the 2018 World Cup",
+  "title": "2018 FIFA World Cup",
+  "hint": "Egypt",
+  "ar": "مصر في كاس العالم 2018",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Egypt hosts AFCON 2019",
+  "title": "2019 Africa Cup of Nations",
+  "hint": "Egypt",
+  "ar": "مصر تنظم أمم أفريقيا 2019",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "The Pharaohs' Golden Parade",
+  "title": "Pharaohs' Golden Parade",
+  "hint": "Egypt",
+  "ar": "موكب المومياوات",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
  }
 ]
