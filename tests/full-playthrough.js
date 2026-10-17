@@ -79,7 +79,7 @@ ok(await pg.evaluate(()=>Object.keys(prog).length)===rounds,'all rounds solved r
 // endless mode
 ok(await pg.evaluate(()=>{for(let k=0;k<3000;k++){const m=mix();const v=m.items.map(x=>x.d[1]);const e=m.best==='min'?Math.min(...v):Math.max(...v);
  if(m.items.length!==9||v.filter(x=>x===e).length!==1||new Set(m.items.map(x=>x.d[0])).size!==9)return false}return true}),'mix rounds valid');
-await pg.click('.cat.end');ok(await pg.evaluate(()=>mode)==='end','endless mode');let mixes=0;
+await pg.click('.cat[data-c="e"]');ok(await pg.evaluate(()=>mode)==='end','endless mode');let mixes=0;
 await pg.evaluate(()=>{coins=500});
 for(let k=0;k<25;k++){const st=await pg.evaluate(()=>({corr,e:eScore,mix:!cur.r,q:cur.q[1]}));if(st.mix)mixes++;ok(st.e===k,'score '+st.e+' vs '+k);
  ok(!(await pg.isVisible('#skip')),'no skip in endless');
