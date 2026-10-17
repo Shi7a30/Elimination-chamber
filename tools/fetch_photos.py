@@ -6,7 +6,7 @@ An item with "url" uses that image directly. Items with "review" also get severa
 tools/photo-candidates.json ({name: [{src, url, uri}]}) so a person can pick the right one and save it as "url".
 Run by .github/workflows/photos.yml (Wikipedia isn't reachable from every dev environment).
 """
-import base64, io, json, sys, time
+import base64, io, json, os, sys, time
 import requests
 from PIL import Image
 
@@ -162,9 +162,6 @@ def to_uri(url):
 
 def main():
     items = json.load(open("tools/photo-list.json"))
-    pages = {}
-    for i in range(0, len(items), 40):
-        pages.update(by_titles(items[i:i + 40]))
     out, report, miss, cands = {}, {}, [], {}
     # A failed lookup or download keeps the photo from the last run, so a flaky request doesn't lose it.
     try:
@@ -172,6 +169,10 @@ def main():
         prev_report = json.load(open("tools/photos-report.json"))
     except (OSError, ValueError):
         prev, prev_report = {}, {}
+    todo = [x for x in items if os.environ.get("FETCH_ALL") or x.get("url") or x.get("review") or x["name"] not in prev]
+    pages = {}
+    for i in range(0, len(todo), 40):
+        pages.update(by_titles(todo[i:i + 40]))
 
     def keep_previous(name):
         if name in prev:
@@ -190,6 +191,11 @@ def main():
             except Exception as e:
                 print("candidates failed", x["name"], e)
         if x.get("skip"):  # known bad matches: show a letter instead
+            continue
+        # Photos from earlier runs were already reviewed, so only new items are looked up
+        # (set FETCH_ALL=1 to look everything up again).
+        if x["name"] in prev and not x.get("url") and not os.environ.get("FETCH_ALL"):
+            keep_previous(x["name"])
             continue
         p = pages.get(x["name"])
         qid = p and (p.get("pageprops") or {}).get("wikibase_item")
