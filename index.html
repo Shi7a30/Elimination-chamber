@@ -1881,6 +1881,13 @@ var ALL=[].concat.apply([],CATS.map(function(c){return c.r}));
 function inReg(r){return REG==="all"||r.m===REG}
 function rounds(){return ALL.filter(inReg)}
 function subRounds(id){return rounds().filter(function(r){return r.s===id})}
+// Category rounds come in random order. Rounds you haven't seen in a category come first, so nothing repeats until you've seen them all.
+var SEEN=ld("elim_seen",{});if(!SEEN||typeof SEEN!=="object"||Array.isArray(SEEN))SEEN={};
+function subOrder(id){var rs=subRounds(id),sn=SEEN[id];if(!Array.isArray(sn))sn=[];
+ var fresh=rs.filter(function(r){return sn.indexOf(key(r))<0});if(!fresh.length){sn=[];fresh=rs}SEEN[id]=sn;
+ return shuffle(fresh).concat(shuffle(rs.filter(function(r){return fresh.indexOf(r)<0})))}
+function markSeen(r){var id=r.s,sn=SEEN[id]||(SEEN[id]=[]);if(sn.indexOf(key(r))<0)sn.push(key(r));
+ if(sn.length>=subRounds(id).length)SEEN[id]=[];sv("elim_seen",SEEN)}
 function pool(g,rs){var seen={},p=[];(rs||rounds()).forEach(function(r){if(r.g===g)r.items.forEach(function(d){if(!seen[d[0]]){seen[d[0]]=1;p.push({d:d,r:r})}})});return p}
 var GQ={p:{min:[["WHO IS THE","OLDEST",Q],["مين","الأكبر في السن",QA]],max:[["WHO IS THE","YOUNGEST",Q],["مين","الأصغر في السن",QA]]},
  y:{min:[["WHAT CAME","FIRST",Q],["أنهي","الأقدم",QA]],max:[["WHAT IS THE","NEWEST",Q],["أنهي","الأحدث",QA]]}};
@@ -2114,13 +2121,13 @@ $("menu").onclick=function(e){var rg=e.target.closest("[data-reg]");if(rg){REG=r
  if(b.dataset.cc!==undefined){chalNew(b.dataset.cc||null);return}
  if(b.dataset.dc!==undefined){DCAT=b.dataset.dc||null;mode="duel";dScore=0;dNew=false;dSrc=null;duelNext();return}
  if(b.dataset.c==="e"){GRP=null;mode="end";eScore=0}
- else{mode="cat";var id=b.dataset.s;SUB=subInfo(id);PL=subRounds(id);ri=0;runOk=0;
+ else{mode="cat";var id=b.dataset.s;SUB=subInfo(id);PL=subOrder(id);ri=0;runOk=0;
   loadPhotos([].concat.apply([],PL.map(function(r){return mk(r).items})))}
  newRound()};
 $("menu").oninput=function(e){var el=e.target;
  if(el.dataset.pi!==undefined){HP[+el.dataset.pi]=el.value.slice(0,16);sv("elim_players",HP)}
  if(el.dataset.me!==undefined){ME=el.value.slice(0,16);sv("elim_name",ME)}};
-function newRound(){cur=mode==="end"?endlessRound():mk(PL[ri]);if(mode==="end")loadPhotos(cur.items);start()}
+function newRound(){cur=mode==="end"?endlessRound():mk(PL[ri]);if(mode==="cat")markSeen(PL[ri]);if(mode==="end")loadPhotos(cur.items);start()}
 function start(){hide();$("menu").style.display="none";$("game").style.display="flex";
  items=shuffle(cur.items,mode==="chal"&&rng(CH.seed+CH.i));out=[];hist=[];peek=[];flipNow=[];over=false;
  var v=items.map(function(x){return x.d[1]});corr=v.indexOf(cur.best==="min"?Math.min.apply(0,v):Math.max.apply(0,v));
@@ -2183,7 +2190,7 @@ function nxt(){if(mode==="hot"){if(alive().length<2)hotStart(HCAT);else hotRound
  if(!over){streak=0;save()}ri++;if(ri>=PL.length)summary();else newRound()}
 function summary(){var k=PL.length,s=solved(PL);cur=null;
  sheet(runOk===k?t("perfect"):t("done"),t("got")(n(runOk),n(k))+(s===k?t("allSolved"):t("overall")(n(s),n(k))),
-  [[t("replay"),function(){ri=0;runOk=0;newRound()},""],[t("menu"),menu,"y"]],0);if(runOk===k){confetti();sfx.win()}}
+  [[t("replay"),function(){PL=subOrder(SUB[0]);ri=0;runOk=0;newRound()},""],[t("menu"),menu,"y"]],0);if(runOk===k){confetti();sfx.win()}}
 $("skip").onclick=function(){sfx.tap();nxt()};$("home").onclick=function(){if($("menu").style.display==="flex")GRP=null;menu()};
 function sheet(ti,p,btns,d){clearTimeout(stT);$("st").textContent=ti;$("sp").textContent=p;var sb=$("sb");sb.innerHTML="";
  btns.forEach(function(b){var e=document.createElement("button");e.className="btn "+b[2];e.textContent=b[0];e.onclick=b[1];sb.appendChild(e)});
