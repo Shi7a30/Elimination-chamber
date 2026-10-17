@@ -1,5 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <rect width="512" height="512" fill="#f7c83d"/>
-  <rect x="112" y="112" width="88" height="88" rx="20" fill="#1d1d21"/><rect x="212" y="112" width="88" height="88" rx="20" fill="#1d1d21"/><rect x="312" y="112" width="88" height="88" rx="20" fill="#1d1d21"/><rect x="112" y="212" width="88" height="88" rx="20" fill="#1d1d21"/><rect x="212" y="212" width="88" height="88" rx="20" fill="#ffffff"/><path d="M237 257l14 14 25-28" fill="none" stroke="#2fbf63" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><rect x="312" y="212" width="88" height="88" rx="20" fill="#1d1d21"/><rect x="112" y="312" width="88" height="88" rx="20" fill="#1d1d21"/><rect x="212" y="312" width="88" height="88" rx="20" fill="#1d1d21"/><rect x="312" y="312" width="88" height="88" rx="20" fill="#1d1d21"/>
-  <path d="M144 144l24 24M168 144l-24 24M244 144l24 24M268 144l-24 24M344 144l24 24M368 144l-24 24M144 244l24 24M168 244l-24 24M344 244l24 24M368 244l-24 24M144 344l24 24M168 344l-24 24M244 344l24 24M268 344l-24 24M344 344l24 24M368 344l-24 24" stroke="#f7c83d" stroke-opacity=".7" stroke-width="8" stroke-linecap="round"/>
+  <!-- the one answer left: a white card with a green check -->
+  <g transform="translate(290 296)">
+    <rect width="96" height="96" rx="22" fill="#ffffff"/>
+    <path d="M27 50l15 15 28-31" fill="none" stroke="#2fbf63" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- an earlier card, already flying off -->
+  <g transform="translate(408 92) rotate(40)" opacity=".55">
+    <rect x="-24" y="-24" width="48" height="48" rx="12" fill="#1d1d21"/>
+    <path d="M-8 -8l16 16M8 -8l-16 16" stroke="#f7c83d" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <!-- the wrong card being flung away, with speed lines -->
+  <path d="M296 196l-20 14M318 206l-18 18M276 186l-22 8" stroke="#1d1d21" stroke-width="8" stroke-linecap="round" opacity=".4"/>
+  <g transform="translate(330 148) rotate(24)">
+    <rect x="-42" y="-42" width="84" height="84" rx="19" fill="#1d1d21"/>
+    <path d="M-15 -15l30 30M15 -15l-30 30" stroke="#f7c83d" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <!-- stick figure -->
+  <g fill="none" stroke="#1d1d21" stroke-width="19" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="186" cy="156" r="34" fill="#1d1d21" stroke="none"/>
+    <path d="M192 204l-12 108"/>
+    <path d="M180 312l-46 76M180 312l42 72"/>
+    <path d="M189 222l52 -10 40 -34"/>
+    <path d="M188 228l-50 32"/>
+  </g>
+  <path d="M174 164q12 12 26 0" fill="none" stroke="#f7c83d" stroke-width="6" stroke-linecap="round"/>
 </svg>
