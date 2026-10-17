@@ -174,7 +174,7 @@ button:focus-visible,.pin:focus-visible{outline:3px solid var(--y);outline-offse
 <input type="file" id="file" accept="image/*" style="display:none">
 <div id="sheet" role="dialog"><div id="st"></div><p id="sp"></p><div class="row" id="sb"></div></div>
 <canvas id="fx"></canvas>
-<script id="photos"></script><script src="photos/p1.js"></script><script src="photos/p2.js"></script><script src="photos/p3.js"></script><script src="photos/p4.js"></script>
+<script id="photos"></script><script defer src="photos/p1.js"></script><script defer src="photos/p2.js"></script><script defer src="photos/p3.js"></script><script defer src="photos/p4.js"></script>
 <script>
 // Round: Rd([en question], [Egyptian Arabic question], "min"|"max", items, options).
 // Item: [English name, value, Arabic name (optional, falls back to English), Wikipedia article title (optional, defaults to English name)].
@@ -1811,7 +1811,7 @@ var TX={
   undoBtn:function(n){return"↺ Undo · "+n},moveOn:"Move on ▶",won:"🎉 You got it!",coins:function(n){return"+"+n+" coins"},bonus:function(n){return" · +"+n+" streak bonus"},
   row:function(n){return" · 🔥 "+n+" in a row"},perfect:"🏆 Perfect run!",done:"✅ Category done!",got:function(a,b){return"You got "+a+"/"+b+" this run"},
   allSolved:" · ★ every round solved",overall:function(s,n){return" · "+s+"/"+n+" solved overall"},replay:"↻ Replay",menu:"Menu",full:"Not enough space on this device to save more photos.",lang:"ع",
-  endless:"♾ ENDLESS",endlessSub:"Mixed rounds from every category",score:function(n){return"Score "+n},runOver:"💀 Run over!",
+  endless:"♾ ENDLESS",endlessSub:"Mixed rounds from every category",score:function(n){return"Score "+n},runOver:"💀 Run over!",usedUndo:" You already used your second chance this run.",solvedB4:"Already solved before, so no coins or streak this time.",leaveQ:"Leave this game?",leaveTxt:"Your progress in this game will be lost.",leave:"Leave",stay:"Keep playing",
   runTxt:function(s,b){return" You cleared "+s+" rounds · best "+b+"."},newBest:" 🏅 New best!",newRun:"↻ New run",duel:"🆚 DUEL",duelSub:"Pick 1 of 2. The winner stays till you miss",anyCat:"EVERYTHING",anyCatSub:"Questions from every category",pick:"Pick one",newQ:"New question!",duelTxt:function(s,b){return"You got "+s+" in a row · best "+b+"."},back:"‹",sections:function(k){return k===1?"1 section":n(k)+" sections"},reg_eg:"🇪🇬 Egypt",reg_w:"🌍 World",reg_all:"🔀 Both",
   mp:"👥 MULTIPLAYER",cats:"📚 CATEGORIES",hot:"🥔 HOT POTATO",hotSub:"Pass the phone. Knock out the answer and you're out",chal:"🔗 CHALLENGE",chalSub:"Play 10, send the link. Friends get the same questions",
   players:"Players",addP:"+ Add player",pName:function(k){return"Player "+k},pickCat:"Pick a category",pLeft:function(k){return k+" left"},
@@ -1830,7 +1830,7 @@ var TX={
   undoBtn:function(n){return"↺ رجوع · "+n},moveOn:"كمّل ◀",won:"🎉 جبتها!",coins:function(n){return"+"+n+" كوينز"},bonus:function(n){return" · +"+n+" بونص"},
   row:function(n){return" · 🔥 "+n+" ورا بعض"},perfect:"🏆 ولا غلطة!",done:"✅ خلّصت القسم!",got:function(a,b){return"جبت "+a+" من "+b+" المرة دي"},
   allSolved:" · ★ حليت كل الجولات",overall:function(s,n){return" · حليت "+s+" من "+n+" لحد دلوقتي"},replay:"↻ تاني",menu:"القايمة",full:"مفيش مساحة كفاية على الجهاز عشان تحفظ صور زيادة.",lang:"EN",
-  endless:"♾ مالهاش آخر",endlessSub:"جولات متلخبطة من كل الأقسام",score:function(n){return"النتيجة "+n},runOver:"💀 اللعبة خلصت!",
+  endless:"♾ مالهاش آخر",endlessSub:"جولات متلخبطة من كل الأقسام",score:function(n){return"النتيجة "+n},runOver:"💀 اللعبة خلصت!",usedUndo:" استخدمت الفرصة التانية بتاعتك في اللعبة دي.",solvedB4:"حليتها قبل كده، فمفيش كوينز ولا بتتحسب في ورا بعض المرة دي.",leaveQ:"تخرج من اللعبة؟",leaveTxt:"اللي عملته في اللعبة دي هيضيع.",leave:"اخرج",stay:"كمّل لعب",
   runTxt:function(s,b){return" عدّيت "+s+" جولات · أحسن رقم "+b+"."},newBest:" 🏅 رقم قياسي جديد!",newRun:"↻ ابدأ من الأول",duel:"🆚 ده ولا ده",duelSub:"اختار واحد من اتنين، واللي يكسب يفضل",anyCat:"كل حاجة",anyCatSub:"أسئلة من كل الأقسام",pick:"اختار واحد",newQ:"سؤال جديد!",back:"›",sections:function(k){return k===1?"قسم واحد":n(k)+" أقسام"},duelTxt:function(s,b){return"جبت "+s+" ورا بعض · أحسن رقم "+b+"."},reg_eg:"🇪🇬 مصري",reg_w:"🌍 عالمي",reg_all:"🔀 الاتنين",
   mp:"👥 مع صحابك",cats:"📚 الأقسام",hot:"🥔 البطاطس سخنة خالص",hotSub:"لفّوا الموبايل، واللي يشيل الإجابة الصح يطلع برا",chal:"🔗 تحدّي",chalSub:"العب ١٠ وابعت اللينك، وصحابك ياخدوا نفس الأسئلة",
   players:"اللعيبة",addP:"+ لاعب كمان",pName:function(k){return"لاعب "+k},pickCat:"اختار قسم",pLeft:function(k){return"فاضل "+k},
@@ -1849,7 +1849,7 @@ var RM=matchMedia("(prefers-reduced-motion:reduce)").matches;
 var coins=START,streak=0,best=0,eBest={},dBest={},REG="all",prog={},mute=false,IM={},WK={},L="en";
 // GRP = the menu page that is open (null = home, a number = a category group, "cats" = all groups, "mp" = multiplayer, "d" = the duel page). DCAT = the duel's subcategory (null = everything). mode "cat" plays the rounds in PL (one subcategory, SUB) in order; "end" is endless mode. cur = the round being played.
 // REG = region filter for everything: "eg" Egyptian rounds, "w" international, "all" both.
-var GRP=null,DCAT=null,mode="cat",SUB=null,PL=[],ri=0,cur=null,eScore=0,eRecent=[],items,out,hist,peek,flipNow,over,corr,lostStreak,runOk,edit=false,pend=null,stT;
+var GRP=null,DCAT=null,mode="cat",SUB=null,PL=[],ri=0,cur=null,eScore=0,eRecent=[],items,out,hist,peek,flipNow,over,corr,lostStreak,runOk,edit=false,pend=null,stT,shF=null,eUndo=false;
 function ld(k,d){try{var v=localStorage.getItem(k);return v===null?d:JSON.parse(v)}catch(e){return d}}
 function sv(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){return false}}
 coins=ld("elim_coins",START);if(typeof coins!=="number"||!(coins>=0))coins=START;
@@ -1960,10 +1960,10 @@ function duelRender(){var qq=L==="ar"?cur.qa:cur.q;
   fl.forEach(function(i){var c=g.querySelector('[data-i="'+i+'"]');if(c)c.classList.add("flip")})}}
 function duelPick(i){if(over)return;dPick=i;flipNow=[0,1];
  if(i===corr){over="win";dScore++;if(dScore>(dBest[dKey()]||0)){dBest[dKey()]=dScore;dNew=true}save();render();sfx.ok();
-  var tk=dTok;setTimeout(function(){if(mode==="duel"&&tk===dTok&&inGame()&&!edit)duelNext(items[corr])},1400)}
+  var tk=dTok;setTimeout(function(){if(mode==="duel"&&tk===dTok&&inGame()&&!edit&&!shF)duelNext(items[corr])},1400)}
  else{over="lose";save();render();shake();sfx.lose();
-  sheet(t("runOver"),t("duelTxt")(n(dScore),n(dBest[dKey()]||0))+(dNew?t("newBest"):""),
-   [[t("newRun"),function(){dScore=0;dNew=false;dSrc=null;duelNext()},"y"],[t("menu"),menu,""]],700)}}
+  sh(function(){return[t("runOver"),t("duelTxt")(n(dScore),n(dBest[dKey()]||0))+(dNew?t("newBest"):""),
+   [[t("newRun"),function(){dScore=0;dNew=false;dSrc=null;duelNext()},"y"],[t("menu"),menu,""]]]},700)}}
 
 // --- hot potato (البطاطس سخنة خالص): players take turns knocking out one card; whoever knocks out the answer is out ---
 var HCAT=null,hPl=[],hTurn=0,hRn=0;
@@ -1973,11 +1973,11 @@ function hotStart(id){HCAT=id;mode="hot";eRecent=[];hTurn=0;hRn=0;
  hPl=HP.map(function(v,i){return{n:v.trim()||t("pName")(n(i+1)),out:false}});hotRound()}
 function hotRound(){hRn++;cur=endlessRound(HCAT);loadPhotos(cur.items);start()}
 function hotPick(i,x){var p=hPl[hTurn];out.push(i);flipNow=[i];
- if(i===corr){over="lose";p.out=true;var al=alive(),msg=t("outTxt")(p.n,nm(x)+" ("+fmt(x)+")");render();shake();sfx.lose();
-  if(al.length===1){sheet(t("winner")(al[0].n),msg+" "+t("winTxt"),[[t("again"),function(){hotStart(HCAT)},"y"],[t("menu"),menu,""]],450);
+ if(i===corr){over="lose";p.out=true;var al=alive(),msg=function(){return t("outTxt")(p.n,nm(x)+" ("+fmt(x)+")")};render();shake();sfx.lose();
+  if(al.length===1){sh(function(){return[t("winner")(al[0].n),msg()+" "+t("winTxt"),[[t("again"),function(){hotStart(HCAT)},"y"],[t("menu"),menu,""]]]},450);
    setTimeout(function(){if(mode==="hot"&&over)confetti()},450)}
-  else{hNext();sheet(t("isOut")(p.n),msg+" "+t("pLeft")(n(al.length)),[[t("nextRound"),hotRound,"y"]],450)}}
- else if(items.length-out.length===1){over="win";flipNow=[corr];hNext();render();sfx.win();sheet(t("safe"),t("safeTxt"),[[t("nextRound"),hotRound,"y"]],600)}
+  else{hNext();sh(function(){return[t("isOut")(p.n),msg()+" "+t("pLeft")(n(al.length)),[[t("nextRound"),hotRound,"y"]]]},450)}}
+ else if(items.length-out.length===1){over="win";flipNow=[corr];hNext();render();sfx.win();sh(function(){return[t("safe"),t("safeTxt"),[[t("nextRound"),hotRound,"y"]]]},600)}
  else{hNext();render();sfx.elim(out.length)}}
 
 // --- challenge links: play up to 10 rounds, then send a link; whoever opens it gets the same rounds with the same card order ---
@@ -1991,13 +1991,13 @@ function chalNew(id){CH={seed:Math.floor(Math.random()*2147483647),list:shuffle(
 function chalGo(){mode="chal";CH.i=0;CH.score=0;loadPhotos([].concat.apply([],CH.list.map(function(r){return mk(r).items})));chalRound()}
 function chalRound(){cur=mk(CH.list[CH.i]);start()}
 function chalPick(i,x){out.push(i);flipNow=[i];
- if(i===corr){over="lose";render();shake();sfx.lose();sheet(t("lost"),t("knocked")(nm(x)+" ("+fmt(x)+")"),[[t("next"),chalNext,"y"]],450)}
- else if(items.length-out.length===1){over="win";CH.score++;flipNow=[corr];render();sfx.win();confetti();sheet(t("won"),"",[[t("next"),chalNext,"y"]],600)}
+ if(i===corr){over="lose";render();shake();sfx.lose();sh(function(){return[t("lost"),t("knocked")(nm(x)+" ("+fmt(x)+")"),[[t("next"),chalNext,"y"]]]},450)}
+ else if(items.length-out.length===1){over="win";CH.score++;flipNow=[corr];render();sfx.win();confetti();sh(function(){return[t("won"),"",[[t("next"),chalNext,"y"]]]},600)}
  else{render();sfx.elim(out.length)}}
 function chalNext(){CH.i++;if(CH.i<CH.list.length){chalRound();return}
  var k=CH.list.length,s=CH.score,f=CH.from;cur=null;
- sheet(f?(s>f.s?t("chWin"):s<f.s?t("chLose"):t("chDraw")):t("chDone"),f?t("vs")(n(s),n(f.s),f.n||t("friend"),n(k)):t("chYou")(n(s),n(k)),
-  [[f?t("shareBack"):t("share"),chalShare,"y"],[t("menu"),menu,""]],0);
+ sh(function(){return[f?(s>f.s?t("chWin"):s<f.s?t("chLose"):t("chDraw")):t("chDone"),f?t("vs")(n(s),n(f.s),f.n||t("friend"),n(k)):t("chYou")(n(s),n(k)),
+  [[f?t("shareBack"):t("share"),chalShare,"y"],[t("menu"),menu,""]]]},0);
  if(!f||s>f.s){confetti();sfx.win()}}
 function chalURL(){var q="ch="+CH.seed.toString(36)+"."+CH.list.map(function(r){return hk(r.key)}).join(".")+"&s="+CH.score;
  if(CH.sub)q+="&c="+encodeURIComponent(CH.sub);if(ME.trim())q+="&n="+encodeURIComponent(ME.trim());
@@ -2024,7 +2024,8 @@ function gotPhoto(name,url){WK[name]=url;sv("elim_wiki",WK);
  [].forEach.call(document.querySelectorAll(".cell"),function(c){if(items[+c.dataset.i].d[0]===name&&photo(name)===url){setImg(c.querySelector(".tile"),url);setImg(c.querySelector(".back"),url)}})}
 function setImg(el,url){var o=el.querySelector("img");if(o)o.remove();var im=new Image();im.alt="";im.onerror=function(){im.remove()};im.src=url;el.insertBefore(im,el.firstChild)}
 function okPage(p){return p&&!p.missing&&p.thumbnail&&!(p.pageprops&&"disambiguation" in p.pageprops)}
-function loadPhotos(list){var need=[],seen={};
+function loadPhotos(list){if(!PHok)return; // wait for the built-in photos, or every card would be looked up on Wikipedia
+ var need=[],seen={};
  list.forEach(function(x){if(!photo(x.d[0])&&!(window.PH&&x.d[0] in PH)&&!seen[x.d[0]]){seen[x.d[0]]=1;need.push({it:x.d,h:x.r.h})}});
  if(!need.length||typeof fetch!=="function")return;
  wapi("action=query&redirects=1&"+PI+"&titles="+encodeURIComponent(need.map(function(x){return x.it[3]||x.it[0]}).join("|"))).then(function(d){
@@ -2113,7 +2114,7 @@ $("menu").onclick=function(e){var rg=e.target.closest("[data-reg]");if(rg){REG=r
  if(b.dataset.hc!==undefined){hotStart(b.dataset.hc||null);return}
  if(b.dataset.cc!==undefined){chalNew(b.dataset.cc||null);return}
  if(b.dataset.dc!==undefined){DCAT=b.dataset.dc||null;mode="duel";dScore=0;dNew=false;dSrc=null;duelNext();return}
- if(b.dataset.c==="e"){GRP=null;mode="end";eScore=0}
+ if(b.dataset.c==="e"){GRP=null;mode="end";eScore=0;eUndo=false}
  else{mode="cat";var id=b.dataset.s;SUB=subInfo(id);PL=subRounds(id);ri=0;runOk=0;
   loadPhotos([].concat.apply([],PL.map(function(r){return mk(r).items})))}
  newRound()};
@@ -2134,7 +2135,7 @@ function render(){if(mode==="duel")return duelRender();var mp=mode==="hot"||mode
  $("q1").textContent=qq[0];$("q2").textContent=qq[1];$("q3").textContent=qq[2];
  $("sub").textContent=edit?t("photo"):over==="win"?t("nailed"):over==="lose"?t("wrong"):mode==="hot"?t("turn")(hPl[hTurn].n):(out.length?t("left")(n(left-1)):t("all"));
  $("coins").textContent=n(coins);$("stk").textContent=streak&&!mp?"🔥 "+n(streak):"";
- $("undo").innerHTML=t("undo")+' <i class="coin"></i>'+n(UNDO);$("undo").disabled=!hist.length||coins<UNDO||over==="win";
+ $("undo").innerHTML=t("undo")+' <i class="coin"></i>'+n(UNDO);$("undo").disabled=!canUndo();
  $("skip").textContent=over?t("next"):t("skip");$("skip").style.display=mode!=="cat"&&!over?"none":"";$("cam").className="pill"+(edit?" on":"");
  // Eliminated cards (and every card left after a win) flip over to show their value; tapping one flips it back (peek).
  $("grid").innerHTML=items.map(function(x,i){var o=out.indexOf(i)>-1,w=over==="win"&&!o,f=(o||w)&&peek.indexOf(i)<0,cls=o?"out":w?"win":"";
@@ -2156,42 +2157,60 @@ $("grid").onclick=function(e){var c=e.target.closest(".cell");if(!c)return;var i
  if(mode==="chal"){chalPick(i,x);return}
  out.push(i);hist.push(i);flipNow=[i];
  if(i===corr){over="lose";lostStreak=streak;streak=0;save();render();shake();sfx.lose();
-  var b=[[mode==="end"?t("newRun"):t("moveOn"),nxt,"y"]],msg=t("knocked")(nm(x)+" ("+fmt(x)+")");if(coins>=UNDO)b.unshift([t("undoBtn")(n(UNDO)),undo,""]);
-  if(mode==="end"){b.push([t("menu"),menu,""]);msg+=t("runTxt")(n(eScore),n(eBest[REG]||0))}else if(lostStreak>1&&coins>=UNDO)msg+=t("keep")(n(lostStreak));
-  sheet(mode==="end"?t("runOver"):t("lost"),msg,b,450)}
- else if(items.length-out.length===1){over="win";var bonus=Math.min(streak,5)*2,nb=false;streak++;best=Math.max(best,streak);coins+=WIN+bonus;
+  sh(function(){var b=[[mode==="end"?t("newRun"):t("moveOn"),nxt,"y"]],msg=t("knocked")(nm(x)+" ("+fmt(x)+")");if(canUndo())b.unshift([t("undoBtn")(n(UNDO)),undo,""]);
+   if(mode==="end"){b.push([t("menu"),menu,""]);msg+=t("runTxt")(n(eScore),n(eBest[REG]||0))+(eUndo?t("usedUndo"):"")}else if(lostStreak>1&&canUndo())msg+=t("keep")(n(lostStreak));
+   return[mode==="end"?t("runOver"):t("lost"),msg,b]},450)}
+ else if(items.length-out.length===1){over="win";var rep=mode==="cat"&&!!prog[key(cur.r)],bonus=rep?0:Math.min(streak,5)*2,nb=false;
+  // replaying a round you already solved pays nothing and doesn't grow the streak, so coins and streaks can't be farmed
+  if(!rep){streak++;best=Math.max(best,streak);coins+=WIN+bonus}
   flipNow=[corr];if(cur.r)prog[key(cur.r)]=1;
   if(mode==="end"){eScore++;if(eScore>(eBest[REG]||0)){eBest[REG]=eScore;nb=true}}else runOk++;
-  save();render();sfx.win();confetti();bump();floatTxt("+"+n(WIN+bonus));
-  sheet(t("won"),t("coins")(n(WIN))+(bonus?t("bonus")(n(bonus)):"")+(streak>1?t("row")(n(streak)):"")+(mode==="end"?" · "+t("score")(n(eScore))+(nb?t("newBest"):""):""),[[t("next"),nxt,"y"]],600)}
+  save();render();sfx.win();confetti();if(!rep){bump();floatTxt("+"+n(WIN+bonus))}
+  sh(function(){return[t("won"),rep?t("solvedB4"):t("coins")(n(WIN))+(bonus?t("bonus")(n(bonus)):"")+(streak>1?t("row")(n(streak)):"")+(mode==="end"?" · "+t("score")(n(eScore))+(nb?t("newBest"):""):""),[[t("next"),nxt,"y"]]]},600)}
  else{render();sfx.elim(out.length)}};
 $("file").onchange=function(){var f=this.files[0];this.value="";if(!f||!pend)return;var nmK=pend,u=URL.createObjectURL(f),im=new Image();
  im.onload=function(){var s=Math.min(im.width,im.height),cv=document.createElement("canvas");cv.width=cv.height=220;
   cv.getContext("2d").drawImage(im,(im.width-s)/2,(im.height-s)/2,s,s,0,0,220,220);IM[nmK]=cv.toDataURL("image/jpeg",.8);
   if(!sv("elim_img",IM)){delete IM[nmK];alert(t("full"))}URL.revokeObjectURL(u);render()};im.src=u};
-$("cam").onclick=function(){if(!inGame())return;edit=!edit;render()};
+$("cam").onclick=function(){if(!inGame())return;edit=!edit;render();
+ // a duel waits to move on while photo mode is open; carry on once it closes
+ if(!edit&&mode==="duel"&&over==="win"&&!shF)duelNext(items[corr])};
 $("snd").onclick=function(){mute=!mute;save();applyLang();sfx.tap()};
 $("lang").onclick=function(){L=L==="ar"?"en":"ar";save();applyLang();sfx.tap();
- if(inGame()&&cur){render();hide()}else menu()};
-function undo(){if(!hist.length||coins<UNDO||over==="win")return;coins-=UNDO;var i=hist.pop();out.splice(out.indexOf(i),1);
+ // in a game, redraw it and rebuild any open popup in the new language (it may hold the only way forward)
+ if(inGame()&&(cur||shF)){if(cur)render();if(shF)sh(shF,0)}else menu()};
+// Endless gives one second chance per run: undoing a loss there works once, so a run can't be kept alive with coins
+function canUndo(){return hist.length&&coins>=UNDO&&over!=="win"&&!(over==="lose"&&mode==="end"&&eUndo)}
+function undo(){if(!canUndo())return;if(over==="lose"&&mode==="end")eUndo=true;coins-=UNDO;var i=hist.pop();out.splice(out.indexOf(i),1);
  if(peek.indexOf(i)>-1)peek.splice(peek.indexOf(i),1);
  if(over==="lose"){over=false;streak=lostStreak;hide()}save();sfx.tap();bump();floatTxt("−"+n(UNDO));render()}
 $("undo").onclick=undo;
 function nxt(){if(mode==="hot"){if(alive().length<2)hotStart(HCAT);else hotRound();return}
  if(mode==="chal"){chalNext();return}
- if(mode==="end"){if(over!=="win"){eScore=0;streak=0;save()}newRound();return}
+ if(mode==="end"){if(over!=="win"){eScore=0;eUndo=false;streak=0;save()}newRound();return}
  if(!over){streak=0;save()}ri++;if(ri>=PL.length)summary();else newRound()}
 function summary(){var k=PL.length,s=solved(PL);cur=null;
- sheet(runOk===k?t("perfect"):t("done"),t("got")(n(runOk),n(k))+(s===k?t("allSolved"):t("overall")(n(s),n(k))),
-  [[t("replay"),function(){ri=0;runOk=0;newRound()},""],[t("menu"),menu,"y"]],0);if(runOk===k){confetti();sfx.win()}}
-$("skip").onclick=function(){sfx.tap();nxt()};$("home").onclick=function(){if($("menu").style.display==="flex")GRP=null;menu()};
+ sh(function(){return[runOk===k?t("perfect"):t("done"),t("got")(n(runOk),n(k))+(s===k?t("allSolved"):t("overall")(n(s),n(k))),
+  [[t("replay"),function(){ri=0;runOk=0;newRound()},""],[t("menu"),menu,"y"]]]},0);if(runOk===k){confetti();sfx.win()}}
+$("skip").onclick=function(){sfx.tap();nxt()};// Home asks first when leaving would throw away a game in progress
+function atRisk(){if(!inGame()||!cur)return false;
+ return mode==="hot"?alive().length>1:mode==="chal"?true:mode==="end"?over!=="lose"&&(eScore>0||out.length>0):mode==="duel"?over!=="lose"&&dScore>0:false}
+$("home").onclick=function(){if($("menu").style.display==="flex")GRP=null;
+ if(atRisk()){var back=shF&&shF.leave?null:shF;var f=function(){return[t("leaveQ"),t("leaveTxt"),[[t("stay"),function(){if(back)sh(back,0);else{hide();if(mode==="duel"&&over==="win")duelNext(items[corr])}},"y"],[t("leave"),menu,""]]]};f.leave=1;sh(f,0);return}
+ menu()};
 function sheet(ti,p,btns,d){clearTimeout(stT);$("st").textContent=ti;$("sp").textContent=p;var sb=$("sb");sb.innerHTML="";
  btns.forEach(function(b){var e=document.createElement("button");e.className="btn "+b[2];e.textContent=b[0];e.onclick=b[1];sb.appendChild(e)});
  stT=setTimeout(function(){$("sheet").classList.add("show");
   // keep the answer card in view above the popup
   var c=document.querySelector(".cell.bad,.cell.win");if(c){var r=c.getBoundingClientRect(),top=innerHeight-$("sheet").offsetHeight-12;
    if(r.bottom>top)scrollBy({top:r.bottom-top,behavior:RM?"auto":"smooth"})}},d||0)}
-function hide(){clearTimeout(stT);$("sheet").classList.remove("show")}
+// sh(f, delay): show a popup whose text f() builds, so it can be rebuilt when the language changes
+function sh(f,d){shF=f;var a=f();sheet(a[0],a[1],a[2],d)}
+function hide(){clearTimeout(stT);shF=null;$("sheet").classList.remove("show")}
+// the built-in photos load after the game starts; put them on the cards already showing
+function fillImgs(){if(!inGame()||!items)return;[].forEach.call(document.querySelectorAll(".cell"),function(c){var x=items[+c.dataset.i],u=x&&photo(x.d[0]);
+ if(u&&!c.querySelector(".tile img")){setImg(c.querySelector(".tile"),u);setImg(c.querySelector(".back"),u)}})}
+var PHok=false;document.addEventListener("DOMContentLoaded",function(){PHok=true;fillImgs()});
 applyLang();chalLoad();menu();
 </script><script>if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol))addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));</script>
 </body></html>

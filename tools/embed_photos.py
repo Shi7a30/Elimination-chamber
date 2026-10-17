@@ -21,9 +21,9 @@ for i in range(N):
     part = {k: ph[k] for k in keys[i::N]}
     open(f"photos/p{i + 1}.js", "w", encoding="utf-8").write(
         "Object.assign(window.PH=window.PH||{}," + json.dumps(part, ensure_ascii=False, separators=(",", ":")) + ");\n")
-tags = "".join(f'<script src="photos/p{i + 1}.js"></script>' for i in range(N))
+tags = "".join(f'<script defer src="photos/p{i + 1}.js"></script>' for i in range(N))
 s = open("index.html", encoding="utf-8").read()
-s, k = re.subn(r'<script id="photos">.*?</script>(<script src="photos/p\d+\.js"></script>)*', lambda m: '<script id="photos"></script>' + tags, s, flags=re.S)
+s, k = re.subn(r'<script id="photos">.*?</script>(<script (?:defer )?src="photos/p\d+\.js"></script>)*', lambda m: '<script id="photos"></script>' + tags, s, flags=re.S)
 assert k == 1
 open("index.html", "w", encoding="utf-8").write(s)
 print(len(ph), "photos in", N, "files,", sum(os.path.getsize(f"photos/p{i + 1}.js") for i in range(N)) // 1024, "KB; page", len(s) // 1024, "KB")
