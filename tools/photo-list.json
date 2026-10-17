@@ -11944,7 +11944,7 @@
   "ar": "المنسي",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Toyour El Zalam",
@@ -12151,7 +12151,7 @@
   "ar": "الأرض",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Alexandria... Why?",
@@ -12214,7 +12214,7 @@
   "ar": "الحرب العالمية الثالثة",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Hepta",
@@ -12223,7 +12223,7 @@
   "ar": "هيبتا",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "El Kenz",
@@ -12277,7 +12277,7 @@
   "ar": "كابوريا",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Nasser 56",
@@ -12385,7 +12385,7 @@
   "ar": "نور",
   "ar_hint": "مسلسل تركي",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Aşk-ı Memnu",
@@ -12925,7 +12925,7 @@
   "ar": "كامل العدد",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Masar Egbari",
@@ -12943,7 +12943,7 @@
   "ar": "حق عرب",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Lam Shamseya",
@@ -14392,7 +14392,7 @@
   "ar": "عالم جديد",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Hakuna Matata",
@@ -14518,7 +14518,7 @@
   "ar": "لبيروت",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Didi",
@@ -14554,7 +14554,7 @@
   "ar": "أخاصمك آه",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Ah W Noss",
@@ -14572,7 +14572,7 @@
   "ar": "علّي الكوفية",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Boshret Kheir",
@@ -14905,7 +14905,7 @@
   "ar": "أمل حياتي",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Hathihi Laylati",
@@ -15670,7 +15670,7 @@
   "ar": "الأميرة شارلوت",
   "ar_hint": "العيلة المالكة البريطانية",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Prince Louis",
@@ -15751,7 +15751,7 @@
   "ar": "فريال أشرف",
   "ar_hint": "بطل رياضي",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Ahmed Elgendy",
@@ -18370,7 +18370,7 @@
   "ar": "سوديك",
   "ar_hint": "شركة",
   "logo": true,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Palm Hills",
@@ -18379,7 +18379,7 @@
   "ar": "بالم هيلز",
   "ar_hint": "شركة",
   "logo": true,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Al-Akhbar",
@@ -18451,7 +18451,7 @@
   "ar": "الوطن",
   "ar_hint": "جرنال",
   "logo": true,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Nilesat 101",
@@ -18595,7 +18595,7 @@
   "ar": "ووتش إت",
   "ar_hint": "أبلكيشن",
   "logo": true,
-  "skip": false
+  "skip": true
  },
  {
   "name": "HBO Max",
@@ -19477,7 +19477,7 @@
   "ar": "كيري",
   "ar_hint": "جبنة",
   "logo": true,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Président",
@@ -19648,7 +19648,7 @@
   "ar": "كورنيتو",
   "ar_hint": "آيس كريم",
   "logo": true,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Häagen-Dazs",
@@ -20836,7 +20836,7 @@
   "ar": "قناة ماجد",
   "ar_hint": "قناة",
   "logo": true,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Pluto",
@@ -21502,7 +21502,7 @@
   "ar": "أونيكس",
   "ar_hint": "بوكيمون",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Mewtwo",
@@ -22195,7 +22195,7 @@
   "ar": "النيل هيلتون",
   "ar_hint": "فندق",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Four Seasons Nile Plaza",
@@ -22204,7 +22204,7 @@
   "ar": "فور سيزونز النيل",
   "ar_hint": "فندق",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "St. Regis Cairo",
