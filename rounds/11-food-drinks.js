@@ -17,7 +17,7 @@ CATS.push(
  Rd(["WHICH CAFÉ","OPENED IN EGYPT FIRST",Q],["أنهي قهوة أو كافيه","اتفتح في مصر الأول",QA],"min",[
   ["El Fishawy",1797,"قهوة الفيشاوي","El-Fishawy Café"],["Simonds",1898,"سيموندس"],["Café Riche",1908,"كافيه ريش"],["Brazilian Coffee Stores",1929,"البن البرازيلي"],["El Horreya Café",1936,"قهوة الحرية"],["Naguib Mahfouz Café",1989,"قهوة نجيب محفوظ"],["Cilantro",2000,"سيلانترو"],["Costa Coffee",2004,"كوستا"],["Starbucks",2006,"ستاربكس"]],
   {h:"café in Egypt",k:["OPENED IN EGYPT","اتفتح في مصر سنة"],g:"y",dt:["Café opened in Egypt","افتتاح الكافيه في مصر"],s:"eats",m:"eg"}),
- Rd(["WHICH PATISSERIE","OPENED LAST",Q],["أنهي محل حلويات","اتفتح في الآخر",QA],"max",[
+ Rd(["WHICH PATISSERIE","OPENED LAST",Q],["أنهي محل حلويات","أجدد",QA],"max",[
   ["Groppi",1891,"جروبي"],["Simonds",1898,"سيموندس"],["El Malky",1917,"المالكي"],["Mandarine Koueider",1928,"مندرين قويدر"],["El Abd",1974,"العبد"],["La Poire",1975,"لابوار"],["Salé Sucré",1999,"ساليه سكريه"],["Sedra",2003,"سيدرا"],["TBS",2008,"تي بي إس"]],
   {h:"Egyptian patisserie",k:["FOUNDED","اتأسس سنة"],g:"y",dt:["Patisserie founded","تأسيس محل الحلويات"],s:"eats",m:"eg"}),
  Rd(["WHICH CHAIN","CAME TO EGYPT LAST",Q],["أنهي سلسلة مطاعم","دخلت مصر آخر واحدة",QA],"max",[
@@ -66,7 +66,7 @@ CATS.push(
   ["Peanut butter",25,"زبدة الفول السوداني"],["Canned tuna",24,"التونة","Tuna as food"],["Eggs",13,"البيض","Egg as food"],
   ["Lentils",9,"العدس","Lentil"],["Ful medames",8,"الفول المدمس"],["Rice",2.7,"الرز"]],
   {pre:["~","~"],suf:[" g"," جرام"],h:"food",k:["PER 100 g (COOKED)","في كل 100 جرام (مطبوخ)"],s:"snacks",m:"eg"}),
- Rd(["WHICH CANDY","CAME OUT LAST",Q],["أنهي حلويات","نزلت في الآخر",QA],"max",[
+ Rd(["WHICH CANDY","CAME OUT LAST",Q],["أنهي حلويات","أجدد",QA],"max",[
   ["Haribo Goldbears",1922,"هاريبو","Gummy bear"],["Maltesers",1936,"مالتيزرز"],["Smarties",1937,"سمارتيز"],
   ["Mentos",1948,"منتوس"],["Chupa Chups",1958,"تشوبا تشوبس"],["Skittles",1974,"سكيتلز","Skittles (confectionery)"],
   ["Lion bar",1976,"لايون","Lion (chocolate bar)"],["Ferrero Rocher",1982,"فيريرو روشيه"],["Kinder Joy",2001,"كيندر جوي"]],
@@ -111,7 +111,7 @@ CATS.push(
   ["Carl's Jr.",1941,"كارلز جونيور"],["In-N-Out",1948,"إن آند أوت","In-N-Out Burger"],["Burger King",1953,"برجر كينج"],
   ["Hardee's",1960,"هارديز"],["Wendy's",1969,"ويندي"],["Five Guys",1986,"فايف جايز"]],
   {h:"restaurant chain",k:["FOUNDED","اتأسست سنة"],s:"eats",m:"eg"}),
- Rd(["WHICH PIZZA CHAIN","WAS FOUNDED LAST",Q],["أنهي سلسلة بيتزا","اتأسست في الآخر",QA],"max",[
+ Rd(["WHICH PIZZA CHAIN","WAS FOUNDED LAST",Q],["أنهي سلسلة بيتزا","أجدد",QA],"max",[
   ["Sbarro",1956,"سبارو"],["Pizza Hut",1958,"بيتزا هت"],["Pizza Inn",1958,"بيتزا إن"],
   ["Little Caesars",1959,"ليتل سيزرز"],["Domino's",1960,"دومينوز","Domino's Pizza"],["PizzaExpress",1965,"بيتزا إكسبريس"],
   ["Chuck E. Cheese",1977,"تشاك إي تشيز"],["Papa Murphy's",1981,"بابا مرفيز"],["Papa John's",1984,"بابا جونز","Papa John's Pizza"]],
@@ -121,7 +121,7 @@ CATS.push(
   ["Peet's Coffee",1966,"بيتس كوفي"],["Costa Coffee",1971,"كوستا"],["Starbucks",1971,"ستاربكس"],
   ["Second Cup",1975,"سكند كب"],["Gloria Jean's",1979,"جلوريا جينز","Gloria Jean's Coffees"],["Caribou Coffee",1992,"كاريبو"]],
   {h:"coffee chain",k:["FOUNDED","اتأسست سنة"],s:"eats",m:"eg"}),
- Rd(["WHICH CHICKEN CHAIN","WAS FOUNDED LAST",Q],["أنهي سلسلة فراخ","اتأسست في الآخر",QA],"max",[
+ Rd(["WHICH CHICKEN CHAIN","WAS FOUNDED LAST",Q],["أنهي سلسلة فراخ","أجدد",QA],"max",[
   ["KFC",1952,"كنتاكي"],["Chick-fil-A",1967,"تشيك فيل إيه"],["Popeyes",1972,"بوبايز"],
   ["Al Baik",1974,"البيك"],["Bojangles",1977,"بوجانجلز"],["Nando's",1987,"ناندوز"],
   ["Cook Door",1988,"كوك دور"],["Wingstop",1994,"وينج ستوب"],["Raising Cane's",1996,"ريزينج كينز","Raising Cane's Chicken Fingers"]],
@@ -141,7 +141,7 @@ CATS.push(
   ["Egg McMuffin",1971,"إيج ماك مافن"],["Happy Meal",1979,"هابي ميل"],["McChicken",1980,"ماك تشيكن"],
   ["Chicken McNuggets",1983,"ماك ناجتس"],["McCafé",1993,"ماك كافيه"],["McFlurry",1995,"ماك فلوري"]],
   {h:"McDonald's",k:["LAUNCHED","نزلت سنة"],g:"y",dt:["Launched","نزول المنتج"],s:"eats",m:"eg"}),
- Rd(["WHICH SANDWICH OR TACO CHAIN","WAS FOUNDED LAST",Q],["أنهي سلسلة ساندوتشات أو تاكو","اتأسست في الآخر",QA],"max",[
+ Rd(["WHICH SANDWICH OR TACO CHAIN","WAS FOUNDED LAST",Q],["أنهي سلسلة ساندوتشات أو تاكو","أجدد",QA],"max",[
   ["Jersey Mike's",1956,"جيرسي مايكس","Jersey Mike's Subs"],["Taco Bell",1962,"تاكو بيل"],["Arby's",1964,"آربيز"],
   ["Subway",1965,"صب واي","Subway (restaurant)"],["Quiznos",1981,"كويزنوز"],["Jimmy John's",1983,"جيمي جونز"],
   ["Pret A Manger",1986,"بريه أ مونجيه"],["Panera Bread",1987,"بانيرا"],["Chipotle",1993,"تشيبوتلي","Chipotle Mexican Grill"]],

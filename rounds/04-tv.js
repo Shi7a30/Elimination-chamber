@@ -22,11 +22,11 @@ CATS.push(
   ["Yehia El-Fakharany",1945,"يحيى الفخراني"],["Mohamed Sobhi",1948,"محمد صبحي","Mohamed Sobhi (actor)"],["Mahmoud Hemida",1953,"محمود حميدة"],
   ["Ashraf Abdel Baky",1963,"أشرف عبد الباقي"],["Khaled El Nabawy",1966,"خالد النبوي"],["Yasser Galal",1969,"ياسر جلال"],
   ["Mostafa Shaban",1970,"مصطفى شعبان"],["Youssef El Sherif",1978,"يوسف الشريف"],["Mohamed Ramadan",1988,"محمد رمضان","Mohamed Ramadan (actor)"]],{h:"Egyptian actor",k:BORN,g:"p",s:"tv",m:"eg"}),
- Rd(["WHICH SERIES","CAME OUT LAST",Q],["أنهي مسلسل","نزل في الآخر",QA],"max",[
+ Rd(["WHICH SERIES","CAME OUT LAST",Q],["أنهي مسلسل","أجدد",QA],"max",[
   ["Raafat El Haggan",1988,"رأفت الهجان"],["Arabesque",1994,"أرابيسك"],["Hadeeth El Sabah wel Masaa",2001,"حديث الصباح والمساء"],
   ["Ragel W Set Settat",2006,"راجل وست ستات"],["Taht El Saytara",2015,"تحت السيطرة"],["Nelly & Sherihan",2016,"نيللي وشريهان"],
   ["Sabe' Gar",2017,"سابع جار"],["Paranormal",2020,"ما وراء الطبيعة","Paranormal (TV series)"],["Ashghal Shaqqa",2024,"أشغال شقة"]],{h:"Egyptian TV series",k:["FIRST AIRED","أول عرض"],dt:["Series first aired", "أول عرض للمسلسل"],g:"y",s:"tv",m:"eg"}),
- Rd(["WHICH INTERNATIONAL SERIES","CAME OUT LAST",Q],["أنهي مسلسل أجنبي","نزل في الآخر",QA],"max",[
+ Rd(["WHICH INTERNATIONAL SERIES","CAME OUT LAST",Q],["أنهي مسلسل أجنبي","أجدد",QA],"max",[
   ["Friends",1994,"فريندز"],["The Sopranos",1999,"ذا سوبرانوز"],["Prison Break",2005,"بريزون بريك"],
   ["Breaking Bad",2008,"بريكنج باد"],["Game of Thrones",2011,"جيم أوف ثرونز"],["Peaky Blinders",2013,"بيكي بلايندرز"],
   ["Stranger Things",2016,"سترينجر ثينجز"],["Money Heist",2017,"لا كاسا دي بابيل"],["Squid Game",2021,"لعبة الحبار"]],{h:"TV series",k:["FIRST AIRED","أول عرض"],dt:["Series first aired", "أول عرض للمسلسل"],g:"y",s:"tv",m:"w"}),
@@ -40,7 +40,7 @@ CATS.push(
   ["Fatmagül",2010,"ما ذنب فاطمة جول","Fatmagül'ün Suçu Ne?"],["Muhteşem Yüzyıl",2011,"حريم السلطان","Muhteşem Yüzyıl"],["Diriliş: Ertuğrul",2014,"قيامة أرطغرل","Diriliş: Ertuğrul"],
   ["Kara Sevda",2015,"حب أعمى","Kara Sevda"],["Kuruluş: Osman",2019,"المؤسس عثمان","Kuruluş: Osman"],["Sen Çal Kapımı",2020,"أنت اطرق بابي","Sen Çal Kapımı"]],
   {h:"Turkish TV series",k:["FIRST AIRED","أول عرض"],dt:["Series first aired","أول عرض للمسلسل"],g:"y",s:"tv",m:"w"}),
- Rd(["WHICH NETFLIX HIT","CAME OUT LAST",Q],["أنهي مسلسل نتفليكس","نزل في الآخر",QA],"max",[
+ Rd(["WHICH NETFLIX HIT","CAME OUT LAST",Q],["أنهي مسلسل نتفليكس","أجدد",QA],"max",[
   ["House of Cards",2013,"هاوس أوف كاردز","House of Cards (American TV series)"],["Narcos",2015,"ناركوس"],["The Crown",2016,"ذا كراون","The Crown (TV series)"],
   ["Dark",2017,"دارك","Dark (TV series)"],["The Witcher",2019,"ذا ويتشر","The Witcher (TV series)"],["Bridgerton",2020,"بريدجرتون"],
   ["Squid Game",2021,"لعبة الحبار"],["Wednesday",2022,"وينزداي","Wednesday (TV series)"],["Adolescence",2025,"أدوليسنس","Adolescence (TV series)"]],

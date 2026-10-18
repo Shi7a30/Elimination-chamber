@@ -44,7 +44,7 @@ CATS.push(
   ["Samir Ghanem",1937,"سمير غانم"],["Mohamed Sobhi",1948,"محمد صبحي","Mohamed Sobhi (actor)"],["Talaat Zakaria",1960,"طلعت زكريا"],
   ["Ashraf Abdel Baky",1963,"أشرف عبد الباقي"],["Bayoumi Fouad",1965,"بيومي فؤاد"],["Maged El Kedwany",1967,"ماجد الكدواني"],
   ["Hisham Maged",1980,"هشام ماجد"],["Mostafa Khater",1985,"مصطفى خاطر"],["Ali Rabie",1989,"علي ربيع"]],{h:"Egyptian actor",k:BORN,g:"p",s:"actors",m:"eg"}),
- Rd(["WHICH COMEDY","CAME OUT LAST",Q],["أنهي فيلم كوميدي","نزل في الآخر",QA],"max",[
+ Rd(["WHICH COMEDY","CAME OUT LAST",Q],["أنهي فيلم كوميدي","أجدد",QA],"max",[
   ["Harameya fi KG2",2001,"حرامية في كي جي تو","Thieves in KG2"],["Mido Mashakel",2003,"ميدو مشاكل"],["Zaki Chan",2005,"زكي شان"],
   ["Keda Reda",2007,"كده رضا"],["1000 Mabrouk",2009,"ألف مبروك"],["Asal Eswed",2010,"عسل إسود"],
   ["X-Large",2011,"إكس لارج","X-Large (film)"],["El Badla",2018,"البدلة"],["Wahed Tany",2022,"واحد تاني"]],{h:"Egyptian film",k:["RELEASED","نزل سنة"],dt:["Film released", "نزول الفيلم"],g:"y",s:"films",m:"eg"}),
@@ -124,7 +124,7 @@ CATS.push(
   ["The Avengers",2012,"ذا أفنجرز","The Avengers (2012 film)"],["Guardians of the Galaxy",2014,"حراس المجرة","Guardians of the Galaxy (film)"],["Black Panther",2018,"بلاك بانثر","Black Panther (film)"],
   ["Avengers: Infinity War",2018,"أفنجرز: إنفينيتي وور"],["Avengers: Endgame",2019,"أفنجرز: إند جيم"],["Spider-Man: No Way Home",2021,"سبايدر مان: نو واي هوم"]],
   {h:"film",k:["RELEASED","نزل سنة"],dt:["Film released","نزول الفيلم"],g:"y",s:"films",m:"w"}),
- Rd(["WHICH WIZARDING WORLD FILM","CAME OUT LAST",Q],["أنهي فيلم من عالم هاري بوتر","نزل في الآخر",QA],"max",[
+ Rd(["WHICH WIZARDING WORLD FILM","CAME OUT LAST",Q],["أنهي فيلم من عالم هاري بوتر","أجدد",QA],"max",[
   ["Harry Potter and the Philosopher's Stone",2001,"هاري بوتر وحجر الفيلسوف","Harry Potter and the Philosopher's Stone (film)"],["Harry Potter and the Chamber of Secrets",2002,"هاري بوتر وحجرة الأسرار","Harry Potter and the Chamber of Secrets (film)"],
   ["Harry Potter and the Prisoner of Azkaban",2004,"هاري بوتر وسجين أزكابان","Harry Potter and the Prisoner of Azkaban (film)"],["Harry Potter and the Goblet of Fire",2005,"هاري بوتر وكأس النار","Harry Potter and the Goblet of Fire (film)"],
   ["Harry Potter and the Order of the Phoenix",2007,"هاري بوتر وجماعة العنقاء","Harry Potter and the Order of the Phoenix (film)"],["Harry Potter and the Half-Blood Prince",2009,"هاري بوتر والأمير الهجين","Harry Potter and the Half-Blood Prince (film)"],
@@ -161,12 +161,12 @@ CATS.push(
   ["El Mansy",1993,"المنسي"],["Toyour El Zalam",1995,"طيور الظلام"],["El Noum fil Asal",1996,"النوم في العسل"],
   ["Amir El Zalam",2002,"أمير الظلام"],["El Sefara fil Emara",2005,"السفارة في العمارة","The Embassy in the Building"],["Hassan wa Morcos",2008,"حسن ومرقص","Hassan and Morcos"]],
   {h:"Egyptian film",k:["RELEASED","نزل سنة"],dt:["Film released","نزول الفيلم"],g:"y",s:"films",m:"eg"}),
- Rd(["WHICH HENEDY FILM","CAME OUT LAST",Q],["أنهي فيلم لهنيدي","نزل في الآخر",QA],"max",[
+ Rd(["WHICH HENEDY FILM","CAME OUT LAST",Q],["أنهي فيلم لهنيدي","أجدد",QA],"max",[
   ["Ismailia Rayeh Gai",1997,"إسماعيلية رايح جاي","Round Trip to Ismailia"],["Saidi fil Gamaa el Amrikia",1998,"صعيدي في الجامعة الأمريكية"],["Hammam fi Amsterdam",1999,"همام في أمستردام"],
   ["Belya wa Demagho El Alya",2000,"بليه ودماغه العالية"],["Ga'ana El Bayan El Taly",2001,"جاءنا البيان التالي"],["Sahib Sahbo",2002,"صاحب صاحبه"],
   ["Fool El Seen El Azim",2004,"فول الصين العظيم"],["Ramadan Mabrouk Abul Alamein Hamouda",2008,"رمضان مبروك أبو العلمين حمودة"],["Teta Rahiba",2012,"تيتة رهيبة"]],
   {h:"Egyptian film",k:["RELEASED","نزل سنة"],dt:["Film released","نزول الفيلم"],g:"y",s:"films",m:"eg"}),
- Rd(["WHICH GOLDEN-AGE FILM","CAME OUT LAST",Q],["أنهي فيلم من الزمن الجميل","نزل في الآخر",QA],"max",[
+ Rd(["WHICH GOLDEN-AGE FILM","CAME OUT LAST",Q],["أنهي فيلم من الزمن الجميل","أجدد",QA],"max",[
   ["El Azima",1939,"العزيمة","Determination (1939 film)"],["Lak Yawm Ya Zalim",1951,"لك يوم يا ظالم"],["Shabab Emraa",1956,"شباب امرأة","A Woman's Youth"],
   ["Rodda Qalbi",1957,"رد قلبي"],["Ana Horra",1959,"أنا حرة","I Am Free (film)"],["El Mummia",1969,"المومياء","The Night of Counting the Years"],
   ["Imbaratoriyet Meem",1972,"إمبراطورية ميم"],["El Karnak",1975,"الكرنك","Karnak (film)"],["Ahl El Qemma",1981,"أهل القمة"]],
@@ -176,7 +176,7 @@ CATS.push(
   ["Saladin the Victorious",1963,"الناصر صلاح الدين","Saladin the Victorious"],["El Ard",1969,"الأرض","The Land (1969 film)"],["Alexandria... Why?",1979,"إسكندرية ليه","Alexandria... Why?"],
   ["El Mohager",1994,"المهاجر","The Emigrant (1994 film)"],["El Massir",1997,"المصير","Destiny (1997 film)"],["Heya Fawda",2007,"هي فوضى","Chaos (2007 film)"]],
   {h:"Egyptian film",k:["RELEASED","نزل سنة"],dt:["Film released","نزول الفيلم"],g:"y",s:"films",m:"eg"}),
- Rd(["WHICH NEW FILM","CAME OUT LAST",Q],["أنهي فيلم من الجداد","نزل في الآخر",QA],"max",[
+ Rd(["WHICH NEW FILM","CAME OUT LAST",Q],["أنهي فيلم من الجداد","أجدد",QA],"max",[
   ["Ibrahim El Abyad",2009,"إبراهيم الأبيض"],["Asmaa",2011,"أسماء","Asmaa (film)"],["El Harb El Alamiya El Talta",2014,"الحرب العالمية الثالثة","The Third World War (2014 film)"],
   ["Hepta",2016,"هيبتا","Hepta: The Last Lecture"],["El Kenz",2017,"الكنز","The Treasure (2017 film)"],["The Blue Elephant 2",2019,"الفيل الأزرق 2"],
   ["Sahib El Maqam",2020,"صاحب المقام"],["Kira & El Gin",2022,"كيرة والجن"],["Welad Rizk 3",2024,"ولاد رزق 3","Sons of Rizk 3"]],
