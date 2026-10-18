@@ -11524,7 +11524,7 @@
   "skip": false
  },
  {
-  "name": "Captain America: The First Avenger",
+  "name": "Captain America",
   "title": "Captain America: The First Avenger",
   "hint": "film",
   "ar": "كابتن أمريكا",
@@ -11560,7 +11560,7 @@
   "skip": false
  },
  {
-  "name": "Harry Potter and the Philosopher's Stone",
+  "name": "Philosopher's Stone",
   "title": "Harry Potter and the Philosopher's Stone (film)",
   "hint": "film",
   "ar": "هاري بوتر وحجر الفيلسوف",
@@ -11569,7 +11569,7 @@
   "skip": false
  },
  {
-  "name": "Harry Potter and the Chamber of Secrets",
+  "name": "Chamber of Secrets",
   "title": "Harry Potter and the Chamber of Secrets (film)",
   "hint": "film",
   "ar": "هاري بوتر وحجرة الأسرار",
@@ -11578,7 +11578,7 @@
   "skip": false
  },
  {
-  "name": "Harry Potter and the Prisoner of Azkaban",
+  "name": "Prisoner of Azkaban",
   "title": "Harry Potter and the Prisoner of Azkaban (film)",
   "hint": "film",
   "ar": "هاري بوتر وسجين أزكابان",
@@ -11587,7 +11587,7 @@
   "skip": false
  },
  {
-  "name": "Harry Potter and the Goblet of Fire",
+  "name": "Goblet of Fire",
   "title": "Harry Potter and the Goblet of Fire (film)",
   "hint": "film",
   "ar": "هاري بوتر وكأس النار",
@@ -11596,7 +11596,7 @@
   "skip": false
  },
  {
-  "name": "Harry Potter and the Order of the Phoenix",
+  "name": "Order of the Phoenix",
   "title": "Harry Potter and the Order of the Phoenix (film)",
   "hint": "film",
   "ar": "هاري بوتر وجماعة العنقاء",
@@ -11605,7 +11605,7 @@
   "skip": false
  },
  {
-  "name": "Harry Potter and the Half-Blood Prince",
+  "name": "Half-Blood Prince",
   "title": "Harry Potter and the Half-Blood Prince (film)",
   "hint": "film",
   "ar": "هاري بوتر والأمير الهجين",
@@ -11614,7 +11614,7 @@
   "skip": false
  },
  {
-  "name": "Deathly Hallows – Part 1",
+  "name": "Deathly Hallows Part 1",
   "title": "Harry Potter and the Deathly Hallows – Part 1",
   "hint": "film",
   "ar": "هاري بوتر ومقدسات الموت ١",
@@ -11623,7 +11623,7 @@
   "skip": false
  },
  {
-  "name": "Deathly Hallows – Part 2",
+  "name": "Deathly Hallows Part 2",
   "title": "Harry Potter and the Deathly Hallows – Part 2",
   "hint": "film",
   "ar": "هاري بوتر ومقدسات الموت ٢",
@@ -11632,7 +11632,7 @@
   "skip": false
  },
  {
-  "name": "Fantastic Beasts and Where to Find Them",
+  "name": "Fantastic Beasts",
   "title": "Fantastic Beasts and Where to Find Them (film)",
   "hint": "film",
   "ar": "الوحوش المذهلة",
@@ -11641,7 +11641,7 @@
   "skip": false
  },
  {
-  "name": "Snow White and the Seven Dwarfs",
+  "name": "Snow White",
   "title": "Snow White and the Seven Dwarfs (1937 film)",
   "hint": "film",
   "ar": "سنو وايت والأقزام السبعة",
