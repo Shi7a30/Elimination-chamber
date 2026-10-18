@@ -5,7 +5,7 @@ CATS.push(
  Rd(["WHICH IS THE","FASTEST RUNNER",Q],["مين","أسرع واحد في الجري",QA],"max",[
   ["Cheetah",112,"الشيتا"],["Pronghorn",88,"ظبي البرونجهورن"],["Racehorse",70,"حصان السباق","Thoroughbred"],["Lion",80,"الأسد"],["Greyhound",72,"كلب الجراي هاوند"],
   ["Kangaroo",60,"الكنغر","Red kangaroo"],["Ostrich",70,"النعامة","Common ostrich"],["Grizzly Bear",56,"الدب الأشهب","Grizzly bear"],["Usain Bolt",45,"يوسين بولت"]],{suf:[" km/h"," كم/ساعة"],h:"animal",k:["TOP SPEED","أقصى سرعة"],s:"animals",m:"w"}),
- Rd(["WHICH IS THE","HEAVIEST ANIMAL",Q],["أنهي","حيوان أتقل واحد",QA],"max",[
+ Rd(["WHICH IS THE","HEAVIEST ANIMAL",Q],["أنهي","أتقل حيوان",QA],"max",[
   ["Blue Whale",150000,"الحوت الأزرق","Blue whale"],["African Elephant",6000,"الفيل الأفريقي","African bush elephant"],["White Rhino",2300,"وحيد القرن الأبيض","White rhinoceros"],
   ["Hippo",1500,"فرس النهر","Hippopotamus"],["Giraffe",1200,"الزرافة"],["Saltwater Crocodile",450,"تمساح المية المالحة","Saltwater crocodile"],
   ["Polar Bear",500,"الدب القطبي","Polar bear"],["Gorilla",180,"الغوريلا"],["Lion",190,"الأسد"]],{suf:[" kg"," كيلو"],h:"animal",k:["WEIGHT","الوزن"],s:"animals",m:"w"}),
@@ -51,7 +51,7 @@ CATS.push(
   ["Human",1350,"الإنسان"],["Horse",530,"الحصان"],["Gorilla",500,"الغوريلا"],
   ["Lion",240,"الأسد"],["Dog",70,"الكلب"],["Cat",30,"القطة"]],
   {pre:["~","~"],suf:[" g"," جرام"],h:"animal",k:["BRAIN WEIGHT","وزن المخ"],s:"animals",m:"w"}),
- Rd(["WHICH SACRED PHARAONIC ANIMAL","IS THE HEAVIEST",Q],["أنهي حيوان مقدّس عند الفراعنة","أتقل واحد",QA],"max",[
+ Rd(["WHICH SACRED PHARAONIC ANIMAL","IS THE HEAVIEST",Q],["أنهي","أتقل حيوان مقدّس عند الفراعنة",QA],"max",[
   ["Hippo (Taweret)",1500,"فرس النهر (تاورت)","Hippopotamus"],["Crocodile (Sobek)",400,"التمساح (سوبك)","Nile crocodile"],["Lion (Sekhmet)",190,"الأسد (سخمت)","Lion"],
   ["Baboon (Thoth)",20,"القرد البابون (تحوت)","Hamadryas baboon"],["Jackal (Anubis)",10,"ابن آوى (أنوبيس)","Golden jackal"],["Vulture (Nekhbet)",8,"النسر (نخبت)","Griffon vulture"],
   ["Cat (Bastet)",4,"القطة (باستت)","Cat"],["Ibis (Thoth)",1.5,"أبو منجل (تحوت)","African sacred ibis"],["Falcon (Horus)",0.8,"الصقر (حورس)","Peregrine falcon"]],
@@ -61,7 +61,7 @@ CATS.push(
   ["Gamoosa (water buffalo)",25,"الجاموسة","Water buffalo"],["Nubian ibex",15,"الوعل النوبي"],["Egyptian Mau",14,"القطة المصري (الماو)"],
   ["Dorcas gazelle",12,"الغزال المصري"],["Egyptian mongoose",12,"النمس"],["Fennec fox",10,"الفنك (ثعلب الصحرا)"]],
   {pre:["~","~"],suf:[" yrs"," سنة"],h:"animal",k:["TYPICAL LIFESPAN","متوسط العمر"],s:"animals",m:"eg"}),
- Rd(["WHICH DESERT ANIMAL","IS THE HEAVIEST",Q],["أنهي حيوان صحراوي","أتقل واحد",QA],"max",[
+ Rd(["WHICH DESERT ANIMAL","IS THE HEAVIEST",Q],["أنهي","أتقل حيوان صحراوي",QA],"max",[
   ["Camel",500,"الجمل","Dromedary"],["Barbary sheep",100,"الكبش الأروي"],["Nubian ibex",60,"الوعل النوبي"],
   ["Striped hyena",35,"الضبع المخطط"],["Dorcas gazelle",18,"الغزال المصري"],["African golden wolf",12,"الديب المصري"],
   ["Sand cat",2.5,"قط الرمال"],["Fennec fox",1.2,"الفنك (ثعلب الصحرا)"],["Desert hedgehog",0.4,"القنفد الصحراوي"]],
@@ -71,12 +71,12 @@ CATS.push(
   ["King cobra",5.6,"الكوبرا الملك"],["Black mamba",4.3,"المامبا السودا"],["Boa constrictor",4,"البوا العاصرة"],
   ["Egyptian cobra",2.5,"الكوبرا المصري"],["Eastern diamondback rattlesnake",2.4,"الأفعى الجرسية"],["Horned viper",0.85,"الأفعى المقرنة","Cerastes cerastes"]],
   {pre:["up to ","لحد "],suf:[" m"," متر"],h:"snake",k:["MAX LENGTH","أقصى طول"],s:"animals",m:"w"}),
- Rd(["WHICH BIRD IS","THE HEAVIEST",Q],["أنهي طير","أتقل واحد",QA],"max",[
+ Rd(["WHICH BIRD IS","THE HEAVIEST",Q],["أنهي","أتقل طير",QA],"max",[
   ["Ostrich",120,"النعامة","Common ostrich"],["Southern cassowary",45,"الكاسوار"],["Emu",40,"الإيمو"],
   ["Emperor penguin",30,"البطريق الإمبراطور"],["Swan",12,"البجعة","Mute swan"],["Turkey (bird)",8,"الديك الرومي","Domestic turkey"],
   ["Bald eagle",5,"النسر الأقرع"],["Chicken",2.5,"الفرخة"],["Pigeon",0.35,"الحمامة","Rock dove"]],
   {pre:["~","~"],suf:[" kg"," كيلو"],h:"bird",k:["ADULT WEIGHT","وزن الطير البالغ"],s:"animals",m:"w"}),
- Rd(["WHICH DINOSAUR WAS","THE LONGEST",Q],["أنهي ديناصور","كان أطول واحد",QA],"max",[
+ Rd(["WHICH DINOSAUR WAS","THE LONGEST",Q],["أنهي","أطول ديناصور",QA],"max",[
   ["Argentinosaurus",35,"الأرجنتينوصور"],["Diplodocus",26,"الديبلودوكس"],["Brachiosaurus",22,"البراكيوصور"],
   ["Spinosaurus",15,"السبينوصور (المصري)"],["Tyrannosaurus rex",12,"التيرانوصور ركس"],["Iguanodon",10,"الإجوانودون"],
   ["Triceratops",9,"الترايسيراتوبس"],["Stegosaurus",8.5,"الستيجوصور"],["Velociraptor",2,"الفيلوسيرابتور"]],

@@ -117,7 +117,7 @@ CATS.push(
   ["Tweety",1942,"تويتي"],["Sylvester",1945,"سيلفستر","Sylvester the Cat"],["Marvin the Martian",1948,"مارفن المريخي"],
   ["Road Runner",1949,"رود رنر","Wile E. Coyote and the Road Runner"],["Speedy Gonzales",1953,"سبيدي جونزاليس"],["Tasmanian Devil",1954,"تاز","Tasmanian Devil (Looney Tunes)"]],
   {h:"cartoon character",k:["FIRST SEEN","أول ظهور سنة"],g:"y",dt:["First appearance","أول ظهور"],s:"kidstv",m:"eg"}),
- Rd(["WHICH POKÉMON IS","THE HEAVIEST",Q],["أنهي بوكيمون","أتقل واحد",QA],"max",[
+ Rd(["WHICH POKÉMON IS","THE HEAVIEST",Q],["أنهي","أتقل بوكيمون",QA],"max",[
   ["Groudon",950,"جرادون"],["Snorlax",460,"سنورلاكس"],["Steelix",400,"ستيليكس"],
   ["Wailord",398,"ويلورد"],["Onix",210,"أونيكس"],["Mewtwo",122,"ميوتو"],
   ["Charizard",90.5,"تشاريزارد"],["Bulbasaur",6.9,"بلباسور"],["Pikachu",6,"بيكاتشو"]],
@@ -192,7 +192,7 @@ CATS.push(
   ["Alexandria University",1938,"جامعة الإسكندرية"],["Ain Shams University",1950,"جامعة عين شمس"],["Assiut University",1957,"جامعة أسيوط"],
   ["Helwan University",1975,"جامعة حلوان"],["GUC",2003,"الجامعة الألمانية","German University in Cairo"],["BUE",2005,"الجامعة البريطانية","British University in Egypt"]],
   {h:"university",k:["FOUNDED","اتأسست سنة"],s:"zaman",m:"eg"}),
- Rd(["WHICH APP OR SITE","SHUT DOWN LAST",Q],["أنهي أبلكيشن أو موقع","اتقفل في الآخر",QA],"max",[
+ Rd(["WHICH APP OR SITE","SHUT DOWN LAST",Q],["أنهي","آخر أبلكيشن أو موقع اتقفل",QA],"max",[
   ["MSN Messenger",2013,"إم إس إن ماسنجر","Windows Live Messenger"],["Orkut",2014,"أوركت"],["Vine",2017,"فاين","Vine (service)"],
   ["Yahoo! Messenger",2018,"ياهو ماسنجر"],["Google+",2019,"جوجل بلس"],["Adobe Flash",2020,"فلاش بلاير","Adobe Flash Player"],
   ["Internet Explorer",2022,"إنترنت إكسبلورر"],["iPod",2022,"آي بود","iPod Touch"],["Skype",2025,"سكايب"]],

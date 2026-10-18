@@ -5,10 +5,10 @@ CATS.push(
  Rd(["WHICH EGYPTIAN BRAND","WAS FOUNDED FIRST",Q],["أنهي براند مصري","اتأسس الأول",QA],"min",[
   ["El Rashidi El Mizan",1889,"الرشيدي الميزان"],["Corona",1919,"كورونا"],["Spiro Spathis",1920,"سبيرو سباتس"],["Bisco Misr",1957,"بسكو مصر","BiscoMisr"],["Faragello",1973,"فرجللو"],["Vitrac",1982,"فيتراك"],["Juhayna",1983,"جهينة","Juhayna Food Industries"],["Regina",1986,"ريجينا"],["Edita",1996,"إيديتا"]],
   {h:"Egyptian food brand",k:["FOUNDED","اتأسس سنة"],g:"y",dt:["Company founded","تأسيس الشركة"],s:"snacks",m:"eg"}),
- Rd(["WHICH DRINK OR DAIRY BRAND","WAS FOUNDED LAST",Q],["أنهي براند عصير أو ألبان","اتأسس آخر واحد",QA],"max",[
+ Rd(["WHICH DRINK OR DAIRY BRAND","WAS FOUNDED LAST",Q],["أنهي براند عصير أو ألبان","أجدد",QA],"max",[
   ["Spiro Spathis",1920,"سبيرو سباتس"],["Faragello",1973,"فرجللو"],["Juhayna",1983,"جهينة","Juhayna Food Industries"],["Panda (Arab Dairy)",1985,"باندا"],["Dina Farms",1987,"دينا فارمز"],["Domty",1990,"دومتي"],["Greenland",1995,"جرين لاند"],["Obour Land",1997,"عبور لاند"],["Beyti",1998,"بيتي"]],
   {h:"Egyptian drink or dairy brand",k:["FOUNDED","اتأسس سنة"],g:"y",dt:["Company founded","تأسيس الشركة"],s:"snacks",m:"eg"}),
- Rd(["WHICH SUPERMARKET","STARTED IN EGYPT LAST",Q],["أنهي سوبرماركت","بدأ في مصر آخر واحد",QA],"max",[
+ Rd(["WHICH SUPERMARKET","STARTED IN EGYPT LAST",Q],["أنهي سوبرماركت","أجدد في مصر",QA],"max",[
   ["Seoudi",1938,"سعودي ماركت"],["Awlad Ragab",1970,"أولاد رجب"],["Metro Market",1998,"مترو ماركت"],["Carrefour",2002,"كارفور"],["Hyper One",2005,"هايبر وان"],["Gourmet",2006,"جورميه"],["Kheir Zaman",2006,"خير زمان"],["LuLu Hypermarket",2010,"لولو هايبر ماركت"],["Breadfast",2017,"بريدفاست"]],
   {h:"supermarket chain in Egypt",k:["STARTED IN EGYPT","بدأ في مصر سنة"],g:"y",dt:["Started in Egypt","البداية في مصر"],s:"snacks",m:"eg"}),
  Rd(["WHICH GLOBAL GIANT","CAME TO EGYPT FIRST",Q],["أنهي شركة عالمية","دخلت مصر الأول",QA],"min",[
@@ -20,10 +20,10 @@ CATS.push(
  Rd(["WHICH PATISSERIE","OPENED LAST",Q],["أنهي محل حلويات","أجدد",QA],"max",[
   ["Groppi",1891,"جروبي"],["Simonds",1898,"سيموندس"],["El Malky",1917,"المالكي"],["Mandarine Koueider",1928,"مندرين قويدر"],["El Abd",1974,"العبد"],["La Poire",1975,"لابوار"],["Salé Sucré",1999,"ساليه سكريه"],["Sedra",2003,"سيدرا"],["TBS",2008,"تي بي إس"]],
   {h:"Egyptian patisserie",k:["FOUNDED","اتأسس سنة"],g:"y",dt:["Patisserie founded","تأسيس محل الحلويات"],s:"eats",m:"eg"}),
- Rd(["WHICH CHAIN","CAME TO EGYPT LAST",Q],["أنهي سلسلة مطاعم","دخلت مصر آخر واحدة",QA],"max",[
+ Rd(["WHICH CHAIN","CAME TO EGYPT LAST",Q],["أنهي سلسلة مطاعم","أجدد في مصر",QA],"max",[
   ["KFC",1973,"كنتاكي"],["McDonald's",1994,"ماكدونالدز"],["TGI Fridays",1997,"تي جي آي فرايدايز"],["Starbucks",2006,"ستاربكس"],["Burger King",2007,"برجر كينج"],["Fatburger",2013,"فات برجر"],["Dunkin'",2015,"دانكن"],["Arby's",2018,"آربيز"],["Krispy Kreme",2021,"كريسبي كريم"]],
   {h:"international restaurant chain",k:["CAME TO EGYPT","دخلت مصر سنة"],g:"y",dt:["Arrived in Egypt","دخول مصر"],s:"eats",m:"eg"}),
- Rd(["WHICH RESTAURANT","IS THE OLDEST",Q],["أنهي مطعم","أقدم واحد",QA],"min",[
+ Rd(["WHICH RESTAURANT","IS THE OLDEST",Q],["أنهي","أقدم مطعم",QA],"min",[
   ["Café Riche",1908,"كافيه ريش"],["Abou Shakra",1947,"أبو شقرة"],["Abou Tarek",1950,"أبو طارق"],["Mohamed Ahmed",1957,"محمد أحمد"],["Felfela",1959,"فلفلة"],["Gad",1969,"جاد"],["Mo'men",1988,"مؤمن"],["Abou El Sid",1999,"أبو السيد"],["Zooba",2012,"زووبا"]],
   {h:"Egyptian restaurant",k:["OPENED","اتفتح سنة"],g:"y",dt:["Restaurant opened","افتتاح المطعم"],s:"eats",m:"eg"}),
  Rd(["WHICH SOFT DRINK","WAS CREATED FIRST",Q],["أنهي حاجة ساقعة","اتعملت الأول",QA],"min",[

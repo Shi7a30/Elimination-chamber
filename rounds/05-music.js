@@ -14,7 +14,7 @@ CATS.push(
   ["Abdel Halim Hafez",1929,"عبد الحليم حافظ"],["Hany Shaker",1952,"هاني شاكر"],["Mohamed Mounir",1954,"محمد منير"],["Amr Diab",1961,"عمرو دياب"],
   ["Hakim",1962,"حكيم","Hakim (singer)"],["Angham",1972,"أنغام"],["Mohamed Hamaki",1975,"محمد حماقي"],["Tamer Hosny",1977,"تامر حسني"],
   ["Sherine Abdel Wahab",1980,"شيرين عبد الوهاب","Sherine"]],{h:"Egyptian singer",k:BORN,g:"p",s:"singers",m:"eg"}),
- Rd(["WHICH IS THE","OLDEST SONG",Q],["أنهي","أغنية أقدم واحدة",QA],"min",[
+ Rd(["WHICH IS THE","OLDEST SONG",Q],["أنهي","أقدم أغنية",QA],"min",[
   ["Hey Jude",1968,"هاي جود"],["Bohemian Rhapsody",1975,"بوهيميان رابسودي"],["Billie Jean",1983,"بيلي جين"],["Like a Prayer",1989,"لايك أ براير","Like a Prayer (song)"],["Smells Like Teen Spirit",1991,"سميلز لايك تين سبيريت"],
   ["Wannabe",1996,"وانابي","Wannabe (Spice Girls song)"],["Crazy in Love",2003,"كريزي إن لاف"],["Rolling in the Deep",2010,"رولينج إن ذا ديب"],["Blinding Lights",2019,"بلايندنج لايتس"]],{h:"song",k:["RELEASED","نزلت سنة"],dt:["Song released", "نزول الأغنية"],g:"y",s:"songs",m:"w"}),
   Rd(["WHO IS THE","YOUNGEST EGYPTIAN SINGER",Q],["مين","أصغر مطرب",QA],"max",[
@@ -156,7 +156,7 @@ CATS.push(
   ["Juicy",1994,"جوسي","Juicy (The Notorious B.I.G. song)"],["Gangsta's Paradise",1995,"جانجستاز بارادايس"],["Still D.R.E.",1999,"ستيل دري"],
   ["Gold Digger",2005,"جولد ديجر","Gold Digger (Kanye West song)"],["HUMBLE.",2017,"هامبل"],["Not Like Us",2024,"نوت لايك أس"]],
   {h:"song",k:["RELEASED","نزلت سنة"],dt:["Song released","نزول الأغنية"],g:"y",s:"songs",m:"w"}),
- Rd(["WHICH SONG IS","THE LONGEST",Q],["أنهي أغنية","أطول واحدة",QA],"max",[
+ Rd(["WHICH SONG IS","THE LONGEST",Q],["أنهي","أطول أغنية",QA],"max",[
   ["All Too Well (10 Minute Version)",10.2,"أول تو ويل (10 دقايق)","All Too Well"],["Free Bird",9.1,"فري بيرد"],["November Rain",9.0,"نوفمبر رين"],
   ["American Pie",8.6,"أمريكان باي","American Pie (song)"],["Stairway to Heaven",8.0,"ستيرواي تو هيفن"],["Hey Jude",7.2,"هاي جود"],
   ["Hotel California",6.5,"هوتيل كاليفورنيا","Hotel California (Eagles song)"],["Like a Rolling Stone",6.2,"لايك أ رولينج ستون"],["Bohemian Rhapsody",5.9,"بوهيميان رابسودي"]],

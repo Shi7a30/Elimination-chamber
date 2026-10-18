@@ -88,7 +88,7 @@ CATS.push(
   ["Mexico",3,"المكسيك"],["United States",2,"أمريكا"],["Brazil",2,"البرازيل"],["Germany",2,"ألمانيا"],["France",2,"فرنسا"],
   ["Italy",2,"إيطاليا"],["England",1,"إنجلترا"],["Canada",1,"كندا"],["Qatar",1,"قطر"]],
   {h:"country",k:["WORLD CUPS HOSTED","مونديالات نظّمتها"],s:"trophies",m:"w"}),
- Rd(["WHICH TEAM WON","THE EUROS MOST RECENTLY",Q],["أنهي منتخب","آخر واحد كسب اليورو",QA],"max",[
+ Rd(["WHICH TEAM WON","THE EUROS MOST RECENTLY",Q],["أنهي","آخر منتخب كسب اليورو",QA],"max",[
   ["Spain",2024,"إسبانيا"],["Italy",2021,"إيطاليا"],["Portugal",2016,"البرتغال"],["Greece",2004,"اليونان"],["France",2000,"فرنسا"],
   ["Germany",1996,"ألمانيا"],["Denmark",1992,"الدنمارك"],["Netherlands",1988,"هولندا"],["Soviet Union",1960,"الاتحاد السوفيتي"]],
   {h:"country",k:["LAST EURO WON","آخر يورو كسبه"],s:"trophies",m:"w"}),

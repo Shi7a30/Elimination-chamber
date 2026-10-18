@@ -14,11 +14,11 @@ CATS.push(
   ["Avatar",2.923,"أفاتار","Avatar (2009 film)"],["Avengers: Endgame",2.799,"أفنجرز: إند جيم"],["Titanic",2.264,"تايتانيك","Titanic (1997 film)"],["Star Wars: The Force Awakens",2.071,"حرب النجوم: صحوة القوة"],
   ["Avengers: Infinity War",2.052,"أفنجرز: إنفينيتي وور"],["Spider-Man: No Way Home",1.921,"سبايدر مان: نو واي هوم"],["Jurassic World",1.671,"جوراسيك وورلد"],["The Lion King (2019)",1.662,"الأسد الملك (2019)","The Lion King (2019 film)"],
   ["Frozen II",1.453,"فروزن 2"]],{pre:["$",""],suf:["B"," مليار دولار"],dp:2,h:"film",k:["BOX OFFICE","الإيرادات"],s:"films",m:"w"}),
- Rd(["WHICH IS THE","OLDEST MOVIE",Q],["أنهي","فيلم أقدم واحد",QA],"min",[
+ Rd(["WHICH IS THE","OLDEST MOVIE",Q],["أنهي","أقدم فيلم",QA],"min",[
   ["The Godfather",1972,"الأب الروحي"],["Jaws",1975,"الفك المفترس","Jaws (film)"],["Star Wars",1977,"حرب النجوم","Star Wars (film)"],["E.T.",1982,"إي تي","E.T. the Extra-Terrestrial"],
   ["Back to the Future",1985,"العودة للمستقبل"],["Jurassic Park",1993,"جوراسيك بارك","Jurassic Park (film)"],["Pulp Fiction",1994,"بالب فيكشن"],["Titanic",1997,"تايتانيك","Titanic (1997 film)"],
   ["The Matrix",1999,"ذا ماتريكس"]],{h:"film",k:["RELEASED","نزل سنة"],dt:["Film released", "نزول الفيلم"],g:"y",s:"films",m:"w"}),
- Rd(["WHICH IS THE","OLDEST EGYPTIAN FILM",Q],["أنهي","فيلم مصري أقدم واحد",QA],"min",[
+ Rd(["WHICH IS THE","OLDEST EGYPTIAN FILM",Q],["أنهي","أقدم فيلم مصري",QA],"min",[
   ["Cairo Station",1958,"باب الحديد"],["The Nightingale's Prayer",1959,"دعاء الكروان"],["Watch Out for Zouzou",1972,"خلي بالك من زوزو"],
   ["Terrorism and Kebab",1992,"الإرهاب والكباب"],["Ismailia Rayeh Gai",1997,"إسماعيلية رايح جاي","Round Trip to Ismailia"],["El Limby",2002,"اللمبي","El-Limby"],
   ["The Yacoubian Building",2006,"عمارة يعقوبيان","The Yacoubian Building (film)"],["The Blue Elephant",2014,"الفيل الأزرق","The Blue Elephant (film)"],
@@ -35,7 +35,7 @@ CATS.push(
    ["Saidi fil Gamaa el Amrikia",1998,"صعيدي في الجامعة الأمريكية"],["Hammam fi Amsterdam",1999,"همام في أمستردام"],["El Nazer",2000,"الناظر","El Nazer (film)"],
    ["Africano",2001,"أفريكانو","Africano (film)"],["Mafia",2002,"مافيا","Mafia (2002 film)"],["Tito",2004,"تيتو","Tito (2004 film)"],["El Gezira",2007,"الجزيرة","The Island (2007 film)"],
    ["Welad Rizk",2015,"ولاد رزق","Sons of Rizk"],["El Mamar",2019,"الممر","El Mamar (film)"]],{h:"Egyptian film",k:["RELEASED","نزل سنة"],dt:["Film released", "نزول الفيلم"],g:"y",s:"films",m:"eg"}),
-  Rd(["WHICH IS THE","OLDEST CLASSIC",Q],["أنهي","فيلم من الكلاسيكيات أقدم واحد",QA],"min",[
+  Rd(["WHICH IS THE","OLDEST CLASSIC",Q],["أنهي","أقدم فيلم من الكلاسيكيات",QA],"min",[
    ["Ghazal El Banat",1949,"غزل البنات","The Flirtation of Girls"],["Ibn Hamido",1957,"ابن حميدو","Hamido's Son"],["El Haram",1965,"الحرام","The Sin (1965 film)"],
    ["El Zoga El Tanya",1967,"الزوجة الثانية","The Second Wife (1967 film)"],["Shei' Men El Khof",1969,"شيء من الخوف","A Taste of Fear"],["El Karnak",1975,"الكرنك","Karnak (film)"],
    ["Sawwak El Otobees",1982,"سواق الأتوبيس","Sawwak El Otobees (film)"],["El Bary'",1986,"البريء","The Innocent (1986 film)"],["El Kit Kat",1991,"الكيت كات","The Kit Kat"]],
@@ -141,7 +141,7 @@ CATS.push(
   ["Frozen",1.290,"فروزن","Frozen (2013 film)"],["Incredibles 2",1.243,"الخارقون 2"],["Minions",1.159,"المينيونز","Minions (film)"],
   ["Toy Story 4",1.073,"حكاية لعبة 4"],["Moana 2",1.059,"موانا 2"],["Despicable Me 3",1.034,"أنا الحقير 3"]],
   {pre:["$",""],suf:["B"," مليار دولار"],dp:2,h:"film",k:["BOX OFFICE","الإيرادات"],s:"films",m:"w"}),
- Rd(["WHICH FILM IS","THE LONGEST",Q],["أنهي فيلم","أطول واحد",QA],"max",[
+ Rd(["WHICH FILM IS","THE LONGEST",Q],["أنهي","أطول فيلم",QA],"max",[
   ["Gone with the Wind",238,"ذهب مع الريح","Gone with the Wind (film)"],["Killers of the Flower Moon",206,"قتلة زهرة القمر","Killers of the Flower Moon (film)"],["The Return of the King",201,"عودة الملك","The Lord of the Rings: The Return of the King"],
   ["Titanic",195,"تايتانيك","Titanic (1997 film)"],["Avengers: Endgame",181,"أفنجرز: إند جيم"],["Oppenheimer",180,"أوبنهايمر","Oppenheimer (film)"],
   ["The Godfather",175,"العراب"],["Interstellar",169,"إنترستيلار","Interstellar (film)"],["The Dark Knight",152,"فارس الظلام","The Dark Knight"]],

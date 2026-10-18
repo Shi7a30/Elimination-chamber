@@ -2,19 +2,19 @@
 // Each category file adds itself to CATS; index.html loads them in number order.
 CATS.push(
 {n:"Games & Tech",a:"الألعاب والتكنولوجيا",e:"🎮",r:[
- Rd(["WHICH IS THE","OLDEST VIDEO GAME",Q],["أنهي","لعبة فيديو أقدم واحدة",QA],"min",[
+ Rd(["WHICH IS THE","OLDEST VIDEO GAME",Q],["أنهي","أقدم لعبة فيديو",QA],"min",[
   ["Pac-Man",1980,"باك مان"],["Tetris",1984,"تتريس"],["Super Mario Bros.",1985,"سوبر ماريو"],["The Legend of Zelda",1986,"أسطورة زيلدا","The Legend of Zelda (video game)"],["Pokémon Red & Green",1996,"بوكيمون ريد وجرين","Pokémon Red and Blue"],
   ["Grand Theft Auto",1997,"جراند ثفت أوتو","Grand Theft Auto (video game)"],["Minecraft",2011,"ماينكرافت"],["Fortnite",2017,"فورتنايت"],["Among Us",2018,"أمونج أس"]],{h:"video game",k:["RELEASED","نزلت سنة"],dt:["Game released", "نزول اللعبة"],g:"y",s:"games",m:"w"}),
- Rd(["WHICH IS THE","OLDEST CONSOLE",Q],["أنهي","جهاز ألعاب أقدم واحد",QA],"min",[
+ Rd(["WHICH IS THE","OLDEST CONSOLE",Q],["أنهي","أقدم جهاز ألعاب",QA],"min",[
   ["Atari 2600",1977,"أتاري 2600"],["NES / Famicom",1983,"إن إي إس / فاميكوم","Nintendo Entertainment System"],["Game Boy",1989,"جيم بوي"],["PlayStation",1994,"بلايستيشن 1","PlayStation (console)"],["Nintendo 64",1996,"نينتندو 64"],
   ["Xbox",2001,"إكس بوكس","Xbox (console)"],["Wii",2006,"وي"],["PlayStation 4",2013,"بلايستيشن 4"],["Nintendo Switch",2017,"نينتندو سويتش"]],{h:"video game console",k:["RELEASED","نزل سنة"],dt:["Console released", "نزول الجهاز"],g:"y",s:"games",m:"w"}),
- Rd(["WHICH IS THE","OLDEST COMPANY",Q],["أنهي","شركة أقدم واحدة",QA],"min",[
+ Rd(["WHICH IS THE","OLDEST COMPANY",Q],["أنهي","أقدم شركة",QA],"min",[
   ["Nintendo",1889,"نينتندو"],["Ford",1903,"فورد","Ford Motor Company"],["IBM",1911,"آي بي إم"],["Disney",1923,"ديزني","The Walt Disney Company"],["Toyota",1937,"تويوتا"],["Samsung",1938,"سامسونج"],
   ["Sony",1946,"سوني"],["Apple",1976,"أبل","Apple Inc."],["Google",1998,"جوجل"]],{h:"company",k:["FOUNDED","اتأسست سنة"],dt:["Company founded", "تأسيس الشركة"],g:"y",s:"brands",m:"w"}),
  Rd(["WHICH APP","LAUNCHED LAST",Q],["أنهي أبلكيشن","أجدد",QA],"max",[
   ["Facebook",2004,"فيسبوك"],["YouTube",2005,"يوتيوب"],["Twitter",2006,"تويتر"],["WhatsApp",2009,"واتساب"],["Instagram",2010,"إنستجرام"],["Snapchat",2011,"سناب شات"],["TikTok",2016,"تيك توك"],["ChatGPT",2022,"شات جي بي تي"],
   ["Threads",2023,"ثريدز","Threads (social network)"]],{h:"app",k:["LAUNCHED","نزل سنة"],dt:["App launched", "نزول الأبلكيشن"],g:"y",s:"brands",m:"w"}),
-  Rd(["WHICH IS THE","OLDEST EGYPTIAN BRAND",Q],["أنهي","براند مصري أقدم واحد",QA],"min",[
+  Rd(["WHICH IS THE","OLDEST EGYPTIAN BRAND",Q],["أنهي","أقدم براند مصري",QA],"min",[
    ["Al-Ahram",1875,"الأهرام"],["National Bank of Egypt",1898,"البنك الأهلي المصري"],["Banque Misr",1920,"بنك مصر"],["EgyptAir",1932,"مصر للطيران"],
    ["Juhayna",1983,"جهينة","Juhayna Food Industries"],["Edita",1996,"إيديتا","Edita Food Industries"],["Vodafone Egypt",1998,"فودافون مصر"],["Fawry",2008,"فوري"],["Swvl",2017,"سويفل"]],
    {h:"company",k:["FOUNDED","اتأسس سنة"],dt:["Brand founded", "تأسيس البراند"],g:"y",s:"brands",m:"eg"}),
@@ -27,7 +27,7 @@ CATS.push(
   ["Fawry",2008,"فوري"],["Elmenus",2011,"المنيوز"],["Vezeeta",2012,"فيزيتا"],["Paymob",2015,"باي موب"],["Swvl",2017,"سويفل"],
   ["Breadfast",2017,"بريدفاست"],["MaxAB",2018,"ماكس أب"],["Khazna",2019,"خزنة"],["Rabbit Mart",2021,"رابيت"]],
   {h:"app",k:["FOUNDED","اتأسست سنة"],dt:["Startup founded", "تأسيس الشركة"],g:"y",s:"brands",m:"eg"}),
- Rd(["WHICH BRAND","STARTED MOST RECENTLY",Q],["أنهي براند","اتأسس آخر واحد",QA],"max",[
+ Rd(["WHICH BRAND","STARTED MOST RECENTLY",Q],["أنهي براند","أجدد",QA],"max",[
   ["Elsewedy Electric",1938,"السويدي"],["Bisco Misr",1957,"بسكو مصر","BiscoMisr"],["Felfela",1959,"فلفلة"],["Elaraby",1964,"العربي","Elaraby Group"],
   ["Mo'men",1988,"مؤمن"],["Cook Door",1988,"كوك دور"],["Edita",1996,"إيديتا","Edita Food Industries"],["Buffalo Burger",2008,"بافلو برجر"],["Zooba",2012,"زووبا"]],
   {h:"company",k:["FOUNDED","اتأسس سنة"],dt:["Brand founded", "تأسيس البراند"],g:"y",s:"brands",m:"eg"}),
