@@ -97,8 +97,12 @@ def main():
     for name, uri in small.items():
         path = f"{OUT}/{hk(name)}.webp"
         if os.path.exists(path) and not os.environ.get("FETCH_ALL"):
-            kept += 1
-            continue
+            # keep it unless the built-in photo has since changed to a different picture
+            small_im = Image.open(io.BytesIO(base64.b64decode(uri.split(",", 1)[1])))
+            if diff(Image.open(path), small_im) <= 18:
+                kept += 1
+                continue
+            os.remove(path)
         x, src = items.get(name), report.get(name, "")
         if not x or not src or src == "previous run":
             skipped.append((name, "no source"))
