@@ -1,0 +1,26 @@
+name: Find posters
+on:
+  workflow_dispatch:
+  push:
+    paths: [tools/find_posters.py, tools/poster-targets.json]
+permissions:
+  contents: write
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install requests pillow
+      - run: python -u tools/find_posters.py
+        env: {PYTHONDONTWRITEBYTECODE: "1"}
+        timeout-minutes: 55
+      - name: Commit poster candidates
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add tools/poster-candidates.json
+          git diff --cached --quiet || git commit -m "Update poster candidates"
+          git checkout -- . && git pull --rebase && git push

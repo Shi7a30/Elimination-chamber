@@ -1,0 +1,930 @@
+[
+{
+"name": "Masar Egbari",
+"kind": "work",
+"title": "Masar Egbari",
+"ar": "مسار إجباري",
+"hint": "Egyptian TV series",
+"fix": true
+},
+{
+"name": "Lam Shamseya",
+"kind": "work",
+"title": "Lam Shamseya",
+"ar": "لام شمسية",
+"hint": "Egyptian TV series",
+"fix": true
+},
+{
+"name": "Halim",
+"kind": "work",
+"title": "Halim (film)",
+"ar": "حليم",
+"hint": "Egyptian film",
+"fix": true
+},
+{
+"name": "Ard El Khof",
+"kind": "work",
+"title": "Land of Fear",
+"ar": "أرض الخوف",
+"hint": "Egyptian film",
+"fix": true
+},
+{
+"name": "Edhak El Sora Tetla' Helwa",
+"kind": "work",
+"title": "Edhak El Sora Tetla' Helwa",
+"ar": "اضحك الصورة تطلع حلوة",
+"hint": "Egyptian film",
+"fix": true
+},
+{
+"name": "Rodda Qalbi",
+"kind": "work",
+"title": "Rodda Qalbi",
+"ar": "رد قلبي",
+"hint": "Egyptian film",
+"fix": true
+},
+{
+"name": "El Kenz",
+"kind": "work",
+"title": "The Treasure (2017 film)",
+"ar": "الكنز",
+"hint": "Egyptian film",
+"fix": true
+},
+{
+"name": "Lan Aish fi Gilbab Abi",
+"kind": "work",
+"title": "Lan Aish fi Gilbab Abi (TV series)",
+"ar": "لن أعيش في جلباب أبي",
+"hint": "Egyptian TV series",
+"fix": true
+},
+{
+"name": "Gaafar El Omda",
+"kind": "work",
+"title": "Gaafar El Omda",
+"ar": "جعفر العمدة",
+"hint": "Egyptian TV series",
+"fix": true
+},
+{
+"name": "Bawabet El Halawany",
+"kind": "work",
+"title": "Bawabet El Halawany",
+"ar": "بوابة الحلواني",
+"hint": "Egyptian TV series",
+"fix": true
+},
+{
+"name": "El Mal wal Banoun",
+"kind": "work",
+"title": "El Mal wal Banoun",
+"ar": "المال والبنون",
+"hint": "Egyptian TV series",
+"fix": true
+},
+{
+"name": "Zizinia",
+"kind": "work",
+"title": "Zizinia",
+"ar": "زيزينيا",
+"hint": "Egyptian TV series",
+"fix": true
+},
+{
+"name": "Bodyguard",
+"kind": "work",
+"title": "Adel Emam",
+"ar": "بودي جارد",
+"hint": "Egyptian comedy play",
+"fix": true
+},
+{
+"name": "El Daw' El Shared",
+"kind": "work",
+"title": "El Daw' El Shared",
+"ar": "الضوء الشارد",
+"hint": "Egyptian TV series",
+"fix": true
+},
+{
+"name": "Ailet El Hajj Metwalli",
+"kind": "work",
+"title": "Ailet El Hajj Metwalli",
+"ar": "عائلة الحاج متولي",
+"hint": "Egyptian TV series",
+"fix": true
+},
+{
+"name": "Hassan wa Morcos",
+"kind": "work",
+"title": "Hassan and Morcos",
+"ar": "حسن ومرقص",
+"hint": "Egyptian film",
+"fix": true
+},
+{
+"name": "El Ostoura",
+"kind": "work",
+"title": "El Ostoura",
+"ar": "الأسطورة",
+"hint": "Egyptian TV series",
+"fix": true
+},
+{
+"name": "The Nightingale's Prayer",
+"kind": "work",
+"title": "The Nightingale's Prayer",
+"ar": "دعاء الكروان",
+"hint": "Egyptian film",
+"fix": true
+},
+{
+"name": "Tito",
+"kind": "work",
+"title": "Tito (2004 film)",
+"ar": "تيتو",
+"hint": "Egyptian film",
+"fix": true
+},
+{
+"name": "Arabesque",
+"kind": "work",
+"title": "Arabesque",
+"ar": "أرابيسك",
+"hint": "Egyptian TV series",
+"fix": true
+},
+{
+"name": "Hadeeth El Sabah wel Masaa",
+"kind": "work",
+"title": "Hadeeth El Sabah wel Masaa",
+"ar": "حديث الصباح والمساء",
+"hint": "Egyptian TV series",
+"fix": true
+},
+{
+"name": "Ahmed Shobeir",
+"kind": "person",
+"title": "Ahmed Shobair",
+"ar": "أحمد شوبير",
+"hint": "Egyptian footballer",
+"fix": false
+},
+{
+"name": "Egyptian Army Stadium (Suez)",
+"kind": "other",
+"title": "Egyptian Army Stadium",
+"ar": "استاد الجيش بالسويس",
+"hint": "stadium",
+"fix": false
+},
+{
+"name": "Shawky Gharib",
+"kind": "person",
+"title": "Shawky Gharieb",
+"ar": "شوقي غريب",
+"hint": "Egyptian football manager",
+"fix": false
+},
+{
+"name": "Hossam El-Badry",
+"kind": "person",
+"title": "Hossam El Badry",
+"ar": "حسام البدري",
+"hint": "Egyptian football manager",
+"fix": false
+},
+{
+"name": "Hosny Abd Rabo",
+"kind": "person",
+"title": "Hosny Abd Rabo",
+"ar": "حسني عبد ربه",
+"hint": "Egyptian footballer",
+"fix": false
+},
+{
+"name": "Ibrahim Hassan",
+"kind": "person",
+"title": "Ibrahim Hassan",
+"ar": "إبراهيم حسن",
+"hint": "footballer",
+"fix": false
+},
+{
+"name": "Ramadan Sobhi",
+"kind": "person",
+"title": "Ramadan Sobhi",
+"ar": "رمضان صبحي",
+"hint": "footballer",
+"fix": false
+},
+{
+"name": "Moamen Zakaria",
+"kind": "person",
+"title": "Moamen Zakaria",
+"ar": "مؤمن زكريا",
+"hint": "Egyptian footballer",
+"fix": false
+},
+{
+"name": "Mike Smith",
+"kind": "person",
+"title": "Mike Smith (football manager)",
+"ar": "مايك سميث",
+"hint": "football manager",
+"fix": false
+},
+{
+"name": "Ismailia Rayeh Gai",
+"kind": "work",
+"title": "Round Trip to Ismailia",
+"ar": "إسماعيلية رايح جاي",
+"hint": "Egyptian film",
+"fix": false
+},
+{
+"name": "Mohamed Saad",
+"kind": "person",
+"title": "Mohamed Saad (actor)",
+"ar": "محمد سعد",
+"hint": "Egyptian actor",
+"fix": false
+},
+{
+"name": "Sherif Arafa",
+"kind": "person",
+"title": "Sherif Arafa",
+"ar": "شريف عرفة",
+"hint": "Egyptian film director",
+"fix": false
+},
+{
+"name": "Marwan Hamed",
+"kind": "person",
+"title": "Marwan Hamed",
+"ar": "مروان حامد",
+"hint": "Egyptian film director",
+"fix": false
+},
+{
+"name": "Mohamed Fouad",
+"kind": "person",
+"title": "Mohamed Fouad",
+"ar": "محمد فؤاد",
+"hint": "Egyptian singer",
+"fix": false
+},
+{
+"name": "El Halfout",
+"kind": "work",
+"title": "El Halfout",
+"ar": "الحلفوت",
+"hint": "Egyptian film",
+"fix": false
+},
+{
+"name": "El Mansy",
+"kind": "work",
+"title": "El Mansy",
+"ar": "المنسي",
+"hint": "Egyptian film",
+"fix": false
+},
+{
+"name": "Belya wa Demagho El Alya",
+"kind": "work",
+"title": "Belya wa Demagho El Alya",
+"ar": "بليه ودماغه العالية",
+"hint": "Egyptian film",
+"fix": false
+},
+{
+"name": "El Azima",
+"kind": "work",
+"title": "Determination (1939 film)",
+"ar": "العزيمة",
+"hint": "Egyptian film",
+"fix": false
+},
+{
+"name": "Lak Yawm Ya Zalim",
+"kind": "work",
+"title": "Lak Yawm Ya Zalim",
+"ar": "لك يوم يا ظالم",
+"hint": "Egyptian film",
+"fix": false
+},
+{
+"name": "Imbaratoriyet Meem",
+"kind": "work",
+"title": "Imbaratoriyet Meem",
+"ar": "إمبراطورية ميم",
+"hint": "Egyptian film",
+"fix": false
+},
+{
+"name": "El Ard",
+"kind": "work",
+"title": "The Land (1969 film)",
+"ar": "الأرض",
+"hint": "Egyptian film",
+"fix": false
+},
+{
+"name": "El Harb El Alamiya El Talta",
+"kind": "work",
+"title": "The Third World War (2014 film)",
+"ar": "الحرب العالمية الثالثة",
+"hint": "Egyptian film",
+"fix": false
+},
+{
+"name": "Hepta",
+"kind": "work",
+"title": "Hepta: The Last Lecture",
+"ar": "هيبتا",
+"hint": "Egyptian film",
+"fix": false
+},
+{
+"name": "Welad Rizk 3",
+"kind": "work",
+"title": "Sons of Rizk 3",
+"ar": "ولاد رزق 3",
+"hint": "Egyptian film",
+"fix": false
+},
+{
+"name": "Kaboria",
+"kind": "work",
+"title": "Kaboria",
+"ar": "كابوريا",
+"hint": "Egyptian film",
+"fix": false
+},
+{
+"name": "Bakkar",
+"kind": "work",
+"title": "Bakkar",
+"ar": "بكار",
+"hint": "Egyptian TV series",
+"fix": false
+},
+{
+"name": "Sabe' Gar",
+"kind": "work",
+"title": "Sabe' Gar",
+"ar": "سابع جار",
+"hint": "Egyptian TV series",
+"fix": false
+},
+{
+"name": "Gümüş (Noor)",
+"kind": "work",
+"title": "Gümüş (TV series)",
+"ar": "نور",
+"hint": "Turkish TV series",
+"fix": false
+},
+{
+"name": "Abna'i Al-Aaza'a Shokran",
+"kind": "work",
+"title": "Abna'i Al-Aaza'a Shokran",
+"ar": "أبنائي الأعزاء شكراً",
+"hint": "Egyptian TV series",
+"fix": false
+},
+{
+"name": "Yetraboh Fi Ezzo",
+"kind": "work",
+"title": "Yetraboh Fi Ezzo",
+"ar": "يتربى في عزو",
+"hint": "Egyptian TV series",
+"fix": false
+},
+{
+"name": "Fatin Amal Harby",
+"kind": "work",
+"title": "Fatin Amal Harby",
+"ar": "فاتن أمل حربي",
+"hint": "Egyptian TV series",
+"fix": false
+},
+{
+"name": "Kamel El Adad",
+"kind": "work",
+"title": "Kamel El Adad",
+"ar": "كامل العدد",
+"hint": "Egyptian TV series",
+"fix": false
+},
+{
+"name": "Haqq Arab",
+"kind": "work",
+"title": "Haqq Arab",
+"ar": "حق عرب",
+"hint": "Egyptian TV series",
+"fix": false
+},
+{
+"name": "Marwan Pablo",
+"kind": "person",
+"title": "Marwan Pablo",
+"ar": "مروان بابلو",
+"hint": "Egyptian singer",
+"fix": false
+},
+{
+"name": "Ezzay",
+"kind": "song",
+"title": "Ezzay",
+"ar": "إزاي",
+"hint": "Egyptian song",
+"fix": false
+},
+{
+"name": "Gloryland",
+"kind": "song",
+"title": "Gloryland",
+"ar": "جلوري لاند",
+"hint": "song",
+"fix": false
+},
+{
+"name": "When You Wish Upon a Star",
+"kind": "song",
+"title": "When You Wish Upon a Star",
+"ar": "ويين يو ويش أبون أ ستار",
+"hint": "song",
+"fix": false
+},
+{
+"name": "Bibbidi-Bobbidi-Boo",
+"kind": "song",
+"title": "Bibbidi-Bobbidi-Boo",
+"ar": "بيبيدي بوبيدي بو",
+"hint": "song",
+"fix": false
+},
+{
+"name": "A Whole New World",
+"kind": "song",
+"title": "A Whole New World",
+"ar": "عالم جديد",
+"hint": "song",
+"fix": false
+},
+{
+"name": "Colors of the Wind",
+"kind": "song",
+"title": "Colors of the Wind",
+"ar": "ألوان الريح",
+"hint": "song",
+"fix": false
+},
+{
+"name": "How Far I'll Go",
+"kind": "song",
+"title": "How Far I'll Go",
+"ar": "هاو فار آيل جو",
+"hint": "song",
+"fix": false
+},
+{
+"name": "Remember Me",
+"kind": "song",
+"title": "Remember Me (Coco song)",
+"ar": "ريممبر مي",
+"hint": "song",
+"fix": false
+},
+{
+"name": "Li Beirut",
+"kind": "song",
+"title": "Li Beirut",
+"ar": "لبيروت",
+"hint": "song",
+"fix": false
+},
+{
+"name": "Akhasmak Ah",
+"kind": "song",
+"title": "Akhasmak Ah",
+"ar": "أخاصمك آه",
+"hint": "song",
+"fix": false
+},
+{
+"name": "Ali El Keffiyeh",
+"kind": "song",
+"title": "Ali El Keffiyeh",
+"ar": "علّي الكوفية",
+"hint": "song",
+"fix": false
+},
+{
+"name": "All Too Well (10 Minute Version)",
+"kind": "song",
+"title": "All Too Well",
+"ar": "أول تو ويل (10 دقايق)",
+"hint": "song",
+"fix": false
+},
+{
+"name": "Ana Fi Entezarak",
+"kind": "song",
+"title": "Ana Fi Entezarak",
+"ar": "أنا في انتظارك",
+"hint": "Egyptian song",
+"fix": false
+},
+{
+"name": "Ghanili Shwaya",
+"kind": "song",
+"title": "Ghanili Shwaya",
+"ar": "غنيلي شوية",
+"hint": "Egyptian song",
+"fix": false
+},
+{
+"name": "Amal Hayati",
+"kind": "song",
+"title": "Amal Hayati",
+"ar": "أمل حياتي",
+"hint": "Egyptian song",
+"fix": false
+},
+{
+"name": "Yehia w Kenooz",
+"kind": "work",
+"title": "Yehia w Kenooz",
+"ar": "يحيى وكنوز",
+"hint": "Egyptian cartoon",
+"fix": false
+},
+{
+"name": "Lamees El-Hadidi",
+"kind": "person",
+"title": "Lamis Elhadidy",
+"ar": "لميس الحديدي",
+"hint": "Egyptian TV presenter",
+"fix": false
+},
+{
+"name": "Tamer Amin",
+"kind": "person",
+"title": "Tamer Amin",
+"ar": "تامر أمين",
+"hint": "Egyptian TV presenter",
+"fix": false
+},
+{
+"name": "Princess Charlotte",
+"kind": "person",
+"title": "Princess Charlotte of Wales",
+"ar": "الأميرة شارلوت",
+"hint": "British royal family",
+"fix": false
+},
+{
+"name": "Feryal Abdelaziz",
+"kind": "person",
+"title": "Feryal Abdelaziz",
+"ar": "فريال أشرف",
+"hint": "Egyptian athlete",
+"fix": false
+},
+{
+"name": "Rania Elwani",
+"kind": "person",
+"title": "Rania Elwani",
+"ar": "رانيا علواني",
+"hint": "Egyptian athlete",
+"fix": false
+},
+{
+"name": "Felfela",
+"kind": "other",
+"title": "Felfela",
+"ar": "فلفلة",
+"hint": "company",
+"fix": false
+},
+{
+"name": "Buffalo Burger",
+"kind": "other",
+"title": "Buffalo Burger",
+"ar": "بافلو برجر",
+"hint": "company",
+"fix": false
+},
+{
+"name": "Misr Spinning and Weaving",
+"kind": "other",
+"title": "Misr Spinning and Weaving Company",
+"ar": "غزل المحلة (مصر للغزل والنسيج)",
+"hint": "company",
+"fix": false
+},
+{
+"name": "SODIC",
+"kind": "other",
+"title": "SODIC",
+"ar": "سوديك",
+"hint": "company",
+"fix": false
+},
+{
+"name": "Palm Hills",
+"kind": "other",
+"title": "Palm Hills Developments",
+"ar": "بالم هيلز",
+"hint": "company",
+"fix": false
+},
+{
+"name": "Al-Wafd",
+"kind": "other",
+"title": "Al-Wafd (newspaper)",
+"ar": "الوفد",
+"hint": "newspaper",
+"fix": false
+},
+{
+"name": "El-Watan",
+"kind": "other",
+"title": "El Watan (Egypt)",
+"ar": "الوطن",
+"hint": "newspaper",
+"fix": false
+},
+{
+"name": "Tiba-1",
+"kind": "other",
+"title": "Tiba-1",
+"ar": "طيبة 1",
+"hint": "satellite",
+"fix": false
+},
+{
+"name": "Nilesat 301",
+"kind": "other",
+"title": "Nilesat 301",
+"ar": "نايل سات 301",
+"hint": "satellite",
+"fix": false
+},
+{
+"name": "Shahid",
+"kind": "app",
+"title": "Shahid (streaming service)",
+"ar": "شاهد",
+"hint": "app",
+"fix": false
+},
+{
+"name": "Watch It",
+"kind": "app",
+"title": "Watch It (streaming service)",
+"ar": "ووتش إت",
+"hint": "app",
+"fix": false
+},
+{
+"name": "Corona",
+"kind": "other",
+"title": "Corona",
+"ar": "كورونا",
+"hint": "Egyptian food brand",
+"fix": false
+},
+{
+"name": "Regina",
+"kind": "other",
+"title": "Regina",
+"ar": "ريجينا",
+"hint": "Egyptian food brand",
+"fix": false
+},
+{
+"name": "Dina Farms",
+"kind": "other",
+"title": "Dina Farms",
+"ar": "دينا فارمز",
+"hint": "Egyptian drink or dairy brand",
+"fix": false
+},
+{
+"name": "Beyti",
+"kind": "other",
+"title": "Beyti",
+"ar": "بيتي",
+"hint": "Egyptian drink or dairy brand",
+"fix": false
+},
+{
+"name": "Metro Market",
+"kind": "other",
+"title": "Metro Market",
+"ar": "مترو ماركت",
+"hint": "supermarket chain in Egypt",
+"fix": false
+},
+{
+"name": "Gourmet",
+"kind": "other",
+"title": "Gourmet",
+"ar": "جورميه",
+"hint": "supermarket chain in Egypt",
+"fix": false
+},
+{
+"name": "Simonds",
+"kind": "other",
+"title": "Simonds",
+"ar": "سيموندس",
+"hint": "café in Egypt",
+"fix": false
+},
+{
+"name": "El Horreya Café",
+"kind": "other",
+"title": "El Horreya Café",
+"ar": "قهوة الحرية",
+"hint": "café in Egypt",
+"fix": false
+},
+{
+"name": "El Malky",
+"kind": "other",
+"title": "El Malky",
+"ar": "المالكي",
+"hint": "Egyptian patisserie",
+"fix": false
+},
+{
+"name": "El Abd",
+"kind": "other",
+"title": "El Abd",
+"ar": "العبد",
+"hint": "Egyptian patisserie",
+"fix": false
+},
+{
+"name": "Sedra",
+"kind": "other",
+"title": "Sedra",
+"ar": "سيدرا",
+"hint": "Egyptian patisserie",
+"fix": false
+},
+{
+"name": "Abou Shakra",
+"kind": "other",
+"title": "Abou Shakra",
+"ar": "أبو شقرة",
+"hint": "Egyptian restaurant",
+"fix": false
+},
+{
+"name": "Abou El Sid",
+"kind": "other",
+"title": "Abou El Sid",
+"ar": "أبو السيد",
+"hint": "Egyptian restaurant",
+"fix": false
+},
+{
+"name": "Kiri",
+"kind": "other",
+"title": "Kiri (cheese)",
+"ar": "كيري",
+"hint": "cheese brand",
+"fix": false
+},
+{
+"name": "Cornetto",
+"kind": "other",
+"title": "Cornetto",
+"ar": "كورنيتو",
+"hint": "ice cream brand",
+"fix": false
+},
+{
+"name": "Sherihan",
+"kind": "person",
+"title": "Sherihan",
+"ar": "شريهان",
+"hint": "Egyptian Ramadan fawazeer TV",
+"fix": false
+},
+{
+"name": "Gihan Nasr",
+"kind": "person",
+"title": "Gihan Nasr",
+"ar": "جيهان نصر",
+"hint": "Egyptian Ramadan fawazeer TV",
+"fix": false
+},
+{
+"name": "Alexandria Radio",
+"kind": "other",
+"title": "Alexandria Radio",
+"ar": "إذاعة الإسكندرية",
+"hint": "Egyptian radio station",
+"fix": false
+},
+{
+"name": "Middle East Radio",
+"kind": "other",
+"title": "Middle East Radio",
+"ar": "إذاعة الشرق الأوسط",
+"hint": "Egyptian radio station",
+"fix": false
+},
+{
+"name": "Sayedati El Gameela",
+"kind": "work",
+"title": "Sayedati El Gameela",
+"ar": "سيدتي الجميلة",
+"hint": "Egyptian comedy play",
+"fix": false
+},
+{
+"name": "Abla Fadila",
+"kind": "person",
+"title": "Abla Fadila",
+"ar": "أبلة فضيلة",
+"hint": "Egyptian actor or TV presenter",
+"fix": false
+},
+{
+"name": "Alaa El-Din",
+"kind": "other",
+"title": "Alaa El-Din",
+"ar": "علاء الدين",
+"hint": "Egyptian magazine",
+"fix": false
+},
+{
+"name": "Digimon",
+"kind": "work",
+"title": "Digimon Adventure",
+"ar": "ديجيمون",
+"hint": "anime",
+"fix": false
+},
+{
+"name": "Majid Kids",
+"kind": "other",
+"title": "Majid (TV channel)",
+"ar": "قناة ماجد",
+"hint": "TV channel",
+"fix": false
+},
+{
+"name": "Onix",
+"kind": "other",
+"title": "Onix",
+"ar": "أونيكس",
+"hint": "Pokémon",
+"fix": false
+},
+{
+"name": "Nile Hilton",
+"kind": "other",
+"title": "Nile Ritz-Carlton",
+"ar": "النيل هيلتون",
+"hint": "hotel in Egypt",
+"fix": false
+},
+{
+"name": "Four Seasons Nile Plaza",
+"kind": "other",
+"title": "Four Seasons Hotel Cairo at Nile Plaza",
+"ar": "فور سيزونز النيل",
+"hint": "hotel in Egypt",
+"fix": false
+},
+{
+"name": "St. Regis Cairo",
+"kind": "other",
+"title": "St. Regis Cairo",
+"ar": "سانت ريجيس القاهرة",
+"hint": "hotel in Egypt",
+"fix": false
+},
+{
+"name": "Ma Wara'a El Tabi'a",
+"kind": "work",
+"title": "Ma Wara'a al-Tabi'a",
+"ar": "ما وراء الطبيعة",
+"hint": "book series",
+"fix": false
+}
+]
