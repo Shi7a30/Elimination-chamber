@@ -94,5 +94,25 @@ CATS.push(
   ["Winter Sonata",2002,"سوناتا الشتاء"],["Dae Jang Geum",2003,"جوهرة القصر","Dae Jang Geum"],["Boys Over Flowers",2009,"أولاد فوق الزهور","Boys Over Flowers (TV series)"],
   ["Descendants of the Sun",2016,"أحفاد الشمس"],["Goblin",2016,"جوبلن","Guardian: The Lonely and Great God"],["Crash Landing on You",2019,"هبوط اضطراري للحب"],
   ["Itaewon Class",2020,"إيتايوان كلاس"],["The Glory",2022,"ذا جلوري","The Glory (TV series)"],["Queen of Tears",2024,"ملكة الدموع"]],
-  {h:"South Korean TV series",k:["FIRST AIRED","أول عرض"],dt:["Series first aired","أول عرض للمسلسل"],g:"y",s:"tv",m:"w"})]}
+  {h:"South Korean TV series",k:["FIRST AIRED","أول عرض"],dt:["Series first aired","أول عرض للمسلسل"],g:"y",s:"tv",m:"w"}),
+Rd(["WHICH RAMEZ GALAL PRANK SHOW","CAME OUT FIRST",Q],["أنهي برنامج مقالب لرامز جلال","نزل الأول",QA],"min",[
+  ["2alb el asad",2011,"قلب الأسد"],["Ta3lab el sa7ra",2012,"ثعلب الصحرا"],["Ankh amon",2013,"عنخ آمون"],
+  ["Wakel el gaw",2015,"واكل الجو"],["Ta7t el ard",2017,"تحت الأرض"],["Ta7t el sefr",2018,"تحت الصفر"],
+  ["Magnoon rasmy",2020,"مجنون رسمي"],["Movie star",2022,"موفي ستار"],["Gab men el akher",2024,"جاب من الآخر"]],
+  {h:"Ramez Galal show",k:["AIRED","اتعرض سنة"],s:"tv",m:"eg"}),
+ Rd(["WHICH ADEL IMAM SERIES","CAME OUT LAST",Q],["أنهي مسلسل لعادل إمام","أجدد",QA],"max",[
+  ["A7lam el fata el tayer",1978,"أحلام الفتى الطائر"],["Fer2et nagy 3atallah",2012,"فرقة ناجي عطا الله"],["El 3arraf",2013,"العراف"],
+  ["Sa7eb el sa3ada",2014,"صاحب السعادة"],["Ostaz w ra2ees 2esm",2015,"أستاذ ورئيس قسم"],["Ma2moun w shorakah",2016,"مأمون وشركاه"],
+  ["3afareet 3adly 3allam",2017,"عفاريت عدلي علام"],["3awalem khafeya",2018,"عوالم خفية"],["Valentino",2020,"فالنتينو","Valentino (Egyptian TV series)"]],
+  {h:"Adel Emam TV series",k:["FIRST AIRED","أول عرض"],s:"tv",m:"eg"}),
+ Rd(["WHICH YEHIA EL FAKHARANY SERIES","CAME OUT LAST",Q],["أنهي مسلسل ليحيى الفخراني","أجدد",QA],"max",[
+  ["Layaly el 7elmeya",1987,"ليالي الحلمية","Al Helmeya Nights"],["Zizinia",1997,"زيزينيا","Zizinia"],["Opera 3ayda",2000,"أوبرا عايدة"],
+  ["El layl w akhro",2003,"الليل وآخره"],["Yetrabba fi 3ezzo",2007,"يتربى في عزو","Yetraboh Fi Ezzo"],["Shaykh el 3arab hammam",2010,"شيخ العرب همام"],
+  ["Dahsha",2014,"دهشة"],["Wanoos",2016,"ونوس"],["Nagib zahy zarkash",2021,"نجيب زاهي زركش"]],
+  {h:"Yehia El-Fakharany TV series",k:["FIRST AIRED","أول عرض"],s:"tv",m:"eg"}),
+ Rd(["WHO IS THE","OLDEST SERIES ACTRESS",Q],["مين","أكبر ممثلة مسلسلات في السن",QA],"min",[
+  ["Sanaa Gamil",1930,"سناء جميل"],["Karima Mokhtar",1934,"كريمة مختار"],["Isaad Younis",1950,"إسعاد يونس"],
+  ["Laila Elwi",1962,"ليلى علوي"],["Abla Kamel",1963,"عبلة كامل"],["Ghada Adel",1974,"غادة عادل"],
+  ["Mona Zaki",1977,"منى زكي"],["Yasmin Abdulaziz",1980,"ياسمين عبد العزيز"],["Menna Shalaby",1982,"منة شلبي","Menna Shalabi"]],
+  {h:"Egyptian actress",k:BORN,g:"p",s:"tv",m:"eg"})]}
 );

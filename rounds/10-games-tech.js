@@ -191,5 +191,10 @@ CATS.push(
   ["YouTube",2005,"يوتيوب"],["Spotify",2008,"سبوتيفاي"],["Shahid",2011,"شاهد","Shahid (streaming service)"],
   ["Twitch",2011,"تويتش","Twitch (service)"],["Anghami",2012,"أنغامي"],["Disney+",2019,"ديزني بلس"],
   ["Apple TV+",2019,"أبل تي في بلس"],["Watch It",2019,"ووتش إت","Watch It (streaming service)"],["HBO Max",2020,"إتش بي أو ماكس"]],
-  {h:"app",k:["LAUNCHED","نزل سنة"],dt:["App launched","نزول الأبلكيشن"],g:"y",s:"brands",m:"eg"})]}
+  {h:"app",k:["LAUNCHED","نزل سنة"],dt:["App launched","نزول الأبلكيشن"],g:"y",s:"brands",m:"eg"}),
+Rd(["WHICH BANK","WAS FOUNDED FIRST",Q],["أنهي بنك","اتأسس الأول",QA],"min",[
+  ["Banque Misr",1920,"بنك مصر"],["Agricultural Bank of Egypt",1930,"البنك الزراعي المصري"],["Banque du Caire",1952,"بنك القاهرة"],
+  ["Bank of Alexandria",1957,"بنك الإسكندرية","Alexbank"],["Arab African International Bank",1964,"البنك العربي الأفريقي"],["CIB",1975,"البنك التجاري الدولي","Commercial International Bank"],
+  ["Suez Canal Bank",1978,"بنك قناة السويس"],["Housing and Development Bank",1979,"بنك التعمير والإسكان"],["HSBC Egypt",1982,"إتش إس بي سي مصر","HSBC Bank Egypt"]],
+  {h:"Egyptian bank",k:["FOUNDED","اتأسس سنة"],dt:["Bank founded","تأسيس البنك"],g:"y",s:"brands",m:"eg"})]}
 );

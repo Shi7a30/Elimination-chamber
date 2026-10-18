@@ -23256,5 +23256,1103 @@
   "ar_hint": "",
   "logo": false,
   "skip": false
+ },
+ {
+  "name": "Aswan SC",
+  "title": "Aswan SC",
+  "hint": "Egyptian football club",
+  "ar": "أسوان",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Baladiyat El Mahalla",
+  "title": "Baladiyat El Mahalla SC",
+  "hint": "Egyptian football club",
+  "ar": "بلدية المحلة",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "El Mansoura",
+  "title": "El Mansoura SC",
+  "hint": "Egyptian football club",
+  "ar": "المنصورة",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Petrojet",
+  "title": "Petrojet SC",
+  "hint": "Egyptian football club",
+  "ar": "بتروجت",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Misr Lel Makkasa",
+  "title": "Misr Lel Makkasa SC",
+  "hint": "Egyptian football club",
+  "ar": "مصر المقاصة",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Wadi Degla SC",
+  "title": "Wadi Degla SC",
+  "hint": "Egyptian football club",
+  "ar": "وادي دجلة",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "El Gouna",
+  "title": "El Gouna FC",
+  "hint": "Egyptian football club",
+  "ar": "الجونة",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "El Entag El Harby",
+  "title": "El Entag El Harby SC",
+  "hint": "Egyptian football club",
+  "ar": "الإنتاج الحربي",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ceramica Cleopatra",
+  "title": "Ceramica Cleopatra FC",
+  "hint": "Egyptian football club",
+  "ar": "سيراميكا كليوباترا",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Pharco",
+  "title": "Pharco FC",
+  "hint": "Egyptian football club",
+  "ar": "فاركو",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Modern Sport",
+  "title": "Modern Sport FC",
+  "hint": "Egyptian football club",
+  "ar": "مودرن سبورت",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mokhtar El Tetsh Stadium",
+  "title": "Mokhtar El Tetsh Stadium",
+  "hint": "stadium",
+  "ar": "استاد مختار التتش (الأهلي)",
+  "ar_hint": "استاد",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Alexandria Stadium",
+  "title": "Alexandria Stadium",
+  "hint": "stadium",
+  "ar": "استاد إسكندرية",
+  "ar_hint": "استاد",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "2alb el asad",
+  "title": "2alb el asad",
+  "hint": "Ramez Galal show",
+  "ar": "قلب الأسد",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Ta3lab el sa7ra",
+  "title": "Ta3lab el sa7ra",
+  "hint": "Ramez Galal show",
+  "ar": "ثعلب الصحرا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Ankh amon",
+  "title": "Ankh amon",
+  "hint": "Ramez Galal show",
+  "ar": "عنخ آمون",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Wakel el gaw",
+  "title": "Wakel el gaw",
+  "hint": "Ramez Galal show",
+  "ar": "واكل الجو",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Ta7t el ard",
+  "title": "Ta7t el ard",
+  "hint": "Ramez Galal show",
+  "ar": "تحت الأرض",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Ta7t el sefr",
+  "title": "Ta7t el sefr",
+  "hint": "Ramez Galal show",
+  "ar": "تحت الصفر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Magnoon rasmy",
+  "title": "Magnoon rasmy",
+  "hint": "Ramez Galal show",
+  "ar": "مجنون رسمي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Movie star",
+  "title": "Movie star",
+  "hint": "Ramez Galal show",
+  "ar": "موفي ستار",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Gab men el akher",
+  "title": "Gab men el akher",
+  "hint": "Ramez Galal show",
+  "ar": "جاب من الآخر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "A7lam el fata el tayer",
+  "title": "A7lam el fata el tayer",
+  "hint": "Adel Emam TV series",
+  "ar": "أحلام الفتى الطائر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Fer2et nagy 3atallah",
+  "title": "Fer2et nagy 3atallah",
+  "hint": "Adel Emam TV series",
+  "ar": "فرقة ناجي عطا الله",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "El 3arraf",
+  "title": "El 3arraf",
+  "hint": "Adel Emam TV series",
+  "ar": "العراف",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Sa7eb el sa3ada",
+  "title": "Sa7eb el sa3ada",
+  "hint": "Adel Emam TV series",
+  "ar": "صاحب السعادة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Ostaz w ra2ees 2esm",
+  "title": "Ostaz w ra2ees 2esm",
+  "hint": "Adel Emam TV series",
+  "ar": "أستاذ ورئيس قسم",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Ma2moun w shorakah",
+  "title": "Ma2moun w shorakah",
+  "hint": "Adel Emam TV series",
+  "ar": "مأمون وشركاه",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "3afareet 3adly 3allam",
+  "title": "3afareet 3adly 3allam",
+  "hint": "Adel Emam TV series",
+  "ar": "عفاريت عدلي علام",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "3awalem khafeya",
+  "title": "3awalem khafeya",
+  "hint": "Adel Emam TV series",
+  "ar": "عوالم خفية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Valentino",
+  "title": "Valentino (Egyptian TV series)",
+  "hint": "Adel Emam TV series",
+  "ar": "فالنتينو",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Opera 3ayda",
+  "title": "Opera 3ayda",
+  "hint": "Yehia El-Fakharany TV series",
+  "ar": "أوبرا عايدة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "El layl w akhro",
+  "title": "El layl w akhro",
+  "hint": "Yehia El-Fakharany TV series",
+  "ar": "الليل وآخره",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Shaykh el 3arab hammam",
+  "title": "Shaykh el 3arab hammam",
+  "hint": "Yehia El-Fakharany TV series",
+  "ar": "شيخ العرب همام",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Dahsha",
+  "title": "Dahsha",
+  "hint": "Yehia El-Fakharany TV series",
+  "ar": "دهشة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Wanoos",
+  "title": "Wanoos",
+  "hint": "Yehia El-Fakharany TV series",
+  "ar": "ونوس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Nagib zahy zarkash",
+  "title": "Nagib zahy zarkash",
+  "hint": "Yehia El-Fakharany TV series",
+  "ar": "نجيب زاهي زركش",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Sanaa Gamil",
+  "title": "Sanaa Gamil",
+  "hint": "Egyptian actress",
+  "ar": "سناء جميل",
+  "ar_hint": "ممثلة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Karima Mokhtar",
+  "title": "Karima Mokhtar",
+  "hint": "Egyptian actress",
+  "ar": "كريمة مختار",
+  "ar_hint": "ممثلة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Isaad Younis",
+  "title": "Isaad Younis",
+  "hint": "Egyptian actress",
+  "ar": "إسعاد يونس",
+  "ar_hint": "ممثلة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Abla Kamel",
+  "title": "Abla Kamel",
+  "hint": "Egyptian actress",
+  "ar": "عبلة كامل",
+  "ar_hint": "ممثلة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ghada Adel",
+  "title": "Ghada Adel",
+  "hint": "Egyptian actress",
+  "ar": "غادة عادل",
+  "ar_hint": "ممثلة",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Simone",
+  "title": "Simone Philip Kamel",
+  "hint": "Egyptian singer",
+  "ar": "سيمون",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Amal Maher",
+  "title": "Amal Maher",
+  "hint": "Egyptian singer",
+  "ar": "آمال ماهر",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Nesma Mahgoub",
+  "title": "Nesma Mahgoub",
+  "hint": "Egyptian singer",
+  "ar": "نسمة محجوب",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Carmen Soliman",
+  "title": "Carmen Suleiman",
+  "hint": "Egyptian singer",
+  "ar": "كارمن سليمان",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Shaaban Abdel Rahim",
+  "title": "Shaaban Abdel Rahim",
+  "hint": "Egyptian singer",
+  "ar": "شعبان عبد الرحيم",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Hassan El Asmar",
+  "title": "Hassan El Asmar",
+  "hint": "Egyptian singer",
+  "ar": "حسن الأسمر",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ahmed Sheba",
+  "title": "Ahmed Sheba",
+  "hint": "Egyptian singer",
+  "ar": "أحمد شيبة",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Omar Kamal",
+  "title": "Omar Kamal",
+  "hint": "Egyptian singer",
+  "ar": "عمر كمال",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ramy Sabry",
+  "title": "Ramy Sabry (singer)",
+  "hint": "Egyptian singer",
+  "ar": "رامي صبري",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Hamza Namira",
+  "title": "Hamza Namira",
+  "hint": "Egyptian singer",
+  "ar": "حمزة نمرة",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Hamada Helal",
+  "title": "Hamada Helal",
+  "hint": "Egyptian singer",
+  "ar": "حمادة هلال",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Amir Eid",
+  "title": "Amir Eid",
+  "hint": "Egyptian singer",
+  "ar": "أمير عيد",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Tamer Ashour",
+  "title": "Tamer Ashour",
+  "hint": "Egyptian singer",
+  "ar": "تامر عاشور",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ahmed Gamal",
+  "title": "Ahmad Gamal (singer)",
+  "hint": "Egyptian singer",
+  "ar": "أحمد جمال",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mounira El Mahdeya",
+  "title": "Mounira El Mahdeya",
+  "hint": "Egyptian singer",
+  "ar": "منيرة المهدية",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Karem Mahmoud",
+  "title": "Karem Mahmoud",
+  "hint": "Egyptian singer",
+  "ar": "كارم محمود",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Fayza Ahmed",
+  "title": "Fayza Ahmed",
+  "hint": "Egyptian singer",
+  "ar": "فايزة أحمد",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Hob",
+  "title": "Hob (album)",
+  "hint": "Tamer Hosny album",
+  "ar": "حب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Ya bent el eih",
+  "title": "Ya bent el eih",
+  "hint": "Tamer Hosny album",
+  "ar": "يا بنت الإيه",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "2arrab kaman",
+  "title": "2arrab kaman",
+  "hint": "Tamer Hosny album",
+  "ar": "قرب كمان",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Ha3eesh 7ayaty",
+  "title": "Ha3eesh 7ayaty",
+  "hint": "Tamer Hosny album",
+  "ar": "هعيش حياتي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Ekhtart sa7",
+  "title": "Ekhtart sa7",
+  "hint": "Tamer Hosny album",
+  "ar": "اخترت صح",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Elly gai a7la",
+  "title": "Elly gai a7la",
+  "hint": "Tamer Hosny album",
+  "ar": "اللي جاي أحلى",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Ba7ebak enta",
+  "title": "Ba7ebak enta",
+  "hint": "Tamer Hosny album",
+  "ar": "بحبك انت",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "3omry ebtada",
+  "title": "3omry ebtada",
+  "hint": "Tamer Hosny album",
+  "ar": "عمري ابتدا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Khaleek folazy",
+  "title": "Khaleek folazy",
+  "hint": "Tamer Hosny album",
+  "ar": "خليك فولاذي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Shokolata",
+  "title": "Shokolata",
+  "hint": "Mohamed Mounir album",
+  "ar": "شيكولاتة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Meshwar",
+  "title": "Meshwar",
+  "hint": "Mohamed Mounir album",
+  "ar": "مشوار",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Eftah 2albak",
+  "title": "Eftah 2albak",
+  "hint": "Mohamed Mounir album",
+  "ar": "افتح قلبك",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "El far7a",
+  "title": "El far7a",
+  "hint": "Mohamed Mounir album",
+  "ar": "الفرحة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Fi 3eshg el banat",
+  "title": "Fi 3eshg el banat",
+  "hint": "Mohamed Mounir album",
+  "ar": "في عشق البنات",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "A7mar shafayef",
+  "title": "A7mar shafayef",
+  "hint": "Mohamed Mounir album",
+  "ar": "أحمر شفايف",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Embare7 kan 3omry 3eshreen",
+  "title": "Embare7 kan 3omry 3eshreen",
+  "hint": "Mohamed Mounir album",
+  "ar": "امبارح كان عمري عشرين",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Ta3m el beyout",
+  "title": "Ta3m el beyout",
+  "hint": "Mohamed Mounir album",
+  "ar": "طعم البيوت",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Watan",
+  "title": "Watan",
+  "hint": "Mohamed Mounir album",
+  "ar": "وطن",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Khallina ne3eesh",
+  "title": "Khallina ne3eesh",
+  "hint": "Mohamed Hamaki album",
+  "ar": "خلينا نعيش",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Ya ana ya enta",
+  "title": "Ya ana ya enta",
+  "hint": "Mohamed Hamaki album",
+  "ar": "يا أنا يا انت",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Kheles el kalam",
+  "title": "Kheles el kalam",
+  "hint": "Mohamed Hamaki album",
+  "ar": "خلص الكلام",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Ba7ebak kol youm aktar",
+  "title": "Ba7ebak kol youm aktar",
+  "hint": "Mohamed Hamaki album",
+  "ar": "بحبك كل يوم أكتر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "7aga mesh tabe3eya",
+  "title": "7aga mesh tabe3eya",
+  "hint": "Mohamed Hamaki album",
+  "ar": "حاجة مش طبيعية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Men 2alby baghanny",
+  "title": "Men 2alby baghanny",
+  "hint": "Mohamed Hamaki album",
+  "ar": "من قلبي بغني",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "3omro ma yegheeb",
+  "title": "3omro ma yegheeb",
+  "hint": "Mohamed Hamaki album",
+  "ar": "عمره ما يغيب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Kol youm men dah",
+  "title": "Kol youm men dah",
+  "hint": "Mohamed Hamaki album",
+  "ar": "كل يوم من ده",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Ya fatenny",
+  "title": "Ya fatenny",
+  "hint": "Mohamed Hamaki album",
+  "ar": "يا فاتني",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Lazem a3eesh",
+  "title": "Lazem a3eesh",
+  "hint": "Sherine album",
+  "ar": "لازم أعيش",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Tamer w shereen",
+  "title": "Tamer w shereen",
+  "hint": "Sherine album",
+  "ar": "تامر وشيرين",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "7abeit",
+  "title": "7abeit",
+  "hint": "Sherine album",
+  "ar": "حبيت",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Es2al 3alaya",
+  "title": "Es2al 3alaya",
+  "hint": "Sherine album",
+  "ar": "اسأل عليا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Ana keteer",
+  "title": "Ana keteer",
+  "hint": "Sherine album",
+  "ar": "أنا كتير",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Tare2y",
+  "title": "Tare2y",
+  "hint": "Sherine album",
+  "ar": "طريقي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Nassay",
+  "title": "Nassay",
+  "hint": "Sherine album",
+  "ar": "نساي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Batmanna ansak",
+  "title": "Batmanna ansak",
+  "hint": "Sherine album",
+  "ar": "بتمنى أنساك",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "We7yat 2alby",
+  "title": "We7yat 2alby",
+  "hint": "Abdel Halim Hafez song",
+  "ar": "وحياة قلبي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "2olly 7aga",
+  "title": "2olly 7aga",
+  "hint": "Abdel Halim Hafez song",
+  "ar": "قولي حاجة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "7aga ghareeba",
+  "title": "7aga ghareeba",
+  "hint": "Abdel Halim Hafez song",
+  "ar": "حاجة غريبة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Gabbar",
+  "title": "Gabbar",
+  "hint": "Abdel Halim Hafez song",
+  "ar": "جبار",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Balash 3etab",
+  "title": "Balash 3etab",
+  "hint": "Abdel Halim Hafez song",
+  "ar": "بلاش عتاب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Gana el hawa",
+  "title": "Gana el hawa",
+  "hint": "Abdel Halim Hafez song",
+  "ar": "جانا الهوى",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "El hawa hawaya",
+  "title": "El hawa hawaya",
+  "hint": "Abdel Halim Hafez song",
+  "ar": "الهوى هوايا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "A7dan el 7abayeb",
+  "title": "A7dan el 7abayeb",
+  "hint": "Abdel Halim Hafez song",
+  "ar": "أحضان الحبايب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Khaled Abol Naga",
+  "title": "Kal Naga",
+  "hint": "actor",
+  "ar": "خالد أبو النجا",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mohamed Diab",
+  "title": "Mohamed Diab",
+  "hint": "actor",
+  "ar": "محمد دياب",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Rami Malek",
+  "title": "Rami Malek",
+  "hint": "actor",
+  "ar": "رامي مالك",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "May Calamawy",
+  "title": "May Calamawy",
+  "hint": "actor",
+  "ar": "مي القلماوي",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Amir El-Masry",
+  "title": "Amir El-Masry",
+  "hint": "actor",
+  "ar": "أمير المصري",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mena Massoud",
+  "title": "Mena Massoud",
+  "hint": "actor",
+  "ar": "مينا مسعود",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ramy Youssef",
+  "title": "Ramy Youssef",
+  "hint": "actor",
+  "ar": "رامي يوسف",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Boutros Boutros-Ghali",
+  "title": "Boutros Boutros-Ghali",
+  "hint": "Egyptian",
+  "ar": "بطرس بطرس غالي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mohamed Al-Fayed",
+  "title": "Mohamed Al-Fayed",
+  "hint": "Egyptian",
+  "ar": "محمد الفايد",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mostafa El-Sayed",
+  "title": "Mostafa El-Sayed",
+  "hint": "Egyptian",
+  "ar": "مصطفى السيد",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mohamed ElBaradei",
+  "title": "Mohamed ElBaradei",
+  "hint": "Egyptian",
+  "ar": "محمد البرادعي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Naguib Sawiris",
+  "title": "Naguib Sawiris",
+  "hint": "Egyptian",
+  "ar": "نجيب ساويرس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Agricultural Bank of Egypt",
+  "title": "Agricultural Bank of Egypt",
+  "hint": "Egyptian bank",
+  "ar": "البنك الزراعي المصري",
+  "ar_hint": "بنك",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Banque du Caire",
+  "title": "Banque du Caire",
+  "hint": "Egyptian bank",
+  "ar": "بنك القاهرة",
+  "ar_hint": "بنك",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Bank of Alexandria",
+  "title": "Alexbank",
+  "hint": "Egyptian bank",
+  "ar": "بنك الإسكندرية",
+  "ar_hint": "بنك",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Arab African International Bank",
+  "title": "Arab African International Bank",
+  "hint": "Egyptian bank",
+  "ar": "البنك العربي الأفريقي",
+  "ar_hint": "بنك",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "CIB",
+  "title": "Commercial International Bank",
+  "hint": "Egyptian bank",
+  "ar": "البنك التجاري الدولي",
+  "ar_hint": "بنك",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Suez Canal Bank",
+  "title": "Suez Canal Bank",
+  "hint": "Egyptian bank",
+  "ar": "بنك قناة السويس",
+  "ar_hint": "بنك",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Housing and Development Bank",
+  "title": "Housing and Development Bank",
+  "hint": "Egyptian bank",
+  "ar": "بنك التعمير والإسكان",
+  "ar_hint": "بنك",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "HSBC Egypt",
+  "title": "HSBC Bank Egypt",
+  "hint": "Egyptian bank",
+  "ar": "إتش إس بي سي مصر",
+  "ar_hint": "بنك",
+  "logo": true,
+  "skip": false
  }
 ]
