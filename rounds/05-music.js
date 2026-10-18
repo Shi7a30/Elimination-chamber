@@ -22,17 +22,17 @@ CATS.push(
    ["Moustafa Amar",1966,"مصطفى قمر"],["Ruby",1981,"روبي","Ruby (Egyptian singer)"],["Ahmed Saad",1981,"أحمد سعد","Ahmed Saad (singer)"],["Marwan Pablo",1995,"مروان بابلو"],
    ["Wegz",1998,"ويجز"]],{h:"Egyptian singer",k:BORN,g:"p",s:"singers",m:"eg"}),
   Rd(["WHICH AMR DIAB HIT","CAME OUT FIRST",Q],["أنهي أغنية لعمرو دياب","نزلت الأول",QA],"min",[
-   ["Mayal",1988,"ميال","Mayal (album)"],["Nour El Ein",1996,"نور العين","Nour El Ain"],["Tamally Maak",2000,"تملي معاك"],["Allem Alby",2003,"علم قلبي"],
-   ["Leily Nahary",2004,"ليلي نهاري"],["Wayah",2009,"وياه"],["Banadeek Ta'ala",2011,"بناديك تعالى"],["Sahran",2020,"سهران","Sahran (album)"],["Khatfoony",2025,"خطفوني","Khatfoony (song)"]],
+   ["Mayal",1988,"ميال","Mayal (album)"],["Nour el 3ein",1996,"نور العين","Nour El Ain"],["Tamally ma3ak",2000,"تملي معاك","Tamally Maak"],["3allem 2alby",2003,"علم قلبي","Allem Alby"],
+   ["Leily nahary",2004,"ليلي نهاري","Leily Nahary"],["Wayah",2009,"وياه","Wayah"],["Banadeek ta3ala",2011,"بناديك تعالى","Banadeek Ta'ala"],["Sahran",2020,"سهران","Sahran (album)"],["Khatfoony",2025,"خطفوني","Khatfoony (song)"]],
    {h:"Amr Diab song",k:["RELEASED","نزلت سنة"],dt:["Song released", "نزول الأغنية"],g:"y",s:"songs",m:"eg"}),
  Rd(["WHICH CLASSIC SONG","CAME OUT FIRST",Q],["أنهي أغنية من الزمن الجميل","نزلت الأول",QA],"min",[
-  ["Ya Msafer Wahdak",1942,"يا مسافر وحدك"],["Ahwak",1957,"أهواك"],["Enta Omri",1964,"إنت عمري"],["Al Atlal",1966,"الأطلال"],
-  ["Alf Leila wa Leila",1969,"ألف ليلة وليلة"],["Qariat al-Fingan",1976,"قارئة الفنجان"],["Shababeek",1981,"شبابيك"],["Hadouta Masreya",1982,"حدوتة مصرية"],
-  ["Ali Sotak",1997,"علّي صوتك"]],{h:"Egyptian song",k:["RELEASED","نزلت سنة"],dt:["Song released", "نزول الأغنية"],g:"y",s:"songs",m:"eg"}),
+  ["Ya msafer wahdak",1942,"يا مسافر وحدك","Ya Msafer Wahdak"],["Ahwak",1957,"أهواك","Ahwak"],["Enta 3omri",1964,"إنت عمري","Enta Omri"],["El atlal",1966,"الأطلال","Al Atlal"],
+  ["Alf leila w leila",1969,"ألف ليلة وليلة","Alf Leila wa Leila"],["Qariat al-Fingan",1976,"قارئة الفنجان","Qariat al-Fingan"],["Shababeek",1981,"شبابيك","Shababeek"],["7adouta masreya",1982,"حدوتة مصرية","Hadouta Masreya"],
+  ["3alli sotak",1997,"علّي صوتك","Ali Sotak"]],{h:"Egyptian song",k:["RELEASED","نزلت سنة"],dt:["Song released", "نزول الأغنية"],g:"y",s:"songs",m:"eg"}),
  Rd(["WHICH EGYPTIAN HIT","CAME OUT LAST",Q],["أنهي أغنية مصرية","نزلت في الآخر",QA],"max",[
-  ["Habibi Dah",2001,"حبيبي ده (ناري نارين)","Habibi Dah (Nari Narain)"],["Garh Tany",2003,"جرح تاني"],["Leih Beydary Keda",2004,"ليه بيداري كده"],["Einaya Bethebak",2006,"عينيا بتحبك"],
-  ["Naweeha",2008,"ناويها"],["Ya El Midan",2011,"يا الميدان"],["Ezzay",2011,"إزاي"],["Number One",2018,"نمبر وان"],
-  ["El Bakht",2022,"البخت"]],{h:"Egyptian song",k:["RELEASED","نزلت سنة"],dt:["Song released", "نزول الأغنية"],g:"y",s:"songs",m:"eg"}),
+  ["7abibi dah",2001,"حبيبي ده (ناري نارين)","Habibi Dah (Nari Narain)"],["Garh Tany",2003,"جرح تاني","Garh Tany"],["Leih beydary keda",2004,"ليه بيداري كده","Leih Beydary Keda"],["3enaya bet7ebak",2006,"عينيا بتحبك","Einaya Bethebak"],
+  ["Naweeha",2008,"ناويها","Naweeha"],["Yalmidan",2011,"يا الميدان","Ya El Midan"],["Ezzay",2011,"إزاي","Ezzay"],["Number one",2018,"نمبر وان","Number One"],
+  ["El bakht",2022,"البخت","El Bakht"]],{h:"Egyptian song",k:["RELEASED","نزلت سنة"],dt:["Song released", "نزول الأغنية"],g:"y",s:"songs",m:"eg"}),
  Rd(["WHICH CLASSIC SINGER","WAS BORN FIRST",Q],["مين من مطربين زمان","اتولد الأول",QA],"min",[
   ["Sayed Darwish",1892,"سيد درويش"],["Mohamed Abdel Muttalib",1910,"محمد عبد المطلب"],["Laila Mourad",1918,"ليلى مراد","Leila Mourad"],["Mohamed Fawzi",1918,"محمد فوزي","Mohamed Fawzi (singer)"],
   ["Mohamed Roshdy",1928,"محمد رشدي"],["Shadia",1931,"شادية"],["Najat Al Saghira",1938,"نجاة الصغيرة","Nagat El-Sagheera"],["Ahmed Adaweya",1945,"أحمد عدوية"],
@@ -167,14 +167,14 @@ CATS.push(
   ["Seven",2023,"سيفن","Seven (Jungkook song)"],["APT.",2024,"آبت","APT. (song)"],["Golden",2025,"جولدن","Golden (Huntrix song)"]],
   {h:"song",k:["RELEASED","نزلت سنة"],dt:["Song released","نزول الأغنية"],g:"y",s:"songs",m:"w"}),
  Rd(["WHICH AMR DIAB ALBUM","CAME OUT LAST",Q],["أنهي ألبوم لعمرو دياب","نزل في الآخر",QA],"max",[
-  ["Ya Tareeq",1983,"يا طريق"],["Habiby",1991,"حبيبي","Habiby (album)"],["Ragein",1995,"راجعين"],
-  ["Amarain",1999,"قمرين","Amarain"],["Aktar Wahed",2001,"أكتر واحد"],["Kammel Kalamak",2005,"كمل كلامك"],
-  ["El Lilady",2007,"الليلة دي"],["El Leila",2013,"الليلة"],["Ahla W Ahla",2016,"أحلى وأحلى"]],
+  ["Ya tari2",1983,"يا طريق","Ya Tareeq"],["Habiby",1991,"حبيبي","Habiby (album)"],["Rag3een",1995,"راجعين","Ragein"],
+  ["2amarein",1999,"قمرين","Amarain"],["Aktar wahed",2001,"أكتر واحد","Aktar Wahed"],["Kammel kalamak",2005,"كمل كلامك","Kammel Kalamak"],
+  ["El lilady",2007,"الليلة دي","El Lilady"],["El leila",2013,"الليلة","El Leila"],["A7la w a7la",2016,"أحلى وأحلى","Ahla W Ahla"]],
   {h:"Egyptian album",k:["RELEASED","نزل سنة"],s:"songs",m:"eg"}),
  Rd(["WHICH OM KALTHOUM SONG","CAME OUT FIRST",Q],["أنهي أغنية لأم كلثوم","نزلت الأول",QA],"min",[
-  ["Ana Fi Entezarak",1943,"أنا في انتظارك"],["Ghanili Shwaya",1944,"غنيلي شوية"],["Alf Leila wa Leila",1969,"ألف ليلة وليلة"],
-  ["Enta Omri",1964,"إنت عمري"],["Amal Hayati",1965,"أمل حياتي"],["Al Atlal",1966,"الأطلال"],
-  ["Hathihi Laylati",1968,"هذه ليلتي"],["Aghadan Alqak",1971,"أغداً ألقاك"],["Leilet Hob",1972,"ليلة حب"]],
+  ["Ana fi entezarak",1943,"أنا في انتظارك","Ana Fi Entezarak"],["Ghanili shwaya",1944,"غنيلي شوية","Ghanili Shwaya"],["Alf leila w leila",1969,"ألف ليلة وليلة","Alf Leila wa Leila"],
+  ["Enta 3omri",1964,"إنت عمري","Enta Omri"],["Amal 7ayati",1965,"أمل حياتي","Amal Hayati"],["El atlal",1966,"الأطلال","Al Atlal"],
+  ["Hazihi laylati",1968,"هذه ليلتي","Hathihi Laylati"],["Aghadan al2ak",1971,"أغداً ألقاك","Aghadan Alqak"],["Leilet 7ob",1972,"ليلة حب","Leilet Hob"]],
   {h:"Egyptian song",k:["RELEASED","نزلت سنة"],dt:["Song released","نزول الأغنية"],g:"y",s:"songs",m:"eg"}),
  Rd(["WHICH ADELE SONG","CAME OUT LAST",Q],["أنهي أغنية لأديل","نزلت في الآخر",QA],"max",[
   ["Hometown Glory",2007,"هومتاون جلوري"],["Chasing Pavements",2008,"تشيسينج بيفمنتس"],["Rolling in the Deep",2010,"رولينج إن ذا ديب"],

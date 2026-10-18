@@ -14,18 +14,18 @@ CATS.push(
   ["The Big Bang Theory",279,"ذا بيج بانج ثيوري"],["Two and a Half Men",262,"اتنين ونص راجل"],["Friends",236,"فريندز"],["How I Met Your Mother",208,"هاو آي مت يور ماذر"],["The Office (US)",201,"ذا أوفيس","The Office (American TV series)"],
   ["Seinfeld",180,"ساينفيلد"],["The Sopranos",86,"ذا سوبرانوز"],["Game of Thrones",73,"جيم أوف ثرونز"],["Breaking Bad",62,"بريكنج باد"]],{suf:[" eps"," حلقة"],h:"TV series",k:["EPISODES","عدد الحلقات"],s:"tv",m:"w"}),
   Rd(["WHICH RAMADAN SHOW","CAME OUT FIRST",Q],["أنهي مسلسل رمضان","نزل الأول",QA],"min",[
-   ["Layali El Helmeya",1987,"ليالي الحلمية","Al Helmeya Nights"],["Lan Aish fi Gilbab Abi",1996,"لن أعيش في جلباب أبي","Lan Aish fi Gilbab Abi (TV series)"],["Bakkar",1998,"بكار"],
-   ["El Kabeer Awy",2010,"الكبير أوي"],["Grand Hotel",2016,"جراند أوتيل","Grand Hotel (Egyptian TV series)"],["El Ostoura",2016,"الأسطورة"],
-   ["El Ikhtiyar",2020,"الاختيار","El Ikhtiyar (TV series)"],["Gaafar El Omda",2023,"جعفر العمدة"],["El Hashashin",2024,"الحشاشين","El Hashashin (TV series)"]],
+   ["Layaly el 7elmeya",1987,"ليالي الحلمية","Al Helmeya Nights"],["Lan a3eesh fi gelbab aby",1996,"لن أعيش في جلباب أبي","Lan Aish fi Gilbab Abi (TV series)"],["Bakkar",1998,"بكار","Bakkar"],
+   ["El kabeer awy",2010,"الكبير أوي","El Kabeer Awy"],["Grand hotel",2016,"جراند أوتيل","Grand Hotel (Egyptian TV series)"],["El ostoura",2016,"الأسطورة","El Ostoura"],
+   ["El ekhtyar",2020,"الاختيار","El Ikhtiyar (TV series)"],["Ga3far el 3omda",2023,"جعفر العمدة","Gaafar El Omda"],["El 7ashashin",2024,"الحشاشين","El Hashashin (TV series)"]],
    {h:"Egyptian TV series",k:["FIRST AIRED","أول عرض"],dt:["Series first aired", "أول عرض للمسلسل"],g:"y",s:"tv",m:"eg"}),
  Rd(["WHO IS THE","OLDEST SERIES STAR",Q],["مين","أكبر نجم مسلسلات في السن",QA],"min",[
   ["Yehia El-Fakharany",1945,"يحيى الفخراني"],["Mohamed Sobhi",1948,"محمد صبحي","Mohamed Sobhi (actor)"],["Mahmoud Hemida",1953,"محمود حميدة"],
   ["Ashraf Abdel Baky",1963,"أشرف عبد الباقي"],["Khaled El Nabawy",1966,"خالد النبوي"],["Yasser Galal",1969,"ياسر جلال"],
   ["Mostafa Shaban",1970,"مصطفى شعبان"],["Youssef El Sherif",1978,"يوسف الشريف"],["Mohamed Ramadan",1988,"محمد رمضان","Mohamed Ramadan (actor)"]],{h:"Egyptian actor",k:BORN,g:"p",s:"tv",m:"eg"}),
  Rd(["WHICH SERIES","CAME OUT LAST",Q],["أنهي مسلسل","نزل في الآخر",QA],"max",[
-  ["Raafat El Haggan",1988,"رأفت الهجان"],["Arabesque",1994,"أرابيسك"],["Hadeeth El Sabah wel Masaa",2001,"حديث الصباح والمساء"],
-  ["Ragel W Set Settat",2006,"راجل وست ستات"],["Taht El Saytara",2015,"تحت السيطرة"],["Nelly & Sherihan",2016,"نيللي وشريهان"],
-  ["Sabe' Gar",2017,"سابع جار"],["Paranormal",2020,"ما وراء الطبيعة","Paranormal (TV series)"],["Ashghal Shaqqa",2024,"أشغال شقة"]],{h:"Egyptian TV series",k:["FIRST AIRED","أول عرض"],dt:["Series first aired", "أول عرض للمسلسل"],g:"y",s:"tv",m:"eg"}),
+  ["Ra2fat el haggan",1988,"رأفت الهجان","Raafat El Haggan"],["Arabesque",1994,"أرابيسك","Arabesque"],["7adis el saba7 wel masa2",2001,"حديث الصباح والمساء","Hadeeth El Sabah wel Masaa"],
+  ["Ragel we set settat",2006,"راجل وست ستات","Ragel W Set Settat"],["Ta7t el saytara",2015,"تحت السيطرة","Taht El Saytara"],["Nelly w sherihan",2016,"نيللي وشريهان","Nelly & Sherihan"],
+  ["Sabe3 gar",2017,"سابع جار","Sabe' Gar"],["Paranormal",2020,"ما وراء الطبيعة","Paranormal (TV series)"],["Ashghal sha2a",2024,"أشغال شقة","Ashghal Shaqqa"]],{h:"Egyptian TV series",k:["FIRST AIRED","أول عرض"],dt:["Series first aired", "أول عرض للمسلسل"],g:"y",s:"tv",m:"eg"}),
  Rd(["WHICH INTERNATIONAL SERIES","CAME OUT LAST",Q],["أنهي مسلسل أجنبي","نزل في الآخر",QA],"max",[
   ["Friends",1994,"فريندز"],["The Sopranos",1999,"ذا سوبرانوز"],["Prison Break",2005,"بريزون بريك"],
   ["Breaking Bad",2008,"بريكنج باد"],["Game of Thrones",2011,"جيم أوف ثرونز"],["Peaky Blinders",2013,"بيكي بلايندرز"],
@@ -71,14 +71,14 @@ CATS.push(
   ["Jimmy Kimmel",1967,"جيمي كيميل"],["Jimmy Fallon",1974,"جيمي فالون"],["James Corden",1978,"جيمس كوردن"]],
   {h:"TV presenter",k:BORN,g:"p",s:"tv",m:"w"}),
  Rd(["WHICH CLASSIC SERIES","AIRED FIRST",Q],["أنهي مسلسل قديم","اتعرض الأول",QA],"min",[
-  ["Abna'i Al-Aaza'a Shokran",1979,"أبنائي الأعزاء شكراً"],["El Raya El Bayda",1988,"الراية البيضا"],["Bawabet El Halawany",1992,"بوابة الحلواني"],
-  ["El Mal wal Banoun",1993,"المال والبنون"],["Zizinia",1997,"زيزينيا"],["El Daw' El Shared",1998,"الضوء الشارد"],
-  ["Ailet El Hajj Metwalli",2001,"عائلة الحاج متولي"],["Yetraboh Fi Ezzo",2007,"يتربى في عزو"],["El Kabeer Awy",2010,"الكبير أوي"]],
+  ["Abna2y el a3eza2 shokran",1979,"أبنائي الأعزاء شكراً","Abna'i Al-Aaza'a Shokran"],["El raya el beida",1988,"الراية البيضا","El Raya El Bayda"],["Bawabet el 7alawany",1992,"بوابة الحلواني","Bawabet El Halawany"],
+  ["El mal wel banoon",1993,"المال والبنون","El Mal wal Banoun"],["Zizinia",1997,"زيزينيا","Zizinia"],["El daw2 el shared",1998,"الضوء الشارد","El Daw' El Shared"],
+  ["3elet el 7ag metwally",2001,"عائلة الحاج متولي","Ailet El Hajj Metwalli"],["Yetrabba fi 3ezzo",2007,"يتربى في عزو","Yetraboh Fi Ezzo"],["El kabeer awy",2010,"الكبير أوي","El Kabeer Awy"]],
   {h:"Egyptian TV series",k:["FIRST AIRED","أول عرض"],dt:["Series first aired","أول عرض للمسلسل"],g:"y",s:"tv",m:"eg"}),
  Rd(["WHICH RECENT RAMADAN HIT","AIRED FIRST",Q],["أنهي مسلسل رمضاني جديد","اتعرض الأول",QA],"min",[
-  ["Nesr El Saeed",2018,"نسر الصعيد"],["El Ikhtiyar",2020,"الاختيار","El Ikhtiyar (TV series)"],["Lo'bet Newton",2021,"لعبة نيوتن","Newton's Game"],
-  ["Fatin Amal Harby",2022,"فاتن أمل حربي"],["Kamel El Adad",2023,"كامل العدد"],["Masar Egbari",2024,"مسار إجباري"],
-  ["Haqq Arab",2024,"حق عرب"],["El Hashashin",2024,"الحشاشين","El Hashashin (TV series)"],["Lam Shamseya",2025,"لام شمسية"]],
+  ["Nesr el se3id",2018,"نسر الصعيد","Nesr El Saeed"],["El ekhtyar",2020,"الاختيار","El Ikhtiyar (TV series)"],["Le3bet newton",2021,"لعبة نيوتن","Newton's Game"],
+  ["Faten amal 7arby",2022,"فاتن أمل حربي","Fatin Amal Harby"],["Kamel el 3adad",2023,"كامل العدد","Kamel El Adad"],["Masar egbari",2024,"مسار إجباري","Masar Egbari"],
+  ["7a2 3arab",2024,"حق عرب","Haqq Arab"],["El 7ashashin",2024,"الحشاشين","El Hashashin (TV series)"],["Lam shamseya",2025,"لام شمسية","Lam Shamseya"]],
   {h:"Egyptian TV series",k:["FIRST AIRED","أول عرض"],dt:["Series first aired","أول عرض للمسلسل"],g:"y",s:"tv",m:"eg"}),
  Rd(["WHO IS THE","YOUNGEST SERIES STAR",Q],["مين","أصغر نجم مسلسلات",QA],"max",[
   ["Nour El-Sherif",1946,"نور الشريف"],["Yousra",1955,"يسرا"],["Ghada Abdel Razek",1965,"غادة عبد الرازق"],
