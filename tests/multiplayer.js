@@ -3,7 +3,8 @@ const {chromium,devices}=require('playwright');
 const {PAGE,shot,finish}=require('./lib');
 (async()=>{const b=await chromium.launch(),bad=[],errs=[];
 const ctx=await b.newContext({...devices['iPhone SE'],defaultBrowserType:undefined});
-const open=async url=>{const p=await ctx.newPage();p.on('pageerror',e=>errs.push(e.message));await p.route('https://**',r=>r.abort());
+// fresh = a new browser profile (a friend's phone); otherwise the same device
+const open=async(url,fresh)=>{const p=await(fresh?await b.newContext({...devices['iPhone SE'],defaultBrowserType:undefined}):ctx).newPage();p.on('pageerror',e=>errs.push(e.message));await p.route('https://**',r=>r.abort());
  await p.addInitScript(()=>{window.__shared=[];Object.defineProperty(navigator,'share',{value:o=>{window.__shared.push(o.text);return Promise.resolve()},configurable:true})});
  await p.goto(url);return p};
 const wide=p=>p.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
@@ -59,7 +60,7 @@ const url=(shared.match(/\S+\?ch=\S+/)||[])[0];if(!url)bad.push('no link shared'
 if(!shared.includes('8/10'))bad.push('shared text missing score');
 
 // --- the friend opens the link: same rounds, same card order, result compares scores
-const q=await open(url);
+const q=await open(url,true);
 if(await q.evaluate(()=>location.search))bad.push('link not cleaned from address bar');
 const inv=await q.textContent('#menu');console.log('invite',inv.replace(/\s+/g,' ').slice(0,160));
 if(!inv.includes('Shiha challenged you')||!inv.includes('8/10'))bad.push('invite text wrong');
@@ -71,11 +72,13 @@ const res=await q.textContent('#sheet');console.log('friend sheet',res);
 if(!/you win/i.test(res)||!res.includes('Shiha 8/10'))bad.push('result sheet wrong');
 await q.tap('#sb .btn.y');const back=await q.evaluate(()=>window.__shared[0]||'');
 if(!back.includes('9/10')||!back.includes('n=Omar'))bad.push('send-back link wrong: '+back);
+// --- the same link can't be played twice on one device; it offers to send the score instead
+await q.goto(url);await q.waitForTimeout(300);if(await q.$('[data-cplay]')||!/already played/.test(await q.textContent('#menu'))||!await q.$('[data-cshare]'))bad.push('challenge link can be replayed');
 
 // --- a broken link says so; Arabic invite renders
 const r=await open(PAGE+'?ch=zz.nope.nada&s=3&n=X');
 if(!(await r.textContent('#menu')).includes("doesn't work"))bad.push('bad link not reported');
-const a=await open(url);await a.tap('#lang');const ai=await a.textContent('#menu');
+const a=await open(url,true);await a.tap('#lang');const ai=await a.textContent('#menu');
 if(!ai.includes('بيتحداك'))bad.push('arabic invite missing');await a.screenshot({path:shot('chal-invite-ar.png')});
 if(await wide(a))bad.push('arabic invite scrolls sideways');
 

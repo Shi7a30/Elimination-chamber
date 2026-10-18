@@ -44,7 +44,7 @@ for(let c=0;c<subs.length;c++){
   const labs=await pg.$$eval('.back',e=>e.map(x=>x.textContent));ok(labs.every(l=>!/undefined|NaN|null/.test(l)&&l.length>2),'backs ok '+labs.join(','));
   ok(await pg.$$eval('.back small',e=>e.every(x=>x.textContent.length)),'value label '+subs[c]);
   ok(await pg.$$eval('.cell.flip',e=>e.length)===9,'all flipped after win');
-  if(lang==='ar')ok(labs.every(l=>!/[0-9]/.test(l)),'arabic digits '+labs.join(','));
+  if(lang==='ar')ok(labs.every(l=>!/[٠-٩]/.test(l)&&/[0-9]/.test(l)),'english digits in arabic '+labs.join(','));
   if(roundNo===3){await pg.click('.cell.out');ok(await pg.$$eval('.cell.peek',e=>e.length)===1,'peek flips back');await pg.click('.cell.peek');ok(await pg.$$eval('.cell.flip',e=>e.length)===9,'unpeek')}
   await pg.waitForTimeout(650);await pg.click('#sb .btn.y');
  }

@@ -40,7 +40,14 @@ await tapAnswer();await p.waitForTimeout(600);s=await st();ok(s.btns.some(x=>/Un
 await p.evaluate(()=>[...document.querySelectorAll('#sb .btn')].find(x=>/Undo/.test(x.textContent)).click());s=await st();ok(s.over===false&&s.eScore===1,'undo did not continue the run');
 await tapAnswer();await p.waitForTimeout(600);s=await st();ok(!s.btns.some(x=>/Undo/.test(x))&&await p.evaluate(()=>document.getElementById('undo').disabled),'second endless undo still allowed');
 // 5. replaying a solved category round pays nothing
-await toMenu();await p.evaluate(()=>{coins=50;streak=3;save()});await p.tap('.cat[data-c="cats"]');await p.tap('.cat[data-g="0"]');await p.tap('.cat.sc[data-s]');
+await toMenu();await p.evaluate(()=>{coins=50;streak=3;prog={};save()});await p.tap('.cat[data-c="cats"]');await p.tap('.cat[data-g="0"]');await p.tap('.cat.sc[data-s]');
 await winRound();await p.waitForTimeout(700);s=await st();ok(s.coins===50+10+6&&s.streak===4,'first solve paid wrong: '+s.coins+'/'+s.streak);
 await p.evaluate(()=>{ri=-1;nxt()});await winRound();await p.waitForTimeout(700);s=await st();ok(s.coins===66&&s.streak===4,'replay paid: '+s.coins+'/'+s.streak);
+// small phones: the Play title stays clear of the claw board, the three home tiles fit, numbers use English digits in Arabic
+for(const [dev,l] of [['iPhone SE','ar'],['iPhone SE','en'],['Galaxy S8','ar']]){const c2=await b.newContext({...devices[dev]});const q=await c2.newPage();await q.route('https://**',r=>r.abort());
+ await q.addInitScript(l=>localStorage.setItem('elim_lang',JSON.stringify(l)),l);await q.goto(PAGE);await q.waitForTimeout(300);
+ const f=await q.evaluate(()=>{const t=document.querySelector('.hero .ht').getBoundingClientRect(),g=document.querySelector('.hgrid').getBoundingClientRect();
+  const hubs=[...document.querySelectorAll('.cat.hub')].map(e=>e.getBoundingClientRect());
+  return{overlap:t.left<g.right&&g.left<t.right&&t.top<g.bottom&&g.top<t.bottom,hubsOut:hubs.some(h=>h.right>innerWidth-8||h.left<8),indic:/[٠-٩]/.test(document.body.textContent)}});
+ ok(!f.overlap,dev+' '+l+': Play title overlaps the board');ok(!f.hubsOut,dev+' '+l+': home tiles stick out');ok(!f.indic,dev+' '+l+': Arabic-Indic digits shown');await c2.close()}
 await b.close();finish('flaw fixes',[...bad,...errs])})();

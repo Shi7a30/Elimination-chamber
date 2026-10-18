@@ -1,0 +1,24 @@
+name: Fetch HD photos
+on:
+  workflow_dispatch:
+  push:
+    paths: [tools/fetch_hd.py, tools/photos.json]
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install requests pillow
+      - run: python tools/fetch_hd.py
+      - name: Commit photos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add photos/hd
+          git diff --cached --quiet || git commit -m "Update HD photos for Duel"
+          git pull --rebase && git push

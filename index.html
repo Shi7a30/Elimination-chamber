@@ -85,7 +85,7 @@ html[data-theme=dark] .seg button.on{background:#34343c}
  box-shadow:0 5px 0 var(--yedge),0 18px 30px -14px rgba(180,130,0,.55);margin-bottom:4px}
 .cat.hero:active{transform:translateY(3px);box-shadow:0 2px 0 var(--yedge),0 10px 20px -12px rgba(180,130,0,.5)}
 .hero .eb{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:700;background:rgba(22,22,26,.1);color:var(--ink);padding:4px 10px;border-radius:999px;margin:0}
-.hero .ht{display:flex;align-items:center;gap:10px;font-size:38px;font-weight:800;line-height:1.1;margin-top:6px}
+.hero .ht{position:relative;z-index:1;display:flex;align-items:center;gap:10px;font-size:clamp(28px,9.5vw,38px);font-weight:800;line-height:1.1;margin-top:6px}
 .hero .ht i{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--ink);color:var(--y)}
 .hero .ht i svg{width:18px;height:18px;fill:currentColor;stroke:none;margin-inline-start:3px}
 html[dir=rtl] .hero .ht i svg{transform:scaleX(-1);margin:0 0 0 3px}
@@ -97,10 +97,12 @@ html[dir=rtl] .hero .ht i svg{transform:scaleX(-1);margin:0 0 0 3px}
 .hgrid b{position:absolute;left:50%;top:-30px;width:30px;height:30px;margin-left:-15px;border-radius:8px;background:var(--surf);border:3px solid var(--ink);transform:rotate(14deg);animation:lift 2.6s ease-in-out infinite}
 .hgrid b::before{content:"";position:absolute;left:50%;bottom:100%;width:3px;height:40px;margin-left:-1.5px;background:var(--ink)}
 html[dir=rtl] .hgrid{transform:translateY(-38%) rotate(8deg)}
-.hubs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+/* small phones: a smaller board so it never covers the Play title */
+@media (max-width:360px){.hgrid{grid-template-columns:repeat(3,19px);gap:5px;inset-inline-end:12px}.hgrid i{width:19px;height:19px;border-radius:6px}.hgrid b{width:24px;height:24px;margin-left:-12px;top:-26px}}
+.hubs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
 .cat.hub{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:14px 12px 13px;min-height:122px}
 .hub .se{margin-bottom:auto}
-.hub .tl{font-size:15px;font-weight:700;line-height:1.2;margin-top:10px}
+.hub .tl{max-width:100%;overflow-wrap:anywhere;font-size:clamp(13px,4.1vw,15px);font-weight:700;line-height:1.2;margin-top:10px}
 .hub small{font-size:12px;margin-top:1px}
 .se{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:14px;font-size:22px;line-height:1;flex:none;background:color-mix(in srgb,var(--c,var(--y)) 20%,transparent)}
 .se.k{background:var(--ink);color:var(--y)}
@@ -112,7 +114,7 @@ html[data-theme=dark] .se.k{background:#2c2c33}
 
 /* --- category and mode pages --- */
 .ghead{display:flex;align-items:center;gap:12px;margin:10px 0 2px}
-.ghead h2{margin:0;font-size:24px;font-weight:800;letter-spacing:-.2px;display:flex;align-items:center;gap:8px}
+.ghead h2{margin:0;font-size:24px;font-weight:800;line-height:1.25;letter-spacing:-.2px;display:flex;align-items:center;gap:8px}
 .ghead .pill{flex:none}
 .dgh{margin:14px 2px -2px;font-size:13px;font-weight:600;color:var(--mut);display:flex;align-items:center;gap:6px}
 .subs{display:grid;grid-template-columns:1fr 1fr;gap:12px}
@@ -453,7 +455,7 @@ var CATS=[
   ["Manchester United",13,"مانشستر يونايتد","Manchester United F.C."],["Manchester City",8,"مانشستر سيتي","Manchester City F.C."],["Chelsea",5,"تشيلسي","Chelsea F.C."],
   ["Arsenal",4,"آرسنال","Arsenal F.C."],["Liverpool",2,"ليفربول","Liverpool F.C."],["Blackburn Rovers",1,"بلاكبيرن","Blackburn Rovers F.C."],
   ["Leicester City",1,"ليستر سيتي","Leicester City F.C."],["Tottenham Hotspur",0,"توتنهام","Tottenham Hotspur F.C."],["Newcastle United",0,"نيوكاسل","Newcastle United F.C."]],
-  {suf:TRA,h:"football club",k:["PREMIER LEAGUES (SINCE 1992)","بريميرليج (من ١٩٩٢)"],s:"trophies",m:"w"}),
+  {suf:TRA,h:"football club",k:["PREMIER LEAGUES (SINCE 1992)","بريميرليج (من 1992)"],s:"trophies",m:"w"}),
  Rd(["WHICH CLUB HAS THE","MOST LA LIGA TITLES",Q],["أنهي نادي","عنده أكتر دوري إسباني",QA],"max",[
   ["Real Madrid",36,"ريال مدريد","Real Madrid CF"],["FC Barcelona",29,"برشلونة"],["Atlético Madrid",11,"أتلتيكو مدريد"],
   ["Athletic Bilbao",8,"أتلتيك بلباو","Athletic Club"],["Valencia",6,"فالنسيا","Valencia CF"],["Real Sociedad",2,"ريال سوسيداد"],
@@ -506,13 +508,13 @@ var CATS=[
   ["Mohamed Henedy",1965,"محمد هنيدي","Mohamed Henedi"],["Ahmed Helmy",1969,"أحمد حلمي"],["Ahmed El-Sakka",1973,"أحمد السقا","Ahmed El Sakka"],["Karim Abdel Aziz",1975,"كريم عبد العزيز"],
   ["Mohamed Ramadan",1988,"محمد رمضان","Mohamed Ramadan (actor)"]],{h:"Egyptian actor",k:BORN,g:"p",s:"actors",m:"eg"}),
  Rd(["WHICH IS THE","BIGGEST BLOCKBUSTER",Q],["أنهي فيلم","كسّب أكتر فلوس في السينما",QA],"max",[
-  ["Avatar",2.923,0,"Avatar (2009 film)"],["Avengers: Endgame",2.799],["Titanic",2.264,"تايتانيك","Titanic (1997 film)"],["Star Wars: The Force Awakens",2.071],
-  ["Avengers: Infinity War",2.052],["Spider-Man: No Way Home",1.921],["Jurassic World",1.671],["The Lion King (2019)",1.662,"الأسد الملك (2019)","The Lion King (2019 film)"],
-  ["Frozen II",1.453]],{pre:["$",""],suf:["B"," مليار دولار"],dp:2,h:"film",k:["BOX OFFICE","الإيرادات"],s:"films",m:"w"}),
+  ["Avatar",2.923,"أفاتار","Avatar (2009 film)"],["Avengers: Endgame",2.799,"أفنجرز: إند جيم"],["Titanic",2.264,"تايتانيك","Titanic (1997 film)"],["Star Wars: The Force Awakens",2.071,"حرب النجوم: صحوة القوة"],
+  ["Avengers: Infinity War",2.052,"أفنجرز: إنفينيتي وور"],["Spider-Man: No Way Home",1.921,"سبايدر مان: نو واي هوم"],["Jurassic World",1.671,"جوراسيك وورلد"],["The Lion King (2019)",1.662,"الأسد الملك (2019)","The Lion King (2019 film)"],
+  ["Frozen II",1.453,"فروزن 2"]],{pre:["$",""],suf:["B"," مليار دولار"],dp:2,h:"film",k:["BOX OFFICE","الإيرادات"],s:"films",m:"w"}),
  Rd(["WHICH IS THE","OLDEST MOVIE",Q],["أنهي","فيلم أقدم واحد",QA],"min",[
-  ["The Godfather",1972,"الأب الروحي"],["Jaws",1975,"الفك المفترس","Jaws (film)"],["Star Wars",1977,"حرب النجوم","Star Wars (film)"],["E.T.",1982,0,"E.T. the Extra-Terrestrial"],
-  ["Back to the Future",1985,"العودة للمستقبل"],["Jurassic Park",1993,0,"Jurassic Park (film)"],["Pulp Fiction",1994],["Titanic",1997,"تايتانيك","Titanic (1997 film)"],
-  ["The Matrix",1999]],{h:"film",k:["RELEASED","نزل سنة"],dt:["Film released", "نزول الفيلم"],g:"y",s:"films",m:"w"}),
+  ["The Godfather",1972,"الأب الروحي"],["Jaws",1975,"الفك المفترس","Jaws (film)"],["Star Wars",1977,"حرب النجوم","Star Wars (film)"],["E.T.",1982,"إي تي","E.T. the Extra-Terrestrial"],
+  ["Back to the Future",1985,"العودة للمستقبل"],["Jurassic Park",1993,"جوراسيك بارك","Jurassic Park (film)"],["Pulp Fiction",1994,"بالب فيكشن"],["Titanic",1997,"تايتانيك","Titanic (1997 film)"],
+  ["The Matrix",1999,"ذا ماتريكس"]],{h:"film",k:["RELEASED","نزل سنة"],dt:["Film released", "نزول الفيلم"],g:"y",s:"films",m:"w"}),
  Rd(["WHICH IS THE","OLDEST EGYPTIAN FILM",Q],["أنهي","فيلم مصري أقدم واحد",QA],"min",[
   ["Cairo Station",1958,"باب الحديد"],["The Nightingale's Prayer",1959,"دعاء الكروان"],["Watch Out for Zouzou",1972,"خلي بالك من زوزو"],
   ["Terrorism and Kebab",1992,"الإرهاب والكباب"],["Ismailia Rayeh Gai",1997,"إسماعيلية رايح جاي","Round Trip to Ismailia"],["El Limby",2002,"اللمبي","El-Limby"],
@@ -623,7 +625,7 @@ var CATS=[
   ["Harry Potter and the Philosopher's Stone",2001,"هاري بوتر وحجر الفيلسوف","Harry Potter and the Philosopher's Stone (film)"],["Harry Potter and the Chamber of Secrets",2002,"هاري بوتر وحجرة الأسرار","Harry Potter and the Chamber of Secrets (film)"],
   ["Harry Potter and the Prisoner of Azkaban",2004,"هاري بوتر وسجين أزكابان","Harry Potter and the Prisoner of Azkaban (film)"],["Harry Potter and the Goblet of Fire",2005,"هاري بوتر وكأس النار","Harry Potter and the Goblet of Fire (film)"],
   ["Harry Potter and the Order of the Phoenix",2007,"هاري بوتر وجماعة العنقاء","Harry Potter and the Order of the Phoenix (film)"],["Harry Potter and the Half-Blood Prince",2009,"هاري بوتر والأمير الهجين","Harry Potter and the Half-Blood Prince (film)"],
-  ["Deathly Hallows – Part 1",2010,"هاري بوتر ومقدسات الموت ١","Harry Potter and the Deathly Hallows – Part 1"],["Deathly Hallows – Part 2",2011,"هاري بوتر ومقدسات الموت ٢","Harry Potter and the Deathly Hallows – Part 2"],
+  ["Deathly Hallows – Part 1",2010,"هاري بوتر ومقدسات الموت 1","Harry Potter and the Deathly Hallows – Part 1"],["Deathly Hallows – Part 2",2011,"هاري بوتر ومقدسات الموت 2","Harry Potter and the Deathly Hallows – Part 2"],
   ["Fantastic Beasts and Where to Find Them",2016,"الوحوش المذهلة","Fantastic Beasts and Where to Find Them (film)"]],
   {h:"film",k:["RELEASED","نزل سنة"],dt:["Film released","نزول الفيلم"],g:"y",s:"films",m:"w"}),
  Rd(["WHICH DISNEY CLASSIC","CAME OUT FIRST",Q],["أنهي فيلم ديزني","نزل الأول",QA],"min",[
@@ -632,9 +634,9 @@ var CATS=[
   ["Tangled",2010,"تانجلد (ربانزل)"],["Frozen",2013,"فروزن","Frozen (2013 film)"],["Moana",2016,"موانا","Moana (2016 film)"]],
   {h:"film",k:["RELEASED","نزل سنة"],dt:["Film released","نزول الفيلم"],g:"y",s:"films",m:"w"}),
  Rd(["WHICH CARTOON FILM MADE","THE MOST MONEY",Q],["أنهي فيلم كرتون","جاب أكتر إيرادات",QA],"max",[
-  ["Inside Out 2",1.699,"إنسايد آوت ٢"],["Frozen II",1.453,"فروزن ٢"],["The Super Mario Bros. Movie",1.361,"فيلم سوبر ماريو"],
-  ["Frozen",1.290,"فروزن","Frozen (2013 film)"],["Incredibles 2",1.243,"الخارقون ٢"],["Minions",1.159,"المينيونز","Minions (film)"],
-  ["Toy Story 4",1.073,"حكاية لعبة ٤"],["Moana 2",1.059,"موانا ٢"],["Despicable Me 3",1.034,"أنا الحقير ٣"]],
+  ["Inside Out 2",1.699,"إنسايد آوت 2"],["Frozen II",1.453,"فروزن 2"],["The Super Mario Bros. Movie",1.361,"فيلم سوبر ماريو"],
+  ["Frozen",1.290,"فروزن","Frozen (2013 film)"],["Incredibles 2",1.243,"الخارقون 2"],["Minions",1.159,"المينيونز","Minions (film)"],
+  ["Toy Story 4",1.073,"حكاية لعبة 4"],["Moana 2",1.059,"موانا 2"],["Despicable Me 3",1.034,"أنا الحقير 3"]],
   {pre:["$",""],suf:["B"," مليار دولار"],dp:2,h:"film",k:["BOX OFFICE","الإيرادات"],s:"films",m:"w"}),
  Rd(["WHICH FILM IS","THE LONGEST",Q],["أنهي فيلم","أطول واحد",QA],"max",[
   ["Gone with the Wind",238,"ذهب مع الريح","Gone with the Wind (film)"],["Killers of the Flower Moon",206,"قتلة زهرة القمر","Killers of the Flower Moon (film)"],["The Return of the King",201,"عودة الملك","The Lord of the Rings: The Return of the King"],
@@ -673,12 +675,12 @@ var CATS=[
   {h:"Egyptian film",k:["RELEASED","نزل سنة"],dt:["Film released","نزول الفيلم"],g:"y",s:"films",m:"eg"}),
  Rd(["WHICH NEW FILM","CAME OUT LAST",Q],["أنهي فيلم من الجداد","نزل في الآخر",QA],"max",[
   ["Ibrahim El Abyad",2009,"إبراهيم الأبيض"],["Asmaa",2011,"أسماء","Asmaa (film)"],["El Harb El Alamiya El Talta",2014,"الحرب العالمية الثالثة","The Third World War (2014 film)"],
-  ["Hepta",2016,"هيبتا","Hepta: The Last Lecture"],["El Kenz",2017,"الكنز","The Treasure (2017 film)"],["The Blue Elephant 2",2019,"الفيل الأزرق ٢"],
-  ["Sahib El Maqam",2020,"صاحب المقام"],["Kira & El Gin",2022,"كيرة والجن"],["Welad Rizk 3",2024,"ولاد رزق ٣","Sons of Rizk 3"]],
+  ["Hepta",2016,"هيبتا","Hepta: The Last Lecture"],["El Kenz",2017,"الكنز","The Treasure (2017 film)"],["The Blue Elephant 2",2019,"الفيل الأزرق 2"],
+  ["Sahib El Maqam",2020,"صاحب المقام"],["Kira & El Gin",2022,"كيرة والجن"],["Welad Rizk 3",2024,"ولاد رزق 3","Sons of Rizk 3"]],
   {h:"Egyptian film",k:["RELEASED","نزل سنة"],dt:["Film released","نزول الفيلم"],g:"y",s:"films",m:"eg"}),
  Rd(["WHICH AHMED ZAKI FILM","CAME OUT FIRST",Q],["أنهي فيلم لأحمد زكي","نزل الأول",QA],"min",[
   ["El Bary'",1986,"البريء","The Innocent (1986 film)"],["El Beh El Bawab",1987,"البيه البواب"],["Kaboria",1990,"كابوريا"],
-  ["Nasser 56",1996,"ناصر ٥٦"],["Edhak El Sora Tetla' Helwa",1998,"اضحك الصورة تطلع حلوة"],["Ard El Khof",2000,"أرض الخوف","Land of Fear"],
+  ["Nasser 56",1996,"ناصر 56"],["Edhak El Sora Tetla' Helwa",1998,"اضحك الصورة تطلع حلوة"],["Ard El Khof",2000,"أرض الخوف","Land of Fear"],
   ["Ayam El Sadat",2001,"أيام السادات","Days of Sadat"],["Mo'ali El Wazir",2002,"معالي الوزير"],["Halim",2006,"حليم","Halim (film)"]],
   {h:"Egyptian film",k:["RELEASED","نزل سنة"],dt:["Film released","نزول الفيلم"],g:"y",s:"films",m:"eg"})]},
 {n:"TV",a:"التليفزيون",e:"📺",r:[
@@ -691,8 +693,8 @@ var CATS=[
   ["Jennifer Aniston",1969,"جينيفر أنيستون"],["Jim Parsons",1973,"جيم بارسونز"],["Johnny Galecki",1975,"جوني جاليكي"],["Kunal Nayyar",1981,"كونال نايار"],
   ["Kaley Cuoco",1985,"كايلي كوكو"]],{h:"actor",k:BORN,g:"p",s:"tv",m:"w"}),
  Rd(["WHICH SHOW HAS","THE MOST EPISODES",Q],["أنهي مسلسل","عنده أكتر حلقات",QA],"max",[
-  ["The Big Bang Theory",279],["Two and a Half Men",262],["Friends",236],["How I Met Your Mother",208],["The Office (US)",201,0,"The Office (American TV series)"],
-  ["Seinfeld",180],["The Sopranos",86],["Game of Thrones",73],["Breaking Bad",62]],{suf:[" eps"," حلقة"],h:"TV series",k:["EPISODES","عدد الحلقات"],s:"tv",m:"w"}),
+  ["The Big Bang Theory",279,"ذا بيج بانج ثيوري"],["Two and a Half Men",262,"اتنين ونص راجل"],["Friends",236,"فريندز"],["How I Met Your Mother",208,"هاو آي مت يور ماذر"],["The Office (US)",201,"ذا أوفيس","The Office (American TV series)"],
+  ["Seinfeld",180,"ساينفيلد"],["The Sopranos",86,"ذا سوبرانوز"],["Game of Thrones",73,"جيم أوف ثرونز"],["Breaking Bad",62,"بريكنج باد"]],{suf:[" eps"," حلقة"],h:"TV series",k:["EPISODES","عدد الحلقات"],s:"tv",m:"w"}),
   Rd(["WHICH RAMADAN SHOW","CAME OUT FIRST",Q],["أنهي مسلسل رمضان","نزل الأول",QA],"min",[
    ["Layali El Helmeya",1987,"ليالي الحلمية","Al Helmeya Nights"],["Lan Aish fi Gilbab Abi",1996,"لن أعيش في جلباب أبي","Lan Aish fi Gilbab Abi (TV series)"],["Bakkar",1998,"بكار"],
    ["El Kabeer Awy",2010,"الكبير أوي"],["Grand Hotel",2016,"جراند أوتيل","Grand Hotel (Egyptian TV series)"],["El Ostoura",2016,"الأسطورة"],
@@ -789,8 +791,8 @@ var CATS=[
   ["Hakim",1962,"حكيم","Hakim (singer)"],["Angham",1972,"أنغام"],["Mohamed Hamaki",1975,"محمد حماقي"],["Tamer Hosny",1977,"تامر حسني"],
   ["Sherine Abdel Wahab",1980,"شيرين عبد الوهاب","Sherine"]],{h:"Egyptian singer",k:BORN,g:"p",s:"singers",m:"eg"}),
  Rd(["WHICH IS THE","OLDEST SONG",Q],["أنهي","أغنية أقدم واحدة",QA],"min",[
-  ["Hey Jude",1968],["Bohemian Rhapsody",1975],["Billie Jean",1983],["Like a Prayer",1989,0,"Like a Prayer (song)"],["Smells Like Teen Spirit",1991],
-  ["Wannabe",1996,0,"Wannabe (Spice Girls song)"],["Crazy in Love",2003],["Rolling in the Deep",2010],["Blinding Lights",2019]],{h:"song",k:["RELEASED","نزلت سنة"],dt:["Song released", "نزول الأغنية"],g:"y",s:"songs",m:"w"}),
+  ["Hey Jude",1968,"هاي جود"],["Bohemian Rhapsody",1975,"بوهيميان رابسودي"],["Billie Jean",1983,"بيلي جين"],["Like a Prayer",1989,"لايك أ براير","Like a Prayer (song)"],["Smells Like Teen Spirit",1991,"سميلز لايك تين سبيريت"],
+  ["Wannabe",1996,"وانابي","Wannabe (Spice Girls song)"],["Crazy in Love",2003,"كريزي إن لاف"],["Rolling in the Deep",2010,"رولينج إن ذا ديب"],["Blinding Lights",2019,"بلايندنج لايتس"]],{h:"song",k:["RELEASED","نزلت سنة"],dt:["Song released", "نزول الأغنية"],g:"y",s:"songs",m:"w"}),
   Rd(["WHO IS THE","YOUNGEST EGYPTIAN SINGER",Q],["مين","أصغر مطرب",QA],"max",[
    ["Hany Shaker",1952,"هاني شاكر"],["Mohamed Fouad",1961,"محمد فؤاد"],["Hisham Abbas",1963,"هشام عباس"],["Ehab Tawfik",1966,"إيهاب توفيق"],
    ["Moustafa Amar",1966,"مصطفى قمر"],["Ruby",1981,"روبي","Ruby (Egyptian singer)"],["Ahmed Saad",1981,"أحمد سعد","Ahmed Saad (singer)"],["Marwan Pablo",1995,"مروان بابلو"],
@@ -897,7 +899,7 @@ var CATS=[
   {h:"song",k:["RELEASED","نزلت سنة"],dt:["Song released","نزول الأغنية"],g:"y",s:"songs",m:"w"}),
  Rd(["WHICH TAYLOR SWIFT ALBUM","CAME OUT LAST",Q],["أنهي ألبوم لتايلور سويفت","نزل في الآخر",QA],"max",[
   ["Fearless",2008,"فيرلس","Fearless (Taylor Swift album)"],["Speak Now",2010,"سبيك ناو"],["Red",2012,"ريد","Red (Taylor Swift album)"],
-  ["1989",2014,"١٩٨٩","1989 (album)"],["Reputation",2017,"ريبيوتيشن","Reputation (album)"],["Lover",2019,"لوفر","Lover (album)"],
+  ["1989",2014,"1989","1989 (album)"],["Reputation",2017,"ريبيوتيشن","Reputation (album)"],["Lover",2019,"لوفر","Lover (album)"],
   ["Folklore",2020,"فولكلور","Folklore (Taylor Swift album)"],["Midnights",2022,"ميدنايتس"],["The Life of a Showgirl",2025,"ذا لايف أوف أ شوجيرل"]],
   {h:"album",k:["RELEASED","نزل سنة"],s:"songs",m:"w"}),
  Rd(["WHICH BEATLES ALBUM","CAME OUT FIRST",Q],["أنهي ألبوم للبيتلز","نزل الأول",QA],"min",[
@@ -931,7 +933,7 @@ var CATS=[
   ["Gold Digger",2005,"جولد ديجر","Gold Digger (Kanye West song)"],["HUMBLE.",2017,"هامبل"],["Not Like Us",2024,"نوت لايك أس"]],
   {h:"song",k:["RELEASED","نزلت سنة"],dt:["Song released","نزول الأغنية"],g:"y",s:"songs",m:"w"}),
  Rd(["WHICH SONG IS","THE LONGEST",Q],["أنهي أغنية","أطول واحدة",QA],"max",[
-  ["All Too Well (10 Minute Version)",10.2,"أول تو ويل (١٠ دقايق)","All Too Well"],["Free Bird",9.1,"فري بيرد"],["November Rain",9.0,"نوفمبر رين"],
+  ["All Too Well (10 Minute Version)",10.2,"أول تو ويل (10 دقايق)","All Too Well"],["Free Bird",9.1,"فري بيرد"],["November Rain",9.0,"نوفمبر رين"],
   ["American Pie",8.6,"أمريكان باي","American Pie (song)"],["Stairway to Heaven",8.0,"ستيرواي تو هيفن"],["Hey Jude",7.2,"هاي جود"],
   ["Hotel California",6.5,"هوتيل كاليفورنيا","Hotel California (Eagles song)"],["Like a Rolling Stone",6.2,"لايك أ رولينج ستون"],["Bohemian Rhapsody",5.9,"بوهيميان رابسودي"]],
   {pre:["~","~"],suf:[" min"," دقيقة"],dp:1,h:"song",k:["LENGTH","مدة الأغنية"],s:"songs",m:"w"}),
@@ -1022,7 +1024,7 @@ var CATS=[
   ["LeBron James",1984,"ليبرون جيمس"],["Lewis Hamilton",1985,"لويس هاميلتون"],["Usain Bolt",1986,"يوسين بولت"],
   ["Simone Biles",1997,"سيمون بايلز"],["Carlos Alcaraz",2003,"كارلوس ألكاراز"],["Victor Wembanyama",2004,"فيكتور ويمبانياما"]],
   {h:"athlete",k:BORN,g:"p",s:"celebs",m:"w"}),
- Rd(["WHO HAS THE","MOST F1 TITLES",Q],["مين","عنده أكتر بطولات فورمولا ١",QA],"max",[
+ Rd(["WHO HAS THE","MOST F1 TITLES",Q],["مين","عنده أكتر بطولات فورمولا 1",QA],"max",[
   ["Michael Schumacher",7,"مايكل شوماخر"],["Juan Manuel Fangio",5,"خوان مانويل فانجيو"],["Alain Prost",4,"آلان بروست"],
   ["Sebastian Vettel",4,"سيباستيان فيتل"],["Max Verstappen",4,"ماكس فيرستابن"],["Ayrton Senna",3,"آيرتون سينا"],
   ["Niki Lauda",3,"نيكي لاودا"],["Fernando Alonso",2,"فرناندو ألونسو"],["Lando Norris",1,"لاندو نوريس"]],
@@ -1092,7 +1094,7 @@ var CATS=[
   ["Cairo",9.5,"القاهرة","Cairo Governorate"],["Giza",8.6,"الجيزة","Giza Governorate"],["Sharqia",7.2,"الشرقية","Sharqia Governorate"],
   ["Dakahlia",6.5,"الدقهلية","Dakahlia Governorate"],["Beheira",6.2,"البحيرة","Beheira Governorate"],["Qalyubia",5.6,"القليوبية","Qalyubia Governorate"],
   ["Alexandria",5.2,"إسكندرية","Alexandria Governorate"],["Gharbia",5.0,"الغربية","Gharbia Governorate"],["Monufia",4.3,"المنوفية","Monufia Governorate"]],
-  {suf:[" M"," مليون"],dp:1,h:"Egypt governorate",k:["2017 CENSUS","تعداد ٢٠١٧"],s:"geo",m:"eg"}),
+  {suf:[" M"," مليون"],dp:1,h:"Egypt governorate",k:["2017 CENSUS","تعداد 2017"],s:"geo",m:"eg"}),
  Rd(["WHICH NATURE RESERVE","WAS PROTECTED FIRST",Q],["أنهي محمية","اتعملت الأول",QA],"min",[
   ["Ras Mohammed",1983,"رأس محمد","Ras Muhammad National Park"],["Saint Catherine",1988,"سانت كاترين","Saint Catherine, Egypt"],["Wadi El Rayan",1989,"وادي الريان"],
   ["Lake Qarun",1989,"بحيرة قارون","Lake Moeris"],["Nabq",1992,"نبق","Nabq Protected Area"],["Wadi Degla",1999,"وادي دجلة","Wadi Degla Protected Area"],
@@ -1342,17 +1344,17 @@ var CATS=[
   {pre:["~","~"],suf:[" days"," يوم"],h:"animal",k:["PREGNANCY","مدة الحمل"],s:"animals",m:"eg"})]},
 {n:"Games & Tech",a:"الألعاب والتكنولوجيا",e:"🎮",r:[
  Rd(["WHICH IS THE","OLDEST VIDEO GAME",Q],["أنهي","لعبة فيديو أقدم واحدة",QA],"min",[
-  ["Pac-Man",1980],["Tetris",1984],["Super Mario Bros.",1985],["The Legend of Zelda",1986,0,"The Legend of Zelda (video game)"],["Pokémon Red & Green",1996,0,"Pokémon Red and Blue"],
-  ["Grand Theft Auto",1997,0,"Grand Theft Auto (video game)"],["Minecraft",2011],["Fortnite",2017],["Among Us",2018]],{h:"video game",k:["RELEASED","نزلت سنة"],dt:["Game released", "نزول اللعبة"],g:"y",s:"games",m:"w"}),
+  ["Pac-Man",1980,"باك مان"],["Tetris",1984,"تتريس"],["Super Mario Bros.",1985,"سوبر ماريو"],["The Legend of Zelda",1986,"أسطورة زيلدا","The Legend of Zelda (video game)"],["Pokémon Red & Green",1996,"بوكيمون ريد وجرين","Pokémon Red and Blue"],
+  ["Grand Theft Auto",1997,"جراند ثفت أوتو","Grand Theft Auto (video game)"],["Minecraft",2011,"ماينكرافت"],["Fortnite",2017,"فورتنايت"],["Among Us",2018,"أمونج أس"]],{h:"video game",k:["RELEASED","نزلت سنة"],dt:["Game released", "نزول اللعبة"],g:"y",s:"games",m:"w"}),
  Rd(["WHICH IS THE","OLDEST CONSOLE",Q],["أنهي","جهاز ألعاب أقدم واحد",QA],"min",[
-  ["Atari 2600",1977],["NES / Famicom",1983,0,"Nintendo Entertainment System"],["Game Boy",1989],["PlayStation",1994,0,"PlayStation (console)"],["Nintendo 64",1996],
-  ["Xbox",2001,0,"Xbox (console)"],["Wii",2006],["PlayStation 4",2013],["Nintendo Switch",2017]],{h:"video game console",k:["RELEASED","نزل سنة"],dt:["Console released", "نزول الجهاز"],g:"y",s:"games",m:"w"}),
+  ["Atari 2600",1977,"أتاري 2600"],["NES / Famicom",1983,"إن إي إس / فاميكوم","Nintendo Entertainment System"],["Game Boy",1989,"جيم بوي"],["PlayStation",1994,"بلايستيشن 1","PlayStation (console)"],["Nintendo 64",1996,"نينتندو 64"],
+  ["Xbox",2001,"إكس بوكس","Xbox (console)"],["Wii",2006,"وي"],["PlayStation 4",2013,"بلايستيشن 4"],["Nintendo Switch",2017,"نينتندو سويتش"]],{h:"video game console",k:["RELEASED","نزل سنة"],dt:["Console released", "نزول الجهاز"],g:"y",s:"games",m:"w"}),
  Rd(["WHICH IS THE","OLDEST COMPANY",Q],["أنهي","شركة أقدم واحدة",QA],"min",[
-  ["Nintendo",1889],["Ford",1903,0,"Ford Motor Company"],["IBM",1911],["Disney",1923,0,"The Walt Disney Company"],["Toyota",1937],["Samsung",1938],
-  ["Sony",1946],["Apple",1976,0,"Apple Inc."],["Google",1998]],{h:"company",k:["FOUNDED","اتأسست سنة"],dt:["Company founded", "تأسيس الشركة"],g:"y",s:"brands",m:"w"}),
+  ["Nintendo",1889,"نينتندو"],["Ford",1903,"فورد","Ford Motor Company"],["IBM",1911,"آي بي إم"],["Disney",1923,"ديزني","The Walt Disney Company"],["Toyota",1937,"تويوتا"],["Samsung",1938,"سامسونج"],
+  ["Sony",1946,"سوني"],["Apple",1976,"أبل","Apple Inc."],["Google",1998,"جوجل"]],{h:"company",k:["FOUNDED","اتأسست سنة"],dt:["Company founded", "تأسيس الشركة"],g:"y",s:"brands",m:"w"}),
  Rd(["WHICH APP","LAUNCHED LAST",Q],["أنهي أبلكيشن","نزل في الآخر",QA],"max",[
-  ["Facebook",2004],["YouTube",2005],["Twitter",2006],["WhatsApp",2009],["Instagram",2010],["Snapchat",2011],["TikTok",2016],["ChatGPT",2022],
-  ["Threads",2023,0,"Threads (social network)"]],{h:"app",k:["LAUNCHED","نزل سنة"],dt:["App launched", "نزول الأبلكيشن"],g:"y",s:"brands",m:"w"}),
+  ["Facebook",2004,"فيسبوك"],["YouTube",2005,"يوتيوب"],["Twitter",2006,"تويتر"],["WhatsApp",2009,"واتساب"],["Instagram",2010,"إنستجرام"],["Snapchat",2011,"سناب شات"],["TikTok",2016,"تيك توك"],["ChatGPT",2022,"شات جي بي تي"],
+  ["Threads",2023,"ثريدز","Threads (social network)"]],{h:"app",k:["LAUNCHED","نزل سنة"],dt:["App launched", "نزول الأبلكيشن"],g:"y",s:"brands",m:"w"}),
   Rd(["WHICH IS THE","OLDEST EGYPTIAN BRAND",Q],["أنهي","براند مصري أقدم واحد",QA],"min",[
    ["Al-Ahram",1875,"الأهرام"],["National Bank of Egypt",1898,"البنك الأهلي المصري"],["Banque Misr",1920,"بنك مصر"],["EgyptAir",1932,"مصر للطيران"],
    ["Juhayna",1983,"جهينة","Juhayna Food Industries"],["Edita",1996,"إيديتا","Edita Food Industries"],["Vodafone Egypt",1998,"فودافون مصر"],["Fawry",2008,"فوري"],["Swvl",2017,"سويفل"]],
@@ -1421,7 +1423,7 @@ var CATS=[
   ["Nintendo DS",2004,"نينتندو دي إس"],["PSP",2004,"بي إس بي"],["Nintendo 3DS",2011,"نينتندو ثري دي إس"],
   ["PS Vita",2011,"بي إس فيتا"],["Steam Deck",2022,"ستيم ديك"],["Nintendo Switch 2",2025,"نينتندو سويتش 2"]],
   {h:"video game console",k:["RELEASED","نزل سنة"],dt:["Console released","نزول الجهاز"],g:"y",s:"games",m:"w"}),
- Rd(["WHICH PLAYSTATION 1 GAME","CAME OUT FIRST",Q],["أنهي لعبة بلايستيشن ١","نزلت الأول",QA],"min",[
+ Rd(["WHICH PLAYSTATION 1 GAME","CAME OUT FIRST",Q],["أنهي لعبة بلايستيشن 1","نزلت الأول",QA],"min",[
   ["Tekken",1995,"تيكن","Tekken (video game)"],["Crash Bandicoot",1996,"كراش"],["Resident Evil",1996,"ريزدنت إيفل","Resident Evil (1996 video game)"],
   ["Spyro the Dragon",1998,"سبايرو","Spyro the Dragon (1998 video game)"],["Metal Gear Solid",1998,"ميتال جير سوليد","Metal Gear Solid (1998 video game)"],["Crash Team Racing",1999,"كراش العربيات"],
   ["Tony Hawk's Pro Skater",1999,"توني هوك","Tony Hawk's Pro Skater (video game)"],["Digimon World",1999,"ديجيمون وورلد"],["Yu-Gi-Oh! Forbidden Memories",1999,"يو جي أوه فوربيدن ميموريز"]],
@@ -1570,12 +1572,12 @@ var CATS=[
   ["Walnuts",654,"عين الجمل","Walnut"],["Almonds",579,"اللوز","Almond"],["Peanuts",567,"السوداني","Peanut"],
   ["Potato chips",536,"الشيبسي","Potato chip"],["Milk chocolate",535,"شوكولاتة باللبن"],["Popcorn",387,"الفشار"],
   ["Dates",282,"البلح","Date palm"],["Banana",89,"الموز"],["Guava",68,"الجوافة"]],
-  {suf:[" kcal"," سعر"],h:"food",k:["PER 100 g","في كل ١٠٠ جرام"],s:"snacks",m:"eg"}),
+  {suf:[" kcal"," سعر"],h:"food",k:["PER 100 g","في كل 100 جرام"],s:"snacks",m:"eg"}),
  Rd(["WHICH FRUIT HAS","THE MOST VITAMIN C",Q],["أنهي فاكهة","فيها فيتامين سي أكتر",QA],"max",[
   ["Guava",228,"الجوافة"],["Kiwi",93,"الكيوي","Kiwifruit"],["Strawberry",59,"الفراولة"],
   ["Orange",53,"البرتقان","Orange (fruit)"],["Lemon",53,"اللمون"],["Pineapple",48,"الأناناس"],
   ["Mango",36,"المانجا"],["Banana",9,"الموز"],["Watermelon",8,"البطيخ"]],
-  {suf:[" mg"," مجم"],h:"fruit",k:["PER 100 g","في كل ١٠٠ جرام"],s:"snacks",m:"eg"}),
+  {suf:[" mg"," مجم"],h:"fruit",k:["PER 100 g","في كل 100 جرام"],s:"snacks",m:"eg"}),
  Rd(["WHICH DRINK HAS","THE MOST CAFFEINE",Q],["أنهي مشروب","فيه كافيين أكتر",QA],"max",[
   ["Monster Energy",160,"مونستر","Monster Energy"],["Filter coffee",95,"قهوة فلتر","Drip coffee"],["Red Bull",80,"ريد بول"],
   ["Espresso",63,"إسبريسو"],["Instant coffee",62,"نسكافيه (قهوة سريعة)"],["Black tea",47,"شاي"],
@@ -1595,7 +1597,7 @@ var CATS=[
   ["Chicken breast",31,"صدور الفراخ"],["Beef",26,"اللحمة","Beef"],["Cheddar",25,"جبنة شيدر","Cheddar cheese"],
   ["Peanut butter",25,"زبدة الفول السوداني"],["Canned tuna",24,"التونة","Tuna as food"],["Eggs",13,"البيض","Egg as food"],
   ["Lentils",9,"العدس","Lentil"],["Ful medames",8,"الفول المدمس"],["Rice",2.7,"الرز"]],
-  {pre:["~","~"],suf:[" g"," جرام"],h:"food",k:["PER 100 g (COOKED)","في كل ١٠٠ جرام (مطبوخ)"],s:"snacks",m:"eg"}),
+  {pre:["~","~"],suf:[" g"," جرام"],h:"food",k:["PER 100 g (COOKED)","في كل 100 جرام (مطبوخ)"],s:"snacks",m:"eg"}),
  Rd(["WHICH CANDY","CAME OUT LAST",Q],["أنهي حلويات","نزلت في الآخر",QA],"max",[
   ["Haribo Goldbears",1922,"هاريبو","Gummy bear"],["Maltesers",1936,"مالتيزرز"],["Smarties",1937,"سمارتيز"],
   ["Mentos",1948,"منتوس"],["Chupa Chups",1958,"تشوبا تشوبس"],["Skittles",1974,"سكيتلز","Skittles (confectionery)"],
@@ -1605,7 +1607,7 @@ var CATS=[
   ["Honey",82,"العسل"],["Dates",63,"البلح","Date palm"],["Raisins",59,"الزبيب","Raisin"],
   ["Milk chocolate",52,"شوكولاتة باللبن"],["Ketchup",22,"الكاتشب"],["Grapes",16,"العنب","Grape"],
   ["Mango",14,"المانجا"],["Banana",12,"الموز"],["Orange",9,"البرتقان","Orange (fruit)"]],
-  {pre:["~","~"],suf:[" g"," جرام"],h:"food",k:["PER 100 g","في كل ١٠٠ جرام"],s:"snacks",m:"eg"}),
+  {pre:["~","~"],suf:[" g"," جرام"],h:"food",k:["PER 100 g","في كل 100 جرام"],s:"snacks",m:"eg"}),
  Rd(["WHICH FOOD GIANT","WAS FOUNDED FIRST",Q],["أنهي شركة أكل عالمية","اتأسست الأول",QA],"min",[
   ["Cadbury",1824,"كادبوري"],["Nestlé",1866,"نستله"],["Heinz",1869,"هاينز","Heinz"],
   ["Hershey's",1894,"هيرشيز","The Hershey Company"],["Kraft",1903,"كرافت","Kraft Foods"],["Kellogg's",1906,"كيلوجز"],
@@ -1950,7 +1952,7 @@ var TX={
   outTxt:function(x,y){return x+" knocked out the answer: "+y+"."},safe:"😅 Everyone's safe!",safeTxt:"Nobody touched the answer.",nextRound:"Next round ▶",
   winner:function(x){return"🏆 "+x+" wins!"},winTxt:"Last one standing.",again:"↻ Play again",
   yourName:"Your name",namePh:"Name",friend:"A friend",chFrom:function(x){return x+" challenged you!"},chBeat:function(s,k){return"Score to beat: "+s+"/"+k},
-  chSame:"Same questions, no undo. Can you beat it?",play:"▶ Play",heroPlay:"Play",tDuel:"Duel",tCats:"Categories",tCatsSub:function(n){return n+" groups"},tMp:"Multiplayer",tMpSub:"2 to 8 players",chBad:"This challenge link doesn't work with this version of the game.",
+  chSame:"Same questions, no undo. Can you beat it?",play:"▶ Play",heroPlay:"Play",tDuel:"Duel",tCats:"Categories",tCatsSub:function(n){return n+" groups"},tMp:"Multiplayer",tMpSub:"2 to 8 players",chPlayed:function(s,k){return"You already played this challenge and got "+s+"/"+k+". Each challenge can be played once."},chBad:"This challenge link doesn't work with this version of the game.",
   chRound:function(a,b,s){return"🔗 Round "+a+"/"+b+" · Score "+s},chDone:"✅ Challenge done!",chYou:function(s,k){return"You got "+s+"/"+k+". Send the link and see if your friends can beat it."},
   chWin:"🏆 You win!",chLose:"😬 You lost!",chDraw:"🤝 Draw!",vs:function(s,b,x,k){return"You "+s+"/"+k+" · "+x+" "+b+"/"+k},
   share:"🔗 Send challenge",shareBack:"🔗 Send your score",copied:"Link copied!",msg:function(s,k){return"I got "+s+"/"+k+" on Shelhom! Can you beat me? 🔥"}},
@@ -1963,13 +1965,13 @@ var TX={
   allSolved:" · ★ حليت كل الجولات",overall:function(s,n){return" · حليت "+s+" من "+n+" لحد دلوقتي"},replay:"↻ تاني",menu:"القايمة",full:"مفيش مساحة كفاية على الجهاز عشان تحفظ صور زيادة.",lang:"EN",
   endless:"مالهاش آخر",endlessSub:"جولات متلخبطة من كل الأقسام",score:function(n){return"النتيجة "+n},runOver:"💀 اللعبة خلصت!",usedUndo:" استخدمت الفرصة التانية بتاعتك في اللعبة دي.",solvedB4:"حليتها قبل كده، فمفيش كوينز ولا بتتحسب في ورا بعض المرة دي.",leaveQ:"تخرج من اللعبة؟",leaveTxt:"اللي عملته في اللعبة دي هيضيع.",leave:"اخرج",stay:"كمّل لعب",
   runTxt:function(s,b){return" عدّيت "+s+" جولات · أحسن رقم "+b+"."},newBest:" 🏅 رقم قياسي جديد!",newRun:"↻ ابدأ من الأول",duel:"ده ولا ده",duelSub:"اختار واحد من اتنين، واللي يكسب يفضل",anyCat:"كل حاجة",anyCatSub:"أسئلة من كل الأقسام",pick:"اختار واحد",newQ:"سؤال جديد!",back:"›",sections:function(k){return k===1?"قسم واحد":n(k)+" أقسام"},duelTxt:function(s,b){return"جبت "+s+" ورا بعض · أحسن رقم "+b+"."},reg_eg:"🇪🇬 مصري",reg_w:"🌍 عالمي",reg_all:"🔀 الاتنين",
-  mp:"مع صحابك",cats:"الأقسام",hot:"البطاطس سخنة خالص",hotSub:"لفّوا الموبايل، واللي يشيل الإجابة الصح يطلع برا",chal:"تحدّي",chalSub:"العب ١٠ وابعت اللينك، وصحابك ياخدوا نفس الأسئلة",
+  mp:"مع صحابك",cats:"الأقسام",hot:"البطاطس سخنة خالص",hotSub:"لفّوا الموبايل، واللي يشيل الإجابة الصح يطلع برا",chal:"تحدّي",chalSub:"العب 10 وابعت اللينك، وصحابك ياخدوا نفس الأسئلة",
   players:"اللعيبة",addP:"+ لاعب كمان",pName:function(k){return"لاعب "+k},pickCat:"اختار قسم",pLeft:function(k){return"فاضل "+k},
   hRound:function(a){return"جولة "+a},turn:function(x){return"🥔 "+x+": شيل واحد"},isOut:function(x){return"💥 "+x+" طلع برا!"},
   outTxt:function(x,y){return x+" شال الإجابة الصح: "+y+"."},safe:"😅 محدش وقع!",safeTxt:"محدش لمس الإجابة الصح.",nextRound:"الجولة اللي بعدها ◀",
   winner:function(x){return"🏆 "+x+" كسب!"},winTxt:"آخر واحد فاضل.",again:"↻ تاني",
   yourName:"اسمك",namePh:"الاسم",friend:"واحد صاحبك",chFrom:function(x){return x+" بيتحداك!"},chBeat:function(s,k){return"لازم تعدّي "+s+" من "+k},
-  chSame:"نفس الأسئلة ومن غير رجوع. تقدر تكسب؟",play:"▶ يلا",heroPlay:"يلا نلعب",tDuel:"ده ولا ده",tCats:"الأقسام",tCatsSub:function(n){return n+" مجموعات"},tMp:"مع صحابك",tMpSub:"من ٢ لـ ٨ لاعيبة",chBad:"لينك التحدي ده مش شغال مع النسخة دي من اللعبة.",
+  chSame:"نفس الأسئلة ومن غير رجوع. تقدر تكسب؟",play:"▶ يلا",heroPlay:"يلا نلعب",tDuel:"ده ولا ده",tCats:"الأقسام",tCatsSub:function(n){return n+" مجموعات"},tMp:"مع صحابك",tMpSub:"من 2 لـ 8 لاعيبة",chPlayed:function(s,k){return"إنت لعبت التحدي ده قبل كده وجبت "+s+" من "+k+". كل تحدي بيتلعب مرة واحدة بس."},chBad:"لينك التحدي ده مش شغال مع النسخة دي من اللعبة.",
   chRound:function(a,b,s){return"🔗 جولة "+a+"/"+b+" · النتيجة "+s},chDone:"✅ خلصت التحدي!",chYou:function(s,k){return"جبت "+s+" من "+k+". ابعت اللينك وشوف صحابك هيعدّوك ولا لأ."},
   chWin:"🏆 كسبت!",chLose:"😬 خسرت!",chDraw:"🤝 تعادل!",vs:function(s,b,x,k){return"إنت "+s+" · "+x+" "+b+" (من "+k+")"},
   share:"🔗 ابعت التحدي",shareBack:"🔗 ابعت نتيجتك",copied:"اتنسخ اللينك!",msg:function(s,k){return"جبت "+s+" من "+k+" في شيلهم! تقدر تعدّيني؟ 🔥"}}};
@@ -1992,7 +1994,8 @@ IM=ld("elim_img",{})||{};WK=ld("elim_wiki",{})||{};L=ld("elim_lang","en")==="ar"
 var HP=ld("elim_players",["",""]),ME=ld("elim_name","");if(!Array.isArray(HP)||HP.length<2||HP.length>8)HP=["",""];HP=HP.map(function(v){return String(v||"").slice(0,16)});if(typeof ME!=="string")ME="";
 function save(){sv("elim_coins",coins);sv("elim_streak",streak);sv("elim_best",best);sv("elim_endless",eBest);sv("elim_duel",dBest);sv("elim_prog",prog);sv("elim_mute",mute);sv("elim_lang",L);sv("elim_region",REG)}
 function t(k){return TX[L][k]}
-function n(v,dp){return L==="ar"?v.toLocaleString("ar-EG",{useGrouping:v>=10000,minimumFractionDigits:dp||0,maximumFractionDigits:dp==null?2:dp}):dp!=null?v.toFixed(dp):v>=10000?v.toLocaleString("en-US"):String(v)}
+// numbers use English digits in both languages (Shiha's choice, 18 Oct 2026)
+function n(v,dp){return dp!=null?v.toFixed(dp):v>=10000?v.toLocaleString("en-US"):String(v)}
 function li(p){return p?p[L==="ar"?1:0]:""}
 // x = {d: item array, r: the round it comes from (for formatting)}
 function fmt(x){return li(x.r.pre)+n(x.d[1],x.r.dp)+li(x.r.suf)}
@@ -2082,6 +2085,15 @@ function duelNext(keep){if(!keep){dUsed={};dAsked={};dPairs={}}
  cur={q:dSrc.q[0],qa:dSrc.q[1],best:dSrc.b,items:pr};items=pr;out=[];peek=[];flipNow=[];over=false;dPick=-1;dTok++;
  corr=(dSrc.b==="min")===(pr[0].d[1]<pr[1].d[1])?0:1;
  hide();scr("game");$("menu").style.display="none";$("game").style.display="flex";loadPhotos(pr);render();if(!keep)deal()}
+// Duel shows cards large, so it swaps in a sharper copy (photos/hd/<hk(name)>.webp) once it has loaded.
+// Missing copies, offline, and your own photos keep the built-in picture.
+var HDOK={},HDTRY={};
+function hdSrc(x){var k=x.d[0];if(IM[k]||!window.PH||!PH[k])return photo(k);if(HDOK[k])return HDOK[k];
+ if(!HDTRY[k]&&/^https?:$/.test(location.protocol)){HDTRY[k]=1;var u="photos/hd/"+hk(k)+".webp",im=new Image();
+  im.onload=function(){HDOK[k]=u;if(mode!=="duel"||!inGame())return;
+   [].forEach.call(document.querySelectorAll(".cell"),function(c){var y=items[+c.dataset.i];if(y&&y.d[0]===k)[].forEach.call(c.querySelectorAll("img"),function(g){g.src=u})})};
+  im.src=u}
+ return photo(k)}
 function duelRender(){var qq=L==="ar"?cur.qa:cur.q;
  var dc=DCAT&&subInfo(DCAT),dl=dc?dc[1]+" "+(L==="ar"?dc[3]:dc[2]):t("duel");
  $("rn").textContent=(dSwap?t("newQ"):dl)+" · "+t("score")(n(dScore));$("q1").textContent=qq[0];$("q2").textContent=qq[1];$("q3").textContent=qq[2];
@@ -2090,7 +2102,7 @@ function duelRender(){var qq=L==="ar"?cur.qa:cur.q;
  $("grid").className="grid duo";$("pl").style.display="none";
  $("grid").innerHTML=items.map(function(x,i){var cls=over?(i===corr?"win":"out")+(over==="lose"&&i===dPick?" bad":""):"";
   if(over&&flipNow.indexOf(i)<0)cls+=" flip";
-  var src=photo(x.d[0]),img=src?'<img src="'+esc(src)+'" alt="" onerror="this.remove()">':"";
+  var src=hdSrc(x),img=src?'<img src="'+esc(src)+'" alt="" onerror="this.remove()">':"";
   return '<button class="cell '+cls+'" data-i="'+i+'" aria-label="'+esc(nm(x)+(over?": "+fmt(x):""))+'"><div class="card">'+
    '<div class="tile" style="'+tileBg(i*137+20)+'"><span>'+esc(nm(x).replace(/^[("']/,"").charAt(0))+"</span>"+img+"</div>"+
    '<div class="back">'+img+"<i>"+(i===corr?"✓":"✕")+"</i><small>"+esc(li(x.r.k))+"</small><b>"+esc(fmt(x))+"</b></div>"+
@@ -2127,11 +2139,16 @@ var BYH={};ALL.forEach(function(r){var k=hk(r.key);if(BYH[k])console.warn("Round
 // mulberry32: a small seeded random number generator
 function rng(a){return function(){a=a+0x6D2B79F5|0;var x=Math.imul(a^a>>>15,1|a);x=x+Math.imul(x^x>>>7,61|x)^x;return((x^x>>>14)>>>0)/4294967296}}
 function chalNew(id){CH={seed:Math.floor(Math.random()*2147483647),list:shuffle(id?subRounds(id):rounds()).slice(0,10),sub:id,from:null};chalGo()}
-function chalGo(){mode="chal";CH.i=0;CH.score=0;loadPhotos([].concat.apply([],CH.list.map(function(r){return mk(r).items})));chalRound()}
+// Each challenge (seed + rounds) can be played once on this device, so a link can't be retried until you win.
+// CHD = {challenge key: your score}; a game left halfway keeps the score it had.
+var CHD=ld("elim_chdone",{});if(!CHD||typeof CHD!=="object")CHD={};
+function chKey(){return CH.seed.toString(36)+"."+CH.list.map(function(r){return hk(r.key)}).join(".")}
+function chMark(){var k=chKey();delete CHD[k];CHD[k]=CH.score;var ks=Object.keys(CHD);while(ks.length>200)delete CHD[ks.shift()];sv("elim_chdone",CHD)}
+function chalGo(){if(CH.from&&chKey() in CHD){menu();return}mode="chal";CH.i=0;CH.score=0;chMark();loadPhotos([].concat.apply([],CH.list.map(function(r){return mk(r).items})));chalRound()}
 function chalRound(){cur=mk(CH.list[CH.i]);start()}
 function chalPick(i,x){out.push(i);flipNow=[i];
  if(i===corr){over="lose";render();shake();sfx.lose();sh(function(){return[t("lost"),t("knocked")(nm(x)+" ("+fmt(x)+")"),[[t("next"),chalNext,"y"]]]},450)}
- else if(items.length-out.length===1){over="win";CH.score++;flipNow=[corr];render();sfx.win();confetti();sh(function(){return[t("won"),"",[[t("next"),chalNext,"y"]]]},600)}
+ else if(items.length-out.length===1){over="win";CH.score++;chMark();flipNow=[corr];render();sfx.win();confetti();sh(function(){return[t("won"),"",[[t("next"),chalNext,"y"]]]},600)}
  else{render();sfx.elim(out.length)}}
 function chalNext(){CH.i++;if(CH.i<CH.list.length){chalRound();return}
  var k=CH.list.length,s=CH.score,f=CH.from;cur=null;
@@ -2234,7 +2251,9 @@ function nameBox(){return '<h3 class="dgh">'+t("yourName")+'</h3><div class="ply
 function chalPage(){return catPage(t("chal"),"cc",null,'<p class="sub">'+t("chalSub")+"</p>"+nameBox()+'<h3 class="dgh">'+t("pickCat")+"</h3>")}
 function chalInvite(){var c=CH.sub&&subInfo(CH.sub),k=CH.list.length;
  return ghead("",t("chal"))+(CH.bad?'<p class="sub">'+t("chBad")+"</p>":'<div class="chv"><div class="big">'+esc(t("chFrom")(CH.from.n||t("friend")))+'</div><p class="sub">'+
-  esc(t("chBeat")(n(CH.from.s),n(k)))+(c?" · "+c[1]+" "+esc(L==="ar"?c[3]:c[2]):"")+"<br>"+t("chSame")+"</p>"+nameBox()+'<p></p><button class="btn y" data-cplay>'+t("play")+"</button></div>")}
+  esc(t("chBeat")(n(CH.from.s),n(k)))+(c?" · "+c[1]+" "+esc(L==="ar"?c[3]:c[2]):"")+"<br>"+
+  (chKey() in CHD?esc(t("chPlayed")(n(CHD[chKey()]),n(k)))+"</p>"+nameBox()+'<p></p><button class="btn y" data-cshare>'+t("shareBack")+"</button></div>":
+  t("chSame")+"</p>"+nameBox()+'<p></p><button class="btn y" data-cplay>'+t("play")+"</button></div>"))}
 function card(cls,data,emoji,label,left,d,k,c){return '<button class="cat '+cls+'" '+data+(c?' style="--c:'+c+'"':"")+'><span class="se">'+emoji+"</span>"+label+"<small><span>"+left+"</span><span>"+
  (d===k?t("complete"):t("solved")(n(d),n(k)))+'</span></small><div class="pb"><i style="width:'+(k?d/k*100:0)+'%"></i></div></button>'}
 // Home shows the play modes and the big groups; tapping a group opens its page of subcategories.
@@ -2263,6 +2282,7 @@ $("menu").onclick=function(e){var rg=e.target.closest("[data-reg]");if(rg){REG=r
  if(e.target.closest("[data-padd]")){HP.push("");sv("elim_players",HP);sfx.tap();menu();return}
  var pd=e.target.closest("[data-pdel]");if(pd){HP.splice(+pd.dataset.pdel,1);sv("elim_players",HP);sfx.tap();menu();return}
  if(e.target.closest("[data-cplay]")){sfx.tap();chalGo();return}
+ if(e.target.closest("[data-cshare]")){sfx.tap();CH.score=CHD[chKey()]||0;chalShare();return}
  var b=e.target.closest(".cat");if(!b)return;sfx.tap();
  if(b.dataset.g){GRP=+b.dataset.g;menu();return}
  if(["d","h","c","cats","mp"].indexOf(b.dataset.c)>=0){GRP=b.dataset.c;menu();return}
