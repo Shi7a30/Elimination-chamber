@@ -4,7 +4,7 @@ const {PAGE,shot,PNG,finish}=require('./lib');
 for(const d of ['iPhone 13','Pixel 7','iPhone SE']){const ctx=await b.newContext({...devices[d],defaultBrowserType:undefined});const p=await ctx.newPage();
 const errs=[];p.on('pageerror',e=>errs.push(e.message));await p.route('https://**',r=>r.abort());
 await p.goto(PAGE);
-const cats=await p.$$eval('.cat',e=>e.length);const hw=await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth);await p.tap('.cat[data-c="cats"]');await p.tap('.cat[data-g="1"]');await p.waitForTimeout(200);const gw=await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth);await p.screenshot({path:shot('g_'+d.replace(/ /g,'')+'.png')});await p.tap('.cat.sc[data-s]');await p.waitForTimeout(300);
+const cats=await p.$$eval('.cat',e=>e.length);const hw=await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth);await p.tap('[data-nav="cats"]');await p.tap('.cat[data-g="1"]');await p.waitForTimeout(200);const gw=await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth);await p.screenshot({path:shot('g_'+d.replace(/ /g,'')+'.png')});await p.tap('.cat.sc[data-s]');await p.waitForTimeout(300);
 const tiles=await p.$$eval('.cell',e=>e.length);await p.tap('.cell[data-i="0"]');await p.waitForTimeout(700);
 const sw=await p.evaluate(()=>document.documentElement.scrollWidth),w=await p.evaluate(()=>innerWidth);
 await p.screenshot({path:shot('m_'+d.replace(/ /g,'')+'.png')});

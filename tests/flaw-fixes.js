@@ -14,7 +14,7 @@ await p.goto(PAGE);await p.waitForTimeout(400);
 ok(await p.$$eval('script[src^="photos/"]',e=>e.every(s=>s.defer)&&e.length===1),'photo scripts are not deferred');
 ok(await p.evaluate(()=>Object.keys(window.PH||{}).length>1000&&PHok),'photos did not load');
 // 1. duel: lose, switch language -> the popup is still there, in Arabic
-await p.tap('.cat[data-c="d"]');await p.tap('.cat[data-dc=""]');await p.evaluate(()=>document.querySelector('.cell[data-i="'+(1-corr)+'"]').click());await p.waitForTimeout(1000);
+await p.tap('[data-nav="d"]');await p.tap('.cat[data-dc=""]');await p.evaluate(()=>document.querySelector('.cell[data-i="'+(1-corr)+'"]').click());await p.waitForTimeout(1000);
 await p.tap('#lang');await p.waitForTimeout(300);let s=await st();ok(s.sheet&&/خلصت/.test(s.title),'duel popup lost after language switch: '+JSON.stringify(s));
 await p.tap('#lang');await p.waitForTimeout(200);s=await st();ok(s.sheet&&/Run over/.test(s.title),'duel popup not rebuilt in English');
 // 2. duel: correct answer, photo mode on past the pause, then off -> moves on
@@ -26,12 +26,12 @@ await tapAnswer();await p.waitForTimeout(100);await p.tap('#home');await p.waitF
 await p.evaluate(()=>document.querySelector('#sb .btn.y').click());await p.waitForTimeout(1600);s=await st();ok(s.inGame&&!s.sheet&&s.over===false,'Keep playing did not resume the duel '+JSON.stringify(s));
 await p.tap('#home');await p.waitForTimeout(200);await p.evaluate(()=>document.querySelector('#sb .btn:not(.y)').click());ok(!(await st()).inGame,'Leave did not go to the menu');
 // 3. challenge: final results survive a language switch
-await toMenu();await p.tap('.cat[data-c="mp"]');await p.tap('.cat[data-c="c"]');await p.tap('.cat[data-cc=""]');
+await toMenu();await p.tap('[data-nav="mp"]');await p.tap('.cat[data-c="c"]');await p.tap('.cat[data-cc=""]');
 for(let k=0;k<10;k++){await tapAnswer();await p.waitForTimeout(550);await p.evaluate(()=>document.querySelector('#sb .btn.y').click());await p.waitForTimeout(100)}
 await p.waitForTimeout(300);await p.tap('#lang');await p.waitForTimeout(300);s=await st();ok(s.sheet&&s.btns.some(x=>/ابعت/.test(x)),'challenge results lost after language switch: '+JSON.stringify(s));
 await p.tap('#lang');await p.waitForTimeout(100);
 // 6. hot potato: Home asks first
-await toMenu();await p.tap('.cat[data-c="mp"]');await p.tap('.cat[data-c="h"]');await p.tap('.cat[data-hc=""]');await p.tap('#home');await p.waitForTimeout(200);
+await toMenu();await p.tap('[data-nav="mp"]');await p.tap('.cat[data-c="h"]');await p.tap('.cat[data-hc=""]');await p.tap('#home');await p.waitForTimeout(200);
 s=await st();ok(s.sheet&&s.inGame&&s.mode==='hot','no leave question in hot potato');await p.evaluate(()=>document.querySelector('#sb .btn.y').click());ok((await st()).inGame,'Keep playing left hot potato');
 // 5. endless: one second chance per run
 await p.evaluate(()=>{coins=500;save()});await toMenu();await p.tap('.cat.hero');
@@ -40,14 +40,14 @@ await tapAnswer();await p.waitForTimeout(600);s=await st();ok(s.btns.some(x=>/Un
 await p.evaluate(()=>[...document.querySelectorAll('#sb .btn')].find(x=>/Undo/.test(x.textContent)).click());s=await st();ok(s.over===false&&s.eScore===1,'undo did not continue the run');
 await tapAnswer();await p.waitForTimeout(600);s=await st();ok(!s.btns.some(x=>/Undo/.test(x))&&await p.evaluate(()=>document.getElementById('undo').disabled),'second endless undo still allowed');
 // 5. replaying a solved category round pays nothing
-await toMenu();await p.evaluate(()=>{coins=50;streak=3;prog={};save()});await p.tap('.cat[data-c="cats"]');await p.tap('.cat[data-g="0"]');await p.tap('.cat.sc[data-s]');
+await toMenu();await p.evaluate(()=>{coins=50;streak=3;prog={};save()});await p.tap('[data-nav="cats"]');await p.tap('.cat[data-g="0"]');await p.tap('.cat.sc[data-s]');
 await winRound();await p.waitForTimeout(700);s=await st();ok(s.coins===50+10+6&&s.streak===4,'first solve paid wrong: '+s.coins+'/'+s.streak);
 await p.evaluate(()=>{ri=-1;nxt()});await winRound();await p.waitForTimeout(700);s=await st();ok(s.coins===66&&s.streak===4,'replay paid: '+s.coins+'/'+s.streak);
-// small phones: the Play title stays clear of the claw board, the three home tiles fit, numbers use English digits in Arabic
+// small phones: the Play title stays clear of the claw board, the dock buttons fit, numbers use English digits in Arabic
 for(const [dev,l] of [['iPhone SE','ar'],['iPhone SE','en'],['Galaxy S8','ar']]){const c2=await b.newContext({...devices[dev]});const q=await c2.newPage();await q.route('https://**',r=>r.abort());
  await q.addInitScript(l=>localStorage.setItem('elim_lang',JSON.stringify(l)),l);await q.goto(PAGE);await q.waitForTimeout(300);
  const f=await q.evaluate(()=>{const t=document.querySelector('.hero .ht').getBoundingClientRect(),g=document.querySelector('.hgrid').getBoundingClientRect();
-  const hubs=[...document.querySelectorAll('.cat.hub')].map(e=>e.getBoundingClientRect());
+  const hubs=[...document.querySelectorAll('#dock button')].map(e=>e.getBoundingClientRect());
   return{overlap:t.left<g.right&&g.left<t.right&&t.top<g.bottom&&g.top<t.bottom,hubsOut:hubs.some(h=>h.right>innerWidth-8||h.left<8),indic:/[٠-٩]/.test(document.body.textContent)}});
- ok(!f.overlap,dev+' '+l+': Play title overlaps the board');ok(!f.hubsOut,dev+' '+l+': home tiles stick out');ok(!f.indic,dev+' '+l+': Arabic-Indic digits shown');await c2.close()}
+ ok(!f.overlap,dev+' '+l+': Play title overlaps the board');ok(!f.hubsOut,dev+' '+l+': dock buttons stick out');ok(!f.indic,dev+' '+l+': Arabic-Indic digits shown');await c2.close()}
 await b.close();finish('flaw fixes',[...bad,...errs])})();

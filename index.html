@@ -102,7 +102,7 @@ html[dir=rtl] .hero .ht i svg{transform:scaleX(-1);margin:0 0 0 3px}
 .hgrid{position:absolute;inset-inline-end:16px;top:50%;display:grid;grid-template-columns:repeat(3,24px);gap:6px;transform:translateY(-38%) rotate(-8deg);pointer-events:none}
 .hgrid i{width:24px;height:24px;border-radius:7px;background:var(--ink);box-shadow:0 3px 0 rgba(0,0,0,.18)}
 .hgrid i:nth-child(2){background:rgba(22,22,26,.16);box-shadow:none}
-.hgrid b{position:absolute;left:50%;top:-30px;width:30px;height:30px;margin-left:-15px;border-radius:8px;background:var(--surf);border:3px solid var(--ink);transform:rotate(14deg);animation:lift 2.6s ease-in-out infinite}
+.hgrid b{position:absolute;left:50%;top:-30px;width:30px;height:30px;margin-left:-15px;border-radius:8px;background:#fff;border:3px solid var(--ink);transform:rotate(14deg);animation:lift 2.6s ease-in-out infinite}
 .hgrid b::before{content:"";position:absolute;left:50%;bottom:100%;width:3px;height:40px;margin-left:-1.5px;background:var(--ink)}
 html[dir=rtl] .hgrid{transform:translateY(-38%) rotate(8deg)}
 /* small phones: a smaller board so it never covers the Play title */
@@ -277,11 +277,117 @@ html.noglass .tools,html.noglass .top>.pill,html.noglass #sheet{background:var(-
 #menu>*{animation:enter .32s cubic-bezier(.2,.8,.3,1) both}
 #menu>:nth-child(2){animation-delay:.03s}#menu>:nth-child(3){animation-delay:.06s}#menu>:nth-child(4){animation-delay:.09s}#menu>:nth-child(5){animation-delay:.12s}#menu>:nth-child(n+6){animation-delay:.15s}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/* --- top bar (Oct 2026): one frosted bar. Coins stay on the left and sound/language on the right in both languages; the middle shows the claw pulling the answer out of a row of cards. --- */
+.top{direction:ltr;gap:4px;padding:6px 8px!important;margin:0 0 6px!important;border-radius:22px;background:var(--glass);-webkit-backdrop-filter:blur(18px) saturate(1.8);backdrop-filter:blur(18px) saturate(1.8);box-shadow:var(--glasshi),0 8px 24px -12px rgba(0,0,0,.3)}
+.top::before{inset:-12px -16px 0}
+.top .tools,.top>.pill{background:none!important;box-shadow:none!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+.top #cpill{padding:0 8px;min-width:0}
+.top .tools{margin-inline-start:auto}
+.top .claw+.tools{margin-inline-start:0}
+.top #home{padding:0;width:40px;min-width:40px}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.top{background:var(--surf)}}
+@media (prefers-reduced-transparency:reduce){.top{background:var(--surf);-webkit-backdrop-filter:none;backdrop-filter:none}}
+html.noglass .top{background:var(--surf);-webkit-backdrop-filter:none;backdrop-filter:none}
+body:not([data-scr=game]) #home{display:none}
+.claw{position:relative;flex:none;width:156px;height:44px;margin:0 auto;padding:0;border:0;background:none;clip-path:inset(-8px -40px -6px -40px);cursor:pointer}
+body[data-scr=game] .claw{display:none}
+body[data-scr=game] .top .tools{margin-inline-start:auto}
+.top #cpill{flex:none}
+.claw i{position:absolute;display:block;font-style:normal}
+.claw .c{bottom:2px;width:18px;height:16px;border-radius:5px;background:var(--fg);box-shadow:0 2px 0 rgba(0,0,0,.18)}
+.claw .c.e{opacity:.22;box-shadow:none}
+.claw .jl{transform:rotate(-12deg) translate(-2px,-3px)}.claw .jr{transform:rotate(10deg) translate(2px,-2px)}
+.claw .slot{bottom:2px;width:18px;height:16px;border-radius:5px;border:1.8px dashed color-mix(in srgb,var(--fg) 30%,transparent)}
+.claw .cw{position:absolute;inset:0}
+.claw .ln{top:-40px;width:2.5px;border-radius:2px;background:var(--fg);transform:rotate(-8deg);transform-origin:bottom}
+.claw .hd{z-index:2;width:16px;height:9px;border:2.5px solid var(--fg);border-top:0;border-radius:0 0 6px 6px;transform:rotate(-8deg)}
+.claw .ans{width:20px;height:18px;border-radius:5px;background:var(--y);box-shadow:0 3px 8px -2px rgba(212,162,28,.8);transform:rotate(-10deg)}
+.claw .sl{height:2.5px;border-radius:2px;background:var(--fg);opacity:.35;transform-origin:left center}
+.claw .sk{color:var(--y);font-size:11px;line-height:1}
+/* it plays once when Home opens (and again on a tap), then rests on the picture above */
+.claw.an .c.e{animation:clE .35s ease-out both}
+.claw.an .cw{animation:clMove 1.9s cubic-bezier(.5,0,.3,1) both}
+.claw.an .ans{animation:clUp 2.2s ease-in-out both}
+.claw.an .jl{animation:clL 2.2s ease-out both}.claw.an .jr{animation:clR 2.2s ease-out both}
+.claw.an .sl,.claw.an .sk{animation:clPop 2.4s ease-out both}
+@keyframes clE{from{opacity:1}to{opacity:.22}}
+@keyframes clMove{0%{transform:translate(-92px,-4px)}40%{transform:translate(0,-4px)}55%,62%{transform:translate(0,15px)}85%{transform:translate(0,-2px)}100%{transform:none}}
+@keyframes clUp{0%,52%{transform:translate(1px,19px) rotate(0)}74%{transform:translate(0,-1px) rotate(-16deg)}88%{transform:rotate(-6deg)}100%{transform:rotate(-10deg)}}
+@keyframes clL{0%,62%{transform:none}80%{transform:rotate(-16deg) translate(-3px,-5px)}100%{transform:rotate(-12deg) translate(-2px,-3px)}}
+@keyframes clR{0%,62%{transform:none}80%{transform:rotate(14deg) translate(3px,-4px)}100%{transform:rotate(10deg) translate(2px,-2px)}}
+@keyframes clPop{0%,72%{opacity:0;transform:scale(.4)}90%{opacity:1;transform:scale(1.15)}100%{opacity:1;transform:none}}
+.claw .sl{opacity:.35}.claw.an .sl{animation-name:clPopS}
+@keyframes clPopS{0%,72%{opacity:0;transform:scaleX(.3)}100%{opacity:.35;transform:none}}
+@media (max-width:360px){.claw{zoom:.7}.top .tools .pill{width:36px;min-width:36px}.top #cpill{padding:0 4px}}
+@media (prefers-reduced-motion:reduce){.claw *{animation:none!important}}
+
+/* --- home cards: small stat chips (🔥 streak, 🏆 best) --- */
+.chips{display:flex;gap:6px;margin-top:10px;position:relative;z-index:1}
+.chip{display:inline-flex;align-items:center;gap:5px;font-size:14px;font-weight:800;padding:5px 11px;border-radius:999px;font-variant-numeric:tabular-nums}
+.chip svg{width:15px;height:15px}
+.hero .chip{background:rgba(255,255,255,.5);color:var(--ink)}
+.hero .chip .fl{color:#e8730c}
+.cat.hero{min-height:0;padding:16px 20px;gap:2px}
+.hero .ht{margin-top:2px;font-size:clamp(26px,8.5vw,34px)}
+.hero small{max-width:62%;margin-top:2px}
+.hero .hgrid{transform:translateY(-38%) rotate(-8deg) scale(.82);transform-origin:center right}
+html[dir=rtl] .hero .hgrid{transform:translateY(-38%) rotate(8deg) scale(.82);transform-origin:center left}
+
+/* --- the daily round card: dark night sky, a calendar page with "?" (green ✓ once played). Same size before and after. --- */
+.cat.dcard{position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:flex-start;gap:3px;height:178px;padding:16px 20px;color:#fff;width:100%;
+ background:radial-gradient(120% 140% at 85% 10%,#3a2f6b 0%,#221d3d 45%,#16161a 100%);box-shadow:0 4px 0 #0b0b0e,0 14px 26px -16px rgba(40,20,90,.8)}
+.cat.dcard.done:active{transform:none}
+.dcard .stars{position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(1.5px 1.5px at 20% 30%,rgba(255,255,255,.5),transparent),radial-gradient(1.5px 1.5px at 45% 75%,rgba(255,255,255,.35),transparent),radial-gradient(1px 1px at 60% 20%,rgba(255,255,255,.5),transparent),radial-gradient(1.5px 1.5px at 35% 55%,rgba(247,200,61,.6),transparent)}
+.dcard .toprow{display:flex;align-items:center;gap:10px;position:relative;z-index:1}
+.dcard .eb{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:800;background:var(--y);color:var(--ink);padding:4px 10px;border-radius:999px}
+.dcard .eb .dot{width:7px;height:7px;border-radius:50%;background:var(--ink);animation:pulse 1.4s infinite}
+@keyframes pulse{50%{opacity:.25}}
+.dcard .dt{font-size:clamp(21px,6.6vw,26px);font-weight:800;line-height:1.15;margin-top:4px;position:relative;z-index:1;max-width:64%;white-space:nowrap}
+.dcard .ds{font-size:13px;color:rgba(255,255,255,.7);font-weight:500;max-width:60%;position:relative;z-index:1;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;line-height:1.35}
+.dcard .chips,.dcard .row{margin-top:auto}
+.dcard .chip{background:rgba(255,255,255,.12);color:#fff}
+.dcard .chip .fl{color:#ff9a3c}.dcard .chip .md{color:var(--y)}
+.dcard .row{display:flex;align-items:center;gap:8px;position:relative;z-index:1}
+.dcard .dg{display:inline-flex;gap:4px}
+.dcard .dg i{width:16px;height:16px;border-radius:4px;background:#2fbf71}
+.dcard .dg i.x{background:#e5484d}
+.dcard .shr{display:inline-flex;align-items:center;gap:6px;border:0;border-radius:999px;background:var(--y);color:var(--ink);font:inherit;font-weight:800;font-size:14px;padding:8px 14px;min-height:38px}
+.dcard .shr svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.dcard .art{position:absolute;inset-inline-end:14px;top:50%;width:106px;height:106px;transform:translateY(-50%);pointer-events:none}
+.dcard .pg{position:absolute;inset:14px 10px 8px 14px;border-radius:14px;background:#fff;box-shadow:0 6px 0 rgba(0,0,0,.35);transform:rotate(8deg);overflow:hidden}
+.dcard .pg::before{content:"";position:absolute;left:0;right:0;top:0;height:24px;background:var(--y)}
+.dcard.done .pg::before{background:#2fbf71}
+.dcard .pg b{position:absolute;left:0;right:0;top:24px;text-align:center;font-family:"Baloo Bhaijaan 2","Rubik",sans-serif;font-size:46px;line-height:1.05;color:var(--ink);font-weight:800}
+.dcard .pg i{position:absolute;top:-6px;width:8px;height:16px;border-radius:4px;background:var(--ink);z-index:2}
+.dcard .pg i:first-child{left:20px}.dcard .pg i:nth-child(2){right:20px}
+.dcard .back{position:absolute;inset:18px 18px 4px 6px;border-radius:14px;background:rgba(255,255,255,.18);transform:rotate(-7deg)}
+.dcard .sp{position:absolute;color:var(--y);font-size:14px;line-height:1}
+.dcard .sp.a{top:2px;inset-inline-start:2px}.dcard .sp.b{bottom:0;inset-inline-end:-2px;font-size:18px}.dcard .sp.c{top:8px;inset-inline-end:-4px;font-size:10px;color:#fff}
+@media (max-width:380px){.dcard .art{width:92px;height:92px}.dcard .dt{font-size:22px}}
+/* taller phones: the two cards grow to fill the screen down to the dock */
+@media (min-height:620px){.cat.hero{min-height:205px;padding:22px 20px}.hero .hgrid{transform:translateY(-38%) rotate(-8deg) scale(.95)}html[dir=rtl] .hero .hgrid{transform:translateY(-38%) rotate(8deg) scale(.95)}
+ .cat.dcard{height:214px;padding:22px 20px}.dcard .art{width:120px;height:120px}body[data-scr=home] #menu{gap:16px}}
+
+/* --- bottom dock: Home, Duel, Categories, Multiplayer. Shown on the menu pages, hidden during a game. --- */
+#dock{position:fixed;left:50%;width:calc(100% - 32px);max-width:408px;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:6;display:grid;grid-template-columns:repeat(4,1fr);padding:8px 4px 7px;border-radius:24px;
+ background:var(--glass2);-webkit-backdrop-filter:blur(20px) saturate(1.6);backdrop-filter:blur(20px) saturate(1.6);box-shadow:var(--glasshi),0 12px 32px -12px rgba(0,0,0,.35)}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){#dock{background:var(--surf)}}
+@media (prefers-reduced-transparency:reduce){#dock{background:var(--surf);-webkit-backdrop-filter:none;backdrop-filter:none}}
+html.noglass #dock{background:var(--surf);-webkit-backdrop-filter:none;backdrop-filter:none}
+body[data-scr=game] #dock,body:not([data-scr]) #dock{display:none}
+#dock button{border:0;background:none;font:inherit;color:var(--mut);display:flex;flex-direction:column;align-items:center;gap:4px;padding:0;font-size:11px;font-weight:600;white-space:nowrap;min-width:0}
+#dock .ic{display:flex;align-items:center;justify-content:center;width:52px;height:30px;border-radius:999px;transition:background .2s}
+#dock svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+#dock button.on{color:var(--fg);font-weight:800}
+#dock button.on .ic{background:var(--y);color:var(--ink)}
+#dock button:active .ic{transform:scale(.92)}
+body:not([data-scr=game]) #upd{bottom:calc(96px + env(safe-area-inset-bottom,0px))}
 </style>
 <script>window.onerror=function(m,u,l){var e=document.getElementById("menu");if(e)e.insertAdjacentHTML("beforeend","<p class='sub'>Error: "+String(m).replace(/</g,"&lt;")+" (line "+l+")</p>")}</script>
 </head><body>
 <div id="app">
- <div class="top"><button class="pill" id="home" aria-label="Home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h5v-6h4v6h5V10"/></svg></button><div class="tools"><button class="pill" id="snd" aria-label="Sound"></button><button class="pill" id="cam" aria-label="Photo mode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13.5" r="3.5"/></svg></button><button class="pill" id="lang" aria-label="Language">ع</button></div><span class="gap"></span><div class="pill" id="cpill"><span id="coins">0</span><i class="coin"></i></div></div>
+ <div class="top"><button class="pill" id="home" aria-label="Home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h5v-6h4v6h5V10"/></svg></button><div class="pill" id="cpill"><span id="coins">0</span><i class="coin"></i></div><button class="claw" id="claw" aria-hidden="true" tabindex="-1"><i class="c e" style="left:0px;animation-delay:0.05s;"></i><i class="c" style="left:23px;"></i><i class="c e" style="left:46px;animation-delay:0.20s;"></i><i class="c jl" style="left:69px;"></i><i class="slot" style="left:92px"></i><i class="c jr" style="left:115px;"></i><i class="c e" style="left:138px;animation-delay:0.35s;"></i><span class="cw"><i class="ln" style="left:100px;height:45px"></i><i class="hd" style="left:92px;top:2px"></i></span><i class="ans" style="left:91px;top:9px"></i><i class="sl" style="left:119px;top:10px;width:10px"></i><i class="sl" style="left:121px;top:16px;width:7px"></i><i class="sl" style="left:118px;top:22px;width:11px"></i><i class="sk" style="left:77px;top:2px">✦</i><i class="sk" style="left:85px;top:-6px;font-size:7px">✦</i></button><div class="tools"><button class="pill" id="snd" aria-label="Sound"></button><button class="pill" id="cam" aria-label="Photo mode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13.5" r="3.5"/></svg></button><button class="pill" id="lang" aria-label="Language">ع</button></div></div>
  <div id="menu"><p class="sub">Loading… If nothing else shows up, this viewer isn't running the game. Open it in Safari or Chrome instead of a file preview.<br><br>لو مفيش حاجة ظهرت، افتح الملف في Safari أو Chrome بدل المعاينة.</p></div>
  <div id="game" style="display:none;width:100%;flex-direction:column;align-items:center">
   <div class="meta"><span id="rn"></span><span class="streak" id="stk"></span></div>
@@ -292,6 +398,7 @@ html.noglass .tools,html.noglass .top>.pill,html.noglass #sheet{background:var(-
   <div class="bar"><button class="btn" id="undo"></button><button class="btn" id="skip"></button></div>
  </div>
 </div>
+<nav id="dock"></nav>
 <input type="file" id="file" accept="image/*" style="display:none">
 <div id="sheet" role="dialog"><div id="sbadge" aria-hidden="true"></div><div id="st"></div><p id="sp"></p><div class="row" id="sb"></div></div>
 <canvas id="fx"></canvas>
@@ -356,7 +463,9 @@ var TX={
   chSame:"Same questions, no undo. Can you beat it?",play:"▶ Play",heroPlay:"Play",tDuel:"Duel",tCats:"Categories",tCatsSub:function(n){return n+" groups"},tMp:"Multiplayer",tMpSub:"2 to 8 players",chPlayed:function(s,k){return"You already played this challenge and got "+s+"/"+k+". Each challenge can be played once."},chBad:"This challenge link doesn't work with this version of the game.",
   chRound:function(a,b,s){return"🔗 Round "+a+"/"+b+" · Score "+s},chDone:"✅ Challenge done!",chYou:function(s,k){return"You got "+s+"/"+k+". Send the link and see if your friends can beat it."},
   chWin:"🏆 You win!",chLose:"😬 You lost!",chDraw:"🤝 Draw!",vs:function(s,b,x,k){return"You "+s+"/"+k+" · "+x+" "+b+"/"+k},
-  share:"🔗 Send challenge",shareBack:"🔗 Send your score",copied:"Link copied!",msg:function(s,k){return"I got "+s+"/"+k+" on Shelhom! Can you beat me? 🔥"}},
+  share:"🔗 Send challenge",shareBack:"🔗 Send your score",copied:"Link copied!",msg:function(s,k){return"I got "+s+"/"+k+" on Shelhom! Can you beat me? 🔥"},
+  tHome:"Home",dyBadge:function(n){return"Daily · #"+n},dyTitle:"Daily round",dySub:"Same round for everyone",dyDone:"Done for today!",dyShare:"Share",dyRn:function(n){return"Daily round #"+n},
+  dyNext:function(h,m){return"Next round in "+(h?h+"h "+m+"m":m+"m")},dyMsg:function(n){return"Shelhom daily round #"+n},dyStreak:function(n){return"🔥 "+n+(n==="1"?" day":" days")+" in a row"}},
  ar:{updReady:"فيه نسخة جديدة",updBtn:"حدّث",offSave:function(m){return"احفظ كل الصور عشان تلعب من غير نت ("+m+" ميجا)"},offBusy:function(p){return"بنحفظ الصور… "+p+"٪"},offDone:"الصور محفوظة وتقدر تلعب من غير نت",offFail:"فيه صور ماتحفظتش. دوس تاني وانت على النت.",title:"شيلهم",tag:"شيل كل الكروت وسيب الإجابة الصح",streak:"ورا بعض",best:"أحسن رقم",rounds:function(n){return n+" جولات"},solved:function(s,n){return"حليت "+s+" من "+n},complete:"★ خلّصتها",
   hint:"الكارت اللي بتشيله بيتقلب ويوريك إجابته، ودوس عليه تاني عشان ترجعه. دوس 📷 جوه أي جولة وبعدين على أي مربع عشان تحط صورة من عندك.",
   round:function(a,b){return"جولة "+a+"/"+b},photo:"وضع الصور: دوس على أي مربع",nailed:"جبتها!",wrong:"لأ، مش دي!",left:function(n){return"فاضل تشيل "+n},all:"شيل الكل وسيب واحد بس",
@@ -375,7 +484,9 @@ var TX={
   chSame:"نفس الأسئلة ومن غير رجوع. تقدر تكسب؟",play:"▶ يلا",heroPlay:"يلا نلعب",tDuel:"ده ولا ده",tCats:"الأقسام",tCatsSub:function(n){return n+" مجموعات"},tMp:"مع صحابك",tMpSub:"من 2 لـ 8 لاعيبة",chPlayed:function(s,k){return"إنت لعبت التحدي ده قبل كده وجبت "+s+" من "+k+". كل تحدي بيتلعب مرة واحدة بس."},chBad:"لينك التحدي ده مش شغال مع النسخة دي من اللعبة.",
   chRound:function(a,b,s){return"🔗 جولة "+a+"/"+b+" · النتيجة "+s},chDone:"✅ خلصت التحدي!",chYou:function(s,k){return"جبت "+s+" من "+k+". ابعت اللينك وشوف صحابك هيعدّوك ولا لأ."},
   chWin:"🏆 كسبت!",chLose:"😬 خسرت!",chDraw:"🤝 تعادل!",vs:function(s,b,x,k){return"إنت "+s+" · "+x+" "+b+" (من "+k+")"},
-  share:"🔗 ابعت التحدي",shareBack:"🔗 ابعت نتيجتك",copied:"اتنسخ اللينك!",msg:function(s,k){return"جبت "+s+" من "+k+" في شيلهم! تقدر تعدّيني؟ 🔥"}}};
+  share:"🔗 ابعت التحدي",shareBack:"🔗 ابعت نتيجتك",copied:"اتنسخ اللينك!",msg:function(s,k){return"جبت "+s+" من "+k+" في شيلهم! تقدر تعدّيني؟ 🔥"},
+  tHome:"الرئيسية",dyBadge:function(n){return"رقم "+n},dyTitle:"سؤال اليوم",dySub:"سؤال جديد كل يوم، هو هو لكل صحابك",dyDone:"جاوبت النهارده!",dyShare:"شارك",dyRn:function(n){return"سؤال اليوم رقم "+n},
+  dyNext:function(h,m){var hs=h===1?"ساعة":h===2?"ساعتين":h<=10?h+" ساعات":h+" ساعة",ms=m===1?"دقيقة":m===2?"دقيقتين":m<=10?m+" دقايق":m+" دقيقة";return"السؤال الجاي بعد "+(h?hs:ms)},dyMsg:function(n){return"شيلهم - سؤال اليوم رقم "+n},dyStreak:function(n){return"🔥 "+n+" يوم ورا بعض"}}};
 
 var START=50,UNDO=30,WIN=10;
 var $=function(i){return document.getElementById(i)};
@@ -535,6 +646,40 @@ function hotPick(i,x){var p=hPl[hTurn];out.push(i);flipNow=[i];
 // --- challenge links: play up to 10 rounds, then send a link; whoever opens it gets the same rounds with the same card order ---
 // A link names its rounds by a short hash of their key, so adding rounds to the game later doesn't change old links.
 var CH=null;
+// Daily round: one round a day, the same round (and card order) for everyone. Days change at midnight Cairo time; #1 is 19 Oct 2026.
+// DY (saved as elim_daily): d = last day played, r = that day's taps (1 = knocked out a wrong card, 0 = hit the answer), w = won it,
+// s = days won in a row, lw = last day won, b = best run, base = the run before today's round started (leaving midway counts as a loss).
+var DY=ld("elim_daily",{});if(!DY||typeof DY!=="object")DY={};var DAY0=Date.UTC(2026,9,19);
+function cairo(){var d=new Date();try{var p={};new Intl.DateTimeFormat("en-US",{timeZone:"Africa/Cairo",year:"numeric",month:"numeric",day:"numeric",hour:"numeric",minute:"numeric",hourCycle:"h23"}).formatToParts(d).forEach(function(x){if(x.type!=="literal")p[x.type]=+x.value});if(p.year)return p}catch(e){}
+ return{year:d.getFullYear(),month:d.getMonth()+1,day:d.getDate(),hour:d.getHours(),minute:d.getMinutes()}}
+function dayNo(){var p=cairo();return Math.round((Date.UTC(p.year,p.month-1,p.day)-DAY0)/864e5)+1}
+function dayLeft(){var p=cairo(),m=24*60-((p.hour%24)*60+p.minute);return[Math.floor(m/60),m%60]}
+// every round in a fixed shuffled order, one per day, so nothing repeats until all have been played
+function dailyRound(d){var deck=shuffle(ALL.slice().sort(function(a,b){return a.key<b.key?-1:a.key>b.key?1:0}),rng(20261019)),k=(d-1)%deck.length;return deck[k<0?k+deck.length:k]}
+function dyPlayed(){return DY.d===dayNo()&&DY.done}
+function dyStreak(){return DY.lw>=dayNo()-1||dyPlayed()?DY.s|0:0}
+function dySave(){sv("elim_daily",DY)}
+function dailyGo(){var d=dayNo();if(dyPlayed())return;mode="daily";
+ DY.base=DY.lw===d-1||DY.lw===d?DY.s|0:0;DY.d=d;DY.r=[];DY.w=false;DY.done=true;DY.s=0;dySave();
+ cur=mk(dailyRound(d));loadPhotos(cur.items);start()}
+function dailyPick(i,x){out.push(i);flipNow=[i];DY.r.push(i===corr?0:1);
+ if(i===corr){over="lose";dySave();render();shake();sfx.lose();sh(function(){return[t("lost"),t("knocked")(nm(x)+" ("+fmt(x)+")"),dyBtns()]},450)}
+ else if(items.length-out.length===1){over="win";flipNow=[corr];DY.w=true;DY.s=(DY.base|0)+1;DY.lw=DY.d;DY.b=Math.max(DY.b|0,DY.s);coins+=WIN;save();dySave();
+  render();sfx.win();confetti();bump();floatTxt("+"+n(WIN));sh(function(){return[t("won"),t("coins")(n(WIN))+" · "+t("dyStreak")(n(DY.s)),dyBtns()]},600)}
+ else{dySave();render();sfx.elim(out.length)}}
+function dyBtns(){return[[t("dyShare"),dyShare,""],[t("menu"),menu,"y"]]}
+function dyShare(){var m=t("dyMsg")(n(DY.d))+"\n"+(DY.r||[]).map(function(v){return v?"🟩":"🟥"}).join("")+(dyStreak()?"\n🔥 "+n(dyStreak()):"")+"\n"+location.origin+location.pathname;
+ if(navigator.share)navigator.share({text:m}).catch(function(){});else open("https://wa.me/?text="+encodeURIComponent(m),"_blank")}
+function dyCard(){var d=dayNo(),done=dyPlayed(),fl=IC.flame,tr=IC.trophy,share='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>';
+ var art='<span class="art" aria-hidden="true"><span class="back"></span><span class="pg"><i></i><i></i><b>'+(done?"✓":"?")+'</b></span><span class="sp a">✦</span><span class="sp b">✦</span><span class="sp c">✦</span></span>';
+ var st=chip(fl,dyStreak(),t("streak"))+chip(tr,DY.b|0,t("best"));
+ if(!done)return '<button class="cat dcard" data-c="dy"><span class="stars"></span><span class="toprow"><span class="eb"><span class="dot"></span>'+t("dyBadge")(n(d))+'</span></span><span class="dt">'+t("dyTitle")+'</span><span class="ds">'+t("dySub")+'</span><span class="chips">'+st+"</span>"+art+"</button>";
+ var lf=dayLeft();return '<div class="cat dcard done"><span class="stars"></span><span class="toprow"><span class="eb">'+t("dyBadge")(n(d))+'</span><span class="dg">'+(DY.r||[]).map(function(v){return v?"<i></i>":'<i class="x"></i>'}).join("")+'</span></span>'+
+  '<span class="dt">'+t("dyDone")+'</span><span class="ds" data-dleft>'+t("dyNext")(lf[0],lf[1])+'</span><span class="row">'+st+'<button class="shr" data-dshare>'+share+t("dyShare")+"</button></span>"+art+"</div>"}
+function chip(ic,v,l){return '<span class="chip" aria-label="'+esc(l)+" "+v+'">'+ic+n(v)+"</span>"}
+// keep the countdown right while Home stays open, and show the new round when the day changes
+var DYDAY=dayNo();setInterval(function(){if(document.body.dataset.scr!=="home")return;var d=dayNo();if(d!==DYDAY){DYDAY=d;if(!shF)menu();return}
+ var e=document.querySelector("[data-dleft]");if(e){var lf=dayLeft();e.textContent=t("dyNext")(lf[0],lf[1])}},30000);
 function hk(s){var h=2166136261;for(var i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}return(h>>>0).toString(36)}
 var BYH={};ALL.forEach(function(r){var k=hk(r.key);if(BYH[k])console.warn("Round hash clash:",r.key);BYH[k]=r});
 // mulberry32: a small seeded random number generator
@@ -628,6 +773,7 @@ function svg(d,c){return '<svg class="i'+(c?" "+c:"")+'" viewBox="0 0 24 24" ari
 var IC={back:svg('<path d="M15 5l-7 7 7 7"/>',"flipx"),chev:svg('<path d="M9 5l7 7-7 7"/>',"flipx chev"),play:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5z"/></svg>',
  duel:svg('<path d="M13 2.5L4.5 13.5h6.5l-1 8 8.5-11h-6.5z"/>'),
  cats:svg('<rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><rect x="13" y="13" width="7" height="7" rx="2"/>'),
+ home:svg('<path d="M4 10.5L12 4l8 6.5V20a1 1 0 0 1-1 1h-4.5v-6h-5v6H5a1 1 0 0 1-1-1z"/>'),
  users:svg('<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.6 3.2-5.5 6.5-5.5s5.9 1.9 6.5 5.5"/><path d="M16 4.8a3.5 3.5 0 0 1 0 6.4M18 14.8c2 .7 3.2 2.4 3.5 5.2"/>'),
  flame:'<svg class="i fl" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M12 2.5c1.2 3.6 5.5 5.6 5.5 10.6a5.5 5.5 0 0 1-11 0c0-2.4 1.1-4 2.5-5.1.2 1.7 1.1 2.8 2.4 3.2.3-3.4-.5-6.1.6-8.7z"/></svg>',
  trophy:svg('<path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8.5 20h7"/>',"md"),
@@ -668,13 +814,9 @@ function menu(){hide();edit=false;cur=null;$("game").style.display="none";$("men
  scr(g||["d","h","c","cats","mp"].indexOf(GRP)>=0||GRP==="cr"&&CH?"menu":"home");
  $("menu").innerHTML=GRP==="d"?duelPage():GRP==="h"?hotPage():GRP==="c"?chalPage():GRP==="cr"&&CH?chalInvite():GRP==="cats"?catsPage():GRP==="mp"?mpPage():g?ghead('<span class="se" style="--c:'+GC[GRP]+'">'+g.e+"</span>",L==="ar"?g.a:g.n)+
    '<div class="subs">'+subs.map(function(x){var rs=subRounds(x[0]);return card("sc",'data-s="'+x[0]+'"',x[1],L==="ar"?x[3]:x[2],t("rounds")(n(rs.length)),solved(rs),rs.length,GC[GRP])}).join("")+"</div>":
-  '<div class="brand"><img src="icons/icon-192.png" alt=""><div><h1>'+t("title")+"</h1><p>"+t("tag")+"</p></div></div>"+
-  '<div class="stats"><div><b>'+IC.flame+'<span class="streak">'+n(streak)+"</span></b><small>"+t("streak")+"</small></div><div><b>"+IC.trophy+n(best)+"</b><small>"+t("best")+"</small></div></div>"+
   '<div class="seg">'+["eg","w","all"].map(function(m){return '<button data-reg="'+m+'"'+(REG===m?' class="on"':"")+">"+t("reg_"+m)+"</button>"}).join("")+"</div>"+
-  '<button class="cat hero" data-c="e"><small class="eb">'+t("endless")+'</small><span class="ht"><i>'+IC.play+"</i>"+t("heroPlay")+"</span><small>"+t("endlessSub")+'</small><span class="hb">'+IC.trophy+n(eBest[REG]||0)+'</span><span class="hgrid" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><b></b></span></button>'+
-  '<div class="hubs">'+hub("d",IC.duel,t("tDuel"),t("best")+" "+n(dBest[REG]||0))+hub("cats",IC.cats,t("tCats"),t("tCatsSub")(n(GROUPS.filter(function(g){return grpSubs(g).length}).length)))+
-   hub("mp",IC.users,t("tMp"),t("tMpSub"))+"</div>"+
-  '<div class="tip">'+IC.info+"<span>"+t("hint")+"</span></div>"+offRow();scrollTo(0,0)}
+  '<button class="cat hero" data-c="e"><small class="eb">'+t("endless")+'</small><span class="ht"><i>'+IC.play+"</i>"+t("heroPlay")+"</span><small>"+t("endlessSub")+'</small><span class="chips">'+chip(IC.flame,streak,t("streak"))+chip(IC.trophy,eBest[REG]||0,t("best"))+'</span><span class="hgrid" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><b></b></span></button>'+
+  dyCard()+offRow();dockSet();if(!CLAWED){CLAWED=1;clawGo()}scrollTo(0,0)}
 // Photos download one by one as cards need them. This saves all of them on the phone for playing with no internet.
 var OFF={busy:false,txt:""};
 function phUrls(){var u={};if(window.PH)for(var k in PH)if(PH[k])u[PH[k]]=1;return Object.keys(u)}
@@ -694,6 +836,15 @@ function catsPage(){return ghead("",t("cats"))+'<div class="subs">'+GROUPS.map(f
 // Hot potato and challenge, opened from the Multiplayer tile.
 function mpPage(){var row=function(c,e,ti,sub){return '<button class="cat row" data-c="'+c+'"><span class="se">'+e+"</span><span>"+ti+"<small>"+sub+"</small></span>"+IC.chev+"</button>"};
  return ghead("",t("mp"))+'<div class="modes">'+row("h","🥔",t("hot"),t("hotSub"))+row("c",'<span style="color:#3b82f6;display:flex">'+IC.link+"</span>",t("chal"),t("chalSub"))+"</div>"}
+// the bottom dock: Home, Duel, Categories, Multiplayer; the page you're on is highlighted
+var CLAWED=0;
+function dockSet(){var on=GRP===null||GRP===undefined?"home":GRP==="d"?"d":GRP==="cats"||typeof GRP==="number"?"cats":"mp";
+ $("dock").innerHTML=[["home",IC.home,t("tHome")],["d",IC.duel,t("tDuel")],["cats",IC.cats,t("tCats")],["mp",IC.users,t("tMp")]].map(function(x){
+  return '<button data-nav="'+x[0]+'"'+(x[0]===on?' class="on" aria-current="page"':"")+'><span class="ic">'+x[1]+"</span>"+x[2]+"</button>"}).join("")}
+$("dock").onclick=function(e){var b=e.target.closest("[data-nav]");if(!b)return;sfx.tap();var v=b.dataset.nav;GRP=v==="home"?null:v;menu()};
+// the claw in the top bar plays once when Home opens, and again when tapped
+function clawGo(){var c=$("claw");if(RM)return;c.classList.remove("an");void c.offsetWidth;c.classList.add("an")}
+$("claw").onclick=function(){sfx.tap();clawGo()};
 function hub(c,e,label,sub){return '<button class="cat hub" data-c="'+c+'"><span class="se k">'+e+'</span><span class="tl">'+label+"</span><small>"+sub+"</small></button>"}
 $("menu").onclick=function(e){if(e.target.closest("[data-off]")){sfx.tap();saveOffline();return}
  var rg=e.target.closest("[data-reg]");if(rg){REG=rg.dataset.reg;eRecent=[];save();sfx.tap();menu();return}
@@ -702,7 +853,9 @@ $("menu").onclick=function(e){if(e.target.closest("[data-off]")){sfx.tap();saveO
  var pd=e.target.closest("[data-pdel]");if(pd){HP.splice(+pd.dataset.pdel,1);sv("elim_players",HP);sfx.tap();menu();return}
  if(e.target.closest("[data-cplay]")){sfx.tap();chalGo();return}
  if(e.target.closest("[data-cshare]")){sfx.tap();CH.score=CHD[chKey()]||0;chalShare();return}
- var b=e.target.closest(".cat");if(!b)return;sfx.tap();
+ if(e.target.closest("[data-dshare]")){sfx.tap();dyShare();return}
+ var b=e.target.closest(".cat");if(!b||b.classList.contains("done"))return;sfx.tap();
+ if(b.dataset.c==="dy"){GRP=null;dailyGo();return}
  if(b.dataset.g){GRP=+b.dataset.g;menu();return}
  if(["d","h","c","cats","mp"].indexOf(b.dataset.c)>=0){GRP=b.dataset.c;menu();return}
  if(b.dataset.hc!==undefined){hotStart(b.dataset.hc||null);return}
@@ -719,14 +872,14 @@ function newRound(){cur=mode==="end"?endlessRound():mk(PL[ri]);if(mode==="cat")m
 // cards slide in one after another when a new board appears
 function deal(){var g=$("grid");g.classList.remove("deal");void g.offsetWidth;g.classList.add("deal")}
 function start(){hide();scr("game");$("menu").style.display="none";$("game").style.display="flex";
- items=shuffle(cur.items,mode==="chal"&&rng(CH.seed+CH.i));out=[];hist=[];peek=[];flipNow=[];over=false;
+ items=shuffle(cur.items,mode==="chal"?rng(CH.seed+CH.i):mode==="daily"&&rng(DY.d*7919+1));out=[];hist=[];peek=[];flipNow=[];over=false;
  var v=items.map(function(x){return x.d[1]});corr=v.indexOf(cur.best==="min"?Math.min.apply(0,v):Math.max.apply(0,v));
  render();deal();scrollTo(0,0)}
 function tileBg(h){return"background:linear-gradient(150deg,hsl("+h+",58%,60%),hsl("+(h+18)+",52%,40%))"}
-function render(){if(mode==="duel")return duelRender();var mp=mode==="hot"||mode==="chal";
+function render(){if(mode==="duel")return duelRender();var mp=mode==="hot"||mode==="chal"||mode==="daily";
  $("grid").className="grid";$("undo").style.display=mp?"none":"";var left=items.length-out.length,qq=L==="ar"?cur.qa:cur.q;
  $("rn").textContent=mode==="end"?t("endless")+" · "+t("score")(n(eScore)):mode==="hot"?"🥔 "+t("hRound")(n(hRn))+" · "+t("pLeft")(n(alive().length)):
-  mode==="chal"?t("chRound")(n(CH.i+1),n(CH.list.length),n(CH.score)):SUB[1]+" "+t("round")(n(ri+1),n(PL.length))+(prog[key(cur.r)]?" ★":"");
+  mode==="chal"?t("chRound")(n(CH.i+1),n(CH.list.length),n(CH.score)):mode==="daily"?t("dyRn")(n(DY.d)):SUB[1]+" "+t("round")(n(ri+1),n(PL.length))+(prog[key(cur.r)]?" ★":"");
  $("pl").style.display=mode==="hot"?"flex":"none";
  if(mode==="hot")$("pl").innerHTML=hPl.map(function(p,i){return '<span class="'+(p.out?"ko":i===hTurn&&!over?"now":"")+'">'+esc(p.n)+"</span>"}).join("");
  $("q1").textContent=qq[0];$("q2").textContent=qq[1];$("q3").textContent=qq[2];
@@ -752,6 +905,7 @@ $("grid").onclick=function(e){var c=e.target.closest(".cell");if(!c)return;var i
  if(over)return;
  if(mode==="hot"){hotPick(i,x);return}
  if(mode==="chal"){chalPick(i,x);return}
+ if(mode==="daily"){dailyPick(i,x);return}
  out.push(i);hist.push(i);flipNow=[i];
  if(i===corr){over="lose";lostStreak=streak;streak=0;save();render();shake();sfx.lose();
   sh(function(){var b=[[mode==="end"?t("newRun"):t("moveOn"),nxt,"y"]],msg=t("knocked")(nm(x)+" ("+fmt(x)+")");if(canUndo())b.unshift([t("undoBtn")(n(UNDO)),undo,""]);
@@ -790,6 +944,7 @@ function undo(){if(!canUndo())return;if(over==="lose"&&mode==="end")eUndo=true;c
 $("undo").onclick=undo;
 function nxt(){if(mode==="hot"){if(alive().length<2)hotStart(HCAT);else hotRound();return}
  if(mode==="chal"){chalNext();return}
+ if(mode==="daily"){menu();return}
  if(mode==="end"){if(over!=="win"){eScore=0;eUndo=false;streak=0;save()}newRound();return}
  if(!over){streak=0;save()}ri++;if(ri>=PL.length)summary();else newRound()}
 function summary(){var k=PL.length,s=solved(PL);cur=null;
@@ -797,7 +952,7 @@ function summary(){var k=PL.length,s=solved(PL);cur=null;
   [[t("replay"),function(){PL=subOrder(SUB[0]);ri=0;runOk=0;newRound()},""],[t("menu"),menu,"y"]]]},0);if(runOk===k){confetti();sfx.win()}}
 $("skip").onclick=function(){sfx.tap();nxt()};// Home asks first when leaving would throw away a game in progress
 function atRisk(){if(!inGame()||!cur)return false;
- return mode==="hot"?alive().length>1:mode==="chal"?true:mode==="end"?over!=="lose"&&(eScore>0||out.length>0):mode==="duel"?over!=="lose"&&dScore>0:false}
+ return mode==="hot"?alive().length>1:mode==="chal"?true:mode==="daily"?!over:mode==="end"?over!=="lose"&&(eScore>0||out.length>0):mode==="duel"?over!=="lose"&&dScore>0:false}
 $("home").onclick=function(){if($("menu").style.display==="flex")GRP=null;
  if(atRisk()){var back=shF&&shF.leave?null:shF;var f=function(){return[t("leaveQ"),t("leaveTxt"),[[t("stay"),function(){if(back)sh(back,0);else{hide();if(mode==="duel"&&over==="win")duelNext(items[corr])}},"y"],[t("leave"),menu,""]]]};f.leave=1;sh(f,0);return}
  menu()};

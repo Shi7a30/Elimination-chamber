@@ -25,7 +25,8 @@ Each round shows a question and **9 photo cards**, for example "OLDEST MOVIE STA
 | Win a round | +10 coins, plus a streak bonus of 2 × streak (max +10) |
 | Undo the last elimination | costs 30 coins. You can undo after a loss to save your streak |
 | Skip a round | free (category mode) |
-| Streak 🔥 and best streak 🏅 | shown in the header |
+| Streak 🔥 and best 🏆 | shown on the Play card (and the daily round has its own) |
+| Daily round | one round a day, the same for everyone (changes at midnight Cairo time), one try, own streak and best, shareable result squares |
 | Per-round progress | "x/y solved" per subcategory, ★ COMPLETE when all are solved |
 
 Everything is saved in the browser's `localStorage`: coins, streaks, best scores, progress, language, your own photos and cached Wikipedia photos.
@@ -141,7 +142,7 @@ Every card shows a photo. It comes from the first source that has one:
   ```
 - **Menu:** the `GROUPS` array (group emoji, English/Arabic names, subcategories with id, emoji and names).
 - **Text:** a `TX` object with `en` and `ar` strings, including functions for plurals and numbers. Arabic numbers are formatted for Arabic.
-- **Persistence:** `localStorage` keys `elim_coins, elim_streak, elim_best, elim_endless, elim_duel, elim_prog, elim_img, elim_wiki, elim_lang`.
+- **Persistence:** `localStorage` keys `elim_coins, elim_streak, elim_best, elim_endless, elim_duel, elim_prog, elim_img, elim_wiki, elim_lang, elim_daily`.
 - **Testing:** headless Playwright scripts (kept outside the repo) cover:
   - full play-throughs of every round (in both languages and all regions)
   - mobile layout and overflow

@@ -3,7 +3,7 @@ const {PAGE,shot,PNG,finish}=require('./lib');
 (async()=>{const b=await chromium.launch();const ctx=await b.newContext({...devices['iPhone SE']});const p=await ctx.newPage();
 const errs=[];p.on('pageerror',e=>errs.push(e.message));p.on('console',m=>{if(m.type()==='warning'||m.type()==='error')errs.push(m.text())});await p.route('https://**',r=>r.abort());
 await p.goto(PAGE);
-await p.tap('.cat[data-c="d"]');await p.waitForTimeout(200);
+await p.tap('[data-nav="d"]');await p.waitForTimeout(200);
 const cards=await p.$$eval('[data-dc]',e=>e.map(x=>x.dataset.dc));console.log('duel page cards',cards.length,cards.join(','));
 await p.screenshot({path:shot('dpage.png'),fullPage:true});
 const over=await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth);console.log('overflow',over);const problems=[over&&'duel page scrolls sideways'];
@@ -18,7 +18,7 @@ for(const reg of ['all','eg','w']){
  console.log(reg,JSON.stringify(res));for(const k in res)if(res[k])problems.push(reg+' '+k+': '+res[k]+' bad turns');}
 await p.evaluate(()=>{REG='all';DCAT=null;GRP=null;menu()});
 // play via UI: open singers, win one, lose, check best saved per category and menu returns to duel page
-await p.tap('.cat[data-c="d"]');await p.tap('[data-dc="singers"]');await p.waitForTimeout(300);
+await p.tap('[data-nav="d"]');await p.tap('[data-dc="singers"]');await p.waitForTimeout(300);
 console.log('header',await p.textContent('#rn'));
 let c=await p.evaluate(()=>corr);await p.tap(`.cell[data-i="${c}"]`);await p.waitForTimeout(1700);
 c=await p.evaluate(()=>corr);await p.tap(`.cell[data-i="${1-c}"]`);await p.waitForTimeout(900);
@@ -27,6 +27,6 @@ await p.click('#sb .btn:not(.y)');await p.waitForTimeout(200);
 console.log('back on duel page',await p.$$eval('[data-dc]',e=>e.length)>0, await p.textContent('[data-dc="singers"]'));
 await p.screenshot({path:shot('dpage2.png')});
 await p.tap('[data-back]');console.log('home',await p.$$eval('[data-c]',e=>e.length));
-await p.click('#lang');await p.tap('.cat[data-c="d"]');await p.screenshot({path:shot('dpage_ar.png'),fullPage:true});
+await p.click('#lang');await p.tap('[data-nav="d"]');await p.screenshot({path:shot('dpage_ar.png'),fullPage:true});
 await p.tap('[data-dc=""]');await p.waitForTimeout(200);console.log('ar header',await p.textContent('#rn'));
 await b.close();finish('duel categories',[...problems,...errs])})();
