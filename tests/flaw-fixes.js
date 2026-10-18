@@ -11,7 +11,7 @@ const winRound=()=>p.evaluate(()=>{for(let i=0;i<items.length;i++)if(i!==corr&&o
 const toMenu=async()=>{await p.evaluate(()=>{GRP=null;menu()})};
 await p.goto(PAGE);await p.waitForTimeout(400);
 // photos are deferred and still arrive
-ok(await p.$$eval('script[src^="photos/"]',e=>e.every(s=>s.defer)&&e.length===4),'photo scripts are not deferred');
+ok(await p.$$eval('script[src^="photos/"]',e=>e.every(s=>s.defer)&&e.length===1),'photo scripts are not deferred');
 ok(await p.evaluate(()=>Object.keys(window.PH||{}).length>1000&&PHok),'photos did not load');
 // 1. duel: lose, switch language -> the popup is still there, in Arabic
 await p.tap('.cat[data-c="d"]');await p.tap('.cat[data-dc=""]');await p.evaluate(()=>document.querySelector('.cell[data-i="'+(1-corr)+'"]').click());await p.waitForTimeout(1000);

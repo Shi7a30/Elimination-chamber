@@ -95,7 +95,7 @@ Food & Drinks and Childhood & Nostalgia are Egyptian-only, so they only show in 
 
 Every card shows a photo. It comes from the first source that has one:
 1. Your own photo (📷)
-2. The **built-in set** (1,046 photos as WebP data in `photos/p1–p4.js`, about 6.3 MB). This keeps the page itself small (~135 KB) so shared links load fast.
+2. The **built-in set**: one small WebP file per photo in `photos/img/` (about 2,400 files, ~10 MB in all), listed by card name in `photos/index.js`. A photo downloads only when a card needs it, and the phone keeps it. The home screen has a "Save all photos for playing offline" button that downloads the rest.
 3. A live Wikipedia lookup when online
 4. If there's nothing, a **letter tile**
 
@@ -113,7 +113,7 @@ Every card shows a photo. It comes from the first source that has one:
   - It looks up English Wikipedia, Arabic Wikipedia, Wikidata image/logo/poster, other Wikipedias' lead images (which often use posters/covers), Commons search, and extra search phrases (`q`).
   - It saves 200×200 JPEG data to `tools/photos.json` and writes a report saying which source each photo came from.
   - Items marked `review` get up to 16 candidates in `photo-candidates.json` so a person can pick the right one and save it as `url`.
-- `tools/embed_photos.py` converts everything to WebP and writes `photos/p1–p4.js`.
+- `tools/embed_photos.py` converts everything to WebP and writes `photos/img/<hash>.webp` plus `photos/index.js`. Files are named by a hash of the picture, so two cards with the same picture share one file and a changed photo gets a new name.
 
 ### Known gaps (v26)
 - About 57 cards still use letter tiles. They are mostly Egyptian brands, radio stations, and a few shows: Bakkar, Sabe' Gar, Yehia w Kenooz, Ismailia Rayeh Gai, Sayedati El Gameela, Ezzay.
@@ -127,8 +127,10 @@ Every card shows a photo. It comes from the first source that has one:
 
 ## 5. Technical architecture (current)
 
-- **One file:** `index.html` (~135 KB) holds the HTML, CSS and vanilla JavaScript (no framework, no build step). It also holds all the round data.
-- **Photo files:** `photos/p1.js … p4.js` each do `Object.assign(window.PH = window.PH || {}, {...})`.
+- **Page:** `index.html` holds the HTML, CSS and vanilla JavaScript (no framework, no build step).
+- **Rounds:** one file per category in `rounds/` (`01-egyptian-football.js` …), each doing `CATS.push({...})`. index.html loads them in number order. To add a category, add a file and run `python3 tools/split_rounds.py`, which refreshes the script tags in index.html and the offline file list in `sw.js`.
+- **Photo files:** `photos/index.js` sets `window.PH` (card name → `photos/img/<hash>.webp`).
+- **Updates:** publishing stamps `sw.js` with the commit, so an open app learns about a new version and shows a "New version ready · Update" banner.
 - **Round format:**
   ```js
   Rd([en question], [ar question], "min"|"max", items, options)
@@ -146,7 +148,7 @@ Every card shows a photo. It comes from the first source that has one:
   - duel rules: no repeated pairs, category picks
   - "mixed year" labels and the duplicate-photo guard
   - a check that no Wikipedia calls are needed when the built-in photos are present
-- **Publishing:** the page plus `photos/p1–p4.js` are published to the artifact URL above.
+- **Publishing:** the page, `rounds/` and `photos/` are published to GitHub Pages on every merge to main.
 
 ---
 
