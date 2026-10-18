@@ -182,7 +182,7 @@ CATS.push(
   ["Al-Wafd",1984,"الوفد","Al-Wafd (newspaper)"],["Al-Dostour",1995,"الدستور","Al-Dustour (Egypt)"],["Al-Masry Al-Youm",2004,"المصري اليوم"],
   ["Youm7",2008,"اليوم السابع"],["Al-Shorouk",2009,"الشروق","Al-Shorouk (Egypt)"],["El-Watan",2012,"الوطن","El Watan (Egypt)"]],
   {h:"newspaper",k:["FIRST ISSUE","أول عدد سنة"],dt:["First issue","أول عدد"],g:"y",s:"brands",m:"eg"}),
- Rd(["WHICH EGYPTIAN SATELLITE","LAUNCHED LAST",Q],["أنهي قمر صناعي مصري","أحدث",QA],"max",[
+ Rd(["WHICH EGYPTIAN SATELLITE","LAUNCHED LAST",Q],["أنهي قمر صناعي مصري","أجدد",QA],"max",[
   ["Nilesat 101",1998,"نايل سات 101"],["Nilesat 102",2000,"نايل سات 102"],["EgyptSat 1",2007,"إيجيبت سات 1"],
   ["Nilesat 201",2010,"نايل سات 201"],["EgyptSat 2",2014,"إيجيبت سات 2"],["EgyptSat-A",2019,"إيجيبت سات إيه"],
   ["Tiba-1",2019,"طيبة 1"],["Nilesat 301",2022,"نايل سات 301"],["MisrSat 2",2023,"مصر سات 2"]],

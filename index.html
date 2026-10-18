@@ -426,7 +426,7 @@ function markSeen(r){var id=r.s,sn=SEEN[id]||(SEEN[id]=[]);if(sn.indexOf(key(r))
  if(sn.length>=subRounds(id).length)SEEN[id]=[];sv("elim_seen",SEEN)}
 function pool(g,rs){var seen={},p=[];(rs||rounds()).forEach(function(r){if(r.g===g)r.items.forEach(function(d){if(!seen[d[0]]){seen[d[0]]=1;p.push({d:d,r:r})}})});return p}
 var GQ={p:{min:[["WHO IS THE","OLDEST",Q],["مين","الأكبر في السن",QA]],max:[["WHO IS THE","YOUNGEST",Q],["مين","الأصغر في السن",QA]]},
- y:{min:[["WHAT CAME","FIRST",Q],["أنهي","حاجة أقدم واحدة",QA]],max:[["WHAT IS THE","NEWEST",Q],["أنهي","حاجة أحدث واحدة",QA]]}};
+ y:{min:[["WHAT CAME","FIRST",Q],["أنهي","أقدم",QA]],max:[["WHAT IS THE","NEWEST",Q],["أنهي","أجدد",QA]]}};
 function mix(){for(var k=0;k<300;k++){var g=Math.random()<.5?"p":"y",b=Math.random()<.5?"min":"max",P=pool(g),pick=shuffle(P).slice(0,9);if(P.length<9||dupPhoto(pick))continue;var
   v=pick.map(function(x){return x.d[1]}),e=b==="min"?Math.min.apply(0,v):Math.max.apply(0,v);
   if(v.filter(function(x){return x===e}).length===1)return{q:GQ[g][b][0],qa:GQ[g][b][1],best:b,items:pick}}}
@@ -439,7 +439,7 @@ function endlessRound(id){var m=!id&&Math.random()<.5&&mix();if(m)return m;
 // A run sticks to one question (an endless pool or one round). The right answer stays and faces a new card;
 // when nothing left can beat it, the run moves on to a new question.
 var DQ={p:{min:[["WHO IS","OLDER?",""],["مين","الأكبر في السن؟",""]],max:[["WHO IS","YOUNGER?",""],["مين","الأصغر في السن؟",""]]},
- y:{min:[["WHICH CAME","FIRST?",""],["أنهي","أقدم؟",""]],max:[["WHICH IS","NEWER?",""],["أنهي","أحدث؟",""]]}};
+ y:{min:[["WHICH CAME","FIRST?",""],["أنهي","أقدم؟",""]],max:[["WHICH IS","NEWER?",""],["أنهي","أجدد؟",""]]}};
 var dScore=0,dNew=false,dSrc=null,dUsed={},dAsked={},dPairs={},dSlot=0,dPick=-1,dTok=0,dSwap=false;
 function dRounds(){return DCAT?subRounds(DCAT):rounds()}
 function dList(s){return s.g?pool(s.g,dRounds()):mk(s.r).items}

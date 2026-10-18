@@ -71,7 +71,7 @@ CATS.push(
   ["India",1947,"الهند"],["Libya",1951,"ليبيا"],["Morocco",1956,"المغرب"],
   ["Kuwait",1961,"الكويت"],["Algeria",1962,"الجزائر"],["UAE",1971,"الإمارات","United Arab Emirates"]],
   {h:"country flag",k:["INDEPENDENCE","استقلت سنة"],dt:["Independence", "الاستقلال"],g:"y",s:"history",m:"w"}),
- Rd(["WHICH SPACE MOMENT","HAPPENED LAST",Q],["أنهي حدث في الفضاء","أحدث",QA],"max",[
+ Rd(["WHICH SPACE MOMENT","HAPPENED LAST",Q],["أنهي حدث في الفضاء","أجدد",QA],"max",[
   ["Sputnik launched",1957,"إطلاق سبوتنيك","Sputnik 1"],["Gagarin, first man in space",1961,"جاجارين أول إنسان في الفضاء","Yuri Gagarin"],["Tereshkova, first woman in space",1963,"تيريشكوفا أول ست في الفضاء","Valentina Tereshkova"],
   ["Voyager 1 launched",1977,"إطلاق فوياجر 1","Voyager 1"],["First Space Shuttle flight",1981,"أول رحلة لمكوك الفضاء","STS-1"],["Hubble launched",1990,"إطلاق تلسكوب هابل","Hubble Space Telescope"],
   ["First ISS module launched",1998,"أول جزء من محطة الفضاء الدولية","Zarya"],["First photo of a black hole",2019,"أول صورة لثقب أسود","Event Horizon Telescope"],["James Webb launched",2021,"إطلاق تلسكوب جيمس ويب","James Webb Space Telescope"]],

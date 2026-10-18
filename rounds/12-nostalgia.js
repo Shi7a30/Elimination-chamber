@@ -162,7 +162,7 @@ CATS.push(
   ["Commodore 64",1982,"كومودور 64"],["ZX Spectrum",1982,"سبكتروم"],["Macintosh",1984,"ماكنتوش","Macintosh 128K"],
   ["Amiga",1985,"أميجا"],["Pentium PC",1993,"بنتيوم","Pentium (original)"],["iMac",1998,"آي ماك","iMac G3"]],
   {h:"computer",k:["CAME OUT","نزل سنة"],g:"y",dt:["Released","النزول"],s:"zaman",m:"eg"}),
- Rd(["WHICH MOMENT WE ALL REMEMBER","HAPPENED LAST",Q],["أنهي لحظة كلنا فاكرينها","أحدث",QA],"max",[
+ Rd(["WHICH MOMENT WE ALL REMEMBER","HAPPENED LAST",Q],["أنهي لحظة كلنا فاكرينها","أجدد",QA],"max",[
   ["Egypt at the 1990 World Cup",1990,"مصر في كاس العالم 90","1990 FIFA World Cup"],["The 1992 Cairo earthquake",1992,"زلزال 92","1992 Cairo earthquake"],["Egypt wins AFCON at home",2006,"مصر تكسب أمم أفريقيا في القاهرة","2006 Africa Cup of Nations"],
   ["Obama's Cairo speech",2009,"خطاب أوباما في جامعة القاهرة","A New Beginning (speech)"],["New Suez Canal",2015,"قناة السويس الجديدة"],["Salah joins Liverpool",2017,"صلاح يروح ليفربول","Mohamed Salah"],
   ["Egypt at the 2018 World Cup",2018,"مصر في كاس العالم 2018","2018 FIFA World Cup"],["Egypt hosts AFCON 2019",2019,"مصر تنظم أمم أفريقيا 2019","2019 Africa Cup of Nations"],["The Pharaohs' Golden Parade",2021,"موكب المومياوات","Pharaohs' Golden Parade"]],
@@ -172,7 +172,7 @@ CATS.push(
   ["Old Cataract",1899,"كتاراكت أسوان","Old Cataract Hotel"],["Semiramis",1907,"سميراميس","Semiramis InterContinental Hotel"],["Cecil Hotel",1929,"فندق سيسيل","Cecil Hotel (Alexandria)"],
   ["Nile Hilton",1959,"النيل هيلتون","Nile Ritz-Carlton"],["Four Seasons Nile Plaza",2004,"فور سيزونز النيل","Four Seasons Hotel Cairo at Nile Plaza"],["St. Regis Cairo",2019,"سانت ريجيس القاهرة","St. Regis Cairo"]],
   {h:"hotel in Egypt",k:["OPENED","اتفتح سنة"],s:"zaman",m:"eg"}),
- Rd(["WHICH TREND","WENT VIRAL LAST",Q],["أنهي تريند","أحدث",QA],"max",[
+ Rd(["WHICH TREND","WENT VIRAL LAST",Q],["أنهي تريند","أجدد",QA],"max",[
   ["Macarena",1996,"الماكارينا","Macarena (song)"],["Planking",2011,"البلانكينج","Planking (fad)"],["Gangnam Style",2012,"جانجنام ستايل"],
   ["Harlem Shake",2013,"هارلم شيك","Harlem Shake (meme)"],["Ice Bucket Challenge",2014,"تحدي التلج"],["The Dab",2015,"الداب","Dab (dance)"],
   ["Mannequin Challenge",2016,"تحدي المانيكان"],["Fidget spinner",2017,"السبينر"],["Kiki Challenge",2018,"تحدي كيكي","In My Feelings"]],
