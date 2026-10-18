@@ -18,11 +18,12 @@ PROPS = {"born": "P569", "died": "P570", "founded": "P571", "released": "P577", 
 def api(url=API, **p):
     p.setdefault("action", "query")
     p.update(format="json", formatversion=2)
-    for i in range(4):
+    for i in range(6):
+        time.sleep(0.5)
         r = S.get(url, params=p, timeout=30)
         if r.ok:
             return r.json()
-        time.sleep(2 ** i)
+        time.sleep(int(r.headers.get("Retry-After") or 0) or 5 * 2 ** i)
     r.raise_for_status()
 
 
@@ -44,7 +45,7 @@ def years(claims, prop):
 
 
 res = {}
-for x in json.load(open("tools/fact-lookup.json", encoding="utf-8")):
+def look(x):
     r = {}
     p = page(x.get("title") or x["name"])
     if not p:
@@ -65,7 +66,14 @@ for x in json.load(open("tools/fact-lookup.json", encoding="utf-8")):
                 if y:
                     r[k] = y
             r["ar"] = (e.get("sitelinks", {}).get("arwiki") or {}).get("title") or (e.get("labels", {}).get("ar") or {}).get("value")
-    res[x["name"]] = r
-    print(x["name"], r, flush=True)
+    return r
+
+
+for x in json.load(open("tools/fact-lookup.json", encoding="utf-8")):
+    try:
+        res[x["name"]] = look(x)
+    except Exception as e:  # keep going; one bad item shouldn't lose the rest
+        res[x["name"]] = {"error": str(e)[:200]}
+    print(x["name"], res[x["name"]], flush=True)
 
 json.dump(res, open("tools/fact-lookup-out.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
