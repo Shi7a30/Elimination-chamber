@@ -18,11 +18,14 @@
  --g:#1fa95a;--g2:#29c46c;--r:#e5484d;--o:#f0801a;
  --sh1:0 1px 2px rgba(22,22,26,.05),0 3px 10px -3px rgba(22,22,26,.10);--sh2:0 2px 6px rgba(22,22,26,.06),0 16px 34px -12px rgba(22,22,26,.22);
  --r1:12px;--r2:18px;--r3:24px;
+ --glass:rgba(255,255,255,.58);--glass2:rgba(255,255,255,.74);--glasshi:inset 0 1px 0 rgba(255,255,255,.95),inset 0 0 0 1px rgba(255,255,255,.55);
  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e0e11;--surf:#19191e;--surf2:#232329;--fg:#f3f3f5;--mut:#9e9ea8;--line:#2a2a31;--edge:#060608;--qbg:#1f1f25;
- --sh1:0 1px 2px rgba(0,0,0,.5),0 3px 10px -3px rgba(0,0,0,.45);--sh2:0 2px 6px rgba(0,0,0,.4),0 16px 34px -12px rgba(0,0,0,.7)}}
+ --sh1:0 1px 2px rgba(0,0,0,.5),0 3px 10px -3px rgba(0,0,0,.45);--sh2:0 2px 6px rgba(0,0,0,.4),0 16px 34px -12px rgba(0,0,0,.7);
+ --glass:rgba(38,38,44,.55);--glass2:rgba(28,28,34,.74);--glasshi:inset 0 1px 0 rgba(255,255,255,.14),inset 0 0 0 1px rgba(255,255,255,.07)}}
 :root[data-theme="dark"]{--bg:#0e0e11;--surf:#19191e;--surf2:#232329;--fg:#f3f3f5;--mut:#9e9ea8;--line:#2a2a31;--edge:#060608;--qbg:#1f1f25;
- --sh1:0 1px 2px rgba(0,0,0,.5),0 3px 10px -3px rgba(0,0,0,.45);--sh2:0 2px 6px rgba(0,0,0,.4),0 16px 34px -12px rgba(0,0,0,.7)}
+ --sh1:0 1px 2px rgba(0,0,0,.5),0 3px 10px -3px rgba(0,0,0,.45);--sh2:0 2px 6px rgba(0,0,0,.4),0 16px 34px -12px rgba(0,0,0,.7);
+ --glass:rgba(38,38,44,.55);--glass2:rgba(28,28,34,.74);--glasshi:inset 0 1px 0 rgba(255,255,255,.14),inset 0 0 0 1px rgba(255,255,255,.07)}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:"Rubik",system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:500;display:flex;justify-content:center;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 html[lang=ar] body{font-family:"Cairo","Rubik",system-ui,-apple-system,"Segoe UI",sans-serif}
@@ -233,6 +236,20 @@ html[data-theme=dark] .qcard{box-shadow:inset 0 0 0 1px var(--line),var(--sh2)}
 #sheet .btn{flex:1;max-width:240px;font-size:16px;padding:12px 14px}
 .float{position:fixed;z-index:6;pointer-events:none;font-size:20px;font-weight:800;color:#d9a800;text-shadow:0 2px 0 var(--bg);animation:rise 1.1s forwards}
 #fx{position:fixed;inset:0;pointer-events:none;z-index:7}
+
+/* --- liquid glass: the floating top bar and the popup are frosted, so the game shows through blurred.
+   Solid fallback where blur isn't supported, when the phone asks for less transparency, or on low-end phones (.noglass). --- */
+.top{position:sticky;top:0;z-index:4;padding:8px 0 14px;margin:-8px 0 -6px}
+/* content scrolling under the bar fades out, so text never shows through the gaps between the buttons */
+.top::before{content:"";position:absolute;inset:0 -16px;z-index:-1;pointer-events:none;background:linear-gradient(var(--bg) 35%,color-mix(in srgb,var(--bg) 60%,transparent) 70%,transparent)}
+.tools,.top>.pill{background:var(--glass);-webkit-backdrop-filter:blur(18px) saturate(1.8);backdrop-filter:blur(18px) saturate(1.8);box-shadow:var(--glasshi),0 8px 24px -10px rgba(0,0,0,.3)}
+.tools .pill{background:none;box-shadow:none}
+.tools .pill.on{background:var(--y)}
+#sheet{background:var(--glass2);-webkit-backdrop-filter:blur(28px) saturate(1.8);backdrop-filter:blur(28px) saturate(1.8);box-shadow:var(--glasshi),0 -18px 50px rgba(0,0,0,.22)}
+#sheet p{color:var(--fg);opacity:.72}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.tools,.top>.pill,#sheet{background:var(--surf)}}
+@media (prefers-reduced-transparency:reduce){.tools,.top>.pill,#sheet{background:var(--surf);-webkit-backdrop-filter:none;backdrop-filter:none}}
+html.noglass .tools,html.noglass .top>.pill,html.noglass #sheet{background:var(--surf);-webkit-backdrop-filter:none;backdrop-filter:none}
 
 /* --- motion --- */
 @keyframes pop{0%{transform:scale(.4);opacity:0}60%{transform:scale(1.12);opacity:1}100%{transform:scale(1)}}
@@ -1960,6 +1977,7 @@ var TX={
 var START=50,UNDO=30,WIN=10;
 var $=function(i){return document.getElementById(i)};
 var RM=matchMedia("(prefers-reduced-motion:reduce)").matches;
+if((navigator.deviceMemory&&navigator.deviceMemory<=2)||(navigator.hardwareConcurrency&&navigator.hardwareConcurrency<=4&&/Android/.test(navigator.userAgent)))document.documentElement.classList.add("noglass");
 var coins=START,streak=0,best=0,eBest={},dBest={},REG="all",prog={},mute=false,IM={},WK={},L="en";
 // GRP = the menu page that is open (null = home, a number = a category group, "cats" = all groups, "mp" = multiplayer, "d" = the duel page). DCAT = the duel's subcategory (null = everything). mode "cat" plays the rounds in PL (one subcategory, SUB) in order; "end" is endless mode. cur = the round being played.
 // REG = region filter for everything: "eg" Egyptian rounds, "w" international, "all" both.
