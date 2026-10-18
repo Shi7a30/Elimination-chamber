@@ -4,7 +4,7 @@ Automated checks that open the game in a headless Chromium browser, play it, and
 
 ## Setup (once)
 
-You need [Node.js](https://nodejs.org) 18 or newer. In the folder that holds `index.html`, `photos/`, `tests/` and `package.json`, run:
+You need [Node.js](https://nodejs.org) 18 or newer. In the folder that holds `index.html`, `rounds/`, `photos/`, `tests/` and `package.json`, run:
 
 ```bash
 npm install
@@ -29,7 +29,7 @@ Screenshots (phone layouts, Arabic screens, duel pages…) are saved in `tests/s
 |---|---|
 | `data-check.js` | Every round has 9 cards and exactly one right answer. The same item never has two different values in the endless-mode pools. No console errors. |
 | `regions.js` | Egypt / World / Both show the right subcategories. Food & Drinks and Childhood & Nostalgia are Egypt-only. |
-| `pwa.js` | The installable app: serves the folder over http, checks the manifest and icons, waits for the service worker, then goes offline and reloads to confirm the game still starts with its built-in photos. |
+| `pwa.js` | The installable app: serves the folder over http, checks the manifest and icons, waits for the service worker, checks photos download one by one as rounds need them, saves all photos for offline, publishes a pretend new version to check the "New version ready" banner, then goes offline and reloads to confirm the game still starts and shows photos. |
 | `mobile.js` | iPhone 13, Pixel 7 and iPhone SE: home, group page and game screen have no sideways scrolling, 9 tiles show, and tapping eliminates a card. With JavaScript off, a message shows. |
 | `duel.js` | Duel (ده ولا ده) over 900 simulated runs: always 2 different cards, the right answer is correct, the region filter holds, and the kept card stays in place. Also plays through the UI in English and Arabic. |
 | `duel-categories.js` | Duel limited to each subcategory and region only uses that subcategory's cards. Best runs are saved per category, and the duel page works in Arabic. |

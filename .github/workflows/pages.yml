@@ -32,7 +32,9 @@ jobs:
       - name: Collect the game files
         run: |
           mkdir _site
-          cp -r index.html manifest.webmanifest sw.js photos icons _site/
+          cp -r index.html manifest.webmanifest sw.js rounds photos icons _site/
+          sed -i "s/'shelhom-dev'/'shelhom-${GITHUB_SHA::7}'/" _site/sw.js
+          grep -q "shelhom-${GITHUB_SHA::7}" _site/sw.js
       - uses: actions/upload-pages-artifact@v3
       - id: deployment
         uses: actions/deploy-pages@v4
