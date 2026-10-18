@@ -5,5 +5,5 @@ await pg.route('https://**',r=>r.abort());await pg.goto(PAGE);
 const seen={},problems=[];for(const r of ['eg','w','all']){await pg.click(`[data-reg="${r}"]`);await pg.click('.cat[data-c="cats"]');await pg.waitForTimeout(300);
  const t=await pg.evaluate(()=>[...document.querySelectorAll('.cat.sc')].filter(e=>e.offsetParent).map(e=>e.textContent.trim().slice(0,22)).join(','));
  console.log(r,':',t);seen[r]=t;await pg.click('[data-back]')}
-if(/FOOD|NOSTALGI/.test(seen.w))problems.push('Egypt-only groups show in World');if(!/FOOD/.test(seen.eg)||!/FOOD/.test(seen.all))problems.push('Food & Drinks missing from Egypt or Both');
+if(/FOOD|NOSTALGI/i.test(seen.w))problems.push('Egypt-only groups show in World');if(!/FOOD/i.test(seen.eg)||!/FOOD/i.test(seen.all))problems.push('Food & Drinks missing from Egypt or Both');
 await b.close();finish('regions',problems)})();
