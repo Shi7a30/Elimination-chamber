@@ -23381,7 +23381,8 @@
   "ar": "قلب الأسد",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_23dff8ae2839011b746b641d35dff1832b4fe0f138bc7fd075ecbb76e0d00761.jpg"
  },
  {
   "name": "Ta3lab el sa7ra",
@@ -23399,7 +23400,8 @@
   "ar": "عنخ آمون",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_b480b2c1386669e63f1e6f4c369574b8bbf4f08d442bff6f2d2eeb8ff0cb13ae.jpg"
  },
  {
   "name": "Wakel el gaw",
@@ -23408,7 +23410,8 @@
   "ar": "واكل الجو",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_aa370e3edc567ffd5ee9ecf56ca510c7b4c28ab22059d4cb95d8d8e4e4db9b1c.jpg"
  },
  {
   "name": "Ta7t el ard",
@@ -23417,7 +23420,8 @@
   "ar": "تحت الأرض",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_b8e8273abeaf00e47bf025d5225d5c85bb939f63ce65ee3c7327b64f5ac49a18.jpg"
  },
  {
   "name": "Ta7t el sefr",
@@ -23426,7 +23430,8 @@
   "ar": "تحت الصفر",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_5c210abebc2b9692d9fe6ae6f7411dbfac1daa91956bc74034f7e4f1690cd690.jpg"
  },
  {
   "name": "Magnoon rasmy",
@@ -23435,7 +23440,8 @@
   "ar": "مجنون رسمي",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_9e283adb4779e9e2e15969501d8bdd525f3cc3bece45a904932421ccab522b5f.jpg"
  },
  {
   "name": "Movie star",
@@ -23444,7 +23450,8 @@
   "ar": "موفي ستار",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_d4ca5b72f42a8e959c37a55b692ea5b410e29ce58575b6be33047e8033e39817.jpg"
  },
  {
   "name": "Gab men el akher",
@@ -23453,7 +23460,8 @@
   "ar": "جاب من الآخر",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://upload.wikimedia.org/wikipedia/ar/0/0c/%D9%85%D9%84%D8%B5%D9%82_%D8%B1%D8%A7%D9%85%D8%B2_%D8%AC%D8%A7%D8%A8_%D9%85%D9%86_%D8%A7%D9%84%D8%A2%D8%AE%D8%B1.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "A7lam el fata el tayer",
@@ -23462,7 +23470,8 @@
   "ar": "أحلام الفتى الطائر",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://upload.wikimedia.org/wikipedia/ar/7/73/%D9%85%D9%84%D8%B5%D9%82_%D9%85%D8%B3%D9%84%D8%B3%D9%84_%D8%A3%D8%AD%D9%84%D8%A7%D9%85_%D8%A7%D9%84%D9%81%D8%AA%D9%89_%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D8%B1.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Fer2et nagy 3atallah",
@@ -23471,7 +23480,8 @@
   "ar": "فرقة ناجي عطا الله",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_8d12230b5588ca132ea80f19f3051ac2a4497041efb9693ce4c87635c0e9e646.jpg"
  },
  {
   "name": "El 3arraf",
@@ -23489,7 +23499,8 @@
   "ar": "صاحب السعادة",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_5313f4c9cf42eb28f12e738adf6abaa610f0d2bfdde1a4025abf0f1167ec2b1a.jpg"
  },
  {
   "name": "Ostaz w ra2ees 2esm",
@@ -23498,7 +23509,8 @@
   "ar": "أستاذ ورئيس قسم",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://m.media-amazon.com/images/M/MV5BYzdiNzQ4ZjItYjM2ZC00MDgxLTljZWEtZThkMjQzZGFlY2JlXkEyXkFqcGc@._V1_SX600.jpg"
  },
  {
   "name": "Ma2moun w shorakah",
@@ -23507,7 +23519,8 @@
   "ar": "مأمون وشركاه",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_780c2ccfeadf7d2a1e8940007b8ff46c179c8e5ca8ad4c8fa659fccdf9cbb61f.jpg"
  },
  {
   "name": "3afareet 3adly 3allam",
@@ -23516,7 +23529,8 @@
   "ar": "عفاريت عدلي علام",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://upload.wikimedia.org/wikipedia/ar/2/23/%D8%B9%D9%81%D8%A7%D8%B1%D9%8A%D8%AA_%D8%B9%D8%AF%D9%84%D9%8A_%D8%B9%D9%84%D8%A7%D9%85_%28%D9%85%D8%B3%D9%84%D8%B3%D9%84%29.jpeg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "3awalem khafeya",
@@ -23525,7 +23539,8 @@
   "ar": "عوالم خفية",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://m.media-amazon.com/images/M/MV5BNzY4NTZjYTQtMWMwZS00YTQ3LTg1OTctMDBhODY3YjVhOWQ5XkEyXkFqcGc@._V1_SX600.jpg"
  },
  {
   "name": "Valentino",
@@ -23543,7 +23558,8 @@
   "ar": "أوبرا عايدة",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://m.media-amazon.com/images/M/MV5BMWU1NzJiNGUtYTM2Ni00MzE2LTliMDAtOWNkMTc0NTFlYjc1XkEyXkFqcGc@._V1_SX600.jpg"
  },
  {
   "name": "El layl w akhro",
@@ -23561,7 +23577,8 @@
   "ar": "شيخ العرب همام",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://m.media-amazon.com/images/M/MV5BMzllMjNiNTItOGVmMy00Y2EwLWI0YWUtYmI1YWQ5YzRkYjNlXkEyXkFqcGc@._V1_SX600.jpg"
  },
  {
   "name": "Dahsha",
@@ -23570,7 +23587,8 @@
   "ar": "دهشة",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://m.media-amazon.com/images/M/MV5BMTgwNDljMTQtNDY3Yi00YWQwLWEwOWYtOTg1ZGE3MGZkOWM3XkEyXkFqcGc@._V1_SX600.jpg"
  },
  {
   "name": "Wanoos",
@@ -23588,7 +23606,8 @@
   "ar": "نجيب زاهي زركش",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://m.media-amazon.com/images/M/MV5BY2RlZTM5MWMtYmNiOC00YmU0LThjMmEtMjM3NDk3ZjMyNDRmXkEyXkFqcGc@._V1_SX600.jpg"
  },
  {
   "name": "Sanaa Gamil",
@@ -23786,7 +23805,8 @@
   "ar": "حب",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/22/16/f9/2216f906-08c4-17de-49eb-415286e907e8/2004_Tamer_Hosny_-_7ob.jpg/600x600bb.jpg"
  },
  {
   "name": "Ya bent el eih",
@@ -23795,7 +23815,8 @@
   "ar": "يا بنت الإيه",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/9c/55/2a/9c552aeb-ecb1-3899-2555-8897b3c11f18/2007_Tamer_Hosny_-_Ya_Bent_El_Eih.jpg/600x600bb.jpg"
  },
  {
   "name": "2arrab kaman",
@@ -23813,7 +23834,8 @@
   "ar": "هعيش حياتي",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/45febe2bd44fe71b8d710a5dce9979ca/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Ekhtart sa7",
@@ -23831,7 +23853,8 @@
   "ar": "اللي جاي أحلى",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/96f3096dc1c9ddd7e9fe20ab6c576f5a/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Ba7ebak enta",
@@ -23840,7 +23863,8 @@
   "ar": "بحبك انت",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/37fef5ebbeace173381a50ed73cbd44e/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "3omry ebtada",
@@ -23849,7 +23873,8 @@
   "ar": "عمري ابتدا",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/75/ab/23/75ab2366-988c-2b27-875c-f73cadcfdc31/artwork.jpg/600x600bb.jpg"
  },
  {
   "name": "Khaleek folazy",
@@ -23858,7 +23883,8 @@
   "ar": "خليك فولاذي",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/ccdcaddeabd6495ec1d069b276e86aa1/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Shokolata",
@@ -23867,7 +23893,8 @@
   "ar": "شيكولاتة",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/9b/58/53/9b58538b-84cf-417f-dc0b-f11abfccf013/Chocalata.jpg/600x600bb.jpg"
  },
  {
   "name": "Meshwar",
@@ -23885,7 +23912,8 @@
   "ar": "افتح قلبك",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/c6/21/12/c6211246-e88a-1225-59f1-66dcafb05fdc/Eftah_Albak.jpg/600x600bb.jpg"
  },
  {
   "name": "El far7a",
@@ -23903,7 +23931,8 @@
   "ar": "في عشق البنات",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/a19b974a2bd1e224186bca01c6537ccb/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "A7mar shafayef",
@@ -23912,7 +23941,8 @@
   "ar": "أحمر شفايف",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/ae362b8940ca271e8bba977d632d37e2/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Embare7 kan 3omry 3eshreen",
@@ -23921,7 +23951,8 @@
   "ar": "امبارح كان عمري عشرين",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/4b/2a/14/4b2a14cf-d4a1-f5ed-6697-a474c3169f62/6223002482917.jpg/600x600bb.jpg"
  },
  {
   "name": "Ta3m el beyout",
@@ -23930,7 +23961,8 @@
   "ar": "طعم البيوت",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/5081bb03ccd78336cb4e8a23020c27d8/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Watan",
@@ -23939,7 +23971,8 @@
   "ar": "وطن",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/9e/97/93/9e9793c1-f8ec-cbbc-43c7-c2339e4d0cfa/970821.jpg/600x600bb.jpg"
  },
  {
   "name": "Khallina ne3eesh",
@@ -23948,7 +23981,8 @@
   "ar": "خلينا نعيش",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ed/ff/59/edff597c-89fb-2207-9116-48127a7bc84c/cover.jpg/600x600bb.jpg"
  },
  {
   "name": "Ya ana ya enta",
@@ -23957,7 +23991,8 @@
   "ar": "يا أنا يا انت",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/b8/c9/cf/b8c9cf2e-0d73-41d7-4209-ceb450676495/Ya_Ana_Ya_Enta.jpg/600x600bb.jpg"
  },
  {
   "name": "Kheles el kalam",
@@ -23966,7 +24001,8 @@
   "ar": "خلص الكلام",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/8a/60/d9/8a60d981-e43c-4909-9d4e-3d3979cbb5d1/cover.jpg/600x600bb.jpg"
  },
  {
   "name": "Ba7ebak kol youm aktar",
@@ -23975,7 +24011,8 @@
   "ar": "بحبك كل يوم أكتر",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/6704875967573e4c919daaf08fc8fe93/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "7aga mesh tabe3eya",
@@ -23984,7 +24021,8 @@
   "ar": "حاجة مش طبيعية",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/27/55/ae/2755ae4f-8ef6-2d90-a42c-719522e582bb/cover.jpg/600x600bb.jpg"
  },
  {
   "name": "Men 2alby baghanny",
@@ -23993,7 +24031,8 @@
   "ar": "من قلبي بغني",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/1a/0c/5e/1a0c5e8c-ea1a-c8db-1f78-c83027f4d187/6225000108424.jpg/600x600bb.jpg"
  },
  {
   "name": "3omro ma yegheeb",
@@ -24002,7 +24041,8 @@
   "ar": "عمره ما يغيب",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music5/v4/48/61/56/486156e8-4a2c-0891-660d-e70b46f39d44/479118.jpg/600x600bb.jpg"
  },
  {
   "name": "Kol youm men dah",
@@ -24011,7 +24051,8 @@
   "ar": "كل يوم من ده",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/72298f4386165a980530aa1e247a4451/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Ya fatenny",
@@ -24020,7 +24061,8 @@
   "ar": "يا فاتني",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b0/08/97/b008972e-503f-45c0-aab9-2146ede56d8e/886449715237.jpg/600x600bb.jpg"
  },
  {
   "name": "Lazem a3eesh",
@@ -24029,7 +24071,8 @@
   "ar": "لازم أعيش",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/21/1d/df/211ddf6f-33b6-95bb-7f25-3df64c78f297/2005_Shirene_-_Lazem_A3ish.jpg/600x600bb.jpg"
  },
  {
   "name": "Tamer w shereen",
@@ -24038,7 +24081,8 @@
   "ar": "تامر وشيرين",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/95/3a/e1/953ae14d-95b6-d584-c86a-ebc2d6f72f2c/2002_Free_Mix_3.jpg/600x600bb.jpg"
  },
  {
   "name": "7abeit",
@@ -24056,7 +24100,8 @@
   "ar": "اسأل عليا",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/8fca60b97953fce32e14b01f1dac1ca8/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Ana keteer",
@@ -24065,7 +24110,8 @@
   "ar": "أنا كتير",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/666b8f396bf03ed6dc55468a9c8d1627/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Tare2y",
@@ -24074,7 +24120,8 @@
   "ar": "طريقي",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/806fef0e21253cd1594534f4f3801b62/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Nassay",
@@ -24083,7 +24130,8 @@
   "ar": "نساي",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/9d/7e/42/9d7e42a4-bb6a-17a3-8545-d7f3a75a3fdf/942835.jpg/600x600bb.jpg"
  },
  {
   "name": "Batmanna ansak",
@@ -24092,7 +24140,8 @@
   "ar": "بتمنى أنساك",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9c/67/43/9c674335-db66-d51b-9a5c-87ac07672b64/196873292007.jpg/600x600bb.jpg"
  },
  {
   "name": "We7yat 2alby",
@@ -24101,7 +24150,8 @@
   "ar": "وحياة قلبي",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music32/v4/df/74/ed/df74ed93-68ff-90e6-6d99-7200c8940308/mzm.sbvendlm.jpg/600x600bb.jpg"
  },
  {
   "name": "2olly 7aga",
@@ -24110,7 +24160,8 @@
   "ar": "قولي حاجة",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/4d5818861146b7a236d4625dbb5061ec/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "7aga ghareeba",
@@ -24119,7 +24170,8 @@
   "ar": "حاجة غريبة",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music62/v4/70/25/64/702564a4-3e9e-9169-daad-739c99892ad1/mzm.gbaftlgg.jpg/600x600bb.jpg"
  },
  {
   "name": "Gabbar",
@@ -24128,7 +24180,8 @@
   "ar": "جبار",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/41874120366fe1e89fb05bc8db930bab/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Balash 3etab",
@@ -24137,7 +24190,8 @@
   "ar": "بلاش عتاب",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/ea/a9/9f/eaa99f3d-2ce9-29cf-78a0-5bff4cb7c205/dj.cfrzbmun.jpg/600x600bb.jpg"
  },
  {
   "name": "Gana el hawa",
@@ -24146,7 +24200,8 @@
   "ar": "جانا الهوى",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/8b/04/60/8b04606f-2993-6202-9df4-dc3ee305a065/dj.ojgvcnul.jpg/600x600bb.jpg"
  },
  {
   "name": "El hawa hawaya",
@@ -24155,7 +24210,8 @@
   "ar": "الهوى هوايا",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/98/26/4a/98264ae4-aaa1-65c6-f9fc-a7097f4c9812/dj.seqlcdtq.jpg/600x600bb.jpg"
  },
  {
   "name": "A7dan el 7abayeb",
@@ -24164,7 +24220,8 @@
   "ar": "أحضان الحبايب",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/caeccd26977c36bb9dbb5b0d9206c3b8/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Khaled Abol Naga",
