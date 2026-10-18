@@ -1676,7 +1676,8 @@
   "ar": "دعاء الكروان",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_c9d00c3b595f65b58d10cacf2aca229df2b8ec0baa8ffabf1515a5d343d7d16d.jpg"
  },
  {
   "name": "Watch Out for Zouzou",
@@ -1704,11 +1705,12 @@
   "ar": "إسماعيلية رايح جاي",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "إسماعيلية رايح جاي",
    "Ismailia Rayeh Gai 1997"
-  ]
+  ],
+  "url": "https://m.media-amazon.com/images/M/MV5BZDY3YTBiOTEtZGNhZi00MGExLTliOTMtNDJjYTdkNmVmZTNkXkEyXkFqcGc@._V1_SX600.jpg"
  },
  {
   "name": "El Limby",
@@ -1840,7 +1842,8 @@
   "q": [
    "محمد سعد ممثل",
    "Mohamed Saad actor Limby"
-  ]
+  ],
+  "url": "https://media0106.elcinema.com/uploads/_640x_2c493aba02be3769b01df2e8b82a83acb80dac30fca1019d219f5a03b182455a.jpg"
  },
  {
   "name": "Ahmed Ezz",
@@ -1968,7 +1971,8 @@
   "ar": "تيتو",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_55518da7ccb2a205c0a4909ecabdddcd3b0459f86baa44e7997c025c16e79a7d.jpg"
  },
  {
   "name": "El Gezira",
@@ -2792,7 +2796,7 @@
   "ar_hint": "مسلسل",
   "logo": false,
   "skip": false,
-  "url": "https://upload.wikimedia.org/wikipedia/ar/9/98/%D8%B9%D8%A8%D8%AF_%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86_%D8%A3%D8%A8%D9%88_%D8%B2%D9%87%D8%B1%D8%A9.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "url": "https://media0106.elcinema.com/uploads/_640x_e8a88b6bfd84ec8b72d04ddf2987569f0b7f1cb59f77ba1686c2c4e9b09edd3e.jpg",
   "q": [
    "لن أعيش في جلباب أبي",
    "نور الشريف عبد الغفور البرعي"
@@ -2809,7 +2813,8 @@
   "q": [
    "بكار (مسلسل رسوم متحركة)",
    "Bakkar cartoon"
-  ]
+  ],
+  "url": "https://m.media-amazon.com/images/M/MV5BYTBlYWIwMTUtZmZlOC00NjBiLThiZjEtYjRiMmUyNmM1MDMyXkEyXkFqcGc@._V1_SX600.jpg"
  },
  {
   "name": "El Kabeer Awy",
@@ -2843,7 +2848,7 @@
   "ar_hint": "مسلسل",
   "logo": false,
   "skip": false,
-  "url": "https://upload.wikimedia.org/wikipedia/ar/b/b1/%D9%85%D9%84%D8%B5%D9%82_%D8%A7%D9%84%D9%85%D8%B3%D9%84%D8%B3%D9%84_%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A_%D8%A7%D9%84%D8%A3%D8%B3%D8%B7%D9%88%D8%B1%D8%A9.jpeg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  "url": "https://media0106.elcinema.com/uploads/_640x_bad49d7df3667901a798a0313e5de9edd021fce3787ff3bf2edb3a1fe30bd16f.jpg"
  },
  {
   "name": "El Ikhtiyar",
@@ -2863,7 +2868,7 @@
   "ar_hint": "مسلسل",
   "logo": false,
   "skip": false,
-  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/%D9%85%D8%AD%D9%85%D8%AF_%D8%B1%D9%85%D8%B6%D8%A7%D9%86.jpg/500px-%D9%85%D8%AD%D9%85%D8%AF_%D8%B1%D9%85%D8%B6%D8%A7%D9%86.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "url": "https://media0106.elcinema.com/uploads/_640x_b4dfc17ba78a3e7f08ef8dd51c3f9162ff06e741fc7d96c8da85c9ebc931392c.jpg",
   "q": [
    "جعفر العمدة"
   ]
@@ -2958,7 +2963,7 @@
   "ar_hint": "مسلسل",
   "logo": false,
   "skip": false,
-  "url": "https://upload.wikimedia.org/wikipedia/ar/4/42/%D8%A3%D8%B1%D8%A7%D8%A8%D9%8A%D8%B3%D9%83.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "url": "https://media0106.elcinema.com/uploads/_640x_f92804c1df6d0e4b6f910f37a01cb273f634d761a94ad10d4795fce7e9559141.jpg",
   "q": [
    "أرابيسك (مسلسل)"
   ]
@@ -2970,7 +2975,8 @@
   "ar": "حديث الصباح والمساء",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_d9a45ec23a2c1ae0265fb1e545e3d59b56e619e0f0fff75ea1f1c6fd71cb8296.jpg"
  },
  {
   "name": "Ragel W Set Settat",
@@ -3014,7 +3020,8 @@
   "skip": false,
   "q": [
    "سابع جار"
-  ]
+  ],
+  "url": "https://media0106.elcinema.com/uploads/_640x_a5e723e8e79b77bc444c329fc1d6b7df84a2b78dcb53ce886395a1066570790b.jpg"
  },
  {
   "name": "Paranormal",
@@ -3437,7 +3444,8 @@
   "q": [
    "محمد فؤاد مطرب",
    "Mohamed Fouad singer"
-  ]
+  ],
+  "url": "https://media0106.elcinema.com/uploads/_640x_275a02b7e98f168b4c82518e0449cc58e027faaaff0fddeab0ac4b4b06d0ad7a.jpg"
  },
  {
   "name": "Hisham Abbas",
@@ -3495,7 +3503,8 @@
   "q": [
    "مروان بابلو",
    "Marwan Pablo rapper"
-  ]
+  ],
+  "url": "https://media0106.elcinema.com/uploads/_640x_eec59f627e78917273812e3cb6fd42a9df169dede9cf2911a746008be08101ed.jpg"
  },
  {
   "name": "Wegz",
@@ -4531,7 +4540,8 @@
   "q": [
    "لميس الحديدي",
    "Lamees Hadidi"
-  ]
+  ],
+  "url": "https://media0106.elcinema.com/uploads/_640x_d55f0b6524a4ccae5c52142fe992b6b7e1d6ec831086e0e7920cf1e2ff3d1919.jpg"
  },
  {
   "name": "Amr El-Leithy",
@@ -4553,7 +4563,8 @@
   "q": [
    "تامر أمين",
    "Tamer Amin presenter"
-  ]
+  ],
+  "url": "https://media0106.elcinema.com/uploads/_640x_17160512c39c971f3313e81aa47ac15e147ddd762b3555a2604553a88c71dc6e.jpg"
  },
  {
   "name": "Ramez Galal",
@@ -8638,11 +8649,12 @@
   "ar": "بافلو برجر",
   "ar_hint": "شركة",
   "logo": true,
-  "skip": true,
+  "skip": false,
   "q": [
    "Buffalo Burger Egypt",
    "بافلو برجر"
-  ]
+  ],
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0f/e3/da/0fe3da7d-4bc5-0d6e-cd5a-fd7081dbbe45/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/600x600bb.jpg"
  },
  {
   "name": "Zooba",
@@ -8743,11 +8755,12 @@
   "ar": "دينا فارمز",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "Dina Farms Egypt",
    "مزارع دينا"
-  ]
+  ],
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9c/13/ef/9c13efc0-376f-a564-eca0-5bf36604b976/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/600x600bb.jpg"
  },
  {
   "name": "Domty",
@@ -8784,11 +8797,12 @@
   "ar": "بيتي",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "Beyti milk Egypt",
    "بيتي لبن"
-  ]
+  ],
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/4b/c0/65/4bc06510-8d7b-8269-2560-f86a393ef3a8/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/600x600bb.jpg"
  },
  {
   "name": "Seoudi",
@@ -8825,11 +8839,12 @@
   "ar": "مترو ماركت",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "Metro Market Egypt",
    "مترو ماركت"
-  ]
+  ],
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/81/cf/38/81cf38af-a2ad-5f0d-728c-ecb582e13575/AppIcon-0-0-1x_U007emarketing-0-6-0-0-85-220.png/600x600bb.jpg"
  },
  {
   "name": "Carrefour",
@@ -8861,11 +8876,12 @@
   "ar": "جورميه",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "Gourmet Egypt supermarket",
    "جورميه مصر"
-  ]
+  ],
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d9/eb/4b/d9eb4b8b-39f4-e800-bba3-04d921bf07fb/AppIcon-0-0-1x_U007emarketing-0-7-0-sRGB-85-220.png/600x600bb.jpg"
  },
  {
   "name": "Kheir Zaman",
@@ -9087,11 +9103,12 @@
   "ar": "المالكي",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "حلواني المالكي",
    "El Malky sweets"
-  ]
+  ],
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/98/a6/84/98a68473-9667-b902-3d92-c0e8769cd418/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/600x600bb.jpg"
  },
  {
   "name": "Mandarine Koueider",
@@ -9114,11 +9131,12 @@
   "ar": "العبد",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "حلواني العبد",
    "El Abd patisserie Cairo"
-  ]
+  ],
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/41/de/f5/41def5b0-1d0c-dcd5-d5c3-bfcdb331fef3/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/600x600bb.jpg"
  },
  {
   "name": "La Poire",
@@ -9249,11 +9267,12 @@
   "ar": "أبو شقرة",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "Abou Shakra restaurant",
    "أبو شقرة مطعم"
-  ]
+  ],
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/8c/79/e3/8c79e33a-7da9-bb6f-d344-1c3f926cc4cf/AppIcon-0-1x_U007emarketing-0-7-0-0-85-220.png/600x600bb.jpg"
  },
  {
   "name": "Abou Tarek",
@@ -9346,11 +9365,12 @@
   "ar": "شريهان",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "شريهان",
    "Sherihan actress"
-  ]
+  ],
+  "url": "https://media0106.elcinema.com/uploads/_640x_c319aff8d32922e2e180c7fb0c6884a50238f18c954f79a9526bf79d2ed2f948.jpg"
  },
  {
   "name": "Sabreen",
@@ -9377,11 +9397,12 @@
   "ar": "جيهان نصر",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "جيهان نصر",
    "Gihan Nasr fawazeer"
-  ]
+  ],
+  "url": "https://media0106.elcinema.com/uploads/_640x_7d3ac1801f99541853329d84de566efb6c600617a5f1ac264af1691723d989b3.jpg"
  },
  {
   "name": "Ghada Abdel Razek",
@@ -9595,11 +9616,12 @@
   "ar": "سيدتي الجميلة",
   "ar_hint": "",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "سيدتي الجميلة مسرحية",
    "فؤاد المهندس شويكار مسرحية"
-  ]
+  ],
+  "url": "https://media0106.elcinema.com/uploads/_640x_eac9b2e93de8a8ed0b8a81cd0076bc5016f2ec5a8525f1fe8bb7ee511c0074d3.jpg"
  },
  {
   "name": "Madraset El Moshaghebeen",
@@ -9690,7 +9712,7 @@
   "q": [
    "بودي جارد (مسرحية)"
   ],
-  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Adel_Emam_%2834408206514%29.jpg/500px-Adel_Emam_%2834408206514%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  "url": "https://media0106.elcinema.com/uploads/_640x_2d7472226cb78b87a80cac98349b21d96b956d3e632fddb0d1960ea761d6989c.jpg"
  },
  {
   "name": "Abla Fadila",
@@ -9699,11 +9721,12 @@
   "ar": "أبلة فضيلة",
   "ar_hint": "ممثل",
   "logo": false,
-  "skip": true,
+  "skip": false,
   "q": [
    "أبلة فضيلة",
    "Fadila Tawfik"
-  ]
+  ],
+  "url": "https://media0106.elcinema.com/uploads/_640x_6bc975c1cffbfdccb2894b56d6cac500dabfabef9d93c9669161b27a7064483a.jpg"
  },
  {
   "name": "Abdel Rahman Abu Zahra",
@@ -11923,10 +11946,11 @@
   "name": "El Halfout",
   "title": "El Halfout",
   "hint": "Egyptian film",
-  "ar": "الحلفوت",
+  "ar": "الهلفوت",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_739116f7e3b61bcb852afeac9e2423cbfb4181f23bfd470c436c48d8770d6d76.jpg"
  },
  {
   "name": "Shams El Zanati",
@@ -11989,7 +12013,8 @@
   "ar": "حسن ومرقص",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://m.media-amazon.com/images/M/MV5BOGYyNTI0NDMtMDE1OS00YTg1LTgxYmEtZmU3Y2FlOGY1MGU0XkEyXkFqcGc@._V1_SX600.jpg"
  },
  {
   "name": "Belya wa Demagho El Alya",
@@ -11998,7 +12023,8 @@
   "ar": "بليه ودماغه العالية",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_981a7a8d8dec78006e16174aa3ff54421eebf67511ae5301c8dd4dcd21e2b241.jpg"
  },
  {
   "name": "Ga'ana El Bayan El Taly",
@@ -12052,7 +12078,8 @@
   "ar": "العزيمة",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_712e1a1068ff932511b765d05171dc13ffd306d2242fd8b22c49d968c258e318.jpg"
  },
  {
   "name": "Lak Yawm Ya Zalim",
@@ -12061,7 +12088,8 @@
   "ar": "لك يوم يا ظالم",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_7831788cfe8134a2c0141ad02ee4b631abe7a1c3d0be3cab71b7ce5359252b7f.jpg"
  },
  {
   "name": "Shabab Emraa",
@@ -12079,7 +12107,8 @@
   "ar": "رد قلبي",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_6ae590cf9d2f4b88d4023a2154320631bffcfcf1dab1e4c90787f31456ff5c59.jpg"
  },
  {
   "name": "Ana Horra",
@@ -12106,7 +12135,8 @@
   "ar": "إمبراطورية ميم",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://m.media-amazon.com/images/M/MV5BNGIyY2QyMWYtNDYzMC00YmE1LWJjNTgtOWFhMDcxZTY3NTc4XkEyXkFqcGc@._V1_SX600.jpg"
  },
  {
   "name": "Ahl El Qemma",
@@ -12151,7 +12181,8 @@
   "ar": "الأرض",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_698a16e5965a0b847d7bc46591058f63fac2b0dad359085aa413b3d067f1d5b4.jpg"
  },
  {
   "name": "Alexandria... Why?",
@@ -12214,7 +12245,8 @@
   "ar": "الحرب العالمية الثالثة",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_9ca12313bdcc3dd5ba74a45a53dcc8ff76b2acc1c94de1ae50b3376cb2bc1cb9.jpg"
  },
  {
   "name": "Hepta",
@@ -12223,7 +12255,8 @@
   "ar": "هيبتا",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_4a234cda91b737a8179228576435bfbce3e00cc182952ffc34e13a9495fa52b2.jpg"
  },
  {
   "name": "El Kenz",
@@ -12232,7 +12265,8 @@
   "ar": "الكنز",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_aa0c15b0fdfc2b1bcacfa4d52582f273e05bd056ebc7fbe78090308889259287.jpg"
  },
  {
   "name": "The Blue Elephant 2",
@@ -12259,7 +12293,8 @@
   "ar": "ولاد رزق ٣",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://core.elcinema.com/uploads/photo/file/124658456/_320x_a50f9c6c196b1f1b8ae0e533d5104b780292d6d29d932c780a6cfb8c3c4d745f.jpg"
  },
  {
   "name": "El Beh El Bawab",
@@ -12277,7 +12312,8 @@
   "ar": "كابوريا",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_ef0efb71538440b448181747481b2e9934c2c34e95299a11e9b837a8ac7fb3f0.jpg"
  },
  {
   "name": "Nasser 56",
@@ -12295,7 +12331,8 @@
   "ar": "اضحك الصورة تطلع حلوة",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://m.media-amazon.com/images/M/MV5BYjE3MWJmMmItNDFlMC00Y2NjLTg5MDgtNWU3ZmYxN2U2MTQyXkEyXkFqcGc@._V1_SX600.jpg"
  },
  {
   "name": "Ard El Khof",
@@ -12304,7 +12341,8 @@
   "ar": "أرض الخوف",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_fb64f67ee783dfd1699e159166d160e85ac8de716bd595cd4369a585ed003b8a.jpg"
  },
  {
   "name": "Ayam El Sadat",
@@ -12331,7 +12369,8 @@
   "ar": "حليم",
   "ar_hint": "فيلم",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_23bffd5a85daabef400ff1d4b2b8406d98c31019069d883633ee67e52033dda9.jpg"
  },
  {
   "name": "I Love Lucy",
@@ -12385,7 +12424,8 @@
   "ar": "نور",
   "ar_hint": "مسلسل تركي",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://m.media-amazon.com/images/M/MV5BNmY4M2E5MjMtOTM1OC00NTZlLWIwMmQtZGE3YTAxOWMzY2EzXkEyXkFqcGc@._V1_SX600.jpg"
  },
  {
   "name": "Aşk-ı Memnu",
@@ -12826,7 +12866,8 @@
   "ar": "أبنائي الأعزاء شكراً",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_cd5290c2e8d47a39d02f82e236bc945936a27f5bad90c32f53ce33cae91240fc.jpg"
  },
  {
   "name": "El Raya El Bayda",
@@ -12844,7 +12885,8 @@
   "ar": "بوابة الحلواني",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_6e43e7f15cc45a17c5a2ec6edb440931551a7b0c84cf852cdbb23271fafb503c.jpg"
  },
  {
   "name": "El Mal wal Banoun",
@@ -12853,7 +12895,8 @@
   "ar": "المال والبنون",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_10688b2a1d224a2484882781a133719872841be3274a4c40378af323d85c88b6.jpg"
  },
  {
   "name": "Zizinia",
@@ -12862,7 +12905,8 @@
   "ar": "زيزينيا",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_119649c780f3c3386ea3f3a952bbd954164b23bc0cc7751849a65f496efa7688.jpg"
  },
  {
   "name": "El Daw' El Shared",
@@ -12871,7 +12915,8 @@
   "ar": "الضوء الشارد",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://m.media-amazon.com/images/M/MV5BNGJkMTAxNGUtYjE5Ny00YmYwLTk3NTgtZTU1YWU3N2NjOWY4XkEyXkFqcGc@._V1_SX600.jpg"
  },
  {
   "name": "Ailet El Hajj Metwalli",
@@ -12880,7 +12925,8 @@
   "ar": "عائلة الحاج متولي",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_14bd887ef250f34dc50ca7b4300c160683bee1fad962143e2c98d3245c81fa11.jpg"
  },
  {
   "name": "Yetraboh Fi Ezzo",
@@ -12889,7 +12935,8 @@
   "ar": "يتربى في عزو",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_8517cf2205c4cd1b9d94312590d9beb965c59d7ddd93afb284ffee8420e30db5.jpg"
  },
  {
   "name": "Nesr El Saeed",
@@ -12916,7 +12963,8 @@
   "ar": "فاتن أمل حربي",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_f28c30c3cd71cede003709009301a9492b10f34ad3ef2b1482ee8ca4fc7c3969.jpg"
  },
  {
   "name": "Kamel El Adad",
@@ -12925,7 +12973,8 @@
   "ar": "كامل العدد",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_8ed4c7d271971bfc849b35798fdac7a862266bcea2e141ff74440948ec8618ac.jpg"
  },
  {
   "name": "Masar Egbari",
@@ -12934,7 +12983,8 @@
   "ar": "مسار إجباري",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_a5d787e54c3d429cd5acf7af2329b423cc8dba84190b577de09268bf79bfa5d2.jpg"
  },
  {
   "name": "Haqq Arab",
@@ -12943,7 +12993,8 @@
   "ar": "حق عرب",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_7f440ee076640dafa729501c9edbb1cd2428106122413c627946b12d67aa0ec9.jpg"
  },
  {
   "name": "Lam Shamseya",
@@ -12952,7 +13003,8 @@
   "ar": "لام شمسية",
   "ar_hint": "مسلسل",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_9292b3a68420ba3704d5eb3258bcef8f0a5a1985d1c5b278310905efbf9f67b5.jpg"
  },
  {
   "name": "Dina El Sherbiny",
@@ -14365,7 +14417,8 @@
   "ar": "ويين يو ويش أبون أ ستار",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/4a/ba/ff/4abaff22-f967-e6a9-98d9-cee9e4243f44/00050086084579.rgb.jpg/600x600bb.jpg"
  },
  {
   "name": "Bibbidi-Bobbidi-Boo",
@@ -14374,7 +14427,8 @@
   "ar": "بيبيدي بوبيدي بو",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/46/c9/52/46c952f3-ad17-3d9c-e66a-9dd5a46544c9/00050087323325.rgb.jpg/600x600bb.jpg"
  },
  {
   "name": "Under the Sea",
@@ -14392,7 +14446,8 @@
   "ar": "عالم جديد",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/56/99/47/56994761-ed8e-1e0b-15f9-7b649923ac42/06PNDIM00296.rgb.jpg/600x600bb.jpg"
  },
  {
   "name": "Hakuna Matata",
@@ -14410,7 +14465,8 @@
   "ar": "ألوان الريح",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b1/e5/fb/b1e5fb10-64c5-12ca-4ef1-ceb0452a450c/06PNDIM00013.rgb.jpg/600x600bb.jpg"
  },
  {
   "name": "Let It Go",
@@ -14428,7 +14484,8 @@
   "ar": "هاو فار آيل جو",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/70/69/4b/70694ba8-a93d-433c-a33b-617afef0d89d/16UMGIM75346.rgb.jpg/600x600bb.jpg"
  },
  {
   "name": "Remember Me",
@@ -14437,7 +14494,8 @@
   "ar": "ريممبر مي",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/f50ebfc15c739c4e4effee2c94bec9a8/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Oops!... I Did It Again",
@@ -14518,7 +14576,8 @@
   "ar": "لبيروت",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/20/1b/a7/201ba7cf-7c88-bdbf-a4bf-421910e8bb3f/13UAAIM00493.rgb.jpg/600x600bb.jpg"
  },
  {
   "name": "Didi",
@@ -14554,7 +14613,8 @@
   "ar": "أخاصمك آه",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/0f/83/68/0f83680e-7ffd-4f9b-ca3c-b29a4d9d9795/05099926400051.jpg/600x600bb.jpg"
  },
  {
   "name": "Ah W Noss",
@@ -14680,7 +14740,8 @@
   "ar": "أول تو ويل (١٠ دقايق)",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/c6/27/9c/c6279c07-9329-827d-31c4-f5d4c7d99ff4/21UM1IM25046.rgb.jpg/600x600bb.jpg"
  },
  {
   "name": "Free Bird",
@@ -15670,7 +15731,8 @@
   "ar": "الأميرة شارلوت",
   "ar_hint": "العيلة المالكة البريطانية",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Queen_Elizabeth_II_Platinum_Jubilee_2022_-_Platinum_Pageant_%2852124830349%29_%28cropped2%29.jpg/500px-Queen_Elizabeth_II_Platinum_Jubilee_2022_-_Platinum_Pageant_%2852124830349%29_%28cropped2%29.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
  },
  {
   "name": "Prince Louis",
@@ -18370,7 +18432,8 @@
   "ar": "سوديك",
   "ar_hint": "شركة",
   "logo": true,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f0/9b/c0/f09bc021-2177-8d4a-8a96-f35b01b068c3/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/600x600bb.jpg"
  },
  {
   "name": "Palm Hills",
@@ -18379,7 +18442,8 @@
   "ar": "بالم هيلز",
   "ar_hint": "شركة",
   "logo": true,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/35/d1/a1/35d1a145-fca1-cfdf-f82e-443218381ae3/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.jpeg/600x600bb.jpg"
  },
  {
   "name": "Al-Akhbar",
@@ -18451,7 +18515,8 @@
   "ar": "الوطن",
   "ar_hint": "جرنال",
   "logo": true,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple3/v4/78/d0/9f/78d09f5b-7774-5621-86da-e26558f5a596/pr_source.jpg/600x600bb.jpg"
  },
  {
   "name": "Nilesat 101",
@@ -18550,7 +18615,8 @@
   "ar": "شاهد",
   "ar_hint": "أبلكيشن",
   "logo": true,
-  "skip": false
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d2/42/fa/d242faad-9002-fc5e-e5e9-16a57e9d4330/AppIcon-0-0-1x_U007emarketing-0-0-0-11-0-0-85-220.png/600x600bb.jpg"
  },
  {
   "name": "Twitch",
@@ -18595,7 +18661,8 @@
   "ar": "ووتش إت",
   "ar_hint": "أبلكيشن",
   "logo": true,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/91/46/70/91467014-23be-4c2b-3972-a3ca3b8861ac/AppIcon-0-0-1x_U007emarketing-0-8-0-sRGB-85-220.png/600x600bb.jpg"
  },
  {
   "name": "HBO Max",
@@ -20755,7 +20822,8 @@
   "ar": "ديجيمون",
   "ar_hint": "أنمي",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://m.media-amazon.com/images/M/MV5BZmZjN2I2OGEtMzJkMS00Y2I2LWI0ZGQtMjExNzY0Mzk1YjEwXkEyXkFqcGc@._V1_SX600.jpg"
  },
  {
   "name": "Cartoon Network",
@@ -22897,7 +22965,8 @@
   "ar": "شريف عرفة",
   "ar_hint": "مخرج",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_b9f69ae91738a4ffddd0bc5bf32b21724c47469dc8a5913314bab29639ac46fe.jpg"
  },
  {
   "name": "Marwan Hamed",
@@ -22906,7 +22975,8 @@
   "ar": "مروان حامد",
   "ar_hint": "مخرج",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://media0106.elcinema.com/uploads/_640x_0066860b906bfd86e9653d224d57f74c0f1cf095aaf2dd0d793c88f6b4fb4c32.jpg"
  },
  {
   "name": "Tyson Gay",

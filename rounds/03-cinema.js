@@ -157,7 +157,7 @@ CATS.push(
   ["Gladiator",5,"المصارع","Gladiator (2000 film)"],["Parasite",4,"باراسايت","Parasite (2019 film)"],["The Godfather",3,"العراب"]],
   {suf:[" 🏆"," 🏆"],h:"film",k:["OSCARS WON","أوسكارات"],s:"films",m:"w"}),
  Rd(["WHICH ADEL IMAM FILM","CAME OUT FIRST",Q],["أنهي فيلم لعادل إمام","نزل الأول",QA],"min",[
-  ["Ehna Btoo El Otobees",1979,"إحنا بتوع الأتوبيس"],["El Halfout",1985,"الحلفوت"],["Shams El Zanati",1991,"شمس الزناتي"],
+  ["Ehna Btoo El Otobees",1979,"إحنا بتوع الأتوبيس"],["El Halfout",1985,"الهلفوت"],["Shams El Zanati",1991,"شمس الزناتي"],
   ["El Mansy",1993,"المنسي"],["Toyour El Zalam",1995,"طيور الظلام"],["El Noum fil Asal",1996,"النوم في العسل"],
   ["Amir El Zalam",2002,"أمير الظلام"],["El Sefara fil Emara",2005,"السفارة في العمارة","The Embassy in the Building"],["Hassan wa Morcos",2008,"حسن ومرقص","Hassan and Morcos"]],
   {h:"Egyptian film",k:["RELEASED","نزل سنة"],dt:["Film released","نزول الفيلم"],g:"y",s:"films",m:"eg"}),
