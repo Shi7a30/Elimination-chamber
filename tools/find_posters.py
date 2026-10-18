@@ -25,6 +25,7 @@ HEAD = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537
 S = requests.Session()
 S.headers.update(HEAD)
 OUT = "tools/poster-candidates.json"
+WIKI_UA = "EliminateTriviaGame/1.0 (https://github.com/shi7a30/elimination-chamber; personal use)"
 
 
 class Small:
@@ -32,7 +33,9 @@ class Small:
     headers = HEAD
 
     def get(self, url, timeout=None, **kw):
-        r = S.get(url, timeout=(5, 20), stream=True, **kw)
+        # Wikimedia asks bots to name themselves and throttles generic browser user agents
+        h = {"User-Agent": WIKI_UA} if "wiki" in url.split("/")[2] else None
+        r = S.get(url, timeout=(5, 20), stream=True, headers=h, **kw)
         r._content = r.raw.read(8_000_000, decode_content=True)
         return r
 
@@ -143,7 +146,12 @@ def sources(t):
             add("page " + page, u)
     k = t["kind"]
     if k in ("work", "person"):
-        for q in qids(t):
+        try:
+            found = qids(t)
+        except Exception as e:  # noqa: BLE001 - Wikipedia busy: still try IMDb below
+            print("  wikidata failed", t["name"], e)
+            found = []
+        for q in found:
             cl = claims(q)
             for e in cl.get("P3135", []):
                 for u in og_image("https://elcinema.com/en/work/%s/" % e):
@@ -165,6 +173,8 @@ def sources(t):
         for term in [t["name"], t.get("ar", "")]:
             for src, u in itunes(term, "software"):
                 add(src, u)
+    if t.get("pages"):  # a page picked by hand already says where the poster is
+        return c
     try:  # the Wikipedia, Wikidata and Commons candidates, after the better sources above
         x = dict(t, q=t.get("q", []), ar_hint="")
         p = F.by_titles([x]).get(t["name"])
@@ -204,6 +214,7 @@ def main():
                     print("  skip", u, type(e).__name__)
         out[t["name"]] = cands
         print(t["name"], len(cands), flush=True)
+        time.sleep(1)
         json.dump(out, open(OUT, "w"), ensure_ascii=False, indent=0)
 
 

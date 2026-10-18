@@ -5,7 +5,11 @@
 "title": "Masar Egbari",
 "ar": "مسار إجباري",
 "hint": "Egyptian TV series",
-"fix": true
+"fix": true,
+"pages": [
+"https://elcinema.com/work/2083081/"
+],
+"redo": true
 },
 {
 "name": "Lam Shamseya",
@@ -13,7 +17,11 @@
 "title": "Lam Shamseya",
 "ar": "لام شمسية",
 "hint": "Egyptian TV series",
-"fix": true
+"fix": true,
+"pages": [
+"https://elcinema.com/work/2090082/"
+],
+"redo": true
 },
 {
 "name": "Halim",
@@ -21,7 +29,11 @@
 "title": "Halim (film)",
 "ar": "حليم",
 "hint": "Egyptian film",
-"fix": true
+"fix": true,
+"pages": [
+"https://elcinema.com/work/1010307/"
+],
+"redo": true
 },
 {
 "name": "Ard El Khof",
@@ -29,7 +41,11 @@
 "title": "Land of Fear",
 "ar": "أرض الخوف",
 "hint": "Egyptian film",
-"fix": true
+"fix": true,
+"pages": [
+"https://elcinema.com/work/1010932/"
+],
+"redo": true
 },
 {
 "name": "Edhak El Sora Tetla' Helwa",
@@ -37,7 +53,11 @@
 "title": "Edhak El Sora Tetla' Helwa",
 "ar": "اضحك الصورة تطلع حلوة",
 "hint": "Egyptian film",
-"fix": true
+"fix": true,
+"pages": [
+"https://elcinema.com/work/1010166/"
+],
+"redo": true
 },
 {
 "name": "Rodda Qalbi",
@@ -45,7 +65,11 @@
 "title": "Rodda Qalbi",
 "ar": "رد قلبي",
 "hint": "Egyptian film",
-"fix": true
+"fix": true,
+"pages": [
+"https://elcinema.com/work/1009815/"
+],
+"redo": true
 },
 {
 "name": "El Kenz",
@@ -53,7 +77,11 @@
 "title": "The Treasure (2017 film)",
 "ar": "الكنز",
 "hint": "Egyptian film",
-"fix": true
+"fix": true,
+"pages": [
+"https://elcinema.com/work/2043112/"
+],
+"redo": true
 },
 {
 "name": "Lan Aish fi Gilbab Abi",
@@ -61,7 +89,11 @@
 "title": "Lan Aish fi Gilbab Abi (TV series)",
 "ar": "لن أعيش في جلباب أبي",
 "hint": "Egyptian TV series",
-"fix": true
+"fix": true,
+"pages": [
+"https://elcinema.com/work/1010312/"
+],
+"redo": true
 },
 {
 "name": "Gaafar El Omda",
@@ -69,7 +101,11 @@
 "title": "Gaafar El Omda",
 "ar": "جعفر العمدة",
 "hint": "Egyptian TV series",
-"fix": true
+"fix": true,
+"pages": [
+"https://elcinema.com/work/2077046/"
+],
+"redo": true
 },
 {
 "name": "Bawabet El Halawany",
@@ -77,7 +113,11 @@
 "title": "Bawabet El Halawany",
 "ar": "بوابة الحلواني",
 "hint": "Egyptian TV series",
-"fix": true
+"fix": true,
+"pages": [
+"https://elcinema.com/work/1011618/"
+],
+"redo": true
 },
 {
 "name": "El Mal wal Banoun",
@@ -85,7 +125,12 @@
 "title": "El Mal wal Banoun",
 "ar": "المال والبنون",
 "hint": "Egyptian TV series",
-"fix": true
+"fix": true,
+"pages": [
+"https://elcinema.com/work/1723192/",
+"https://elcinema.com/work/1276343/"
+],
+"redo": true
 },
 {
 "name": "Zizinia",
@@ -93,7 +138,11 @@
 "title": "Zizinia",
 "ar": "زيزينيا",
 "hint": "Egyptian TV series",
-"fix": true
+"fix": true,
+"pages": [
+"https://elcinema.com/work/1010857/"
+],
+"redo": true
 },
 {
 "name": "Bodyguard",
@@ -101,7 +150,11 @@
 "title": "Adel Emam",
 "ar": "بودي جارد",
 "hint": "Egyptian comedy play",
-"fix": true
+"fix": true,
+"pages": [
+"https://elcinema.com/work/1531311/"
+],
+"redo": true
 },
 {
 "name": "El Daw' El Shared",
@@ -109,7 +162,11 @@
 "title": "El Daw' El Shared",
 "ar": "الضوء الشارد",
 "hint": "Egyptian TV series",
-"fix": true
+"fix": true,
+"pages": [
+"https://elcinema.com/work/1010862/"
+],
+"redo": true
 },
 {
 "name": "Ailet El Hajj Metwalli",
@@ -117,7 +174,11 @@
 "title": "Ailet El Hajj Metwalli",
 "ar": "عائلة الحاج متولي",
 "hint": "Egyptian TV series",
-"fix": true
+"fix": true,
+"pages": [
+"https://elcinema.com/work/1028580/"
+],
+"redo": true
 },
 {
 "name": "Hassan wa Morcos",
@@ -125,7 +186,11 @@
 "title": "Hassan and Morcos",
 "ar": "حسن ومرقص",
 "hint": "Egyptian film",
-"fix": true
+"fix": true,
+"pages": [
+"https://elcinema.com/work/1010056/"
+],
+"redo": true
 },
 {
 "name": "El Ostoura",
@@ -133,7 +198,11 @@
 "title": "El Ostoura",
 "ar": "الأسطورة",
 "hint": "Egyptian TV series",
-"fix": true
+"fix": true,
+"pages": [
+"https://elcinema.com/work/2040307/"
+],
+"redo": true
 },
 {
 "name": "The Nightingale's Prayer",
@@ -141,7 +210,11 @@
 "title": "The Nightingale's Prayer",
 "ar": "دعاء الكروان",
 "hint": "Egyptian film",
-"fix": true
+"fix": true,
+"pages": [
+"https://elcinema.com/work/1010041/"
+],
+"redo": true
 },
 {
 "name": "Tito",
@@ -149,7 +222,11 @@
 "title": "Tito (2004 film)",
 "ar": "تيتو",
 "hint": "Egyptian film",
-"fix": true
+"fix": true,
+"pages": [
+"https://elcinema.com/work/1010146/"
+],
+"redo": true
 },
 {
 "name": "Arabesque",
@@ -157,7 +234,11 @@
 "title": "Arabesque",
 "ar": "أرابيسك",
 "hint": "Egyptian TV series",
-"fix": true
+"fix": true,
+"pages": [
+"https://elcinema.com/work/1010599/"
+],
+"redo": true
 },
 {
 "name": "Hadeeth El Sabah wel Masaa",
@@ -165,7 +246,11 @@
 "title": "Hadeeth El Sabah wel Masaa",
 "ar": "حديث الصباح والمساء",
 "hint": "Egyptian TV series",
-"fix": true
+"fix": true,
+"pages": [
+"https://elcinema.com/work/1010927/"
+],
+"redo": true
 },
 {
 "name": "Ahmed Shobeir",
@@ -173,7 +258,8 @@
 "title": "Ahmed Shobair",
 "ar": "أحمد شوبير",
 "hint": "Egyptian footballer",
-"fix": false
+"fix": false,
+"redo": true
 },
 {
 "name": "Egyptian Army Stadium (Suez)",
@@ -181,7 +267,8 @@
 "title": "Egyptian Army Stadium",
 "ar": "استاد الجيش بالسويس",
 "hint": "stadium",
-"fix": false
+"fix": false,
+"redo": true
 },
 {
 "name": "Shawky Gharib",
@@ -189,7 +276,8 @@
 "title": "Shawky Gharieb",
 "ar": "شوقي غريب",
 "hint": "Egyptian football manager",
-"fix": false
+"fix": false,
+"redo": true
 },
 {
 "name": "Hossam El-Badry",
@@ -197,7 +285,8 @@
 "title": "Hossam El Badry",
 "ar": "حسام البدري",
 "hint": "Egyptian football manager",
-"fix": false
+"fix": false,
+"redo": true
 },
 {
 "name": "Hosny Abd Rabo",
@@ -205,7 +294,8 @@
 "title": "Hosny Abd Rabo",
 "ar": "حسني عبد ربه",
 "hint": "Egyptian footballer",
-"fix": false
+"fix": false,
+"redo": true
 },
 {
 "name": "Ibrahim Hassan",
@@ -221,7 +311,8 @@
 "title": "Ramadan Sobhi",
 "ar": "رمضان صبحي",
 "hint": "footballer",
-"fix": false
+"fix": false,
+"redo": true
 },
 {
 "name": "Moamen Zakaria",
@@ -229,7 +320,8 @@
 "title": "Moamen Zakaria",
 "ar": "مؤمن زكريا",
 "hint": "Egyptian footballer",
-"fix": false
+"fix": false,
+"redo": true
 },
 {
 "name": "Mike Smith",
@@ -237,7 +329,8 @@
 "title": "Mike Smith (football manager)",
 "ar": "مايك سميث",
 "hint": "football manager",
-"fix": false
+"fix": false,
+"redo": true
 },
 {
 "name": "Ismailia Rayeh Gai",
@@ -245,7 +338,11 @@
 "title": "Round Trip to Ismailia",
 "ar": "إسماعيلية رايح جاي",
 "hint": "Egyptian film",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/work/1010247/"
+],
+"redo": true
 },
 {
 "name": "Mohamed Saad",
@@ -253,7 +350,11 @@
 "title": "Mohamed Saad (actor)",
 "ar": "محمد سعد",
 "hint": "Egyptian actor",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/person/1049209/"
+],
+"redo": true
 },
 {
 "name": "Sherif Arafa",
@@ -261,7 +362,11 @@
 "title": "Sherif Arafa",
 "ar": "شريف عرفة",
 "hint": "Egyptian film director",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/person/1004016/"
+],
+"redo": true
 },
 {
 "name": "Marwan Hamed",
@@ -269,7 +374,11 @@
 "title": "Marwan Hamed",
 "ar": "مروان حامد",
 "hint": "Egyptian film director",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/person/1068590/"
+],
+"redo": true
 },
 {
 "name": "Mohamed Fouad",
@@ -277,7 +386,11 @@
 "title": "Mohamed Fouad",
 "ar": "محمد فؤاد",
 "hint": "Egyptian singer",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/person/1010596/"
+],
+"redo": true
 },
 {
 "name": "El Halfout",
@@ -285,7 +398,11 @@
 "title": "El Halfout",
 "ar": "الحلفوت",
 "hint": "Egyptian film",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/work/1000898/"
+],
+"redo": true
 },
 {
 "name": "El Mansy",
@@ -293,7 +410,11 @@
 "title": "El Mansy",
 "ar": "المنسي",
 "hint": "Egyptian film",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/work/1010597/"
+],
+"redo": true
 },
 {
 "name": "Belya wa Demagho El Alya",
@@ -301,7 +422,11 @@
 "title": "Belya wa Demagho El Alya",
 "ar": "بليه ودماغه العالية",
 "hint": "Egyptian film",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/work/1010150/"
+],
+"redo": true
 },
 {
 "name": "El Azima",
@@ -309,7 +434,11 @@
 "title": "Determination (1939 film)",
 "ar": "العزيمة",
 "hint": "Egyptian film",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/work/1006604/"
+],
+"redo": true
 },
 {
 "name": "Lak Yawm Ya Zalim",
@@ -317,7 +446,11 @@
 "title": "Lak Yawm Ya Zalim",
 "ar": "لك يوم يا ظالم",
 "hint": "Egyptian film",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/work/1005572/"
+],
+"redo": true
 },
 {
 "name": "Imbaratoriyet Meem",
@@ -325,7 +458,11 @@
 "title": "Imbaratoriyet Meem",
 "ar": "إمبراطورية ميم",
 "hint": "Egyptian film",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/work/1010172/"
+],
+"redo": true
 },
 {
 "name": "El Ard",
@@ -333,7 +470,11 @@
 "title": "The Land (1969 film)",
 "ar": "الأرض",
 "hint": "Egyptian film",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/work/1010126/"
+],
+"redo": true
 },
 {
 "name": "El Harb El Alamiya El Talta",
@@ -341,7 +482,11 @@
 "title": "The Third World War (2014 film)",
 "ar": "الحرب العالمية الثالثة",
 "hint": "Egyptian film",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/work/2019799/"
+],
+"redo": true
 },
 {
 "name": "Hepta",
@@ -349,7 +494,11 @@
 "title": "Hepta: The Last Lecture",
 "ar": "هيبتا",
 "hint": "Egyptian film",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/work/2040399/"
+],
+"redo": true
 },
 {
 "name": "Welad Rizk 3",
@@ -357,7 +506,11 @@
 "title": "Sons of Rizk 3",
 "ar": "ولاد رزق 3",
 "hint": "Egyptian film",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/work/2059194/"
+],
+"redo": true
 },
 {
 "name": "Kaboria",
@@ -365,7 +518,11 @@
 "title": "Kaboria",
 "ar": "كابوريا",
 "hint": "Egyptian film",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/work/1002064/"
+],
+"redo": true
 },
 {
 "name": "Bakkar",
@@ -373,7 +530,11 @@
 "title": "Bakkar",
 "ar": "بكار",
 "hint": "Egyptian TV series",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/work/1654852/"
+],
+"redo": true
 },
 {
 "name": "Sabe' Gar",
@@ -381,7 +542,11 @@
 "title": "Sabe' Gar",
 "ar": "سابع جار",
 "hint": "Egyptian TV series",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/work/2049068/"
+],
+"redo": true
 },
 {
 "name": "Gümüş (Noor)",
@@ -389,7 +554,8 @@
 "title": "Gümüş (TV series)",
 "ar": "نور",
 "hint": "Turkish TV series",
-"fix": false
+"fix": false,
+"redo": true
 },
 {
 "name": "Abna'i Al-Aaza'a Shokran",
@@ -397,7 +563,11 @@
 "title": "Abna'i Al-Aaza'a Shokran",
 "ar": "أبنائي الأعزاء شكراً",
 "hint": "Egyptian TV series",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/work/1011213/"
+],
+"redo": true
 },
 {
 "name": "Yetraboh Fi Ezzo",
@@ -405,7 +575,11 @@
 "title": "Yetraboh Fi Ezzo",
 "ar": "يتربى في عزو",
 "hint": "Egyptian TV series",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/work/1010322/"
+],
+"redo": true
 },
 {
 "name": "Fatin Amal Harby",
@@ -413,7 +587,11 @@
 "title": "Fatin Amal Harby",
 "ar": "فاتن أمل حربي",
 "hint": "Egyptian TV series",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/work/2072315/"
+],
+"redo": true
 },
 {
 "name": "Kamel El Adad",
@@ -421,7 +599,11 @@
 "title": "Kamel El Adad",
 "ar": "كامل العدد",
 "hint": "Egyptian TV series",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/work/2076685/"
+],
+"redo": true
 },
 {
 "name": "Haqq Arab",
@@ -429,7 +611,11 @@
 "title": "Haqq Arab",
 "ar": "حق عرب",
 "hint": "Egyptian TV series",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/work/2082468/"
+],
+"redo": true
 },
 {
 "name": "Marwan Pablo",
@@ -437,7 +623,11 @@
 "title": "Marwan Pablo",
 "ar": "مروان بابلو",
 "hint": "Egyptian singer",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/person/2342408/"
+],
+"redo": true
 },
 {
 "name": "Ezzay",
@@ -565,7 +755,8 @@
 "title": "Yehia w Kenooz",
 "ar": "يحيى وكنوز",
 "hint": "Egyptian cartoon",
-"fix": false
+"fix": false,
+"redo": true
 },
 {
 "name": "Lamees El-Hadidi",
@@ -573,7 +764,11 @@
 "title": "Lamis Elhadidy",
 "ar": "لميس الحديدي",
 "hint": "Egyptian TV presenter",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/person/2004958/"
+],
+"redo": true
 },
 {
 "name": "Tamer Amin",
@@ -581,7 +776,11 @@
 "title": "Tamer Amin",
 "ar": "تامر أمين",
 "hint": "Egyptian TV presenter",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/person/1979865/"
+],
+"redo": true
 },
 {
 "name": "Princess Charlotte",
@@ -589,7 +788,8 @@
 "title": "Princess Charlotte of Wales",
 "ar": "الأميرة شارلوت",
 "hint": "British royal family",
-"fix": false
+"fix": false,
+"redo": true
 },
 {
 "name": "Feryal Abdelaziz",
@@ -597,7 +797,8 @@
 "title": "Feryal Abdelaziz",
 "ar": "فريال أشرف",
 "hint": "Egyptian athlete",
-"fix": false
+"fix": false,
+"redo": true
 },
 {
 "name": "Rania Elwani",
@@ -605,7 +806,8 @@
 "title": "Rania Elwani",
 "ar": "رانيا علواني",
 "hint": "Egyptian athlete",
-"fix": false
+"fix": false,
+"redo": true
 },
 {
 "name": "Felfela",
@@ -629,7 +831,8 @@
 "title": "Misr Spinning and Weaving Company",
 "ar": "غزل المحلة (مصر للغزل والنسيج)",
 "hint": "company",
-"fix": false
+"fix": false,
+"redo": true
 },
 {
 "name": "SODIC",
@@ -821,7 +1024,11 @@
 "title": "Sherihan",
 "ar": "شريهان",
 "hint": "Egyptian Ramadan fawazeer TV",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/person/1073767/"
+],
+"redo": true
 },
 {
 "name": "Gihan Nasr",
@@ -829,7 +1036,11 @@
 "title": "Gihan Nasr",
 "ar": "جيهان نصر",
 "hint": "Egyptian Ramadan fawazeer TV",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/person/1096006/"
+],
+"redo": true
 },
 {
 "name": "Alexandria Radio",
@@ -853,7 +1064,11 @@
 "title": "Sayedati El Gameela",
 "ar": "سيدتي الجميلة",
 "hint": "Egyptian comedy play",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/work/1010565/"
+],
+"redo": true
 },
 {
 "name": "Abla Fadila",
@@ -861,7 +1076,11 @@
 "title": "Abla Fadila",
 "ar": "أبلة فضيلة",
 "hint": "Egyptian actor or TV presenter",
-"fix": false
+"fix": false,
+"pages": [
+"https://elcinema.com/person/1983585/"
+],
+"redo": true
 },
 {
 "name": "Alaa El-Din",
@@ -877,7 +1096,8 @@
 "title": "Digimon Adventure",
 "ar": "ديجيمون",
 "hint": "anime",
-"fix": false
+"fix": false,
+"redo": true
 },
 {
 "name": "Majid Kids",
@@ -909,7 +1129,8 @@
 "title": "Four Seasons Hotel Cairo at Nile Plaza",
 "ar": "فور سيزونز النيل",
 "hint": "hotel in Egypt",
-"fix": false
+"fix": false,
+"redo": true
 },
 {
 "name": "St. Regis Cairo",
@@ -917,7 +1138,8 @@
 "title": "St. Regis Cairo",
 "ar": "سانت ريجيس القاهرة",
 "hint": "hotel in Egypt",
-"fix": false
+"fix": false,
+"redo": true
 },
 {
 "name": "Ma Wara'a El Tabi'a",
@@ -925,6 +1147,7 @@
 "title": "Ma Wara'a al-Tabi'a",
 "ar": "ما وراء الطبيعة",
 "hint": "book series",
-"fix": false
+"fix": false,
+"redo": true
 }
 ]
