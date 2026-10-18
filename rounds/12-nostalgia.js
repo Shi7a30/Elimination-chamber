@@ -3,7 +3,7 @@
 CATS.push(
 {n:"Nostalgia",a:"ذكريات الطفولة",e:"📼",r:[
  Rd(["WHO DID RAMADAN","FAWAZEER FIRST",Q],["مين عمل","فوازير رمضان الأول",QA],"min",[
-  ["Tholathy Adwaa El Masrah",1967,"ثلاثي أضواء المسرح"],["Nelly",1975,"نيللي","Nelly (Egyptian actress)"],["Fatouta",1982,"فطوطة","Samir Ghanem"],
+  ["tholasy adwa2 el masra7",1967,"ثلاثي أضواء المسرح","Tholathy Adwaa El Masrah"],["Nelly",1975,"نيللي","Nelly (Egyptian actress)"],["Fatouta",1982,"فطوطة","Samir Ghanem"],
   ["Sherihan",1985,"شريهان"],["Sabreen",1988,"صابرين","Sabreen (actress)"],["Sherine Reda",1989,"شيرين رضا"],
   ["Gihan Nasr",1997,"جيهان نصر"],["Ghada Abdel Razek",2003,"غادة عبد الرازق"],["Myriam Fares",2010,"ميريام فارس"]],
   {h:"Egyptian Ramadan fawazeer TV",k:["FIRST FAWAZEER","أول فوازير"],g:"y",dt:["First Fawazeer","أول فوازير"],s:"kidstv",m:"eg"}),
@@ -18,9 +18,9 @@ CATS.push(
   ["Nogoum FM",2003,"نجوم إف إم"],["Radio Masr",2009,"راديو مصر"],["Mega FM",2010,"ميجا إف إم","Nile Radio Network"]],
   {h:"Egyptian radio station",k:["ON AIR SINCE","بدأت سنة"],g:"y",dt:["Radio station launched","انطلاق الإذاعة"],s:"kidstv",m:"eg"}),
  Rd(["WHICH CLASSIC PLAY","OPENED LAST",Q],["أنهي مسرحية","اتعرضت في الآخر",QA],"max",[
-  ["Sayedati El Gameela",1969,"سيدتي الجميلة"],["Madraset El Moshaghebeen",1973,"مدرسة المشاغبين"],["Intaha El Dars Ya Ghabi",1975,"انتهى الدرس يا غبي"],
-  ["Shahed Mashafsh Haga",1976,"شاهد ماشافش حاجة"],["El Eyal Kebret",1979,"العيال كبرت"],["Sok Ala Banatak",1980,"سك على بناتك"],
-  ["El Wad Sayed El Shaghal",1985,"الواد سيد الشغال"],["El Zaeem",1993,"الزعيم"],["Bodyguard",1999,"بودي جارد","Adel Emam"]],
+  ["sayedaty el gameela",1969,"سيدتي الجميلة","Sayedati El Gameela"],["madraset el moshaghebeen",1973,"مدرسة المشاغبين","Madraset El Moshaghebeen"],["entaha el dars ya ghaby",1975,"انتهى الدرس يا غبي","Intaha El Dars Ya Ghabi"],
+  ["shahed mashafsh 7aga",1976,"شاهد ماشافش حاجة","Shahed Mashafsh Haga"],["el 3eyal kebret",1979,"العيال كبرت","El Eyal Kebret"],["sok 3ala banatak",1980,"سك على بناتك","Sok Ala Banatak"],
+  ["el wad sayed el shaghal",1985,"الواد سيد الشغال","El Wad Sayed El Shaghal"],["el za3im",1993,"الزعيم","El Zaeem"],["bodyguard",1999,"بودي جارد","Adel Emam"]],
   {h:"Egyptian comedy play",k:["OPENED","اتعرضت سنة"],g:"y",dt:["Play opened","عرض المسرحية"],s:"kidstv",m:"eg"}),
  Rd(["WHICH CHILDHOOD STAR","WAS BORN FIRST",Q],["مين من نجوم طفولتنا","اتولد الأول",QA],"min",[
   ["Fouad El-Mohandes",1924,"فؤاد المهندس"],["Abla Fadila",1929,"أبلة فضيلة"],["Abdel Rahman Abu Zahra",1934,"عبد الرحمن أبو زهرة"],
@@ -198,7 +198,7 @@ CATS.push(
   ["Internet Explorer",2022,"إنترنت إكسبلورر"],["iPod",2022,"آي بود","iPod Touch"],["Skype",2025,"سكايب"]],
   {h:"app",k:["SHUT DOWN","اتقفل سنة"],s:"zaman",m:"eg"}),
  Rd(["WHICH BOOK SERIES","STARTED LAST",Q],["أنهي سلسلة كتب","بدأت في الآخر",QA],"max",[
-  ["Rajol El Mostaheel",1984,"رجل المستحيل"],["Goosebumps",1992,"صرخة الرعب"],["Ma Wara'a El Tabi'a",1993,"ما وراء الطبيعة","Ma Wara'a al-Tabi'a"],
+  ["Rajol El Mostaheel",1984,"رجل المستحيل"],["Goosebumps",1992,"صرخة الرعب"],["ma wara2 el tabi3a",1993,"ما وراء الطبيعة","Ma Wara'a al-Tabi'a"],
   ["Harry Potter",1997,"هاري بوتر"],["A Series of Unfortunate Events",1999,"سلسلة أحداث مؤسفة"],["Twilight",2005,"الشفق","Twilight (novel series)"],
   ["Percy Jackson",2005,"بيرسي جاكسون","Percy Jackson & the Olympians"],["Diary of a Wimpy Kid",2007,"مذكرات طالب","Diary of a Wimpy Kid (book)"],["The Hunger Games",2008,"مباريات الجوع"]],
   {h:"book series",k:["FIRST BOOK","أول كتاب سنة"],g:"y",dt:["First book","أول كتاب"],s:"zaman",m:"eg"})]}

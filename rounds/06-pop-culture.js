@@ -15,9 +15,9 @@ CATS.push(
   ["The Simpsons",1987,"عيلة سيمبسون"],["SpongeBob",1999,"سبونج بوب","SpongeBob SquarePants"],["Shrek",2001,"شريك"],["Peppa Pig",2004,"بيبا بيج"],
   ["Bluey",2018,"بلوي","Bluey (2018 TV series)"]],{h:"cartoon",k:["FIRST SHOWN","أول ظهور"],dt:["Cartoon first shown", "أول ظهور للكرتون"],g:"y",s:"celebs",m:"w"}),
  Rd(["WHICH CHILDHOOD ICON","CAME OUT FIRST",Q],["أنهي حاجة من أيام الطفولة","ظهرت الأول",QA],"min",[
-  ["Samir Magazine",1956,"مجلة سمير","Samir (magazine)"],["Bogy & Tamtam",1983,"بوجي وطمطم"],["Bakkar",1998,"بكار"],["Alam Simsim",2000,"عالم سمسم"],
-  ["Super Henedy",2007,"سوبر هنيدي"],["Abla Fahita",2010,"أبلة فاهيتا"],["Qesas El Hayawan fel Quran",2011,"قصص الحيوان في القرآن"],["The Knight and the Princess",2019,"الفارس والأميرة"],
-  ["Yehia w Kenooz",2022,"يحيى وكنوز"]],{h:"Egyptian cartoon",k:["DEBUT","أول ظهور"],dt:["First appeared", "أول ظهور"],g:"y",s:"celebs",m:"eg"}),
+  ["Samir Magazine",1956,"مجلة سمير","Samir (magazine)"],["Bogy & Tamtam",1983,"بوجي وطمطم"],["bakkar",1998,"بكار","Bakkar"],["Alam Simsim",2000,"عالم سمسم"],
+  ["Super Henedy",2007,"سوبر هنيدي"],["Abla Fahita",2010,"أبلة فاهيتا"],["2esas el 7ayawan fel 2oran",2011,"قصص الحيوان في القرآن","Qesas El Hayawan fel Quran"],["The Knight and the Princess",2019,"الفارس والأميرة"],
+  ["ye7ia w konooz",2022,"يحيى وكنوز","Yehia w Kenooz"]],{h:"Egyptian cartoon",k:["DEBUT","أول ظهور"],dt:["First appeared", "أول ظهور"],g:"y",s:"celebs",m:"eg"}),
  Rd(["WHO IS THE","OLDEST TV PERSONALITY",Q],["مين","أكبر نجم تليفزيون في السن",QA],"min",[
   ["Mofeed Fawzy",1933,"مفيد فوزي"],["Amr Adib",1963,"عمرو أديب"],["Hamdi Qandil",1936,"حمدي قنديل"],["Lamees El-Hadidi",1969,"لميس الحديدي","Lamis Elhadidy"],
   ["Amr El-Leithy",1970,"عمرو الليثي","Amr el-Leithy"],["Tamer Amin",1971,"تامر أمين"],["Ramez Galal",1973,"رامز جلال"],["Bassem Youssef",1974,"باسم يوسف"],
