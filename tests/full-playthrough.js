@@ -64,7 +64,9 @@ while(await pg.$('[data-back]'))await pg.click('[data-back]');await pg.click('[d
 // skip resets streak
 await openSub(0);let s1=await S();ok(s1.streak>0,'streak>0 before skip');await pg.click('#skip');ok((await S()).streak===0,'skip resets streak');
 // photos: wait for mocked loading, check images in tiles
-await pg.waitForTimeout(500);const imgs=await pg.$$eval('.tile img',e=>e.filter(i=>i.complete&&i.naturalWidth>0).length);ok(imgs===9,'images shown: '+imgs);ok(await pg.evaluate(()=>Object.keys(PH).length)>200,'built-in photos');
+await pg.waitForTimeout(500);const imgs=await pg.$$eval('.tile img',e=>e.filter(i=>i.complete&&i.naturalWidth>0).length);
+ // Rounds come in random order, and a few cards have no photo (they show a letter), so count the cards that should have one.
+ const want=await pg.evaluate(()=>cur.items.filter(x=>photo(x.d[0])).length);ok(want>=7&&imgs===want,'images shown: '+imgs+'/'+want);ok(await pg.evaluate(()=>Object.keys(PH).length)>200,'built-in photos');
 console.log('wiki calls',calls);
 // user photo upload
 await pg.click('#cam');ok(await pg.evaluate(()=>edit),'photo mode');
