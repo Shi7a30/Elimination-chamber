@@ -507,7 +507,7 @@ function duelRender(){var qq=L==="ar"?cur.qa:cur.q;
   return '<button class="cell '+cls+'" data-i="'+i+'" aria-label="'+esc(nm(x)+(over?": "+fmt(x):""))+'"><div class="card">'+
    '<div class="tile" style="'+tileBg(i*137+20)+'"><span>'+esc(nm(x).replace(/^[("']/,"").charAt(0))+"</span>"+img+"</div>"+
    '<div class="back">'+img+"<i>"+(i===corr?"✓":"✕")+"</i><small>"+esc(li(x.r.k))+"</small><b>"+esc(fmt(x))+"</b></div>"+
-   '</div><div class="lab"><span class="ln">'+esc(lbl(x))+"</span>"+dtag(x)+"</div></button>"}).join("");
+   '</div><div class="lab"><span class="ln">'+esc(lbl(x))+"</span>"+dtag(x)+"</div></button>"}).join("");fitLabs();
  if(flipNow.length){var g=$("grid"),fl=flipNow;flipNow=[];void g.offsetWidth;
   fl.forEach(function(i){var c=g.querySelector('[data-i="'+i+'"]');if(c)c.classList.add("flip")})}}
 function duelPick(i){if(over)return;dPick=i;flipNow=[0,1];
@@ -741,7 +741,7 @@ function render(){if(mode==="duel")return duelRender();var mp=mode==="hot"||mode
   return '<button class="cell '+cls+'" style="--i:'+i+'" data-i="'+i+'" aria-label="'+esc(nm(x)+(o||w?": "+fmt(x):""))+'"><div class="card">'+
    '<div class="tile" style="'+tileBg(i*47+20)+'"><span>'+esc(nm(x).replace(/^[("']/,"").charAt(0))+"</span>"+img+"</div>"+
    '<div class="back">'+img+"<i>"+(w?"✓":"✕")+"</i><small>"+esc(li(x.r.k))+"</small><b>"+esc(fmt(x))+"</b></div>"+
-   '</div><div class="lab"><span class="ln">'+esc(lbl(x))+"</span>"+dtag(x)+"</div></button>"}).join("");
+   '</div><div class="lab"><span class="ln">'+esc(lbl(x))+"</span>"+dtag(x)+"</div></button>"}).join("");fitLabs();
  if(flipNow.length){var g=$("grid"),fl=flipNow;flipNow=[];void g.offsetWidth;
   fl.forEach(function(i){var c=g.querySelector('[data-i="'+i+'"]');if(c)c.classList.add("flip")})}}
 $("grid").onclick=function(e){var c=e.target.closest(".cell");if(!c)return;var i=+c.dataset.i,x=items[i];
@@ -777,6 +777,12 @@ $("lang").onclick=function(){L=L==="ar"?"en":"ar";save();applyLang();sfx.tap();
  // in a game, redraw it and rebuild any open popup in the new language (it may hold the only way forward)
  if(inGame()&&(cur||shF)){if(cur)render();if(shF)sh(shF,0)}else menu()};
 // Endless gives one second chance per run: undoing a loss there works once, so a run can't be kept alive with coins
+// Long names shrink a little (down to about 70%) so they fit on two lines instead of being cut off with "…"
+function fitLabs(){[].forEach.call(document.querySelectorAll("#grid .lab .ln"),function(e){e.style.fontSize="";e.style.overflowWrap="normal";
+ var s=parseFloat(getComputedStyle(e).fontSize),m=s*.7,over=function(){e.style.display="block";var r=e.getBoundingClientRect().height>parseFloat(getComputedStyle(e).lineHeight)*2+1||e.scrollWidth>e.clientWidth+1;e.style.display="";return r};
+ while(over()&&s>m){s-=.5;e.style.fontSize=s+"px"}if(over())e.style.overflowWrap=""})}
+if(document.fonts){document.fonts.ready.then(fitLabs);document.fonts.addEventListener&&document.fonts.addEventListener("loadingdone",fitLabs)}
+addEventListener("resize",fitLabs);
 function canUndo(){return hist.length&&coins>=UNDO&&over!=="win"&&!(over==="lose"&&mode==="end"&&eUndo)}
 function undo(){if(!canUndo())return;if(over==="lose"&&mode==="end")eUndo=true;coins-=UNDO;var i=hist.pop();out.splice(out.indexOf(i),1);
  if(peek.indexOf(i)>-1)peek.splice(peek.indexOf(i),1);
