@@ -31,7 +31,7 @@ CATS.push(
   ["Light bulb",1879,"اللمبة","Incandescent light bulb"],["Car (Benz patent)",1886,"العربية (براءة بنز)","Benz Patent-Motorwagen"],["Airplane",1903,"الطيارة","Wright Flyer"],
   ["Penicillin",1928,"البنسلين"],["World Wide Web",1989,"الويب (الإنترنت)"],["iPhone",2007,"الآيفون","iPhone (1st generation)"]],
   {h:"invention",k:["INVENTED","اتخترع سنة"],dt:["Invented", "الاختراع"],g:"y",s:"history",m:"w"}),
- Rd(["WHICH LANDMARK","IS THE OLDEST",Q],["أنهي معلم","أقدم واحد",QA],"min",[
+ Rd(["WHICH LANDMARK","IS THE OLDEST",Q],["أنهي","أقدم معلم",QA],"min",[
   ["Amr ibn al-As Mosque",642,"جامع عمرو بن العاص"],["Mosque of Ibn Tulun",879,"جامع ابن طولون"],["Al-Azhar Mosque",972,"الجامع الأزهر"],
   ["Sultan Hassan Mosque",1363,"جامع السلطان حسن","Mosque–Madrasa of Sultan Hasan"],["Qaitbay Citadel",1479,"قلعة قايتباي","Citadel of Qaitbay"],["Egyptian Museum",1902,"المتحف المصري في التحرير"],
   ["Baron Empain Palace",1911,"قصر البارون"],["Cairo Tower",1961,"برج القاهرة"],["Cairo Opera House",1988,"دار الأوبرا"]],
@@ -41,7 +41,7 @@ CATS.push(
   ["Mostafa Kamel",1874,"مصطفى كامل","Mustafa Kamil Pasha"],["Ali Moustafa Mosharafa",1898,"علي مصطفى مشرفة"],["Samira Moussa",1917,"سميرة موسى"],
   ["Magdi Yacoub",1935,"مجدي يعقوب"],["Farouk El-Baz",1938,"فاروق الباز"],["Ahmed Zewail",1946,"أحمد زويل"]],
   {h:"Egyptian historical figure",k:BORN,g:"p",s:"history",m:"eg"}),
- Rd(["WHICH WRITER WAS","BORN LAST",Q],["مين من الكتّاب","اتولد في الآخر",QA],"max",[
+ Rd(["WHICH WRITER WAS","BORN LAST",Q],["مين من الكتّاب","أصغر",QA],"max",[
   ["Taha Hussein",1889,"طه حسين"],["Naguib Mahfouz",1911,"نجيب محفوظ"],["Ihsan Abdel Quddous",1919,"إحسان عبد القدوس"],
   ["Youssef Idris",1927,"يوسف إدريس","Yusuf Idris"],["Salah Jahin",1930,"صلاح جاهين"],["Abdel Rahman el-Abnudi",1938,"عبد الرحمن الأبنودي"],
   ["Alaa Al Aswany",1957,"علاء الأسواني"],["Ahmed Khaled Tawfik",1962,"أحمد خالد توفيق"],["Ahmed Mourad",1978,"أحمد مراد"]],
@@ -51,7 +51,7 @@ CATS.push(
   ["Mamluk era",1250,"دولة المماليك","Mamluk Sultanate"],["Ottoman rule",1517,"الحكم العثماني","Ottoman Egypt"],["French campaign",1798,"الحملة الفرنسية","French campaign in Egypt and Syria"],
   ["Muhammad Ali dynasty",1805,"أسرة محمد علي","Muhammad Ali dynasty"],["British occupation",1882,"الاحتلال الإنجليزي","History of Egypt under the British"],["Republic declared",1953,"إعلان الجمهورية","Republic of Egypt (1953–1958)"]],
   {h:"Egypt history",k:["BEGAN IN EGYPT","بدأ في مصر سنة"],dt:["Era began in Egypt", "بداية العصر في مصر"],g:"y",s:"history",m:"eg"}),
- Rd(["WHICH PROJECT","OPENED LAST",Q],["أنهي مشروع","اتفتح آخر واحد",QA],"max",[
+ Rd(["WHICH PROJECT","OPENED LAST",Q],["أنهي","آخر مشروع اتفتح",QA],"max",[
   ["Suez Canal",1869,"قناة السويس"],["Aswan Low Dam",1902,"خزان أسوان"],["Cairo International Stadium",1960,"استاد القاهرة"],
   ["Cairo International Airport",1963,"مطار القاهرة الدولي"],["Cairo Metro (Line 1)",1987,"مترو الأنفاق (الخط الأول)","Cairo Metro Line 1"],["Bibliotheca Alexandrina",2002,"مكتبة إسكندرية"],
   ["Al-Azhar Park",2005,"حديقة الأزهر"],["New Suez Canal",2015,"قناة السويس الجديدة"],["Rod El Farag Axis",2019,"محور روض الفرج","Rod El Farag Axis Bridge"]],
@@ -66,12 +66,12 @@ CATS.push(
   ["Louis Pasteur",1822,"لويس باستير"],["Thomas Edison",1847,"توماس إديسون"],["Nikola Tesla",1856,"نيكولا تيسلا"],
   ["Marie Curie",1867,"ماري كوري"],["Albert Einstein",1879,"ألبرت أينشتاين"],["Stephen Hawking",1942,"ستيفن هوكينج"]],
   {h:"scientist",k:BORN,g:"p",s:"history",m:"w"}),
- Rd(["WHICH COUNTRY BECAME","INDEPENDENT LAST",Q],["أنهي دولة","استقلت آخر واحدة",QA],"max",[
+ Rd(["WHICH COUNTRY BECAME","INDEPENDENT LAST",Q],["أنهي","آخر دولة استقلت",QA],"max",[
   ["USA",1776,"أمريكا","United States"],["Brazil",1822,"البرازيل"],["Finland",1917,"فنلندا"],
   ["India",1947,"الهند"],["Libya",1951,"ليبيا"],["Morocco",1956,"المغرب"],
   ["Kuwait",1961,"الكويت"],["Algeria",1962,"الجزائر"],["UAE",1971,"الإمارات","United Arab Emirates"]],
   {h:"country flag",k:["INDEPENDENCE","استقلت سنة"],dt:["Independence", "الاستقلال"],g:"y",s:"history",m:"w"}),
- Rd(["WHICH SPACE MOMENT","HAPPENED LAST",Q],["أنهي حدث في الفضاء","حصل في الآخر",QA],"max",[
+ Rd(["WHICH SPACE MOMENT","HAPPENED LAST",Q],["أنهي حدث في الفضاء","أجدد",QA],"max",[
   ["Sputnik launched",1957,"إطلاق سبوتنيك","Sputnik 1"],["Gagarin, first man in space",1961,"جاجارين أول إنسان في الفضاء","Yuri Gagarin"],["Tereshkova, first woman in space",1963,"تيريشكوفا أول ست في الفضاء","Valentina Tereshkova"],
   ["Voyager 1 launched",1977,"إطلاق فوياجر 1","Voyager 1"],["First Space Shuttle flight",1981,"أول رحلة لمكوك الفضاء","STS-1"],["Hubble launched",1990,"إطلاق تلسكوب هابل","Hubble Space Telescope"],
   ["First ISS module launched",1998,"أول جزء من محطة الفضاء الدولية","Zarya"],["First photo of a black hole",2019,"أول صورة لثقب أسود","Event Horizon Telescope"],["James Webb launched",2021,"إطلاق تلسكوب جيمس ويب","James Webb Space Telescope"]],

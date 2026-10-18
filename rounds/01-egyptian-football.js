@@ -11,7 +11,7 @@ CATS.push(
   ["Hany Ramzy",1969,"هاني رمزي"],["Essam El-Hadary",1973,"عصام الحضري","Essam El Hadary"],["Ahmed Hassan",1975,"أحمد حسن","Ahmed Hassan (footballer, born 1975)"],
   ["Mohamed Aboutrika",1978,"محمد أبو تريكة"],["Mohamed Zidan",1981,"محمد زيدان"],["Ahmed 'Mido' Hossam",1983,"أحمد حسام (ميدو)","Mido (footballer)"]],{h:"Egyptian footballer",k:BORN,g:"p",s:"players",m:"eg"}),
  
- Rd(["WHICH IS THE","OLDEST CLUB",Q],["أنهي","نادي أقدم واحد",QA],"min",[
+ Rd(["WHICH IS THE","OLDEST CLUB",Q],["أنهي","أقدم نادي",QA],"min",[
   ["Al Ahly",1907,"الأهلي","Al Ahly SC"],["Zamalek",1911,"الزمالك","Zamalek SC"],["Al Ittihad Alexandria",1914,"الاتحاد السكندري","Al Ittihad Alexandria Club"],
   ["Al Masry",1920,"المصري","Al Masry SC"],["Ismaily",1924,"الإسماعيلي","Ismaily SC"],["Smouha",1949,"سموحة","Smouha SC"],
   ["Arab Contractors",1973,"المقاولون العرب","Al Mokawloon Al Arab SC"],["ENPPI",1985,"إنبي","ENPPI SC"],["Pyramids FC",2008,"بيراميدز"]],{h:"Egyptian football club",k:["FOUNDED","اتأسس سنة"],dt:["Club founded", "تأسيس النادي"],g:"y",s:"trophies",m:"eg"}),
@@ -32,7 +32,7 @@ CATS.push(
   ["Al Ahly",39,"الأهلي","Al Ahly SC"],["Zamalek",29,"الزمالك","Zamalek SC"],["Al Ittihad Alexandria",6,"الاتحاد السكندري","Al Ittihad Alexandria Club"],
   ["Tersana",6,"الترسانة","Tersana SC"],["Arab Contractors",3,"المقاولون العرب","Al Mokawloon Al Arab SC"],["Ismaily",2,"الإسماعيلي","Ismaily SC"],
   ["ENPPI",2,"إنبي","ENPPI SC"],["Pyramids FC",2,"بيراميدز"],["Al Masry",1,"المصري","Al Masry SC"]],{suf:TRA,h:"Egyptian football club",k:["EGYPT CUPS","كاسات مصر"],s:"trophies",m:"eg"}),
- Rd(["WHICH IS THE","BIGGEST STADIUM",Q],["أنهي","استاد أكبر واحد",QA],"max",[
+ Rd(["WHICH IS THE","BIGGEST STADIUM",Q],["أنهي","أكبر استاد",QA],"max",[
   ["Misr Stadium",93940,"استاد مصر (العاصمة الإدارية)","New Administrative Capital Stadium"],["Borg El Arab Stadium",86000,"استاد برج العرب"],["Cairo International Stadium",75000,"استاد القاهرة"],
   ["Egyptian Army Stadium (Suez)",45000,"استاد الجيش بالسويس","Egyptian Army Stadium"],["Arab Contractors Stadium",35000,"استاد المقاولون العرب","Osman Ahmed Osman Stadium"],["Al Salam Stadium",30000,"استاد السلام","Al Salam Stadium (Egypt)"],
   ["30 June Stadium",30000,"استاد 30 يونيو (الدفاع الجوي)"],["Military Academy Stadium",28500,"استاد الكلية الحربية","Cairo Military Academy Stadium"],["Suez Stadium",27000,"استاد السويس"]],{h:"stadium",k:["CAPACITY","بيساع"],suf:[" fans"," متفرج"],s:"trophies",m:"eg"}),

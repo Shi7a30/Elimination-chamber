@@ -10,7 +10,7 @@ CATS.push(
   ["Robert Downey Jr",1965,"روبرت داوني جونيور","Robert Downey Jr."],["Mark Ruffalo",1967,"مارك روفالو"],["Paul Rudd",1969,"بول رود"],["Benedict Cumberbatch",1976,"بنديكت كامبرباتش"],
   ["Chris Pratt",1979,"كريس برات"],["Chris Evans",1981,"كريس إيفانز","Chris Evans (actor)"],["Chris Hemsworth",1983,"كريس هيمسورث"],["Scarlett Johansson",1984,"سكارليت جوهانسون"],
   ["Tom Holland",1996,"توم هولاند"]],{h:"actor",k:BORN,g:"p",s:"actors",m:"w"}),
- Rd(["WHICH IS THE","OLDEST CARTOON",Q],["أنهي","كرتون أقدم واحد",QA],"min",[
+ Rd(["WHICH IS THE","OLDEST CARTOON",Q],["أنهي","أقدم كرتون",QA],"min",[
   ["Mickey Mouse",1928,"ميكي ماوس"],["Bugs Bunny",1940,"باجز باني"],["Tom and Jerry",1940,"توم وجيري"],["Scooby-Doo",1969,"سكوبي دو"],
   ["The Simpsons",1987,"عيلة سيمبسون"],["SpongeBob",1999,"سبونج بوب","SpongeBob SquarePants"],["Shrek",2001,"شريك"],["Peppa Pig",2004,"بيبا بيج"],
   ["Bluey",2018,"بلوي","Bluey (2018 TV series)"]],{h:"cartoon",k:["FIRST SHOWN","أول ظهور"],dt:["Cartoon first shown", "أول ظهور للكرتون"],g:"y",s:"celebs",m:"w"}),

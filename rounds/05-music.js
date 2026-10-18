@@ -14,7 +14,7 @@ CATS.push(
   ["Abdel Halim Hafez",1929,"عبد الحليم حافظ"],["Hany Shaker",1952,"هاني شاكر"],["Mohamed Mounir",1954,"محمد منير"],["Amr Diab",1961,"عمرو دياب"],
   ["Hakim",1962,"حكيم","Hakim (singer)"],["Angham",1972,"أنغام"],["Mohamed Hamaki",1975,"محمد حماقي"],["Tamer Hosny",1977,"تامر حسني"],
   ["Sherine Abdel Wahab",1980,"شيرين عبد الوهاب","Sherine"]],{h:"Egyptian singer",k:BORN,g:"p",s:"singers",m:"eg"}),
- Rd(["WHICH IS THE","OLDEST SONG",Q],["أنهي","أغنية أقدم واحدة",QA],"min",[
+ Rd(["WHICH IS THE","OLDEST SONG",Q],["أنهي","أقدم أغنية",QA],"min",[
   ["Hey Jude",1968,"هاي جود"],["Bohemian Rhapsody",1975,"بوهيميان رابسودي"],["Billie Jean",1983,"بيلي جين"],["Like a Prayer",1989,"لايك أ براير","Like a Prayer (song)"],["Smells Like Teen Spirit",1991,"سميلز لايك تين سبيريت"],
   ["Wannabe",1996,"وانابي","Wannabe (Spice Girls song)"],["Crazy in Love",2003,"كريزي إن لاف"],["Rolling in the Deep",2010,"رولينج إن ذا ديب"],["Blinding Lights",2019,"بلايندنج لايتس"]],{h:"song",k:["RELEASED","نزلت سنة"],dt:["Song released", "نزول الأغنية"],g:"y",s:"songs",m:"w"}),
   Rd(["WHO IS THE","YOUNGEST EGYPTIAN SINGER",Q],["مين","أصغر مطرب",QA],"max",[
@@ -29,7 +29,7 @@ CATS.push(
   ["Ya msafer wahdak",1942,"يا مسافر وحدك","Ya Msafer Wahdak"],["Ahwak",1957,"أهواك","Ahwak"],["Enta 3omri",1964,"إنت عمري","Enta Omri"],["El atlal",1966,"الأطلال","Al Atlal"],
   ["Alf leila w leila",1969,"ألف ليلة وليلة","Alf Leila wa Leila"],["Qariat al-Fingan",1976,"قارئة الفنجان","Qariat al-Fingan"],["Shababeek",1981,"شبابيك","Shababeek"],["7adouta masreya",1982,"حدوتة مصرية","Hadouta Masreya"],
   ["3alli sotak",1997,"علّي صوتك","Ali Sotak"]],{h:"Egyptian song",k:["RELEASED","نزلت سنة"],dt:["Song released", "نزول الأغنية"],g:"y",s:"songs",m:"eg"}),
- Rd(["WHICH EGYPTIAN HIT","CAME OUT LAST",Q],["أنهي أغنية مصرية","نزلت في الآخر",QA],"max",[
+ Rd(["WHICH EGYPTIAN HIT","CAME OUT LAST",Q],["أنهي أغنية مصرية","أجدد",QA],"max",[
   ["7abibi dah",2001,"حبيبي ده (ناري نارين)","Habibi Dah (Nari Narain)"],["Garh Tany",2003,"جرح تاني","Garh Tany"],["Leih beydary keda",2004,"ليه بيداري كده","Leih Beydary Keda"],["3enaya bet7ebak",2006,"عينيا بتحبك","Einaya Bethebak"],
   ["Naweeha",2008,"ناويها","Naweeha"],["Yalmidan",2011,"يا الميدان","Ya El Midan"],["Ezzay",2011,"إزاي","Ezzay"],["Number one",2018,"نمبر وان","Number One"],
   ["El bakht",2022,"البخت","El Bakht"]],{h:"Egyptian song",k:["RELEASED","نزلت سنة"],dt:["Song released", "نزول الأغنية"],g:"y",s:"songs",m:"eg"}),
@@ -37,7 +37,7 @@ CATS.push(
   ["Sayed Darwish",1892,"سيد درويش"],["Mohamed Abdel Muttalib",1910,"محمد عبد المطلب"],["Laila Mourad",1918,"ليلى مراد","Leila Mourad"],["Mohamed Fawzi",1918,"محمد فوزي","Mohamed Fawzi (singer)"],
   ["Mohamed Roshdy",1928,"محمد رشدي"],["Shadia",1931,"شادية"],["Najat Al Saghira",1938,"نجاة الصغيرة","Nagat El-Sagheera"],["Ahmed Adaweya",1945,"أحمد عدوية"],
   ["Ali El Haggar",1954,"علي الحجار"]],{h:"Egyptian singer",k:BORN,g:"p",s:"singers",m:"eg"}),
- Rd(["WHICH WORLD HIT","CAME OUT LAST",Q],["أنهي أغنية عالمية","نزلت في الآخر",QA],"max",[
+ Rd(["WHICH WORLD HIT","CAME OUT LAST",Q],["أنهي أغنية عالمية","أجدد",QA],"max",[
   ["Imagine",1971,"إيماجن","Imagine (John Lennon song)"],["Dancing Queen",1976,"دانسينج كوين"],["Careless Whisper",1984,"كيرلس ويسبر"],["My Heart Will Go On",1997,"ماي هارت ويل جو أون"],
   ["Hips Don't Lie",2006,"هيبس دونت لاي"],["Waka Waka",2010,"واكا واكا","Waka Waka (This Time for Africa)"],["Gangnam Style",2012,"جانجنام ستايل"],["Despacito",2017,"ديسباسيتو"],
   ["APT.",2024,"آبت","APT. (song)"]],{h:"song",k:["RELEASED","نزلت سنة"],dt:["Song released", "نزول الأغنية"],g:"y",s:"songs",m:"w"}),
@@ -116,12 +116,12 @@ CATS.push(
   ["Off the Wall",1979,"أوف ذا وول"],["Thriller",1982,"ثريلر","Thriller (album)"],["Bad",1987,"باد","Bad (album)"],
   ["Dangerous",1991,"دينجرس","Dangerous (Michael Jackson album)"],["HIStory",1995,"هيستوري","HIStory: Past, Present and Future, Book I"],["Invincible",2001,"إنفينسيبل","Invincible (Michael Jackson album)"]],
   {h:"album",k:["RELEASED","نزل سنة"],s:"songs",m:"w"}),
- Rd(["WHICH QUEEN SONG","CAME OUT LAST",Q],["أنهي أغنية لفرقة كوين","نزلت في الآخر",QA],"max",[
+ Rd(["WHICH QUEEN SONG","CAME OUT LAST",Q],["أنهي أغنية لفرقة كوين","أجدد",QA],"max",[
   ["Killer Queen",1974,"كيلر كوين"],["Bohemian Rhapsody",1975,"بوهيميان رابسودي"],["Somebody to Love",1976,"سامبودي تو لوف","Somebody to Love (Queen song)"],
   ["We Will Rock You",1977,"وي ويل روك يو"],["Don't Stop Me Now",1979,"دونت ستوب مي ناو"],["Another One Bites the Dust",1980,"أناذر وان بايتس ذا داست"],
   ["Under Pressure",1981,"أندر بريشر"],["Radio Ga Ga",1984,"راديو جا جا"],["The Show Must Go On",1991,"ذا شو ماست جو أون","The Show Must Go On (Queen song)"]],
   {h:"song",k:["RELEASED","نزلت سنة"],dt:["Song released","نزول الأغنية"],g:"y",s:"songs",m:"w"}),
- Rd(["WHICH TAYLOR SWIFT ALBUM","CAME OUT LAST",Q],["أنهي ألبوم لتايلور سويفت","نزل في الآخر",QA],"max",[
+ Rd(["WHICH TAYLOR SWIFT ALBUM","CAME OUT LAST",Q],["أنهي ألبوم لتايلور سويفت","أجدد",QA],"max",[
   ["Fearless",2008,"فيرلس","Fearless (Taylor Swift album)"],["Speak Now",2010,"سبيك ناو"],["Red",2012,"ريد","Red (Taylor Swift album)"],
   ["1989",2014,"1989","1989 (album)"],["Reputation",2017,"ريبيوتيشن","Reputation (album)"],["Lover",2019,"لوفر","Lover (album)"],
   ["Folklore",2020,"فولكلور","Folklore (Taylor Swift album)"],["Midnights",2022,"ميدنايتس"],["The Life of a Showgirl",2025,"ذا لايف أوف أ شوجيرل"]],
@@ -141,7 +141,7 @@ CATS.push(
   ["A Whole New World",1992,"عالم جديد"],["Hakuna Matata",1994,"هاكونا ماتاتا","Hakuna Matata (song)"],["Colors of the Wind",1995,"ألوان الريح"],
   ["Let It Go",2013,"لت إت جو","Let It Go (Disney song)"],["How Far I'll Go",2016,"هاو فار آيل جو"],["Remember Me",2017,"ريممبر مي","Remember Me (Coco song)"]],
   {h:"song",k:["RELEASED","نزلت سنة"],dt:["Song released","نزول الأغنية"],g:"y",s:"songs",m:"w"}),
- Rd(["WHICH 2000s HIT","CAME OUT LAST",Q],["أنهي أغنية من الألفينات","نزلت في الآخر",QA],"max",[
+ Rd(["WHICH 2000s HIT","CAME OUT LAST",Q],["أنهي أغنية من الألفينات","أجدد",QA],"max",[
   ["Oops!... I Did It Again",2000,"أوبس آي ديد إت أجين","Oops!... I Did It Again (song)"],["Can't Get You Out of My Head",2001,"كانت جيت يو أوت أوف ماي هيد"],["Lose Yourself",2002,"لوز يورسيلف"],
   ["In da Club",2003,"إن دا كلوب"],["Yeah!",2004,"ييه","Yeah! (Usher song)"],["Hips Don't Lie",2006,"هيبس دونت لاي"],
   ["Umbrella",2007,"أمبريلا","Umbrella (song)"],["Poker Face",2008,"بوكر فيس"],["I Gotta Feeling",2009,"آي جوتا فيلينج"]],
@@ -156,7 +156,7 @@ CATS.push(
   ["Juicy",1994,"جوسي","Juicy (The Notorious B.I.G. song)"],["Gangsta's Paradise",1995,"جانجستاز بارادايس"],["Still D.R.E.",1999,"ستيل دري"],
   ["Gold Digger",2005,"جولد ديجر","Gold Digger (Kanye West song)"],["HUMBLE.",2017,"هامبل"],["Not Like Us",2024,"نوت لايك أس"]],
   {h:"song",k:["RELEASED","نزلت سنة"],dt:["Song released","نزول الأغنية"],g:"y",s:"songs",m:"w"}),
- Rd(["WHICH SONG IS","THE LONGEST",Q],["أنهي أغنية","أطول واحدة",QA],"max",[
+ Rd(["WHICH SONG IS","THE LONGEST",Q],["أنهي","أطول أغنية",QA],"max",[
   ["All Too Well (10 Minute Version)",10.2,"أول تو ويل (10 دقايق)","All Too Well"],["Free Bird",9.1,"فري بيرد"],["November Rain",9.0,"نوفمبر رين"],
   ["American Pie",8.6,"أمريكان باي","American Pie (song)"],["Stairway to Heaven",8.0,"ستيرواي تو هيفن"],["Hey Jude",7.2,"هاي جود"],
   ["Hotel California",6.5,"هوتيل كاليفورنيا","Hotel California (Eagles song)"],["Like a Rolling Stone",6.2,"لايك أ رولينج ستون"],["Bohemian Rhapsody",5.9,"بوهيميان رابسودي"]],
@@ -166,7 +166,7 @@ CATS.push(
   ["Boy with Luv",2019,"بوي ويذ لاف"],["Dynamite",2020,"ديناميت","Dynamite (BTS song)"],["Butter",2021,"باتر","Butter (song)"],
   ["Seven",2023,"سيفن","Seven (Jungkook song)"],["APT.",2024,"آبت","APT. (song)"],["Golden",2025,"جولدن","Golden (Huntrix song)"]],
   {h:"song",k:["RELEASED","نزلت سنة"],dt:["Song released","نزول الأغنية"],g:"y",s:"songs",m:"w"}),
- Rd(["WHICH AMR DIAB ALBUM","CAME OUT LAST",Q],["أنهي ألبوم لعمرو دياب","نزل في الآخر",QA],"max",[
+ Rd(["WHICH AMR DIAB ALBUM","CAME OUT LAST",Q],["أنهي ألبوم لعمرو دياب","أجدد",QA],"max",[
   ["Ya tari2",1983,"يا طريق","Ya Tareeq"],["Habiby",1991,"حبيبي","Habiby (album)"],["Rag3een",1995,"راجعين","Ragein"],
   ["2amarein",1999,"قمرين","Amarain"],["Aktar wahed",2001,"أكتر واحد","Aktar Wahed"],["Kammel kalamak",2005,"كمل كلامك","Kammel Kalamak"],
   ["El lilady",2007,"الليلة دي","El Lilady"],["El leila",2013,"الليلة","El Leila"],["A7la w a7la",2016,"أحلى وأحلى","Ahla W Ahla"]],
@@ -176,7 +176,7 @@ CATS.push(
   ["Enta 3omri",1964,"إنت عمري","Enta Omri"],["Amal 7ayati",1965,"أمل حياتي","Amal Hayati"],["El atlal",1966,"الأطلال","Al Atlal"],
   ["Hazihi laylati",1968,"هذه ليلتي","Hathihi Laylati"],["Aghadan al2ak",1971,"أغداً ألقاك","Aghadan Alqak"],["Leilet 7ob",1972,"ليلة حب","Leilet Hob"]],
   {h:"Egyptian song",k:["RELEASED","نزلت سنة"],dt:["Song released","نزول الأغنية"],g:"y",s:"songs",m:"eg"}),
- Rd(["WHICH ADELE SONG","CAME OUT LAST",Q],["أنهي أغنية لأديل","نزلت في الآخر",QA],"max",[
+ Rd(["WHICH ADELE SONG","CAME OUT LAST",Q],["أنهي أغنية لأديل","أجدد",QA],"max",[
   ["Hometown Glory",2007,"هومتاون جلوري"],["Chasing Pavements",2008,"تشيسينج بيفمنتس"],["Rolling in the Deep",2010,"رولينج إن ذا ديب"],
   ["Someone Like You",2011,"سام وان لايك يو","Someone Like You (Adele song)"],["Set Fire to the Rain",2011,"سيت فاير تو ذا رين"],["Skyfall",2012,"سكاي فول","Skyfall (Adele song)"],
   ["Hello",2015,"هالو","Hello (Adele song)"],["Send My Love",2016,"سيند ماي لوف","Send My Love (To Your New Lover)"],["Easy on Me",2021,"إيزي أون مي"]],
