@@ -23264,7 +23264,7 @@
   "ar": "أسوان",
   "ar_hint": "نادي",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Baladiyat El Mahalla",
@@ -23282,7 +23282,7 @@
   "ar": "المنصورة",
   "ar_hint": "نادي",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Petrojet",
@@ -23694,15 +23694,6 @@
   "title": "Ahmed Sheba",
   "hint": "Egyptian singer",
   "ar": "أحمد شيبة",
-  "ar_hint": "مطرب",
-  "logo": false,
-  "skip": false
- },
- {
-  "name": "Omar Kamal",
-  "title": "Omar Kamal",
-  "hint": "Egyptian singer",
-  "ar": "عمر كمال",
   "ar_hint": "مطرب",
   "logo": false,
   "skip": false

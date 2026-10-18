@@ -103,7 +103,7 @@ Rd(["WHO IS THE","OLDEST EGYPTIAN IN HOLLYWOOD",Q],["مين","أكبر مصري 
   ["Mohamed Diab",1978,"محمد دياب"],["Rami Malek",1981,"رامي مالك"],["May Calamawy",1986,"مي القلماوي"],
   ["Amir El-Masry",1990,"أمير المصري"],["Mena Massoud",1991,"مينا مسعود"],["Ramy Youssef",1991,"رامي يوسف"]],
   {h:"actor",k:BORN,g:"p",s:"celebs",m:"eg"}),
- Rd(["WHO IS THE","OLDEST WORLD-FAMOUS EGYPTIAN",Q],["مين","أكبر مصري اتشهر في العالم في السن",QA],"min",[
+ Rd(["WHO IS THE","OLDEST WORLD-FAMOUS EGYPTIAN",Q],["مين","أكبر مصري مشهور في العالم في السن",QA],"min",[
   ["Boutros Boutros-Ghali",1922,"بطرس بطرس غالي"],["Mohamed Al-Fayed",1929,"محمد الفايد"],["Mostafa El-Sayed",1933,"مصطفى السيد","Mostafa El-Sayed"],
   ["Magdi Yacoub",1935,"مجدي يعقوب"],["Farouk El-Baz",1938,"فاروق الباز"],["Mohamed ElBaradei",1942,"محمد البرادعي"],
   ["Ahmed Zewail",1946,"أحمد زويل"],["Naguib Sawiris",1954,"نجيب ساويرس"],["Mohamed Salah",1992,"محمد صلاح"]],
