@@ -32,15 +32,17 @@ for(let c=0;c<subs.length;c++){
  for(let r=0;r<nr;r++){roundNo++;const st0=await S();ok(st0.ri===r,'round index');
   const corr=await pg.evaluate(()=>corr);
   const q2=await pg.textContent('#q2');ok(q2===(await pg.evaluate(l=>(l==='ar'?cur.qa:cur.q)[1],lang)),'question text '+q2);
-  if(roundNo%2===0&&st0.coins>=30){ // lose then undo
+  const price=await pg.evaluate(()=>uCost());let saved=false;
+  if(roundNo%2===0&&st0.coins>=price){ // lose then undo
    await pg.click(`.cell[data-i="${corr}"]`);let s=await S();ok(s.over==='lose'&&s.streak===0,'lose state');
    ok(await pg.waitForSelector('#sheet.show',{timeout:3000}).then(()=>true,()=>false),'lose sheet '+subs[c]+' r'+r+' n'+roundNo);
    const shown=await pg.$$eval('.cell.flip',e=>e.length);ok(shown===1,'only answer flipped on loss, got '+shown);
-   await pg.click('#sb .btn:not(.y)');s=await S();ok(s.over===false&&s.streak===st0.streak&&s.coins===st0.coins-30,'undo restores '+JSON.stringify(s));}
+   await pg.click('#sb .btn:not(.y)');s=await S();ok(s.over===false&&s.streak===st0.streak&&s.coins===st0.coins-price,'undo restores '+JSON.stringify(s));saved=true}
   const before=await S();
   for(let i=0;i<9;i++){if(i===corr)continue;await pg.click(`.cell[data-i="${i}"]`)}
   const s=await S();ok(s.over==='win','win '+subs[c]+' r'+r);
-  ok(s.coins===before.coins+10+Math.min(before.streak,5)*2,'coin math');ok(s.streak===before.streak+1,'streak++');
+  if(saved){ok(s.coins===before.coins&&s.streak===before.streak,'a round saved by undo paid coins or grew the streak')}
+  else{ok(s.coins===before.coins+10+Math.min(before.streak,5)*2,'coin math');ok(s.streak===before.streak+1,'streak++')}
   const labs=await pg.$$eval('.back',e=>e.map(x=>x.textContent));ok(labs.every(l=>!/undefined|NaN|null/.test(l)&&l.length>2),'backs ok '+labs.join(','));
   ok(await pg.$$eval('.back small',e=>e.every(x=>x.textContent.length)),'value label '+subs[c]);
   ok(await pg.$$eval('.cell.flip',e=>e.length)===9,'all flipped after win');
@@ -82,7 +84,7 @@ ok(await pg.evaluate(()=>Object.keys(prog).length)===rounds,'all rounds solved r
 ok(await pg.evaluate(()=>{for(let k=0;k<3000;k++){const m=mix();const v=m.items.map(x=>x.d[1]);const e=m.best==='min'?Math.min(...v):Math.max(...v);
  if(m.items.length!==9||v.filter(x=>x===e).length!==1||new Set(m.items.map(x=>x.d[0])).size!==9)return false}return true}),'mix rounds valid');
 await pg.click('.cat[data-c="e"]');ok(await pg.evaluate(()=>mode)==='end','endless mode');let mixes=0;
-await pg.evaluate(()=>{coins=500});
+await pg.evaluate(()=>{coins=500;uLv=0});
 for(let k=0;k<25;k++){const st=await pg.evaluate(()=>({corr,e:eScore,mix:!cur.r,q:cur.q[1]}));if(st.mix)mixes++;ok(st.e===k,'score '+st.e+' vs '+k);
  ok(!(await pg.isVisible('#skip')),'no skip in endless');
  for(let i=0;i<9;i++){if(i===st.corr)continue;await pg.click(`.cell[data-i="${i}"]`)}ok(await pg.evaluate(()=>over)==='win','endless win');

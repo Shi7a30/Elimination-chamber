@@ -1,5 +1,5 @@
 // The six flaws fixed on 17 Oct 2026: popups survive a language switch, duel doesn't stall after photo mode,
-// endless gives one second chance per run, replaying a solved round pays nothing, Home asks before ending a game,
+// endless undo keeps a run going, replaying a solved round pays nothing, Home asks before ending a game,
 // and the photos load after the game starts.
 const {chromium,devices}=require('playwright');
 const {PAGE,finish}=require('./lib');
@@ -33,12 +33,11 @@ await p.tap('#lang');await p.waitForTimeout(100);
 // 6. hot potato: Home asks first
 await toMenu();await p.tap('[data-nav="mp"]');await p.tap('.cat[data-c="h"]');await p.tap('.cat[data-hc=""]');await p.tap('#home');await p.waitForTimeout(200);
 s=await st();ok(s.sheet&&s.inGame&&s.mode==='hot','no leave question in hot potato');await p.evaluate(()=>document.querySelector('#sb .btn.y').click());ok((await st()).inGame,'Keep playing left hot potato');
-// 5. endless: one second chance per run
+// 5. endless: an undo keeps the run going (the rising price is checked in undo.js)
 await p.evaluate(()=>{coins=500;save()});await toMenu();await p.tap('.cat.hero');
 await winRound();await p.waitForTimeout(700);await p.evaluate(()=>document.querySelector('#sb .btn.y').click());
 await tapAnswer();await p.waitForTimeout(600);s=await st();ok(s.btns.some(x=>/Undo/.test(x)),'first endless loss offers no undo');
 await p.evaluate(()=>[...document.querySelectorAll('#sb .btn')].find(x=>/Undo/.test(x.textContent)).click());s=await st();ok(s.over===false&&s.eScore===1,'undo did not continue the run');
-await tapAnswer();await p.waitForTimeout(600);s=await st();ok(!s.btns.some(x=>/Undo/.test(x))&&await p.evaluate(()=>document.getElementById('undo').disabled),'second endless undo still allowed');
 // 5. replaying a solved category round pays nothing
 await toMenu();await p.evaluate(()=>{coins=50;streak=3;prog={};save()});await p.tap('[data-nav="cats"]');await p.tap('.cat[data-g="0"]');await p.tap('.cat.sc[data-s]');
 await winRound();await p.waitForTimeout(700);s=await st();ok(s.coins===50+10+6&&s.streak===4,'first solve paid wrong: '+s.coins+'/'+s.streak);
