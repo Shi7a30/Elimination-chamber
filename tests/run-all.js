@@ -1,7 +1,7 @@
 // Runs every check one after another and prints a summary. Usage: node tests/run-all.js [--quick]
 // --quick skips the full play-through (about 5 minutes).
 const {spawnSync} = require('child_process'), path = require('path');
-const ALL = ['data-check', 'regions', 'mobile', 'pwa', 'duel', 'duel-categories', 'duel-no-repeats', 'mixed-year-labels', 'same-photo', 'sound', 'multiplayer', 'flaw-fixes', 'random-order', 'daily', 'stats', 'full-playthrough'];
+const ALL = ['data-check', 'regions', 'mobile', 'pwa', 'duel', 'duel-categories', 'duel-no-repeats', 'mixed-year-labels', 'same-photo', 'sound', 'multiplayer', 'flaw-fixes', 'random-order', 'daily', 'stats', 'endless-levels', 'full-playthrough'];
 const list = process.argv.includes('--quick') ? ALL.filter(t => t !== 'full-playthrough') : ALL;
 const failed = [];
 for (const t of list) {
