@@ -408,7 +408,7 @@ body:not([data-scr=game]) #upd{bottom:calc(96px + env(safe-area-inset-bottom,0px
 <script>window.onerror=function(m,u,l){var e=document.getElementById("menu");if(e)e.insertAdjacentHTML("beforeend","<p class='sub'>Error: "+String(m).replace(/</g,"&lt;")+" (line "+l+")</p>")}</script>
 </head><body>
 <div id="app">
- <div class="top"><button class="pill" id="home" aria-label="Home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h5v-6h4v6h5V10"/></svg></button><div class="pill" id="cpill"><span id="coins">0</span><i class="coin"></i></div><button class="claw" id="claw" aria-hidden="true" tabindex="-1"><i class="c e" style="left:0px;animation-delay:0.05s;"></i><i class="c" style="left:23px;"></i><i class="c e" style="left:46px;animation-delay:0.20s;"></i><i class="c jl" style="left:69px;"></i><i class="slot" style="left:92px"></i><i class="c jr" style="left:115px;"></i><i class="c e" style="left:138px;animation-delay:0.35s;"></i><span class="cw"><i class="ln" style="left:100px;height:45px"></i><i class="hd" style="left:92px;top:2px"></i></span><i class="ans" style="left:91px;top:9px"></i><i class="sl" style="left:119px;top:10px;width:10px"></i><i class="sl" style="left:121px;top:16px;width:7px"></i><i class="sl" style="left:118px;top:22px;width:11px"></i><i class="sk" style="left:77px;top:2px">✦</i><i class="sk" style="left:85px;top:-6px;font-size:7px">✦</i></button><div class="tools"><button class="pill" id="snd" aria-label="Sound"></button><button class="pill" id="cam" aria-label="Photo mode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13.5" r="3.5"/></svg></button><button class="pill" id="lang" aria-label="Language">ع</button></div></div>
+ <div class="top"><button class="pill" id="home" aria-label="Home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h5v-6h4v6h5V10"/></svg></button><div class="pill" id="cpill"><span id="coins">0</span><i class="coin"></i></div><button class="claw" id="claw" aria-hidden="true" tabindex="-1"><i class="c e" style="left:0px;animation-delay:0.05s;"></i><i class="c" style="left:23px;"></i><i class="c e" style="left:46px;animation-delay:0.20s;"></i><i class="c jl" style="left:69px;"></i><i class="slot" style="left:92px"></i><i class="c jr" style="left:115px;"></i><i class="c e" style="left:138px;animation-delay:0.35s;"></i><span class="cw"><i class="ln" style="left:100px;height:45px"></i><i class="hd" style="left:92px;top:2px"></i></span><i class="ans" style="left:91px;top:9px"></i><i class="sl" style="left:119px;top:10px;width:10px"></i><i class="sl" style="left:121px;top:16px;width:7px"></i><i class="sl" style="left:118px;top:22px;width:11px"></i><i class="sk" style="left:77px;top:2px">✦</i><i class="sk" style="left:85px;top:-6px;font-size:7px">✦</i></button><div class="tools"><button class="pill" id="snd" aria-label="Sound and vibration"></button><button class="pill" id="cam" aria-label="Photo mode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13.5" r="3.5"/></svg></button><button class="pill" id="lang" aria-label="Language">ع</button></div></div>
  <div id="menu"><p class="sub">Loading… If nothing else shows up, this viewer isn't running the game. Open it in Safari or Chrome instead of a file preview.<br><br>لو مفيش حاجة ظهرت، افتح الملف في Safari أو Chrome بدل المعاينة.</p></div>
  <div id="game" style="display:none;width:100%;flex-direction:column;align-items:center">
   <div class="meta"><span id="rn"></span><span class="streak" id="stk"></span></div>
@@ -498,15 +498,15 @@ var TX={
   undoBtn:function(n){return"↺ رجوع · "+n},moveOn:"كمّل ◀",won:"🎉 جبتها!",coins:function(n){return"+"+n+" كوينز"},bonus:function(n){return" · +"+n+" بونص"},
   row:function(n){return" · 🔥 "+n+" ورا بعض"},perfect:"🏆 ولا غلطة!",done:"✅ خلّصت القسم!",got:function(a,b){return"جبت "+a+" من "+b+" المرة دي"},
   allSolved:" · ★ حليت كل الجولات",overall:function(s,n){return" · حليت "+s+" من "+n+" لحد دلوقتي"},replay:"↻ تاني",menu:"القايمة",full:"مفيش مساحة كفاية على الجهاز عشان تحفظ صور زيادة.",lang:"EN",
-  endless:"مالهاش آخر",endlessSub:"جولات متلخبطة من كل الأقسام",score:function(n){return"النتيجة "+n},runOver:"💀 اللعبة خلصت!",usedUndo:" استخدمت الفرصة التانية بتاعتك في اللعبة دي.",solvedB4:"حليتها قبل كده، فالمرة دي مفيش كوينز ومش هتتحسب في الـ 🔥.",leaveQ:"تخرج من اللعبة؟",leaveTxt:"اللي عملته في اللعبة دي هيضيع.",leave:"اخرج",stay:"كمّل لعب",
+  endless:"مالهاش آخر",endlessSub:"جولات متلخبطة من كل الأقسام",score:function(n){return"النتيجة "+n},runOver:"💀 اللعبة خلصت!",usedUndo:" استخدمت الفرصة التانية بتاعتك في اللعبة دي.",solvedB4:"حليتها قبل كده، فالمرة دي مفيش كوينز ومش هتتحسب في الـ 🔥.",leaveQ:"تخرج من اللعبة؟",leaveTxt:"اللي عملته في الدور ده هيروح.",leave:"اخرج",stay:"كمّل لعب",
   runTxt:function(s,b){return" عدّيت "+arN(s,"جولتين","جولات","جولة")+" · أحسن رقم "+b+"."},newBest:" 🏅 رقم قياسي جديد!",newRun:"↻ ابدأ من الأول",duel:"ده ولا ده",duelSub:"اختار واحد من اتنين، واللي يكسب يفضل",anyCat:"كل حاجة",anyCatSub:"أسئلة من كل الأقسام",pick:"اختار واحد",newQ:"سؤال جديد!",back:"›",sections:function(k){return k===1?"قسم واحد":n(k)+" أقسام"},duelTxt:function(s,b){return"جبت "+s+" ورا بعض · أحسن رقم "+b+"."},reg_eg:"🇪🇬 مصري",reg_w:"🌍 عالمي",reg_all:"🔀 الاتنين",
-  mp:"مع صحابك",cats:"الأقسام",hot:"البطاطس سخنة خالص",hotSub:"لفّوا الموبايل، واللي يشيل الإجابة الصح يطلع برا",chal:"تحدّي",chalSub:"العب 10 وابعت اللينك، وصحابك ياخدوا نفس الأسئلة",
+  mp:"مع صحابك",cats:"على كيفك",hot:"البطاطس سخنة خالص",hotSub:"لفّوا الموبايل، واللي يشيل الإجابة الصح يطلع برا",chal:"تحدّي",chalSub:"العب 10 وابعت اللينك، وصحابك ياخدوا نفس الأسئلة",
   players:"اللعيبة",addP:"+ لاعب كمان",pName:function(k){return"لاعب "+k},pickCat:"اختار قسم",pLeft:function(k){return"فاضل "+k},
   hRound:function(a){return"جولة "+a},turn:function(x){return"🥔 "+x+": شيل واحد"},isOut:function(x){return"💥 "+x+" طلع برا!"},
   outTxt:function(x,y){return x+" شال الإجابة الصح: "+y+"."},safe:"😅 محدش وقع!",safeTxt:"محدش لمس الإجابة الصح.",nextRound:"الجولة اللي بعدها ◀",
   winner:function(x){return"🏆 "+x+" كسب!"},winTxt:"آخر واحد فاضل.",again:"↻ تاني",
   yourName:"اسمك",namePh:"الاسم",friend:"واحد صاحبك",chFrom:function(x){return x+" بيتحداك!"},chBeat:function(s,k){return"النتيجة اللي لازم تعدّيها: "+s+" من "+k},
-  chSame:"نفس الأسئلة ومن غير رجوع. تقدر تكسب؟",play:"▶ يلا",heroPlay:"يلا نلعب",tDuel:"ده ولا ده",tCats:"الأقسام",tCatsSub:function(n){return n+" مجموعات"},tMp:"مع صحابك",tMpSub:"من 2 لـ 8 لاعيبة",chBad:"لينك التحدي ده مش شغال مع النسخة دي من اللعبة.",
+  chSame:"نفس الأسئلة ومن غير رجوع. تقدر تكسب؟",play:"▶ يلا",heroPlay:"يلا نلعب",tDuel:"ده ولا ده",tCats:"على كيفك",tCatsSub:function(n){return n+" مجموعات"},tMp:"مع صحابك",tMpSub:"من 2 لـ 8 لاعيبة",chBad:"لينك التحدي ده مش شغال مع النسخة دي من اللعبة.",
   chRound:function(a,b,s){return"🔗 جولة "+a+"/"+b+" · النتيجة "+s},chDone:"✅ خلصت التحدي!",chYou:function(s,k){return"جبت "+s+" من "+k+". ابعت اللينك وشوف صحابك هيعدّوك ولا لأ."},
   chWin:"🏆 كسبت!",chLose:"😬 خسرت!",chDraw:"🤝 تعادل!",vs:function(s,b,x,k){return"إنت "+s+" · "+x+" "+b+" (من "+k+")"},
   share:"🔗 ابعت التحدي",shareBack:"🔗 ابعت نتيجتك",copied:"اتنسخ اللينك!",msg:function(s,k){return"جبت "+s+" من "+k+" في شيلهم! تقدر تعدّيني؟ 🔥"},
@@ -779,16 +779,21 @@ function searchPhoto(x){wapi("action=query&generator=search&gsrlimit=1&gsrsearch
 
 // --- sound, haptics, effects ---
 var AC;
-function tone(f,d,ty,v,w){if(mute)return;try{AC=AC||new(window.AudioContext||window.webkitAudioContext)();if(AC.state==="suspended")AC.resume();
- var o=AC.createOscillator(),g=AC.createGain(),s=AC.currentTime+(w||0);o.type=ty||"sine";o.frequency.setValueAtTime(f,s);
- g.gain.setValueAtTime(v||.12,s);g.gain.exponentialRampToValueAtTime(.001,s+d);o.connect(g);g.connect(AC.destination);o.start(s);o.stop(s+d+.02)}catch(e){}}
-function buzz(p){try{navigator.vibrate&&navigator.vibrate(p)}catch(e){}}
+// Soft sounds: each note fades in over a few ms (no click), can glide to a second pitch (f2), and goes through a gentle
+// low-pass so nothing sounds harsh. The sound button turns vibration off too.
+function tone(f,d,ty,v,w,f2){if(mute)return;try{AC=AC||new(window.AudioContext||window.webkitAudioContext)();if(AC.state==="suspended")AC.resume();
+ var o=AC.createOscillator(),g=AC.createGain(),lp=AC.createBiquadFilter(),s=AC.currentTime+(w||0);o.type=ty||"sine";o.frequency.setValueAtTime(f,s);
+ if(f2)o.frequency.exponentialRampToValueAtTime(f2,s+d*.8);lp.type="lowpass";lp.frequency.value=3200;
+ g.gain.setValueAtTime(.0001,s);g.gain.linearRampToValueAtTime(v||.1,s+.012);g.gain.exponentialRampToValueAtTime(.0001,s+d);
+ o.connect(lp);lp.connect(g);g.connect(AC.destination);o.start(s);o.stop(s+d+.03)}catch(e){}}
+function buzz(p){if(mute)return;try{navigator.vibrate&&navigator.vibrate(p)}catch(e){}}
 var sfx={
- elim:function(k){tone(260+k*55,.12,"square",.06);buzz(12)},
- win:function(){[523,659,784,1047].forEach(function(f,k){tone(f,.28,"triangle",.16,k*.09)});tone(1568,.18,"sine",.08,.5);tone(2093,.25,"sine",.08,.58);buzz([20,40,20])},
- lose:function(){tone(330,.3,"sawtooth",.07);tone(233,.5,"sawtooth",.07,.2);buzz([60,40,90])},
- tap:function(){tone(520,.06,"sine",.06)},
- ok:function(){tone(784,.12,"triangle",.14);tone(1047,.18,"triangle",.14,.08);buzz(15)}};
+ // a card goes out: a short rising "pop" that climbs a little with every card you remove
+ elim:function(k){var f=440*Math.pow(2,Math.min(k,8)/12);tone(f,.11,"sine",.1,0,f*1.5);tone(f*2,.06,"triangle",.025,.01);buzz(12)},
+ win:function(){[523,659,784,1047].forEach(function(f,k){tone(f,.32,"triangle",.11,k*.08)});tone(1568,.4,"sine",.05,.34);tone(2093,.45,"sine",.035,.42);buzz([20,40,20])},
+ lose:function(){tone(392,.28,"triangle",.12,0,330);tone(311,.5,"triangle",.11,.22,233);buzz([60,40,90])},
+ tap:function(){tone(700,.045,"sine",.045)},
+ ok:function(){tone(784,.16,"triangle",.1);tone(1175,.26,"triangle",.09,.09);buzz(15)}};
 function floatTxt(s){var p=$("cpill").getBoundingClientRect(),e=document.createElement("span");e.className="float";e.textContent=s;
  e.style.left=(p.left+10)+"px";e.style.top=(p.bottom+4)+"px";document.body.appendChild(e);setTimeout(function(){e.remove()},1200)}
 function bump(){var p=$("cpill");p.classList.remove("bump");void p.offsetWidth;p.classList.add("bump")}
