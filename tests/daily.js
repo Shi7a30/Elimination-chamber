@@ -16,7 +16,7 @@ await a.tap('.dcard');await c2.tap('.dcard');
 const ia=await a.evaluate(()=>[cur.r.key,items.map(x=>x.d[0])]),ib=await c2.evaluate(()=>[cur.r.key,items.map(x=>x.d[0])]);
 ok(JSON.stringify(ia)===JSON.stringify(ib),'two players got different daily rounds or card orders');
 let s=await st(a);ok(s.mode==='daily'&&s.dock==='none','daily round did not start, or the dock shows in the game');
-ok(await a.evaluate(()=>getComputedStyle(document.getElementById('undo')).display==='none'),'Undo shows in the daily round');
+ok(await a.evaluate(()=>!document.getElementById('undo')&&!canUndo()),'Undo shows in the daily round');
 // win it: coins +10, streak 1, the card turns into "Done for today" with one square per tap and a Share button
 const c0=s.coins;await a.evaluate(()=>{for(let i=0;i<items.length;i++)if(i!==corr)document.querySelector('.cell[data-i="'+i+'"]').click()});await a.waitForTimeout(900);
 s=await st(a);ok(s.over==='win'&&s.coins===c0+10&&s.DY.s===1&&s.DY.b===1&&s.DY.w,'win not recorded: '+JSON.stringify(s.DY));

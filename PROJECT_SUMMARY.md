@@ -24,7 +24,7 @@ Each round shows a question and **9 photo cards**, for example "OLDEST MOVIE STA
 |---|---|
 | Starting coins | 50 |
 | Win a round | +10 coins, plus a streak bonus of 2 × streak (max +10) |
-| Undo the last elimination | costs 30 coins. You can undo after a loss to save your streak |
+| Undo after a loss | takes back the losing card to save your streak or Endless run. Costs 30, then 60, 120... each time you save the same streak; back to 30 once a loss is accepted. A saved round pays no coins |
 | Skip a round | free (category mode), but it ends your 🔥 streak, and the game asks first when the streak is 2 or more |
 | Streak 🔥 and best 🏆 | shown on the Play card (and the daily round has its own) |
 | Daily round | one round a day, the same for everyone (changes at midnight Cairo time), one try, own streak and best, shareable result squares. The order is written down in `daily.js` and new rounds only go on the end, so adding rounds never changes a day |
