@@ -12,7 +12,7 @@ CATS.push(
   ["Dream TV",2001,"دريم","Dream TV (Egypt)"],["Al Hayat TV",2008,"الحياة"],["ON TV",2008,"أون تي في","ON E"],
   ["CBC",2011,"سي بي سي","Capital Broadcasting Center"],["MBC Masr",2012,"إم بي سي مصر"],["DMC",2017,"دي إم سي"]],
   {h:"Egyptian TV channel",k:["LAUNCHED","بدأت سنة"],g:"y",dt:["Channel launched","انطلاق القناة"],s:"kidstv",m:"eg",d:2}),
- Rd(["WHICH EGYPTIAN RADIO STATION","WENT ON AIR LAST",Q],["أنهي إذاعة","أجدد",QA],"max",[
+ Rd(["WHICH EGYPTIAN RADIO STATION","WENT ON AIR LAST",Q],["إيه","أجدد إذاعة",QA],"max",[
   ["Egyptian Radio",1934,"الإذاعة المصرية"],["Voice of the Arabs",1953,"صوت العرب"],["Alexandria Radio",1954,"إذاعة الإسكندرية"],
   ["Quran Radio",1964,"إذاعة القرآن الكريم"],["Middle East Radio",1964,"إذاعة الشرق الأوسط"],["Al Aghani Radio",2000,"إذاعة الأغاني"],
   ["Nogoum FM",2003,"نجوم إف إم"],["Radio Masr",2009,"راديو مصر"],["Mega FM",2010,"ميجا إف إم","Nile Radio Network"]],
@@ -27,7 +27,7 @@ CATS.push(
   ["Samir Ghanem",1937,"سمير غانم"],["Younes Shalaby",1941,"يونس شلبي"],["Yehia El-Fakharany",1945,"يحيى الفخراني"],
   ["Mama Nagwa",1946,"ماما نجوى"],["Hala Fakher",1946,"هالة فاخر"],["Mohamed Henedy",1965,"محمد هنيدي"]],
   {h:"Egyptian actor or TV presenter",k:BORN,g:"p",s:"kidstv",m:"eg",d:2}),
- Rd(["WHICH EGYPTIAN MAGAZINE","CAME OUT LAST",Q],["أنهي مجلة","أجدد",QA],"max",[
+ Rd(["WHICH EGYPTIAN MAGAZINE","CAME OUT LAST",Q],["إيه","أجدد مجلة",QA],"max",[
   ["Al-Hilal",1892,"الهلال","Al-Hilal (magazine)"],["Al-Musawar",1924,"المصور"],["Rose al-Youssef",1925,"روز اليوسف","Rose al Yusuf (magazine)"],
   ["Al-Kawakeb",1932,"الكواكب"],["Samir Magazine",1956,"مجلة سمير"],["Sabah El Kheir",1956,"صباح الخير"],
   ["Mickey Magazine",1959,"مجلة ميكي"],["Nus El Donya",1990,"نصف الدنيا","Nesf El Donya"],["Alaa El-Din",1993,"علاء الدين"]],
@@ -37,7 +37,7 @@ CATS.push(
   ["Fiat 127",1971,"فيات 127"],["Mercedes-Benz W123",1976,"مرسيدس W123"],["Lada 2107",1982,"لادا 2107","Lada Riva"],
   ["Peugeot 405",1987,"بيجو 405"],["Daewoo Lanos",1997,"دايو لانوس"],["Hyundai Verna",1999,"هيونداي فيرنا","Hyundai Accent"]],
   {h:"classic car model",k:["MODEL LAUNCHED","الموديل نزل سنة"],g:"y",dt:["Car model launched","نزول الموديل"],s:"zaman",m:"eg",d:3}),
- Rd(["WHICH OF THESE","CAME TO EGYPT FIRST",Q],["أنهي حاجة","وصلت مصر الأول",QA],"min",[
+ Rd(["WHICH OF THESE","CAME TO EGYPT FIRST",Q],["إيه","اللي وصل مصر الأول",QA],"min",[
   ["Telegraph",1854,"التلغراف","Electrical telegraph"],["Telephone (in Egypt)",1881,"التليفون","Telephone"],["Cinema",1896,"السينما","Cinema of Egypt"],
   ["Egyptian Radio",1934,"الإذاعة المصرية"],["Television",1960,"التليفزيون","Egyptian Television Network"],["Cairo Metro (Line 1)",1987,"مترو الأنفاق (الخط الأول)","Line 1 (Cairo Metro)"],
   ["Internet",1993,"الإنترنت","Internet in Egypt"],["Mobile phones",1996,"الموبايل","Mobile phone"],["Nilesat",1998,"نايل سات"]],
@@ -47,7 +47,7 @@ CATS.push(
   ["Nokia 1100",2003,"نوكيا 1100"],["Motorola Razr V3",2004,"موتورولا رازر"],["Sony Ericsson K750",2005,"سوني إريكسون K750"],
   ["Nokia N73",2006,"نوكيا N73"],["iPhone",2007,"آيفون"],["BlackBerry Curve 8520",2009,"بلاك بيري كيرف","BlackBerry Curve"]],
   {h:"mobile phone model",k:["RELEASED","نزل سنة"],g:"y",dt:["Phone released","نزول الموبايل"],s:"zaman",m:"eg",d:3}),
- Rd(["WHICH CARTOON NETWORK SHOW","AIRED FIRST",Q],["أنهي كرتون من كرتون نتورك","اتعرض الأول",QA],"min",[
+ Rd(["WHICH CARTOON NETWORK SHOW","AIRED FIRST",Q],["إيه","أقدم كرتون من كرتون نتورك",QA],"min",[
   ["Dexter's Laboratory",1996,"معمل دكستر"],["Johnny Bravo",1997,"جوني برافو"],["Cow and Chicken",1997,"البقرة والفرخة"],
   ["The Powerpuff Girls",1998,"فتيات القوة"],["Ed, Edd n Eddy",1999,"إد وإد وإدي"],["Courage the Cowardly Dog",1999,"الكلب الجبان"],
   ["Samurai Jack",2001,"ساموراي جاك"],["Ben 10",2005,"بن 10","Ben 10 (2005 TV series)"],["Adventure Time",2010,"وقت المغامرة"]],
@@ -57,7 +57,7 @@ CATS.push(
   ["Goof Troop",1992,"جوفي وابنه"],["Gargoyles",1994,"الجارجويلز","Gargoyles (TV series)"],["Timon & Pumbaa",1995,"تيمون وبومبا","Timon & Pumbaa (TV series)"],
   ["Recess",1997,"الفسحة (ريسس)"],["Kim Possible",2002,"كيم بوسيبل"],["Phineas and Ferb",2007,"فينياس وفيرب"]],
   {h:"cartoon",k:["FIRST AIRED","اتعرض سنة"],g:"y",dt:["Series first aired","أول عرض للمسلسل"],s:"kidstv",m:"eg",d:2}),
- Rd(["WHICH ANIME","CAME OUT FIRST",Q],["أنهي أنمي","نزل الأول",QA],"min",[
+ Rd(["WHICH ANIME","CAME OUT FIRST",Q],["إيه","أقدم أنمي",QA],"min",[
   ["Grendizer",1975,"جريندايزر","UFO Robot Grendizer"],["Captain Tsubasa (Captain Majed)",1983,"الكابتن ماجد","Captain Tsubasa"],["Princess Sarah",1985,"سالي","Princess Sarah"],
   ["Dragon Ball",1986,"دراجون بول","Dragon Ball (TV series)"],["Slam Dunk",1993,"سلام دانك","Slam Dunk (TV series)"],["Detective Conan",1996,"المحقق كونان","Case Closed"],
   ["Pokémon (anime)",1997,"بوكيمون","Pokémon (TV series)"],["Digimon",1999,"ديجيمون","Digimon Adventure"],["Naruto",2002,"ناروتو","Naruto (TV series)"]],
@@ -67,7 +67,7 @@ CATS.push(
   ["Al Jazeera Children's",2005,"الجزيرة للأطفال","Jeem TV"],["Toyor Al Janah",2008,"طيور الجنة"],["Nickelodeon Arabia",2008,"نيكلوديون العربية"],
   ["Baraem",2009,"براعم","Baraem (TV channel)"],["Cartoon Network Arabic",2010,"كرتون نتورك بالعربية"],["Majid Kids",2015,"قناة ماجد","Majid (TV channel)"]],
   {h:"TV channel",k:["LAUNCHED","بدأت سنة"],s:"kidstv",m:"eg",d:2}),
- Rd(["WHICH DISNEY CHARACTER","APPEARED FIRST",Q],["أنهي شخصية ديزني","ظهرت الأول",QA],"min",[
+ Rd(["WHICH DISNEY CHARACTER","APPEARED FIRST",Q],["مين","أقدم شخصية ديزني",QA],"min",[
   ["Mickey Mouse",1928,"ميكي ماوس"],["Pluto",1930,"بلوتو","Pluto (Disney)"],["Goofy",1932,"بندق"],
   ["Donald Duck",1934,"بطوط"],["Daisy Duck",1940,"زيزي (ديزي داك)"],["Chip 'n' Dale",1943,"تشيب وديل"],
   ["Scrooge McDuck",1947,"عم دهب"],["Stitch",2002,"ستيتش","Stitch (Lilo & Stitch)"],["Olaf",2013,"أولاف","Olaf (Frozen)"]],
@@ -82,7 +82,7 @@ CATS.push(
   ["CatDog",1998,"القط الكلب"],["SpongeBob",1999,"سبونج بوب"],["The Fairly OddParents",2001,"آباء خارقون"],
   ["Jimmy Neutron",2002,"جيمي نيوترون","The Adventures of Jimmy Neutron, Boy Genius"],["Danny Phantom",2004,"داني فانتوم"],["Avatar: The Last Airbender",2005,"أفاتار: أسطورة أنج"]],
   {h:"cartoon",k:["FIRST AIRED","اتعرض سنة"],g:"y",dt:["Series first aired","أول عرض للمسلسل"],s:"kidstv",m:"eg",d:3}),
- Rd(["WHICH KIDS' SHOW","AIRED FIRST",Q],["أنهي برنامج أطفال","اتعرض الأول",QA],"min",[
+ Rd(["WHICH KIDS' SHOW","AIRED FIRST",Q],["إيه","أقدم برنامج أطفال",QA],"min",[
   ["Sesame Street",1969,"شارع سمسم"],["Thomas & Friends",1984,"توماس وأصدقاؤه"],["Pingu",1990,"بينجو"],
   ["Barney & Friends",1992,"بارني"],["Power Rangers",1993,"باور رينجرز","Mighty Morphin Power Rangers"],["Teletubbies",1997,"التيليتابيز"],
   ["Bob the Builder",1998,"بوب البنا"],["Dora the Explorer",2000,"دورا"],["Peppa Pig",2004,"بيبا بيج"]],
@@ -107,12 +107,12 @@ CATS.push(
   ["Shark Tale",2004,"حكاية قرش"],["Madagascar",2005,"مدغشقر","Madagascar (2005 film)"],["Kung Fu Panda",2008,"كونج فو باندا","Kung Fu Panda (film)"],
   ["How to Train Your Dragon",2010,"كيف تروض تنينك","How to Train Your Dragon (2010 film)"],["The Boss Baby",2017,"الطفل الزعيم","The Boss Baby (film)"],["The Wild Robot",2024,"الروبوت البري"]],
   {h:"animated film",k:["RELEASED","نزل سنة"],g:"y",dt:["Film released","نزول الفيلم"],s:"kidstv",m:"eg",d:2}),
- Rd(["WHICH CARTOON","AIRED LAST",Q],["أنهي كرتون","أجدد",QA],"max",[
+ Rd(["WHICH CARTOON","AIRED LAST",Q],["إيه","أجدد كرتون",QA],"max",[
   ["Peppa Pig",2004,"بيبا بيج"],["Masha and the Bear",2009,"ماشا والدب"],["Regular Show",2010,"العرض العادي"],
   ["The Amazing World of Gumball",2011,"عالم غامبول المدهش"],["Gravity Falls",2012,"جرافيتي فولز"],["Steven Universe",2013,"ستيفن يونيفرس"],
   ["PAW Patrol",2013,"دوريات المخلاب"],["We Bare Bears",2015,"الدببة الثلاثة"],["Bluey",2018,"بلوي","Bluey (2018 TV series)"]],
   {h:"cartoon",k:["FIRST AIRED","اتعرض سنة"],g:"y",dt:["Series first aired","أول عرض للمسلسل"],s:"kidstv",m:"eg",d:2}),
- Rd(["WHICH LOONEY TUNES STAR","APPEARED FIRST",Q],["أنهي شخصية لوني تونز","ظهرت الأول",QA],"min",[
+ Rd(["WHICH LOONEY TUNES STAR","APPEARED FIRST",Q],["مين","أقدم شخصية لوني تونز",QA],"min",[
   ["Porky Pig",1935,"بوركي"],["Daffy Duck",1937,"دافي داك"],["Bugs Bunny",1940,"باجز باني"],
   ["Tweety",1942,"تويتي"],["Sylvester",1945,"سيلفستر","Sylvester the Cat"],["Marvin the Martian",1948,"مارفن المريخي"],
   ["Road Runner",1949,"رود رنر","Wile E. Coyote and the Road Runner"],["Speedy Gonzales",1953,"سبيدي جونزاليس"],["Tasmanian Devil",1954,"تاز","Tasmanian Devil (Looney Tunes)"]],
@@ -122,12 +122,12 @@ CATS.push(
   ["Wailord",398,"ويلورد"],["Onix",210,"أونيكس"],["Mewtwo",122,"ميوتو"],
   ["Charizard",90.5,"تشاريزارد"],["Bulbasaur",6.9,"بلباسور"],["Pikachu",6,"بيكاتشو"]],
   {suf:[" kg"," كيلو"],h:"Pokémon",k:["POKÉDEX WEIGHT","الوزن في البوكيديكس"],s:"kidstv",m:"eg",d:2}),
- Rd(["WHICH TOY","CAME OUT FIRST",Q],["أنهي لعبة","نزلت الأول",QA],"min",[
+ Rd(["WHICH TOY","CAME OUT FIRST",Q],["إيه","أقدم لعبة",QA],"min",[
   ["Teddy bear",1902,"الدبدوب"],["Slinky",1945,"السوستة (سلينكي)"],["Play-Doh",1956,"الصلصال (بلاي دو)"],
   ["Etch A Sketch",1960,"السبورة السحرية"],["Rubik's Cube",1974,"مكعب روبيك"],["Lego minifigure",1978,"عروسة ليجو"],
   ["Tamagotchi",1996,"تاماجوتشي"],["Furby",1998,"فيربي"],["Beyblade",1999,"البلبل (بي بليد)"]],
   {h:"toy",k:["CAME OUT","نزلت سنة"],g:"y",dt:["Toy released","نزول اللعبة"],s:"zaman",m:"eg",d:1}),
- Rd(["WHICH MEDIA FORMAT","CAME OUT FIRST",Q],["أنهي حاجة","نزلت الأول",QA],"min",[
+ Rd(["WHICH MEDIA FORMAT","CAME OUT FIRST",Q],["إيه","أقدم حاجة",QA],"min",[
   ["Cassette tape",1963,"شريط الكاسيت","Cassette tape"],["Floppy disk",1971,"الفلوبي"],["VHS",1976,"شريط الفيديو"],
   ["Walkman",1979,"الووكمان"],["CD",1982,"السي دي","Compact disc"],["Discman",1984,"الديسكمان"],
   ["DVD",1996,"الدي في دي"],["USB flash drive",2000,"الفلاشة"],["Blu-ray",2006,"البلو راي"]],
@@ -147,7 +147,7 @@ CATS.push(
   ["Cairo Tower",1961,"برج القاهرة"],["Cairo Opera House",1988,"دار الأوبرا"],["Cairo Metro Line 2",1996,"مترو الخط التاني","Line 2 (Cairo Metro)"],
   ["Bibliotheca Alexandrina",2002,"مكتبة الإسكندرية"],["Al-Azhar Park",2005,"حديقة الأزهر"],["Cairo Metro Line 3",2012,"مترو الخط التالت","Line 3 (Cairo Metro)"]],
   {h:"Egypt",k:["OPENED","اتفتح سنة"],s:"zaman",m:"eg",d:2}),
- Rd(["WHICH OF THESE","HAPPENED FIRST",Q],["أنهي حاجة","حصلت الأول",QA],"min",[
+ Rd(["WHICH OF THESE","HAPPENED FIRST",Q],["إيه","اللي حصل الأول",QA],"min",[
   ["Fall of the Berlin Wall",1989,"سقوط سور برلين","Fall of the Berlin Wall"],["Death of Princess Diana",1997,"وفاة الأميرة ديانا","Death of Diana, Princess of Wales"],["The Y2K millennium",2000,"الألفية (سنة 2000)","Year 2000 problem"],
   ["Euro notes and coins",2002,"نزول اليورو","Euro banknotes"],["Indian Ocean tsunami",2004,"تسونامي المحيط الهندي","2004 Indian Ocean earthquake and tsunami"],["Death of Michael Jackson",2009,"وفاة مايكل جاكسون","Death of Michael Jackson"],
   ["January 25 revolution",2011,"ثورة 25 يناير","Egyptian revolution of 2011"],["London Olympics",2012,"أولمبياد لندن","2012 Summer Olympics"],["Brexit vote",2016,"استفتاء البريكست","2016 United Kingdom European Union membership referendum"]],
@@ -172,7 +172,7 @@ CATS.push(
   ["Old Cataract",1899,"كتاراكت أسوان","Old Cataract Hotel"],["Semiramis",1907,"سميراميس","Semiramis InterContinental Hotel"],["Cecil Hotel",1929,"فندق سيسيل","Cecil Hotel (Alexandria)"],
   ["Nile Hilton",1959,"النيل هيلتون","Nile Ritz-Carlton"],["Four Seasons Nile Plaza",2004,"فور سيزونز النيل","Four Seasons Hotel Cairo at Nile Plaza"],["St. Regis Cairo",2019,"سانت ريجيس القاهرة","St. Regis Cairo"]],
   {h:"hotel in Egypt",k:["OPENED","اتفتح سنة"],s:"zaman",m:"eg",d:3}),
- Rd(["WHICH TREND","WENT VIRAL LAST",Q],["أنهي تريند","أجدد",QA],"max",[
+ Rd(["WHICH TREND","WENT VIRAL LAST",Q],["إيه","أجدد تريند",QA],"max",[
   ["Macarena",1996,"الماكارينا","Macarena (song)"],["Planking",2011,"البلانكينج","Planking (fad)"],["Gangnam Style",2012,"جانجنام ستايل"],
   ["Harlem Shake",2013,"هارلم شيك","Harlem Shake (meme)"],["Ice Bucket Challenge",2014,"تحدي التلج"],["The Dab",2015,"الداب","Dab (dance)"],
   ["Mannequin Challenge",2016,"تحدي المانيكان"],["Fidget spinner",2017,"السبينر"],["Kiki Challenge",2018,"تحدي كيكي","In My Feelings"]],
@@ -187,12 +187,12 @@ CATS.push(
   ["Transistor radio",1954,"الراديو الترانزستور"],["Pocket calculator",1970,"الآلة الحاسبة","Calculator"],["Digital watch",1972,"الساعة الديجيتال","Hamilton Pulsar"],
   ["Game & Watch",1980,"جيم آند ووتش"],["Handycam",1985,"الكاميرا الفيديو (هاندي كام)"],["Pager",1949,"البيجر"]],
   {h:"gadget",k:["CAME OUT","نزل سنة"],s:"zaman",m:"eg",d:2}),
- Rd(["WHICH UNIVERSITY","WAS FOUNDED FIRST",Q],["أنهي جامعة","اتأسست الأول",QA],"min",[
+ Rd(["WHICH UNIVERSITY","WAS FOUNDED FIRST",Q],["إيه","أقدم جامعة",QA],"min",[
   ["Al-Azhar University",970,"جامعة الأزهر"],["Cairo University",1908,"جامعة القاهرة"],["AUC",1919,"الجامعة الأمريكية","American University in Cairo"],
   ["Alexandria University",1938,"جامعة الإسكندرية"],["Ain Shams University",1950,"جامعة عين شمس"],["Assiut University",1957,"جامعة أسيوط"],
   ["Helwan University",1975,"جامعة حلوان"],["GUC",2003,"الجامعة الألمانية","German University in Cairo"],["BUE",2005,"الجامعة البريطانية","British University in Egypt"]],
   {h:"university",k:["FOUNDED","اتأسست سنة"],s:"zaman",m:"eg",d:1}),
- Rd(["WHICH APP OR SITE","SHUT DOWN LAST",Q],["أنهي","آخر أبلكيشن أو موقع اتقفل",QA],"max",[
+ Rd(["WHICH APP OR SITE","SHUT DOWN LAST",Q],["إيه","آخر أبلكيشن أو موقع اتقفل",QA],"max",[
   ["MSN Messenger",2013,"إم إس إن ماسنجر","Windows Live Messenger"],["Orkut",2014,"أوركت"],["Vine",2017,"فاين","Vine (service)"],
   ["Yahoo! Messenger",2018,"ياهو ماسنجر"],["Google+",2019,"جوجل بلس"],["Adobe Flash",2020,"فلاش بلاير","Adobe Flash Player"],
   ["Internet Explorer",2022,"إنترنت إكسبلورر"],["iPod",2022,"آي بود","iPod Touch"],["Skype",2025,"سكايب"]],

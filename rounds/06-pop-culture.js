@@ -10,11 +10,11 @@ CATS.push(
   ["Robert Downey Jr",1965,"روبرت داوني جونيور","Robert Downey Jr."],["Mark Ruffalo",1967,"مارك روفالو"],["Paul Rudd",1969,"بول رود"],["Benedict Cumberbatch",1976,"بنديكت كامبرباتش"],
   ["Chris Pratt",1979,"كريس برات"],["Chris Evans",1981,"كريس إيفانز","Chris Evans (actor)"],["Chris Hemsworth",1983,"كريس هيمسورث"],["Scarlett Johansson",1984,"سكارليت جوهانسون"],
   ["Tom Holland",1996,"توم هولاند"]],{h:"actor",k:BORN,g:"p",s:"actors",m:"w",d:2}),
- Rd(["WHICH IS THE","OLDEST CARTOON",Q],["أنهي","أقدم كرتون",QA],"min",[
+ Rd(["WHICH IS THE","OLDEST CARTOON",Q],["إيه","أقدم كرتون",QA],"min",[
   ["Mickey Mouse",1928,"ميكي ماوس"],["Bugs Bunny",1940,"باجز باني"],["Tom and Jerry",1940,"توم وجيري"],["Scooby-Doo",1969,"سكوبي دو"],
   ["The Simpsons",1987,"عيلة سيمبسون"],["SpongeBob",1999,"سبونج بوب","SpongeBob SquarePants"],["Shrek",2001,"شريك"],["Peppa Pig",2004,"بيبا بيج"],
   ["Bluey",2018,"بلوي","Bluey (2018 TV series)"]],{h:"cartoon",k:["FIRST SHOWN","أول ظهور"],dt:["Cartoon first shown", "أول ظهور للكرتون"],g:"y",s:"celebs",m:"w",d:1}),
- Rd(["WHICH CHILDHOOD ICON","CAME OUT FIRST",Q],["أنهي حاجة من أيام الطفولة","ظهرت الأول",QA],"min",[
+ Rd(["WHICH CHILDHOOD ICON","CAME OUT FIRST",Q],["إيه","أقدم حاجة من أيام الطفولة",QA],"min",[
   ["Samir Magazine",1956,"مجلة سمير","Samir (magazine)"],["Bogy & Tamtam",1983,"بوجي وطمطم"],["Bakkar",1998,"بكار","Bakkar"],["Alam Simsim",2000,"عالم سمسم"],
   ["Super Henedy",2007,"سوبر هنيدي"],["Abla Fahita",2010,"أبلة فاهيتا"],["Qesas El Hayawan fel Quran",2011,"قصص الحيوان في القرآن","Qesas El Hayawan fel Quran"],["The Knight and the Princess",2019,"الفارس والأميرة"],
   ["Ye7ia w konooz",2022,"يحيى وكنوز","Yehia w Kenooz"]],{h:"Egyptian cartoon",k:["DEBUT","أول ظهور"],dt:["First appeared", "أول ظهور"],g:"y",s:"celebs",m:"eg",d:2}),
@@ -38,12 +38,12 @@ CATS.push(
   ["Jeff Bezos",1964,"جيف بيزوس"],["Elon Musk",1971,"إيلون ماسك"],["Larry Page",1973,"لاري بيدج"],
   ["Mark Zuckerberg",1984,"مارك زوكربيرج"],["Sam Altman",1985,"سام ألتمان"],["Evan Spiegel",1990,"إيفان شبيجل"]],
   {h:"businessman",k:BORN,g:"p",s:"celebs",m:"w",d:2}),
- Rd(["WHICH CARTOON CHARACTER","APPEARED FIRST",Q],["أنهي شخصية كرتون","ظهرت الأول",QA],"min",[
+ Rd(["WHICH CARTOON CHARACTER","APPEARED FIRST",Q],["مين","أقدم شخصية كرتون",QA],"min",[
   ["Popeye",1929,"باباي"],["Betty Boop",1930,"بيتي بوب"],["Goofy",1932,"بندق"],
   ["Donald Duck",1934,"بطوط"],["Woody Woodpecker",1940,"نقار الخشب"],["Pink Panther",1963,"النمر الوردي","Pink Panther (character)"],
   ["Garfield",1978,"جارفيلد"],["Pikachu",1996,"بيكاتشو"],["SpongeBob",1999,"سبونج بوب","SpongeBob SquarePants"]],
   {h:"cartoon character",k:["FIRST APPEARED","أول ظهور"],s:"celebs",m:"w",d:3}),
- Rd(["WHICH SUPERHERO","APPEARED FIRST",Q],["أنهي بطل خارق","ظهر الأول",QA],"min",[
+ Rd(["WHICH SUPERHERO","APPEARED FIRST",Q],["مين","أقدم بطل خارق",QA],"min",[
   ["Superman",1938,"سوبرمان"],["Batman",1939,"باتمان"],["The Flash",1940,"فلاش","Jay Garrick"],
   ["Wonder Woman",1941,"وندر وومان"],["Spider-Man",1962,"سبايدر مان"],["Hulk",1962,"هالك"],
   ["Wolverine",1974,"وولفرين","Wolverine (character)"],["Venom",1984,"فينوم","Venom (character)"],["Deadpool",1991,"ديدبول"]],

@@ -22,7 +22,7 @@ CATS.push(
   ["Yehia El-Fakharany",1945,"يحيى الفخراني"],["Mohamed Sobhi",1948,"محمد صبحي","Mohamed Sobhi (actor)"],["Mahmoud Hemida",1953,"محمود حميدة"],
   ["Ashraf Abdel Baky",1963,"أشرف عبد الباقي"],["Khaled El Nabawy",1966,"خالد النبوي"],["Yasser Galal",1969,"ياسر جلال"],
   ["Mostafa Shaban",1970,"مصطفى شعبان"],["Youssef El Sherif",1978,"يوسف الشريف"],["Mohamed Ramadan",1988,"محمد رمضان","Mohamed Ramadan (actor)"]],{h:"Egyptian actor",k:BORN,g:"p",s:"tv",m:"eg",d:1}),
- Rd(["WHICH SERIES","CAME OUT LAST",Q],["أنهي مسلسل","أجدد",QA],"max",[
+ Rd(["WHICH SERIES","CAME OUT LAST",Q],["إيه","أجدد مسلسل",QA],"max",[
   ["Ra2fat el haggan",1988,"رأفت الهجان","Raafat El Haggan"],["Arabesque",1994,"أرابيسك","Arabesque"],["7adis el saba7 wel masa2",2001,"حديث الصباح والمساء","Hadeeth El Sabah wel Masaa"],
   ["Ragel we set settat",2006,"راجل وست ستات","Ragel W Set Settat"],["Ta7t el saytara",2015,"تحت السيطرة","Taht El Saytara"],["Nelly w sherihan",2016,"نيللي وشريهان","Nelly & Sherihan"],
   ["Sabe3 gar",2017,"سابع جار","Sabe' Gar"],["Paranormal",2020,"ما وراء الطبيعة","Paranormal (TV series)"],["Ashghal sha2a",2024,"أشغال شقة","Ashghal Shaqqa"]],{h:"Egyptian TV series",k:["FIRST AIRED","أول عرض"],dt:["Series first aired", "أول عرض للمسلسل"],g:"y",s:"tv",m:"eg",d:2}),
@@ -30,7 +30,7 @@ CATS.push(
   ["Friends",1994,"فريندز"],["The Sopranos",1999,"ذا سوبرانوز"],["Prison Break",2005,"بريزون بريك"],
   ["Breaking Bad",2008,"بريكنج باد"],["Game of Thrones",2011,"جيم أوف ثرونز"],["Peaky Blinders",2013,"بيكي بلايندرز"],
   ["Stranger Things",2016,"سترينجر ثينجز"],["Money Heist",2017,"لا كاسا دي بابيل"],["Squid Game",2021,"لعبة الحبار"]],{h:"TV series",k:["FIRST AIRED","أول عرض"],dt:["Series first aired", "أول عرض للمسلسل"],g:"y",s:"tv",m:"w",d:1}),
- Rd(["WHICH SITCOM","CAME OUT FIRST",Q],["أنهي سيتكوم","نزل الأول",QA],"min",[
+ Rd(["WHICH SITCOM","CAME OUT FIRST",Q],["إيه","أقدم سيتكوم",QA],"min",[
   ["I Love Lucy",1951,"آي لوف لوسي"],["Seinfeld",1989,"ساينفيلد"],["The Fresh Prince of Bel-Air",1990,"فريش برينس"],
   ["Friends",1994,"فريندز"],["Everybody Loves Raymond",1996,"الكل يحب رايموند"],["Two and a Half Men",2003,"اتنين ونص راجل"],
   ["The Office (US)",2005,"ذا أوفيس","The Office (American TV series)"],["The Big Bang Theory",2007,"ذا بيج بانج ثيوري"],["Modern Family",2009,"مودرن فاميلي"]],
@@ -40,7 +40,7 @@ CATS.push(
   ["Fatmagül",2010,"ما ذنب فاطمة جول","Fatmagül'ün Suçu Ne?"],["Muhteşem Yüzyıl",2011,"حريم السلطان","Muhteşem Yüzyıl"],["Diriliş: Ertuğrul",2014,"قيامة أرطغرل","Diriliş: Ertuğrul"],
   ["Kara Sevda",2015,"حب أعمى","Kara Sevda"],["Kuruluş: Osman",2019,"المؤسس عثمان","Kuruluş: Osman"],["Sen Çal Kapımı",2020,"أنت اطرق بابي","Sen Çal Kapımı"]],
   {h:"Turkish TV series",k:["FIRST AIRED","أول عرض"],dt:["Series first aired","أول عرض للمسلسل"],g:"y",s:"tv",m:"w",d:3}),
- Rd(["WHICH NETFLIX HIT","CAME OUT LAST",Q],["أنهي مسلسل نتفليكس","أجدد",QA],"max",[
+ Rd(["WHICH NETFLIX HIT","CAME OUT LAST",Q],["إيه","أجدد مسلسل نتفليكس",QA],"max",[
   ["House of Cards",2013,"هاوس أوف كاردز","House of Cards (American TV series)"],["Narcos",2015,"ناركوس"],["The Crown",2016,"ذا كراون","The Crown (TV series)"],
   ["Dark",2017,"دارك","Dark (TV series)"],["The Witcher",2019,"ذا ويتشر","The Witcher (TV series)"],["Bridgerton",2020,"بريدجرتون"],
   ["Squid Game",2021,"لعبة الحبار"],["Wednesday",2022,"وينزداي","Wednesday (TV series)"],["Adolescence",2025,"أدوليسنس","Adolescence (TV series)"]],
@@ -50,7 +50,7 @@ CATS.push(
   ["Pedro Pascal",1975,"بيدرو باسكال"],["Cillian Murphy",1976,"كيليان مورفي"],["Henry Cavill",1983,"هنري كافيل"],
   ["Úrsula Corberó",1989,"أورسولا كوربيرو (طوكيو)"],["Finn Wolfhard",2002,"فين وولفهارد"],["Millie Bobby Brown",2004,"ميلي بوبي براون"]],
   {h:"actor",k:BORN,g:"p",s:"tv",m:"w",d:3}),
- Rd(["WHICH TV FORMAT","STARTED FIRST",Q],["أنهي برنامج","بدأ الأول",QA],"min",[
+ Rd(["WHICH TV FORMAT","STARTED FIRST",Q],["إيه","أقدم برنامج",QA],"min",[
   ["Wheel of Fortune",1975,"عجلة الحظ","Wheel of Fortune (American game show)"],["Who Wants to Be a Millionaire?",1998,"من سيربح المليون","Who Wants to Be a Millionaire? (British game show)"],["Big Brother",1999,"الأخ الأكبر","Big Brother (franchise)"],
   ["Survivor",2000,"سيرفايفر","Survivor (American TV series)"],["American Idol",2002,"أمريكان أيدول"],["The X Factor",2004,"إكس فاكتور","The X Factor (British TV series)"],
   ["Britain's Got Talent",2007,"بريتنز جوت تالنت"],["The Voice",2010,"ذا فويس","The Voice of Holland"],["Arab Idol",2011,"أراب أيدول"]],
@@ -85,7 +85,7 @@ CATS.push(
   ["Yasser Galal",1969,"ياسر جلال"],["Nelly Karim",1974,"نيللي كريم"],["Amir Karara",1977,"أمير كرارة"],
   ["Dina El Sherbiny",1985,"دينا الشربيني"],["Amina Khalil",1988,"أمينة خليل"],["Ahmed Malek",1995,"أحمد مالك"]],
   {h:"Egyptian actor",k:BORN,g:"p",s:"tv",m:"eg",d:1}),
- Rd(["WHICH ADULT CARTOON","CAME OUT FIRST",Q],["أنهي كرتون للكبار","نزل الأول",QA],"min",[
+ Rd(["WHICH ADULT CARTOON","CAME OUT FIRST",Q],["إيه","أقدم كرتون للكبار",QA],"min",[
   ["The Flintstones",1960,"عيلة فلينستون"],["The Jetsons",1962,"عيلة جيتسون"],["South Park",1997,"ساوث بارك"],
   ["Family Guy",1999,"فاميلي جاي"],["Futurama",1999,"فيوتشراما"],["American Dad!",2005,"أمريكان داد"],
   ["Bob's Burgers",2011,"بوبز برجرز"],["Rick and Morty",2013,"ريك ومورتي"],["BoJack Horseman",2014,"بوجاك هورسمان"]],
@@ -100,7 +100,7 @@ Rd(["WHICH RAMEZ GALAL PRANK SHOW","CAME OUT FIRST",Q],["أنهي برنامج �
   ["Wakel el gaw",2015,"واكل الجو"],["Ta7t el ard",2017,"تحت الأرض"],["Ta7t el sefr",2018,"تحت الصفر"],
   ["Magnoon rasmy",2020,"مجنون رسمي"],["Movie star",2022,"موفي ستار"],["Gab men el akher",2024,"جاب من الآخر"]],
   {h:"Ramez Galal show",k:["AIRED","اتعرض سنة"],s:"tv",m:"eg",d:2}),
- Rd(["WHICH ADEL IMAM SERIES","CAME OUT LAST",Q],["أنهي مسلسل لعادل إمام","أجدد",QA],"max",[
+ Rd(["WHICH ADEL IMAM SERIES","CAME OUT LAST",Q],["إيه","أجدد مسلسل لعادل إمام",QA],"max",[
   ["A7lam el fata el tayer",1978,"أحلام الفتى الطائر"],["Fer2et nagy 3atallah",2012,"فرقة ناجي عطا الله"],["El 3arraf",2013,"العراف"],
   ["Sa7eb el sa3ada",2014,"صاحب السعادة"],["Ostaz w ra2ees 2esm",2015,"أستاذ ورئيس قسم"],["Ma2moun w shorakah",2016,"مأمون وشركاه"],
   ["3afareet 3adly 3allam",2017,"عفاريت عدلي علام"],["3awalem khafeya",2018,"عوالم خفية"],["Valentino",2020,"فالنتينو","Valentino (Egyptian TV series)"]],

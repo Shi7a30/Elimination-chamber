@@ -11,7 +11,7 @@ CATS.push(
   ["Hany Ramzy",1969,"هاني رمزي"],["Essam El-Hadary",1973,"عصام الحضري","Essam El Hadary"],["Ahmed Hassan",1975,"أحمد حسن","Ahmed Hassan (footballer, born 1975)"],
   ["Mohamed Aboutrika",1978,"محمد أبو تريكة"],["Mohamed Zidan",1981,"محمد زيدان"],["Ahmed 'Mido' Hossam",1983,"أحمد حسام (ميدو)","Mido (footballer)"]],{h:"Egyptian footballer",k:BORN,g:"p",s:"players",m:"eg",d:1}),
  
- Rd(["WHICH IS THE","OLDEST CLUB",Q],["أنهي","أقدم نادي",QA],"min",[
+ Rd(["WHICH IS THE","OLDEST CLUB",Q],["مين","أقدم نادي",QA],"min",[
   ["Al Ahly",1907,"الأهلي","Al Ahly SC"],["Zamalek",1911,"الزمالك","Zamalek SC"],["Al Ittihad Alexandria",1914,"الاتحاد السكندري","Al Ittihad Alexandria Club"],
   ["Al Masry",1920,"المصري","Al Masry SC"],["Ismaily",1924,"الإسماعيلي","Ismaily SC"],["Smouha",1949,"سموحة","Smouha SC"],
   ["Arab Contractors",1973,"المقاولون العرب","Al Mokawloon Al Arab SC"],["ENPPI",1985,"إنبي","ENPPI SC"],["Pyramids FC",2008,"بيراميدز"]],{h:"Egyptian football club",k:["FOUNDED","اتأسس سنة"],dt:["Club founded", "تأسيس النادي"],g:"y",s:"trophies",m:"eg",d:1}),
@@ -24,7 +24,7 @@ CATS.push(
    ["Ahmed 'Mido' Hossam",2005,"أحمد حسام (ميدو)","Mido (footballer)"],["Hossam Ghaly",2006,"حسام غالي"],["Amr Zaki",2008,"عمرو زكي"],["Ahmed Elmohamady",2010,"أحمد المحمدي"],
    ["Mohamed Salah",2014,"محمد صلاح"],["Mohamed Elneny",2016,"محمد النني"],["Ahmed Hegazi",2017,"أحمد حجازي"],["Mahmoud 'Trezeguet' Hassan",2019,"محمود حسن (تريزيجيه)","Trézéguet (Egyptian footballer)"],
    ["Omar Marmoush",2025,"عمر مرموش"]],{h:"Egyptian footballer",k:["JOINED THE PREMIER LEAGUE","دخل البريميرليج سنة"],s:"players",m:"eg",d:2}),
- Rd(["WHICH CLUB HAS THE","MOST LEAGUE TITLES",Q],["أنهي نادي","عنده أكتر دوري مصري",QA],"max",[
+ Rd(["WHICH CLUB HAS THE","MOST LEAGUE TITLES",Q],["مين","عنده أكتر دوري مصري",QA],"max",[
   ["Al Ahly",45,"الأهلي","Al Ahly SC"],["Zamalek",15,"الزمالك","Zamalek SC"],["Ismaily",3,"الإسماعيلي","Ismaily SC"],
   ["Olympic Club",1,"الأوليمبي","Olympic Club (Egypt)"],["Tersana",1,"الترسانة","Tersana SC"],["Ghazl El Mahalla",1,"غزل المحلة","Ghazl El Mahalla SC"],
   ["Arab Contractors",1,"المقاولون العرب","Al Mokawloon Al Arab SC"],["Al Masry",0,"المصري","Al Masry SC"],["Pyramids FC",0,"بيراميدز"]],{suf:TRA,h:"Egyptian football club",k:["LEAGUE TITLES","بطولات دوري"],s:"trophies",m:"eg",d:1}),
@@ -32,7 +32,7 @@ CATS.push(
   ["Al Ahly",39,"الأهلي","Al Ahly SC"],["Zamalek",29,"الزمالك","Zamalek SC"],["Al Ittihad Alexandria",6,"الاتحاد السكندري","Al Ittihad Alexandria Club"],
   ["Tersana",6,"الترسانة","Tersana SC"],["Arab Contractors",3,"المقاولون العرب","Al Mokawloon Al Arab SC"],["Ismaily",2,"الإسماعيلي","Ismaily SC"],
   ["ENPPI",2,"إنبي","ENPPI SC"],["Pyramids FC",2,"بيراميدز"],["Al Masry",1,"المصري","Al Masry SC"]],{suf:TRA,h:"Egyptian football club",k:["EGYPT CUPS","كاسات مصر"],s:"trophies",m:"eg",d:1}),
- Rd(["WHICH IS THE","BIGGEST STADIUM",Q],["أنهي","أكبر استاد",QA],"max",[
+ Rd(["WHICH IS THE","BIGGEST STADIUM",Q],["أنهي استاد","أكبر",QA],"max",[
   ["Misr Stadium",93940,"استاد مصر (العاصمة الإدارية)","New Administrative Capital Stadium"],["Borg El Arab Stadium",86000,"استاد برج العرب"],["Cairo International Stadium",75000,"استاد القاهرة"],
   ["Egyptian Army Stadium (Suez)",45000,"استاد الجيش بالسويس","Egyptian Army Stadium"],["Arab Contractors Stadium",35000,"استاد المقاولون العرب","Osman Ahmed Osman Stadium"],["Al Salam Stadium",30000,"استاد السلام","Al Salam Stadium (Egypt)"],
   ["30 June Stadium",30000,"استاد 30 يونيو (الدفاع الجوي)"],["Military Academy Stadium",28500,"استاد الكلية الحربية","Cairo Military Academy Stadium"],["Suez Stadium",27000,"استاد السويس"]],{h:"stadium",k:["CAPACITY","بيساع"],suf:[" fans"," متفرج"],s:"trophies",m:"eg",d:2}),
@@ -94,7 +94,7 @@ Rd(["WHICH CLUB OUTSIDE CAIRO","WAS FOUNDED FIRST",Q],["أنهي نادي بره
   ["Ismaily",1924,"الإسماعيلي","Ismaily SC"],["Aswan SC",1930,"أسوان","Aswan SC"],["Baladiyat El Mahalla",1931,"بلدية المحلة","Baladiyat El Mahalla SC"],
   ["Haras El Hodoud",1932,"حرس الحدود","Haras El Hodoud SC"],["Ghazl El Mahalla",1936,"غزل المحلة","Ghazl El Mahalla SC"],["El Mansoura",1949,"المنصورة","El Mansoura SC"]],
   {h:"Egyptian football club",k:["FOUNDED","اتأسس سنة"],dt:["Club founded","تأسيس النادي"],g:"y",s:"trophies",m:"eg",d:3}),
- Rd(["WHICH CLUB","WAS FOUNDED LAST",Q],["أنهي نادي","أجدد",QA],"max",[
+ Rd(["WHICH CLUB","WAS FOUNDED LAST",Q],["مين","أجدد نادي",QA],"max",[
   ["Petrojet",1980,"بتروجت","Petrojet SC"],["Misr Lel Makkasa",1988,"مصر المقاصة","Misr Lel Makkasa SC"],["Tala'ea El Gaish",1997,"طلائع الجيش","Tala'ea El Gaish SC"],
   ["Wadi Degla SC",2002,"وادي دجلة","Wadi Degla SC"],["El Gouna",2003,"الجونة","El Gouna FC"],["El Entag El Harby",2004,"الإنتاج الحربي","El Entag El Harby SC"],
   ["Ceramica Cleopatra",2007,"سيراميكا كليوباترا","Ceramica Cleopatra FC"],["Pharco",2010,"فاركو","Pharco FC"],["Modern Sport",2011,"مودرن سبورت","Modern Sport FC"]],
