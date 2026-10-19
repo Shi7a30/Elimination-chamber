@@ -24,11 +24,11 @@ CATS.push(
    ["Ahmed 'Mido' Hossam",2005,"أحمد حسام (ميدو)","Mido (footballer)"],["Hossam Ghaly",2006,"حسام غالي"],["Amr Zaki",2008,"عمرو زكي"],["Ahmed Elmohamady",2010,"أحمد المحمدي"],
    ["Mohamed Salah",2014,"محمد صلاح"],["Mohamed Elneny",2016,"محمد النني"],["Ahmed Hegazi",2017,"أحمد حجازي"],["Mahmoud 'Trezeguet' Hassan",2019,"محمود حسن (تريزيجيه)","Trézéguet (Egyptian footballer)"],
    ["Omar Marmoush",2025,"عمر مرموش"]],{h:"Egyptian footballer",k:["JOINED THE PREMIER LEAGUE","دخل البريميرليج سنة"],s:"players",m:"eg",d:2}),
- Rd(["WHICH CLUB HAS THE","MOST LEAGUE TITLES",Q],["مين","عنده أكتر دوري مصري",QA],"max",[
+ Rd(["WHICH CLUB HAS THE","MOST LEAGUE TITLES",Q],["مين","كسب الدوري المصري أكتر",QA],"max",[
   ["Al Ahly",45,"الأهلي","Al Ahly SC"],["Zamalek",15,"الزمالك","Zamalek SC"],["Ismaily",3,"الإسماعيلي","Ismaily SC"],
   ["Olympic Club",1,"الأوليمبي","Olympic Club (Egypt)"],["Tersana",1,"الترسانة","Tersana SC"],["Ghazl El Mahalla",1,"غزل المحلة","Ghazl El Mahalla SC"],
   ["Arab Contractors",1,"المقاولون العرب","Al Mokawloon Al Arab SC"],["Al Masry",0,"المصري","Al Masry SC"],["Pyramids FC",0,"بيراميدز"]],{suf:TRA,h:"Egyptian football club",k:["LEAGUE TITLES","بطولات دوري"],s:"trophies",m:"eg",d:1}),
- Rd(["WHICH CLUB HAS THE","MOST EGYPT CUPS",Q],["أنهي نادي","عنده أكتر كاس مصر",QA],"max",[
+ Rd(["WHICH CLUB HAS THE","MOST EGYPT CUPS",Q],["مين","كسب كاس مصر أكتر",QA],"max",[
   ["Al Ahly",39,"الأهلي","Al Ahly SC"],["Zamalek",29,"الزمالك","Zamalek SC"],["Al Ittihad Alexandria",6,"الاتحاد السكندري","Al Ittihad Alexandria Club"],
   ["Tersana",6,"الترسانة","Tersana SC"],["Arab Contractors",3,"المقاولون العرب","Al Mokawloon Al Arab SC"],["Ismaily",2,"الإسماعيلي","Ismaily SC"],
   ["ENPPI",2,"إنبي","ENPPI SC"],["Pyramids FC",2,"بيراميدز"],["Al Masry",1,"المصري","Al Masry SC"]],{suf:TRA,h:"Egyptian football club",k:["EGYPT CUPS","كاسات مصر"],s:"trophies",m:"eg",d:1}),
@@ -49,12 +49,12 @@ CATS.push(
   ["Ahmed Fathy",135,"أحمد فتحي"],["Ibrahim Hassan",131,"إبراهيم حسن"],["Hany Ramzy",122,"هاني رمزي"],
   ["Wael Gomaa",114,"وائل جمعة"],["Mohamed Aboutrika",100,"محمد أبو تريكة"],["Ahmed 'Mido' Hossam",51,"أحمد حسام (ميدو)","Mido (footballer)"]],
   {h:"footballer",k:["EGYPT CAPS","ماتشات دولية"],suf:[" caps"," ماتش"],s:"players",m:"eg",d:2}),
- Rd(["WHO HAS THE","MOST AFCON TITLES",Q],["مين","كسب أكتر كاسات أمم أفريقيا",QA],"max",[
+ Rd(["WHO HAS THE","MOST AFCON TITLES",Q],["مين","كسب كاس الأمم الأفريقية أكتر",QA],"max",[
   ["Ahmed Hassan",4,"أحمد حسن","Ahmed Hassan (footballer, born 1975)"],["Hossam Hassan",3,"حسام حسن"],["Wael Gomaa",3,"وائل جمعة"],
   ["Ahmed Fathy",3,"أحمد فتحي"],["Mohamed Aboutrika",2,"محمد أبو تريكة"],["Mohamed Zidan",2,"محمد زيدان"],
   ["Mahmoud 'Bibo' El Khatib",1,"محمود الخطيب (بيبو)","Mahmoud El Khatib"],["Mohamed Salah",0,"محمد صلاح"],["Omar Marmoush",0,"عمر مرموش"]],
   {suf:TRA,h:"footballer",k:["AFCON TITLES","كاسات أمم أفريقيا"],s:"players",m:"eg",d:1}),
- Rd(["WHO HAS WON THE","MOST CAF CHAMPIONS LEAGUES",Q],["مين","كسب أكتر دوري أبطال أفريقيا",QA],"max",[
+ Rd(["WHO HAS WON THE","MOST CAF CHAMPIONS LEAGUES",Q],["مين","كسب دوري أبطال أفريقيا أكتر",QA],"max",[
   ["Wael Gomaa",6,"وائل جمعة"],["Mohamed Aboutrika",5,"محمد أبو تريكة"],["Mohamed El Shenawy",4,"محمد الشناوي"],
   ["Ali Maaloul",4,"علي معلول","Ali Maâloul"],["Hossam Hassan",2,"حسام حسن"],["Mahmoud 'Bibo' El Khatib",2,"محمود الخطيب (بيبو)","Mahmoud El Khatib"],
   ["Mohamed Salah",0,"محمد صلاح"],["Ahmed 'Mido' Hossam",0,"أحمد حسام (ميدو)","Mido (footballer)"],["Omar Marmoush",0,"عمر مرموش"]],
@@ -79,12 +79,12 @@ CATS.push(
   ["Abdel Wahed El Sayed",1977,"عبد الواحد السيد"],["Ahmed 'Mido' Hossam",1983,"أحمد حسام (ميدو)","Mido (footballer)"],["Mahmoud 'Shikabala' Abdel Razek",1986,"محمود عبد الرازق (شيكابالا)","Shikabala"],
   ["Tarek Hamed",1988,"طارق حامد"],["Omar Gaber",1992,"عمر جابر"],["Ahmed Sayed 'Zizo'",1996,"أحمد سيد (زيزو)","Zizo (footballer)"]],
   {h:"Egyptian footballer",k:BORN,g:"p",s:"players",m:"eg",d:2}),
- Rd(["WHICH CLUB HAS THE","MOST EGYPTIAN SUPER CUPS",Q],["أنهي نادي","عنده أكتر سوبر مصري",QA],"max",[
+ Rd(["WHICH CLUB HAS THE","MOST EGYPTIAN SUPER CUPS",Q],["مين","كسب السوبر المصري أكتر",QA],"max",[
   ["Al Ahly",16,"الأهلي","Al Ahly SC"],["Zamalek",4,"الزمالك","Zamalek SC"],["Arab Contractors",1,"المقاولون العرب","Al Mokawloon Al Arab SC"],
   ["Haras El Hodoud",1,"حرس الحدود","Haras El Hodoud SC"],["Tala'ea El Gaish",1,"طلائع الجيش","Tala'ea El Gaish SC"],["ENPPI",0,"إنبي","ENPPI SC"],
   ["Ghazl El Mahalla",0,"غزل المحلة","Ghazl El Mahalla SC"],["Ismaily",0,"الإسماعيلي","Ismaily SC"],["Al Masry",0,"المصري","Al Masry SC"]],
   {suf:TRA,h:"Egyptian football club",k:["SUPER CUPS","كاسات سوبر"],s:"trophies",m:"eg",d:1}),
- Rd(["WHICH EGYPT COACH WON","THE MOST AFRICA CUPS",Q],["مين من مدربين مصر","كسب أكتر كاسات أمم أفريقيا",QA],"max",[
+ Rd(["WHICH EGYPT COACH WON","THE MOST AFRICA CUPS",Q],["مين من مدربين مصر","كسب كاس الأمم الأفريقية أكتر",QA],"max",[
   ["Hassan Shehata",3,"حسن شحاتة"],["Mahmoud El-Gohary",1,"محمود الجوهري"],["Mike Smith",1,"مايك سميث","Mike Smith (football manager)"],
   ["Pál Titkos",1,"بال تيتكوش"],["Héctor Cúper",0,"هيكتور كوبر"],["Bob Bradley",0,"بوب برادلي"],
   ["Carlos Queiroz",0,"كارلوس كيروش"],["Rui Vitória",0,"روي فيتوريا"],["Hossam Hassan",0,"حسام حسن"]],

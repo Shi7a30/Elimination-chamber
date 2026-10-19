@@ -45,7 +45,7 @@ CATS.push(
   ["Dr. Dre",1965,"دكتور دري"],["Jay-Z",1969,"جاي زي"],["Tupac Shakur",1971,"توباك"],["Snoop Dogg",1971,"سنوب دوج"],
   ["Eminem",1972,"إيمينم"],["50 Cent",1975,"فيفتي سنت"],["Kanye West",1977,"كانيي ويست"],["Drake",1986,"دريك","Drake (musician)"],
   ["Cardi B",1992,"كاردي بي"]],{h:"rapper",k:BORN,g:"p",s:"singers",m:"w",d:2}),
- Rd(["WHO HAS WON THE","MOST GRAMMYS",Q],["مين","كسب أكتر جرامي",QA],"max",[
+ Rd(["WHO HAS WON THE","MOST GRAMMYS",Q],["مين","كسب جرامي أكتر",QA],"max",[
   ["Beyoncé",35,"بيونسيه"],["Kendrick Lamar",27,"كندريك لامار"],["Jay-Z",25,"جاي زي"],["Stevie Wonder",25,"ستيفي وندر"],["Kanye West",24,"كانيي ويست"],["Adele",16,"أديل"],["Eminem",15,"إيمينم"],["Taylor Swift",14,"تايلور سويفت"],["Rihanna",9,"ريهانا"]],
   {h:"singer",k:["GRAMMYS WON","جوايز جرامي"],suf:TRA,s:"singers",m:"w",d:1}),
  Rd(["WHO HAS THE","MOST US NO. 1 HITS",Q],["مين","عنده أكتر أغاني نمبر وان في أمريكا",QA],"max",[

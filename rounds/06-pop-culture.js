@@ -25,7 +25,7 @@ CATS.push(
  Rd(["WHO IS THE","TALLEST ATHLETE",Q],["مين","أطول رياضي",QA],"max",[
   ["Shaquille O'Neal",216,"شاكيل أونيل"],["LeBron James",206,"ليبرون جيمس"],["Michael Jordan",198,"مايكل جوردان"],["Kobe Bryant",198,"كوبي براينت"],["Usain Bolt",195,"يوسين بولت"],["Novak Djokovic",188,"نوفاك ديوكوفيتش"],["Roger Federer",185,"روجر فيدرر"],["Mike Tyson",178,"مايك تايسون"],["Simone Biles",142,"سيمون بايلز"]],
   {h:"athlete",k:["HEIGHT","الطول"],suf:[" cm"," سم"],s:"celebs",m:"w",d:1}),
- Rd(["WHO HAS THE","MOST OLYMPIC GOLDS",Q],["مين","كسب أكتر ميداليات دهب في الأولمبياد",QA],"max",[
+ Rd(["WHO HAS THE","MOST OLYMPIC GOLDS",Q],["مين","كسب دهب في الأولمبياد أكتر",QA],"max",[
   ["Michael Phelps",23,"مايكل فيلبس"],["Carl Lewis",9,"كارل لويس"],["Katie Ledecky",9,"كاتي ليديكي"],["Usain Bolt",8,"يوسين بولت"],["Simone Biles",7,"سيمون بايلز"],["Serena Williams",4,"سيرينا ويليامز"],["Mo Farah",4,"مو فرح"],["LeBron James",3,"ليبرون جيمس"],["Rafael Nadal",2,"رافاييل نادال"]],
   {h:"athlete",k:["OLYMPIC GOLDS","ميداليات دهب"],suf:TRA,s:"celebs",m:"w",d:1}),
  Rd(["WHO IS THE","YOUNGEST INTERNET STAR",Q],["مين","أصغر نجم إنترنت",QA],"max",[
@@ -48,7 +48,7 @@ CATS.push(
   ["Wonder Woman",1941,"وندر وومان"],["Spider-Man",1962,"سبايدر مان"],["Hulk",1962,"هالك"],
   ["Wolverine",1974,"وولفرين","Wolverine (character)"],["Venom",1984,"فينوم","Venom (character)"],["Deadpool",1991,"ديدبول"]],
   {h:"comic character",k:["FIRST COMIC","أول ظهور في الكوميكس"],s:"celebs",m:"w",d:2}),
- Rd(["WHO HAS THE","MOST TENNIS GRAND SLAMS",Q],["مين","عنده أكتر جراند سلام تنس",QA],"max",[
+ Rd(["WHO HAS THE","MOST TENNIS GRAND SLAMS",Q],["مين","كسب جراند سلام أكتر",QA],"max",[
   ["Novak Djokovic",24,"نوفاك ديوكوفيتش"],["Rafael Nadal",22,"رافاييل نادال"],["Roger Federer",20,"روجر فيدرر"],
   ["Pete Sampras",14,"بيت سامبراس"],["Björn Borg",11,"بيورن بورج"],["Andre Agassi",8,"أندريه أغاسي"],
   ["Boris Becker",6,"بوريس بيكر"],["Andy Murray",3,"آندي موراي"],["Stan Wawrinka",3,"ستان فافرينكا"]],
@@ -63,12 +63,12 @@ CATS.push(
   ["LeBron James",1984,"ليبرون جيمس"],["Lewis Hamilton",1985,"لويس هاميلتون"],["Usain Bolt",1986,"يوسين بولت"],
   ["Simone Biles",1997,"سيمون بايلز"],["Carlos Alcaraz",2003,"كارلوس ألكاراز"],["Victor Wembanyama",2004,"فيكتور ويمبانياما"]],
   {h:"athlete",k:BORN,g:"p",s:"celebs",m:"w",d:3}),
- Rd(["WHO HAS THE","MOST F1 TITLES",Q],["مين","عنده أكتر بطولات فورمولا 1",QA],"max",[
+ Rd(["WHO HAS THE","MOST F1 TITLES",Q],["مين","كسب بطولة فورمولا 1 أكتر",QA],"max",[
   ["Michael Schumacher",7,"مايكل شوماخر"],["Juan Manuel Fangio",5,"خوان مانويل فانجيو"],["Alain Prost",4,"آلان بروست"],
   ["Sebastian Vettel",4,"سيباستيان فيتل"],["Max Verstappen",4,"ماكس فيرستابن"],["Ayrton Senna",3,"آيرتون سينا"],
   ["Niki Lauda",3,"نيكي لاودا"],["Fernando Alonso",2,"فرناندو ألونسو"],["Lando Norris",1,"لاندو نوريس"]],
   {suf:TRA,h:"racing driver",k:["F1 WORLD TITLES","بطولات العالم"],s:"celebs",m:"w",d:1}),
- Rd(["WHO HAS THE","MOST NBA TITLES",Q],["مين","عنده أكتر بطولات NBA",QA],"max",[
+ Rd(["WHO HAS THE","MOST NBA TITLES",Q],["مين","كسب بطولة NBA أكتر",QA],"max",[
   ["Bill Russell",11,"بيل راسل"],["Robert Horry",7,"روبرت هوري"],["Michael Jordan",6,"مايكل جوردان"],
   ["Kobe Bryant",5,"كوبي براينت"],["Tim Duncan",5,"تيم دنكان"],["LeBron James",4,"ليبرون جيمس"],
   ["Stephen Curry",4,"ستيفن كاري"],["Shaquille O'Neal",4,"شاكيل أونيل"],["Kevin Durant",2,"كيفن ديورانت"]],

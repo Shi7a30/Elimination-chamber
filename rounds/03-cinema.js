@@ -84,7 +84,7 @@ CATS.push(
   ["Sandra Bullock",1964,"ساندرا بولوك"],["Halle Berry",1966,"هالي بيري"],["Julia Roberts",1967,"جوليا روبرتس"],
   ["Angelina Jolie",1975,"أنجلينا جولي"],["Natalie Portman",1981,"ناتالي بورتمان"],["Zendaya",1996,"زندايا"]],
   {h:"actress",k:BORN,g:"p",s:"actors",m:"w",d:2}),
- Rd(["WHO HAS WON THE","MOST ACTING OSCARS",Q],["مين","كسب أكتر أوسكار تمثيل",QA],"max",[
+ Rd(["WHO HAS WON THE","MOST ACTING OSCARS",Q],["مين","كسب أوسكار تمثيل أكتر",QA],"max",[
   ["Katharine Hepburn",4,"كاثرين هيبورن"],["Jack Nicholson",3,"جاك نيكلسون"],["Daniel Day-Lewis",3,"دانيال داي لويس"],
   ["Meryl Streep",3,"ميريل ستريب"],["Tom Hanks",2,"توم هانكس"],["Denzel Washington",2,"دينزل واشنطن"],
   ["Emma Stone",2,"إيما ستون"],["Anthony Hopkins",2,"أنتوني هوبكنز"],["Leonardo DiCaprio",1,"ليوناردو دي كابريو"]],
@@ -151,7 +151,7 @@ CATS.push(
   ["Forrest Gump",1994,"فورست جامب"],["Titanic",1997,"تايتانيك","Titanic (1997 film)"],["Gladiator",2000,"المصارع","Gladiator (2000 film)"],
   ["Slumdog Millionaire",2008,"المليونير المتشرد"],["Parasite",2019,"باراسايت","Parasite (2019 film)"],["Oppenheimer",2023,"أوبنهايمر","Oppenheimer (film)"]],
   {h:"film",k:["RELEASED","نزل سنة"],dt:["Film released","نزول الفيلم"],g:"y",s:"films",m:"w",d:1}),
- Rd(["WHICH FILM WON","THE MOST OSCARS",Q],["أنهي فيلم","كسب أكتر أوسكارات",QA],"max",[
+ Rd(["WHICH FILM WON","THE MOST OSCARS",Q],["مين","كسب أوسكارات أكتر",QA],"max",[
   ["Titanic",11,"تايتانيك","Titanic (1997 film)"],["West Side Story (1961)",10,"قصة الحي الغربي","West Side Story (1961 film)"],["The English Patient",9,"المريض الإنجليزي","The English Patient (film)"],
   ["Slumdog Millionaire",8,"المليونير المتشرد"],["Oppenheimer",7,"أوبنهايمر","Oppenheimer (film)"],["Forrest Gump",6,"فورست جامب"],
   ["Gladiator",5,"المصارع","Gladiator (2000 film)"],["Parasite",4,"باراسايت","Parasite (2019 film)"],["The Godfather",3,"الأب الروحي"]],

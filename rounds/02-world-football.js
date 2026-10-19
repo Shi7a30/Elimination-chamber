@@ -3,11 +3,11 @@
 CATS.push(
 {n:"World Football",a:"الكورة العالمية",e:"🌍 ⚽",r:[
  // African football is international: it lives under World so Egypt mode stays Egyptian-only.
- Rd(["WHICH CLUB HAS THE","MOST CAF CHAMPIONS LEAGUES",Q],["مين","عنده أكتر دوري أبطال أفريقيا",QA],"max",[
+ Rd(["WHICH CLUB HAS THE","MOST CAF CHAMPIONS LEAGUES",Q],["مين","كسب دوري أبطال أفريقيا أكتر",QA],"max",[
   ["Al Ahly",12,"الأهلي","Al Ahly SC"],["Zamalek",5,"الزمالك","Zamalek SC"],["TP Mazembe",5,"مازيمبي"],["Espérance de Tunis",4,"الترجي التونسي","Espérance Sportive de Tunis"],
   ["Wydad Casablanca",3,"الوداد البيضاوي","Wydad AC"],["Raja Casablanca",3,"الرجاء البيضاوي","Raja CA"],["Enyimba",2,"إنيمبا","Enyimba F.C."],["ES Sétif",2,"وفاق سطيف"],
   ["Mamelodi Sundowns",2,"صن داونز","Mamelodi Sundowns F.C."]],{suf:TRA,h:"football club",k:["CAF TITLES","بطولات أفريقيا"],s:"trophies",m:"w",d:1}),
- Rd(["WHICH TEAM HAS THE","MOST AFRICA CUP TITLES",Q],["أنهي منتخب","عنده أكتر كاس أمم أفريقيا",QA],"max",[
+ Rd(["WHICH TEAM HAS THE","MOST AFRICA CUP TITLES",Q],["مين","كسب كاس الأمم الأفريقية أكتر",QA],"max",[
   ["Egypt",7,"مصر"],["Cameroon",5,"الكاميرون"],["Ghana",4,"غانا"],["Nigeria",3,"نيجيريا"],["Ivory Coast",3,"كوت ديفوار"],
   ["Algeria",2,"الجزائر"],["DR Congo",2,"الكونغو الديمقراطية","Democratic Republic of the Congo"],["Tunisia",1,"تونس"],["Zambia",1,"زامبيا"]],{suf:TRA,h:"country",k:["AFRICA CUPS","كاسات أفريقيا"],s:"trophies",m:"w",d:1}),
  Rd(["WHICH CLUB WON THE","CAF CHAMPIONS LEAGUE FIRST",Q],["مين","كسب دوري أبطال أفريقيا الأول",QA],"min",[
@@ -22,15 +22,15 @@ CATS.push(
   ["Zinedine Zidane",1972,"زين الدين زيدان"],["David Beckham",1975,"ديفيد بيكهام"],["Ronaldo Nazário",1976,"رونالدو الظاهرة","Ronaldo (Brazilian footballer)"],["Thierry Henry",1977,"تييري هنري"],
   ["Ronaldinho Gaúcho",1980,"رونالدينيو","Ronaldinho"],["Zlatan Ibrahimović",1981,"زلاتان إبراهيموفيتش"],["Ricardo Kaká",1982,"كاكا","Kaká"],["Cristiano Ronaldo",1985,"كريستيانو رونالدو"],
   ["Lionel Messi",1987,"ليونيل ميسي"]],{h:"footballer",k:BORN,g:"p",s:"players",m:"w",d:2}),
- Rd(["WHO HAS WON THE","MOST BALLON D'ORS",Q],["مين","كسب الكورة الدهبية أكتر مرات",QA],"max",[
+ Rd(["WHO HAS WON THE","MOST BALLON D'ORS",Q],["مين","كسب البالون دور أكتر",QA],"max",[
   ["Lionel Messi",8,"ليونيل ميسي"],["Cristiano Ronaldo",5,"كريستيانو رونالدو"],["Johan Cruyff",3,"يوهان كرويف"],["Michel Platini",3,"ميشيل بلاتيني"],
   ["Marco van Basten",3,"ماركو فان باستن"],["Ronaldo Nazário",2,"رونالدو الظاهرة","Ronaldo (Brazilian footballer)"],["Franz Beckenbauer",2,"فرانز بيكنباور"],
   ["Zinedine Zidane",1,"زين الدين زيدان"],["Ronaldinho Gaúcho",1,"رونالدينيو","Ronaldinho"]],{suf:TRA,h:"footballer",k:["BALLON D'ORS","كور دهبية"],s:"players",m:"w",d:1}),
- Rd(["WHICH COUNTRY HAS THE","MOST WORLD CUPS",Q],["مين","عنده أكتر كاس عالم",QA],"max",[
+ Rd(["WHICH COUNTRY HAS THE","MOST WORLD CUPS",Q],["مين","كسب كاس العالم أكتر",QA],"max",[
   ["Brazil",5,"البرازيل"],["Germany",4,"ألمانيا"],["Italy",4,"إيطاليا"],
   ["Argentina",3,"الأرجنتين"],["France",2,"فرنسا"],["Uruguay",2,"أوروجواي"],
   ["Spain",2,"إسبانيا"],["England",1,"إنجلترا"],["Netherlands",0,"هولندا"]],{suf:TRA,h:"country",k:["WORLD CUPS","كاسات عالم"],s:"trophies",m:"w",d:1}),
- Rd(["WHICH CLUB HAS THE","MOST CHAMPIONS LEAGUES",Q],["أنهي نادي","عنده أكتر دوري أبطال أوروبا",QA],"max",[
+ Rd(["WHICH CLUB HAS THE","MOST CHAMPIONS LEAGUES",Q],["مين","كسب دوري أبطال أوروبا أكتر",QA],"max",[
   ["Real Madrid",15,"ريال مدريد","Real Madrid CF"],["AC Milan",7,"ميلان"],["Bayern Munich",6,"بايرن ميونخ","FC Bayern Munich"],
   ["Liverpool",6,"ليفربول","Liverpool F.C."],["FC Barcelona",5,"برشلونة"],["Ajax",4,"أياكس","AFC Ajax"],
   ["Inter Milan",3,"الإنتر"],["Manchester United",3,"مانشستر يونايتد","Manchester United F.C."],["Paris Saint-Germain",2,"باريس سان جيرمان","Paris Saint-Germain F.C."]],{suf:TRA,h:"football club",k:["EUROPEAN CUPS","دوري أبطال"],s:"trophies",m:"w",d:1}),
@@ -54,7 +54,7 @@ CATS.push(
   ["Petr Čech",1982,"بيتر تشيك"],["Manuel Neuer",1986,"مانويل نوير"],["Yassine Bounou",1991,"ياسين بونو"],
   ["Thibaut Courtois",1992,"تيبو كورتوا"],["Jan Oblak",1993,"يان أوبلاك"],["Gianluigi Donnarumma",1999,"جيانلويجي دوناروما"]],
   {h:"footballer",k:BORN,g:"p",s:"players",m:"w",d:2}),
- Rd(["WHO WON THE","BALLON D'OR MOST RECENTLY",Q],["مين","آخر واحد كسب الكورة الدهبية",QA],"max",[
+ Rd(["WHO WON THE","BALLON D'OR MOST RECENTLY",Q],["مين","آخر واحد كسب البالون دور",QA],"max",[
   ["Ronaldo Nazário",2002,"رونالدو الظاهرة","Ronaldo (Brazilian footballer)"],["Zinedine Zidane",1998,"زين الدين زيدان"],["Ronaldinho Gaúcho",2005,"رونالدينيو","Ronaldinho"],
   ["Ricardo Kaká",2007,"كاكا","Kaká"],["Cristiano Ronaldo",2017,"كريستيانو رونالدو"],["Lionel Messi",2023,"ليونيل ميسي"],
   ["Luka Modrić",2018,"لوكا مودريتش"],["Karim Benzema",2022,"كريم بنزيما"],["Ousmane Dembélé",2025,"عثمان ديمبلي"]],
@@ -69,12 +69,12 @@ CATS.push(
   ["Pierre-Emerick Aubameyang",1989,"أوباميانج"],["Riyad Mahrez",1991,"رياض محرز"],["Sadio Mané",1992,"ساديو ماني"],
   ["Achraf Hakimi",1998,"أشرف حكيمي"],["Victor Osimhen",1998,"فيكتور أوسيمين"],["Mohammed Kudus",2000,"محمد قدوس"]],
   {h:"footballer",k:BORN,g:"p",s:"players",m:"w",d:3}),
- Rd(["WHICH CLUB HAS THE","MOST PREMIER LEAGUE TITLES",Q],["مين","عنده أكتر بريميرليج",QA],"max",[
+ Rd(["WHICH CLUB HAS THE","MOST PREMIER LEAGUE TITLES",Q],["مين","كسب البريميرليج أكتر",QA],"max",[
   ["Manchester United",13,"مانشستر يونايتد","Manchester United F.C."],["Manchester City",8,"مانشستر سيتي","Manchester City F.C."],["Chelsea",5,"تشيلسي","Chelsea F.C."],
   ["Arsenal",4,"آرسنال","Arsenal F.C."],["Liverpool",2,"ليفربول","Liverpool F.C."],["Blackburn Rovers",1,"بلاكبيرن","Blackburn Rovers F.C."],
   ["Leicester City",1,"ليستر سيتي","Leicester City F.C."],["Tottenham Hotspur",0,"توتنهام","Tottenham Hotspur F.C."],["Newcastle United",0,"نيوكاسل","Newcastle United F.C."]],
   {suf:TRA,h:"football club",k:["PREMIER LEAGUES (SINCE 1992)","بريميرليج (من 1992)"],s:"trophies",m:"w",d:1}),
- Rd(["WHICH CLUB HAS THE","MOST LA LIGA TITLES",Q],["أنهي نادي","عنده أكتر دوري إسباني",QA],"max",[
+ Rd(["WHICH CLUB HAS THE","MOST LA LIGA TITLES",Q],["مين","كسب الدوري الإسباني أكتر",QA],"max",[
   ["Real Madrid",36,"ريال مدريد","Real Madrid CF"],["FC Barcelona",29,"برشلونة"],["Atlético Madrid",11,"أتلتيكو مدريد"],
   ["Athletic Bilbao",8,"أتلتيك بلباو","Athletic Club"],["Valencia",6,"فالنسيا","Valencia CF"],["Real Sociedad",2,"ريال سوسيداد"],
   ["Deportivo La Coruña",1,"ديبورتيفو لاكورونيا"],["Sevilla",1,"إشبيلية","Sevilla FC"],["Real Betis",1,"ريال بيتيس"]],
@@ -92,7 +92,7 @@ CATS.push(
   ["Spain",2024,"إسبانيا"],["Italy",2021,"إيطاليا"],["Portugal",2016,"البرتغال"],["Greece",2004,"اليونان"],["France",2000,"فرنسا"],
   ["Germany",1996,"ألمانيا"],["Denmark",1992,"الدنمارك"],["Netherlands",1988,"هولندا"],["Soviet Union",1960,"الاتحاد السوفيتي"]],
   {h:"country",k:["LAST EURO WON","آخر يورو كسبه"],s:"trophies",m:"w",d:1}),
- Rd(["WHICH TEAM HAS THE","MOST COPA AMÉRICA TITLES",Q],["أنهي منتخب","عنده أكتر كوبا أمريكا",QA],"max",[
+ Rd(["WHICH TEAM HAS THE","MOST COPA AMÉRICA TITLES",Q],["مين","كسب كوبا أمريكا أكتر",QA],"max",[
   ["Argentina",16,"الأرجنتين"],["Uruguay",15,"أوروجواي"],["Brazil",9,"البرازيل"],["Chile",2,"تشيلي"],["Paraguay",2,"باراجواي"],
   ["Peru",2,"بيرو"],["Colombia",1,"كولومبيا"],["Bolivia",1,"بوليفيا"],["Ecuador",0,"الإكوادور"]],
   {suf:TRA,h:"country",k:["COPA AMÉRICAS","كوبا أمريكا"],s:"trophies",m:"w",d:3}),
@@ -111,7 +111,7 @@ CATS.push(
   ["Al Ittihad (Jeddah)",1927,"الاتحاد السعودي","Ittihad Club"],["Wydad Casablanca",1937,"الوداد البيضاوي","Wydad AC"],["Raja Casablanca",1949,"الرجاء البيضاوي","Raja CA"],
   ["Al Nassr",1955,"النصر","Al Nassr FC"],["Al Hilal",1957,"الهلال","Al Hilal SFC"],["Al Sadd",1969,"السد","Al Sadd SC"]],
   {h:"football club",k:["FOUNDED","اتأسس سنة"],s:"trophies",m:"w",d:3}),
- Rd(["WHICH CLUB HAS THE","MOST SERIE A TITLES",Q],["مين","عنده أكتر دوري إيطالي",QA],"max",[
+ Rd(["WHICH CLUB HAS THE","MOST SERIE A TITLES",Q],["مين","كسب الدوري الإيطالي أكتر",QA],"max",[
   ["Juventus",36,"يوفنتوس","Juventus FC"],["Inter Milan",21,"الإنتر"],["AC Milan",19,"ميلان"],
   ["Genoa",9,"جنوى","Genoa CFC"],["Torino",7,"تورينو","Torino FC"],["Bologna",7,"بولونيا","Bologna FC 1909"],
   ["Napoli",4,"نابولي","SSC Napoli"],["Roma",3,"روما","AS Roma"],["Lazio",2,"لاتسيو","SS Lazio"]],
