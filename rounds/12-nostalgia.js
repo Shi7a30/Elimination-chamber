@@ -117,7 +117,7 @@ CATS.push(
   ["Tweety",1942,"تويتي"],["Sylvester",1945,"سيلفستر","Sylvester the Cat"],["Marvin the Martian",1948,"مارفن المريخي"],
   ["Road Runner",1949,"رود رنر","Wile E. Coyote and the Road Runner"],["Speedy Gonzales",1953,"سبيدي جونزاليس"],["Tasmanian Devil",1954,"تاز","Tasmanian Devil (Looney Tunes)"]],
   {h:"cartoon character",k:["FIRST SEEN","أول ظهور سنة"],g:"y",dt:["First appearance","أول ظهور"],s:"kidstv",m:"eg",d:3}),
- Rd(["WHICH POKÉMON IS","THE HEAVIEST",Q],["أنهي","أتقل بوكيمون",QA],"max",[
+ Rd(["WHICH POKÉMON IS","THE HEAVIEST",Q],["أنهي بوكيمون","أتقل",QA],"max",[
   ["Groudon",950,"جرادون"],["Snorlax",460,"سنورلاكس"],["Steelix",400,"ستيليكس"],
   ["Wailord",398,"ويلورد"],["Onix",210,"أونيكس"],["Mewtwo",122,"ميوتو"],
   ["Charizard",90.5,"تشاريزارد"],["Bulbasaur",6.9,"بلباسور"],["Pikachu",6,"بيكاتشو"]],
