@@ -34,7 +34,7 @@ const photoHits=()=>Object.keys(hits).filter(k=>k.startsWith('/photos/img/')).le
 if(photoHits())problems.push('home screen downloaded '+photoHits()+' photos');
 if(hits['/photos/p1.js'])problems.push('old all-in-one photo file still requested');
 // playing a category downloads its photos, and they show on the cards
-await p.click('.hub[data-c="cats"]');await p.click('[data-g="0"]');await p.click('.cat.sc');await p.waitForTimeout(1500);
+await p.click('[data-nav="cats"]');await p.click('[data-g="0"]');await p.click('.cat.sc');await p.waitForTimeout(1500);
 const shown=await p.evaluate(()=>[].filter.call(document.querySelectorAll('.cell .tile img'),i=>i.complete&&i.naturalWidth>0).length);
 console.log('photos shown',shown,'downloaded',photoHits());
 if(shown<7)problems.push('only '+shown+' photos showed in the first round');

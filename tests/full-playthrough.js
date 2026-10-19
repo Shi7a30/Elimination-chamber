@@ -24,7 +24,7 @@ console.log('categories',ncat,'rounds',rounds);
 // Play every subcategory (region BOTH) in both languages: win odd rounds, lose+undo+win even
 let roundNo=0;const SG=await pg.evaluate(()=>{const o=[];GROUPS.forEach((g,i)=>g.s.forEach(s=>{if(ALL.some(r=>r.s===s[0]))o.push([i,s[0]])}));return o});const subs=SG.map(x=>x[1]);
 // subcategories live on group pages, and groups on the Categories page: get there, then open the sub's group
-const openSub=async c=>{if(!await pg.$(`.cat.sc[data-s="${subs[c]}"]`)){if(await pg.$('[data-back]')&&!await pg.$('.cat[data-g]'))await pg.click('[data-back]');if(!await pg.$('.cat[data-g]'))await pg.click('.cat[data-c="cats"]');await pg.click(`.cat[data-g="${SG[c][0]}"]`)}await pg.click(`.cat.sc[data-s="${subs[c]}"]`)};console.log('subs',subs.length);
+const openSub=async c=>{if(!await pg.$(`.cat.sc[data-s="${subs[c]}"]`)){if(await pg.$('[data-back]')&&!await pg.$('.cat[data-g]'))await pg.click('[data-back]');if(!await pg.$('.cat[data-g]'))await pg.click('[data-nav="cats"]');await pg.click(`.cat[data-g="${SG[c][0]}"]`)}await pg.click(`.cat.sc[data-s="${subs[c]}"]`)};console.log('subs',subs.length);
 for(let c=0;c<subs.length;c++){
  const lang=c%2?'ar':'en';const cur=await pg.evaluate(()=>L);if(cur!==lang)await pg.click('#lang');
  await openSub(c);
@@ -34,7 +34,7 @@ for(let c=0;c<subs.length;c++){
   const q2=await pg.textContent('#q2');ok(q2===(await pg.evaluate(l=>(l==='ar'?cur.qa:cur.q)[1],lang)),'question text '+q2);
   if(roundNo%2===0&&st0.coins>=30){ // lose then undo
    await pg.click(`.cell[data-i="${corr}"]`);let s=await S();ok(s.over==='lose'&&s.streak===0,'lose state');
-   ok(await pg.waitForSelector('#sheet.show',{timeout:3000}).then(()=>true,()=>false),'lose sheet');
+   ok(await pg.waitForSelector('#sheet.show',{timeout:3000}).then(()=>true,()=>false),'lose sheet '+subs[c]+' r'+r+' n'+roundNo);
    const shown=await pg.$$eval('.cell.flip',e=>e.length);ok(shown===1,'only answer flipped on loss, got '+shown);
    await pg.click('#sb .btn:not(.y)');s=await S();ok(s.over===false&&s.streak===st0.streak&&s.coins===st0.coins-30,'undo restores '+JSON.stringify(s));}
   const before=await S();
@@ -55,7 +55,7 @@ for(let c=0;c<subs.length;c++){
 ok(roundNo===rounds,'played every round: '+roundNo+'/'+rounds);
 // regions
 for(const [rg,exp] of [['eg',r=>r.m==='eg'],['w',r=>r.m==='w']]){while(await pg.$('[data-back]'))await pg.click('[data-back]');await pg.click(`[data-reg="${rg}"]`);
- await pg.click('.cat[data-c="cats"]');const ids=[];for(let gi=0;gi<SG[SG.length-1][0]+1;gi++){const gc=await pg.$(`.cat[data-g="${gi}"]`);if(!gc)continue;await gc.click();ids.push(...await pg.$$eval('.cat.sc',e=>e.map(x=>x.dataset.s)));await pg.click('[data-back]')}
+ await pg.click('[data-nav="cats"]');const ids=[];for(let gi=0;gi<SG[SG.length-1][0]+1;gi++){const gc=await pg.$(`.cat[data-g="${gi}"]`);if(!gc)continue;await gc.click();ids.push(...await pg.$$eval('.cat.sc',e=>e.map(x=>x.dataset.s)));await pg.click('[data-back]')}
  const okSubs=await pg.evaluate(([rg,ids])=>ids.every(id=>subRounds(id).length&&subRounds(id).every(r=>r.m===rg))&&ALL.filter(r=>r.m===rg).every(r=>ids.indexOf(r.s)>-1),[rg,ids]);
  ok(okSubs,'region '+rg+' subs '+ids.join(','));
  ok(await pg.evaluate(()=>{for(let k=0;k<500;k++){const m=endlessRound();const rs=m.r?[m.r]:m.items.map(x=>x.r);if(!rs.every(inReg))return false}return true}),'endless respects region '+rg);
