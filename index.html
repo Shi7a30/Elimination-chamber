@@ -375,18 +375,33 @@ html[dir=rtl] .hero .hgrid{transform:translateY(-38%) rotate(8deg) scale(.82);tr
 /* short screens (small phones in the browser): tighter cards so the Daily card's 🔥/🏆 stay above the dock */
 @media (max-height:600px){.cat.hero{padding:12px 18px}.cat.dcard{height:156px;padding:12px 18px}.dcard .art{width:84px;height:84px}.dcard .ds{max-width:calc(100% - 96px)}body[data-scr=home] #menu{gap:8px}}
 
-/* --- bottom dock: Home, Duel, Categories, Multiplayer. Shown on the menu pages, hidden during a game. --- */
-#dock{position:fixed;left:50%;width:calc(100% - 32px);max-width:408px;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:6;display:grid;grid-template-columns:repeat(4,1fr);padding:8px 4px 7px;border-radius:24px;
+/* --- bottom dock: Duel, Categories, Home, Multiplayer, Stats. Shown on the menu pages, hidden during a game. --- */
+#dock{position:fixed;left:50%;width:calc(100% - 32px);max-width:408px;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:6;display:grid;grid-template-columns:repeat(5,1fr);padding:8px 2px 7px;border-radius:24px;
  background:var(--glass2);-webkit-backdrop-filter:blur(20px) saturate(1.6);backdrop-filter:blur(20px) saturate(1.6);box-shadow:var(--glasshi),0 12px 32px -12px rgba(0,0,0,.35)}
 @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){#dock{background:var(--surf)}}
 @media (prefers-reduced-transparency:reduce){#dock{background:var(--surf);-webkit-backdrop-filter:none;backdrop-filter:none}}
 html.noglass #dock{background:var(--surf);-webkit-backdrop-filter:none;backdrop-filter:none}
 body[data-scr=game] #dock,body:not([data-scr]) #dock{display:none}
 #dock button{border:0;background:none;font:inherit;color:var(--mut);display:flex;flex-direction:column;align-items:center;gap:4px;padding:0;font-size:11px;font-weight:600;white-space:nowrap;min-width:0}
-#dock .ic{display:flex;align-items:center;justify-content:center;width:52px;height:30px;border-radius:999px;transition:background .2s}
+#dock .ic{display:flex;align-items:center;justify-content:center;width:46px;height:30px;border-radius:999px;transition:background .2s}
 #dock svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
 #dock button.on{color:var(--fg);font-weight:800}
 #dock button.on .ic{background:var(--y);color:var(--ink)}
+/* Home sits in the middle of the dock as a raised round button */
+#dock [data-nav=home] .ic{width:58px;height:58px;margin-top:-30px;border-radius:50%;background:var(--surf2);color:var(--fg);box-shadow:0 8px 18px -8px rgba(0,0,0,.45),0 0 0 4px var(--bg)}
+#dock [data-nav=home].on .ic{background:var(--y);color:var(--ink)}
+#dock [data-nav=home] svg{width:26px;height:26px}
+/* Stats page */
+.stg{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.stt{background:var(--surf);border-radius:var(--r2);box-shadow:var(--sh1);padding:14px 8px 12px;text-align:center;display:flex;flex-direction:column;gap:4px;min-width:0}
+.stt b{font-size:22px;font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
+.stt small{font-size:12px;font-weight:600;color:var(--mut);line-height:1.25}
+.stl{display:flex;flex-direction:column;gap:10px}
+.str{background:var(--surf);border-radius:var(--r2);box-shadow:var(--sh1);padding:12px 14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.str>span:first-child{flex:1;font-weight:700;font-size:16px;display:flex;align-items:center;gap:8px;min-width:110px}
+.str>span:first-child svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.str .chips{margin:0;flex-wrap:wrap}.str .chip{background:var(--surf2);font-size:13.5px;padding:5px 10px}
+div.cat.sc{cursor:default}
 #dock button:active .ic{transform:scale(.92)}
 body:not([data-scr=game]) #upd{bottom:calc(96px + env(safe-area-inset-bottom,0px))}
 </style>
@@ -471,7 +486,7 @@ var TX={
   chRound:function(a,b,s){return"🔗 Round "+a+"/"+b+" · Score "+s},chDone:"✅ Challenge done!",chYou:function(s,k){return"You got "+s+"/"+k+". Send the link and see if your friends can beat it."},
   chWin:"🏆 You win!",chLose:"😬 You lost!",chDraw:"🤝 Draw!",vs:function(s,b,x,k){return"You "+s+"/"+k+" · "+x+" "+b+"/"+k},
   share:"🔗 Send challenge",shareBack:"🔗 Send your score",copied:"Link copied!",msg:function(s,k){return"I got "+s+"/"+k+" on Shelhom! Can you beat me? 🔥"},
-  tHome:"Home",dyBadge:function(n){return"Daily · #"+n},dyTitle:"Daily round",dySub:"Same round for everyone",dyDone:"Done for today!",dyShare:"Share",dyRn:function(n){return"Daily round #"+n},
+  tHome:"Home",tStats:"Stats",stCoins:"Coins",stSolved:"Rounds solved",stBest:"Best streak",stScores:"Best scores",stGroups:"Rounds solved in each group",dyBadge:function(n){return"Daily · #"+n},dyTitle:"Daily round",dySub:"Same round for everyone",dyDone:"Done for today!",dyShare:"Share",dyRn:function(n){return"Daily round #"+n},
   dyNext:function(h,m){return"Next round in "+(h?h+"h "+m+"m":m+"m")},dyMsg:function(n){return"Shelhom daily round #"+n},dyStreak:function(n){return"🔥 "+n+(n==="1"?" day":" days")+" in a row"},
   howT:"👆 How to play",howP:"Knock out the cards that are NOT the answer, one at a time, until only the right one is left. Knock out the answer and you lose! Tip: 📷 in a round puts your own photo on a card.",howOk:"Got it",
   leaveDy:"You'll lose today's round. There's one try a day.",skipQ:"Skip this round?",skipTxt:function(k){return"Skipping ends your 🔥"+k+" streak."},skipBtn:"Skip",
@@ -495,7 +510,7 @@ var TX={
   chRound:function(a,b,s){return"🔗 جولة "+a+"/"+b+" · النتيجة "+s},chDone:"✅ خلصت التحدي!",chYou:function(s,k){return"جبت "+s+" من "+k+". ابعت اللينك وشوف صحابك هيعدّوك ولا لأ."},
   chWin:"🏆 كسبت!",chLose:"😬 خسرت!",chDraw:"🤝 تعادل!",vs:function(s,b,x,k){return"إنت "+s+" · "+x+" "+b+" (من "+k+")"},
   share:"🔗 ابعت التحدي",shareBack:"🔗 ابعت نتيجتك",copied:"اتنسخ اللينك!",msg:function(s,k){return"جبت "+s+" من "+k+" في شيلهم! تقدر تعدّيني؟ 🔥"},
-  tHome:"الرئيسية",dyBadge:function(n){return"رقم "+n},dyTitle:"سؤال اليوم",dySub:"سؤال جديد كل يوم، هو هو لكل صحابك",dyDone:"جاوبت النهارده!",dyShare:"شارك",dyRn:function(n){return"سؤال اليوم رقم "+n},
+  tHome:"الرئيسية",tStats:"أرقامي",stCoins:"كوينز",stSolved:"جولات خلّصتها",stBest:"أحسن رقم ورا بعض",stScores:"أحسن أرقامك",stGroups:"خلّصت كام جولة في كل مجموعة",dyBadge:function(n){return"رقم "+n},dyTitle:"سؤال اليوم",dySub:"سؤال جديد كل يوم، هو هو لكل صحابك",dyDone:"جاوبت النهارده!",dyShare:"شارك",dyRn:function(n){return"سؤال اليوم رقم "+n},
   dyNext:function(h,m){var hs=h===1?"ساعة":h===2?"ساعتين":h<=10?h+" ساعات":h+" ساعة",ms=m===1?"دقيقة":m===2?"دقيقتين":m<=10?m+" دقايق":m+" دقيقة";return"السؤال الجاي بعد "+(h?hs:ms)},dyMsg:function(n){return"شيلهم - سؤال اليوم رقم "+n},dyStreak:function(n){return"🔥 "+(n==="1"?"أول يوم":arN(n,"يومين","أيام","يوم")+" ورا بعض")},
   howT:"👆 إزاي تلعب",howP:"شيل الكروت الغلط واحد واحد لحد ما يفضل الكارت الصح لوحده. لو شلت الإجابة الصح تخسر! وعلى فكرة: 📷 جوه الجولة بيخليك تحط صورة من عندك على أي كارت.",howOk:"تمام",
   leaveDy:"هتخسر سؤال النهارده، وكل يوم ليه محاولة واحدة بس.",skipQ:"تعدّي الجولة دي؟",skipTxt:function(k){return"لو عدّيتها هتخسر الـ 🔥"+k+" اللي ورا بعض."},skipBtn:"عدّي",
@@ -802,6 +817,8 @@ var IC={back:svg('<path d="M15 5l-7 7 7 7"/>',"flipx"),chev:svg('<path d="M9 5l7
  down:svg('<path d="M12 4v11M7 10l5 5 5-5M5 20h14"/>'),
  info:svg('<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.6v.01"/>'),
  link:svg('<path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/>'),
+ stats:svg('<path d="M5 20v-8M12 20V4M19 20v-5"/>'),
+ cal:svg('<rect x="4" y="5" width="16" height="15" rx="2.5"/><path d="M4 10h16M9 3v4M15 3v4"/>'),
  mix:svg('<path d="M3 7h3c2.2 0 3.2 1.1 4.4 3l2.4 4c1.2 1.9 2.2 3 4.4 3H21M18 14l3 3-3 3M18 4l3 3-3 3M21 7h-3.8c-1.5 0-2.4.6-3.2 1.5M3 17h3c1.5 0 2.4-.6 3.2-1.5"/>')};
 // Each big group has its own colour, used for its icon tile and progress bars.
 var GC=["#22a45d","#ef5b5b","#8b5cf6","#3b82f6","#14b8a6","#f08a24","#ec4899"];
@@ -834,8 +851,8 @@ function card(cls,data,emoji,label,left,d,k,c){return '<button class="cat '+cls+
 function scr(k){document.body.dataset.scr=k}
 function menu(){hide();edit=false;cur=null;$("game").style.display="none";$("menu").style.display="flex";$("coins").textContent=n(coins);$("cam").className="pill";
  var g=typeof GRP==="number"&&GROUPS[GRP],subs=g&&grpSubs(g);if(subs&&!subs.length){GRP=null;g=null}
- scr(g||["d","h","c","cats","mp"].indexOf(GRP)>=0||GRP==="cr"&&CH?"menu":"home");
- $("menu").innerHTML=GRP==="d"?duelPage():GRP==="h"?hotPage():GRP==="c"?chalPage():GRP==="cr"&&CH?chalInvite():GRP==="cats"?catsPage():GRP==="mp"?mpPage():g?ghead('<span class="se" style="--c:'+GC[GRP]+'">'+g.e+"</span>",L==="ar"?g.a:g.n)+
+ scr(g||["d","h","c","cats","mp","st"].indexOf(GRP)>=0||GRP==="cr"&&CH?"menu":"home");
+ $("menu").innerHTML=GRP==="d"?duelPage():GRP==="h"?hotPage():GRP==="c"?chalPage():GRP==="cr"&&CH?chalInvite():GRP==="cats"?catsPage():GRP==="mp"?mpPage():GRP==="st"?statsPage():g?ghead('<span class="se" style="--c:'+GC[GRP]+'">'+g.e+"</span>",L==="ar"?g.a:g.n)+
    '<div class="subs">'+subs.map(function(x){var rs=subRounds(x[0]);return card("sc",'data-s="'+x[0]+'"',x[1],L==="ar"?x[3]:x[2],t("rounds")(n(rs.length)),solved(rs),rs.length,GC[GRP])}).join("")+"</div>":
   '<div class="seg">'+["eg","w","all"].map(function(m){return '<button data-reg="'+m+'"'+(REG===m?' class="on"':"")+">"+t("reg_"+m)+"</button>"}).join("")+"</div>"+
   '<button class="cat hero" data-c="e"><small class="eb">'+t("endless")+'</small><span class="ht"><i>'+IC.play+"</i>"+t("heroPlay")+"</span><small>"+t("endlessSub")+'</small><span class="chips">'+chip(IC.flame,streak,t("streak"))+chip(IC.trophy,eBest[REG]||0,t("best"))+'</span><span class="hgrid" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><b></b></span></button>'+
@@ -856,13 +873,22 @@ function saveOffline(){if(OFF.busy||!window.PH)return;var urls=phUrls(),i=0,ok=0
 // The big category groups, opened from the Categories tile.
 function catsPage(){return ghead("",t("cats"))+'<div class="subs">'+GROUPS.map(function(g,i){var ss=grpSubs(g);if(!ss.length)return"";var rs=[].concat.apply([],ss.map(function(x){return subRounds(x[0])}));
  return card("sc grp",'data-g="'+i+'"',g.e,L==="ar"?g.a:g.n,t("sections")(ss.length),solved(rs),rs.length,GC[i])}).join("")+"</div>"}
+// Stats page (dock): coins, rounds solved, best streak, best scores per region, and rounds solved in each group (both regions).
+function statsPage(){var tile=function(v,l){return '<div class="stt"><b>'+v+"</b><small>"+l+"</small></div>"},
+  regs=function(o){return["eg","w","all"].map(function(m){return chip("<span>"+t("reg_"+m).split(" ")[0]+"</span>",o[m]|0,t("reg_"+m))}).join("")},
+  row=function(ic,l,c){return '<div class="str"><span>'+ic+l+'</span><span class="chips">'+c+"</span></div>"};
+ return ghead("",t("tStats"))+'<div class="stg">'+tile(n(coins),t("stCoins"))+tile(n(solved(ALL))+"/"+n(ALL.length),t("stSolved"))+tile(n(best),t("stBest"))+"</div>"+
+  '<h3 class="dgh">'+t("stScores")+'</h3><div class="stl">'+row(IC.play.replace("<svg",'<svg style="fill:currentColor;stroke:none"'),t("endless"),regs(eBest))+row(IC.duel,t("duel"),regs(dBest))+
+  row(IC.cal,t("dyTitle"),chip(IC.flame,dyStreak(),t("streak"))+chip(IC.trophy,DY.b|0,t("best")))+"</div>"+
+  '<h3 class="dgh">'+t("stGroups")+'</h3><div class="subs">'+GROUPS.map(function(g,i){var ids=g.s.map(function(x){return x[0]}),rs=ALL.filter(function(r){return ids.indexOf(r.s)>=0});if(!rs.length)return"";
+   return card("sc grp","",g.e,L==="ar"?g.a:g.n,t("rounds")(n(rs.length)),solved(rs),rs.length,GC[i]).replace(/^<button/,"<div").replace(/<\/button>$/,"</div>")}).join("")+"</div>"}
 // Hot potato and challenge, opened from the Multiplayer tile.
 function mpPage(){var row=function(c,e,ti,sub){return '<button class="cat row" data-c="'+c+'"><span class="se">'+e+"</span><span>"+ti+"<small>"+sub+"</small></span>"+IC.chev+"</button>"};
  return ghead("",t("mp"))+'<div class="modes">'+row("h","🥔",t("hot"),t("hotSub"))+row("c",'<span style="color:#3b82f6;display:flex">'+IC.link+"</span>",t("chal"),t("chalSub"))+"</div>"}
-// the bottom dock: Home, Duel, Categories, Multiplayer; the page you're on is highlighted
+// the bottom dock: Duel, Categories, Home (raised, in the middle), Multiplayer, Stats; the page you're on is highlighted
 var CLAWED=0;
-function dockSet(){var on=GRP===null||GRP===undefined?"home":GRP==="d"?"d":GRP==="cats"||typeof GRP==="number"?"cats":"mp";
- $("dock").innerHTML=[["home",IC.home,t("tHome")],["d",IC.duel,t("tDuel")],["cats",IC.cats,t("tCats")],["mp",IC.users,t("tMp")]].map(function(x){
+function dockSet(){var on=GRP===null||GRP===undefined?"home":GRP==="d"?"d":GRP==="cats"||typeof GRP==="number"?"cats":GRP==="st"?"st":"mp";
+ $("dock").innerHTML=[["d",IC.duel,t("tDuel")],["cats",IC.cats,t("tCats")],["home",IC.home,t("tHome")],["mp",IC.users,t("tMp")],["st",IC.stats,t("tStats")]].map(function(x){
   return '<button data-nav="'+x[0]+'"'+(x[0]===on?' class="on" aria-current="page"':"")+'><span class="ic">'+x[1]+"</span>"+x[2]+"</button>"}).join("")}
 $("dock").onclick=function(e){var b=e.target.closest("[data-nav]");if(!b)return;sfx.tap();var v=b.dataset.nav;GRP=v==="home"?null:v;menu()};
 // the claw in the top bar plays once when Home opens, and again when tapped
