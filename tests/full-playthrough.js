@@ -61,8 +61,8 @@ for(const [rg,exp] of [['eg',r=>r.m==='eg'],['w',r=>r.m==='w']]){while(await pg.
  ok(await pg.evaluate(()=>{for(let k=0;k<500;k++){const m=endlessRound();const rs=m.r?[m.r]:m.items.map(x=>x.r);if(!rs.every(inReg))return false}return true}),'endless respects region '+rg);
  await pg.screenshot({path:shot('menu_'+rg+'.png'),fullPage:true})}
 while(await pg.$('[data-back]'))await pg.click('[data-back]');await pg.click('[data-reg="all"]');
-// skip resets streak
-await openSub(0);let s1=await S();ok(s1.streak>0,'streak>0 before skip');await pg.click('#skip');ok((await S()).streak===0,'skip resets streak');
+// skip resets streak (asking first when the streak is 2 or more)
+await openSub(0);let s1=await S();ok(s1.streak>0,'streak>0 before skip');await pg.click('#skip');await pg.waitForTimeout(300);if(s1.streak>=2){ok(await pg.evaluate(()=>document.getElementById('sheet').classList.contains('show')),'skip should ask first when it ends a streak');await pg.evaluate(()=>document.querySelector('#sb .btn:not(.y)').click());await pg.waitForTimeout(200)}ok((await S()).streak===0,'skip resets streak');
 // photos: wait for mocked loading, check images in tiles
 await pg.waitForTimeout(500);const imgs=await pg.$$eval('.tile img',e=>e.filter(i=>i.complete&&i.naturalWidth>0).length);
  // Rounds come in random order, and a few cards have no photo (they show a letter), so count the cards that should have one.
