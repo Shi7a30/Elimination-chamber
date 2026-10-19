@@ -88,5 +88,20 @@ CATS.push(
   ["Hassan Shehata",3,"حسن شحاتة"],["Mahmoud El-Gohary",1,"محمود الجوهري"],["Mike Smith",1,"مايك سميث","Mike Smith (football manager)"],
   ["Pál Titkos",1,"بال تيتكوش"],["Héctor Cúper",0,"هيكتور كوبر"],["Bob Bradley",0,"بوب برادلي"],
   ["Carlos Queiroz",0,"كارلوس كيروش"],["Rui Vitória",0,"روي فيتوريا"],["Hossam Hassan",0,"حسام حسن"]],
-  {suf:TRA,h:"football manager",k:["AFCONS AS EGYPT COACH","كاسات أمم كمدرب لمصر"],s:"players",m:"eg"})]}
+  {suf:TRA,h:"football manager",k:["AFCONS AS EGYPT COACH","كاسات أمم كمدرب لمصر"],s:"players",m:"eg"}),
+Rd(["WHICH CLUB OUTSIDE CAIRO","WAS FOUNDED FIRST",Q],["أنهي نادي بره القاهرة","اتأسس الأول",QA],"min",[
+  ["Olympic Club",1905,"الأوليمبي","Olympic Club (Egypt)"],["Al Ittihad Alexandria",1914,"الاتحاد السكندري","Al Ittihad Alexandria Club"],["Al Masry",1920,"المصري","Al Masry SC"],
+  ["Ismaily",1924,"الإسماعيلي","Ismaily SC"],["Aswan SC",1930,"أسوان","Aswan SC"],["Baladiyat El Mahalla",1931,"بلدية المحلة","Baladiyat El Mahalla SC"],
+  ["Haras El Hodoud",1932,"حرس الحدود","Haras El Hodoud SC"],["Ghazl El Mahalla",1936,"غزل المحلة","Ghazl El Mahalla SC"],["El Mansoura",1949,"المنصورة","El Mansoura SC"]],
+  {h:"Egyptian football club",k:["FOUNDED","اتأسس سنة"],dt:["Club founded","تأسيس النادي"],g:"y",s:"trophies",m:"eg"}),
+ Rd(["WHICH CLUB","WAS FOUNDED LAST",Q],["أنهي نادي","أجدد",QA],"max",[
+  ["Petrojet",1980,"بتروجت","Petrojet SC"],["Misr Lel Makkasa",1988,"مصر المقاصة","Misr Lel Makkasa SC"],["Tala'ea El Gaish",1997,"طلائع الجيش","Tala'ea El Gaish SC"],
+  ["Wadi Degla SC",2002,"وادي دجلة","Wadi Degla SC"],["El Gouna",2003,"الجونة","El Gouna FC"],["El Entag El Harby",2004,"الإنتاج الحربي","El Entag El Harby SC"],
+  ["Ceramica Cleopatra",2007,"سيراميكا كليوباترا","Ceramica Cleopatra FC"],["Pharco",2010,"فاركو","Pharco FC"],["Modern Sport",2011,"مودرن سبورت","Modern Sport FC"]],
+  {h:"Egyptian football club",k:["FOUNDED","اتأسس سنة"],dt:["Club founded","تأسيس النادي"],g:"y",s:"trophies",m:"eg"}),
+ Rd(["WHICH EGYPTIAN STADIUM","OPENED FIRST",Q],["أنهي استاد","اتفتح الأول",QA],"min",[
+  ["Mokhtar El Tetsh Stadium",1917,"استاد مختار التتش (الأهلي)","Mokhtar El Tetsh Stadium"],["Alexandria Stadium",1929,"استاد إسكندرية"],["Cairo International Stadium",1960,"استاد القاهرة"],
+  ["Arab Contractors Stadium",1979,"استاد المقاولون العرب","Osman Ahmed Osman Stadium"],["Military Academy Stadium",1989,"استاد الكلية الحربية","Cairo Military Academy Stadium"],["Suez Stadium",1990,"استاد السويس"],
+  ["Borg El Arab Stadium",2007,"استاد برج العرب"],["Al Salam Stadium",2009,"استاد السلام","Al Salam Stadium (Egypt)"],["30 June Stadium",2012,"استاد 30 يونيو (الدفاع الجوي)"]],
+  {h:"stadium",k:["OPENED","اتفتح سنة"],s:"trophies",m:"eg"})]}
 );

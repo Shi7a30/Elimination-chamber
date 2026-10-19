@@ -1149,5 +1149,553 @@
 "hint": "book series",
 "fix": false,
 "redo": true
+},
+{
+"name": "2alb el asad",
+"kind": "work",
+"title": "2alb el asad",
+"ar": "رامز قلب الأسد",
+"hint": "Ramez Galal show",
+"q": [
+"رامز قلب الأسد",
+"Ramez 2alb el asad"
+]
+},
+{
+"name": "Ta3lab el sa7ra",
+"kind": "work",
+"title": "Ta3lab el sa7ra",
+"ar": "رامز ثعلب الصحرا",
+"hint": "Ramez Galal show",
+"q": [
+"رامز ثعلب الصحرا",
+"Ramez Ta3lab el sa7ra"
+]
+},
+{
+"name": "Ankh amon",
+"kind": "work",
+"title": "Ankh amon",
+"ar": "رامز عنخ آمون",
+"hint": "Ramez Galal show",
+"q": [
+"رامز عنخ آمون",
+"Ramez Ankh amon"
+]
+},
+{
+"name": "Wakel el gaw",
+"kind": "work",
+"title": "Wakel el gaw",
+"ar": "رامز واكل الجو",
+"hint": "Ramez Galal show",
+"q": [
+"رامز واكل الجو",
+"Ramez Wakel el gaw"
+]
+},
+{
+"name": "Ta7t el ard",
+"kind": "work",
+"title": "Ta7t el ard",
+"ar": "رامز تحت الأرض",
+"hint": "Ramez Galal show",
+"q": [
+"رامز تحت الأرض",
+"Ramez Ta7t el ard"
+]
+},
+{
+"name": "Ta7t el sefr",
+"kind": "work",
+"title": "Ta7t el sefr",
+"ar": "رامز تحت الصفر",
+"hint": "Ramez Galal show",
+"q": [
+"رامز تحت الصفر",
+"Ramez Ta7t el sefr"
+]
+},
+{
+"name": "Magnoon rasmy",
+"kind": "work",
+"title": "Magnoon rasmy",
+"ar": "رامز مجنون رسمي",
+"hint": "Ramez Galal show",
+"q": [
+"رامز مجنون رسمي",
+"Ramez Magnoon rasmy"
+]
+},
+{
+"name": "Movie star",
+"kind": "work",
+"title": "Movie star",
+"ar": "رامز موفي ستار",
+"hint": "Ramez Galal show",
+"q": [
+"رامز موفي ستار",
+"Ramez Movie star"
+]
+},
+{
+"name": "Gab men el akher",
+"kind": "work",
+"title": "Gab men el akher",
+"ar": "رامز جاب من الآخر",
+"hint": "Ramez Galal show",
+"q": [
+"رامز جاب من الآخر",
+"Ramez Gab men el akher"
+]
+},
+{
+"name": "A7lam el fata el tayer",
+"kind": "work",
+"title": "A7lam el fata el tayer",
+"ar": "أحلام الفتى الطائر",
+"hint": "Adel Emam TV series"
+},
+{
+"name": "Fer2et nagy 3atallah",
+"kind": "work",
+"title": "Fer2et nagy 3atallah",
+"ar": "فرقة ناجي عطا الله",
+"hint": "Adel Emam TV series"
+},
+{
+"name": "El 3arraf",
+"kind": "work",
+"title": "El 3arraf",
+"ar": "العراف",
+"hint": "Adel Emam TV series"
+},
+{
+"name": "Sa7eb el sa3ada",
+"kind": "work",
+"title": "Sa7eb el sa3ada",
+"ar": "صاحب السعادة",
+"hint": "Adel Emam TV series"
+},
+{
+"name": "Ostaz w ra2ees 2esm",
+"kind": "work",
+"title": "Ostaz w ra2ees 2esm",
+"ar": "أستاذ ورئيس قسم",
+"hint": "Adel Emam TV series"
+},
+{
+"name": "Ma2moun w shorakah",
+"kind": "work",
+"title": "Ma2moun w shorakah",
+"ar": "مأمون وشركاه",
+"hint": "Adel Emam TV series"
+},
+{
+"name": "3afareet 3adly 3allam",
+"kind": "work",
+"title": "3afareet 3adly 3allam",
+"ar": "عفاريت عدلي علام",
+"hint": "Adel Emam TV series"
+},
+{
+"name": "3awalem khafeya",
+"kind": "work",
+"title": "3awalem khafeya",
+"ar": "عوالم خفية",
+"hint": "Adel Emam TV series"
+},
+{
+"name": "Valentino",
+"kind": "work",
+"title": "Valentino (Egyptian TV series)",
+"ar": "فالنتينو",
+"hint": "Adel Emam TV series"
+},
+{
+"name": "Opera 3ayda",
+"kind": "work",
+"title": "Opera 3ayda",
+"ar": "أوبرا عايدة",
+"hint": "Yehia El-Fakharany TV series"
+},
+{
+"name": "El layl w akhro",
+"kind": "work",
+"title": "El layl w akhro",
+"ar": "الليل وآخره",
+"hint": "Yehia El-Fakharany TV series"
+},
+{
+"name": "Shaykh el 3arab hammam",
+"kind": "work",
+"title": "Shaykh el 3arab hammam",
+"ar": "شيخ العرب همام",
+"hint": "Yehia El-Fakharany TV series"
+},
+{
+"name": "Dahsha",
+"kind": "work",
+"title": "Dahsha",
+"ar": "دهشة",
+"hint": "Yehia El-Fakharany TV series"
+},
+{
+"name": "Wanoos",
+"kind": "work",
+"title": "Wanoos",
+"ar": "ونوس",
+"hint": "Yehia El-Fakharany TV series"
+},
+{
+"name": "Nagib zahy zarkash",
+"kind": "work",
+"title": "Nagib zahy zarkash",
+"ar": "نجيب زاهي زركش",
+"hint": "Yehia El-Fakharany TV series"
+},
+{
+"name": "Hob",
+"kind": "song",
+"title": "Hob (album)",
+"ar": "حب",
+"hint": "Tamer Hosny album",
+"artist": "Tamer Hosny"
+},
+{
+"name": "Ya bent el eih",
+"kind": "song",
+"title": "Ya bent el eih",
+"ar": "يا بنت الإيه",
+"hint": "Tamer Hosny album",
+"artist": "Tamer Hosny"
+},
+{
+"name": "2arrab kaman",
+"kind": "song",
+"title": "2arrab kaman",
+"ar": "قرب كمان",
+"hint": "Tamer Hosny album",
+"artist": "Tamer Hosny"
+},
+{
+"name": "Ha3eesh 7ayaty",
+"kind": "song",
+"title": "Ha3eesh 7ayaty",
+"ar": "هعيش حياتي",
+"hint": "Tamer Hosny album",
+"artist": "Tamer Hosny"
+},
+{
+"name": "Ekhtart sa7",
+"kind": "song",
+"title": "Ekhtart sa7",
+"ar": "اخترت صح",
+"hint": "Tamer Hosny album",
+"artist": "Tamer Hosny"
+},
+{
+"name": "Elly gai a7la",
+"kind": "song",
+"title": "Elly gai a7la",
+"ar": "اللي جاي أحلى",
+"hint": "Tamer Hosny album",
+"artist": "Tamer Hosny"
+},
+{
+"name": "Ba7ebak enta",
+"kind": "song",
+"title": "Ba7ebak enta",
+"ar": "بحبك انت",
+"hint": "Tamer Hosny album",
+"artist": "Tamer Hosny"
+},
+{
+"name": "3omry ebtada",
+"kind": "song",
+"title": "3omry ebtada",
+"ar": "عمري ابتدا",
+"hint": "Tamer Hosny album",
+"artist": "Tamer Hosny"
+},
+{
+"name": "Khaleek folazy",
+"kind": "song",
+"title": "Khaleek folazy",
+"ar": "خليك فولاذي",
+"hint": "Tamer Hosny album",
+"artist": "Tamer Hosny"
+},
+{
+"name": "Shokolata",
+"kind": "song",
+"title": "Shokolata",
+"ar": "شيكولاتة",
+"hint": "Mohamed Mounir album",
+"artist": "Mohamed Mounir"
+},
+{
+"name": "Meshwar",
+"kind": "song",
+"title": "Meshwar",
+"ar": "مشوار",
+"hint": "Mohamed Mounir album",
+"artist": "Mohamed Mounir"
+},
+{
+"name": "Eftah 2albak",
+"kind": "song",
+"title": "Eftah 2albak",
+"ar": "افتح قلبك",
+"hint": "Mohamed Mounir album",
+"artist": "Mohamed Mounir"
+},
+{
+"name": "El far7a",
+"kind": "song",
+"title": "El far7a",
+"ar": "الفرحة",
+"hint": "Mohamed Mounir album",
+"artist": "Mohamed Mounir"
+},
+{
+"name": "Fi 3eshg el banat",
+"kind": "song",
+"title": "Fi 3eshg el banat",
+"ar": "في عشق البنات",
+"hint": "Mohamed Mounir album",
+"artist": "Mohamed Mounir"
+},
+{
+"name": "A7mar shafayef",
+"kind": "song",
+"title": "A7mar shafayef",
+"ar": "أحمر شفايف",
+"hint": "Mohamed Mounir album",
+"artist": "Mohamed Mounir"
+},
+{
+"name": "Embare7 kan 3omry 3eshreen",
+"kind": "song",
+"title": "Embare7 kan 3omry 3eshreen",
+"ar": "امبارح كان عمري عشرين",
+"hint": "Mohamed Mounir album",
+"artist": "Mohamed Mounir"
+},
+{
+"name": "Ta3m el beyout",
+"kind": "song",
+"title": "Ta3m el beyout",
+"ar": "طعم البيوت",
+"hint": "Mohamed Mounir album",
+"artist": "Mohamed Mounir"
+},
+{
+"name": "Watan",
+"kind": "song",
+"title": "Watan",
+"ar": "وطن",
+"hint": "Mohamed Mounir album",
+"artist": "Mohamed Mounir"
+},
+{
+"name": "Khallina ne3eesh",
+"kind": "song",
+"title": "Khallina ne3eesh",
+"ar": "خلينا نعيش",
+"hint": "Mohamed Hamaki album",
+"artist": "Mohamed Hamaki"
+},
+{
+"name": "Ya ana ya enta",
+"kind": "song",
+"title": "Ya ana ya enta",
+"ar": "يا أنا يا انت",
+"hint": "Mohamed Hamaki album",
+"artist": "Mohamed Hamaki"
+},
+{
+"name": "Kheles el kalam",
+"kind": "song",
+"title": "Kheles el kalam",
+"ar": "خلص الكلام",
+"hint": "Mohamed Hamaki album",
+"artist": "Mohamed Hamaki"
+},
+{
+"name": "Ba7ebak kol youm aktar",
+"kind": "song",
+"title": "Ba7ebak kol youm aktar",
+"ar": "بحبك كل يوم أكتر",
+"hint": "Mohamed Hamaki album",
+"artist": "Mohamed Hamaki"
+},
+{
+"name": "7aga mesh tabe3eya",
+"kind": "song",
+"title": "7aga mesh tabe3eya",
+"ar": "حاجة مش طبيعية",
+"hint": "Mohamed Hamaki album",
+"artist": "Mohamed Hamaki"
+},
+{
+"name": "Men 2alby baghanny",
+"kind": "song",
+"title": "Men 2alby baghanny",
+"ar": "من قلبي بغني",
+"hint": "Mohamed Hamaki album",
+"artist": "Mohamed Hamaki"
+},
+{
+"name": "3omro ma yegheeb",
+"kind": "song",
+"title": "3omro ma yegheeb",
+"ar": "عمره ما يغيب",
+"hint": "Mohamed Hamaki album",
+"artist": "Mohamed Hamaki"
+},
+{
+"name": "Kol youm men dah",
+"kind": "song",
+"title": "Kol youm men dah",
+"ar": "كل يوم من ده",
+"hint": "Mohamed Hamaki album",
+"artist": "Mohamed Hamaki"
+},
+{
+"name": "Ya fatenny",
+"kind": "song",
+"title": "Ya fatenny",
+"ar": "يا فاتني",
+"hint": "Mohamed Hamaki album",
+"artist": "Mohamed Hamaki"
+},
+{
+"name": "Lazem a3eesh",
+"kind": "song",
+"title": "Lazem a3eesh",
+"ar": "لازم أعيش",
+"hint": "Sherine album",
+"artist": "Sherine"
+},
+{
+"name": "Tamer w shereen",
+"kind": "song",
+"title": "Tamer w shereen",
+"ar": "تامر وشيرين",
+"hint": "Sherine album",
+"artist": "Sherine"
+},
+{
+"name": "7abeit",
+"kind": "song",
+"title": "7abeit",
+"ar": "حبيت",
+"hint": "Sherine album",
+"artist": "Sherine"
+},
+{
+"name": "Es2al 3alaya",
+"kind": "song",
+"title": "Es2al 3alaya",
+"ar": "اسأل عليا",
+"hint": "Sherine album",
+"artist": "Sherine"
+},
+{
+"name": "Ana keteer",
+"kind": "song",
+"title": "Ana keteer",
+"ar": "أنا كتير",
+"hint": "Sherine album",
+"artist": "Sherine"
+},
+{
+"name": "Tare2y",
+"kind": "song",
+"title": "Tare2y",
+"ar": "طريقي",
+"hint": "Sherine album",
+"artist": "Sherine"
+},
+{
+"name": "Nassay",
+"kind": "song",
+"title": "Nassay",
+"ar": "نساي",
+"hint": "Sherine album",
+"artist": "Sherine"
+},
+{
+"name": "Batmanna ansak",
+"kind": "song",
+"title": "Batmanna ansak",
+"ar": "بتمنى أنساك",
+"hint": "Sherine album",
+"artist": "Sherine"
+},
+{
+"name": "We7yat 2alby",
+"kind": "song",
+"title": "We7yat 2alby",
+"ar": "وحياة قلبي",
+"hint": "Abdel Halim Hafez song",
+"artist": "Abdel Halim Hafez"
+},
+{
+"name": "2olly 7aga",
+"kind": "song",
+"title": "2olly 7aga",
+"ar": "قولي حاجة",
+"hint": "Abdel Halim Hafez song",
+"artist": "Abdel Halim Hafez"
+},
+{
+"name": "7aga ghareeba",
+"kind": "song",
+"title": "7aga ghareeba",
+"ar": "حاجة غريبة",
+"hint": "Abdel Halim Hafez song",
+"artist": "Abdel Halim Hafez"
+},
+{
+"name": "Gabbar",
+"kind": "song",
+"title": "Gabbar",
+"ar": "جبار",
+"hint": "Abdel Halim Hafez song",
+"artist": "Abdel Halim Hafez"
+},
+{
+"name": "Balash 3etab",
+"kind": "song",
+"title": "Balash 3etab",
+"ar": "بلاش عتاب",
+"hint": "Abdel Halim Hafez song",
+"artist": "Abdel Halim Hafez"
+},
+{
+"name": "Gana el hawa",
+"kind": "song",
+"title": "Gana el hawa",
+"ar": "جانا الهوى",
+"hint": "Abdel Halim Hafez song",
+"artist": "Abdel Halim Hafez"
+},
+{
+"name": "El hawa hawaya",
+"kind": "song",
+"title": "El hawa hawaya",
+"ar": "الهوى هوايا",
+"hint": "Abdel Halim Hafez song",
+"artist": "Abdel Halim Hafez"
+},
+{
+"name": "A7dan el 7abayeb",
+"kind": "song",
+"title": "A7dan el 7abayeb",
+"ar": "أحضان الحبايب",
+"hint": "Abdel Halim Hafez song",
+"artist": "Abdel Halim Hafez"
 }
 ]

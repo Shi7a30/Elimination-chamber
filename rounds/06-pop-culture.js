@@ -97,5 +97,15 @@ CATS.push(
   ["Khadr El Touni",1915,"خضر التوني"],["Abdel Latif Abou Heif",1929,"عبد اللطيف أبو هيف"],["Mohamed Rashwan",1956,"محمد رشوان"],
   ["Rania Elwani",1977,"رانيا علواني"],["Karam Gaber",1979,"كرم جابر"],["Hesham Mesbah",1982,"هشام مصباح"],
   ["Mohamed Salah",1992,"محمد صلاح"],["Farida Osman",1995,"فريدة عثمان"],["Ahmed Elgendy",2000,"أحمد الجندي","Ahmed Elgendy"]],
-  {h:"Egyptian athlete",k:BORN,g:"p",s:"celebs",m:"eg"})]}
+  {h:"Egyptian athlete",k:BORN,g:"p",s:"celebs",m:"eg"}),
+Rd(["WHO IS THE","OLDEST EGYPTIAN IN HOLLYWOOD",Q],["مين","أكبر مصري في هوليوود في السن",QA],"min",[
+  ["Omar Sharif",1932,"عمر الشريف"],["Khaled Abol Naga",1966,"خالد أبو النجا","Kal Naga"],["Amr Waked",1973,"عمرو واكد"],
+  ["Mohamed Diab",1978,"محمد دياب"],["Rami Malek",1981,"رامي مالك"],["May Calamawy",1986,"مي القلماوي"],
+  ["Amir El-Masry",1990,"أمير المصري"],["Mena Massoud",1991,"مينا مسعود"],["Ramy Youssef",1991,"رامي يوسف"]],
+  {h:"actor",k:BORN,g:"p",s:"celebs",m:"eg"}),
+ Rd(["WHO IS THE","OLDEST WORLD-FAMOUS EGYPTIAN",Q],["مين","أكبر مصري مشهور في العالم في السن",QA],"min",[
+  ["Boutros Boutros-Ghali",1922,"بطرس بطرس غالي"],["Mohamed Al-Fayed",1929,"محمد الفايد"],["Mostafa El-Sayed",1933,"مصطفى السيد","Mostafa El-Sayed"],
+  ["Magdi Yacoub",1935,"مجدي يعقوب"],["Farouk El-Baz",1938,"فاروق الباز"],["Mohamed ElBaradei",1942,"محمد البرادعي"],
+  ["Ahmed Zewail",1946,"أحمد زويل"],["Naguib Sawiris",1954,"نجيب ساويرس"],["Mohamed Salah",1992,"محمد صلاح"]],
+  {h:"Egyptian",k:BORN,g:"p",s:"celebs",m:"eg"})]}
 );
