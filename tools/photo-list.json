@@ -8294,7 +8294,12 @@
   "ar": "",
   "ar_hint": "",
   "logo": true,
-  "skip": false
+  "skip": false,
+  "review": true,
+  "q": [
+   "Snapchat logo",
+   "Snapchat ghost"
+  ]
  },
  {
   "name": "TikTok",
@@ -8617,7 +8622,12 @@
   "ar": "العربي",
   "ar_hint": "شركة",
   "logo": true,
-  "skip": false
+  "skip": false,
+  "review": true,
+  "q": [
+   "Elaraby Group logo",
+   "العربي جروب"
+  ]
  },
  {
   "name": "Mo'men",
@@ -8664,7 +8674,12 @@
   "ar_hint": "شركة",
   "logo": true,
   "skip": false,
-  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Zooba-koshari.jpg/500px-Zooba-koshari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Zooba-koshari.jpg/500px-Zooba-koshari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "review": true,
+  "q": [
+   "Zooba logo",
+   "Zooba restaurant"
+  ]
  },
  {
   "name": "El Rashidi El Mizan",
@@ -18452,7 +18467,12 @@
   "ar": "الأخبار",
   "ar_hint": "جرنال",
   "logo": true,
-  "skip": false
+  "skip": false,
+  "review": true,
+  "q": [
+   "Al-Akhbar newspaper logo",
+   "الأخبار جريدة شعار"
+  ]
  },
  {
   "name": "Al-Gomhuria",
@@ -18690,7 +18710,12 @@
   "ar": "دكتور بيبر",
   "ar_hint": "حاجة ساقعة",
   "logo": true,
-  "skip": false
+  "skip": false,
+  "review": true,
+  "q": [
+   "Dr Pepper logo",
+   "Dr Pepper can"
+  ]
  },
  {
   "name": "Pepsi",
@@ -19599,7 +19624,12 @@
   "ar": "هيلمانز",
   "ar_hint": "براند أكل",
   "logo": true,
-  "skip": false
+  "skip": false,
+  "review": true,
+  "q": [
+   "Hellmann's logo",
+   "Hellmann's mayonnaise"
+  ]
  },
  {
   "name": "Vegemite",
@@ -20544,7 +20574,12 @@
   "ar": "بريوش دوريه",
   "ar_hint": "حلواني",
   "logo": true,
-  "skip": false
+  "skip": false,
+  "review": true,
+  "q": [
+   "Brioche Dorée logo",
+   "Brioche Doree"
+  ]
  },
  {
   "name": "Le Pain Quotidien",
