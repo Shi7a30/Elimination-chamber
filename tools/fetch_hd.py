@@ -61,10 +61,10 @@ def source(x, src):
     return p and p.get("thumbnail", {}).get("source")
 
 
-def square(raw, size):
+def square(raw, size, fit=False):
     """The same crop as fetch_photos.to_uri, at any size."""
     im = Image.open(io.BytesIO(raw))
-    graphic = im.format == "PNG" or im.mode in ("RGBA", "LA", "P")
+    graphic = fit or im.format == "PNG" or im.mode in ("RGBA", "LA", "P")
     if im.mode in ("RGBA", "LA", "P"):
         im = im.convert("RGBA")
         bg = Image.new("RGB", im.size, "white")
@@ -114,7 +114,7 @@ def main():
                 continue
             r = F.S.get(url, timeout=30)
             r.raise_for_status()
-            big = square(r.content, HD)
+            big = square(r.content, HD, x.get("fit"))
             old = Image.open(io.BytesIO(base64.b64decode(uri.split(",", 1)[1])))
             d = diff(big, old)
             if d > 18:  # a different picture than the built-in one: don't use it

@@ -129,7 +129,7 @@ def candidates(x, p):
     return c
 
 
-def to_uri(url):
+def to_uri(url, fit=False):
     for i in range(4):
         r = S.get(url, timeout=30)
         if r.ok:
@@ -137,7 +137,8 @@ def to_uri(url):
         time.sleep(2 ** i)
     r.raise_for_status()
     im = Image.open(io.BytesIO(r.content))
-    graphic = im.format == "PNG" or im.mode in ("RGBA", "LA", "P")
+    # "fit" in photo-list.json: a logo saved as a JPEG, which would otherwise be cropped like a photo
+    graphic = fit or im.format == "PNG" or im.mode in ("RGBA", "LA", "P")
     if im.mode in ("RGBA", "LA", "P"):
         im = im.convert("RGBA")
         bg = Image.new("RGB", im.size, "white")
@@ -223,7 +224,7 @@ def main():
             keep_previous(x["name"])
             continue
         try:
-            out[x["name"]] = to_uri(url)
+            out[x["name"]] = to_uri(url, x.get("fit"))
             report[x["name"]] = src
         except Exception as e:
             print("failed", x["name"], e)

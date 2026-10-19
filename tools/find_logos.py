@@ -24,6 +24,7 @@ SITES = {
     "El Abd": ["elabdpatisserie.com", "elabd.com"], "Salé Sucré": ["salesucre.com", "salesucre.com.eg"],
     "Sedra": ["sedrapatisserie.com", "sedra.com.eg"], "TBS": ["tbsegypt.com", "tbs.com.eg"],
     "Abou Shakra": ["aboushakra.com"], "Abou El Sid": ["abouelsid.com"], "Radio Masr": ["radiomasr.net"],
+    "Zooba": ["zoobaeats.com", "zooba.com"],
 }
 HEAD = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36"}
 S = requests.Session()
