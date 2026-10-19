@@ -14984,7 +14984,7 @@
   "ar": "أغداً ألقاك",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Leilet 7ob",
@@ -14993,7 +14993,7 @@
   "ar": "ليلة حب",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": false
+  "skip": true
  },
  {
   "name": "Hometown Glory",
