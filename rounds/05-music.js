@@ -185,5 +185,50 @@ CATS.push(
   ["Waterloo",1974,"واترلو","Waterloo (ABBA song)"],["Hold Me Now",1987,"هولد مي ناو","Hold Me Now (Johnny Logan song)"],["Hard Rock Hallelujah",2006,"هارد روك هاليلويا"],
   ["Fairytale",2009,"فيري تيل","Fairytale (Alexander Rybak song)"],["Satellite",2010,"ساتلايت","Satellite (Lena song)"],["Euphoria",2012,"يوفوريا","Euphoria (Loreen song)"],
   ["Arcade",2019,"أركيد","Arcade (Duncan Laurence song)"],["Zitti e buoni",2021,"زيتي إي بووني"],["Tattoo",2023,"تاتو","Tattoo (Loreen song)"]],
-  {h:"song",k:["WON EUROVISION","كسبت اليوروفيجن سنة"],s:"songs",m:"w"})]}
+  {h:"song",k:["WON EUROVISION","كسبت اليوروفيجن سنة"],s:"songs",m:"w"}),
+Rd(["WHO IS THE","YOUNGEST FEMALE SINGER",Q],["مين","أصغر مطربة",QA],"max",[
+  ["Laila Mourad",1918,"ليلى مراد","Leila Mourad"],["Simone",1966,"سيمون","Simone Philip Kamel"],["Angham",1972,"أنغام"],
+  ["Sherine Abdel Wahab",1980,"شيرين عبد الوهاب","Sherine"],["Ruby",1981,"روبي","Ruby (Egyptian singer)"],["Amal Maher",1985,"آمال ماهر"],
+  ["Donia Samir Ghanem",1985,"دنيا سمير غانم"],["Nesma Mahgoub",1989,"نسمة محجوب"],["Carmen Soliman",1994,"كارمن سليمان","Carmen Suleiman"]],
+  {h:"Egyptian singer",k:BORN,g:"p",s:"singers",m:"eg"}),
+ Rd(["WHO IS THE","YOUNGEST SHAABI SINGER",Q],["مين","أصغر مطرب شعبي",QA],"max",[
+  ["Mohamed Roshdy",1928,"محمد رشدي"],["Ahmed Adaweya",1945,"أحمد عدوية"],["Shaaban Abdel Rahim",1957,"شعبان عبد الرحيم"],
+  ["Hassan El Asmar",1959,"حسن الأسمر"],["Hakim",1962,"حكيم","Hakim (singer)"],["Ahmed Sheba",1965,"أحمد شيبة"],
+  ["Ahmed Saad",1981,"أحمد سعد","Ahmed Saad (singer)"],["Mohamed Ramadan",1988,"محمد رمضان","Mohamed Ramadan (actor)"],["Mohamed Abdel Muttalib",1910,"محمد عبد المطلب"]],
+  {h:"Egyptian singer",k:BORN,g:"p",s:"singers",m:"eg"}),
+ Rd(["WHO IS THE","OLDEST NEW-GENERATION SINGER",Q],["مين","أكبر مطرب من الجيل الجديد في السن",QA],"min",[
+  ["Mohamed Hamaki",1975,"محمد حماقي"],["Tamer Hosny",1977,"تامر حسني"],["Ramy Sabry",1978,"رامي صبري","Ramy Sabry (singer)"],
+  ["Hamza Namira",1980,"حمزة نمرة"],["Hamada Helal",1980,"حمادة هلال"],["Amir Eid",1983,"أمير عيد"],
+  ["Tamer Ashour",1984,"تامر عاشور"],["Ahmed Gamal",1988,"أحمد جمال","Ahmad Gamal (singer)"],["Marwan Pablo",1995,"مروان بابلو"]],
+  {h:"Egyptian singer",k:BORN,g:"p",s:"singers",m:"eg"}),
+ Rd(["WHO IS THE","YOUNGEST GOLDEN-ERA SINGER",Q],["مين","أصغر مطرب من الزمن الجميل",QA],"max",[
+  ["Mounira El Mahdeya",1885,"منيرة المهدية"],["Mohamed Abdel Muttalib",1910,"محمد عبد المطلب"],["Laila Mourad",1918,"ليلى مراد","Leila Mourad"],
+  ["Mohamed Fawzi",1918,"محمد فوزي","Mohamed Fawzi (singer)"],["Karem Mahmoud",1922,"كارم محمود"],["Mohamed Roshdy",1928,"محمد رشدي"],
+  ["Abdel Halim Hafez",1929,"عبد الحليم حافظ"],["Fayza Ahmed",1934,"فايزة أحمد"],["Najat Al Saghira",1938,"نجاة الصغيرة","Nagat El-Sagheera"]],
+  {h:"Egyptian singer",k:BORN,g:"p",s:"singers",m:"eg"}),
+Rd(["WHICH TAMER HOSNY ALBUM","CAME OUT LAST",Q],["أنهي ألبوم لتامر حسني","أجدد",QA],"max",[
+  ["Hob",2004,"حب","Hob (album)"],["Ya bent el eih",2007,"يا بنت الإيه"],["2arrab kaman",2008,"قرب كمان"],
+  ["Ha3eesh 7ayaty",2009,"هعيش حياتي"],["Ekhtart sa7",2010,"اخترت صح"],["Elly gai a7la",2011,"اللي جاي أحلى"],
+  ["Ba7ebak enta",2013,"بحبك انت"],["3omry ebtada",2016,"عمري ابتدا"],["Khaleek folazy",2020,"خليك فولاذي"]],
+  {h:"Tamer Hosny album",k:["RELEASED","نزل سنة"],s:"songs",m:"eg"}),
+ Rd(["WHICH MOHAMED MOUNIR ALBUM","CAME OUT LAST",Q],["أنهي ألبوم لمحمد منير","أجدد",QA],"max",[
+  ["Shokolata",1989,"شيكولاتة"],["Meshwar",1991,"مشوار"],["Eftah 2albak",1994,"افتح قلبك"],
+  ["El far7a",1999,"الفرحة"],["Fi 3eshg el banat",2000,"في عشق البنات"],["A7mar shafayef",2003,"أحمر شفايف"],
+  ["Embare7 kan 3omry 3eshreen",2005,"امبارح كان عمري عشرين"],["Ta3m el beyout",2008,"طعم البيوت"],["Watan",2018,"وطن"]],
+  {h:"Mohamed Mounir album",k:["RELEASED","نزل سنة"],s:"songs",m:"eg"}),
+ Rd(["WHICH HAMAKI ALBUM","CAME OUT FIRST",Q],["أنهي ألبوم لحماقي","نزل الأول",QA],"min",[
+  ["Khallina ne3eesh",2003,"خلينا نعيش"],["Ya ana ya enta",2005,"يا أنا يا انت"],["Kheles el kalam",2006,"خلص الكلام"],
+  ["Ba7ebak kol youm aktar",2007,"بحبك كل يوم أكتر"],["7aga mesh tabe3eya",2010,"حاجة مش طبيعية"],["Men 2alby baghanny",2012,"من قلبي بغني"],
+  ["3omro ma yegheeb",2015,"عمره ما يغيب"],["Kol youm men dah",2019,"كل يوم من ده"],["Ya fatenny",2021,"يا فاتني"]],
+  {h:"Mohamed Hamaki album",k:["RELEASED","نزل سنة"],s:"songs",m:"eg"}),
+ Rd(["WHICH SHERINE ALBUM","CAME OUT LAST",Q],["أنهي ألبوم لشيرين","أجدد",QA],"max",[
+  ["Garh Tany",2003,"جرح تاني"],["Lazem a3eesh",2005,"لازم أعيش"],["Tamer w shereen",2002,"تامر وشيرين"],
+  ["7abeit",2009,"حبيت"],["Es2al 3alaya",2012,"اسأل عليا"],["Ana keteer",2014,"أنا كتير"],
+  ["Tare2y",2015,"طريقي"],["Nassay",2018,"نساي"],["Batmanna ansak",2025,"بتمنى أنساك"]],
+  {h:"Sherine album",k:["RELEASED","نزل سنة"],s:"songs",m:"eg"}),
+ Rd(["WHICH ABDEL HALIM FILM SONG","CAME OUT FIRST",Q],["أنهي أغنية لحليم من أفلامه","نزلت الأول",QA],"min",[
+  ["Ahwak",1957,"أهواك","Ahwak"],["We7yat 2alby",1962,"وحياة قلبي"],["2olly 7aga",1962,"قولي حاجة"],
+  ["7aga ghareeba",1967,"حاجة غريبة"],["Gabbar",1967,"جبار"],["Balash 3etab",1967,"بلاش عتاب"],
+  ["Gana el hawa",1969,"جانا الهوى"],["El hawa hawaya",1969,"الهوى هوايا"],["A7dan el 7abayeb",1969,"أحضان الحبايب"]],
+  {h:"Abdel Halim Hafez song",k:["RELEASED","نزلت سنة"],dt:["Song released","نزول الأغنية"],g:"y",s:"songs",m:"eg"})]}
 );
