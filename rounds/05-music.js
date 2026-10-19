@@ -43,10 +43,10 @@ CATS.push(
   ["APT.",2024,"آبت","APT. (song)"]],{h:"song",k:["RELEASED","نزلت سنة"],dt:["Song released", "نزول الأغنية"],g:"y",s:"songs",m:"w"}),
  Rd(["WHO IS THE","YOUNGEST RAPPER",Q],["مين","أصغر رابر",QA],"max",[
   ["Dr. Dre",1965,"دكتور دري"],["Jay-Z",1969,"جاي زي"],["Tupac Shakur",1971,"توباك"],["Snoop Dogg",1971,"سنوب دوج"],
-  ["Eminem",1972,"إيمينيم"],["50 Cent",1975,"فيفتي سنت"],["Kanye West",1977,"كانيي ويست"],["Drake",1986,"دريك","Drake (musician)"],
+  ["Eminem",1972,"إيمينم"],["50 Cent",1975,"فيفتي سنت"],["Kanye West",1977,"كانيي ويست"],["Drake",1986,"دريك","Drake (musician)"],
   ["Cardi B",1992,"كاردي بي"]],{h:"rapper",k:BORN,g:"p",s:"singers",m:"w"}),
  Rd(["WHO HAS WON THE","MOST GRAMMYS",Q],["مين","كسب أكتر جرامي",QA],"max",[
-  ["Beyoncé",35,"بيونسيه"],["Kendrick Lamar",27,"كندريك لامار"],["Jay-Z",25,"جاي زي"],["Stevie Wonder",25,"ستيفي وندر"],["Kanye West",24,"كانييه ويست"],["Adele",16,"أديل"],["Eminem",15,"إيمينم"],["Taylor Swift",14,"تايلور سويفت"],["Rihanna",9,"ريهانا"]],
+  ["Beyoncé",35,"بيونسيه"],["Kendrick Lamar",27,"كندريك لامار"],["Jay-Z",25,"جاي زي"],["Stevie Wonder",25,"ستيفي وندر"],["Kanye West",24,"كانيي ويست"],["Adele",16,"أديل"],["Eminem",15,"إيمينم"],["Taylor Swift",14,"تايلور سويفت"],["Rihanna",9,"ريهانا"]],
   {h:"singer",k:["GRAMMYS WON","جوايز جرامي"],suf:TRA,s:"singers",m:"w"}),
  Rd(["WHO HAS THE","MOST US NO. 1 HITS",Q],["مين","عنده أكتر أغاني نمبر وان في أمريكا",QA],"max",[
   ["Mariah Carey",19,"ماريا كاري"],["Drake",14,"دريك","Drake (musician)"],["Rihanna",14,"ريهانا"],["Michael Jackson",13,"مايكل جاكسون"],["Madonna",12,"مادونا"],["Whitney Houston",11,"ويتني هيوستن"],["Stevie Wonder",10,"ستيفي وندر"],["Bruno Mars",10,"برونو مارس"],["Ariana Grande",10,"أريانا جراندي"]],

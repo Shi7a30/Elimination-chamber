@@ -39,7 +39,7 @@ CATS.push(
   ["Mark Zuckerberg",1984,"مارك زوكربيرج"],["Sam Altman",1985,"سام ألتمان"],["Evan Spiegel",1990,"إيفان شبيجل"]],
   {h:"businessman",k:BORN,g:"p",s:"celebs",m:"w"}),
  Rd(["WHICH CARTOON CHARACTER","APPEARED FIRST",Q],["أنهي شخصية كرتون","ظهرت الأول",QA],"min",[
-  ["Popeye",1929,"باباي"],["Betty Boop",1930,"بيتي بوب"],["Goofy",1932,"جوفي"],
+  ["Popeye",1929,"باباي"],["Betty Boop",1930,"بيتي بوب"],["Goofy",1932,"بندق"],
   ["Donald Duck",1934,"بطوط"],["Woody Woodpecker",1940,"نقار الخشب"],["Pink Panther",1963,"النمر الوردي","Pink Panther (character)"],
   ["Garfield",1978,"جارفيلد"],["Pikachu",1996,"بيكاتشو"],["SpongeBob",1999,"سبونج بوب","SpongeBob SquarePants"]],
   {h:"cartoon character",k:["FIRST APPEARED","أول ظهور"],s:"celebs",m:"w"}),

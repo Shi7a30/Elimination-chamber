@@ -18,6 +18,10 @@ Every push to `main` runs the tests and, if they pass, publishes the game to Git
 
 `npm test` — see [tests/README.md](tests/README.md).
 
+## Rounds and the Daily round
+
+Rounds live in `rounds/`, one file per category. After adding or renaming rounds, run `node tools/daily_schedule.js`: it adds the new rounds to the end of the Daily round schedule in `daily.js`, so no day that's already scheduled changes. The tests fail if a round is missing from it.
+
 ## Photos
 
 Card photos come from Wikipedia/Wikimedia via `tools/fetch_photos.py` (run by the photos GitHub Action) and are written out as one file per photo in `photos/img/` (plus the `photos/index.js` list) by `tools/embed_photos.py`. Photos download only when a card needs them.

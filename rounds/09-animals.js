@@ -14,7 +14,7 @@ CATS.push(
   ["Elephant",70,"الفيل"],["Macaw",60,"ببغاء المكاو"],["Horse",40,"الحصان"],["Cat",20,"القطة"],["Dog",16,"الكلب"],["Hamster",3,"الهامستر"]],{suf:[" yrs"," سنة"],h:"animal",k:["LIVES UP TO","بيعيش لحد"],s:"animals",m:"w"}),
  Rd(["WHICH ANIMAL HAS THE","LONGEST PREGNANCY",Q],["أنهي حيوان","حمله بياخد أطول وقت",QA],"max",[
   ["African Elephant",650,"الفيل الأفريقي","African bush elephant"],["Giraffe",430,"الزرافة"],["Camel",390,"الجمل","Dromedary"],
-  ["Horse",340,"الحصان"],["Cow",280,"البقرة","Cattle"],["Lion",110,"الأسد"],["Dog",63,"الكلب"],["Rabbit",31,"الأرنب"],["Hamster",16,"الهامستر","Golden hamster"]],
+  ["Horse",340,"الحصان"],["Cow",283,"البقرة","Cattle"],["Lion",110,"الأسد"],["Dog",63,"الكلب"],["Rabbit",31,"الأرنب"],["Hamster",16,"الهامستر","Golden hamster"]],
   {pre:["~","~"],suf:[" days"," يوم"],h:"animal",k:["PREGNANCY","مدة الحمل"],s:"animals",m:"w"}),
  Rd(["WHICH ANIMAL","SLEEPS THE MOST",Q],["أنهي حيوان","بينام أكتر",QA],"max",[
   ["Koala",20,"الكوالا"],["Newborn baby",16,"البيبي حديث الولادة","Infant"],["Cat",14,"القطة"],
@@ -32,7 +32,7 @@ CATS.push(
   ["Cow",65,"البقرة","Cattle"],["Horse",35,"الحصان"],["Elephant",30,"الفيل","African bush elephant"]],
   {pre:["~","~"],suf:[" bpm"," نبضة/دقيقة"],h:"animal",k:["RESTING HEART RATE","النبض وهو مرتاح"],s:"animals",m:"w"}),
  Rd(["WHICH BIRD HAS THE","WIDEST WINGSPAN",Q],["أنهي طير","جناحاته أعرض",QA],"max",[
-  ["Albatross",300,"القطرس","Wandering albatross"],["Swan",220,"البجعة","Mute swan"],["Bald eagle",200,"النسر الأصلع"],
+  ["Albatross",300,"القطرس","Wandering albatross"],["Swan",220,"البجعة","Mute swan"],["Bald eagle",200,"النسر الأقرع"],
   ["Flamingo",155,"البشاروش (الفلامنجو)","Greater flamingo"],["Seagull",140,"النورس","European herring gull"],["Crow",100,"الغراب","Carrion crow"],
   ["Pigeon",65,"الحمامة","Rock dove"],["Sparrow",22,"العصفورة","House sparrow"],["Hummingbird",10,"الطائر الطنان","Ruby-throated hummingbird"]],
   {pre:["~","~"],suf:[" cm"," سم"],h:"bird",k:["WINGSPAN","فردة الجناحين"],s:"animals",m:"w"}),

@@ -49,7 +49,7 @@ CATS.push(
   ["Keda reda",2007,"كده رضا","Keda Reda"],["1000 mabrouk",2009,"ألف مبروك","1000 Mabrouk"],["3asal eswed",2010,"عسل إسود","Asal Eswed"],
   ["X-large",2011,"إكس لارج","X-Large (film)"],["El badla",2018,"البدلة","El Badla"],["Wahed tany",2022,"واحد تاني","Wahed Tany"]],{h:"Egyptian film",k:["RELEASED","نزل سنة"],dt:["Film released", "نزول الفيلم"],g:"y",s:"films",m:"eg"}),
  Rd(["WHO IS THE","YOUNGEST OSCAR WINNER",Q],["مين","أصغر واحد كسب أوسكار",QA],"max",[
-  ["Anthony Hopkins",1937,"أنتوني هوبكنز"],["Denzel Washington",1954,"دنزل واشنطن"],["Tom Hanks",1956,"توم هانكس"],
+  ["Anthony Hopkins",1937,"أنتوني هوبكنز"],["Denzel Washington",1954,"دينزل واشنطن"],["Tom Hanks",1956,"توم هانكس"],
   ["Matthew McConaughey",1969,"ماثيو ماكونهي"],["Leonardo DiCaprio",1974,"ليوناردو دي كابريو"],["Cillian Murphy",1976,"كيليان مورفي"],
   ["Natalie Portman",1981,"ناتالي بورتمان"],["Emma Stone",1988,"إيما ستون"],["Jennifer Lawrence",1990,"جينيفر لورانس"]],{h:"actor",k:BORN,g:"p",s:"actors",m:"w"}),
  Rd(["WHICH PIXAR FILM","CAME OUT FIRST",Q],["أنهي فيلم بيكسار","نزل الأول",QA],"min",[
@@ -144,17 +144,17 @@ CATS.push(
  Rd(["WHICH FILM IS","THE LONGEST",Q],["أنهي","أطول فيلم",QA],"max",[
   ["Gone with the Wind",238,"ذهب مع الريح","Gone with the Wind (film)"],["Killers of the Flower Moon",206,"قتلة زهرة القمر","Killers of the Flower Moon (film)"],["The Return of the King",201,"عودة الملك","The Lord of the Rings: The Return of the King"],
   ["Titanic",195,"تايتانيك","Titanic (1997 film)"],["Avengers: Endgame",181,"أفنجرز: إند جيم"],["Oppenheimer",180,"أوبنهايمر","Oppenheimer (film)"],
-  ["The Godfather",175,"العراب"],["Interstellar",169,"إنترستيلار","Interstellar (film)"],["The Dark Knight",152,"فارس الظلام","The Dark Knight"]],
+  ["The Godfather",175,"الأب الروحي"],["Interstellar",169,"إنترستيلار","Interstellar (film)"],["The Dark Knight",152,"فارس الظلام","The Dark Knight"]],
   {suf:[" min"," دقيقة"],h:"film",k:["RUNNING TIME","مدة الفيلم"],s:"films",m:"w"}),
  Rd(["WHICH BEST PICTURE WINNER","CAME OUT FIRST",Q],["أنهي فيلم من اللي كسبوا أوسكار أحسن فيلم","نزل الأول",QA],"min",[
-  ["Casablanca",1942,"كازابلانكا","Casablanca (film)"],["The Godfather",1972,"العراب"],["Rocky",1976,"روكي"],
+  ["Casablanca",1942,"كازابلانكا","Casablanca (film)"],["The Godfather",1972,"الأب الروحي"],["Rocky",1976,"روكي"],
   ["Forrest Gump",1994,"فورست جامب"],["Titanic",1997,"تايتانيك","Titanic (1997 film)"],["Gladiator",2000,"المصارع","Gladiator (2000 film)"],
   ["Slumdog Millionaire",2008,"المليونير المتشرد"],["Parasite",2019,"باراسايت","Parasite (2019 film)"],["Oppenheimer",2023,"أوبنهايمر","Oppenheimer (film)"]],
   {h:"film",k:["RELEASED","نزل سنة"],dt:["Film released","نزول الفيلم"],g:"y",s:"films",m:"w"}),
  Rd(["WHICH FILM WON","THE MOST OSCARS",Q],["أنهي فيلم","كسب أكتر أوسكارات",QA],"max",[
   ["Titanic",11,"تايتانيك","Titanic (1997 film)"],["West Side Story (1961)",10,"قصة الحي الغربي","West Side Story (1961 film)"],["The English Patient",9,"المريض الإنجليزي","The English Patient (film)"],
   ["Slumdog Millionaire",8,"المليونير المتشرد"],["Oppenheimer",7,"أوبنهايمر","Oppenheimer (film)"],["Forrest Gump",6,"فورست جامب"],
-  ["Gladiator",5,"المصارع","Gladiator (2000 film)"],["Parasite",4,"باراسايت","Parasite (2019 film)"],["The Godfather",3,"العراب"]],
+  ["Gladiator",5,"المصارع","Gladiator (2000 film)"],["Parasite",4,"باراسايت","Parasite (2019 film)"],["The Godfather",3,"الأب الروحي"]],
   {suf:[" 🏆"," 🏆"],h:"film",k:["OSCARS WON","أوسكارات"],s:"films",m:"w"}),
  Rd(["WHICH ADEL IMAM FILM","CAME OUT FIRST",Q],["أنهي فيلم لعادل إمام","نزل الأول",QA],"min",[
   ["E7na betou3 el otobees",1979,"إحنا بتوع الأتوبيس","Ehna Btoo El Otobees"],["El Halfout",1985,"الهلفوت","El Halfout"],["Shams el zanati",1991,"شمس الزناتي","Shams El Zanati"],

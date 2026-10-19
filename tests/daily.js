@@ -48,6 +48,9 @@ s=await st(old);ok(/Done for today/.test(s.card)&&s.DY.s===0,'leaving midway sho
 
 // the daily order never repeats a round until every round has had its day
 ok(await a.evaluate(()=>{const k=new Set();for(let i=1;i<=ALL.length;i++)k.add(dailyRound(i).key);return k.size===ALL.length&&dailyRound(1)===dailyRound(ALL.length+1)}),'daily rounds repeat too early');
+// the schedule is written down in daily.js: every round has a day (run node tools/daily_schedule.js after adding rounds), and day 1 never changes
+ok(await a.evaluate(()=>ALL.filter(r=>DAILY.indexOf(hk(r.key))<0).map(r=>r.key)).then(m=>m.length===0||console.log('not in daily.js:',m)||false),'rounds missing from daily.js: run node tools/daily_schedule.js');
+ok(await a.evaluate(()=>/EUROPA LEAGUE/.test(dailyRound(1).key)),'day 1 changed: '+await a.evaluate(()=>dailyRound(1).key));
 
 // dock: highlights the page, works in both languages
 await a.tap('[data-nav="cats"]');ok((await st(a)).on==='cats','dock highlight on Categories');

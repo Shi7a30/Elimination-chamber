@@ -1,10 +1,11 @@
 # Shelhom! (شيلهم) — Project Summary
 
-A bilingual (English / Egyptian Arabic) trivia elimination game with photo cards, built as a single web page. It started as an artifact named "Eliminate", was imported into GitHub, and has been polished through 26 published versions (v26 is live).
+A bilingual (English / Egyptian Arabic) trivia elimination game with photo cards, built as a single web page. It started as an artifact named "Eliminate", was imported into GitHub, and is now published from the `main` branch.
 
-- **Repo:** `shi7a30/elimination-chamber`, branch `game-polish`
-- **Live build (v26):** https://claude.ai/artifact/8mC6jA2xPjpfzBqFSgzVxs
+- **Repo:** `shi7a30/elimination-chamber`, branch `main` (every merge runs the tests, then publishes)
+- **Live:** https://shi7a30.github.io/Elimination-chamber/ (installable on phones, works offline)
 - **Status:** fully playable in the browser (desktop and phone). All content, photos, progress saving, sound and both languages work offline after the first load.
+- **Updated:** 19 Oct 2026. Sections 1 to 5 describe the game as it is now; section 7 is the history.
 
 ---
 
@@ -24,9 +25,9 @@ Each round shows a question and **9 photo cards**, for example "OLDEST MOVIE STA
 | Starting coins | 50 |
 | Win a round | +10 coins, plus a streak bonus of 2 × streak (max +10) |
 | Undo the last elimination | costs 30 coins. You can undo after a loss to save your streak |
-| Skip a round | free (category mode) |
+| Skip a round | free (category mode), but it ends your 🔥 streak, and the game asks first when the streak is 2 or more |
 | Streak 🔥 and best 🏆 | shown on the Play card (and the daily round has its own) |
-| Daily round | one round a day, the same for everyone (changes at midnight Cairo time), one try, own streak and best, shareable result squares |
+| Daily round | one round a day, the same for everyone (changes at midnight Cairo time), one try, own streak and best, shareable result squares. The order is written down in `daily.js` and new rounds only go on the end, so adding rounds never changes a day |
 | Per-round progress | "x/y solved" per subcategory, ★ COMPLETE when all are solved |
 
 Everything is saved in the browser's `localStorage`: coins, streaks, best scores, progress, language, your own photos and cached Wikipedia photos.
@@ -35,7 +36,8 @@ Everything is saved in the browser's `localStorage`: coins, streaks, best scores
 
 ## 2. Play modes
 
-1. **Category mode:** pick a group, then a subcategory, and play its rounds in order.
+0. **Home screen:** a Play card (mixed rounds, 🔥 streak and 🏆 best), the **Daily round** card (سؤال اليوم), and a bottom dock with Duel, Categories and Multiplayer. First-time players get a short "how to play" popup.
+1. **Category mode:** pick a group, then a subcategory, and play its rounds in a shuffled order (each device keeps its own deck so rounds don't repeat until all are played).
 2. **♾ Endless:** mixed rounds from every category until you miss. Half the time it plays a normal round. The other half it **generates a mixed question** from two pools:
    - `p` = people by birth year (oldest/youngest across actors, players, singers…)
    - `y` = things by year (films, songs, series, clubs founded…). In mixed year questions, each card says what its year means, e.g. "Film released" or "Club founded".
@@ -45,6 +47,9 @@ Everything is saved in the browser's `localStorage`: coins, streaks, best scores
    - The same pair is never shown twice in a run, and fresh cards and questions come first.
    - Half the new challengers beat the kept card, so always tapping the same side doesn't work.
    - Best run is saved per region and per subcategory.
+4. **Multiplayer:**
+   - **Hot potato (البطاطس سخنة خالص):** 2 to 8 players pass one phone; whoever knocks out the answer is out.
+   - **Challenge:** play 10 rounds and send a link; friends get the same rounds and see your score. Their reply link shows who won. No server: the rounds and score are in the link.
 
 ### Region filter (applies to everything)
 - **Egypt 🇪🇬:** Egyptian rounds only
@@ -64,11 +69,14 @@ Food & Drinks and Childhood & Nostalgia are Egyptian-only, so they only show in 
 
 ---
 
-## 3. Content (v26)
+## 3. Content
 
-**140 hand-written rounds, 1,260 cards, 1,046 unique items**: 73 Egyptian rounds and 67 international ones. Plus endless mode generates unlimited mixed questions.
+**364 hand-written rounds, 3,276 cards, 2,604 different items**: 200 Egyptian rounds and 164 international ones, at least 20 per group. Plus endless mode generates unlimited mixed questions.
 
 ### Menu structure (7 groups → subcategories)
+
+The table below is the original 140-round layout; the groups and subcategories are the same today, with more rounds in each.
+
 | Group | Subcategories | Egypt rounds | World rounds |
 |---|---|---|---|
 | ⚽ FOOTBALL (الكورة) | Players · Clubs & Trophies | 8 + 6 | 5 + 6 |
@@ -116,8 +124,8 @@ Every card shows a photo. It comes from the first source that has one:
   - Items marked `review` get up to 16 candidates in `photo-candidates.json` so a person can pick the right one and save it as `url`.
 - `tools/embed_photos.py` converts everything to WebP and writes `photos/img/<hash>.webp` plus `photos/index.js`. Files are named by a hash of the picture, so two cards with the same picture share one file and a changed photo gets a new name.
 
-### Known gaps (v26)
-- About 57 cards still use letter tiles. They are mostly Egyptian brands, radio stations, and a few shows: Bakkar, Sabe' Gar, Yehia w Kenooz, Ismailia Rayeh Gai, Sayedati El Gameela, Ezzay.
+### Known gaps
+- 56 items still use letter tiles (plus a few cards that would repeat a picture on the same board). They are mostly Egyptian brands, radio stations, and a few shows: Bakkar, Sabe' Gar, Yehia w Kenooz, Ismailia Rayeh Gai, Sayedati El Gameela, Ezzay.
 - Some Egyptian songs and series still show the singer or star, because no cover or poster exists on Wikipedia:
   - Songs: Khatfoony, Ya Msafer Wahdak, Alf Leila wa Leila, Habibi Dah, Garh Tany, Naweeha, Ya El Midan, Number One, El Bakht
   - Series: Lan Aish fi Gilbab Abi, Gaafar El Omda
@@ -142,8 +150,9 @@ Every card shows a photo. It comes from the first source that has one:
   ```
 - **Menu:** the `GROUPS` array (group emoji, English/Arabic names, subcategories with id, emoji and names).
 - **Text:** a `TX` object with `en` and `ar` strings, including functions for plurals and numbers. Arabic numbers are formatted for Arabic.
-- **Persistence:** `localStorage` keys `elim_coins, elim_streak, elim_best, elim_endless, elim_duel, elim_prog, elim_img, elim_wiki, elim_lang, elim_daily`.
-- **Testing:** headless Playwright scripts (kept outside the repo) cover:
+- **Daily schedule:** `daily.js` lists one round id per day from 19 Oct 2026. After adding or renaming rounds, run `node tools/daily_schedule.js`; it only appends, and a test fails if a round is missing from it.
+- **Persistence:** `localStorage` keys `elim_coins, elim_streak, elim_best, elim_endless, elim_duel, elim_prog, elim_seen, elim_img, elim_wiki, elim_lang, elim_region, elim_mute, elim_daily, elim_how, elim_name, elim_players, elim_chdone, elim_off`.
+- **Testing:** Playwright checks in `tests/` (`npm test`, all run in CI before publishing; see `tests/README.md`) cover:
   - full play-throughs of every round (in both languages and all regions)
   - mobile layout and overflow
   - duel rules: no repeated pairs, category picks
@@ -184,4 +193,5 @@ Every card shows a photo. It comes from the first source that has one:
 - **Duel and Knowledge:** duel category picker and no-repeat pairs; 29 Knowledge rounds (geography, history, animals); photos switched to WebP in separate files (8.5 MB page down to about 135 KB); mixed-year labels.
 - **Food, nostalgia and comparisons:** Food & Drinks and Childhood & Nostalgia (Egypt-only, 17 rounds); "who has more / who is taller / who won more Oscars" rounds; 4 Egyptian football "who has more" rounds.
 - **v25:** fixed duplicate and missing photos; added the runtime guard against two identical photos on one board.
-- **v26 (current):** posters, scenes and album covers for movies, TV shows, cartoons, plays and songs instead of star photos.
+- **v26:** posters, scenes and album covers for movies, TV shows, cartoons, plays and songs instead of star photos.
+- **On GitHub (Oct 2026):** tests in CI and GitHub Pages; installable offline app; Hot potato and Challenge links; two UI polish rounds and a full redesign (frosted glass, Rubik and Baloo Bhaijaan 2 fonts, claw-and-grid icon); 20+ rounds per group (364 now); shuffled round order; photos as separate files and rounds split per category; Egyptian Franco titles and Arabic wording fixes; the Daily round and new home screen with a bottom dock; a full review and its fixes (fixed daily schedule, how-to-play popup, Arabic plurals, clearer leave/skip warnings, yellow knocked-out cards back).
