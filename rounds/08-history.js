@@ -5,12 +5,12 @@ CATS.push(
  Rd(["WHICH PHARAOH","RULED FIRST",Q],["أنهي فرعون","حكم الأول",QA],"max",[
   ["Narmer",3100,"نارمر (مينا)"],["Djoser",2670,"زوسر"],["Khufu",2589,"خوفو"],["Hatshepsut",1479,"حتشبسوت"],["Akhenaten",1353,"إخناتون"],
   ["Tutankhamun",1332,"توت عنخ آمون"],["Ramesses II",1279,"رمسيس التاني"],["Ptolemy I",305,"بطليموس الأول","Ptolemy I Soter"],["Cleopatra",51,"كليوباترا"]],
-  {pre:["c. ",""],suf:[" BC"," ق.م"],h:"pharaoh",k:["CAME TO POWER","بدأ يحكم"],s:"history",m:"eg",d:2}),
+  {pre:["c. ",""],suf:[" BC"," ق.م"],h:"pharaoh",k:["CAME TO POWER","بدأ يحكم"],s:"history",m:"eg",d:1}),
  Rd(["WHICH PHARAOH","RULED THE LONGEST",Q],["أنهي فرعون","حكم أطول مدة",QA],"max",[
   ["Ramesses II",66,"رمسيس التاني"],["Thutmose III",54,"تحتمس التالت"],["Amenhotep III",38,"أمنحتب التالت"],
   ["Khufu",23,"خوفو"],["Hatshepsut",21,"حتشبسوت"],["Cleopatra",21,"كليوباترا"],
   ["Akhenaten",17,"إخناتون"],["Seti I",11,"سيتي الأول"],["Tutankhamun",9,"توت عنخ آمون"]],
-  {pre:["~","~"],suf:[" years"," سنة"],h:"pharaoh",k:["YEARS ON THE THRONE","سنين الحكم"],s:"history",m:"eg",d:2}),
+  {pre:["~","~"],suf:[" years"," سنة"],h:"pharaoh",k:["YEARS ON THE THRONE","سنين الحكم"],s:"history",m:"eg",d:1}),
   Rd(["WHAT","HAPPENED FIRST",Q],["أنهي حدث","حصل الأول",QA],"min",[
    ["Suez Canal opens",1869,"افتتاح قناة السويس","Suez Canal"],["Cairo University founded",1908,"تأسيس جامعة القاهرة","Cairo University"],["1919 Revolution",1919,"ثورة 1919","Egyptian revolution of 1919"],
    ["Tutankhamun's tomb found",1922,"اكتشاف مقبرة توت عنخ آمون","KV62"],["July Revolution",1952,"ثورة 23 يوليو","Egyptian revolution of 1952"],["High Dam completed",1970,"اكتمال السد العالي","Aswan Dam"],
@@ -40,7 +40,7 @@ CATS.push(
   ["Rifa'a al-Tahtawi",1801,"رفاعة الطهطاوي"],["Ahmed Orabi",1841,"أحمد عرابي","Ahmed Urabi"],["Talaat Harb",1867,"طلعت حرب"],
   ["Mostafa Kamel",1874,"مصطفى كامل","Mustafa Kamil Pasha"],["Ali Moustafa Mosharafa",1898,"علي مصطفى مشرفة"],["Samira Moussa",1917,"سميرة موسى"],
   ["Magdi Yacoub",1935,"مجدي يعقوب"],["Farouk El-Baz",1938,"فاروق الباز"],["Ahmed Zewail",1946,"أحمد زويل"]],
-  {h:"Egyptian historical figure",k:BORN,g:"p",s:"history",m:"eg",d:3}),
+  {h:"Egyptian historical figure",k:BORN,g:"p",s:"history",m:"eg",d:2}),
  Rd(["WHICH WRITER WAS","BORN LAST",Q],["مين من الكتّاب","أصغر",QA],"max",[
   ["Taha Hussein",1889,"طه حسين"],["Naguib Mahfouz",1911,"نجيب محفوظ"],["Ihsan Abdel Quddous",1919,"إحسان عبد القدوس"],
   ["Youssef Idris",1927,"يوسف إدريس","Yusuf Idris"],["Salah Jahin",1930,"صلاح جاهين"],["Abdel Rahman el-Abnudi",1938,"عبد الرحمن الأبنودي"],
@@ -50,7 +50,7 @@ CATS.push(
   ["Tulunid era",868,"الدولة الطولونية","Tulunid dynasty"],["Fatimid era",969,"الدولة الفاطمية","Fatimid Caliphate"],["Ayyubid era",1171,"الدولة الأيوبية","Ayyubid dynasty"],
   ["Mamluk era",1250,"دولة المماليك","Mamluk Sultanate"],["Ottoman rule",1517,"الحكم العثماني","Ottoman Egypt"],["French campaign",1798,"الحملة الفرنسية","French campaign in Egypt and Syria"],
   ["Muhammad Ali dynasty",1805,"أسرة محمد علي","Muhammad Ali dynasty"],["British occupation",1882,"الاحتلال الإنجليزي","History of Egypt under the British"],["Republic declared",1953,"إعلان الجمهورية","Republic of Egypt (1953–1958)"]],
-  {h:"Egypt history",k:["BEGAN IN EGYPT","بدأ في مصر سنة"],dt:["Era began in Egypt", "بداية العصر في مصر"],g:"y",s:"history",m:"eg",d:3}),
+  {h:"Egypt history",k:["BEGAN IN EGYPT","بدأ في مصر سنة"],dt:["Era began in Egypt", "بداية العصر في مصر"],g:"y",s:"history",m:"eg",d:2}),
  Rd(["WHICH PROJECT","OPENED LAST",Q],["أنهي","آخر مشروع اتفتح",QA],"max",[
   ["Suez Canal",1869,"قناة السويس"],["Aswan Low Dam",1902,"خزان أسوان"],["Cairo International Stadium",1960,"استاد القاهرة"],
   ["Cairo International Airport",1963,"مطار القاهرة الدولي"],["Cairo Metro (Line 1)",1987,"مترو الأنفاق (الخط الأول)","Cairo Metro Line 1"],["Bibliotheca Alexandrina",2002,"مكتبة الإسكندرية"],

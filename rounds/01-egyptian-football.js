@@ -5,7 +5,7 @@ CATS.push(
  Rd(["WHO IS THE","YOUNGEST PLAYER",Q],["مين","أصغر لاعب",QA],"max",[
   ["Ahmed Hegazi",1991,"أحمد حجازي"],["Mohamed Salah",1992,"محمد صلاح"],["Mahmoud 'Trezeguet' Hassan",1994,"محمود حسن (تريزيجيه)","Trézéguet (Egyptian footballer)"],
   ["Mahmoud Hamdy 'El Wensh'",1995,"محمود حمدي (الونش)","Mahmoud Hamdy"],["Ahmed Sayed 'Zizo'",1996,"أحمد سيد (زيزو)","Zizo (footballer)"],["Mostafa Mohamed",1997,"مصطفى محمد","Mostafa Mohamed (footballer)"],
-  ["Ahmed Fatouh",1998,"أحمد فتوح"],["Omar Marmoush",1999,"عمر مرموش"],["Hamza Abdel Karim",2008,"حمزة عبد الكريم","Hamza Abdelkarim"]],{h:"Egyptian footballer",k:BORN,g:"p",s:"players",m:"eg",d:2}),
+  ["Ahmed Fatouh",1998,"أحمد فتوح"],["Omar Marmoush",1999,"عمر مرموش"],["Hamza Abdel Karim",2008,"حمزة عبد الكريم","Hamza Abdelkarim"]],{h:"Egyptian footballer",k:BORN,g:"p",s:"players",m:"eg",d:1}),
  Rd(["WHO IS THE","OLDEST LEGEND",Q],["مين","أكبر أسطورة في السن",QA],"min",[
   ["Hassan Shehata",1949,"حسن شحاتة"],["Mahmoud 'Bibo' El Khatib",1954,"محمود الخطيب (بيبو)","Mahmoud El Khatib"],["Hossam Hassan",1966,"حسام حسن"],
   ["Hany Ramzy",1969,"هاني رمزي"],["Essam El-Hadary",1973,"عصام الحضري","Essam El Hadary"],["Ahmed Hassan",1975,"أحمد حسن","Ahmed Hassan (footballer, born 1975)"],
@@ -31,11 +31,11 @@ CATS.push(
  Rd(["WHICH CLUB HAS THE","MOST EGYPT CUPS",Q],["أنهي نادي","عنده أكتر كاس مصر",QA],"max",[
   ["Al Ahly",39,"الأهلي","Al Ahly SC"],["Zamalek",29,"الزمالك","Zamalek SC"],["Al Ittihad Alexandria",6,"الاتحاد السكندري","Al Ittihad Alexandria Club"],
   ["Tersana",6,"الترسانة","Tersana SC"],["Arab Contractors",3,"المقاولون العرب","Al Mokawloon Al Arab SC"],["Ismaily",2,"الإسماعيلي","Ismaily SC"],
-  ["ENPPI",2,"إنبي","ENPPI SC"],["Pyramids FC",2,"بيراميدز"],["Al Masry",1,"المصري","Al Masry SC"]],{suf:TRA,h:"Egyptian football club",k:["EGYPT CUPS","كاسات مصر"],s:"trophies",m:"eg",d:2}),
+  ["ENPPI",2,"إنبي","ENPPI SC"],["Pyramids FC",2,"بيراميدز"],["Al Masry",1,"المصري","Al Masry SC"]],{suf:TRA,h:"Egyptian football club",k:["EGYPT CUPS","كاسات مصر"],s:"trophies",m:"eg",d:1}),
  Rd(["WHICH IS THE","BIGGEST STADIUM",Q],["أنهي","أكبر استاد",QA],"max",[
   ["Misr Stadium",93940,"استاد مصر (العاصمة الإدارية)","New Administrative Capital Stadium"],["Borg El Arab Stadium",86000,"استاد برج العرب"],["Cairo International Stadium",75000,"استاد القاهرة"],
   ["Egyptian Army Stadium (Suez)",45000,"استاد الجيش بالسويس","Egyptian Army Stadium"],["Arab Contractors Stadium",35000,"استاد المقاولون العرب","Osman Ahmed Osman Stadium"],["Al Salam Stadium",30000,"استاد السلام","Al Salam Stadium (Egypt)"],
-  ["30 June Stadium",30000,"استاد 30 يونيو (الدفاع الجوي)"],["Military Academy Stadium",28500,"استاد الكلية الحربية","Cairo Military Academy Stadium"],["Suez Stadium",27000,"استاد السويس"]],{h:"stadium",k:["CAPACITY","بيساع"],suf:[" fans"," متفرج"],s:"trophies",m:"eg",d:3}),
+  ["30 June Stadium",30000,"استاد 30 يونيو (الدفاع الجوي)"],["Military Academy Stadium",28500,"استاد الكلية الحربية","Cairo Military Academy Stadium"],["Suez Stadium",27000,"استاد السويس"]],{h:"stadium",k:["CAPACITY","بيساع"],suf:[" fans"," متفرج"],s:"trophies",m:"eg",d:2}),
  Rd(["WHO IS THE","OLDEST COACH",Q],["مين","أكبر مدرب في السن",QA],"min",[
   ["Mahmoud El-Gohary",1938,"محمود الجوهري"],["Hassan Shehata",1949,"حسن شحاتة"],["Farouk Gaafar",1952,"فاروق جعفر"],
   ["Shawky Gharib",1959,"شوقي غريب","Shawky Gharieb"],["Hossam El-Badry",1960,"حسام البدري","Hossam El Badry"],["Hossam Hassan",1966,"حسام حسن"],
@@ -53,12 +53,12 @@ CATS.push(
   ["Ahmed Hassan",4,"أحمد حسن","Ahmed Hassan (footballer, born 1975)"],["Hossam Hassan",3,"حسام حسن"],["Wael Gomaa",3,"وائل جمعة"],
   ["Ahmed Fathy",3,"أحمد فتحي"],["Mohamed Aboutrika",2,"محمد أبو تريكة"],["Mohamed Zidan",2,"محمد زيدان"],
   ["Mahmoud 'Bibo' El Khatib",1,"محمود الخطيب (بيبو)","Mahmoud El Khatib"],["Mohamed Salah",0,"محمد صلاح"],["Omar Marmoush",0,"عمر مرموش"]],
-  {suf:TRA,h:"footballer",k:["AFCON TITLES","كاسات أمم أفريقيا"],s:"players",m:"eg",d:2}),
+  {suf:TRA,h:"footballer",k:["AFCON TITLES","كاسات أمم أفريقيا"],s:"players",m:"eg",d:1}),
  Rd(["WHO HAS WON THE","MOST CAF CHAMPIONS LEAGUES",Q],["مين","كسب أكتر دوري أبطال أفريقيا",QA],"max",[
   ["Wael Gomaa",6,"وائل جمعة"],["Mohamed Aboutrika",5,"محمد أبو تريكة"],["Mohamed El Shenawy",4,"محمد الشناوي"],
   ["Ali Maaloul",4,"علي معلول","Ali Maâloul"],["Hossam Hassan",2,"حسام حسن"],["Mahmoud 'Bibo' El Khatib",2,"محمود الخطيب (بيبو)","Mahmoud El Khatib"],
   ["Mohamed Salah",0,"محمد صلاح"],["Ahmed 'Mido' Hossam",0,"أحمد حسام (ميدو)","Mido (footballer)"],["Omar Marmoush",0,"عمر مرموش"]],
-  {suf:TRA,h:"footballer",k:["CAF CL TITLES","دوري أبطال أفريقيا"],s:"players",m:"eg",d:3}),
+  {suf:TRA,h:"footballer",k:["CAF CL TITLES","دوري أبطال أفريقيا"],s:"players",m:"eg",d:2}),
  Rd(["WHO SCORED THE","MOST EPL GOALS",Q],["مين","جاب أكتر أهداف في البريميرليج",QA],"max",[
   ["Mohamed Salah",193,"محمد صلاح"],["Ahmed 'Mido' Hossam",22,"أحمد حسام (ميدو)","Mido (footballer)"],["Amr Zaki",10,"عمرو زكي"],
   ["Mahmoud 'Trezeguet' Hassan",8,"محمود حسن (تريزيجيه)","Trézéguet (Egyptian footballer)"],["Ahmed Elmohamady",6,"أحمد المحمدي"],["Ahmed Hegazi",2,"أحمد حجازي"],

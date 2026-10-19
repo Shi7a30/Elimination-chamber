@@ -22,7 +22,7 @@ CATS.push(
   {h:"Egyptian patisserie",k:["FOUNDED","اتأسس سنة"],g:"y",dt:["Patisserie founded","تأسيس محل الحلويات"],s:"eats",m:"eg",d:3}),
  Rd(["WHICH CHAIN","CAME TO EGYPT LAST",Q],["أنهي سلسلة مطاعم","أجدد في مصر",QA],"max",[
   ["KFC",1973,"كنتاكي"],["McDonald's",1994,"ماكدونالدز"],["TGI Fridays",1997,"تي جي آي فرايديز"],["Starbucks",2006,"ستاربكس"],["Burger King",2007,"برجر كينج"],["Fatburger",2013,"فات برجر"],["Dunkin'",2015,"دانكن"],["Arby's",2018,"آربيز"],["Krispy Kreme",2021,"كريسبي كريم"]],
-  {h:"international restaurant chain",k:["CAME TO EGYPT","دخلت مصر سنة"],g:"y",dt:["Arrived in Egypt","دخول مصر"],s:"eats",m:"eg",d:3}),
+  {h:"international restaurant chain",k:["CAME TO EGYPT","دخلت مصر سنة"],g:"y",dt:["Arrived in Egypt","دخول مصر"],s:"eats",m:"eg",d:2}),
  Rd(["WHICH RESTAURANT","IS THE OLDEST",Q],["أنهي","أقدم مطعم",QA],"min",[
   ["Café Riche",1908,"كافيه ريش"],["Abou Shakra",1947,"أبو شقرة"],["Abou Tarek",1950,"أبو طارق"],["Mohamed Ahmed",1957,"محمد أحمد"],["Felfela",1959,"فلفلة"],["Gad",1969,"جاد"],["Mo'men",1988,"مؤمن"],["Abou El Sid",1999,"أبو السيد"],["Zooba",2012,"زووبا"]],
   {h:"Egyptian restaurant",k:["OPENED","اتفتح سنة"],g:"y",dt:["Restaurant opened","افتتاح المطعم"],s:"eats",m:"eg",d:2}),
@@ -30,12 +30,12 @@ CATS.push(
   ["Schweppes",1783,"شويبس"],["Dr Pepper",1885,"دكتور بيبر"],["Coca-Cola",1886,"كوكاكولا"],
   ["Pepsi",1893,"بيبسي"],["Spiro Spathis",1920,"سبيرو سباتس"],["7 Up",1929,"سفن أب"],
   ["Fanta",1940,"فانتا"],["Mirinda",1959,"ميرندا"],["Sprite",1961,"سبرايت","Sprite (drink)"]],
-  {h:"soft drink",k:["CREATED","اتعملت سنة"],s:"snacks",m:"eg",d:2}),
+  {h:"soft drink",k:["CREATED","اتعملت سنة"],s:"snacks",m:"w",d:2}),
  Rd(["WHICH CHOCOLATE BAR","CAME OUT FIRST",Q],["أنهي شوكولاتة","نزلت الأول",QA],"min",[
   ["Cadbury Dairy Milk",1905,"كادبوري ديري ميلك"],["Toblerone",1908,"توبليرون"],["Snickers",1930,"سنيكرز"],
   ["Mars bar",1932,"مارس","Mars (chocolate bar)"],["Kit Kat",1935,"كيت كات"],["Bounty",1951,"باونتي","Bounty (chocolate bar)"],
   ["Galaxy",1960,"جالاكسي","Galaxy (chocolate)"],["Twix",1967,"تويكس"],["Kinder Bueno",1990,"كيندر بوينو"]],
-  {h:"chocolate bar",k:["LAUNCHED","نزلت سنة"],g:"y",dt:["Launched","نزول المنتج"],s:"snacks",m:"eg",d:3}),
+  {h:"chocolate bar",k:["LAUNCHED","نزلت سنة"],g:"y",dt:["Launched","نزول المنتج"],s:"snacks",m:"w",d:3}),
  Rd(["WHICH FOOD HAS","THE MOST CALORIES",Q],["أنهي أكل","فيه سعرات أكتر",QA],"max",[
   ["Walnuts",654,"عين الجمل","Walnut"],["Almonds",579,"اللوز","Almond"],["Peanuts",567,"السوداني","Peanut"],
   ["Potato chips",536,"الشيبسي","Potato chip"],["Milk chocolate",535,"شوكولاتة باللبن"],["Popcorn",387,"الفشار"],
@@ -55,12 +55,12 @@ CATS.push(
   ["Oreo",1912,"أوريو"],["Lay's",1932,"ليز"],["M&M's",1941,"إم آند إمز"],
   ["Cheetos",1948,"شيتوس"],["Nutella",1964,"نوتيلا"],["Doritos",1966,"دوريتوس"],
   ["Pringles",1968,"برينجلز"],["Tic Tac",1969,"تيك تاك"],["Kinder Surprise",1974,"كيندر سربرايز"]],
-  {h:"snack brand",k:["LAUNCHED","نزل سنة"],g:"y",dt:["Launched","نزول المنتج"],s:"snacks",m:"eg",d:2}),
+  {h:"snack brand",k:["LAUNCHED","نزل سنة"],g:"y",dt:["Launched","نزول المنتج"],s:"snacks",m:"w",d:2}),
  Rd(["WHICH TEA OR COFFEE BRAND","WAS FOUNDED FIRST",Q],["أنهي براند شاي أو قهوة","اتأسس الأول",QA],"min",[
   ["Twinings",1706,"توايننجز"],["Tetley",1837,"تيتلي"],["Lipton",1890,"ليبتون"],
   ["Lavazza",1895,"لافاتزا"],["Illy",1933,"إيلي","Illycaffè"],["Nescafé",1938,"نسكافيه"],
   ["Ahmad Tea",1986,"أحمد تي"],["Nespresso",1986,"نسبريسو"],["Dilmah",1988,"ديلما"]],
-  {h:"tea or coffee brand",k:["FOUNDED","اتأسس سنة"],g:"y",dt:["Brand founded","تأسيس البراند"],s:"snacks",m:"eg",d:3}),
+  {h:"tea or coffee brand",k:["FOUNDED","اتأسس سنة"],g:"y",dt:["Brand founded","تأسيس البراند"],s:"snacks",m:"w",d:3}),
  Rd(["WHICH FOOD HAS","THE MOST PROTEIN",Q],["أنهي أكل","فيه بروتين أكتر",QA],"max",[
   ["Chicken breast",31,"صدور الفراخ"],["Beef",26,"اللحمة","Beef"],["Cheddar",25,"جبنة شيدر","Cheddar cheese"],
   ["Peanut butter",25,"زبدة الفول السوداني"],["Canned tuna",24,"التونة","Tuna as food"],["Eggs",13,"البيض","Egg as food"],
@@ -70,7 +70,7 @@ CATS.push(
   ["Haribo Goldbears",1922,"هاريبو","Gummy bear"],["Maltesers",1936,"مالتيزرز"],["Smarties",1937,"سمارتيز"],
   ["Mentos",1948,"منتوس"],["Chupa Chups",1958,"تشوبا تشوبس"],["Skittles",1974,"سكيتلز","Skittles (confectionery)"],
   ["Lion bar",1976,"لايون","Lion (chocolate bar)"],["Ferrero Rocher",1982,"فيريرو روشيه"],["Kinder Joy",2001,"كيندر جوي"]],
-  {h:"candy",k:["LAUNCHED","نزلت سنة"],g:"y",dt:["Launched","نزول المنتج"],s:"snacks",m:"eg",d:2}),
+  {h:"candy",k:["LAUNCHED","نزلت سنة"],g:"y",dt:["Launched","نزول المنتج"],s:"snacks",m:"w",d:2}),
  Rd(["WHICH FOOD HAS","THE MOST SUGAR",Q],["أنهي أكل","فيه سكر أكتر",QA],"max",[
   ["Honey",82,"العسل"],["Dates",63,"البلح","Date palm"],["Raisins",59,"الزبيب","Raisin"],
   ["Milk chocolate",52,"شوكولاتة باللبن"],["Ketchup",22,"الكاتشب"],["Grapes",16,"العنب","Grape"],
@@ -80,12 +80,12 @@ CATS.push(
   ["Cadbury",1824,"كادبوري"],["Nestlé",1866,"نستله"],["Heinz",1869,"هاينز","Heinz"],
   ["Hershey's",1894,"هيرشيز","The Hershey Company"],["Kraft",1903,"كرافت","Kraft Foods"],["Kellogg's",1906,"كيلوجز"],
   ["Mars",1911,"مارس","Mars Inc."],["Danone",1919,"دانون"],["Ferrero",1946,"فيريرو","Ferrero SpA"]],
-  {h:"food company",k:["FOUNDED","اتأسست سنة"],s:"snacks",m:"eg",d:3}),
+  {h:"food company",k:["FOUNDED","اتأسست سنة"],s:"snacks",m:"w",d:3}),
  Rd(["WHICH BISCUIT","CAME OUT FIRST",Q],["أنهي بسكوت","نزل الأول",QA],"min",[
   ["Marie biscuit",1874,"بسكوت ماري"],["Petit Beurre",1886,"بيتي بير"],["Digestive",1892,"دايجستيف","Digestive biscuit"],
   ["Oreo",1912,"أوريو"],["Jaffa Cakes",1927,"جافا كيك"],["Lotus Biscoff",1932,"لوتس"],
   ["Ritz crackers",1934,"ريتز","Ritz Crackers"],["Prince",1950,"برنس","Prince (cookie)"],["TUC",1958,"توك","TUC (cracker)"]],
-  {h:"biscuit",k:["LAUNCHED","نزل سنة"],g:"y",dt:["Launched","نزول المنتج"],s:"snacks",m:"eg",d:3}),
+  {h:"biscuit",k:["LAUNCHED","نزل سنة"],g:"y",dt:["Launched","نزول المنتج"],s:"snacks",m:"w",d:3}),
  Rd(["WHICH CHEESE BRAND","CAME OUT FIRST",Q],["أنهي براند جبنة","نزل الأول",QA],"min",[
   ["Philadelphia",1872,"فيلادلفيا","Philadelphia (cream cheese)"],["Lurpak",1901,"لورباك"],["La Vache qui rit",1921,"البقرة الضاحكة","The Laughing Cow"],
   ["Babybel",1952,"بيبي بيل","Mini Babybel"],["Kiri",1966,"كيري","Kiri (cheese)"],["Président",1968,"بريزيدون","Président (brand)"],
@@ -95,7 +95,7 @@ CATS.push(
   ["Knorr",1838,"كنور"],["Tabasco",1868,"تاباسكو","Tabasco sauce"],["Heinz Ketchup",1876,"كاتشب هاينز","Heinz Tomato Ketchup"],
   ["Maggi",1884,"ماجي"],["Hellmann's",1913,"هيلمانز","Hellmann's and Best Foods"],["Vegemite",1923,"فيجيمايت"],
   ["Nutella",1964,"نوتيلا"],["Sriracha",1980,"سيراتشا","Huy Fong Foods"],["Lotus spread",2007,"كريمة لوتس","Lotus Bakeries"]],
-  {h:"food brand",k:["LAUNCHED","نزل سنة"],g:"y",dt:["Launched","نزول المنتج"],s:"snacks",m:"eg",d:3}),
+  {h:"food brand",k:["LAUNCHED","نزل سنة"],g:"y",dt:["Launched","نزول المنتج"],s:"snacks",m:"w",d:3}),
  Rd(["WHICH COUNTRY GROWS","THE MOST DATES",Q],["أنهي دولة","بتزرع بلح أكتر",QA],"max",[
   ["Egypt",1.9,"مصر"],["Saudi Arabia",1.6,"السعودية"],["Algeria",1.2,"الجزائر"],
   ["Iran",1.1,"إيران"],["Iraq",0.75,"العراق"],["Pakistan",0.5,"باكستان"],
@@ -105,57 +105,57 @@ CATS.push(
   ["Wall's",1922,"والز","Wall's (ice cream)"],["Carvel",1934,"كارفل","Carvel (franchise)"],["Dairy Queen",1940,"ديري كوين"],
   ["Baskin-Robbins",1945,"باسكن روبنز"],["Cornetto",1959,"كورنيتو"],["Häagen-Dazs",1960,"هاجن داز"],
   ["Ben & Jerry's",1978,"بن آند جيريز"],["Cold Stone Creamery",1988,"كولد ستون"],["Magnum",1989,"ماجنوم","Magnum (ice cream)"]],
-  {h:"ice cream brand",k:["STARTED","بدأ سنة"],g:"y",dt:["Brand launched","بداية البراند"],s:"snacks",m:"eg",d:3}),
+  {h:"ice cream brand",k:["STARTED","بدأ سنة"],g:"y",dt:["Brand launched","بداية البراند"],s:"snacks",m:"w",d:3}),
  Rd(["WHICH BURGER CHAIN","WAS FOUNDED FIRST",Q],["أنهي سلسلة برجر","اتأسست الأول",QA],"min",[
   ["A&W",1919,"إيه آند دبليو","A&W Restaurants"],["White Castle",1921,"وايت كاسل","White Castle (restaurant)"],["McDonald's",1940,"ماكدونالدز"],
   ["Carl's Jr.",1941,"كارلز جونيور"],["In-N-Out",1948,"إن آند أوت","In-N-Out Burger"],["Burger King",1953,"برجر كينج"],
   ["Hardee's",1960,"هارديز"],["Wendy's",1969,"ويندي"],["Five Guys",1986,"فايف جايز"]],
-  {h:"restaurant chain",k:["FOUNDED","اتأسست سنة"],s:"eats",m:"eg",d:3}),
+  {h:"restaurant chain",k:["FOUNDED","اتأسست سنة"],s:"eats",m:"w",d:3}),
  Rd(["WHICH PIZZA CHAIN","WAS FOUNDED LAST",Q],["أنهي سلسلة بيتزا","أجدد",QA],"max",[
   ["Sbarro",1956,"سبارو"],["Pizza Hut",1958,"بيتزا هت"],["Pizza Inn",1958,"بيتزا إن"],
   ["Little Caesars",1959,"ليتل سيزرز"],["Domino's",1960,"دومينوز","Domino's Pizza"],["PizzaExpress",1965,"بيتزا إكسبريس"],
   ["Chuck E. Cheese",1977,"تشاك إي تشيز"],["Papa Murphy's",1981,"بابا مرفيز"],["Papa John's",1984,"بابا جونز","Papa John's Pizza"]],
-  {h:"restaurant chain",k:["FOUNDED","اتأسست سنة"],g:"y",dt:["Chain founded","تأسيس السلسلة"],s:"eats",m:"eg",d:3}),
+  {h:"restaurant chain",k:["FOUNDED","اتأسست سنة"],g:"y",dt:["Chain founded","تأسيس السلسلة"],s:"eats",m:"w",d:3}),
  Rd(["WHICH COFFEE CHAIN","WAS FOUNDED FIRST",Q],["أنهي سلسلة قهوة","اتأسست الأول",QA],"min",[
   ["Dunkin'",1950,"دانكن"],["Coffee Bean & Tea Leaf",1963,"كوفي بين","The Coffee Bean & Tea Leaf"],["Tim Hortons",1964,"تيم هورتنز"],
   ["Peet's Coffee",1966,"بيتس كوفي"],["Costa Coffee",1971,"كوستا"],["Starbucks",1971,"ستاربكس"],
   ["Second Cup",1975,"سكند كب"],["Gloria Jean's",1979,"جلوريا جينز","Gloria Jean's Coffees"],["Caribou Coffee",1992,"كاريبو"]],
-  {h:"coffee chain",k:["FOUNDED","اتأسست سنة"],s:"eats",m:"eg",d:3}),
+  {h:"coffee chain",k:["FOUNDED","اتأسست سنة"],s:"eats",m:"w",d:3}),
  Rd(["WHICH CHICKEN CHAIN","WAS FOUNDED LAST",Q],["أنهي سلسلة فراخ","أجدد",QA],"max",[
   ["KFC",1952,"كنتاكي"],["Chick-fil-A",1967,"تشيك فيل إيه"],["Popeyes",1972,"بوبايز"],
   ["Al Baik",1974,"البيك"],["Bojangles",1977,"بوجانجلز"],["Nando's",1987,"ناندوز"],
   ["Cook Door",1988,"كوك دور"],["Wingstop",1994,"وينج ستوب"],["Raising Cane's",1996,"ريزينج كينز","Raising Cane's Chicken Fingers"]],
-  {h:"restaurant chain",k:["FOUNDED","اتأسست سنة"],s:"eats",m:"eg",d:3}),
+  {h:"restaurant chain",k:["FOUNDED","اتأسست سنة"],s:"eats",m:"w",d:3}),
  Rd(["WHICH CHAIN HAS","THE MOST BRANCHES",Q],["أنهي سلسلة","ليها فروع أكتر",QA],"max",[
   ["McDonald's",43,"ماكدونالدز"],["Starbucks",40,"ستاربكس"],["Subway",37,"صب واي","Subway (restaurant)"],
   ["KFC",31,"كنتاكي"],["Domino's",21,"دومينوز","Domino's Pizza"],["Pizza Hut",20,"بيتزا هت"],
   ["Burger King",19,"برجر كينج"],["Dunkin'",13,"دانكن"],["Papa John's",6,"بابا جونز","Papa John's Pizza"]],
-  {pre:["~","~"],suf:["K"," ألف"],h:"restaurant chain",k:["BRANCHES WORLDWIDE","فرع حوالين العالم"],s:"eats",m:"eg",d:2}),
+  {pre:["~","~"],suf:["K"," ألف"],h:"restaurant chain",k:["BRANCHES WORLDWIDE","فرع حوالين العالم"],s:"eats",m:"w",d:2}),
  Rd(["WHICH DESSERT CHAIN","WAS FOUNDED FIRST",Q],["أنهي سلسلة حلويات","اتأسست الأول",QA],"min",[
   ["Krispy Kreme",1937,"كريسبي كريم"],["Dairy Queen",1940,"ديري كوين"],["Baskin-Robbins",1945,"باسكن روبنز"],
   ["Dunkin'",1950,"دانكن"],["Cinnabon",1985,"سينابون"],["Auntie Anne's",1988,"أنتي آنز"],
   ["Cold Stone Creamery",1988,"كولد ستون"],["Pinkberry",2005,"بينك بيري"],["Crumbl",2017,"كرامبل","Crumbl Cookies"]],
-  {h:"dessert chain",k:["FOUNDED","اتأسست سنة"],s:"eats",m:"eg",d:3}),
+  {h:"dessert chain",k:["FOUNDED","اتأسست سنة"],s:"eats",m:"w",d:3}),
  Rd(["WHICH McDONALD'S ITEM","CAME OUT FIRST",Q],["أنهي حاجة في ماكدونالدز","نزلت الأول",QA],"min",[
   ["Filet-O-Fish",1962,"فيليه أو فيش"],["Big Mac",1967,"بيج ماك"],["Quarter Pounder",1971,"كوارتر باوندر"],
   ["Egg McMuffin",1971,"إيج ماك مافن"],["Happy Meal",1979,"هابي ميل"],["McChicken",1980,"ماك تشيكن"],
   ["Chicken McNuggets",1983,"ماك ناجتس"],["McCafé",1993,"ماك كافيه"],["McFlurry",1995,"ماك فلوري"]],
-  {h:"McDonald's",k:["LAUNCHED","نزلت سنة"],g:"y",dt:["Launched","نزول المنتج"],s:"eats",m:"eg",d:3}),
+  {h:"McDonald's",k:["LAUNCHED","نزلت سنة"],g:"y",dt:["Launched","نزول المنتج"],s:"eats",m:"w",d:3}),
  Rd(["WHICH SANDWICH OR TACO CHAIN","WAS FOUNDED LAST",Q],["أنهي سلسلة ساندوتشات أو تاكو","أجدد",QA],"max",[
   ["Jersey Mike's",1956,"جيرسي مايكس","Jersey Mike's Subs"],["Taco Bell",1962,"تاكو بيل"],["Arby's",1964,"آربيز"],
   ["Subway",1965,"صب واي","Subway (restaurant)"],["Quiznos",1981,"كويزنوز"],["Jimmy John's",1983,"جيمي جونز"],
   ["Pret A Manger",1986,"بريه أ مونجيه"],["Panera Bread",1987,"بانيرا"],["Chipotle",1993,"تشيبوتلي","Chipotle Mexican Grill"]],
-  {h:"restaurant chain",k:["FOUNDED","اتأسست سنة"],s:"eats",m:"eg",d:3}),
+  {h:"restaurant chain",k:["FOUNDED","اتأسست سنة"],s:"eats",m:"w",d:3}),
  Rd(["WHICH RESTAURANT CHAIN","WAS FOUNDED FIRST",Q],["أنهي سلسلة مطاعم","اتأسست الأول",QA],"min",[
   ["Benihana",1964,"بينيهانا"],["TGI Fridays",1965,"تي جي آي فرايديز"],["Hard Rock Cafe",1971,"هارد روك كافيه"],
   ["Chili's",1975,"تشيليز"],["The Cheesecake Factory",1978,"تشيز كيك فاكتوري"],["Applebee's",1980,"أبلبيز"],
   ["Olive Garden",1982,"أوليف جاردن"],["Outback Steakhouse",1988,"أوت باك"],["Wagamama",1992,"واجامама"]],
-  {h:"restaurant chain",k:["FOUNDED","اتأسست سنة"],s:"eats",m:"eg",d:3}),
+  {h:"restaurant chain",k:["FOUNDED","اتأسست سنة"],s:"eats",m:"w",d:3}),
  Rd(["WHICH COUNTRY DRINKS","THE MOST COFFEE",Q],["أنهي دولة","بتشرب قهوة أكتر",QA],"max",[
   ["Finland",12,"فنلندا"],["Norway",9.9,"النرويج"],["Iceland",9,"أيسلندا"],
   ["Denmark",8.7,"الدنمارك"],["Netherlands",8.4,"هولندا"],["Sweden",8.2,"السويد"],
   ["Italy",5.9,"إيطاليا"],["Brazil",5.8,"البرازيل"],["United States",4.2,"أمريكا"]],
-  {pre:["~","~"],suf:[" kg"," كيلو"],h:"coffee",k:["PER PERSON A YEAR","للفرد في السنة"],s:"eats",m:"eg",d:3}),
+  {pre:["~","~"],suf:[" kg"," كيلو"],h:"coffee",k:["PER PERSON A YEAR","للفرد في السنة"],s:"eats",m:"w",d:3}),
  Rd(["WHICH COUNTRY DRINKS","THE MOST TEA",Q],["أنهي دولة","بتشرب شاي أكتر",QA],"max",[
   ["Turkey",3.2,"تركيا"],["Ireland",2.2,"أيرلندا"],["United Kingdom",1.9,"إنجلترا"],
   ["Iran",1.5,"إيران"],["Russia",1.4,"روسيا"],["Morocco",1.2,"المغرب"],
@@ -165,12 +165,12 @@ CATS.push(
   ["Sandwich",1762,"الساندوتش"],["Potato chips",1853,"الشيبسي","Potato chip"],["Pizza Margherita",1889,"بيتزا مارجريتا"],
   ["Ice cream cone",1904,"كوز الآيس كريم"],["Popsicle",1905,"المصاصة الساقعة (آيس لولي)","Ice pop"],["Caesar salad",1924,"سلطة سيزر"],
   ["Nachos",1943,"ناتشوز"],["Buffalo wings",1964,"أجنحة بافلو"],["Chicken McNuggets",1983,"ماك ناجتس"]],
-  {h:"food",k:["INVENTED","اتخترعت سنة"],g:"y",dt:["Invented","الاختراع"],s:"eats",m:"eg",d:1}),
+  {h:"food",k:["INVENTED","اتخترعت سنة"],g:"y",dt:["Invented","الاختراع"],s:"eats",m:"w",d:1}),
  Rd(["WHICH FAMOUS CAFÉ","OPENED FIRST",Q],["أنهي كافيه مشهور","اتفتح الأول",QA],"min",[
   ["Café Procope",1686,"كافيه بروكوب","Café Procope"],["Caffè Florian",1720,"كافيه فلوريان"],["Antico Caffè Greco",1760,"كافيه جريكو"],
   ["El Fishawy",1797,"قهوة الفيشاوي"],["Café Tortoni",1858,"كافيه تورتوني"],["Café Central",1876,"كافيه سنترال"],
   ["Les Deux Magots",1885,"لي دو ماجو"],["Café de Flore",1887,"كافيه دو فلور"],["Café Riche",1908,"كافيه ريش"]],
-  {h:"café",k:["OPENED","اتفتح سنة"],s:"eats",m:"eg",d:3}),
+  {h:"café",k:["OPENED","اتفتح سنة"],s:"eats",m:"w",d:3}),
  Rd(["WHICH FOOD DELIVERY APP","STARTED FIRST",Q],["أنهي أبلكيشن دليفري","بدأ الأول",QA],"min",[
   ["Otlob",1999,"اطلب"],["Talabat",2004,"طلبات"],["Grubhub",2004,"جراب هاب"],
   ["Elmenus",2011,"المنيوز"],["Deliveroo",2013,"ديليفرو"],["DoorDash",2013,"دور داش"],
@@ -185,5 +185,5 @@ CATS.push(
   ["Kraft Mac & Cheese",1937,"مكرونة كرافت بالجبنة","Kraft Dinner"],["Nescafé",1938,"نسكافيه"],["TV dinner",1953,"وجبة التليفزيون"],
   ["Instant noodles",1958,"النودلز السريعة"],["Pop-Tarts",1964,"بوب تارتس"],["Cup Noodles",1971,"كب نودلز"],
   ["Indomie",1972,"إندومي"],["Microwave popcorn",1981,"فشار الميكروويف"],["Lunchables",1988,"لانشبلز"]],
-  {h:"food",k:["CAME OUT","نزل سنة"],g:"y",dt:["Launched","نزول المنتج"],s:"eats",m:"eg",d:3})]}
+  {h:"food",k:["CAME OUT","نزل سنة"],g:"y",dt:["Launched","نزول المنتج"],s:"eats",m:"w",d:3})]}
 );

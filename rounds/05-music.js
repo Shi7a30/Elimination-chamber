@@ -20,11 +20,11 @@ CATS.push(
   Rd(["WHO IS THE","YOUNGEST EGYPTIAN SINGER",Q],["مين","أصغر مطرب",QA],"max",[
    ["Hany Shaker",1952,"هاني شاكر"],["Mohamed Fouad",1961,"محمد فؤاد"],["Hisham Abbas",1963,"هشام عباس"],["Ehab Tawfik",1966,"إيهاب توفيق"],
    ["Moustafa Amar",1966,"مصطفى قمر"],["Ruby",1981,"روبي","Ruby (Egyptian singer)"],["Ahmed Saad",1981,"أحمد سعد","Ahmed Saad (singer)"],["Marwan Pablo",1995,"مروان بابلو"],
-   ["Wegz",1998,"ويجز"]],{h:"Egyptian singer",k:BORN,g:"p",s:"singers",m:"eg",d:2}),
+   ["Wegz",1998,"ويجز"]],{h:"Egyptian singer",k:BORN,g:"p",s:"singers",m:"eg",d:1}),
   Rd(["WHICH AMR DIAB HIT","CAME OUT FIRST",Q],["أنهي أغنية لعمرو دياب","نزلت الأول",QA],"min",[
    ["Mayal",1988,"ميال","Mayal (album)"],["Nour el 3ein",1996,"نور العين","Nour El Ain"],["Tamally ma3ak",2000,"تملي معاك","Tamally Maak"],["3allem 2alby",2003,"علم قلبي","Allem Alby"],
    ["Leily nahary",2004,"ليلي نهاري","Leily Nahary"],["Wayah",2009,"وياه","Wayah"],["Banadeek ta3ala",2011,"بناديك تعالى","Banadeek Ta'ala"],["Sahran",2020,"سهران","Sahran (album)"],["Khatfoony",2025,"خطفوني","Khatfoony (song)"]],
-   {h:"Amr Diab song",k:["RELEASED","نزلت سنة"],dt:["Song released", "نزول الأغنية"],g:"y",s:"songs",m:"eg",d:2}),
+   {h:"Amr Diab song",k:["RELEASED","نزلت سنة"],dt:["Song released", "نزول الأغنية"],g:"y",s:"songs",m:"eg",d:1}),
  Rd(["WHICH CLASSIC SONG","CAME OUT FIRST",Q],["أنهي أغنية من الزمن الجميل","نزلت الأول",QA],"min",[
   ["Ya msafer wahdak",1942,"يا مسافر وحدك","Ya Msafer Wahdak"],["Ahwak",1957,"أهواك","Ahwak"],["Enta 3omri",1964,"إنت عمري","Enta Omri"],["El atlal",1966,"الأطلال","Al Atlal"],
   ["Alf leila w leila",1969,"ألف ليلة وليلة","Alf Leila wa Leila"],["Qariat al-Fingan",1976,"قارئة الفنجان","Qariat al-Fingan"],["Shababeek",1981,"شبابيك","Shababeek"],["7adouta masreya",1982,"حدوتة مصرية","Hadouta Masreya"],
@@ -195,7 +195,7 @@ Rd(["WHO IS THE","YOUNGEST FEMALE SINGER",Q],["مين","أصغر مطربة",QA]
   ["Mohamed Roshdy",1928,"محمد رشدي"],["Ahmed Adaweya",1945,"أحمد عدوية"],["Shaaban Abdel Rahim",1957,"شعبان عبد الرحيم"],
   ["Hassan El Asmar",1959,"حسن الأسمر"],["Hakim",1962,"حكيم","Hakim (singer)"],["Ahmed Sheba",1965,"أحمد شيبة"],
   ["Ahmed Saad",1981,"أحمد سعد","Ahmed Saad (singer)"],["Mohamed Ramadan",1988,"محمد رمضان","Mohamed Ramadan (actor)"],["Mohamed Abdel Muttalib",1910,"محمد عبد المطلب"]],
-  {h:"Egyptian singer",k:BORN,g:"p",s:"singers",m:"eg",d:2}),
+  {h:"Egyptian singer",k:BORN,g:"p",s:"singers",m:"eg",d:1}),
  Rd(["WHO IS THE","OLDEST NEW-GENERATION SINGER",Q],["مين","أكبر مطرب من الجيل الجديد في السن",QA],"min",[
   ["Mohamed Hamaki",1975,"محمد حماقي"],["Tamer Hosny",1977,"تامر حسني"],["Ramy Sabry",1978,"رامي صبري","Ramy Sabry (singer)"],
   ["Hamza Namira",1980,"حمزة نمرة"],["Hamada Helal",1980,"حمادة هلال"],["Amir Eid",1983,"أمير عيد"],

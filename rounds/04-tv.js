@@ -21,7 +21,7 @@ CATS.push(
  Rd(["WHO IS THE","OLDEST SERIES STAR",Q],["مين","أكبر نجم مسلسلات في السن",QA],"min",[
   ["Yehia El-Fakharany",1945,"يحيى الفخراني"],["Mohamed Sobhi",1948,"محمد صبحي","Mohamed Sobhi (actor)"],["Mahmoud Hemida",1953,"محمود حميدة"],
   ["Ashraf Abdel Baky",1963,"أشرف عبد الباقي"],["Khaled El Nabawy",1966,"خالد النبوي"],["Yasser Galal",1969,"ياسر جلال"],
-  ["Mostafa Shaban",1970,"مصطفى شعبان"],["Youssef El Sherif",1978,"يوسف الشريف"],["Mohamed Ramadan",1988,"محمد رمضان","Mohamed Ramadan (actor)"]],{h:"Egyptian actor",k:BORN,g:"p",s:"tv",m:"eg",d:2}),
+  ["Mostafa Shaban",1970,"مصطفى شعبان"],["Youssef El Sherif",1978,"يوسف الشريف"],["Mohamed Ramadan",1988,"محمد رمضان","Mohamed Ramadan (actor)"]],{h:"Egyptian actor",k:BORN,g:"p",s:"tv",m:"eg",d:1}),
  Rd(["WHICH SERIES","CAME OUT LAST",Q],["أنهي مسلسل","أجدد",QA],"max",[
   ["Ra2fat el haggan",1988,"رأفت الهجان","Raafat El Haggan"],["Arabesque",1994,"أرابيسك","Arabesque"],["7adis el saba7 wel masa2",2001,"حديث الصباح والمساء","Hadeeth El Sabah wel Masaa"],
   ["Ragel we set settat",2006,"راجل وست ستات","Ragel W Set Settat"],["Ta7t el saytara",2015,"تحت السيطرة","Taht El Saytara"],["Nelly w sherihan",2016,"نيللي وشريهان","Nelly & Sherihan"],
@@ -84,7 +84,7 @@ CATS.push(
   ["Nour El-Sherif",1946,"نور الشريف"],["Yousra",1955,"يسرا"],["Ghada Abdel Razek",1965,"غادة عبد الرازق"],
   ["Yasser Galal",1969,"ياسر جلال"],["Nelly Karim",1974,"نيللي كريم"],["Amir Karara",1977,"أمير كرارة"],
   ["Dina El Sherbiny",1985,"دينا الشربيني"],["Amina Khalil",1988,"أمينة خليل"],["Ahmed Malek",1995,"أحمد مالك"]],
-  {h:"Egyptian actor",k:BORN,g:"p",s:"tv",m:"eg",d:2}),
+  {h:"Egyptian actor",k:BORN,g:"p",s:"tv",m:"eg",d:1}),
  Rd(["WHICH ADULT CARTOON","CAME OUT FIRST",Q],["أنهي كرتون للكبار","نزل الأول",QA],"min",[
   ["The Flintstones",1960,"عيلة فلينستون"],["The Jetsons",1962,"عيلة جيتسون"],["South Park",1997,"ساوث بارك"],
   ["Family Guy",1999,"فاميلي جاي"],["Futurama",1999,"فيوتشراما"],["American Dad!",2005,"أمريكان داد"],
@@ -99,12 +99,12 @@ Rd(["WHICH RAMEZ GALAL PRANK SHOW","CAME OUT FIRST",Q],["أنهي برنامج �
   ["2alb el asad",2011,"قلب الأسد"],["Ta3lab el sa7ra",2012,"ثعلب الصحرا"],["Ankh amon",2013,"عنخ آمون"],
   ["Wakel el gaw",2015,"واكل الجو"],["Ta7t el ard",2017,"تحت الأرض"],["Ta7t el sefr",2018,"تحت الصفر"],
   ["Magnoon rasmy",2020,"مجنون رسمي"],["Movie star",2022,"موفي ستار"],["Gab men el akher",2024,"جاب من الآخر"]],
-  {h:"Ramez Galal show",k:["AIRED","اتعرض سنة"],s:"tv",m:"eg",d:3}),
+  {h:"Ramez Galal show",k:["AIRED","اتعرض سنة"],s:"tv",m:"eg",d:2}),
  Rd(["WHICH ADEL IMAM SERIES","CAME OUT LAST",Q],["أنهي مسلسل لعادل إمام","أجدد",QA],"max",[
   ["A7lam el fata el tayer",1978,"أحلام الفتى الطائر"],["Fer2et nagy 3atallah",2012,"فرقة ناجي عطا الله"],["El 3arraf",2013,"العراف"],
   ["Sa7eb el sa3ada",2014,"صاحب السعادة"],["Ostaz w ra2ees 2esm",2015,"أستاذ ورئيس قسم"],["Ma2moun w shorakah",2016,"مأمون وشركاه"],
   ["3afareet 3adly 3allam",2017,"عفاريت عدلي علام"],["3awalem khafeya",2018,"عوالم خفية"],["Valentino",2020,"فالنتينو","Valentino (Egyptian TV series)"]],
-  {h:"Adel Emam TV series",k:["FIRST AIRED","أول عرض"],s:"tv",m:"eg",d:3}),
+  {h:"Adel Emam TV series",k:["FIRST AIRED","أول عرض"],s:"tv",m:"eg",d:2}),
  Rd(["WHICH YEHIA EL FAKHARANY SERIES","CAME OUT LAST",Q],["أنهي مسلسل ليحيى الفخراني","أجدد",QA],"max",[
   ["Layaly el 7elmeya",1987,"ليالي الحلمية","Al Helmeya Nights"],["Zizinia",1997,"زيزينيا","Zizinia"],["Opera 3ayda",2000,"أوبرا عايدة"],
   ["El layl w akhro",2003,"الليل وآخره"],["Yetrabba fi 3ezzo",2007,"يتربى في عزو","Yetraboh Fi Ezzo"],["Shaykh el 3arab hammam",2010,"شيخ العرب همام"],

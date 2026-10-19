@@ -14,7 +14,7 @@ CATS.push(
   Rd(["WHICH CITY IS","FURTHEST SOUTH",Q],["أنهي مدينة","في أقصى الجنوب",QA],"min",[
    ["Abu Simbel",22.3,"أبو سمبل","Abu Simbel temples"],["Aswan",24.1,"أسوان"],["Marsa Alam",25.1,"مرسى علم"],["Luxor",25.7,"الأقصر"],["Hurghada",27.3,"الغردقة"],
    ["Sharm El Sheikh",27.9,"شرم الشيخ"],["Siwa",29.2,"سيوة","Siwa Oasis"],["Cairo",30,"القاهرة"],["Alexandria",31.2,"إسكندرية"]],
-   {suf:["° N","° شمال"],dp:1,h:"Egypt",k:["LATITUDE","خط العرض"],s:"geo",m:"eg",d:2}),
+   {suf:["° N","° شمال"],dp:1,h:"Egypt",k:["LATITUDE","خط العرض"],s:"geo",m:"eg",d:1}),
   Rd(["WHICH IS THE","TALLEST LANDMARK",Q],["أنهي","أعلى معلم",QA],"max",[
    ["Iconic Tower",394,"البرج الأيقوني","Iconic Tower (Egypt)"],["Cairo Tower",187,"برج القاهرة"],["Great Pyramid",138.5,"الهرم الأكبر (خوفو)","Great Pyramid of Giza"],
    ["Pyramid of Khafre",136.4,"هرم خفرع"],["Red Pyramid",105,"الهرم الأحمر"],["Step Pyramid",62.5,"الهرم المدرج (زوسر)","Pyramid of Djoser"],["Pyramid of Menkaure",61,"هرم منكاورع"],
@@ -26,7 +26,7 @@ CATS.push(
  Rd(["WHICH CITY IS","FURTHEST EAST",Q],["أنهي مدينة","في أقصى الشرق",QA],"max",[
   ["Taba",34.9,"طابا"],["Dahab",34.5,"دهب"],["El Arish",33.8,"العريش","Arish"],["Ismailia",32.3,"الإسماعيلية"],["Cairo",31.2,"القاهرة"],
   ["Fayoum",30.8,"الفيوم","Faiyum"],["Alexandria",29.9,"إسكندرية"],["Marsa Matrouh",27.2,"مرسى مطروح","Mersa Matruh"],["Siwa",25.5,"سيوة","Siwa Oasis"]],
-  {suf:["° E","° شرق"],dp:1,h:"Egypt",k:["LONGITUDE","خط الطول"],s:"geo",m:"eg",d:3}),
+  {suf:["° E","° شرق"],dp:1,h:"Egypt",k:["LONGITUDE","خط الطول"],s:"geo",m:"eg",d:2}),
  Rd(["WHICH IS THE","TALLEST BUILDING",Q],["أنهي","أطول برج",QA],"max",[
   ["Burj Khalifa",828,"برج خليفة"],["Shanghai Tower",632,"برج شنغهاي"],["Makkah Clock Tower",601,"برج الساعة في مكة","Abraj Al-Bait"],
   ["Lotte World Tower",555,"برج لوتي"],["One World Trade Center",541,"وان ورلد تريد سنتر"],["Taipei 101",508,"تايبيه 101"],
@@ -78,7 +78,7 @@ CATS.push(
   ["New Valley",440,"الوادي الجديد","New Valley Governorate"],["Matrouh",167,"مطروح","Matrouh Governorate"],["Red Sea",119,"البحر الأحمر","Red Sea Governorate"],
   ["Aswan",63,"أسوان"],["Minya",32,"المنيا","Minya Governorate"],["South Sinai",31,"جنوب سينا","South Sinai Governorate"],
   ["North Sinai",28,"شمال سينا","North Sinai Governorate"],["Cairo",3.1,"القاهرة"],["Alexandria",2.3,"إسكندرية"]],
-  {pre:["~","~"],suf:["K km²"," ألف كم²"],h:"Egypt",k:["AREA","المساحة"],s:"geo",m:"eg",d:2}),
+  {pre:["~","~"],suf:["K km²"," ألف كم²"],h:"Egypt",k:["AREA","المساحة"],s:"geo",m:"eg",d:1}),
  Rd(["WHICH CITY IS","FURTHEST NORTH",Q],["أنهي مدينة","في أقصى الشمال",QA],"max",[
   ["Baltim",31.55,"بلطيم"],["Damietta",31.42,"دمياط"],["Rosetta",31.4,"رشيد"],
   ["Marsa Matrouh",31.35,"مرسى مطروح","Mersa Matruh"],["Rafah",31.28,"رفح","Rafah, Egypt"],["Port Said",31.26,"بورسعيد"],

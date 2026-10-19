@@ -6,7 +6,7 @@ CATS.push(
   ["Tholasy adwa2 el masra7",1967,"ثلاثي أضواء المسرح","Tholathy Adwaa El Masrah"],["Nelly",1975,"نيللي","Nelly (Egyptian actress)"],["Fatouta",1982,"فطوطة","Samir Ghanem"],
   ["Sherihan",1985,"شريهان"],["Sabreen",1988,"صابرين","Sabreen (actress)"],["Sherine Reda",1989,"شيرين رضا"],
   ["Gihan Nasr",1997,"جيهان نصر"],["Ghada Abdel Razek",2003,"غادة عبد الرازق"],["Myriam Fares",2010,"ميريام فارس"]],
-  {h:"Egyptian Ramadan fawazeer TV",k:["FIRST FAWAZEER","أول فوازير"],g:"y",dt:["First Fawazeer","أول فوازير"],s:"kidstv",m:"eg",d:3}),
+  {h:"Egyptian Ramadan fawazeer TV",k:["FIRST FAWAZEER","أول فوازير"],g:"y",dt:["First Fawazeer","أول فوازير"],s:"kidstv",m:"eg",d:2}),
  Rd(["WHICH EGYPTIAN TV CHANNEL","LAUNCHED LAST",Q],["أنهي قناة مصرية","أجدد",QA],"max",[
   ["Channel 1",1960,"القناة الأولى","Channel 1 (Egypt)"],["Egyptian Satellite Channel",1990,"الفضائية المصرية"],["Nile TV International",1994,"نايل تي في"],
   ["Dream TV",2001,"دريم","Dream TV (Egypt)"],["Al Hayat TV",2008,"الحياة"],["ON TV",2008,"أون تي في","ON E"],
@@ -61,7 +61,7 @@ CATS.push(
   ["Grendizer",1975,"جريندايزر","UFO Robot Grendizer"],["Captain Tsubasa (Captain Majed)",1983,"الكابتن ماجد","Captain Tsubasa"],["Princess Sarah",1985,"سالي","Princess Sarah"],
   ["Dragon Ball",1986,"دراجون بول","Dragon Ball (TV series)"],["Slam Dunk",1993,"سلام دانك","Slam Dunk (TV series)"],["Detective Conan",1996,"المحقق كونان","Case Closed"],
   ["Pokémon (anime)",1997,"بوكيمون","Pokémon (TV series)"],["Digimon",1999,"ديجيمون","Digimon Adventure"],["Naruto",2002,"ناروتو","Naruto (TV series)"]],
-  {h:"anime",k:["FIRST AIRED","اتعرض سنة"],g:"y",dt:["Series first aired","أول عرض للمسلسل"],s:"kidstv",m:"eg",d:2}),
+  {h:"anime",k:["FIRST AIRED","اتعرض سنة"],g:"y",dt:["Series first aired","أول عرض للمسلسل"],s:"kidstv",m:"eg",d:1}),
  Rd(["WHICH KIDS' CHANNEL","LAUNCHED FIRST",Q],["أنهي قناة أطفال","بدأت الأول",QA],"min",[
   ["Cartoon Network",1992,"كرتون نتورك"],["Spacetoon",2000,"سبيستون"],["MBC 3",2004,"إم بي سي 3"],
   ["Al Jazeera Children's",2005,"الجزيرة للأطفال","Jeem TV"],["Toyor Al Janah",2008,"طيور الجنة"],["Nickelodeon Arabia",2008,"نيكلوديون العربية"],

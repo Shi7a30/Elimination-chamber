@@ -17,7 +17,7 @@ CATS.push(
   Rd(["WHICH IS THE","OLDEST EGYPTIAN BRAND",Q],["أنهي","أقدم براند مصري",QA],"min",[
    ["Al-Ahram",1875,"الأهرام"],["National Bank of Egypt",1898,"البنك الأهلي المصري"],["Banque Misr",1920,"بنك مصر"],["EgyptAir",1932,"مصر للطيران"],
    ["Juhayna",1983,"جهينة","Juhayna Food Industries"],["Edita",1996,"إيديتا","Edita Food Industries"],["Vodafone Egypt",1998,"فودافون مصر"],["Fawry",2008,"فوري"],["Swvl",2017,"سويفل"]],
-   {h:"company",k:["FOUNDED","اتأسس سنة"],dt:["Brand founded", "تأسيس البراند"],g:"y",s:"brands",m:"eg",d:2}),
+   {h:"company",k:["FOUNDED","اتأسس سنة"],dt:["Brand founded", "تأسيس البراند"],g:"y",s:"brands",m:"eg",d:1}),
  Rd(["WHICH MOBILE GAME","CAME OUT FIRST",Q],["أنهي لعبة موبايل","نزلت الأول",QA],"min",[
   ["Snake (Nokia)",1997,"التعبان (سنيك)","Snake (video game genre)"],["Angry Birds",2009,"أنجري بيردز","Angry Birds (video game)"],["Fruit Ninja",2010,"فروت نينجا"],
   ["Temple Run",2011,"تمبل رن"],["Subway Surfers",2012,"صبواي سيرفرز"],["Flappy Bird",2013,"فلابي بيرد"],["Pokémon Go",2016,"بوكيمون جو"],
@@ -30,7 +30,7 @@ CATS.push(
  Rd(["WHICH BRAND","STARTED MOST RECENTLY",Q],["أنهي براند","أجدد",QA],"max",[
   ["Elsewedy Electric",1938,"السويدي"],["Bisco Misr",1957,"بسكو مصر","BiscoMisr"],["Felfela",1959,"فلفلة"],["Elaraby",1964,"العربي","Elaraby Group"],
   ["Mo'men",1988,"مؤمن"],["Cook Door",1988,"كوك دور"],["Edita",1996,"إيديتا","Edita Food Industries"],["Buffalo Burger",2008,"بافلو برجر"],["Zooba",2012,"زووبا"]],
-  {h:"company",k:["FOUNDED","اتأسس سنة"],dt:["Brand founded", "تأسيس البراند"],g:"y",s:"brands",m:"eg",d:3}),
+  {h:"company",k:["FOUNDED","اتأسس سنة"],dt:["Brand founded", "تأسيس البراند"],g:"y",s:"brands",m:"eg",d:2}),
  Rd(["WHICH CYBER-CAFÉ CLASSIC","CAME OUT FIRST",Q],["أنهي لعبة من بتوع السايبر","نزلت الأول",QA],"min",[
   ["Crash Bandicoot",1996,"كراش","Crash Bandicoot (video game)"],["Age of Empires II",1999,"إيدج أوف إمباير 2","Age of Empires II: The Age of Kings"],
   ["GTA Vice City",2002,"جاتا فايس سيتي","Grand Theft Auto: Vice City"],["Counter-Strike 1.6",2003,"كاونتر سترايك 1.6","Counter-Strike (video game)"],
