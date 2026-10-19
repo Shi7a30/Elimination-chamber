@@ -39,7 +39,7 @@ CATS.push(
   ["José Mourinho",1963,"جوزيه مورينيو"],["Jürgen Klopp",1967,"يورجن كلوب"],["Antonio Conte",1969,"أنطونيو كونتي"],
   ["Diego Simeone",1970,"دييجو سيميوني"],["Pep Guardiola",1971,"بيب جوارديولا"],["Mikel Arteta",1982,"ميكيل أرتيتا"]],{h:"football manager",k:BORN,g:"p",s:"players",m:"w"}),
  Rd(["WHO HAS THE","MOST WORLD CUP GOALS",Q],["مين","جاب أكتر أهداف في كاس العالم",QA],"max",[
-  ["Kylian Mbappé",22,"كيليان مبابي"],["Lionel Messi",21,"ليونيل ميسي"],["Miroslav Klose",16,"ميروسلاف كلوزه"],["Ronaldo Nazário",15,"رونالدو نازاريو","Ronaldo (Brazilian footballer)"],["Harry Kane",14,"هاري كين"],["Pelé",12,"بيليه"],["Cristiano Ronaldo",11,"كريستيانو رونالدو"],["Neymar Jr",9,"نيمار","Neymar"],["Diego Maradona",8,"دييجو مارادونا"]],
+  ["Kylian Mbappé",22,"كيليان مبابي"],["Lionel Messi",21,"ليونيل ميسي"],["Miroslav Klose",16,"ميروسلاف كلوزه"],["Ronaldo Nazário",15,"رونالدو الظاهرة","Ronaldo (Brazilian footballer)"],["Harry Kane",14,"هاري كين"],["Pelé",12,"بيليه"],["Cristiano Ronaldo",11,"كريستيانو رونالدو"],["Neymar Jr",9,"نيمار","Neymar"],["Diego Maradona",8,"دييجو مارادونا"]],
   {h:"footballer",k:["WORLD CUP GOALS","أهداف المونديال"],s:"players",m:"w"}),
  Rd(["WHO IS THE","TALLEST",Q],["مين","أطول لاعب",QA],"max",[
   ["Peter Crouch",201,"بيتر كراوتش"],["Zlatan Ibrahimović",195,"زلاتان إبراهيموفيتش"],["Erling Haaland",195,"إيرلينج هالاند"],["Virgil van Dijk",193,"فيرجيل فان دايك"],["Paul Pogba",191,"بول بوجبا"],["Cristiano Ronaldo",187,"كريستيانو رونالدو"],["Mohamed Salah",175,"محمد صلاح"],["Neymar Jr",175,"نيمار","Neymar"],["Lionel Messi",170,"ليونيل ميسي"]],

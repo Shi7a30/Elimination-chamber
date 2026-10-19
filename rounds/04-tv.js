@@ -86,7 +86,7 @@ CATS.push(
   ["Dina El Sherbiny",1985,"دينا الشربيني"],["Amina Khalil",1988,"أمينة خليل"],["Ahmed Malek",1995,"أحمد مالك"]],
   {h:"Egyptian actor",k:BORN,g:"p",s:"tv",m:"eg"}),
  Rd(["WHICH ADULT CARTOON","CAME OUT FIRST",Q],["أنهي كرتون للكبار","نزل الأول",QA],"min",[
-  ["The Flintstones",1960,"عائلة فلينستون"],["The Jetsons",1962,"عائلة جيتسون"],["South Park",1997,"ساوث بارك"],
+  ["The Flintstones",1960,"عيلة فلينستون"],["The Jetsons",1962,"عيلة جيتسون"],["South Park",1997,"ساوث بارك"],
   ["Family Guy",1999,"فاميلي جاي"],["Futurama",1999,"فيوتشراما"],["American Dad!",2005,"أمريكان داد"],
   ["Bob's Burgers",2011,"بوبز برجرز"],["Rick and Morty",2013,"ريك ومورتي"],["BoJack Horseman",2014,"بوجاك هورسمان"]],
   {h:"animated series",k:["FIRST AIRED","أول عرض"],dt:["Series first aired","أول عرض للمسلسل"],g:"y",s:"tv",m:"w"}),

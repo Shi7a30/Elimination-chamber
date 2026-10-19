@@ -72,8 +72,12 @@ const res=await q.textContent('#sheet');console.log('friend sheet',res);
 if(!/you win/i.test(res)||!res.includes('Shiha 8/10'))bad.push('result sheet wrong');
 await q.tap('#sb .btn.y');const back=await q.evaluate(()=>window.__shared[0]||'');
 if(!back.includes('9/10')||!back.includes('n=Omar'))bad.push('send-back link wrong: '+back);
-// --- the same link can't be played twice on one device; it offers to send the score instead
-await q.goto(url);await q.waitForTimeout(300);if(await q.$('[data-cplay]')||!/already played/.test(await q.textContent('#menu'))||!await q.$('[data-cshare]'))bad.push('challenge link can be replayed');
+// --- the same link can't be played twice on one device; it compares the two scores and offers to send yours back
+await q.goto(url);await q.waitForTimeout(300);if(await q.$('[data-cplay]')||!/Shiha got 8\/10/.test(await q.textContent('#menu'))||!/You got 9\/10/.test(await q.textContent('#menu'))||!await q.$('[data-cshare]'))bad.push('challenge link can be replayed');
+// --- the score comes back: the sender sees "Omar got 9/10" and who won, not "Omar challenged you"
+const backUrl=(back.match(/\S+\?ch=\S+/)||[])[0];await p.goto(backUrl);await p.waitForTimeout(300);
+{const m=await p.textContent('#menu');console.log('score back',m.replace(/\s+/g,' ').slice(0,160));
+ if(/challenged you/.test(m)||!/Omar got 9\/10/.test(m)||!/You got 8\/10/.test(m)||await p.$('[data-cplay]'))bad.push('score-back link should compare scores');}
 
 // --- a broken link says so; Arabic invite renders
 const r=await open(PAGE+'?ch=zz.nope.nada&s=3&n=X');

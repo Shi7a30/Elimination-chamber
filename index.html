@@ -210,7 +210,11 @@ html[data-theme=dark] .qcard{box-shadow:inset 0 0 0 1px var(--line),var(--sh2)}
 .back i{position:absolute;top:6px;inset-inline-end:6px;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-style:normal;font-size:10px;font-weight:800;background:rgba(255,255,255,.14);color:#fff}
 .lab{width:100%;min-height:30px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;text-align:center;color:var(--fg);padding:0 2px;font-size:12.5px;font-weight:600;line-height:1.2;overflow-wrap:anywhere;transition:color .2s}
 .lab .ln{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.cell.out .lab{color:var(--mut)}
+.cell.out .back::after{box-shadow:inset 0 0 0 3px var(--y)}
+.cell.out .lab .ln{background:var(--y);color:#1b1b20;border-radius:7px;padding:1px 6px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.cell.out .lab .dt{color:var(--mut)}
+.cell.win .back::after,.cell.bad .back::after{box-shadow:inset 0 0 0 1px rgba(0,0,0,.08)}
+.cell.bad .lab .ln{background:none;color:var(--r);padding:0}
 .cell.out.peek .tile{opacity:.55;filter:grayscale(.7)}
 .cell.win{animation:hop .6s .1s}
 .cell.win .back{background:linear-gradient(160deg,var(--g2),var(--g))}
@@ -366,8 +370,10 @@ html[dir=rtl] .hero .hgrid{transform:translateY(-38%) rotate(8deg) scale(.82);tr
 .dcard .sp.a{top:2px;inset-inline-start:2px}.dcard .sp.b{bottom:0;inset-inline-end:-2px;font-size:18px}.dcard .sp.c{top:8px;inset-inline-end:-4px;font-size:10px;color:#fff}
 @media (max-width:380px){.dcard .art{width:92px;height:92px}.dcard .dt{font-size:22px}}
 /* taller phones: the two cards grow to fill the screen down to the dock */
-@media (min-height:620px){.cat.hero{min-height:205px;padding:22px 20px}.hero .hgrid{transform:translateY(-38%) rotate(-8deg) scale(.95)}html[dir=rtl] .hero .hgrid{transform:translateY(-38%) rotate(8deg) scale(.95)}
+@media (min-height:660px){.cat.hero{min-height:205px;padding:22px 20px}.hero .hgrid{transform:translateY(-38%) rotate(-8deg) scale(.95)}html[dir=rtl] .hero .hgrid{transform:translateY(-38%) rotate(8deg) scale(.95)}
  .cat.dcard{height:214px;padding:22px 20px}.dcard .art{width:120px;height:120px}body[data-scr=home] #menu{gap:16px}}
+/* short screens (small phones in the browser): tighter cards so the Daily card's 🔥/🏆 stay above the dock */
+@media (max-height:600px){.cat.hero{padding:12px 18px}.cat.dcard{height:156px;padding:12px 18px}.dcard .art{width:84px;height:84px}.dcard .ds{max-width:calc(100% - 96px)}body[data-scr=home] #menu{gap:8px}}
 
 /* --- bottom dock: Home, Duel, Categories, Multiplayer. Shown on the menu pages, hidden during a game. --- */
 #dock{position:fixed;left:50%;width:calc(100% - 32px);max-width:408px;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:6;display:grid;grid-template-columns:repeat(4,1fr);padding:8px 4px 7px;border-radius:24px;
@@ -403,6 +409,7 @@ body:not([data-scr=game]) #upd{bottom:calc(96px + env(safe-area-inset-bottom,0px
 <div id="sheet" role="dialog"><div id="sbadge" aria-hidden="true"></div><div id="st"></div><p id="sp"></p><div class="row" id="sb"></div></div>
 <canvas id="fx"></canvas>
 <script id="photos"></script><script defer src="photos/index.js"></script>
+<script src="daily.js"></script>
 <script>
 // Round: Rd([en question], [Egyptian Arabic question], "min"|"max", items, options).
 // Item: [English name, value, Arabic name (optional, falls back to English), Wikipedia article title (optional, defaults to English name)].
@@ -460,33 +467,41 @@ var TX={
   outTxt:function(x,y){return x+" knocked out the answer: "+y+"."},safe:"😅 Everyone's safe!",safeTxt:"Nobody touched the answer.",nextRound:"Next round ▶",
   winner:function(x){return"🏆 "+x+" wins!"},winTxt:"Last one standing.",again:"↻ Play again",
   yourName:"Your name",namePh:"Name",friend:"A friend",chFrom:function(x){return x+" challenged you!"},chBeat:function(s,k){return"Score to beat: "+s+"/"+k},
-  chSame:"Same questions, no undo. Can you beat it?",play:"▶ Play",heroPlay:"Play",tDuel:"Duel",tCats:"Categories",tCatsSub:function(n){return n+" groups"},tMp:"Multiplayer",tMpSub:"2 to 8 players",chPlayed:function(s,k){return"You already played this challenge and got "+s+"/"+k+". Each challenge can be played once."},chBad:"This challenge link doesn't work with this version of the game.",
+  chSame:"Same questions, no undo. Can you beat it?",play:"▶ Play",heroPlay:"Play",tDuel:"Duel",tCats:"Categories",tCatsSub:function(n){return n+" groups"},tMp:"Multiplayer",tMpSub:"2 to 8 players",chBad:"This challenge link doesn't work with this version of the game.",
   chRound:function(a,b,s){return"🔗 Round "+a+"/"+b+" · Score "+s},chDone:"✅ Challenge done!",chYou:function(s,k){return"You got "+s+"/"+k+". Send the link and see if your friends can beat it."},
   chWin:"🏆 You win!",chLose:"😬 You lost!",chDraw:"🤝 Draw!",vs:function(s,b,x,k){return"You "+s+"/"+k+" · "+x+" "+b+"/"+k},
   share:"🔗 Send challenge",shareBack:"🔗 Send your score",copied:"Link copied!",msg:function(s,k){return"I got "+s+"/"+k+" on Shelhom! Can you beat me? 🔥"},
   tHome:"Home",dyBadge:function(n){return"Daily · #"+n},dyTitle:"Daily round",dySub:"Same round for everyone",dyDone:"Done for today!",dyShare:"Share",dyRn:function(n){return"Daily round #"+n},
-  dyNext:function(h,m){return"Next round in "+(h?h+"h "+m+"m":m+"m")},dyMsg:function(n){return"Shelhom daily round #"+n},dyStreak:function(n){return"🔥 "+n+(n==="1"?" day":" days")+" in a row"}},
- ar:{updReady:"فيه نسخة جديدة",updBtn:"حدّث",offSave:function(m){return"احفظ كل الصور عشان تلعب من غير نت ("+m+" ميجا)"},offBusy:function(p){return"بنحفظ الصور… "+p+"٪"},offDone:"الصور محفوظة وتقدر تلعب من غير نت",offFail:"فيه صور ماتحفظتش. دوس تاني وانت على النت.",title:"شيلهم",tag:"شيل كل الكروت وسيب الإجابة الصح",streak:"ورا بعض",best:"أحسن رقم",rounds:function(n){return n+" جولات"},solved:function(s,n){return"حليت "+s+" من "+n},complete:"★ خلّصتها",
+  dyNext:function(h,m){return"Next round in "+(h?h+"h "+m+"m":m+"m")},dyMsg:function(n){return"Shelhom daily round #"+n},dyStreak:function(n){return"🔥 "+n+(n==="1"?" day":" days")+" in a row"},
+  howT:"👆 How to play",howP:"Knock out the cards that are NOT the answer, one at a time, until only the right one is left. Knock out the answer and you lose! Tip: 📷 in a round puts your own photo on a card.",howOk:"Got it",
+  leaveDy:"You'll lose today's round. There's one try a day.",skipQ:"Skip this round?",skipTxt:function(k){return"Skipping ends your 🔥"+k+" streak."},skipBtn:"Skip",
+  chGot:function(x,s,k){return x+" got "+s+"/"+k},chMine:function(s,k){return"You got "+s+"/"+k+". "}},
+ ar:{updReady:"فيه نسخة جديدة",updBtn:"حدّث",offSave:function(m){return"احفظ كل الصور عشان تلعب من غير نت ("+m+" ميجا)"},offBusy:function(p){return"بنحفظ الصور… "+p+"٪"},offDone:"الصور محفوظة وتقدر تلعب من غير نت",offFail:"فيه صور ماتحفظتش. دوس تاني وانت على النت.",title:"شيلهم",tag:"شيل كل الكروت وسيب الإجابة الصح",streak:"ورا بعض",best:"أحسن رقم",rounds:function(n){return n==="1"?"جولة واحدة":arN(n,"جولتين","جولات","جولة")},solved:function(s,n){return"حليت "+s+" من "+n},complete:"★ خلّصتها",
   hint:"الكارت اللي بتشيله بيتقلب ويوريك إجابته، ودوس عليه تاني عشان ترجعه. دوس 📷 جوه أي جولة وبعدين على أي مربع عشان تحط صورة من عندك.",
-  round:function(a,b){return"جولة "+a+"/"+b},photo:"وضع الصور: دوس على أي مربع",nailed:"جبتها!",wrong:"لأ، مش دي!",left:function(n){return"فاضل تشيل "+n},all:"شيل الكل وسيب واحد بس",
+  round:function(a,b){return"جولة "+a+"/"+b},photo:"غيّر الصورة: دوس على أي كارت",nailed:"جبتها!",wrong:"لأ، مش دي!",left:function(n){return"فاضل تشيل "+n},all:"شيل الكل وسيب واحد بس",
   undo:"↺",skip:"عدّي ⏭",next:"اللي بعده ◀",lost:"❌ خسرت!",knocked:function(x){return"شلت الإجابة الصح: "+x+"."},keep:function(n){return" دوس رجوع عشان متضيّعش الـ 🔥"+n+" اللي ورا بعض."},
   undoBtn:function(n){return"↺ رجوع · "+n},moveOn:"كمّل ◀",won:"🎉 جبتها!",coins:function(n){return"+"+n+" كوينز"},bonus:function(n){return" · +"+n+" بونص"},
   row:function(n){return" · 🔥 "+n+" ورا بعض"},perfect:"🏆 ولا غلطة!",done:"✅ خلّصت القسم!",got:function(a,b){return"جبت "+a+" من "+b+" المرة دي"},
   allSolved:" · ★ حليت كل الجولات",overall:function(s,n){return" · حليت "+s+" من "+n+" لحد دلوقتي"},replay:"↻ تاني",menu:"القايمة",full:"مفيش مساحة كفاية على الجهاز عشان تحفظ صور زيادة.",lang:"EN",
-  endless:"مالهاش آخر",endlessSub:"جولات متلخبطة من كل الأقسام",score:function(n){return"النتيجة "+n},runOver:"💀 اللعبة خلصت!",usedUndo:" استخدمت الفرصة التانية بتاعتك في اللعبة دي.",solvedB4:"حليتها قبل كده، فمفيش كوينز ولا بتتحسب في ورا بعض المرة دي.",leaveQ:"تخرج من اللعبة؟",leaveTxt:"اللي عملته في اللعبة دي هيضيع.",leave:"اخرج",stay:"كمّل لعب",
-  runTxt:function(s,b){return" عدّيت "+s+" جولات · أحسن رقم "+b+"."},newBest:" 🏅 رقم قياسي جديد!",newRun:"↻ ابدأ من الأول",duel:"ده ولا ده",duelSub:"اختار واحد من اتنين، واللي يكسب يفضل",anyCat:"كل حاجة",anyCatSub:"أسئلة من كل الأقسام",pick:"اختار واحد",newQ:"سؤال جديد!",back:"›",sections:function(k){return k===1?"قسم واحد":n(k)+" أقسام"},duelTxt:function(s,b){return"جبت "+s+" ورا بعض · أحسن رقم "+b+"."},reg_eg:"🇪🇬 مصري",reg_w:"🌍 عالمي",reg_all:"🔀 الاتنين",
+  endless:"مالهاش آخر",endlessSub:"جولات متلخبطة من كل الأقسام",score:function(n){return"النتيجة "+n},runOver:"💀 اللعبة خلصت!",usedUndo:" استخدمت الفرصة التانية بتاعتك في اللعبة دي.",solvedB4:"حليتها قبل كده، فالمرة دي مفيش كوينز ومش هتتحسب في الـ 🔥.",leaveQ:"تخرج من اللعبة؟",leaveTxt:"اللي عملته في اللعبة دي هيضيع.",leave:"اخرج",stay:"كمّل لعب",
+  runTxt:function(s,b){return" عدّيت "+arN(s,"جولتين","جولات","جولة")+" · أحسن رقم "+b+"."},newBest:" 🏅 رقم قياسي جديد!",newRun:"↻ ابدأ من الأول",duel:"ده ولا ده",duelSub:"اختار واحد من اتنين، واللي يكسب يفضل",anyCat:"كل حاجة",anyCatSub:"أسئلة من كل الأقسام",pick:"اختار واحد",newQ:"سؤال جديد!",back:"›",sections:function(k){return k===1?"قسم واحد":n(k)+" أقسام"},duelTxt:function(s,b){return"جبت "+s+" ورا بعض · أحسن رقم "+b+"."},reg_eg:"🇪🇬 مصري",reg_w:"🌍 عالمي",reg_all:"🔀 الاتنين",
   mp:"مع صحابك",cats:"الأقسام",hot:"البطاطس سخنة خالص",hotSub:"لفّوا الموبايل، واللي يشيل الإجابة الصح يطلع برا",chal:"تحدّي",chalSub:"العب 10 وابعت اللينك، وصحابك ياخدوا نفس الأسئلة",
   players:"اللعيبة",addP:"+ لاعب كمان",pName:function(k){return"لاعب "+k},pickCat:"اختار قسم",pLeft:function(k){return"فاضل "+k},
   hRound:function(a){return"جولة "+a},turn:function(x){return"🥔 "+x+": شيل واحد"},isOut:function(x){return"💥 "+x+" طلع برا!"},
   outTxt:function(x,y){return x+" شال الإجابة الصح: "+y+"."},safe:"😅 محدش وقع!",safeTxt:"محدش لمس الإجابة الصح.",nextRound:"الجولة اللي بعدها ◀",
   winner:function(x){return"🏆 "+x+" كسب!"},winTxt:"آخر واحد فاضل.",again:"↻ تاني",
-  yourName:"اسمك",namePh:"الاسم",friend:"واحد صاحبك",chFrom:function(x){return x+" بيتحداك!"},chBeat:function(s,k){return"لازم تعدّي "+s+" من "+k},
-  chSame:"نفس الأسئلة ومن غير رجوع. تقدر تكسب؟",play:"▶ يلا",heroPlay:"يلا نلعب",tDuel:"ده ولا ده",tCats:"الأقسام",tCatsSub:function(n){return n+" مجموعات"},tMp:"مع صحابك",tMpSub:"من 2 لـ 8 لاعيبة",chPlayed:function(s,k){return"إنت لعبت التحدي ده قبل كده وجبت "+s+" من "+k+". كل تحدي بيتلعب مرة واحدة بس."},chBad:"لينك التحدي ده مش شغال مع النسخة دي من اللعبة.",
+  yourName:"اسمك",namePh:"الاسم",friend:"واحد صاحبك",chFrom:function(x){return x+" بيتحداك!"},chBeat:function(s,k){return"النتيجة اللي لازم تعدّيها: "+s+" من "+k},
+  chSame:"نفس الأسئلة ومن غير رجوع. تقدر تكسب؟",play:"▶ يلا",heroPlay:"يلا نلعب",tDuel:"ده ولا ده",tCats:"الأقسام",tCatsSub:function(n){return n+" مجموعات"},tMp:"مع صحابك",tMpSub:"من 2 لـ 8 لاعيبة",chBad:"لينك التحدي ده مش شغال مع النسخة دي من اللعبة.",
   chRound:function(a,b,s){return"🔗 جولة "+a+"/"+b+" · النتيجة "+s},chDone:"✅ خلصت التحدي!",chYou:function(s,k){return"جبت "+s+" من "+k+". ابعت اللينك وشوف صحابك هيعدّوك ولا لأ."},
   chWin:"🏆 كسبت!",chLose:"😬 خسرت!",chDraw:"🤝 تعادل!",vs:function(s,b,x,k){return"إنت "+s+" · "+x+" "+b+" (من "+k+")"},
   share:"🔗 ابعت التحدي",shareBack:"🔗 ابعت نتيجتك",copied:"اتنسخ اللينك!",msg:function(s,k){return"جبت "+s+" من "+k+" في شيلهم! تقدر تعدّيني؟ 🔥"},
   tHome:"الرئيسية",dyBadge:function(n){return"رقم "+n},dyTitle:"سؤال اليوم",dySub:"سؤال جديد كل يوم، هو هو لكل صحابك",dyDone:"جاوبت النهارده!",dyShare:"شارك",dyRn:function(n){return"سؤال اليوم رقم "+n},
-  dyNext:function(h,m){var hs=h===1?"ساعة":h===2?"ساعتين":h<=10?h+" ساعات":h+" ساعة",ms=m===1?"دقيقة":m===2?"دقيقتين":m<=10?m+" دقايق":m+" دقيقة";return"السؤال الجاي بعد "+(h?hs:ms)},dyMsg:function(n){return"شيلهم - سؤال اليوم رقم "+n},dyStreak:function(n){return"🔥 "+n+" يوم ورا بعض"}}};
+  dyNext:function(h,m){var hs=h===1?"ساعة":h===2?"ساعتين":h<=10?h+" ساعات":h+" ساعة",ms=m===1?"دقيقة":m===2?"دقيقتين":m<=10?m+" دقايق":m+" دقيقة";return"السؤال الجاي بعد "+(h?hs:ms)},dyMsg:function(n){return"شيلهم - سؤال اليوم رقم "+n},dyStreak:function(n){return"🔥 "+(n==="1"?"أول يوم":arN(n,"يومين","أيام","يوم")+" ورا بعض")},
+  howT:"👆 إزاي تلعب",howP:"شيل الكروت الغلط واحد واحد لحد ما يفضل الكارت الصح لوحده. لو شلت الإجابة الصح تخسر! وعلى فكرة: 📷 جوه الجولة بيخليك تحط صورة من عندك على أي كارت.",howOk:"تمام",
+  leaveDy:"هتخسر سؤال النهارده، وكل يوم ليه محاولة واحدة بس.",skipQ:"تعدّي الجولة دي؟",skipTxt:function(k){return"لو عدّيتها هتخسر الـ 🔥"+k+" اللي ورا بعض."},skipBtn:"عدّي",
+  chGot:function(x,s,k){return x+" جاب "+s+" من "+k},chMine:function(s,k){return"إنت جبت "+s+" من "+k+". "}}};
+// Arabic counted nouns: 2 has its own word (جولتين), 3 to 10 take the plural (5 جولات), 0, 1 and 11+ the singular (25 جولة)
+function arN(v,two,few,one){var k=parseInt(v,10);return k===2?two:k>=3&&k<=10?v+" "+few:v+" "+one}
 
 var START=50,UNDO=30,WIN=10;
 var $=function(i){return document.getElementById(i)};
@@ -654,8 +669,12 @@ function cairo(){var d=new Date();try{var p={};new Intl.DateTimeFormat("en-US",{
  return{year:d.getFullYear(),month:d.getMonth()+1,day:d.getDate(),hour:d.getHours(),minute:d.getMinutes()}}
 function dayNo(){var p=cairo();return Math.round((Date.UTC(p.year,p.month-1,p.day)-DAY0)/864e5)+1}
 function dayLeft(){var p=cairo(),m=24*60-((p.hour%24)*60+p.minute);return[Math.floor(m/60),m%60]}
-// every round in a fixed shuffled order, one per day, so nothing repeats until all have been played
-function dailyRound(d){var deck=shuffle(ALL.slice().sort(function(a,b){return a.key<b.key?-1:a.key>b.key?1:0}),rng(20261019)),k=(d-1)%deck.length;return deck[k<0?k+deck.length:k]}
+// The schedule is written down in daily.js (one round id per day), so adding rounds never changes a day: everyone gets the same round
+// whichever version they have, and nothing repeats until the whole list has been played.
+// A round that was renamed or removed keeps its day with a fixed stand-in, so the other days don't move.
+function byKey(a,b){return a.key<b.key?-1:a.key>b.key?1:0}
+function dailyRound(d){var L=window.DAILY&&DAILY.length?DAILY:null,n=L?L.length:ALL.length,k=(d-1)%n;if(k<0)k+=n;
+ var r=L&&BYH[L[k]];if(r)return r;var s=ALL.slice().sort(byKey);return s[k%s.length]}
 function dyPlayed(){return DY.d===dayNo()&&DY.done}
 function dyStreak(){return DY.lw>=dayNo()-1||dyPlayed()?DY.s|0:0}
 function dySave(){sv("elim_daily",DY)}
@@ -718,12 +737,14 @@ function chalLoad(){var q=new URLSearchParams(location.search),c=q.get("ch");if(
 function photo(name){return IM[name]||(window.PH&&PH[name])||WK[name]}
 // two different cards that ended up with the same picture (a film and its star) never go on the board together
 function samePhoto(x,y){var a=photo(x.d[0]);return!!a&&a===photo(y.d[0])}
+// in a normal round, cards that share one picture (an album and its singer, three satellites with one logo) show their letter instead
+function bPhoto(i){var u=photo(items[i].d[0]);if(!u)return"";for(var j=0;j<items.length;j++)if(j!==i&&photo(items[j].d[0])===u)return"";return u}
 function dupPhoto(l){return l.some(function(x,i){return l.slice(i+1).some(function(y){return samePhoto(x,y)})})}
 function wapi(p){return fetch("https://en.wikipedia.org/w/api.php?origin=*&format=json&formatversion=2&"+p).then(function(r){return r.json()})}
 var PI="prop=pageimages|pageprops&ppprop=disambiguation&piprop=thumbnail&pithumbsize=400&pilicense=any";
 function gotPhoto(name,url){WK[name]=url;sv("elim_wiki",WK);
  if(!inGame())return;
- [].forEach.call(document.querySelectorAll(".cell"),function(c){if(items[+c.dataset.i].d[0]===name&&photo(name)===url){setImg(c.querySelector(".tile"),url);setImg(c.querySelector(".back"),url)}})}
+ [].forEach.call(document.querySelectorAll(".cell"),function(c){if(items[+c.dataset.i].d[0]===name&&bPhoto(+c.dataset.i)===url){setImg(c.querySelector(".tile"),url);setImg(c.querySelector(".back"),url)}})}
 function setImg(el,url){var o=el.querySelector("img");if(o)o.remove();var im=new Image();im.alt="";im.onerror=function(){im.remove()};im.src=url;el.insertBefore(im,el.firstChild)}
 function okPage(p){return p&&!p.missing&&p.thumbnail&&!(p.pageprops&&"disambiguation" in p.pageprops)}
 function loadPhotos(list){if(!PHok)return; // wait for the built-in photos, or every card would be looked up on Wikipedia
@@ -793,17 +814,19 @@ function catPage(head,at,b,top){var bd=function(k){return b?"<small><span>"+b(k)
    return '<h3 class="dgh">'+g.e+" "+(L==="ar"?g.a:g.n)+'</h3><div class="subs dsubs">'+ss.map(function(x){
     return '<button class="cat sc" style="--c:'+GC[gi]+'" data-'+at+'="'+x[0]+'"><span class="se">'+x[1]+"</span>"+(L==="ar"?x[3]:x[2])+bd(x[0])+"</button>"}).join("")+"</div>"}).join("")}
 // Duel page: each choice shows its best duel run.
-function duelPage(){return catPage(t("duel"),"dc",function(k){return"🏅 "+n(dBest[REG+(k?"|"+k:"")]||0)})}
+function duelPage(){return catPage(t("duel"),"dc",function(k){return"🏅 "+n(dBest[REG+(k?"|"+k:"")]||0)},'<p class="sub">'+t("duelSub")+"</p>")}
 function hotPage(){return catPage(t("hot"),"hc",null,'<p class="sub">'+t("hotSub")+'</p><h3 class="dgh">'+t("players")+'</h3><div class="plyrs">'+
  HP.map(function(v,i){return '<div class="prow"><input class="pin" data-pi="'+i+'" maxlength="16" value="'+esc(v)+'" placeholder="'+esc(t("pName")(n(i+1)))+'">'+
   (HP.length>2?'<button class="pill" data-pdel="'+i+'" aria-label="Remove">✕</button>':"")+"</div>"}).join("")+
  (HP.length<8?'<button class="btn" data-padd>'+t("addP")+"</button>":"")+'</div><h3 class="dgh">'+t("pickCat")+"</h3>")}
 function nameBox(){return '<h3 class="dgh">'+t("yourName")+'</h3><div class="plyrs"><input class="pin" data-me maxlength="16" value="'+esc(ME)+'" placeholder="'+esc(t("namePh"))+'"></div>'}
 function chalPage(){return catPage(t("chal"),"cc",null,'<p class="sub">'+t("chalSub")+"</p>"+nameBox()+'<h3 class="dgh">'+t("pickCat")+"</h3>")}
-function chalInvite(){var c=CH.sub&&subInfo(CH.sub),k=CH.list.length;
- return ghead("",t("chal"))+(CH.bad?'<p class="sub">'+t("chBad")+"</p>":'<div class="chv"><div class="big">'+esc(t("chFrom")(CH.from.n||t("friend")))+'</div><p class="sub">'+
-  esc(t("chBeat")(n(CH.from.s),n(k)))+(c?" · "+c[1]+" "+esc(L==="ar"?c[3]:c[2]):"")+"<br>"+
-  (chKey() in CHD?esc(t("chPlayed")(n(CHD[chKey()]),n(k)))+"</p>"+nameBox()+'<p></p><button class="btn y" data-cshare>'+t("shareBack")+"</button></div>":
+// A link for a challenge you already played (usually a friend sending their score back) compares the two scores instead of inviting you
+function chVs(k){var me=CHD[chKey()]||0,s=CH.from.s;return esc(t("chMine")(n(me),n(k))+(me>s?t("chWin"):me<s?t("chLose"):t("chDraw")))}
+function chalInvite(){var c=CH.sub&&subInfo(CH.sub),k=CH.list.length,pl=!CH.bad&&chKey() in CHD,who=CH.from.n||t("friend");
+ return ghead("",t("chal"))+(CH.bad?'<p class="sub">'+t("chBad")+"</p>":'<div class="chv"><div class="big">'+esc(pl?t("chGot")(who,n(CH.from.s),n(k)):t("chFrom")(who))+'</div><p class="sub">'+
+  (pl?"":esc(t("chBeat")(n(CH.from.s),n(k)))+(c?" · ":""))+(c?c[1]+" "+esc(L==="ar"?c[3]:c[2]):"")+(pl&&!c?"":"<br>")+
+  (pl?chVs(k)+"</p>"+nameBox()+'<p></p><button class="btn y" data-cshare>'+t("shareBack")+"</button></div>":
   t("chSame")+"</p>"+nameBox()+'<p></p><button class="btn y" data-cplay>'+t("play")+"</button></div>"))}
 function card(cls,data,emoji,label,left,d,k,c){return '<button class="cat '+cls+'" '+data+(c?' style="--c:'+c+'"':"")+'><span class="se">'+emoji+"</span>"+label+"<small><span>"+left+"</span><span>"+
  (d===k?t("complete"):t("solved")(n(d),n(k)))+'</span></small><div class="pb"><i style="width:'+(k?d/k*100:0)+'%"></i></div></button>'}
@@ -874,7 +897,10 @@ function deal(){var g=$("grid");g.classList.remove("deal");void g.offsetWidth;g.
 function start(){hide();scr("game");$("menu").style.display="none";$("game").style.display="flex";
  items=shuffle(cur.items,mode==="chal"?rng(CH.seed+CH.i):mode==="daily"&&rng(DY.d*7919+1));out=[];hist=[];peek=[];flipNow=[];over=false;
  var v=items.map(function(x){return x.d[1]});corr=v.indexOf(cur.best==="min"?Math.min.apply(0,v):Math.max.apply(0,v));
- render();deal();scrollTo(0,0)}
+ render();deal();scrollTo(0,0);howTo()}
+// The very first game on a phone opens with a short "how to play", so a friend who starts with a shared Daily round
+// doesn't tap the right answer first (which is how you lose).
+function howTo(){if(ld("elim_how",0))return;sv("elim_how",1);sh(function(){return[t("howT"),t("howP"),[[t("howOk"),function(){sfx.tap();hide()},"y"]]]},350)}
 function tileBg(h){return"background:linear-gradient(150deg,hsl("+h+",58%,60%),hsl("+(h+18)+",52%,40%))"}
 function render(){if(mode==="duel")return duelRender();var mp=mode==="hot"||mode==="chal"||mode==="daily";
  $("grid").className="grid";$("undo").style.display=mp?"none":"";var left=items.length-out.length,qq=L==="ar"?cur.qa:cur.q;
@@ -890,7 +916,7 @@ function render(){if(mode==="duel")return duelRender();var mp=mode==="hot"||mode
  // Eliminated cards (and every card left after a win) flip over to show their value; tapping one flips it back (peek).
  $("grid").innerHTML=items.map(function(x,i){var o=out.indexOf(i)>-1,w=over==="win"&&!o,f=(o||w)&&peek.indexOf(i)<0,cls=o?"out":w?"win":"";
   if(over==="lose"&&i===corr)cls+=" bad";if(f&&flipNow.indexOf(i)<0)cls+=" flip";if((o||w)&&!f)cls+=" peek";
-  var src=photo(x.d[0]),img=src?'<img src="'+esc(src)+'" alt="" onerror="this.remove()">':"";
+  var src=bPhoto(i),img=src?'<img src="'+esc(src)+'" alt="" onerror="this.remove()">':"";
   return '<button class="cell '+cls+'" style="--i:'+i+'" data-i="'+i+'" aria-label="'+esc(nm(x)+(o||w?": "+fmt(x):""))+'"><div class="card">'+
    '<div class="tile" style="'+tileBg(i*47+20)+'"><span>'+esc(nm(x).replace(/^[("']/,"").charAt(0))+"</span>"+img+"</div>"+
    '<div class="back">'+img+"<i>"+(w?"✓":"✕")+"</i><small>"+esc(li(x.r.k))+"</small><b>"+esc(fmt(x))+"</b></div>"+
@@ -950,11 +976,13 @@ function nxt(){if(mode==="hot"){if(alive().length<2)hotStart(HCAT);else hotRound
 function summary(){var k=PL.length,s=solved(PL);cur=null;
  sh(function(){return[runOk===k?t("perfect"):t("done"),t("got")(n(runOk),n(k))+(s===k?t("allSolved"):t("overall")(n(s),n(k))),
   [[t("replay"),function(){PL=subOrder(SUB[0]);ri=0;runOk=0;newRound()},""],[t("menu"),menu,"y"]]]},0);if(runOk===k){confetti();sfx.win()}}
-$("skip").onclick=function(){sfx.tap();nxt()};// Home asks first when leaving would throw away a game in progress
+// Skipping a round you haven't finished ends your 🔥 streak, so it asks first when there's a streak to lose
+$("skip").onclick=function(){sfx.tap();if(over||mode!=="cat"||streak<2){nxt();return}var k=streak;
+ sh(function(){return[t("skipQ"),t("skipTxt")(n(k)),[[t("stay"),function(){sfx.tap();hide()},"y"],[t("skipBtn"),function(){hide();nxt()},""]]]},0)};// Home asks first when leaving would throw away a game in progress
 function atRisk(){if(!inGame()||!cur)return false;
  return mode==="hot"?alive().length>1:mode==="chal"?true:mode==="daily"?!over:mode==="end"?over!=="lose"&&(eScore>0||out.length>0):mode==="duel"?over!=="lose"&&dScore>0:false}
 $("home").onclick=function(){if($("menu").style.display==="flex")GRP=null;
- if(atRisk()){var back=shF&&shF.leave?null:shF;var f=function(){return[t("leaveQ"),t("leaveTxt"),[[t("stay"),function(){if(back)sh(back,0);else{hide();if(mode==="duel"&&over==="win")duelNext(items[corr])}},"y"],[t("leave"),menu,""]]]};f.leave=1;sh(f,0);return}
+ if(atRisk()){var back=shF&&shF.leave?null:shF;var f=function(){return[t("leaveQ"),mode==="daily"?t("leaveDy"):t("leaveTxt"),[[t("stay"),function(){if(back)sh(back,0);else{hide();if(mode==="duel"&&over==="win")duelNext(items[corr])}},"y"],[t("leave"),menu,""]]]};f.leave=1;sh(f,0);return}
  menu()};
 function sheet(ti,p,btns,d){clearTimeout(stT);var m=ti.match(/^([^\p{L}\p{N}\s]+)\s+(.+)$/u),e=m?m[1]:"";if(m)ti=m[2];
  $("sbadge").textContent=e;$("sheet").classList.toggle("good",/[🎉🏆✅😅🤝]/u.test(e));$("sheet").classList.toggle("bad",/[❌💀😬💥]/u.test(e));$("st").textContent=ti;$("sp").textContent=p;var sb=$("sb");sb.innerHTML="";
@@ -967,7 +995,7 @@ function sheet(ti,p,btns,d){clearTimeout(stT);var m=ti.match(/^([^\p{L}\p{N}\s]+
 function sh(f,d){shF=f;var a=f();sheet(a[0],a[1],a[2],d)}
 function hide(){clearTimeout(stT);shF=null;$("sheet").classList.remove("show")}
 // the built-in photos load after the game starts; put them on the cards already showing
-function fillImgs(){if(!inGame()||!items)return;[].forEach.call(document.querySelectorAll(".cell"),function(c){var x=items[+c.dataset.i],u=x&&photo(x.d[0]);
+function fillImgs(){if(!inGame()||!items)return;[].forEach.call(document.querySelectorAll(".cell"),function(c){var x=items[+c.dataset.i],u=x&&(mode==="duel"?photo(x.d[0]):bPhoto(+c.dataset.i));
  if(u&&!c.querySelector(".tile img")){setImg(c.querySelector(".tile"),u);setImg(c.querySelector(".back"),u)}})}
 var PHok=false;document.addEventListener("DOMContentLoaded",function(){PHok=true;fillImgs();var o=document.querySelector("[data-off]");if(o)o.outerHTML=offRow()});
 // a new version was installed in the background: offer a one-tap reload instead of making people close and reopen the app

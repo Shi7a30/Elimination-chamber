@@ -29,11 +29,11 @@ CATS.push(
  Rd(["WHICH INVENTION","CAME FIRST",Q],["أنهي اختراع","ظهر الأول",QA],"min",[
   ["Telescope",1608,"التلسكوب"],["Steam train",1804,"قطر البخار","Steam locomotive"],["Telephone",1876,"التليفون"],
   ["Light bulb",1879,"اللمبة","Incandescent light bulb"],["Car (Benz patent)",1886,"العربية (براءة بنز)","Benz Patent-Motorwagen"],["Airplane",1903,"الطيارة","Wright Flyer"],
-  ["Penicillin",1928,"البنسلين"],["World Wide Web",1989,"الويب (الإنترنت)"],["iPhone",2007,"الآيفون","iPhone (1st generation)"]],
+  ["Penicillin",1928,"البنسلين"],["World Wide Web",1989,"الويب (الإنترنت)"],["iPhone",2007,"آيفون","iPhone (1st generation)"]],
   {h:"invention",k:["INVENTED","اتخترع سنة"],dt:["Invented", "الاختراع"],g:"y",s:"history",m:"w"}),
  Rd(["WHICH LANDMARK","IS THE OLDEST",Q],["أنهي","أقدم معلم",QA],"min",[
   ["Amr ibn al-As Mosque",642,"جامع عمرو بن العاص"],["Mosque of Ibn Tulun",879,"جامع ابن طولون"],["Al-Azhar Mosque",972,"الجامع الأزهر"],
-  ["Sultan Hassan Mosque",1363,"جامع السلطان حسن","Mosque–Madrasa of Sultan Hasan"],["Qaitbay Citadel",1479,"قلعة قايتباي","Citadel of Qaitbay"],["Egyptian Museum",1902,"المتحف المصري في التحرير"],
+  ["Sultan Hassan Mosque",1363,"جامع السلطان حسن","Mosque–Madrasa of Sultan Hasan"],["Qaitbay Citadel",1479,"قلعة قايتباي","Citadel of Qaitbay"],["Egyptian Museum",1902,"المتحف المصري"],
   ["Baron Empain Palace",1911,"قصر البارون"],["Cairo Tower",1961,"برج القاهرة"],["Cairo Opera House",1988,"دار الأوبرا"]],
   {h:"Egypt landmark",k:["COMPLETED","خلص بناؤه سنة"],dt:["Building completed", "خلص بناؤه"],g:"y",s:"history",m:"eg"}),
  Rd(["WHICH PIONEER WAS","BORN FIRST",Q],["مين من الرواد","اتولد الأول",QA],"min",[
@@ -53,7 +53,7 @@ CATS.push(
   {h:"Egypt history",k:["BEGAN IN EGYPT","بدأ في مصر سنة"],dt:["Era began in Egypt", "بداية العصر في مصر"],g:"y",s:"history",m:"eg"}),
  Rd(["WHICH PROJECT","OPENED LAST",Q],["أنهي","آخر مشروع اتفتح",QA],"max",[
   ["Suez Canal",1869,"قناة السويس"],["Aswan Low Dam",1902,"خزان أسوان"],["Cairo International Stadium",1960,"استاد القاهرة"],
-  ["Cairo International Airport",1963,"مطار القاهرة الدولي"],["Cairo Metro (Line 1)",1987,"مترو الأنفاق (الخط الأول)","Cairo Metro Line 1"],["Bibliotheca Alexandrina",2002,"مكتبة إسكندرية"],
+  ["Cairo International Airport",1963,"مطار القاهرة الدولي"],["Cairo Metro (Line 1)",1987,"مترو الأنفاق (الخط الأول)","Cairo Metro Line 1"],["Bibliotheca Alexandrina",2002,"مكتبة الإسكندرية"],
   ["Al-Azhar Park",2005,"حديقة الأزهر"],["New Suez Canal",2015,"قناة السويس الجديدة"],["Rod El Farag Axis",2019,"محور روض الفرج","Rod El Farag Axis Bridge"]],
   {h:"Egypt landmark",k:["OPENED","اتفتح سنة"],dt:["Project opened", "افتتاح المشروع"],g:"y",s:"history",m:"eg"}),
  Rd(["WHICH LANDMARK WAS","FINISHED FIRST",Q],["أنهي معلم","خلص بناؤه الأول",QA],"min",[

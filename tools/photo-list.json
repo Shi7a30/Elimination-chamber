@@ -21533,8 +21533,9 @@
   "hint": "Pokémon",
   "ar": "جرادون",
   "ar_hint": "بوكيمون",
-  "logo": false,
-  "skip": false
+  "logo": true,
+  "skip": false,
+  "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/383.png"
  },
  {
   "name": "Snorlax",
@@ -21551,8 +21552,9 @@
   "hint": "Pokémon",
   "ar": "ستيليكس",
   "ar_hint": "بوكيمون",
-  "logo": false,
-  "skip": false
+  "logo": true,
+  "skip": false,
+  "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/208.png"
  },
  {
   "name": "Wailord",
@@ -21560,8 +21562,9 @@
   "hint": "Pokémon",
   "ar": "ويلورد",
   "ar_hint": "بوكيمون",
-  "logo": false,
-  "skip": false
+  "logo": true,
+  "skip": false,
+  "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/321.png"
  },
  {
   "name": "Onix",

@@ -39,7 +39,7 @@ CATS.push(
   {h:"classic car model",k:["MODEL LAUNCHED","الموديل نزل سنة"],g:"y",dt:["Car model launched","نزول الموديل"],s:"zaman",m:"eg"}),
  Rd(["WHICH OF THESE","CAME TO EGYPT FIRST",Q],["أنهي حاجة","وصلت مصر الأول",QA],"min",[
   ["Telegraph",1854,"التلغراف","Electrical telegraph"],["Telephone (in Egypt)",1881,"التليفون","Telephone"],["Cinema",1896,"السينما","Cinema of Egypt"],
-  ["Egyptian Radio",1934,"الإذاعة المصرية"],["Television",1960,"التليفزيون","Egyptian Television Network"],["Cairo Metro (Line 1)",1987,"مترو الأنفاق","Line 1 (Cairo Metro)"],
+  ["Egyptian Radio",1934,"الإذاعة المصرية"],["Television",1960,"التليفزيون","Egyptian Television Network"],["Cairo Metro (Line 1)",1987,"مترو الأنفاق (الخط الأول)","Line 1 (Cairo Metro)"],
   ["Internet",1993,"الإنترنت","Internet in Egypt"],["Mobile phones",1996,"الموبايل","Mobile phone"],["Nilesat",1998,"نايل سات"]],
   {h:"technology in Egypt",k:["STARTED IN EGYPT","بدأت في مصر سنة"],g:"y",dt:["Started in Egypt","بدايتها في مصر"],s:"zaman",m:"eg"}),
  Rd(["WHICH MOBILE PHONE","WAS RELEASED FIRST",Q],["أنهي موبايل","نزل الأول",QA],"min",[
@@ -68,14 +68,14 @@ CATS.push(
   ["Baraem",2009,"براعم","Baraem (TV channel)"],["Cartoon Network Arabic",2010,"كرتون نتورك بالعربية"],["Majid Kids",2015,"قناة ماجد","Majid (TV channel)"]],
   {h:"TV channel",k:["LAUNCHED","بدأت سنة"],s:"kidstv",m:"eg"}),
  Rd(["WHICH DISNEY CHARACTER","APPEARED FIRST",Q],["أنهي شخصية ديزني","ظهرت الأول",QA],"min",[
-  ["Mickey Mouse",1928,"ميكي ماوس"],["Pluto",1930,"بلوتو","Pluto (Disney)"],["Goofy",1932,"بندق (جوفي)"],
+  ["Mickey Mouse",1928,"ميكي ماوس"],["Pluto",1930,"بلوتو","Pluto (Disney)"],["Goofy",1932,"بندق"],
   ["Donald Duck",1934,"بطوط"],["Daisy Duck",1940,"زيزي (ديزي داك)"],["Chip 'n' Dale",1943,"تشيب وديل"],
   ["Scrooge McDuck",1947,"عم دهب"],["Stitch",2002,"ستيتش","Stitch (Lilo & Stitch)"],["Olaf",2013,"أولاف","Olaf (Frozen)"]],
   {h:"cartoon character",k:["FIRST SEEN","أول ظهور سنة"],g:"y",dt:["First appearance","أول ظهور"],s:"kidstv",m:"eg"}),
  Rd(["WHICH PIXAR FILM","CAME OUT LAST",Q],["أنهي فيلم بيكسار","أجدد",QA],"max",[
-  ["Toy Story",1995,"حكاية لعبة"],["A Bug's Life",1998,"حياة حشرة"],["Toy Story 2",1999,"حكاية لعبة 2"],
-  ["Monsters, Inc.",2001,"شركة المرعبين المحدودة"],["Finding Nemo",2003,"البحث عن نيمو"],["The Incredibles",2004,"الخارقون"],
-  ["Cars",2006,"سيارات","Cars (film)"],["Ratatouille",2007,"الفأر الطباخ (راتاتوي)","Ratatouille (film)"],["WALL-E",2008,"وول-إي"]],
+  ["Toy Story",1995,"توي ستوري"],["A Bug's Life",1998,"حياة حشرة"],["Toy Story 2",1999,"حكاية لعبة 2"],
+  ["Monsters, Inc.",2001,"مونسترز إنك"],["Finding Nemo",2003,"البحث عن نيمو"],["The Incredibles",2004,"ذا إنكريديبلز"],
+  ["Cars",2006,"كارز","Cars (film)"],["Ratatouille",2007,"راتاتوي","Ratatouille (film)"],["WALL-E",2008,"وول-إي"]],
   {h:"animated film",k:["RELEASED","نزل سنة"],g:"y",dt:["Film released","نزول الفيلم"],s:"kidstv",m:"eg"}),
  Rd(["WHICH NICKELODEON SHOW","AIRED FIRST",Q],["أنهي كرتون من نيكلوديون","اتعرض الأول",QA],"min",[
   ["Rugrats",1991,"رجرتس"],["Rocko's Modern Life",1993,"حياة روكو"],["Hey Arnold!",1996,"هاي أرنولد"],
@@ -113,7 +113,7 @@ CATS.push(
   ["PAW Patrol",2013,"دوريات المخلاب"],["We Bare Bears",2015,"الدببة الثلاثة"],["Bluey",2018,"بلوي","Bluey (2018 TV series)"]],
   {h:"cartoon",k:["FIRST AIRED","اتعرض سنة"],g:"y",dt:["Series first aired","أول عرض للمسلسل"],s:"kidstv",m:"eg"}),
  Rd(["WHICH LOONEY TUNES STAR","APPEARED FIRST",Q],["أنهي شخصية لوني تونز","ظهرت الأول",QA],"min",[
-  ["Porky Pig",1935,"بوركي"],["Daffy Duck",1937,"دافي داك"],["Bugs Bunny",1940,"بجز باني"],
+  ["Porky Pig",1935,"بوركي"],["Daffy Duck",1937,"دافي داك"],["Bugs Bunny",1940,"باجز باني"],
   ["Tweety",1942,"تويتي"],["Sylvester",1945,"سيلفستر","Sylvester the Cat"],["Marvin the Martian",1948,"مارفن المريخي"],
   ["Road Runner",1949,"رود رنر","Wile E. Coyote and the Road Runner"],["Speedy Gonzales",1953,"سبيدي جونزاليس"],["Tasmanian Devil",1954,"تاز","Tasmanian Devil (Looney Tunes)"]],
   {h:"cartoon character",k:["FIRST SEEN","أول ظهور سنة"],g:"y",dt:["First appearance","أول ظهور"],s:"kidstv",m:"eg"}),

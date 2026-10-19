@@ -4,7 +4,7 @@ CATS.push(
 {n:"Games & Tech",a:"الألعاب والتكنولوجيا",e:"🎮",r:[
  Rd(["WHICH IS THE","OLDEST VIDEO GAME",Q],["أنهي","أقدم لعبة فيديو",QA],"min",[
   ["Pac-Man",1980,"باك مان"],["Tetris",1984,"تتريس"],["Super Mario Bros.",1985,"سوبر ماريو"],["The Legend of Zelda",1986,"أسطورة زيلدا","The Legend of Zelda (video game)"],["Pokémon Red & Green",1996,"بوكيمون ريد وجرين","Pokémon Red and Blue"],
-  ["Grand Theft Auto",1997,"جراند ثفت أوتو","Grand Theft Auto (video game)"],["Minecraft",2011,"ماينكرافت"],["Fortnite",2017,"فورتنايت"],["Among Us",2018,"أمونج أس"]],{h:"video game",k:["RELEASED","نزلت سنة"],dt:["Game released", "نزول اللعبة"],g:"y",s:"games",m:"w"}),
+  ["Grand Theft Auto",1997,"جاتا 1","Grand Theft Auto (video game)"],["Minecraft",2011,"ماينكرافت"],["Fortnite",2017,"فورتنايت"],["Among Us",2018,"أمونج أس"]],{h:"video game",k:["RELEASED","نزلت سنة"],dt:["Game released", "نزول اللعبة"],g:"y",s:"games",m:"w"}),
  Rd(["WHICH IS THE","OLDEST CONSOLE",Q],["أنهي","أقدم جهاز ألعاب",QA],"min",[
   ["Atari 2600",1977,"أتاري 2600"],["NES / Famicom",1983,"إن إي إس / فاميكوم","Nintendo Entertainment System"],["Game Boy",1989,"جيم بوي"],["PlayStation",1994,"بلايستيشن 1","PlayStation (console)"],["Nintendo 64",1996,"نينتندو 64"],
   ["Xbox",2001,"إكس بوكس","Xbox (console)"],["Wii",2006,"وي"],["PlayStation 4",2013,"بلايستيشن 4"],["Nintendo Switch",2017,"نينتندو سويتش"]],{h:"video game console",k:["RELEASED","نزل سنة"],dt:["Console released", "نزول الجهاز"],g:"y",s:"games",m:"w"}),
@@ -43,7 +43,7 @@ CATS.push(
   ["PES 2013",2012,"بيس 2013","Pro Evolution Soccer 2013"],["FIFA 18",2017,"فيفا 18"],["eFootball",2021,"إي فوتبول","eFootball (video game)"]],
   {h:"video game",k:["RELEASED","نزلت سنة"],dt:["Game released", "نزول اللعبة"],g:"y",s:"games",m:"eg"}),
  Rd(["WHICH CONSOLE","CAME OUT LAST",Q],["أنهي جهاز ألعاب","أجدد",QA],"max",[
-  ["Sega Mega Drive",1988,"سيجا","Sega Genesis"],["Game Boy Color",1998,"جيم بوي كالر"],["PlayStation 2",2000,"بلايستيشن 2"],
+  ["Sega Mega Drive",1988,"سيجا","Sega Genesis"],["Game Boy Color",1998,"جيم بوي كولور"],["PlayStation 2",2000,"بلايستيشن 2"],
   ["Game Boy Advance",2001,"جيم بوي أدفانس"],["PSP",2004,"بي إس بي","PlayStation Portable"],["Xbox 360",2005,"إكس بوكس 360"],
   ["PlayStation 3",2006,"بلايستيشن 3"],["PS Vita",2011,"بي إس فيتا","PlayStation Vita"],["PlayStation 5",2020,"بلايستيشن 5"]],
   {h:"video game console",k:["RELEASED","نزل سنة"],dt:["Console released", "نزول الجهاز"],g:"y",s:"games",m:"eg"}),
@@ -55,7 +55,7 @@ CATS.push(
  Rd(["WHICH CONSOLE","SOLD THE MOST",Q],["أنهي جهاز ألعاب","اتباع أكتر",QA],"max",[
   ["PlayStation 2",160,"بلايستيشن 2"],["Game Boy",119,"جيم بوي"],["PlayStation 4",117,"بلايستيشن 4"],
   ["PlayStation",102,"بلايستيشن 1","PlayStation (console)"],["Wii",102,"وي"],["PlayStation 3",87,"بلايستيشن 3"],
-  ["Xbox 360",84,"إكس بوكس 360"],["Game Boy Advance",82,"جيم بوي أدفانس"],["Sega Mega Drive",34,"سيجا ميجا درايف"]],
+  ["Xbox 360",84,"إكس بوكس 360"],["Game Boy Advance",82,"جيم بوي أدفانس"],["Sega Mega Drive",34,"سيجا"]],
   {pre:["~","~"],suf:["M"," مليون"],h:"video game console",k:["UNITS SOLD","اتباع منه"],s:"games",m:"w"}),
  Rd(["WHICH VIDEO GAME","SOLD THE MOST",Q],["أنهي لعبة فيديو","اتباعت أكتر",QA],"max",[
   ["Minecraft",350,"ماينكرافت"],["GTA V",215,"جاتا 5","Grand Theft Auto V"],["Wii Sports",83,"وي سبورتس"],

@@ -50,4 +50,21 @@ for(const [dev,l] of [['iPhone SE','ar'],['iPhone SE','en'],['Galaxy S8','ar']])
   const hubs=[...document.querySelectorAll('#dock button')].map(e=>e.getBoundingClientRect());
   return{overlap:t.left<g.right&&g.left<t.right&&t.top<g.bottom&&g.top<t.bottom,hubsOut:hubs.some(h=>h.right>innerWidth-8||h.left<8),indic:/[٠-٩]/.test(document.body.textContent)}});
  ok(!f.overlap,dev+' '+l+': Play title overlaps the board');ok(!f.hubsOut,dev+' '+l+': dock buttons stick out');ok(!f.indic,dev+' '+l+': Arabic-Indic digits shown');await c2.close()}
+// review fixes (19 Oct 2026): how-to-play shows on the first game only, Skip warns before ending a streak,
+// knocked-out cards turn yellow, Arabic counts use the right plural, the Daily card's 🔥/🏆 stay above the dock on short screens
+{const c3=await b.newContext({viewport:{width:375,height:548},isMobile:true,hasTouch:true});const r=await c3.newPage();await r.route('https://**',x=>x.abort());r.on('pageerror',e=>errs.push(e.message));
+ await r.addInitScript(()=>{if(!sessionStorage.getItem('i')){sessionStorage.setItem('i',1);localStorage.setItem('elim_lang','"ar"')}});await r.goto(PAGE);await r.waitForTimeout(400);
+ ok(await r.evaluate(()=>{const c=document.querySelector('.dcard .chips').getBoundingClientRect(),d=document.getElementById('dock').getBoundingClientRect();return c.bottom<=d.top}),'Daily card stats hidden under the dock on a short screen');
+ await r.tap('[data-nav="cats"]');await r.tap('[data-g="0"]');await r.waitForTimeout(200);
+ ok(await r.evaluate(()=>/25 جولة/.test(document.body.textContent)&&!/25 جولات/.test(document.body.textContent)),'Arabic round count plural');
+ await r.tap('[data-s]');await r.waitForTimeout(700);
+ ok(await r.evaluate(()=>/إزاي تلعب/.test(document.getElementById('st').textContent)&&document.getElementById('sheet').classList.contains('show')),'no how-to-play on the first game');
+ await r.evaluate(()=>{hide();const i=corr?0:1;document.querySelector('.cell[data-i="'+i+'"]').click()});await r.waitForTimeout(700);
+ ok(await r.evaluate(()=>{const c=document.querySelector('.cell.out .lab .ln');return!!c&&getComputedStyle(c).backgroundColor==='rgb(247, 200, 61)'}),'knocked-out card label is not yellow');
+ await r.evaluate(()=>{streak=3;document.getElementById('skip').click()});await r.waitForTimeout(300);
+ ok(await r.evaluate(()=>/تعدّي الجولة/.test(document.getElementById('st').textContent)),'Skip did not warn about the streak');
+ await r.evaluate(()=>{hide();menu()});await r.reload();await r.waitForTimeout(400);await r.evaluate(()=>{GRP=null;menu()});
+ await r.evaluate(()=>document.querySelector('.hero').click());await r.waitForTimeout(700);
+ ok(await r.evaluate(()=>!/إزاي تلعب/.test(document.getElementById('st').textContent)||!document.getElementById('sheet').classList.contains('show')),'how-to-play showed twice');
+ await c3.close()}
 await b.close();finish('flaw fixes',[...bad,...errs])})();
