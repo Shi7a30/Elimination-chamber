@@ -11,8 +11,8 @@ const wide=p=>p.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
 
 // --- home shows the section in both languages
 let p=await open(PAGE);
-if(!/multiplayer/i.test(await p.textContent('#menu')))bad.push('no multiplayer heading');
-await p.tap('#lang');if(!(await p.textContent('#menu')).includes('مع صحابك'))bad.push('no arabic multiplayer heading');await p.tap('#lang');
+if(!/multiplayer/i.test(await p.textContent('#dock')))bad.push('no multiplayer heading');
+await p.tap('#lang');if(!(await p.textContent('#dock')).includes('مع صحابك'))bad.push('no arabic multiplayer heading');await p.tap('#lang');
 
 // --- hot potato: 3 players, names saved, turns rotate, the one who knocks out the answer is out, last one wins
 await p.tap('[data-nav="mp"]');await p.tap('.cat[data-c="h"]');await p.tap('[data-padd]');

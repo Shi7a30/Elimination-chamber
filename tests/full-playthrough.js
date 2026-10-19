@@ -34,7 +34,7 @@ for(let c=0;c<subs.length;c++){
   const q2=await pg.textContent('#q2');ok(q2===(await pg.evaluate(l=>(l==='ar'?cur.qa:cur.q)[1],lang)),'question text '+q2);
   if(roundNo%2===0&&st0.coins>=30){ // lose then undo
    await pg.click(`.cell[data-i="${corr}"]`);let s=await S();ok(s.over==='lose'&&s.streak===0,'lose state');
-   ok(await pg.waitForSelector('#sheet.show',{timeout:3000}).then(()=>true,()=>false),'lose sheet');
+   ok(await pg.waitForSelector('#sheet.show',{timeout:3000}).then(()=>true,()=>false),'lose sheet '+subs[c]+' r'+r+' n'+roundNo);
    const shown=await pg.$$eval('.cell.flip',e=>e.length);ok(shown===1,'only answer flipped on loss, got '+shown);
    await pg.click('#sb .btn:not(.y)');s=await S();ok(s.over===false&&s.streak===st0.streak&&s.coins===st0.coins-30,'undo restores '+JSON.stringify(s));}
   const before=await S();
