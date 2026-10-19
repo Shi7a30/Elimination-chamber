@@ -196,7 +196,7 @@ Rd(["WHO IS THE","YOUNGEST FEMALE SINGER",Q],["مين","أصغر مطربة",QA]
   ["Hassan El Asmar",1959,"حسن الأسمر"],["Hakim",1962,"حكيم","Hakim (singer)"],["Ahmed Sheba",1965,"أحمد شيبة"],
   ["Ahmed Saad",1981,"أحمد سعد","Ahmed Saad (singer)"],["Mohamed Ramadan",1988,"محمد رمضان","Mohamed Ramadan (actor)"],["Mohamed Abdel Muttalib",1910,"محمد عبد المطلب"]],
   {h:"Egyptian singer",k:BORN,g:"p",s:"singers",m:"eg"}),
- Rd(["WHO IS THE","OLDEST 2000s STAR",Q],["مين","أكبر مطرب من جيل الألفينات في السن",QA],"min",[
+ Rd(["WHO IS THE","OLDEST NEW-GENERATION SINGER",Q],["مين","أكبر مطرب من الجيل الجديد في السن",QA],"min",[
   ["Mohamed Hamaki",1975,"محمد حماقي"],["Tamer Hosny",1977,"تامر حسني"],["Ramy Sabry",1978,"رامي صبري","Ramy Sabry (singer)"],
   ["Hamza Namira",1980,"حمزة نمرة"],["Hamada Helal",1980,"حمادة هلال"],["Amir Eid",1983,"أمير عيد"],
   ["Tamer Ashour",1984,"تامر عاشور"],["Ahmed Gamal",1988,"أحمد جمال","Ahmad Gamal (singer)"],["Marwan Pablo",1995,"مروان بابلو"]],
