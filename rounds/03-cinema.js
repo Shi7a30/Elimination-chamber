@@ -14,11 +14,11 @@ CATS.push(
   ["Avatar",2.923,"أفاتار","Avatar (2009 film)"],["Avengers: Endgame",2.799,"أفنجرز: إند جيم"],["Titanic",2.264,"تايتانيك","Titanic (1997 film)"],["Star Wars: The Force Awakens",2.071,"حرب النجوم: صحوة القوة"],
   ["Avengers: Infinity War",2.052,"أفنجرز: إنفينيتي وور"],["Spider-Man: No Way Home",1.921,"سبايدر مان: نو واي هوم"],["Jurassic World",1.671,"جوراسيك وورلد"],["The Lion King (2019)",1.662,"الأسد الملك (2019)","The Lion King (2019 film)"],
   ["Frozen II",1.453,"فروزن 2"]],{pre:["$",""],suf:["B"," مليار دولار"],dp:2,h:"film",k:["BOX OFFICE","الإيرادات"],s:"films",m:"w",d:2}),
- Rd(["WHICH IS THE","OLDEST MOVIE",Q],["أنهي","أقدم فيلم",QA],"min",[
+ Rd(["WHICH IS THE","OLDEST MOVIE",Q],["إيه","أقدم فيلم",QA],"min",[
   ["The Godfather",1972,"الأب الروحي"],["Jaws",1975,"الفك المفترس","Jaws (film)"],["Star Wars",1977,"حرب النجوم","Star Wars (film)"],["E.T.",1982,"إي تي","E.T. the Extra-Terrestrial"],
   ["Back to the Future",1985,"العودة للمستقبل"],["Jurassic Park",1993,"جوراسيك بارك","Jurassic Park (film)"],["Pulp Fiction",1994,"بالب فيكشن"],["Titanic",1997,"تايتانيك","Titanic (1997 film)"],
   ["The Matrix",1999,"ذا ماتريكس"]],{h:"film",k:["RELEASED","نزل سنة"],dt:["Film released", "نزول الفيلم"],g:"y",s:"films",m:"w",d:2}),
- Rd(["WHICH IS THE","OLDEST EGYPTIAN FILM",Q],["أنهي","أقدم فيلم مصري",QA],"min",[
+ Rd(["WHICH IS THE","OLDEST EGYPTIAN FILM",Q],["أنهي فيلم مصري","أقدم",QA],"min",[
   ["Bab el 7adid",1958,"باب الحديد","Cairo Station"],["Do3a2 el karawan",1959,"دعاء الكروان","The Nightingale's Prayer"],["Khally balak men zouzou",1972,"خلي بالك من زوزو","Watch Out for Zouzou"],
   ["El erhab wel kabab",1992,"الإرهاب والكباب","Terrorism and Kebab"],["Ismailia Rayeh Gai",1997,"إسماعيلية رايح جاي","Round Trip to Ismailia"],["El limby",2002,"اللمبي","El-Limby"],
   ["3omaret ya3koubian",2006,"عمارة يعقوبيان","The Yacoubian Building (film)"],["El feel el azra2",2014,"الفيل الأزرق","The Blue Elephant (film)"],
@@ -35,7 +35,7 @@ CATS.push(
    ["Se3idy fel gam3a el amrekia",1998,"صعيدي في الجامعة الأمريكية","Saidi fil Gamaa el Amrikia"],["Hammam fi amsterdam",1999,"همام في أمستردام","Hammam fi Amsterdam"],["El nazer",2000,"الناظر","El Nazer (film)"],
    ["Africano",2001,"أفريكانو","Africano (film)"],["Mafia",2002,"مافيا","Mafia (2002 film)"],["Tito",2004,"تيتو","Tito (2004 film)"],["El gezira",2007,"الجزيرة","The Island (2007 film)"],
    ["Welad rizk",2015,"ولاد رزق","Sons of Rizk"],["El mamar",2019,"الممر","El Mamar (film)"]],{h:"Egyptian film",k:["RELEASED","نزل سنة"],dt:["Film released", "نزول الفيلم"],g:"y",s:"films",m:"eg",d:2}),
-  Rd(["WHICH IS THE","OLDEST CLASSIC",Q],["أنهي","أقدم فيلم من الكلاسيكيات",QA],"min",[
+  Rd(["WHICH IS THE","OLDEST CLASSIC",Q],["إيه","أقدم فيلم من الكلاسيكيات",QA],"min",[
    ["Ghazal el banat",1949,"غزل البنات","The Flirtation of Girls"],["Ebn 7amido",1957,"ابن حميدو","Hamido's Son"],["El 7aram",1965,"الحرام","The Sin (1965 film)"],
    ["El zoga el tanya",1967,"الزوجة الثانية","The Second Wife (1967 film)"],["Shei2 men el khof",1969,"شيء من الخوف","A Taste of Fear"],["El karnak",1975,"الكرنك","Karnak (film)"],
    ["Sawa2 el otobees",1982,"سواق الأتوبيس","Sawwak El Otobees (film)"],["El bari2",1986,"البريء","The Innocent (1986 film)"],["El kit kat",1991,"الكيت كات","The Kit Kat"]],
@@ -44,7 +44,7 @@ CATS.push(
   ["Samir Ghanem",1937,"سمير غانم"],["Mohamed Sobhi",1948,"محمد صبحي","Mohamed Sobhi (actor)"],["Talaat Zakaria",1960,"طلعت زكريا"],
   ["Ashraf Abdel Baky",1963,"أشرف عبد الباقي"],["Bayoumi Fouad",1965,"بيومي فؤاد"],["Maged El Kedwany",1967,"ماجد الكدواني"],
   ["Hisham Maged",1980,"هشام ماجد"],["Mostafa Khater",1985,"مصطفى خاطر"],["Ali Rabie",1989,"علي ربيع"]],{h:"Egyptian actor",k:BORN,g:"p",s:"actors",m:"eg",d:1}),
- Rd(["WHICH COMEDY","CAME OUT LAST",Q],["أنهي فيلم كوميدي","أجدد",QA],"max",[
+ Rd(["WHICH COMEDY","CAME OUT LAST",Q],["إيه","أجدد فيلم كوميدي",QA],"max",[
   ["7arameya fi kg2",2001,"حرامية في كي جي تو","Thieves in KG2"],["Mido mashakel",2003,"ميدو مشاكل","Mido Mashakel"],["Zaki chan",2005,"زكي شان","Zaki Chan"],
   ["Keda reda",2007,"كده رضا","Keda Reda"],["1000 mabrouk",2009,"ألف مبروك","1000 Mabrouk"],["3asal eswed",2010,"عسل إسود","Asal Eswed"],
   ["X-large",2011,"إكس لارج","X-Large (film)"],["El badla",2018,"البدلة","El Badla"],["Wahed tany",2022,"واحد تاني","Wahed Tany"]],{h:"Egyptian film",k:["RELEASED","نزل سنة"],dt:["Film released", "نزول الفيلم"],g:"y",s:"films",m:"eg",d:2}),
@@ -84,7 +84,7 @@ CATS.push(
   ["Sandra Bullock",1964,"ساندرا بولوك"],["Halle Berry",1966,"هالي بيري"],["Julia Roberts",1967,"جوليا روبرتس"],
   ["Angelina Jolie",1975,"أنجلينا جولي"],["Natalie Portman",1981,"ناتالي بورتمان"],["Zendaya",1996,"زندايا"]],
   {h:"actress",k:BORN,g:"p",s:"actors",m:"w",d:2}),
- Rd(["WHO HAS WON THE","MOST ACTING OSCARS",Q],["مين","كسب أكتر أوسكار تمثيل",QA],"max",[
+ Rd(["WHO HAS WON THE","MOST ACTING OSCARS",Q],["مين","كسب أوسكار تمثيل أكتر",QA],"max",[
   ["Katharine Hepburn",4,"كاثرين هيبورن"],["Jack Nicholson",3,"جاك نيكلسون"],["Daniel Day-Lewis",3,"دانيال داي لويس"],
   ["Meryl Streep",3,"ميريل ستريب"],["Tom Hanks",2,"توم هانكس"],["Denzel Washington",2,"دينزل واشنطن"],
   ["Emma Stone",2,"إيما ستون"],["Anthony Hopkins",2,"أنتوني هوبكنز"],["Leonardo DiCaprio",1,"ليوناردو دي كابريو"]],
@@ -119,12 +119,12 @@ CATS.push(
   ["Mohamed Mounir",1954,"محمد منير"],["Amr Diab",1961,"عمرو دياب"],["Mohamed Fouad",1961,"محمد فؤاد"],
   ["Tamer Hosny",1977,"تامر حسني"],["Ruby",1981,"روبي","Ruby (Egyptian singer)"],["Mohamed Ramadan",1988,"محمد رمضان","Mohamed Ramadan (actor)"]],
   {h:"Egyptian singer",k:BORN,g:"p",s:"actors",m:"eg",d:2}),
- Rd(["WHICH MARVEL FILM","CAME OUT FIRST",Q],["أنهي فيلم مارفل","نزل الأول",QA],"min",[
+ Rd(["WHICH MARVEL FILM","CAME OUT FIRST",Q],["إيه","أقدم فيلم مارفل",QA],"min",[
   ["Iron Man",2008,"آيرون مان","Iron Man (2008 film)"],["Thor",2011,"ثور","Thor (film)"],["Captain America",2011,"كابتن أمريكا","Captain America: The First Avenger"],
   ["The Avengers",2012,"ذا أفنجرز","The Avengers (2012 film)"],["Guardians of the Galaxy",2014,"حراس المجرة","Guardians of the Galaxy (film)"],["Black Panther",2018,"بلاك بانثر","Black Panther (film)"],
   ["Avengers: Infinity War",2018,"أفنجرز: إنفينيتي وور"],["Avengers: Endgame",2019,"أفنجرز: إند جيم"],["Spider-Man: No Way Home",2021,"سبايدر مان: نو واي هوم"]],
   {h:"film",k:["RELEASED","نزل سنة"],dt:["Film released","نزول الفيلم"],g:"y",s:"films",m:"w",d:1}),
- Rd(["WHICH WIZARDING WORLD FILM","CAME OUT LAST",Q],["أنهي فيلم من عالم هاري بوتر","أجدد",QA],"max",[
+ Rd(["WHICH WIZARDING WORLD FILM","CAME OUT LAST",Q],["إيه","أجدد فيلم من عالم هاري بوتر",QA],"max",[
   ["Philosopher's Stone",2001,"حجر الفيلسوف","Harry Potter and the Philosopher's Stone (film)"],["Chamber of Secrets",2002,"حجرة الأسرار","Harry Potter and the Chamber of Secrets (film)"],
   ["Prisoner of Azkaban",2004,"سجين أزكابان","Harry Potter and the Prisoner of Azkaban (film)"],["Goblet of Fire",2005,"كأس النار","Harry Potter and the Goblet of Fire (film)"],
   ["Order of the Phoenix",2007,"جماعة العنقاء","Harry Potter and the Order of the Phoenix (film)"],["Half-Blood Prince",2009,"الأمير الهجين","Harry Potter and the Half-Blood Prince (film)"],
@@ -141,7 +141,7 @@ CATS.push(
   ["Frozen",1.290,"فروزن","Frozen (2013 film)"],["Incredibles 2",1.243,"الخارقون 2"],["Minions",1.159,"المينيونز","Minions (film)"],
   ["Toy Story 4",1.073,"حكاية لعبة 4"],["Moana 2",1.059,"موانا 2"],["Despicable Me 3",1.034,"أنا الحقير 3"]],
   {pre:["$",""],suf:["B"," مليار دولار"],dp:2,h:"film",k:["BOX OFFICE","الإيرادات"],s:"films",m:"w",d:2}),
- Rd(["WHICH FILM IS","THE LONGEST",Q],["أنهي","أطول فيلم",QA],"max",[
+ Rd(["WHICH FILM IS","THE LONGEST",Q],["إيه","أطول فيلم",QA],"max",[
   ["Gone with the Wind",238,"ذهب مع الريح","Gone with the Wind (film)"],["Killers of the Flower Moon",206,"قتلة زهرة القمر","Killers of the Flower Moon (film)"],["The Return of the King",201,"عودة الملك","The Lord of the Rings: The Return of the King"],
   ["Titanic",195,"تايتانيك","Titanic (1997 film)"],["Avengers: Endgame",181,"أفنجرز: إند جيم"],["Oppenheimer",180,"أوبنهايمر","Oppenheimer (film)"],
   ["The Godfather",175,"الأب الروحي"],["Interstellar",169,"إنترستيلار","Interstellar (film)"],["The Dark Knight",152,"فارس الظلام","The Dark Knight"]],
@@ -151,12 +151,12 @@ CATS.push(
   ["Forrest Gump",1994,"فورست جامب"],["Titanic",1997,"تايتانيك","Titanic (1997 film)"],["Gladiator",2000,"المصارع","Gladiator (2000 film)"],
   ["Slumdog Millionaire",2008,"المليونير المتشرد"],["Parasite",2019,"باراسايت","Parasite (2019 film)"],["Oppenheimer",2023,"أوبنهايمر","Oppenheimer (film)"]],
   {h:"film",k:["RELEASED","نزل سنة"],dt:["Film released","نزول الفيلم"],g:"y",s:"films",m:"w",d:1}),
- Rd(["WHICH FILM WON","THE MOST OSCARS",Q],["أنهي فيلم","كسب أكتر أوسكارات",QA],"max",[
+ Rd(["WHICH FILM WON","THE MOST OSCARS",Q],["مين","كسب أوسكارات أكتر",QA],"max",[
   ["Titanic",11,"تايتانيك","Titanic (1997 film)"],["West Side Story (1961)",10,"قصة الحي الغربي","West Side Story (1961 film)"],["The English Patient",9,"المريض الإنجليزي","The English Patient (film)"],
   ["Slumdog Millionaire",8,"المليونير المتشرد"],["Oppenheimer",7,"أوبنهايمر","Oppenheimer (film)"],["Forrest Gump",6,"فورست جامب"],
   ["Gladiator",5,"المصارع","Gladiator (2000 film)"],["Parasite",4,"باراسايت","Parasite (2019 film)"],["The Godfather",3,"الأب الروحي"]],
   {suf:[" 🏆"," 🏆"],h:"film",k:["OSCARS WON","أوسكارات"],s:"films",m:"w",d:2}),
- Rd(["WHICH ADEL IMAM FILM","CAME OUT FIRST",Q],["أنهي فيلم لعادل إمام","نزل الأول",QA],"min",[
+ Rd(["WHICH ADEL IMAM FILM","CAME OUT FIRST",Q],["إيه","أقدم فيلم لعادل إمام",QA],"min",[
   ["E7na betou3 el otobees",1979,"إحنا بتوع الأتوبيس","Ehna Btoo El Otobees"],["El Halfout",1985,"الهلفوت","El Halfout"],["Shams el zanati",1991,"شمس الزناتي","Shams El Zanati"],
   ["El mansy",1993,"المنسي","El Mansy"],["Toyour el zalam",1995,"طيور الظلام","Toyour El Zalam"],["El noum fel 3asal",1996,"النوم في العسل","El Noum fil Asal"],
   ["Amir el zalam",2002,"أمير الظلام","Amir El Zalam"],["El sefara fel 3emara",2005,"السفارة في العمارة","The Embassy in the Building"],["7assan we morcos",2008,"حسن ومرقص","Hassan and Morcos"]],
@@ -166,7 +166,7 @@ CATS.push(
   ["Belya w demagho el 3alya",2000,"بليه ودماغه العالية","Belya wa Demagho El Alya"],["Ga2na el bayan el taly",2001,"جاءنا البيان التالي","Ga'ana El Bayan El Taly"],["Sa7eb sa7bo",2002,"صاحب صاحبه","Sahib Sahbo"],
   ["Fool el seen el 3azim",2004,"فول الصين العظيم","Fool El Seen El Azim"],["Ramadan Mabrouk Abul Alamein Hamouda",2008,"رمضان مبروك أبو العلمين حمودة","Ramadan Mabrouk Abul Alamein Hamouda"],["Teta rahiba",2012,"تيتة رهيبة","Teta Rahiba"]],
   {h:"Egyptian film",k:["RELEASED","نزل سنة"],dt:["Film released","نزول الفيلم"],g:"y",s:"films",m:"eg",d:2}),
- Rd(["WHICH GOLDEN-AGE FILM","CAME OUT LAST",Q],["أنهي فيلم من الزمن الجميل","أجدد",QA],"max",[
+ Rd(["WHICH GOLDEN-AGE FILM","CAME OUT LAST",Q],["إيه","أجدد فيلم من الزمن الجميل",QA],"max",[
   ["El 3azima",1939,"العزيمة","Determination (1939 film)"],["Lak yom ya zalem",1951,"لك يوم يا ظالم","Lak Yawm Ya Zalim"],["Shabab emra2a",1956,"شباب امرأة","A Woman's Youth"],
   ["Rodda Qalbi",1957,"رد قلبي","Rodda Qalbi"],["Ana 7orra",1959,"أنا حرة","I Am Free (film)"],["El Mummia",1969,"المومياء","The Night of Counting the Years"],
   ["Imbaratoriyet Meem",1972,"إمبراطورية ميم","Imbaratoriyet Meem"],["El karnak",1975,"الكرنك","Karnak (film)"],["Ahl El Qemma",1981,"أهل القمة","Ahl El Qemma"]],
@@ -181,7 +181,7 @@ CATS.push(
   ["Hepta",2016,"هيبتا","Hepta: The Last Lecture"],["El kenz",2017,"الكنز","The Treasure (2017 film)"],["El feel el azra2 2",2019,"الفيل الأزرق 2","The Blue Elephant 2"],
   ["Sahib El Maqam",2020,"صاحب المقام","Sahib El Maqam"],["Kira wel gin",2022,"كيرة والجن","Kira & El Gin"],["Welad rizk 3",2024,"ولاد رزق 3","Sons of Rizk 3"]],
   {h:"Egyptian film",k:["RELEASED","نزل سنة"],dt:["Film released","نزول الفيلم"],g:"y",s:"films",m:"eg",d:2}),
- Rd(["WHICH AHMED ZAKI FILM","CAME OUT FIRST",Q],["أنهي فيلم لأحمد زكي","نزل الأول",QA],"min",[
+ Rd(["WHICH AHMED ZAKI FILM","CAME OUT FIRST",Q],["إيه","أقدم فيلم لأحمد زكي",QA],"min",[
   ["El bari2",1986,"البريء","The Innocent (1986 film)"],["El beh el bawwab",1987,"البيه البواب","El Beh El Bawab"],["Kaboria",1990,"كابوريا","Kaboria"],
   ["Nasser 56",1996,"ناصر 56","Nasser 56"],["E7dak el sora tetla3 7elwa",1998,"اضحك الصورة تطلع حلوة","Edhak El Sora Tetla' Helwa"],["Ard el khof",2000,"أرض الخوف","Land of Fear"],
   ["Ayam el sadat",2001,"أيام السادات","Days of Sadat"],["Ma3aly el wazir",2002,"معالي الوزير","Mo'ali El Wazir"],["7alim",2006,"حليم","Halim (film)"]],

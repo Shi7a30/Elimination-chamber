@@ -10,11 +10,11 @@ CATS.push(
   ["Robert Downey Jr",1965,"روبرت داوني جونيور","Robert Downey Jr."],["Mark Ruffalo",1967,"مارك روفالو"],["Paul Rudd",1969,"بول رود"],["Benedict Cumberbatch",1976,"بنديكت كامبرباتش"],
   ["Chris Pratt",1979,"كريس برات"],["Chris Evans",1981,"كريس إيفانز","Chris Evans (actor)"],["Chris Hemsworth",1983,"كريس هيمسورث"],["Scarlett Johansson",1984,"سكارليت جوهانسون"],
   ["Tom Holland",1996,"توم هولاند"]],{h:"actor",k:BORN,g:"p",s:"actors",m:"w",d:2}),
- Rd(["WHICH IS THE","OLDEST CARTOON",Q],["أنهي","أقدم كرتون",QA],"min",[
+ Rd(["WHICH IS THE","OLDEST CARTOON",Q],["إيه","أقدم كرتون",QA],"min",[
   ["Mickey Mouse",1928,"ميكي ماوس"],["Bugs Bunny",1940,"باجز باني"],["Tom and Jerry",1940,"توم وجيري"],["Scooby-Doo",1969,"سكوبي دو"],
   ["The Simpsons",1987,"عيلة سيمبسون"],["SpongeBob",1999,"سبونج بوب","SpongeBob SquarePants"],["Shrek",2001,"شريك"],["Peppa Pig",2004,"بيبا بيج"],
   ["Bluey",2018,"بلوي","Bluey (2018 TV series)"]],{h:"cartoon",k:["FIRST SHOWN","أول ظهور"],dt:["Cartoon first shown", "أول ظهور للكرتون"],g:"y",s:"celebs",m:"w",d:1}),
- Rd(["WHICH CHILDHOOD ICON","CAME OUT FIRST",Q],["أنهي حاجة من أيام الطفولة","ظهرت الأول",QA],"min",[
+ Rd(["WHICH CHILDHOOD ICON","CAME OUT FIRST",Q],["إيه","أقدم حاجة من أيام الطفولة",QA],"min",[
   ["Samir Magazine",1956,"مجلة سمير","Samir (magazine)"],["Bogy & Tamtam",1983,"بوجي وطمطم"],["Bakkar",1998,"بكار","Bakkar"],["Alam Simsim",2000,"عالم سمسم"],
   ["Super Henedy",2007,"سوبر هنيدي"],["Abla Fahita",2010,"أبلة فاهيتا"],["Qesas El Hayawan fel Quran",2011,"قصص الحيوان في القرآن","Qesas El Hayawan fel Quran"],["The Knight and the Princess",2019,"الفارس والأميرة"],
   ["Ye7ia w konooz",2022,"يحيى وكنوز","Yehia w Kenooz"]],{h:"Egyptian cartoon",k:["DEBUT","أول ظهور"],dt:["First appeared", "أول ظهور"],g:"y",s:"celebs",m:"eg",d:2}),
@@ -25,7 +25,7 @@ CATS.push(
  Rd(["WHO IS THE","TALLEST ATHLETE",Q],["مين","أطول رياضي",QA],"max",[
   ["Shaquille O'Neal",216,"شاكيل أونيل"],["LeBron James",206,"ليبرون جيمس"],["Michael Jordan",198,"مايكل جوردان"],["Kobe Bryant",198,"كوبي براينت"],["Usain Bolt",195,"يوسين بولت"],["Novak Djokovic",188,"نوفاك ديوكوفيتش"],["Roger Federer",185,"روجر فيدرر"],["Mike Tyson",178,"مايك تايسون"],["Simone Biles",142,"سيمون بايلز"]],
   {h:"athlete",k:["HEIGHT","الطول"],suf:[" cm"," سم"],s:"celebs",m:"w",d:1}),
- Rd(["WHO HAS THE","MOST OLYMPIC GOLDS",Q],["مين","كسب أكتر ميداليات دهب في الأولمبياد",QA],"max",[
+ Rd(["WHO HAS THE","MOST OLYMPIC GOLDS",Q],["مين","كسب دهب في الأولمبياد أكتر",QA],"max",[
   ["Michael Phelps",23,"مايكل فيلبس"],["Carl Lewis",9,"كارل لويس"],["Katie Ledecky",9,"كاتي ليديكي"],["Usain Bolt",8,"يوسين بولت"],["Simone Biles",7,"سيمون بايلز"],["Serena Williams",4,"سيرينا ويليامز"],["Mo Farah",4,"مو فرح"],["LeBron James",3,"ليبرون جيمس"],["Rafael Nadal",2,"رافاييل نادال"]],
   {h:"athlete",k:["OLYMPIC GOLDS","ميداليات دهب"],suf:TRA,s:"celebs",m:"w",d:1}),
  Rd(["WHO IS THE","YOUNGEST INTERNET STAR",Q],["مين","أصغر نجم إنترنت",QA],"max",[
@@ -38,17 +38,17 @@ CATS.push(
   ["Jeff Bezos",1964,"جيف بيزوس"],["Elon Musk",1971,"إيلون ماسك"],["Larry Page",1973,"لاري بيدج"],
   ["Mark Zuckerberg",1984,"مارك زوكربيرج"],["Sam Altman",1985,"سام ألتمان"],["Evan Spiegel",1990,"إيفان شبيجل"]],
   {h:"businessman",k:BORN,g:"p",s:"celebs",m:"w",d:2}),
- Rd(["WHICH CARTOON CHARACTER","APPEARED FIRST",Q],["أنهي شخصية كرتون","ظهرت الأول",QA],"min",[
+ Rd(["WHICH CARTOON CHARACTER","APPEARED FIRST",Q],["مين","أقدم شخصية كرتون",QA],"min",[
   ["Popeye",1929,"باباي"],["Betty Boop",1930,"بيتي بوب"],["Goofy",1932,"بندق"],
   ["Donald Duck",1934,"بطوط"],["Woody Woodpecker",1940,"نقار الخشب"],["Pink Panther",1963,"النمر الوردي","Pink Panther (character)"],
   ["Garfield",1978,"جارفيلد"],["Pikachu",1996,"بيكاتشو"],["SpongeBob",1999,"سبونج بوب","SpongeBob SquarePants"]],
   {h:"cartoon character",k:["FIRST APPEARED","أول ظهور"],s:"celebs",m:"w",d:3}),
- Rd(["WHICH SUPERHERO","APPEARED FIRST",Q],["أنهي بطل خارق","ظهر الأول",QA],"min",[
+ Rd(["WHICH SUPERHERO","APPEARED FIRST",Q],["مين","أقدم بطل خارق",QA],"min",[
   ["Superman",1938,"سوبرمان"],["Batman",1939,"باتمان"],["The Flash",1940,"فلاش","Jay Garrick"],
   ["Wonder Woman",1941,"وندر وومان"],["Spider-Man",1962,"سبايدر مان"],["Hulk",1962,"هالك"],
   ["Wolverine",1974,"وولفرين","Wolverine (character)"],["Venom",1984,"فينوم","Venom (character)"],["Deadpool",1991,"ديدبول"]],
   {h:"comic character",k:["FIRST COMIC","أول ظهور في الكوميكس"],s:"celebs",m:"w",d:2}),
- Rd(["WHO HAS THE","MOST TENNIS GRAND SLAMS",Q],["مين","عنده أكتر جراند سلام تنس",QA],"max",[
+ Rd(["WHO HAS THE","MOST TENNIS GRAND SLAMS",Q],["مين","كسب جراند سلام أكتر",QA],"max",[
   ["Novak Djokovic",24,"نوفاك ديوكوفيتش"],["Rafael Nadal",22,"رافاييل نادال"],["Roger Federer",20,"روجر فيدرر"],
   ["Pete Sampras",14,"بيت سامبراس"],["Björn Borg",11,"بيورن بورج"],["Andre Agassi",8,"أندريه أغاسي"],
   ["Boris Becker",6,"بوريس بيكر"],["Andy Murray",3,"آندي موراي"],["Stan Wawrinka",3,"ستان فافرينكا"]],
@@ -63,12 +63,12 @@ CATS.push(
   ["LeBron James",1984,"ليبرون جيمس"],["Lewis Hamilton",1985,"لويس هاميلتون"],["Usain Bolt",1986,"يوسين بولت"],
   ["Simone Biles",1997,"سيمون بايلز"],["Carlos Alcaraz",2003,"كارلوس ألكاراز"],["Victor Wembanyama",2004,"فيكتور ويمبانياما"]],
   {h:"athlete",k:BORN,g:"p",s:"celebs",m:"w",d:3}),
- Rd(["WHO HAS THE","MOST F1 TITLES",Q],["مين","عنده أكتر بطولات فورمولا 1",QA],"max",[
+ Rd(["WHO HAS THE","MOST F1 TITLES",Q],["مين","كسب بطولة فورمولا 1 أكتر",QA],"max",[
   ["Michael Schumacher",7,"مايكل شوماخر"],["Juan Manuel Fangio",5,"خوان مانويل فانجيو"],["Alain Prost",4,"آلان بروست"],
   ["Sebastian Vettel",4,"سيباستيان فيتل"],["Max Verstappen",4,"ماكس فيرستابن"],["Ayrton Senna",3,"آيرتون سينا"],
   ["Niki Lauda",3,"نيكي لاودا"],["Fernando Alonso",2,"فرناندو ألونسو"],["Lando Norris",1,"لاندو نوريس"]],
   {suf:TRA,h:"racing driver",k:["F1 WORLD TITLES","بطولات العالم"],s:"celebs",m:"w",d:1}),
- Rd(["WHO HAS THE","MOST NBA TITLES",Q],["مين","عنده أكتر بطولات NBA",QA],"max",[
+ Rd(["WHO HAS THE","MOST NBA TITLES",Q],["مين","كسب بطولة NBA أكتر",QA],"max",[
   ["Bill Russell",11,"بيل راسل"],["Robert Horry",7,"روبرت هوري"],["Michael Jordan",6,"مايكل جوردان"],
   ["Kobe Bryant",5,"كوبي براينت"],["Tim Duncan",5,"تيم دنكان"],["LeBron James",4,"ليبرون جيمس"],
   ["Stephen Curry",4,"ستيفن كاري"],["Shaquille O'Neal",4,"شاكيل أونيل"],["Kevin Durant",2,"كيفن ديورانت"]],
