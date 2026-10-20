@@ -8294,7 +8294,8 @@
   "ar": "",
   "ar_hint": "",
   "logo": true,
-  "skip": false
+  "skip": false,
+  "url": "https://upload.wikimedia.org/wikipedia/ar/6/62/%D8%B4%D8%B9%D8%A7%D8%B1_%D8%B3%D9%86%D8%A7%D8%A8_%D8%B4%D8%A7%D8%AA.png?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "TikTok",
@@ -8617,7 +8618,8 @@
   "ar": "العربي",
   "ar_hint": "شركة",
   "logo": true,
-  "skip": false
+  "skip": false,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Elaraby_Group.png/500px-Elaraby_Group.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  {
   "name": "Mo'men",
@@ -8663,8 +8665,7 @@
   "ar": "زووبا",
   "ar_hint": "شركة",
   "logo": true,
-  "skip": false,
-  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Zooba-koshari.jpg/500px-Zooba-koshari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  "skip": false
  },
  {
   "name": "El Rashidi El Mizan",
@@ -18452,7 +18453,9 @@
   "ar": "الأخبار",
   "ar_hint": "جرنال",
   "logo": true,
-  "skip": false
+  "skip": false,
+  "url": "https://upload.wikimedia.org/wikipedia/ar/4/46/%D8%AC%D8%B1%D9%8A%D8%AF%D8%A9_%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1.jpg?utm_source=ar.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "fit": true
  },
  {
   "name": "Al-Gomhuria",
@@ -18625,7 +18628,8 @@
   "ar": "تويتش",
   "ar_hint": "أبلكيشن",
   "logo": true,
-  "skip": false
+  "skip": false,
+  "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Twitch_Glitch_Logo_Purple.svg/500px-Twitch_Glitch_Logo_Purple.svg.png"
  },
  {
   "name": "Anghami",
@@ -18689,7 +18693,8 @@
   "ar": "دكتور بيبر",
   "ar_hint": "حاجة ساقعة",
   "logo": true,
-  "skip": false
+  "skip": false,
+  "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/1/19/Dr_Pepper_modern.svg/500px-Dr_Pepper_modern.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
  },
  {
   "name": "Pepsi",
@@ -19598,7 +19603,8 @@
   "ar": "هيلمانز",
   "ar_hint": "براند أكل",
   "logo": true,
-  "skip": false
+  "skip": false,
+  "url": "https://upload.wikimedia.org/wikipedia/en/a/a7/Hellmann%27s_Logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
  },
  {
   "name": "Vegemite",
@@ -20543,7 +20549,9 @@
   "ar": "بريوش دوريه",
   "ar_hint": "حلواني",
   "logo": true,
-  "skip": false
+  "skip": false,
+  "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Brioche_Doree.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "fit": true
  },
  {
   "name": "Le Pain Quotidien",
