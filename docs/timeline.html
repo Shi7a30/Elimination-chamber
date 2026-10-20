@@ -1,0 +1,404 @@
+<title>Shelhom Timeline</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;800;900&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: one narrow column; each day is a band, each version is a flip-card tile beside its notes. Colors come from the game itself. */
+:root{
+  --bg:#fafafa; --fg:#1c1c1c; --mut:#6f6b62; --line:#e4e0d6; --tile:#2a2a2a; --tile-fg:#fafafa;
+  --y:#f7c83d; --y-ink:#8a6400; --g:#2fa85a; --r:#d23f44; --b:#3d7fd6; --p:#8a5cd0;
+  --chip:#f1eee6;
+  --f-disp:"Cairo","Segoe UI",system-ui,sans-serif;
+  --f-body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#161616; --fg:#f2f2f2; --mut:#a39f95; --line:#2f2d29; --tile:#f7c83d; --tile-fg:#1c1c1c;
+  --y:#f7c83d; --y-ink:#f7c83d; --g:#3ecf6e; --r:#ff6b6f; --b:#6fa8ff; --p:#b48cff; --chip:#24221e; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#161616; --fg:#f2f2f2; --mut:#a39f95; --line:#2f2d29; --tile:#f7c83d; --tile-fg:#1c1c1c;
+  --y:#f7c83d; --y-ink:#f7c83d; --g:#3ecf6e; --r:#ff6b6f; --b:#6fa8ff; --p:#b48cff; --chip:#24221e; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:400 16px/1.55 var(--f-body)}
+.wrap{max-width:760px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:40px 64px}
+h1,h2,h3{font-family:var(--f-disp);text-wrap:balance;margin:0}
+.hero{display:grid;gap:14px;padding-bottom:28px;border-bottom:2px solid var(--fg)}
+.eyebrow{font:600 12px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+h1{font-weight:900;font-size:clamp(40px,9vw,68px);line-height:1}
+h1 .ar{color:var(--y-ink);font-weight:800}
+.lede{max-width:60ch;color:var(--mut);margin:0}
+.lede b{color:var(--fg);font-weight:600}
+.stats{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:6px}
+.stat{display:grid}
+.stat b{font:800 26px/1.1 var(--f-disp);font-variant-numeric:tabular-nums}
+.stat span{font-size:13px;color:var(--mut)}
+
+.chart{margin-top:30px}
+.chart h2{font-size:20px;font-weight:800}
+.chart p{margin:2px 0 10px;color:var(--mut);font-size:14px}
+.chart-box{overflow-x:auto}
+.chart svg{display:block;width:100%;min-width:520px;height:auto}
+.chart text{font-family:var(--f-mono);font-size:10px;fill:var(--mut)}
+.chart .val{fill:var(--fg);font-weight:500}
+.chart .grid{stroke:var(--line)} .chart .up{fill:var(--y)} .chart .flat{fill:var(--line)}
+
+.legend{display:flex;flex-wrap:wrap;gap:6px;margin:30px 0 4px}
+.tag{display:inline-flex;align-items:center;gap:6px;font:600 11px/1 var(--f-body);letter-spacing:.06em;text-transform:uppercase;padding:5px 8px;border-radius:99px;background:var(--chip);color:var(--fg)}
+.tag::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--c)}
+.t-content{--c:var(--y)} .t-mode{--c:var(--g)} .t-photo{--c:var(--b)} .t-fix{--c:var(--r)} .t-build{--c:var(--p)}
+
+.day{margin-top:36px}
+.day-h{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.day-h h2{font-size:24px;font-weight:900}
+.day-h span{color:var(--mut);font-size:14px}
+.v{display:grid;grid-template-columns:64px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+.v:last-child{border-bottom:0}
+.card{width:64px;aspect-ratio:1;max-width:100%;border-radius:10px;background:var(--tile);color:var(--tile-fg);display:grid;place-items:center;align-content:center}
+.card b{font:900 22px/1 var(--f-disp)}
+.card small{font:500 10px/1.2 var(--f-mono);opacity:.75;margin-top:3px}
+.card.pre{background:transparent;color:var(--fg);border:2px dashed var(--line)}
+.card.na{background:transparent;color:var(--mut);border:2px solid var(--line)}
+.body{min-width:0;display:grid;gap:6px}
+.body h3{font-size:18px;font-weight:800;line-height:1.3}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.body ul{margin:0;padding-left:18px;display:grid;gap:3px}
+.body p{margin:0}
+.ask{margin:2px 0 0;padding-left:12px;border-left:3px solid var(--y);color:var(--mut);font-size:14px;font-style:italic}
+.meta{font:500 12px/1.4 var(--f-mono);color:var(--mut)}
+.now{margin-top:40px;padding:20px;border:2px solid var(--fg);border-radius:12px;display:grid;gap:8px}
+.now h2{font-size:22px;font-weight:900}
+.now p{margin:0}
+a{color:inherit;text-decoration-color:var(--y);text-decoration-thickness:2px;text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--y);outline-offset:2px}
+@media (max-width:420px){.v{grid-template-columns:52px 1fr;gap:12px}.card{width:52px}.card b{font-size:18px}}
+</style>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow">Game history · Oct 9 – 20, 2026</div>
+    <h1>Shelhom! <span class="ar" lang="ar">شيلهم</span></h1>
+    <p class="lede">From a 14-round game called <b>Eliminate</b> to a bilingual trivia game with <b>140 rounds</b>, three play modes and a photo on almost every card. Every published version, in order.</p>
+    <div class="stats">
+      <div class="stat"><b>26</b><span>versions</span></div>
+      <div class="stat"><b>14 → 140</b><span>rounds</span></div>
+      <div class="stat"><b>1,046</b><span>unique cards</span></div>
+      <div class="stat"><b>3</b><span>modes</span></div>
+      <div class="stat"><b>2</b><span>languages</span></div>
+    </div>
+  </header>
+
+  <section class="chart" aria-labelledby="ch">
+    <h2 id="ch">Rounds in each version</h2>
+    <p>Hand-written rounds only. Endless mode also makes up its own mixed questions.</p>
+    <div class="chart-box"><svg id="bars" viewBox="0 0 640 190" role="img" aria-label="Bar chart of rounds per version, rising from 14 at version 4 to 140 at version 24 through 26"></svg></div>
+  </section>
+
+  <div class="legend" aria-label="Kinds of change">
+    <span class="tag t-content">Content</span><span class="tag t-mode">Modes &amp; play</span><span class="tag t-photo">Photos</span><span class="tag t-fix">Fixes &amp; fact-checks</span><span class="tag t-build">Tech &amp; tooling</span>
+  </div>
+
+  <section class="day">
+    <div class="day-h"><h2>Before Oct 9</h2><span>Another chat</span></div>
+    <article class="v">
+      <div class="card pre"><b>v1–4</b></div>
+      <div class="body">
+        <h3>"Eliminate" is born</h3>
+        <div class="tags"><span class="tag t-content">Content</span><span class="tag t-mode">Modes &amp; play</span></div>
+        <ul>
+          <li>Built in the "building and coding projects" chat.</li>
+          <li>The core idea: 9 cards, eliminate all but the right one.</li>
+          <li>14 rounds in 6 categories: Egyptian Football, World Football, Cinema, TV, Music, Pop Culture.</li>
+          <li>No photos yet, except the ones you add yourself with 📷.</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <section class="day">
+    <div class="day-h"><h2>Thu, Oct 9</h2><span>v5 – v12 · the big first day</span></div>
+    <article class="v">
+      <div class="card na"><b>⇣</b><small>17:49</small></div>
+      <div class="body">
+        <h3>Moved into GitHub</h3>
+        <div class="tags"><span class="tag t-build">Tech</span></div>
+        <p>The artifact was imported into the <code>elimination-chamber</code> repo, so every change after this has a saved history.</p>
+        <p class="ask">"Let's continue it here so we can polish it up"</p>
+      </div>
+    </article>
+    <article class="v">
+      <div class="card"><b>v5</b><small>17:56</small></div>
+      <div class="body">
+        <h3>Polish pass</h3>
+        <div class="tags"><span class="tag t-fix">Fixes</span><span class="tag t-content">Content</span><span class="tag t-mode">Play</span></div>
+        <ul>
+          <li>Bug fixes, sound, confetti and other effects.</li>
+          <li>Progress tracking per category.</li>
+          <li>New categories: Geography, Animals, Games &amp; Tech. Rounds 14 → 30.</li>
+        </ul>
+        <p class="ask">"How can I make the game better?"</p>
+      </div>
+    </article>
+    <article class="v">
+      <div class="card"><b>v6</b><small>18:14</small></div>
+      <div class="body">
+        <h3>Egyptian Arabic and real photos</h3>
+        <div class="tags"><span class="tag t-content">Content</span><span class="tag t-photo">Photos</span><span class="tag t-fix">Fact-check</span></div>
+        <ul>
+          <li>Full Egyptian Arabic version with right-to-left layout.</li>
+          <li>Photos looked up from Wikipedia.</li>
+          <li>First check of every answer.</li>
+          <li>Then a GitHub Action that fetches the photos, with logos for brands.</li>
+        </ul>
+        <p class="ask">"Try to get celebrity photos… double check all the answers… add Arabic, but make sure it's Egyptian Arabic"</p>
+      </div>
+    </article>
+    <article class="v">
+      <div class="card"><b>v7</b><small>18:46</small></div>
+      <div class="body">
+        <h3>Endless mode and flip cards</h3>
+        <div class="tags"><span class="tag t-mode">Modes</span><span class="tag t-photo">Photos</span></div>
+        <ul>
+          <li>♾ Endless: mixed rounds until you miss, with best score saved.</li>
+          <li>Eliminated cards flip over to show their value.</li>
+          <li>Photos built into the page, so they show without internet.</li>
+        </ul>
+        <p class="ask">"Create an endless mode… when an answer is eliminated, flip the card"</p>
+      </div>
+    </article>
+    <article class="v">
+      <div class="card"><b>v8</b><small>19:01</small></div>
+      <div class="body">
+        <h3>Renamed to Shelhom!</h3>
+        <div class="tags"><span class="tag t-content">Brand</span></div>
+        <p>Eliminate becomes <b>Shelhom</b>, written to sound like شيلهم.</p>
+      </div>
+    </article>
+    <article class="v">
+      <div class="card"><b>v9</b><small>19:04</small></div>
+      <div class="body">
+        <h3>Phone fix</h3>
+        <div class="tags"><span class="tag t-fix">Fixes</span></div>
+        <p>The page showed only the top bar on a phone. Startup errors and "can't run here" hints now show on the page instead of a blank screen.</p>
+      </div>
+    </article>
+    <article class="v">
+      <div class="card"><b>v10</b><small>19:55</small></div>
+      <div class="body">
+        <h3>Egypt / World / Both</h3>
+        <div class="tags"><span class="tag t-mode">Modes</span><span class="tag t-content">Content</span></div>
+        <ul>
+          <li>Region filter for the whole game.</li>
+          <li>Menu grouped into big categories with subcategories.</li>
+          <li>Rounds 30 → 35.</li>
+        </ul>
+      </div>
+    </article>
+    <article class="v">
+      <div class="card"><b>v11</b><small>20:14</small></div>
+      <div class="body">
+        <h3>15 Egyptian rounds</h3>
+        <div class="tags"><span class="tag t-content">Content</span></div>
+        <p>New rounds in every Egyptian subcategory. Rounds 35 → 50.</p>
+      </div>
+    </article>
+    <article class="v">
+      <div class="card"><b>v12</b><small>20:55</small></div>
+      <div class="body">
+        <h3>First fact-check pass</h3>
+        <div class="tags"><span class="tag t-fix">Fact-check</span></div>
+        <p>Outdated and disputed values fixed.</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="day">
+    <div class="day-h"><h2>Fri, Oct 10</h2><span>v13 – v16 · the Duel arrives</span></div>
+    <article class="v">
+      <div class="card"><b>v13</b><small>11:18</small></div>
+      <div class="body">
+        <h3>Second fact-check pass</h3>
+        <div class="tags"><span class="tag t-fix">Fact-check</span></div>
+        <p>Disputed birth years reverted and outdated figures updated, after you spotted mistakes while playing.</p>
+      </div>
+    </article>
+    <article class="v">
+      <div class="card"><b>v14</b><small>11:34</small></div>
+      <div class="body">
+        <h3>ده ولا ده mode</h3>
+        <div class="tags"><span class="tag t-mode">Modes</span></div>
+        <p>Two cards, one question, pick the right one until you miss.</p>
+        <p class="ask">"You only give the player 2 options… like 'Cristiano or Messi'"</p>
+      </div>
+    </article>
+    <article class="v">
+      <div class="card"><b>v15</b><small>12:01</small></div>
+      <div class="body">
+        <h3>The winner stays</h3>
+        <div class="tags"><span class="tag t-mode">Play</span></div>
+        <p>One question per run, and the card you picked stays to face a new challenger.</p>
+      </div>
+    </article>
+    <article class="v">
+      <div class="card"><b>v16</b><small>17:16</small></div>
+      <div class="body">
+        <h3>Duel, group pages and 32 new rounds</h3>
+        <div class="tags"><span class="tag t-mode">Modes</span><span class="tag t-content">Content</span><span class="tag t-photo">Photos</span></div>
+        <ul>
+          <li>English name "Duel"; the Arabic keeps ده ولا ده.</li>
+          <li>Main menu condensed: tap a group to open its subcategories.</li>
+          <li>Egypt and World rounds kept apart. Rounds 50 → 82.</li>
+          <li>Photos hand-picked for 22 cards; a failed fetch keeps the last good photo.</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <section class="day">
+    <div class="day-h"><h2>Mon, Oct 12</h2><span>v17 – v23 · Knowledge and a lighter page</span></div>
+    <article class="v">
+      <div class="card"><b>v17</b><small>11:29</small></div>
+      <div class="body">
+        <h3>Pick a Duel category</h3>
+        <div class="tags"><span class="tag t-mode">Modes</span></div>
+        <p>Play the Duel on everything or on one subcategory, with a best run saved for each.</p>
+      </div>
+    </article>
+    <article class="v">
+      <div class="card"><b>v18</b><small>13:16</small></div>
+      <div class="body">
+        <h3>No repeats in a Duel</h3>
+        <div class="tags"><span class="tag t-fix">Fixes</span></div>
+        <p>The same pair never shows twice in one run.</p>
+      </div>
+    </article>
+    <article class="v">
+      <div class="card"><b>v19</b><small>21:31</small></div>
+      <div class="body">
+        <h3>29 Knowledge rounds</h3>
+        <div class="tags"><span class="tag t-content">Content</span></div>
+        <p>Geography, history and animals. Island areas shown in thousands of km² so they fit on a card. Rounds 82 → 111.</p>
+        <p class="ask">"Some questions still repeat in the knowledge category. Add more general knowledge questions."</p>
+      </div>
+    </article>
+    <article class="v">
+      <div class="card"><b>v20</b><small>21:40</small></div>
+      <div class="body">
+        <h3>Photos as WebP</h3>
+        <div class="tags"><span class="tag t-build">Tech</span><span class="tag t-fix">Fixes</span></div>
+        <p>Shared links stopped opening for friends. Smaller photos took the page from 8.5 MB to 5.4 MB.</p>
+      </div>
+    </article>
+    <article class="v">
+      <div class="card"><b>v21</b><small>21:49</small></div>
+      <div class="body">
+        <h3>Photos in their own files</h3>
+        <div class="tags"><span class="tag t-build">Tech</span></div>
+        <p>Photos moved to <code>photos/p1–p4.js</code>. The game page itself is now about 120 KB, and the link works.</p>
+      </div>
+    </article>
+    <article class="v">
+      <div class="card"><b>v22</b><small>21:58</small></div>
+      <div class="body">
+        <h3>Clear "which came first?"</h3>
+        <div class="tags"><span class="tag t-fix">Fixes</span></div>
+        <p>In mixed year questions, each card now says what its year means, such as "Film released" or "Club founded".</p>
+        <p class="ask">"It says 'which came first?' and London is one of the answers…"</p>
+      </div>
+    </article>
+    <article class="v">
+      <div class="card"><b>v23</b><small>22:40</small></div>
+      <div class="body">
+        <h3>New groups set up, photo fixes</h3>
+        <div class="tags"><span class="tag t-content">Content</span><span class="tag t-photo">Photos</span></div>
+        <ul>
+          <li>Food &amp; Drinks and Childhood &amp; Nostalgia added for Egypt only, hidden until they have rounds.</li>
+          <li>Turkey the bird no longer shows the Turkish flag; Barcelona the city gets its own photo.</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <section class="day">
+    <div class="day-h"><h2>Tue, Oct 13</h2><span>v24 – v26 · more questions, better pictures</span></div>
+    <article class="v">
+      <div class="card"><b>v24</b><small>07:36</small></div>
+      <div class="body">
+        <h3>Food, nostalgia and "who has more?"</h3>
+        <div class="tags"><span class="tag t-content">Content</span></div>
+        <ul>
+          <li>17 Egyptian Food &amp; Drinks and Childhood &amp; Nostalgia rounds.</li>
+          <li>8 international rounds such as "who is taller?" and "who won more Oscars?".</li>
+          <li>4 Egyptian football "who has more" rounds. Rounds 111 → 140.</li>
+        </ul>
+        <p class="ask">"Add more questions like 'who is taller?' 'Who won more Oscars?'"</p>
+      </div>
+    </article>
+    <article class="v">
+      <div class="card"><b>v25</b><small>09:20</small></div>
+      <div class="body">
+        <h3>No duplicate photos</h3>
+        <div class="tags"><span class="tag t-photo">Photos</span><span class="tag t-fix">Fixes</span></div>
+        <ul>
+          <li>Two cards with the same picture never share a board or a Duel.</li>
+          <li>Distinct photos for cards that shared one; missing ones filled in.</li>
+          <li>Letter tiles where no reliable photo exists.</li>
+        </ul>
+        <p class="ask">"There are still missing photos and duplicate photos"</p>
+      </div>
+    </article>
+    <article class="v">
+      <div class="card"><b>v26</b><small>14:30</small></div>
+      <div class="body">
+        <h3>Posters, scenes and album covers</h3>
+        <div class="tags"><span class="tag t-photo">Photos</span></div>
+        <ul>
+          <li>Films, series, cartoons and plays show a poster or a famous scene instead of the star.</li>
+          <li>Songs show the album or single cover first.</li>
+          <li>The picking rules are written in the README.</li>
+        </ul>
+        <p class="ask">"For songs prioritize the album cover over the picture of the artist."</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="day">
+    <div class="day-h"><h2>Wed, Oct 14</h2><span>Getting ready for an app</span></div>
+    <article class="v">
+      <div class="card na"><b>📄</b></div>
+      <div class="body">
+        <h3>Project summary and tests</h3>
+        <div class="tags"><span class="tag t-build">Tooling</span></div>
+        <ul>
+          <li><code>PROJECT_SUMMARY.md</code>: the game, modes, content, photo pipeline, architecture and an app roadmap.</li>
+          <li>9 Playwright checks added to the repo and run with <code>npm test</code>, including a play-through of every round.</li>
+          <li>Everything packed as <code>Shelhom.zip</code> for your Mac.</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <section class="now">
+    <div class="eyebrow">Now · v26</div>
+    <h2>Where the game stands</h2>
+    <p>140 rounds (73 Egyptian, 67 international) in 7 groups, Category, Endless and Duel modes, English and Egyptian Arabic. About 57 cards still use letter tiles, and a few Egyptian songs and series still show the star because no cover or poster could be found.</p>
+    <p class="meta">Play it: <a href="https://claude.ai/artifact/8mC6jA2xPjpfzBqFSgzVxs">claude.ai/artifact/8mC6jA2xPjpfzBqFSgzVxs</a></p>
+  </section>
+</div>
+
+<script>
+(function(){
+  // rounds per version, counted from each commit's index.html
+  var D=[["1–4",14],["5",30],["6",30],["7",30],["8",30],["9",30],["10",35],["11",50],["12",50],["13",50],["14",50],["15",50],["16",82],["17",82],["18",82],["19",111],["20",111],["21",111],["22",111],["23",111],["24",140],["25",140],["26",140]];
+  var W=640,H=190,L=30,R=8,T=18,B=24,max=150,svg=document.getElementById('bars'),ns='http://www.w3.org/2000/svg';
+  function el(t,a,txt){var e=document.createElementNS(ns,t);for(var k in a)e.setAttribute(k,a[k]);if(txt!=null)e.textContent=txt;svg.appendChild(e);return e}
+  var y=function(v){return T+(H-T-B)*(1-v/max)};
+  [0,50,100,150].forEach(function(v){el('line',{x1:L,x2:W-R,y1:y(v),y2:y(v),'class':'grid','stroke-width':1});el('text',{x:L-6,y:y(v)+3,'text-anchor':'end'},v)});
+  var bw=(W-L-R)/D.length;
+  D.forEach(function(d,i){
+    var x=L+i*bw+2,prev=i?D[i-1][1]:0,up=d[1]>prev;
+    el('rect',{x:x,y:y(d[1]),width:bw-4,height:y(0)-y(d[1]),rx:2,'class':up?'up':'flat'});
+    el('text',{x:x+(bw-4)/2,y:H-8,'text-anchor':'middle'},d[0]);
+    if(up)el('text',{x:x+(bw-4)/2,y:y(d[1])-4,'text-anchor':'middle','class':'val'},d[1]);
+  });
+})();
+</script>
