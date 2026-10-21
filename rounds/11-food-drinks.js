@@ -149,7 +149,7 @@ CATS.push(
  Rd(["WHICH RESTAURANT CHAIN","WAS FOUNDED FIRST",Q],["أنهي سلسلة مطاعم","اتأسست الأول",QA],"min",[
   ["Benihana",1964,"بينيهانا"],["TGI Fridays",1965,"تي جي آي فرايديز"],["Hard Rock Cafe",1971,"هارد روك كافيه"],
   ["Chili's",1975,"تشيليز"],["The Cheesecake Factory",1978,"تشيز كيك فاكتوري"],["Applebee's",1980,"أبلبيز"],
-  ["Olive Garden",1982,"أوليف جاردن"],["Outback Steakhouse",1988,"أوت باك"],["Wagamama",1992,"واجامама"]],
+  ["Olive Garden",1982,"أوليف جاردن"],["Outback Steakhouse",1988,"أوت باك"],["Wagamama",1992,"واجاماما"]],
   {h:"restaurant chain",k:["FOUNDED","اتأسست سنة"],s:"eats",m:"w",d:3}),
  Rd(["WHICH COUNTRY DRINKS","THE MOST COFFEE",Q],["فين","بيشربوا قهوة أكتر",QA],"max",[
   ["Finland",12,"فنلندا"],["Norway",9.9,"النرويج"],["Iceland",9,"أيسلندا"],
