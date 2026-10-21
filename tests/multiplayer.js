@@ -5,7 +5,8 @@ const {PAGE,shot,finish}=require('./lib');
 const ctx=await b.newContext({...devices['iPhone SE'],defaultBrowserType:undefined});
 // fresh = a new browser profile (a friend's phone); otherwise the same device
 const open=async(url,fresh)=>{const p=await(fresh?await b.newContext({...devices['iPhone SE'],defaultBrowserType:undefined}):ctx).newPage();p.on('pageerror',e=>errs.push(e.message));await p.route('https://**',r=>r.abort());
- await p.addInitScript(()=>{window.__shared=[];Object.defineProperty(navigator,'share',{value:o=>{window.__shared.push(o.text);return Promise.resolve()},configurable:true})});
+ // skip the first-game "how to play" popup: on this small screen it covers the cards the test taps
+ await p.addInitScript(()=>{localStorage.setItem('elim_how','1');window.__shared=[];Object.defineProperty(navigator,'share',{value:o=>{window.__shared.push(o.text);return Promise.resolve()},configurable:true})});
  await p.goto(url);return p};
 const wide=p=>p.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
 
