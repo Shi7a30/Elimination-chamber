@@ -195,10 +195,18 @@ html[data-theme=dark] .qcard{box-shadow:inset 0 0 0 1px var(--line),var(--sh2)}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px 12px;width:100%}
 .grid.shake{animation:shake .45s}
 .grid.duo{grid-template-columns:1fr 1fr;gap:14px 16px}
-.duo .tile{font-size:60px}
-.duo .back b{font-size:26px}
-.duo .back small{font-size:12px}
-.duo .lab{font-size:15px;min-height:44px}
+.duo .tile{font-size:72px}
+/* Duel: two tall cards facing off with a VS badge between them */
+.grid.duo{position:relative;gap:14px 22px;margin-top:6px}
+.grid.duo .card{aspect-ratio:4/5}
+.grid.duo .tile img,.grid.duo .back img{object-position:50% 15%}
+.grid.duo::after{content:"VS";position:absolute;left:50%;top:calc((100% - 50px)/2);transform:translate(-50%,-50%) rotate(-6deg);width:52px;height:52px;border-radius:50%;background:var(--y);color:#1b1b20;font:900 18px/52px "Rubik",sans-serif;text-align:center;box-shadow:0 0 0 5px var(--bg),0 6px 16px rgba(0,0,0,.25);z-index:3;pointer-events:none}
+/* wide pictures (logos, posters, landscapes) show whole, over a blurred copy of themselves, instead of being cut to the tall card */
+.grid.duo .tile.wide img:not(.bg){object-fit:contain;object-position:50% 50%;background:none}
+.grid.duo .tile img.bg{filter:blur(14px) saturate(1.2) brightness(.9);transform:scale(1.2)}
+.duo .back b{font-size:34px}
+.duo .back small{font-size:13px}
+.duo .lab{font-size:16.5px;font-weight:700;min-height:44px}
 .lab .dt{display:block;font-size:10px;font-weight:500;color:var(--mut);margin-top:1px;line-height:1.15}
 .duo .lab .dt{font-size:12px}
 .cell{display:flex;flex-direction:column;align-items:center;gap:7px;background:none;border:0;padding:0;min-width:0;perspective:700px}
@@ -252,10 +260,16 @@ html[data-theme=dark] .qcard{box-shadow:inset 0 0 0 1px var(--line),var(--sh2)}
 #sheet.good #sbadge{background:color-mix(in srgb,var(--g) 18%,transparent)}
 #sheet.bad #sbadge{background:color-mix(in srgb,var(--r) 15%,transparent)}
 #sheet.show #sbadge{animation:pop .5s .1s both}
+/* popup badges are line icons in the app's style (green for good news, red for bad, dark yellow otherwise) */
+#sbadge svg.i{width:30px;height:30px;stroke-width:2.2}#sbadge{color:#b88a00}#sheet.good #sbadge{color:var(--g)}#sheet.bad #sbadge{color:var(--r)}
+html[data-theme=dark] #sbadge{color:var(--y)}@media (prefers-color-scheme:dark){html:not([data-theme=light]) #sbadge{color:var(--y)}}
+html[data-theme=dark] #sheet.good #sbadge{color:var(--g)}html[data-theme=dark] #sheet.bad #sbadge{color:var(--r)}
+@media (prefers-color-scheme:dark){html:not([data-theme=light]) #sheet.good #sbadge{color:var(--g)}html:not([data-theme=light]) #sheet.bad #sbadge{color:var(--r)}}
+#sb .btn svg.i{width:18px;height:18px;stroke-width:2.2}#sb .btn:has(svg.i){padding-left:14px;padding-right:14px}
 #st{letter-spacing:-.2px}
 #sheet.good #st{color:var(--g)}
 #sheet.bad #st{color:var(--r)}
-#sheet p{margin:6px auto 18px;max-width:360px;font-size:14.5px;font-weight:500;line-height:1.45;color:var(--mut)}
+#sheet p{white-space:pre-line;margin:6px auto 18px;max-width:360px;font-size:14.5px;font-weight:500;line-height:1.45;color:var(--mut)}
 #sheet p:empty{display:none}
 #sheet .row{display:flex;gap:10px;justify-content:center}
 #sheet .btn{flex:1;max-width:240px;font-size:16px;padding:12px 14px}
@@ -371,7 +385,7 @@ html[dir=rtl] .hero .hgrid{transform:translateY(-38%) rotate(8deg) scale(.82);tr
 .dcard .pg::before{content:"";position:absolute;left:0;right:0;top:0;height:24px;background:var(--y)}
 .dcard.done .pg::before{background:#2fbf71}
 .dcard .pg b{position:absolute;left:0;right:0;top:22px;text-align:center;font-family:"Rubik",sans-serif;font-size:40px;line-height:1.15;color:var(--ink);font-weight:800}
-.dcard .pg .mo{position:absolute;left:0;right:0;top:4px;z-index:1;text-align:center;font:800 12px/16px "Rubik","Cairo",sans-serif;color:var(--ink);letter-spacing:.5px}
+.dcard .pg .mo{position:absolute;left:0;right:0;top:7px;z-index:1;text-align:center;font:800 11.5px/15px "Rubik","Cairo",sans-serif;color:var(--ink);letter-spacing:.5px}
 .dcard.done .pg .mo{color:#fff}.dcard.lost .pg::before{background:#e5484d}
 .dcard .mk{position:absolute;z-index:3;left:13%;top:55%;white-space:nowrap;transform:rotate(-12deg);border:3px solid #22a35e;color:#22a35e;border-radius:8px;padding:2px 9px;display:inline-flex;align-items:center;gap:5px;font:900 16px/1.2 "Rubik","Cairo",sans-serif;letter-spacing:1px;background:rgba(255,255,255,.92)}
 .dcard.lost .mk{border-color:#e5484d;color:#e5484d}
@@ -379,7 +393,7 @@ html[dir=rtl] .hero .hgrid{transform:translateY(-38%) rotate(8deg) scale(.82);tr
 .dcard .tm{font-size:12.5px;font-weight:700;color:var(--dcmut)}
 .dcard .ds .tp{font-weight:700;color:var(--dcfg)}.dcard .dt,.dcard .ds{flex-shrink:0}
 .dcard .chips{align-items:center}.dcard .shr svg.pl{fill:currentColor;stroke:none;width:14px;height:14px}[dir=rtl] .dcard .shr svg.pl{transform:scaleX(-1)}
-.dcard .pg i{position:absolute;top:-6px;width:8px;height:16px;border-radius:4px;background:var(--ink);z-index:2}
+.dcard .pg i{position:absolute;top:-4px;width:7px;height:10px;border-radius:4px;background:var(--ink);z-index:2}
 .dcard .pg i:first-child{left:20px}.dcard .pg i:nth-child(2){right:20px}
 .dcard .back{position:absolute;inset:18px 18px 4px 6px;border-radius:14px;background:var(--dcback);transform:rotate(-7deg)}
 .dcard .sp{position:absolute;color:var(--y);font-size:14px;line-height:1}
@@ -393,6 +407,13 @@ html[dir=rtl] .hero .hgrid{transform:translateY(-38%) rotate(8deg) scale(.82);tr
 @media (max-height:620px){.cat.hero{padding:12px 18px}.cat.dcard{height:156px;padding:12px 18px}.dcard .art{width:84px;height:84px}.dcard .ds{max-width:calc(100% - 96px)}body[data-scr=home] #menu{gap:8px}}
 /* very short screens (iPhone SE in Safari): smaller still, so the raised Home button never covers the Daily card */
 @media (max-height:575px){.cat.hero{padding:9px 18px}body[data-scr=home] #menu{gap:6px}.cat.dcard{height:148px;padding:10px 18px;gap:1px}.dcard .art{transform:translateY(-50%) scale(.8)}.dcard .dt{margin-top:2px}}
+/* shorter phones (iPhone SE, 360×640 Androids): a tighter question card, and cards sized to the screen height, so all 9 cards fit without scrolling */
+@media (max-height:760px){body[data-scr=game] .meta{margin-top:6px}body[data-scr=game] .qcard{margin-top:6px;padding:9px 14px 10px}
+ body[data-scr=game] .qcard .q{font-size:12.5px}body[data-scr=game] .qcard .big{font-size:21px;margin:1px 0}
+ body[data-scr=game] #sub{margin:8px 0;padding:4px 12px;font-size:13px}
+ body[data-scr=game] .grid:not(.duo){gap:8px 10px;max-width:max(230px,calc(100vh - 372px));margin:0 auto}body[data-scr=game] .grid:not(.duo) .cell{gap:4px}body[data-scr=game] .grid:not(.duo) .lab{min-height:28px;font-size:12px}}
+/* short screens with a challenge invite on Home: drop the Play card's subtitle and slim the invite, so the Daily card stays above the dock */
+@media (max-height:700px){#menu:has(.chpill) .cat.hero>small:not(.eb){display:none}#menu .chpill{min-height:42px;padding:7px 14px}}
 /* very narrow phones (320px): keep the two-line Daily subtitle clear of its 🔥/🏆 chips */
 @media (max-width:340px){.cat.dcard .ds{font-size:12px;line-height:1.25}.cat.dcard .dt{margin-top:0}}
 
@@ -425,6 +446,8 @@ body[data-scr=game] #dock,body:not([data-scr]) #dock{display:none}
 div.cat.sc{cursor:default}
 #dock button:active .ic{transform:scale(.92)}
 body:not([data-scr=game]) #upd{bottom:calc(96px + env(safe-area-inset-bottom,0px))}
+/* very short screens: Home has no free space above the dock, so the bar comes down from the top instead of covering the Daily card */
+@media (max-height:600px){body:not([data-scr=game]) #upd{bottom:auto;top:calc(76px + env(safe-area-inset-top,0px));transform:translate(-50%,-260%)}body:not([data-scr=game]) #upd.show{transform:translate(-50%,0)}}
 /* the update banner waits until you leave the game, so tapping it can't throw away a round */
 body[data-scr=game] #upd{display:none}
 /* hot potato with 5+ players: names in one sliding row, so the cards stay on screen */
@@ -497,7 +520,7 @@ var GROUPS=[
 
 // Text in English and Egyptian Arabic. Functions take numbers already formatted.
 var TX={
- en:{updReady:"New version ready",updBtn:"Update",offSave:function(m){return"Save all photos for playing offline ("+m+" MB)"},offBusy:function(p){return"Saving photos… "+p+"%"},offDone:"Photos saved for playing offline",offFail:"Some photos didn't save. Tap to try again when you're online.",title:"Shelhom",tag:"Knock out every card but the answer",streak:"Streak",best:"Best",rounds:function(n){return n+" rounds"},solved:function(s,n){return s+"/"+n+" solved"},complete:"★ Complete",
+ en:{updReady:"New version ready",updBtn:"Update",offSave:function(m){return"Save all photos for playing offline ("+m+" MB)"},offBusy:function(p){return"Saving photos… "+p+"%"},offDone:"Photos saved for playing offline",offFail:"Some photos didn't save. Tap to try again when you're online.",title:"Shelhom",tag:"Knock out every card but the answer",streak:"Streak",best:"Best",rounds:function(n){return n+(n==="1"?" round":" rounds")},solved:function(s,n){return s+"/"+n+" solved"},complete:"★ Complete",
   hint:"Eliminated cards flip to show their answer. Tap one to flip it back. Tap 📷 in a round, then a tile, to use your own photo.",
   round:function(a,b){return"Round "+a+"/"+b},photo:"Photo mode: tap a card",nailed:"Nailed it!",wrong:"Wrong one!",left:function(n){return n+" left to knock out"},all:"Knock out all but one",
   undo:"↺",skip:"Skip ▶",next:"Next ▶",lost:"❌ You lost!",knocked:function(x){return"You knocked out the answer: "+x+"."},keep:function(n){return" Undo to keep your 🔥"+n+" streak."},
@@ -505,9 +528,9 @@ var TX={
   row:function(n){return" · 🔥 "+n+" in a row"},perfect:"🏆 Perfect run!",done:"✅ Category done!",got:function(a,b){return"You got "+a+"/"+b+" this run"},
   allSolved:" · ★ every round solved",overall:function(s,n){return" · "+s+"/"+n+" solved overall"},replay:"↻ Replay",menu:"Menu",full:"Not enough space on this device to save more photos.",lang:"ع",
   endless:"Endless",endlessSub:"Mixed rounds from every category",score:function(n){return"Score "+n},runOver:"💀 Run over!",nextUndo:function(n){return" After this one, undo costs "+n+"."},needUndo:function(n){return" You need "+n+" coins to undo."},savedWin:function(k){return"You used an undo, so no coins this round."+(k>0?" Your 🔥\u2060"+k+" streak is safe.":"")},solvedB4:"Already solved before, so no coins or streak this time.",leaveQ:"Leave this game?",leaveTxt:"Your progress in this game will be lost.",leave:"Leave",stay:"Keep playing",
-  runTxt:function(s,b){return" You cleared "+s+" rounds · best "+b+"."},newBest:" 🏅 New best!",newRun:"↻ New run",duel:"Duel",duelSub:"Pick 1 of 2. The winner stays till you miss",anyCat:"Everything",anyCatSub:"Questions from every category",pick:"Pick one",newQ:"New question!",duelTxt:function(s,b){return"You got "+s+" in a row · best "+b+"."},back:"‹",sections:function(k){return k===1?"1 section":n(k)+" sections"},reg_eg:"🇪🇬 Egypt",reg_w:"🌍 World",reg_all:"🔀 Both",
+  runTxt:function(s,b){return" You cleared "+s+(s==="1"?" round":" rounds")+" · best "+b+"."},newBest:" 🏅 New best!",newRun:"↻ New run",duel:"Duel",duelSub:"Pick 1 of 2. The winner stays till you miss",anyCat:"Everything",anyCatSub:"Questions from every category",pick:"Pick one",newQ:"New question!",duelTxt:function(s,b){return"You got "+s+" in a row · best "+b+"."},back:"‹",sections:function(k){return k===1?"1 section":n(k)+" sections"},reg_eg:"🇪🇬 Egypt",reg_w:"🌍 World",reg_all:"🔀 Both",
   mp:"Multiplayer",cats:"Categories",hot:"Hot potato",hotSub:"Pass the phone. Knock out the answer and you're out",chal:"Challenge",chalSub:"Play 10, send the link. Friends get the same questions",
-  players:"Players",addP:"+ Add player",pName:function(k){return"Player "+k},pickCat:"Pick a category",pLeft:function(k){return k+" left"},
+  players:"Players",addP:"+ Add player",pName:function(k){return"Player "+k},pickCat:"Pick a category",pLeft:function(k){return k+" left"},plLeft:function(k){return k+" players left."},
   hRound:function(a){return"Round "+a},turn:function(x){return"🥔 "+x+": knock one out"},isOut:function(x){return"💥 "+x+" is out!"},
   outTxt:function(x,y){return x+" knocked out the answer: "+y+"."},safe:"😅 Everyone's safe!",safeTxt:"Nobody touched the answer.",nextRound:"Next round ▶",
   winner:function(x){return"🏆 "+x+" wins!"},winTxt:"Last one standing.",again:"↻ Play again",
@@ -531,7 +554,7 @@ var TX={
   endless:"مالهاش آخر",endlessSub:"جولات متلخبطة من كل الأقسام",score:function(n){return"النتيجة "+n},runOver:"💀 اللعبة خلصت!",nextUndo:function(n){return" وبعد كده الرجوع هيبقى بـ\u00a0"+n+"."},needUndo:function(n){return" محتاج "+n+" كوينز عشان ترجع."},savedWin:function(k){return"استخدمت رجوع في الجولة دي، فمفيش كوينز"+(k>0?"، بس الـ 🔥\u2060"+k+" لسه معاك.":".")},solvedB4:"حليتها قبل كده، فالمرة دي مفيش كوينز ومش هتتحسب في الـ 🔥.",leaveQ:"تخرج من اللعبة؟",leaveTxt:"اللي عملته في الدور ده هيروح.",leave:"اخرج",stay:"كمّل لعب",
   runTxt:function(s,b){return" عدّيت "+arN(s,"جولتين","جولات","جولة")+" · أطول ستريك "+b+"."},newBest:" 🏅 رقم قياسي جديد!",newRun:"↻ ابدأ من الأول",duel:"ده ولا ده",duelSub:"اختار واحد من اتنين، واللي يكسب يفضل",anyCat:"كل حاجة",anyCatSub:"أسئلة من كل الأقسام",pick:"اختار واحد",newQ:"سؤال جديد!",back:"›",sections:function(k){return k===1?"قسم واحد":n(k)+" أقسام"},duelTxt:function(s,b){return"ستريك "+s+" · أطول ستريك "+b+"."},reg_eg:"🇪🇬 مصري",reg_w:"🌍 عالمي",reg_all:"🔀 الاتنين",
   mp:"مع صحابك",cats:"على كيفك",hot:"البطاطس سخنة خالص",hotSub:"لفّوا الموبايل، واللي يشيل الإجابة الصح يطلع برا",chal:"تحدّي",chalSub:"العب 10 وابعت اللينك، وصحابك ياخدوا نفس الأسئلة",
-  players:"اللعيبة",addP:"+ لاعب كمان",pName:function(k){return"لاعب "+k},pickCat:"اختار قسم",pLeft:function(k){return"فاضل "+k},
+  players:"اللعيبة",addP:"+ لاعب كمان",pName:function(k){return"لاعب "+k},pickCat:"اختار قسم",pLeft:function(k){return"فاضل "+k},plLeft:function(k){return"فاضل "+k+" لاعيبة."},
   hRound:function(a){return"جولة "+a},turn:function(x){return"🥔 "+x+": شيل واحد"},isOut:function(x){return"💥 "+x+" طلع برا!"},
   outTxt:function(x,y){return x+" شال الإجابة الصح: "+y+"."},safe:"😅 محدش وقع!",safeTxt:"محدش لمس الإجابة الصح.",nextRound:"الجولة اللي بعدها ◀",
   winner:function(x){return"🏆 "+x+" كسب!"},winTxt:"آخر واحد فاضل.",again:"↻ تاني",
@@ -582,7 +605,8 @@ function nc(v){return v>=1e6?(Math.floor(v/1e5)/10)+"M":n(v)}
 function n(v,dp){return dp!=null?v.toFixed(dp):v>=10000?v.toLocaleString("en-US"):String(v)}
 function li(p){return p?p[L==="ar"?1:0]:""}
 // x = {d: item array, r: the round it comes from (for formatting)}
-function fmt(x){return li(x.r.pre)+n(x.d[1],x.r.dp)+li(x.r.suf)}
+// "1 goal", not "1 goals" (English only; Arabic units don't change this way)
+function fmt(x){var u=li(x.r.suf);if(L!=="ar"&&Math.abs(x.d[1])===1)u=u.replace(/([a-z]{2,})s$/,"$1");return li(x.r.pre)+n(x.d[1],x.r.dp)+u}
 function nm(x){return L==="ar"&&x.d[2]?x.d[2]:x.d[0]}
 // Card label: just the nickname for players known by one ("Mahmoud 'Trezeguet' Hassan" shows as Trezeguet); the full name stays in the aria-label.
 function lbl(x){var k=x.d[0].match(/'([^']+)'/);if(!k)return nm(x);if(L!=="ar")return k[1];var a=(x.d[2]||"").match(/\(([^)]+)\)\s*$/);return a?a[1]:nm(x)}
@@ -701,7 +725,7 @@ function duelRender(){var qq=L==="ar"?cur.qa:cur.q;
   if(over&&flipNow.indexOf(i)<0)cls+=" flip";
   var src=hdSrc(x),img=src?'<img src="'+esc(src)+'" alt="" onerror="this.remove()">':"";
   return '<button class="cell '+cls+'" data-i="'+i+'" aria-label="'+esc(nm(x)+(over?": "+fmt(x):""))+'"><div class="card">'+
-   '<div class="tile" style="'+tileBg(i*137+20)+'"><span>'+esc(nm(x).replace(/^[("']/,"").charAt(0))+"</span>"+img+"</div>"+
+   '<div class="tile" style="'+tileBg(i*137+20)+'"><span>'+esc(nm(x).replace(/^[("']/,"").charAt(0))+"</span>"+(src?'<img src="'+esc(src)+'" alt="" onload="duoFit(this)" onerror="this.remove()">':"")+"</div>"+
    '<div class="back">'+img+"<i>"+(i===corr?"✓":"✕")+"</i><small>"+esc(li(x.r.k))+"</small><b>"+esc(fmt(x))+"</b></div>"+
    '</div><div class="lab"><span class="ln">'+esc(lbl(x))+"</span>"+dtag(x)+"</div></button>"}).join("");fitLabs();
  if(flipNow.length){var g=$("grid"),fl=flipNow;flipNow=[];void g.offsetWidth;
@@ -724,7 +748,7 @@ function hotPick(i,x){var p=hPl[hTurn];out.push(i);flipNow=[i];
  if(i===corr){over="lose";p.out=true;var al=alive(),msg=function(){return t("outTxt")(p.n,nm(x)+" ("+fmt(x)+")")};render();shake();sfx.lose();
   if(al.length===1){sh(function(){return[t("winner")(al[0].n),msg()+" "+t("winTxt"),[[t("again"),function(){hotStart(HCAT)},"y"],[t("menu"),menu,""]]]},450);
    setTimeout(function(){if(mode==="hot"&&over)confetti()},450)}
-  else{hNext();sh(function(){return[t("isOut")(p.n),msg()+" "+t("pLeft")(n(al.length)),[[t("nextRound"),hotRound,"y"]]]},450)}}
+  else{hNext();sh(function(){return[t("isOut")(p.n),msg()+"\n"+t("plLeft")(n(al.length)),[[t("nextRound"),hotRound,"y"]]]},450)}}
  else if(items.length-out.length===1){over="win";flipNow=[corr];hNext();render();sfx.win();sh(function(){return[t("safe"),t("safeTxt"),[[t("nextRound"),hotRound,"y"]]]},600)}
  else{hNext();render();sfx.elim(out.length)}}
 
@@ -830,7 +854,11 @@ var PI="prop=pageimages|pageprops&ppprop=disambiguation&piprop=thumbnail&pithumb
 function gotPhoto(name,url){WK[name]=url;sv("elim_wiki",WK);
  if(!inGame())return;
  [].forEach.call(document.querySelectorAll(".cell"),function(c){if(items[+c.dataset.i].d[0]===name&&bPhoto(+c.dataset.i)===url){setImg(c.querySelector(".tile"),url);setImg(c.querySelector(".back"),url)}})}
-function setImg(el,url){var o=el.querySelector("img");if(o)o.remove();var im=new Image();im.alt="";im.onerror=function(){im.remove()};im.src=url;el.insertBefore(im,el.firstChild)}
+// Duel cards are tall: a picture wider than about 6:7 (a logo, poster or landscape) is shown whole over a blurred copy of itself
+function duoFit(im){var t=im.parentNode;if(!t||!t.classList||!t.classList.contains("tile")||!t.closest(".grid.duo")||im.classList.contains("bg")||!im.naturalWidth)return;
+ var old=t.querySelector("img.bg"),w=im.naturalWidth/im.naturalHeight>.85;if(old)old.remove();t.classList.toggle("wide",w);
+ if(w){var b=new Image();b.className="bg";b.alt="";b.setAttribute("aria-hidden","true");b.src=im.src;t.insertBefore(b,im)}}
+function setImg(el,url){var o;while((o=el.querySelector("img")))o.remove();var im=new Image();im.alt="";im.onerror=function(){im.remove()};im.onload=function(){duoFit(im)};im.src=url;el.insertBefore(im,el.firstChild)}
 function okPage(p){return p&&!p.missing&&p.thumbnail&&!(p.pageprops&&"disambiguation" in p.pageprops)}
 function loadPhotos(list){if(!PHok)return; // wait for the built-in photos, or every card would be looked up on Wikipedia
  var need=[],seen={};
@@ -918,9 +946,9 @@ function chVs(k){var me=CHD[chKey()]||0,s=CH.from.s;return esc(t("chMine")(n(me)
 function chalInvite(){var c=CH.sub&&subInfo(CH.sub),k=CH.list.length,pl=!CH.bad&&chKey() in CHD,who=CH.from.n||t("friend");
  return ghead("",t("chal"))+(CH.bad?'<p class="sub">'+t("chBad")+"</p>":'<div class="chv"><div class="big">'+esc(pl?t("chGot")(who,n(CH.from.s),n(k)):t("chFrom")(who))+'</div><p class="sub">'+
   (pl?"":esc(t("chBeat")(n(CH.from.s),n(k)))+(c?" · ":""))+(c?c[1]+" "+esc(L==="ar"?c[3]:c[2]):"")+(pl&&!c?"":"<br>")+
-  (pl?chVs(k)+"</p>"+nameBox()+'<p></p><button class="btn y" data-cshare>'+t("shareBack")+"</button></div>":
+  (pl?chVs(k)+"</p>"+nameBox()+'<p></p><button class="btn y" data-cshare>'+IC.link+esc(t("shareBack").replace(/^🔗 /,""))+"</button></div>":
   t("chSame")+"</p>"+nameBox()+'<p></p><button class="btn y" data-cplay>'+t("play")+"</button></div>"))}
-function card(cls,data,emoji,label,left,d,k,c){return '<button class="cat '+cls+'" '+data+(c?' style="--c:'+c+'"':"")+'><span class="se">'+emoji+"</span>"+label+"<small><span>"+left+"</span><span>"+
+function card(cls,data,emoji,label,left,d,k,c){return '<button class="cat '+cls+'" '+data+(c?' style="--c:'+c+'"':"")+'><span class="se">'+emoji+"</span>"+label+"<small>"+(left?"<span>"+left+"</span>":"")+"<span>"+
  (d===k?t("complete"):t("solved")(n(d),n(k)))+'</span></small><div class="pb"><i style="width:'+(k?d/k*100:0)+'%"></i></div></button>'}
 // Home shows the play modes and the big groups; tapping a group opens its page of subcategories.
 function scr(k){document.body.dataset.scr=k;hSync()}
@@ -956,7 +984,7 @@ function statsPage(){var tile=function(v,l){return '<div class="stt"><b>'+v+"</b
   '<h3 class="dgh">'+t("stScores")+'</h3><div class="stl">'+row(IC.play.replace("<svg",'<svg style="fill:currentColor;stroke:none"'),t("endless"),regs(eBest))+row(IC.duel,t("duel"),regs(dBest))+
   row(IC.cal,t("dyTitle"),chip(IC.flame,dyStreak(),t("streak"))+chip(IC.trophy,DY.b|0,t("best")))+"</div>"+
   '<h3 class="dgh">'+t("stGroups")+'</h3><div class="subs">'+GROUPS.map(function(g,i){var ids=g.s.map(function(x){return x[0]}),rs=ALL.filter(function(r){return ids.indexOf(r.s)>=0});if(!rs.length)return"";
-   return card("sc grp",'data-g="'+i+'"',g.e,L==="ar"?g.a:g.n,t("rounds")(n(rs.length)),solved(rs),rs.length,GC[i])}).join("")+"</div>"}
+   return card("sc grp",'data-g="'+i+'"',g.e,L==="ar"?g.a:g.n,"",solved(rs),rs.length,GC[i])}).join("")+"</div>"}
 // Hot potato and challenge, opened from the Multiplayer tile.
 function mpPage(){var row=function(c,e,ti,sub){return '<button class="cat row" data-c="'+c+'"><span class="se">'+e+"</span><span>"+ti+"<small>"+sub+"</small></span>"+IC.chev+"</button>"};
  return ghead("",t("mp"))+'<div class="modes">'+row("h","🥔",t("hot"),t("hotSub"))+row("c",'<span style="color:#3b82f6;display:flex">'+IC.link+"</span>",t("chal"),t("chalSub"))+"</div>"}
@@ -1099,9 +1127,14 @@ addEventListener("popstate",function(){if(document.body.dataset.scr==="home"){tr
 $("home").onclick=function(){if($("menu").style.display==="flex")GRP=null;
  if(atRisk()){var back=shF&&shF.leave?null:shF;var f=function(){return[t("leaveQ"),mode==="daily"?t("leaveDy"):canUndo()?t("leaveUndo"):t("leaveTxt"),[[t("stay"),function(){if(back)sh(back,0);else{hide();if(mode==="duel"&&over==="win")duelNext(items[corr])}},"y"],[t("leave"),menu,""]]]};f.leave=1;sh(f,0);return}
  menu()};
+// The popup title's leading emoji picks its badge icon; an emoji without one here still shows as itself
+var SAD='<circle cx="12" cy="12" r="9"/><path d="M8 15.5c1-1.3 2.4-2 4-2s3 .7 4 2M9 9.5h.01M15 9.5h.01"/>',CUP='<path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3M12 14v3M8.5 20h7M10 17h4"/>';
+var BADGE={"🎉":'<circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5.5-6"/>',"✅":CUP,"🏆":CUP,"❌":'<path d="M7 7l10 10M17 7L7 17"/>',"💀":SAD,"😬":SAD,
+ "💥":'<circle cx="10" cy="8" r="4"/><path d="M3 20c0-3.5 3-6 7-6s7 2.5 7 6M17 8l4 4M21 8l-4 4"/>',"😅":'<path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/>',
+ "🤝":'<path d="M6 9.5h12M6 14.5h12"/>',"👆":'<path d="M9 11V5.5a1.5 1.5 0 0 1 3 0V11m0-1.5a1.5 1.5 0 0 1 3 0V12m0-1a1.5 1.5 0 0 1 3 0v3.5a6.5 6.5 0 0 1-6.5 6.5h-.5a6 6 0 0 1-5-2.7L4.5 15a1.5 1.5 0 0 1 2.4-1.8L9 15"/>'};
 function sheet(ti,p,btns,d){clearTimeout(stT);var m=ti.match(/^([^\p{L}\p{N}\s]+)\s+(.+)$/u),e=m?m[1]:"";if(m)ti=m[2];
- $("sbadge").textContent=e;$("sheet").classList.toggle("good",/[🎉🏆✅😅🤝]/u.test(e));$("sheet").classList.toggle("bad",/[❌💀😬💥]/u.test(e));$("st").textContent=ti;$("sp").textContent=p;var sb=$("sb");sb.innerHTML="";
- btns.forEach(function(b){var e=document.createElement("button");e.className="btn "+b[2];if(b[3])e.innerHTML=b[0];else e.textContent=b[0];e.onclick=b[1];sb.appendChild(e)});
+ var bi=BADGE[e];if(bi)$("sbadge").innerHTML=svg(bi);else $("sbadge").textContent=e;$("sheet").classList.toggle("good",/[🎉🏆✅😅🤝]/u.test(e));$("sheet").classList.toggle("bad",/[❌💀😬💥]/u.test(e));$("st").textContent=ti;$("sp").textContent=p;var sb=$("sb");sb.innerHTML="";
+ btns.forEach(function(b){var e=document.createElement("button");e.className="btn "+b[2];if(b[3])e.innerHTML=b[0];else if(b[0].indexOf("🔗 ")===0)e.innerHTML=IC.link+esc(b[0].slice(3));else e.textContent=b[0];e.onclick=b[1];sb.appendChild(e)});
  stT=setTimeout(function(){$("sheet").classList.add("show");
   // keep the answer card in view above the popup
   var c=document.querySelector(".cell.bad,.cell.win");if(c){var r=c.getBoundingClientRect(),top=innerHeight-$("sheet").offsetHeight-12;
