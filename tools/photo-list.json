@@ -14958,7 +14958,8 @@
   "ar": "أنا في انتظارك",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/8bfffcce092a112e77958d7062ec74d7/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Ghanili shwaya",
@@ -14976,7 +14977,8 @@
   "ar": "أمل حياتي",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2d/a4/89/2da489e1-a9ec-022f-b125-cf8c263a2d9b/859715553475.jpg/600x600bb.jpg"
  },
  {
   "name": "Hazihi laylati",
@@ -21590,7 +21592,8 @@
   "ar": "أونيكس",
   "ar_hint": "بوكيمون",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://www.pngkit.com/png/detail/229-2299513_onix-onix-pokemon.png"
  },
  {
   "name": "Mewtwo",
@@ -23735,7 +23738,8 @@
   "ar": "أحمد شيبة",
   "ar_hint": "مطرب",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/artist/34fc63afc2da4b1faef088fa578f6458/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Ramy Sabry",
@@ -23864,7 +23868,8 @@
   "ar": "اخترت صح",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music22/v4/32/ef/c8/32efc817-cca1-c30e-298c-51ab4b3b3d55/mzm.aldohbek.jpg/600x600bb.jpg"
  },
  {
   "name": "Elly gai a7la",
@@ -24511,7 +24516,8 @@
   "ar": "مش خالصة",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/66934f89db8a44924f253b7abc98711b/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Amira",
@@ -24520,7 +24526,8 @@
   "ar": "أميرة",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/c04ff4a85fccdfe3119365b0ad2d8caf/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Ezz el arab",
@@ -24529,7 +24536,8 @@
   "ar": "عز العرب",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/60c9656f68b7d1c75ed181f58e1f2f9e/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Kalam forsan",
@@ -24538,7 +24546,8 @@
   "ar": "كلام فرسان",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/70b6c97fbad61bab4e227df1dd2d0d14/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Mahragan el salam",
@@ -24547,7 +24556,8 @@
   "ar": "مهرجان السلام",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/02/b0/7b/02b07b42-92dc-89ee-8997-92f39ad6fcdc/6221216061270.png/600x600bb.jpg"
  },
  {
   "name": "Ana baba yalla",
@@ -24592,7 +24602,8 @@
   "ar": "سندباد",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/b79a58195c6baea2d8acb6d30f4488ef/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Ghaba",
@@ -24601,7 +24612,8 @@
   "ar": "غابة",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/a41d99a1e7e017b1610e6be18bdfad83/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Men el akher",
@@ -24610,7 +24622,8 @@
   "ar": "من الآخر",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/9c8006c0b38934f0c3b11ca8fb0096ee/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Abyusif",
@@ -24628,7 +24641,8 @@
   "ar": "حسن شاكوش",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/artist/1d2849d35d9ed9ea25231f5bdb2ccb7d/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Hamo Bika",
@@ -24637,7 +24651,8 @@
   "ar": "حمو بيكا",
   "ar_hint": "",
   "logo": false,
-  "skip": false
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/artist/9155cd2d5f6d81887bde3ad2d6ee26f9/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Marwan Moussa",
@@ -24655,7 +24670,8 @@
   "ar": "آخر قطعة فنية",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/13462f30abb35adc8a113cdc9f4ffbdf/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Project blue beam",
@@ -24673,7 +24689,8 @@
   "ar": "انحراف",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/aac008b5fcafdbde9a4cbe09902d9d25/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "5 nezam",
@@ -24682,7 +24699,8 @@
   "ar": "5 نظام",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/fcc87d10ea321981534b5a19fdaf16ae/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Zap Tharwat",
@@ -24700,7 +24718,8 @@
   "ar": "مذكرات حارس مرمى",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/b005c2dce02024e9ff1ff50e9c32cbc0/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Dah mesh rap",
@@ -24709,7 +24728,8 @@
   "ar": "ده مش راب",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/435c35e5e486af31108a0514aa38fb97/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Bel monasba",
@@ -24727,7 +24747,8 @@
   "ar": "واحد واحد",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://cdn-images.dzcdn.net/images/cover/260261a68a208bb85d84029741475e1a/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Geziret el batal",
@@ -24736,7 +24757,8 @@
   "ar": "جزيرة البطل",
   "ar_hint": "",
   "logo": false,
-  "skip": true
+  "skip": false,
+  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a2/36/5f/a2365fb7-5079-4baa-fabe-2bebb0c13ac8/194838179370.jpg/600x600bb.jpg"
  },
  {
   "name": "Mahmoud El Leithy",
@@ -24749,7 +24771,8 @@
   "q": [
    "Mahmoud El Leithy singer",
    "محمود الليثي"
-  ]
+  ],
+  "url": "https://cdn-images.dzcdn.net/images/artist/bd1c5225b296fb44f4059ec896192e6e/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Reda El Bahrawy",
@@ -24762,7 +24785,8 @@
   "q": [
    "Reda El Bahrawy singer",
    "رضا البحراوي"
-  ]
+  ],
+  "url": "https://cdn-images.dzcdn.net/images/artist/998e6a5383a1a7de160f0d5024566b96/1000x1000-000000-80-0-0.jpg"
  },
  {
   "name": "Kazyon",
