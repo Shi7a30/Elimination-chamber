@@ -5,7 +5,8 @@ const {PAGE,shot,finish}=require('./lib');
 const ctx=await b.newContext({...devices['iPhone SE'],defaultBrowserType:undefined});
 // fresh = a new browser profile (a friend's phone); otherwise the same device
 const open=async(url,fresh)=>{const p=await(fresh?await b.newContext({...devices['iPhone SE'],defaultBrowserType:undefined}):ctx).newPage();p.on('pageerror',e=>errs.push(e.message));await p.route('https://**',r=>r.abort());
- await p.addInitScript(()=>{window.__shared=[];Object.defineProperty(navigator,'share',{value:o=>{window.__shared.push(o.text);return Promise.resolve()},configurable:true})});
+ // skip the first-game "how to play" popup: on this small screen it covers the cards the test taps
+ await p.addInitScript(()=>{localStorage.setItem('elim_how','1');window.__shared=[];Object.defineProperty(navigator,'share',{value:o=>{window.__shared.push(o.text);return Promise.resolve()},configurable:true})});
  await p.goto(url);return p};
 const wide=p=>p.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
 
@@ -72,10 +73,11 @@ const res=await q.textContent('#sheet');console.log('friend sheet',res);
 if(!/you win/i.test(res)||!res.includes('Shiha 8/10'))bad.push('result sheet wrong');
 await q.tap('#sb .btn.y');const back=await q.evaluate(()=>window.__shared[0]||'');
 if(!back.includes('9/10')||!back.includes('n=Omar'))bad.push('send-back link wrong: '+back);
+// (waits for the challenge card, since a slow page load used to make this read the menu too early)
 // --- the same link can't be played twice on one device; it compares the two scores and offers to send yours back
-await q.goto(url);await q.waitForTimeout(300);if(await q.$('[data-cplay]')||!/Shiha got 8\/10/.test(await q.textContent('#menu'))||!/You got 9\/10/.test(await q.textContent('#menu'))||!await q.$('[data-cshare]'))bad.push('challenge link can be replayed');
+await q.goto(url);await q.waitForSelector('#menu .chv',{timeout:10000}).catch(()=>{});await q.waitForTimeout(300);if(await q.$('[data-cplay]')||!/Shiha got 8\/10/.test(await q.textContent('#menu'))||!/You got 9\/10/.test(await q.textContent('#menu'))||!await q.$('[data-cshare]'))bad.push('challenge link can be replayed');
 // --- the score comes back: the sender sees "Omar got 9/10" and who won, not "Omar challenged you"
-const backUrl=(back.match(/\S+\?ch=\S+/)||[])[0];await p.goto(backUrl);await p.waitForTimeout(300);
+const backUrl=(back.match(/\S+\?ch=\S+/)||[])[0];await p.goto(backUrl);await p.waitForSelector('#menu .chv',{timeout:10000}).catch(()=>{});await p.waitForTimeout(300);
 {const m=await p.textContent('#menu');console.log('score back',m.replace(/\s+/g,' ').slice(0,160));
  if(/challenged you/.test(m)||!/Omar got 9\/10/.test(m)||!/You got 8\/10/.test(m)||await p.$('[data-cplay]'))bad.push('score-back link should compare scores');}
 

@@ -155,7 +155,7 @@ CATS.push(
  Rd(["WHICH WEBSITE","LAUNCHED FIRST",Q],["إيه","أقدم موقع",QA],"min",[
   ["Yahoo!",1994,"ياهو"],["eBay",1995,"إيباي"],["Hotmail",1996,"هوتميل","Outlook.com"],
   ["Wikipedia",2001,"ويكيبيديا"],["Skype",2003,"سكايب"],["LinkedIn",2003,"لينكد إن"],
-  ["Reddit",2005,"ريديت"],["Telegram",2013,"تيليجرام","Telegram (software)"],["Discord",2015,"ديسكورد"]],
+  ["Google",1998,"جوجل"],["Reddit",2005,"ريديت"],["YouTube",2005,"يوتيوب"]],
   {h:"website",k:["LAUNCHED","نزل سنة"],dt:["Site launched","نزول الموقع"],g:"y",s:"brands",m:"w",d:2}),
  Rd(["WHICH APPLE PRODUCT","CAME OUT LAST",Q],["أنهي منتج من أبل","أجدد",QA],"max",[
   ["Macintosh",1984,"ماكنتوش","Macintosh 128K"],["iMac",1998,"آي ماك","iMac G3"],["iPod",2001,"آي بود","iPod Classic"],

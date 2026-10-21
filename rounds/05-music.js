@@ -2,7 +2,7 @@
 // Each category file adds itself to CATS; index.html loads them in number order.
 CATS.push(
 {n:"Music",a:"المزيكا",e:"🎤",r:[
- Rd(["WHO IS THE","OLDEST ICON",Q],["مين","أكبر نجم في السن",QA],"min",[
+ Rd(["WHO IS THE","OLDEST ICON",Q],["مين","أكبر مطرب أجنبي في السن",QA],"min",[
   ["Bob Dylan",1941,"بوب ديلان"],["Paul McCartney",1942,"بول مكارتني"],["Mick Jagger",1943,"ميك جاجر"],["Rod Stewart",1945,"رود ستيوارت"],
   ["Freddie Mercury",1946,"فريدي ميركوري"],["Elton John",1947,"إلتون جون"],["Ozzy Osbourne",1948,"أوزي أوزبورن"],["Bruce Springsteen",1949,"بروس سبرينجستين"],
   ["Stevie Wonder",1950,"ستيفي وندر"]],{h:"singer",k:BORN,g:"p",s:"singers",m:"w",d:3}),
@@ -194,7 +194,7 @@ Rd(["WHO IS THE","YOUNGEST FEMALE SINGER",Q],["مين","أصغر مطربة",QA]
  Rd(["WHO IS THE","YOUNGEST SHAABI SINGER",Q],["مين","أصغر مطرب شعبي",QA],"max",[
   ["Mohamed Roshdy",1928,"محمد رشدي"],["Ahmed Adaweya",1945,"أحمد عدوية"],["Shaaban Abdel Rahim",1957,"شعبان عبد الرحيم"],
   ["Hassan El Asmar",1959,"حسن الأسمر"],["Hakim",1962,"حكيم","Hakim (singer)"],["Ahmed Sheba",1965,"أحمد شيبة"],
-  ["Ahmed Saad",1981,"أحمد سعد","Ahmed Saad (singer)"],["Mohamed Ramadan",1988,"محمد رمضان","Mohamed Ramadan (actor)"],["Mohamed Abdel Muttalib",1910,"محمد عبد المطلب"]],
+  ["Mahmoud El Leithy",1979,"محمود الليثي"],["Reda El Bahrawy",1987,"رضا البحراوي"],["Mohamed Abdel Muttalib",1910,"محمد عبد المطلب"]],
   {h:"Egyptian singer",k:BORN,g:"p",s:"singers",m:"eg",d:1}),
  Rd(["WHO IS THE","OLDEST NEW-GENERATION SINGER",Q],["مين","أكبر مطرب من الجيل الجديد في السن",QA],"min",[
   ["Mohamed Hamaki",1975,"محمد حماقي"],["Tamer Hosny",1977,"تامر حسني"],["Ramy Sabry",1978,"رامي صبري","Ramy Sabry (singer)"],

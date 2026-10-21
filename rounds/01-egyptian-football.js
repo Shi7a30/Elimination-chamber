@@ -6,7 +6,7 @@ CATS.push(
   ["Ahmed Hegazi",1991,"أحمد حجازي"],["Mohamed Salah",1992,"محمد صلاح"],["Mahmoud 'Trezeguet' Hassan",1994,"محمود حسن (تريزيجيه)","Trézéguet (Egyptian footballer)"],
   ["Mahmoud Hamdy 'El Wensh'",1995,"محمود حمدي (الونش)","Mahmoud Hamdy"],["Ahmed Sayed 'Zizo'",1996,"أحمد سيد (زيزو)","Zizo (footballer)"],["Mostafa Mohamed",1997,"مصطفى محمد","Mostafa Mohamed (footballer)"],
   ["Ahmed Fatouh",1998,"أحمد فتوح"],["Omar Marmoush",1999,"عمر مرموش"],["Hamza Abdel Karim",2008,"حمزة عبد الكريم","Hamza Abdelkarim"]],{h:"Egyptian footballer",k:BORN,g:"p",s:"players",m:"eg",d:1}),
- Rd(["WHO IS THE","OLDEST LEGEND",Q],["مين","أكبر أسطورة في السن",QA],"min",[
+ Rd(["WHO IS THE","OLDEST LEGEND",Q],["مين","أكبر أسطورة مصرية في السن",QA],"min",[
   ["Hassan Shehata",1949,"حسن شحاتة"],["Mahmoud 'Bibo' El Khatib",1954,"محمود الخطيب (بيبو)","Mahmoud El Khatib"],["Hossam Hassan",1966,"حسام حسن"],
   ["Hany Ramzy",1969,"هاني رمزي"],["Essam El-Hadary",1973,"عصام الحضري","Essam El Hadary"],["Ahmed Hassan",1975,"أحمد حسن","Ahmed Hassan (footballer, born 1975)"],
   ["Mohamed Aboutrika",1978,"محمد أبو تريكة"],["Mohamed Zidan",1981,"محمد زيدان"],["Ahmed 'Mido' Hossam",1983,"أحمد حسام (ميدو)","Mido (footballer)"]],{h:"Egyptian footballer",k:BORN,g:"p",s:"players",m:"eg",d:1}),
@@ -40,7 +40,7 @@ CATS.push(
   ["Mahmoud El-Gohary",1938,"محمود الجوهري"],["Hassan Shehata",1949,"حسن شحاتة"],["Farouk Gaafar",1952,"فاروق جعفر"],
   ["Shawky Gharib",1959,"شوقي غريب","Shawky Gharieb"],["Hossam El-Badry",1960,"حسام البدري","Hossam El Badry"],["Hossam Hassan",1966,"حسام حسن"],
   ["Ehab Galal",1967,"إيهاب جلال"],["Hany Ramzy",1969,"هاني رمزي"],["Ahmed 'Mido' Hossam",1983,"أحمد حسام (ميدو)","Mido (footballer)"]],{h:"Egyptian football manager",k:BORN,g:"p",s:"players",m:"eg",d:2}),
- Rd(["WHO IS THE","OLDEST EGYPT INTERNATIONAL",Q],["مين","أكبر لاعب في المنتخب في السن",QA],"min",[
+ Rd(["WHO IS THE","OLDEST EGYPT INTERNATIONAL",Q],["مين","أكبر لاعب منتخب في السن",QA],"min",[
   ["Wael Gomaa",1975,"وائل جمعة"],["Mohamed Barakat",1976,"محمد بركات"],["Hossam Ghaly",1981,"حسام غالي"],
   ["Mohamed Zidan",1981,"محمد زيدان"],["Emad Moteab",1983,"عماد متعب"],["Hosny Abd Rabo",1984,"حسني عبد ربه"],
   ["Ahmed Fathy",1984,"أحمد فتحي"],["Mahmoud 'Shikabala' Abdel Razek",1986,"محمود عبد الرازق (شيكابالا)","Shikabala"],["Mohamed Elneny",1992,"محمد النني"]],{h:"Egyptian footballer",k:BORN,g:"p",s:"players",m:"eg",d:3}),
@@ -59,7 +59,7 @@ CATS.push(
   ["Ali Maaloul",4,"علي معلول","Ali Maâloul"],["Hossam Hassan",2,"حسام حسن"],["Mahmoud 'Bibo' El Khatib",2,"محمود الخطيب (بيبو)","Mahmoud El Khatib"],
   ["Mohamed Salah",0,"محمد صلاح"],["Ahmed 'Mido' Hossam",0,"أحمد حسام (ميدو)","Mido (footballer)"],["Omar Marmoush",0,"عمر مرموش"]],
   {suf:TRA,h:"footballer",k:["CAF CL TITLES","دوري أبطال أفريقيا"],s:"players",m:"eg",d:2}),
- Rd(["WHO SCORED THE","MOST EPL GOALS",Q],["مين","جاب أكتر أهداف في البريميرليج",QA],"max",[
+ Rd(["WHO SCORED THE","MOST EPL GOALS",Q],["مين","أكتر مصري جاب أهداف في البريميرليج",QA],"max",[
   ["Mohamed Salah",193,"محمد صلاح"],["Ahmed 'Mido' Hossam",22,"أحمد حسام (ميدو)","Mido (footballer)"],["Amr Zaki",10,"عمرو زكي"],
   ["Mahmoud 'Trezeguet' Hassan",8,"محمود حسن (تريزيجيه)","Trézéguet (Egyptian footballer)"],["Ahmed Elmohamady",6,"أحمد المحمدي"],["Ahmed Hegazi",2,"أحمد حجازي"],
   ["Ramadan Sobhi",2,"رمضان صبحي"],["Mohamed Elneny",1,"محمد النني"],["Hossam Ghaly",1,"حسام غالي"]],
@@ -99,7 +99,7 @@ Rd(["WHICH CLUB OUTSIDE CAIRO","WAS FOUNDED FIRST",Q],["أنهي نادي بره
   ["Wadi Degla SC",2002,"وادي دجلة","Wadi Degla SC"],["El Gouna",2003,"الجونة","El Gouna FC"],["El Entag El Harby",2004,"الإنتاج الحربي","El Entag El Harby SC"],
   ["Ceramica Cleopatra",2007,"سيراميكا كليوباترا","Ceramica Cleopatra FC"],["Pharco",2010,"فاركو","Pharco FC"],["Modern Sport",2011,"مودرن سبورت","Modern Sport FC"]],
   {h:"Egyptian football club",k:["FOUNDED","اتأسس سنة"],dt:["Club founded","تأسيس النادي"],g:"y",s:"trophies",m:"eg",d:3}),
- Rd(["WHICH EGYPTIAN STADIUM","OPENED FIRST",Q],["أنهي استاد","اتفتح الأول",QA],"min",[
+ Rd(["WHICH EGYPTIAN STADIUM","OPENED FIRST",Q],["أنهي استاد مصري","اتفتح الأول",QA],"min",[
   ["Mokhtar El Tetsh Stadium",1917,"استاد مختار التتش (الأهلي)","Mokhtar El Tetsh Stadium"],["Alexandria Stadium",1929,"استاد إسكندرية"],["Cairo International Stadium",1960,"استاد القاهرة"],
   ["Arab Contractors Stadium",1979,"استاد المقاولون العرب","Osman Ahmed Osman Stadium"],["Military Academy Stadium",1989,"استاد الكلية الحربية","Cairo Military Academy Stadium"],["Suez Stadium",1990,"استاد السويس"],
   ["Borg El Arab Stadium",2007,"استاد برج العرب"],["Al Salam Stadium",2009,"استاد السلام","Al Salam Stadium (Egypt)"],["30 June Stadium",2012,"استاد 30 يونيو (الدفاع الجوي)"]],

@@ -73,7 +73,7 @@ CATS.push(
   ["Scrooge McDuck",1947,"عم دهب"],["Stitch",2002,"ستيتش","Stitch (Lilo & Stitch)"],["Olaf",2013,"أولاف","Olaf (Frozen)"]],
   {h:"cartoon character",k:["FIRST SEEN","أول ظهور سنة"],g:"y",dt:["First appearance","أول ظهور"],s:"kidstv",m:"eg",d:1}),
  Rd(["WHICH PIXAR FILM","CAME OUT LAST",Q],["أنهي فيلم بيكسار","أجدد",QA],"max",[
-  ["Toy Story",1995,"توي ستوري"],["A Bug's Life",1998,"حياة حشرة"],["Toy Story 2",1999,"حكاية لعبة 2"],
+  ["Toy Story",1995,"توي ستوري"],["A Bug's Life",1998,"حياة حشرة"],["Toy Story 2",1999,"توي ستوري 2"],
   ["Monsters, Inc.",2001,"مونسترز إنك"],["Finding Nemo",2003,"البحث عن نيمو"],["The Incredibles",2004,"ذا إنكريديبلز"],
   ["Cars",2006,"كارز","Cars (film)"],["Ratatouille",2007,"راتاتوي","Ratatouille (film)"],["WALL-E",2008,"وول-إي"]],
   {h:"animated film",k:["RELEASED","نزل سنة"],g:"y",dt:["Film released","نزول الفيلم"],s:"kidstv",m:"eg",d:3}),
@@ -135,8 +135,8 @@ CATS.push(
  Rd(["WHICH CHAT APP","LAUNCHED LAST",Q],["أنهي برنامج شات","أجدد",QA],"max",[
   ["mIRC",1995,"إم آي آر سي"],["ICQ",1996,"آي سي كيو"],["AIM",1997,"إيه آي إم","AIM (software)"],
   ["Yahoo! Messenger",1998,"ياهو ماسنجر"],["MSN Messenger",1999,"إم إس إن ماسنجر","Windows Live Messenger"],["Skype",2003,"سكايب"],
-  ["MySpace",2003,"ماي سبيس","Myspace"],["Hi5",2003,"هاي فايف"],["Orkut",2004,"أوركت"]],
-  {h:"website",k:["LAUNCHED","نزل سنة"],g:"y",dt:["Site launched","نزول الموقع"],s:"zaman",m:"eg",d:3}),
+  ["WhatsApp",2009,"واتساب"],["Telegram",2013,"تيليجرام","Telegram (software)"],["Discord",2015,"ديسكورد"]],
+  {h:"chat app",k:["LAUNCHED","نزل سنة"],g:"y",dt:["App launched","نزول الأبلكيشن"],s:"zaman",m:"eg",d:3}),
  Rd(["WHICH WINDOWS","CAME OUT LAST",Q],["أنهي ويندوز","أجدد",QA],"max",[
   ["Windows 3.1",1992,"ويندوز 3.1"],["Windows 95",1995,"ويندوز 95"],["Windows 98",1998,"ويندوز 98"],
   ["Windows ME",2000,"ويندوز مي","Windows Me"],["Windows XP",2001,"ويندوز إكس بي"],["Windows Vista",2007,"ويندوز فيستا"],
@@ -147,7 +147,7 @@ CATS.push(
   ["Cairo Tower",1961,"برج القاهرة"],["Cairo Opera House",1988,"دار الأوبرا"],["Cairo Metro Line 2",1996,"مترو الخط التاني","Line 2 (Cairo Metro)"],
   ["Bibliotheca Alexandrina",2002,"مكتبة الإسكندرية"],["Al-Azhar Park",2005,"حديقة الأزهر"],["Cairo Metro Line 3",2012,"مترو الخط التالت","Line 3 (Cairo Metro)"]],
   {h:"Egypt",k:["OPENED","اتفتح سنة"],s:"zaman",m:"eg",d:2}),
- Rd(["WHICH OF THESE","HAPPENED FIRST",Q],["إيه","اللي حصل الأول",QA],"min",[
+ Rd(["WHICH OF THESE","HAPPENED FIRST",Q],["أنهي حاجة","من دول حصلت الأول",QA],"min",[
   ["Fall of the Berlin Wall",1989,"سقوط سور برلين","Fall of the Berlin Wall"],["Death of Princess Diana",1997,"وفاة الأميرة ديانا","Death of Diana, Princess of Wales"],["The Y2K millennium",2000,"الألفية (سنة 2000)","Year 2000 problem"],
   ["Euro notes and coins",2002,"نزول اليورو","Euro banknotes"],["Indian Ocean tsunami",2004,"تسونامي المحيط الهندي","2004 Indian Ocean earthquake and tsunami"],["Death of Michael Jackson",2009,"وفاة مايكل جاكسون","Death of Michael Jackson"],
   ["January 25 revolution",2011,"ثورة 25 يناير","Egyptian revolution of 2011"],["London Olympics",2012,"أولمبياد لندن","2012 Summer Olympics"],["Brexit vote",2016,"استفتاء البريكست","2016 United Kingdom European Union membership referendum"]],

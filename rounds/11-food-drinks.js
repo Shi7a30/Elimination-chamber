@@ -9,7 +9,7 @@ CATS.push(
   ["Spiro Spathis",1920,"سبيرو سباتس"],["Faragello",1973,"فرجللو"],["Juhayna",1983,"جهينة","Juhayna Food Industries"],["Panda (Arab Dairy)",1985,"باندا"],["Dina Farms",1987,"دينا فارمز"],["Domty",1990,"دومتي"],["Greenland",1995,"جرينلاند"],["Obour Land",1997,"عبور لاند"],["Beyti",1998,"بيتي"]],
   {h:"Egyptian drink or dairy brand",k:["FOUNDED","اتأسس سنة"],g:"y",dt:["Company founded","تأسيس الشركة"],s:"snacks",m:"eg",d:3}),
  Rd(["WHICH SUPERMARKET","STARTED IN EGYPT LAST",Q],["أنهي سوبرماركت","أجدد في مصر",QA],"max",[
-  ["Seoudi",1938,"سعودي ماركت"],["Awlad Ragab",1970,"أولاد رجب"],["Metro Market",1998,"مترو ماركت"],["Carrefour",2002,"كارفور"],["Hyper One",2005,"هايبر وان"],["Gourmet",2006,"جورميه"],["Kheir Zaman",2006,"خير زمان"],["LuLu Hypermarket",2010,"لولو هايبر ماركت"],["Breadfast",2017,"بريدفاست"]],
+  ["Seoudi",1938,"سعودي ماركت"],["Awlad Ragab",1970,"أولاد رجب"],["Metro Market",1998,"مترو ماركت"],["Carrefour",2002,"كارفور"],["Hyper One",2005,"هايبر وان"],["Gourmet",2006,"جورميه"],["Kheir Zaman",2006,"خير زمان"],["LuLu Hypermarket",2010,"لولو هايبر ماركت"],["Kazyon",2014,"كازيون"]],
   {h:"supermarket chain in Egypt",k:["STARTED IN EGYPT","بدأ في مصر سنة"],g:"y",dt:["Started in Egypt","البداية في مصر"],s:"snacks",m:"eg",d:2}),
  Rd(["WHICH GLOBAL GIANT","CAME TO EGYPT FIRST",Q],["أنهي شركة عالمية","دخلت مصر الأول",QA],"min",[
   ["Nestlé",1900,"نستله"],["Coca-Cola",1942,"كوكاكولا"],["Heinz",1989,"هاينز"],["Afia (Savola)",1995,"عافية","Savola Group"],["Heineken",2002,"هاينكن"],["Hero",2005,"هيرو","Hero Group"],["Danone",2006,"دانون"],["Almarai",2009,"المراعي"],["Kellogg's",2015,"كيلوجز"]],
@@ -149,7 +149,7 @@ CATS.push(
  Rd(["WHICH RESTAURANT CHAIN","WAS FOUNDED FIRST",Q],["أنهي سلسلة مطاعم","اتأسست الأول",QA],"min",[
   ["Benihana",1964,"بينيهانا"],["TGI Fridays",1965,"تي جي آي فرايديز"],["Hard Rock Cafe",1971,"هارد روك كافيه"],
   ["Chili's",1975,"تشيليز"],["The Cheesecake Factory",1978,"تشيز كيك فاكتوري"],["Applebee's",1980,"أبلبيز"],
-  ["Olive Garden",1982,"أوليف جاردن"],["Outback Steakhouse",1988,"أوت باك"],["Wagamama",1992,"واجامама"]],
+  ["Olive Garden",1982,"أوليف جاردن"],["Outback Steakhouse",1988,"أوت باك"],["Wagamama",1992,"واجاماما"]],
   {h:"restaurant chain",k:["FOUNDED","اتأسست سنة"],s:"eats",m:"w",d:3}),
  Rd(["WHICH COUNTRY DRINKS","THE MOST COFFEE",Q],["فين","بيشربوا قهوة أكتر",QA],"max",[
   ["Finland",12,"فنلندا"],["Norway",9.9,"النرويج"],["Iceland",9,"أيسلندا"],

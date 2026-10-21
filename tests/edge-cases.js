@@ -18,7 +18,17 @@ await p.goBack();await p.waitForTimeout(200);ok(await p.evaluate(()=>document.bo
 await p.evaluate(()=>document.querySelector('.cat.hero').click());await p.evaluate(()=>{for(let i=0,k=0;k<2;i++)if(i!==corr){document.querySelector('.cell[data-i="'+i+'"]').click();k++}});
 await p.goBack();await p.waitForTimeout(300);let s=await p.evaluate(()=>({game:inGame(),q:document.getElementById('st').textContent,sh:document.getElementById('sheet').classList.contains('show')}));
 ok(s.game&&s.sh&&/Leave/.test(s.q),'back in a game did not ask first: '+JSON.stringify(s));
-await p.goBack();await p.waitForTimeout(300);ok(await p.evaluate(()=>inGame()&&!document.getElementById('sheet').classList.contains('show')&&out.length===2),'second back did not keep playing');
+await p.goBack();await p.waitForTimeout(300);ok(await p.evaluate(()=>!inGame()),'second back did not leave the game');
+// 1b. Stats group cards open that group; back on a lost round that can still be undone asks first
+await p.context().close();p=await page({ls:{elim_coins:'1000'}});
+await p.evaluate(()=>document.querySelector('[data-nav="st"]').click());await p.evaluate(()=>document.querySelector('.cat.sc[data-g="0"]').click());await p.waitForTimeout(200);
+ok(await p.evaluate(()=>GRP===0&&!inGame()),'Stats group card did not open its group');
+await p.evaluate(()=>{prog={};var id='players';SUB=subInfo(id);PL=subOrder(id);ri=0;runOk=0;mode='cat';newRound();hSync()});
+await p.evaluate(()=>document.querySelector('.cell[data-i="'+corr+'"]').click());await p.waitForFunction(()=>canUndo()&&/Undo/.test(document.getElementById('sb').textContent));
+await p.goBack();await p.waitForTimeout(300);s=await p.evaluate(()=>({game:inGame(),over,q:document.getElementById('st').textContent,t:document.getElementById('sheet').textContent}));
+ok(s.game&&s.over==='lose'&&/Leave/.test(s.q)&&/undo this loss/.test(s.t),'back on the lost popup did not ask first: '+JSON.stringify(s));
+await p.evaluate(()=>document.querySelector('#sb .btn').click());await p.waitForTimeout(200);
+ok(await p.evaluate(()=>inGame()&&/Undo/.test(document.getElementById('sb').textContent)),'Keep playing did not bring back the Undo popup');
 // 2. update banner hidden in a game, shown on Home
 await p.evaluate(()=>updShow());await p.waitForTimeout(100);ok(await p.evaluate(()=>getComputedStyle(document.getElementById('upd')).display==='none'),'update banner shows during a game');
 await p.evaluate(()=>{GRP=null;menu()});ok(await p.evaluate(()=>getComputedStyle(document.getElementById('upd')).display!=='none'),'update banner hidden on Home');
@@ -65,7 +75,7 @@ await p.context().close();
 // 8. undo price: stays after reopening with no streak; resets if the app closed on the lost popup
 p=await page({ls:{elim_coins:'1000'}});
 await p.evaluate(()=>{prog={};var id='players';SUB=subInfo(id);PL=subOrder(id);ri=0;runOk=0;mode='cat';newRound()});
-await p.evaluate(()=>document.querySelector('.cell[data-i="'+corr+'"]').click());await p.waitForTimeout(600);await p.evaluate(()=>undo());await win(p);await p.waitForTimeout(700);
+await p.evaluate(()=>document.querySelector('.cell[data-i="'+corr+'"]').click());await p.waitForFunction(()=>canUndo()&&/Undo/.test(document.getElementById('sb').textContent));await p.evaluate(()=>undo());await win(p);await p.waitForTimeout(700);
 await p.reload();await p.waitForTimeout(200);ok(await p.evaluate(()=>uCost())===60,'undo price went back to 30 after reopening');
 await p.evaluate(()=>{var id='players';SUB=subInfo(id);PL=subOrder(id);ri=0;runOk=0;mode='cat';newRound()});await p.evaluate(()=>document.querySelector('.cell[data-i="'+corr+'"]').click());await p.waitForTimeout(300);
 await p.reload();await p.waitForTimeout(200);ok(await p.evaluate(()=>uCost())===30,'closing on the lost popup kept the higher undo price');

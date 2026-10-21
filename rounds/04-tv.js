@@ -81,9 +81,10 @@ CATS.push(
   ["7a2 3arab",2024,"حق عرب","Haqq Arab"],["El 7ashashin",2024,"الحشاشين","El Hashashin (TV series)"],["Lam shamseya",2025,"لام شمسية","Lam Shamseya"]],
   {h:"Egyptian TV series",k:["FIRST AIRED","أول عرض"],dt:["Series first aired","أول عرض للمسلسل"],g:"y",s:"tv",m:"eg",d:2}),
  Rd(["WHO IS THE","YOUNGEST SERIES STAR",Q],["مين","أصغر نجم مسلسلات",QA],"max",[
-  ["Nour El-Sherif",1946,"نور الشريف"],["Yousra",1955,"يسرا"],["Ghada Abdel Razek",1965,"غادة عبد الرازق"],
+  ["Yousra",1955,"يسرا"],["Ghada Abdel Razek",1965,"غادة عبد الرازق"],
   ["Yasser Galal",1969,"ياسر جلال"],["Nelly Karim",1974,"نيللي كريم"],["Amir Karara",1977,"أمير كرارة"],
-  ["Dina El Sherbiny",1985,"دينا الشربيني"],["Amina Khalil",1988,"أمينة خليل"],["Ahmed Malek",1995,"أحمد مالك"]],
+  ["Dina El Sherbiny",1985,"دينا الشربيني"],["Amina Khalil",1988,"أمينة خليل"],["Ahmed Malek",1995,"أحمد مالك"],
+  ["Nohad Nour",1997,"نهاد نور"]],
   {h:"Egyptian actor",k:BORN,g:"p",s:"tv",m:"eg",d:1}),
  Rd(["WHICH ADULT CARTOON","CAME OUT FIRST",Q],["إيه","أقدم كرتون للكبار",QA],"min",[
   ["The Flintstones",1960,"عيلة فلينستون"],["The Jetsons",1962,"عيلة جيتسون"],["South Park",1997,"ساوث بارك"],
