@@ -28,9 +28,10 @@ CATS.push(
    ["Fouad El-Mohandes",1924,"فؤاد المهندس","Fouad el-Mohandes"],["Shoukry Sarhan",1925,"شكري سرحان"],["Rushdy Abaza",1926,"رشدي أباظة"],
    ["Emad Hamdy",1909,"عماد حمدي"],["Mahmoud el-Meliguy",1910,"محمود المليجي"]],{h:"Egyptian actor",k:BORN,g:"p",s:"actors",m:"eg",d:3}),
   Rd(["WHO IS THE","YOUNGEST NEW STAR",Q],["مين","أصغر نجم في الجيل الجديد",QA],"max",[
-   ["Mohamed Saad",1968,"محمد سعد","Mohamed Saad (actor)"],["Ahmed Ezz",1971,"أحمد عز","Ahmed Ezz (actor)"],["Amir Karara",1977,"أمير كرارة"],["Ahmed Mekky",1980,"أحمد مكي"],
+   ["Ahmed Ezz",1971,"أحمد عز","Ahmed Ezz (actor)"],["Amir Karara",1977,"أمير كرارة"],["Ahmed Mekky",1980,"أحمد مكي"],
    ["Asser Yassin",1981,"آسر ياسين"],["Mohamed Farrag",1982,"محمد فراج"],["Karim Mahmoud Abdel Aziz",1985,"كريم محمود عبد العزيز"],
-   ["Ahmed Hatem",1987,"أحمد حاتم","Ahmed Hatem (actor)"],["Ahmed Malek",1995,"أحمد مالك"]],{h:"Egyptian actor",k:BORN,g:"p",s:"actors",m:"eg",d:1}),
+   ["Ahmed Hatem",1987,"أحمد حاتم","Ahmed Hatem (actor)"],["Ahmed Malek",1995,"أحمد مالك"],
+   ["Nohad Nour",1997,"نهاد نور"]],{h:"Egyptian actor",k:BORN,g:"p",s:"actors",m:"eg",d:1}),
   Rd(["WHICH HIT FILM","CAME OUT FIRST",Q],["أنهي فيلم","نزل الأول",QA],"min",[
    ["Se3idy fel gam3a el amrekia",1998,"صعيدي في الجامعة الأمريكية","Saidi fil Gamaa el Amrikia"],["Hammam fi amsterdam",1999,"همام في أمستردام","Hammam fi Amsterdam"],["El nazer",2000,"الناظر","El Nazer (film)"],
    ["Africano",2001,"أفريكانو","Africano (film)"],["Mafia",2002,"مافيا","Mafia (2002 film)"],["Tito",2004,"تيتو","Tito (2004 film)"],["El gezira",2007,"الجزيرة","The Island (2007 film)"],
