@@ -382,6 +382,15 @@
   "skip": false
  },
  {
+  "name": "El Sekka El Hadid",
+  "title": "El Sekka El Hadid SC",
+  "hint": "Egyptian football club",
+  "ar": "السكة الحديد",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
   "name": "Misr Stadium",
   "title": "New Administrative Capital Stadium",
   "hint": "stadium",
@@ -24458,5 +24467,275 @@
   "ar_hint": "لاعبة اسكواش",
   "logo": false,
   "skip": false
+ },
+ {
+  "name": "Kharban",
+  "title": "Kharban",
+  "hint": "Wegz song",
+  "ar": "خربان",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Bazeet",
+  "title": "Bazeet",
+  "hint": "Wegz song",
+  "ar": "بسيط",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Dorak gai",
+  "title": "Dorak gai",
+  "hint": "Wegz song",
+  "ar": "دورك جاي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "3afareet el asphalt",
+  "title": "3afareet el asphalt",
+  "hint": "Wegz song",
+  "ar": "عفاريت الأسفلت",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Msh khalsa",
+  "title": "Msh khalsa",
+  "hint": "Wegz song",
+  "ar": "مش خالصة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Amira",
+  "title": "Amira",
+  "hint": "Wegz song",
+  "ar": "أميرة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Ezz el arab",
+  "title": "Ezz el arab",
+  "hint": "Wegz song",
+  "ar": "عز العرب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Kalam forsan",
+  "title": "Kalam forsan",
+  "hint": "Wegz song",
+  "ar": "كلام فرسان",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Mahragan el salam",
+  "title": "Mahragan el salam",
+  "hint": "Egyptian mahraganat song",
+  "ar": "مهرجان السلام",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Ana baba yalla",
+  "title": "Ana baba yalla",
+  "hint": "Egyptian mahraganat song",
+  "ar": "أنا بابا يلا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Hayla",
+  "title": "Hayla",
+  "hint": "Marwan Moussa song",
+  "ar": "هيلا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Batalo fake",
+  "title": "Batalo fake",
+  "hint": "Wegz song",
+  "ar": "بطلوا فيك",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "3ayz fin",
+  "title": "3ayz fin",
+  "hint": "Marwan Pablo song",
+  "ar": "عايز فين",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Sindbad",
+  "title": "Sindbad",
+  "hint": "Marwan Pablo song",
+  "ar": "سندباد",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Ghaba",
+  "title": "Ghaba",
+  "hint": "Marwan Pablo song",
+  "ar": "غابة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Men el akher",
+  "title": "Men el akher",
+  "hint": "Abyusif song",
+  "ar": "من الآخر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Abyusif",
+  "title": "Abyusif",
+  "hint": "Egyptian rapper",
+  "ar": "أبيوسف",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Hassan Shakosh",
+  "title": "Hassan Shakosh",
+  "hint": "Egyptian mahraganat singer",
+  "ar": "حسن شاكوش",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Hamo Bika",
+  "title": "Hamo Bika",
+  "hint": "Egyptian mahraganat singer",
+  "ar": "حمو بيكا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Marwan Moussa",
+  "title": "Marwan Moussa",
+  "hint": "Egyptian rapper",
+  "ar": "مروان موسى",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Akher et3a fanneya",
+  "title": "Akher et3a fanneya",
+  "hint": "Marwan Pablo album",
+  "ar": "آخر قطعة فنية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Project blue beam",
+  "title": "Project blue beam",
+  "hint": "Marwan Pablo album",
+  "ar": "بروجكت بلو بيم",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "En7eraf",
+  "title": "En7eraf",
+  "hint": "Marwan Pablo album",
+  "ar": "انحراف",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "5 nezam",
+  "title": "5 nezam",
+  "hint": "Marwan Pablo album",
+  "ar": "5 نظام",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Zap Tharwat",
+  "title": "Zap Tharwat",
+  "hint": "Egyptian rapper",
+  "ar": "زاب ثروت",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Mozakerat 7ares marma",
+  "title": "Mozakerat 7ares marma",
+  "hint": "Abyusif album",
+  "ar": "مذكرات حارس مرمى",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Dah mesh rap",
+  "title": "Dah mesh rap",
+  "hint": "Abyusif album",
+  "ar": "ده مش راب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Bel monasba",
+  "title": "Bel monasba",
+  "hint": "Marwan Moussa album",
+  "ar": "بالمناسبة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Wa7ed wa7ed",
+  "title": "Wa7ed wa7ed",
+  "hint": "Abyusif album",
+  "ar": "واحد واحد",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Geziret el batal",
+  "title": "Geziret el batal",
+  "hint": "Wegz EP",
+  "ar": "جزيرة البطل",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
  }
 ]

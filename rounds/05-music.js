@@ -230,5 +230,33 @@ Rd(["WHICH TAMER HOSNY ALBUM","CAME OUT LAST",Q],["أنهي ألبوم لتام�
   ["Ahwak",1957,"أهواك","Ahwak"],["We7yat 2alby",1962,"وحياة قلبي"],["2olly 7aga",1962,"قولي حاجة"],
   ["7aga ghareeba",1967,"حاجة غريبة"],["Gabbar",1967,"جبار"],["Balash 3etab",1967,"بلاش عتاب"],
   ["Gana el hawa",1969,"جانا الهوى"],["El hawa hawaya",1969,"الهوى هوايا"],["A7dan el 7abayeb",1969,"أحضان الحبايب"]],
-  {h:"Abdel Halim Hafez song",k:["RELEASED","نزلت سنة"],dt:["Song released","نزول الأغنية"],g:"y",s:"songs",m:"eg",d:3})]}
+  {h:"Abdel Halim Hafez song",k:["RELEASED","نزلت سنة"],dt:["Song released","نزول الأغنية"],g:"y",s:"songs",m:"eg",d:3}),
+ Rd(["WHICH SINGER DID","WE LOSE FIRST",Q],["مين من المطربين","فارقنا الأول",QA],"min",[
+  ["Sayed Darwish",1923,"سيد درويش"],["Mohamed Fawzi",1966,"محمد فوزي","Mohamed Fawzi (singer)"],["Farid al-Atrash",1974,"فريد الأطرش"],
+  ["Umm Kulthum",1975,"أم كلثوم"],["Abdel Halim Hafez",1977,"عبد الحليم حافظ"],["Fayza Ahmed",1983,"فايزة أحمد"],
+  ["Mohamed Abdel Wahab",1991,"محمد عبد الوهاب"],["Laila Mourad",1995,"ليلى مراد","Leila Mourad"],["Shadia",2017,"شادية"]],
+  {h:"Egyptian singer",k:["PASSED AWAY","اتوفى سنة"],s:"singers",m:"eg",d:2}),
+ Rd(["WHO IS THE","OLDEST 80s & 90s STAR",Q],["مين","أكبر نجم من التمانينات والتسعينات في السن",QA],"min",[
+  ["Ali El Haggar",1954,"علي الحجار"],["Amr Diab",1961,"عمرو دياب"],["Hamid El Shaeri",1961,"حميد الشاعري"],
+  ["Hakim",1962,"حكيم","Hakim (singer)"],["Hisham Abbas",1963,"هشام عباس"],["Ehab Tawfik",1966,"إيهاب توفيق"],
+  ["Moustafa Amar",1966,"مصطفى قمر"],["Simone",1966,"سيمون","Simone Philip Kamel"],["Angham",1972,"أنغام"]],{h:"Egyptian singer",k:BORN,g:"p",s:"singers",m:"eg",d:2}),
+ Rd(["WHICH WEGZ SONG","CAME OUT LAST",Q],["أنهي أغنية لويجز","أجدد",QA],"max",[
+  ["Kharban",2018,"خربان"],["Bazeet",2019,"بسيط"],["Dorak gai",2020,"دورك جاي"],
+  ["3afareet el asphalt",2021,"عفاريت الأسفلت"],["Msh khalsa",2021,"مش خالصة"],["El bakht",2022,"البخت"],
+  ["Amira",2022,"أميرة"],["Ezz el arab",2022,"عز العرب"],["Kalam forsan",2025,"كلام فرسان"]],
+  {h:"Wegz song",k:["RELEASED","نزلت سنة"],dt:["Song released","نزول الأغنية"],g:"y",s:"songs",m:"eg",d:2}),
+ Rd(["WHICH RAP OR MAHRAGANAT SONG","CAME OUT FIRST",Q],["أنهي أغنية راب أو مهرجانات","نزلت الأول",QA],"min",[
+  ["Mahragan el salam",2006,"مهرجان السلام"],["Ana baba yalla",2011,"أنا بابا يلا"],["Hayla",2016,"هيلا"],
+  ["Batalo fake",2017,"بطلوا فيك"],["3ayz fin",2018,"عايز فين"],["Sindbad",2019,"سندباد"],
+  ["Dorak gai",2020,"دورك جاي"],["Ghaba",2021,"غابة"],["Men el akher",2022,"من الآخر"]],
+  {h:"Egyptian rap song",k:["RELEASED","نزلت سنة"],dt:["Song released","نزول الأغنية"],g:"y",s:"songs",m:"eg",d:3}),
+ Rd(["WHO IS THE OLDEST","RAP OR MAHRAGANAT STAR",Q],["مين","أكبر نجم راب أو مهرجانات في السن",QA],"min",[
+  ["Ahmed Mekky",1980,"أحمد مكي"],["Abyusif",1985,"أبيوسف"],
+  ["Zap Tharwat",1987,"زاب ثروت"],["Hassan Shakosh",1987,"حسن شاكوش"],["Hamo Bika",1988,"حمو بيكا"],["Mohamed Ramadan",1988,"محمد رمضان"],
+  ["Marwan Moussa",1995,"مروان موسى"],["Marwan Pablo",1995,"مروان بابلو"],["Wegz",1998,"ويجز"]],{h:"Egyptian rapper",k:BORN,g:"p",s:"singers",m:"eg",d:3}),
+ Rd(["WHICH RAP ALBUM","CAME OUT LAST",Q],["أنهي ألبوم راب","أجدد",QA],"max",[
+  ["Mozakerat 7ares marma",2012,"مذكرات حارس مرمى"],["Dah mesh rap",2013,"ده مش راب"],["Bel monasba",2017,"بالمناسبة"],
+  ["Wa7ed wa7ed",2018,"واحد واحد"],["Geziret el batal",2019,"جزيرة البطل"],["Akher et3a fanneya",2023,"آخر قطعة فنية"],
+  ["Project blue beam",2024,"بروجكت بلو بيم"],["En7eraf",2025,"انحراف"],["5 nezam",2026,"5 نظام"]],
+  {h:"Egyptian rap album",k:["RELEASED","نزل سنة"],dt:["Album released","نزول الألبوم"],g:"y",s:"songs",m:"eg",d:3})]}
 );
