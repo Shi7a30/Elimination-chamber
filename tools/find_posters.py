@@ -9,8 +9,13 @@ Sources, by kind:
 - person: the elCinema and IMDb person pages Wikidata links to, then IMDb's name search
 - song: album covers from the iTunes and Deezer search APIs
 - app / other (brands, shops): the App Store icon of the brand's own app
+- album: album covers from iTunes and Deezer
+- club: the badge from TheSportsDB; person: TheSportsDB player photo and the Deezer artist picture
+- "web" (list of search phrases, any kind): the top hits of a Bing image search
 - every kind: the Wikipedia/Wikidata/Commons candidates fetch_photos already knows, and any "pages" listed by hand
   (the page's og:image is used).
+A target with "more": true is searched again with only the web, Deezer artist and TheSportsDB sources, and
+pictures an earlier run already offered are left out, so a second look shows only new options.
 Run by .github/workflows/find-posters.yml (these sites aren't reachable from every dev environment).
 """
 import json, os, re, sys, time
@@ -134,7 +139,69 @@ def deezer(term):
             for d in r.json().get("data", []) if (d.get("album") or {}).get("cover_xl")]
 
 
+def deezer_album(term):
+    r = get("https://api.deezer.com/search/album", params={"q": term, "limit": 4})
+    if not r:
+        return []
+    return [("deezer album: %s - %s" % (d.get("title"), (d.get("artist") or {}).get("name")), d["cover_xl"])
+            for d in r.json().get("data", []) if d.get("cover_xl")]
+
+
+def deezer_artist(term):
+    r = get("https://api.deezer.com/search/artist", params={"q": term, "limit": 3})
+    if not r:
+        return []
+    return [("deezer artist: %s" % d.get("name"), d["picture_xl"]) for d in r.json().get("data", [])
+            if d.get("picture_xl") and "/artist//" not in d["picture_xl"]]
+
+
+def sportsdb(term, what):
+    if what == "club":
+        r = get("https://www.thesportsdb.com/api/v1/json/3/searchteams.php", params={"t": term})
+        rows = (r.json().get("teams") or []) if r else []
+        return [("sportsdb team: %s" % d.get("strTeam"), d.get("strBadge") or d.get("strTeamBadge")) for d in rows[:3]]
+    r = get("https://www.thesportsdb.com/api/v1/json/3/searchplayers.php", params={"p": term})
+    rows = (r.json().get("player") or []) if r else []
+    return [("sportsdb player: %s (%s)" % (d.get("strPlayer"), d.get("strNationality")), d.get("strThumb") or d.get("strCutout"))
+            for d in rows[:3]]
+
+
+def web(q, n=6):
+    """Top results of a Bing image search: [(label, full-size image url)]."""
+    r = get("https://www.bing.com/images/search", params={"q": q, "form": "HDRSC2", "first": 1, "setlang": "en"})
+    if not r:
+        return []
+    out = []
+    for m in re.findall(r'murl&quot;:&quot;(.*?)&quot;', r.text):
+        if m.lower().split("?")[0].endswith((".jpg", ".jpeg", ".png", ".webp")) and m not in [u for _, u in out]:
+            out.append(("web: " + q, m))
+        if len(out) >= n:
+            break
+    return out
+
+
+def more_sources(t):
+    c = []
+    for q in t.get("web", []):
+        c += web(q)
+    k = t["kind"]
+    if k in ("person", "club"):
+        for term in [t.get("title") or t["name"]] + t.get("sportsdb", []):
+            c += sportsdb(term, k)
+    if k == "person" and t.get("singer"):
+        c += deezer_artist(t.get("title") or t["name"]) + deezer_artist(t.get("ar", ""))
+    if k == "album":
+        for term in [t["name"] + " " + t.get("artist", ""), t.get("ar", "") + " " + t.get("artist_ar", "")]:
+            c += itunes(term.strip(), "album") + deezer_album(term.strip())
+    if k == "song":
+        for term in [t["name"] + " " + t.get("artist", ""), t.get("ar", "") + " " + t.get("artist_ar", "")]:
+            c += itunes(term.strip(), "song") + deezer(term.strip())
+    return c
+
+
 def sources(t):
+    if t.get("more"):
+        return more_sources(t)
     c = []
 
     def add(src, url):
@@ -165,6 +232,8 @@ def sources(t):
         for q in [t["name"]] + t.get("q", []):
             for src, u in imdb_suggest(re.sub(r"[^\w\s]", " ", q)):
                 add(src, u)
+    for src, u in more_sources(t):
+        add(src, u)
     if k == "song":
         for term in [t["name"] + " " + t.get("artist", ""), t.get("ar", "")]:
             for src, u in itunes(term.strip(), "song") + deezer(term.strip()):
@@ -194,18 +263,19 @@ def main():
     except (OSError, ValueError):
         pass
     for t in targets:
-        if t["name"] in out and not t.get("redo"):
+        if t["name"] in out and not t.get("redo") and not t.get("more"):
             continue
         if time.time() > stop:
             print("out of time before", t["name"])
             break
         cands = []
+        seen = {c["url"] for c in out.get(t["name"], [])} if t.get("more") else set()
         try:
-            found = sources(t)
+            found = [(src, u) for src, u in sources(t) if u and u not in seen]
         except Exception as e:  # noqa: BLE001
             print("sources failed", t["name"], e)
             found = []
-        for src, url in found[:14]:
+        for src, url in found[:20]:
             for u in bigger(url):
                 try:
                     cands.append({"src": src, "url": u, "uri": F.to_uri(u)})

@@ -8,8 +8,7 @@
 "fix": true,
 "pages": [
 "https://elcinema.com/work/2083081/"
-],
-"redo": true
+]
 },
 {
 "name": "Lam shamseya",
@@ -20,8 +19,7 @@
 "fix": true,
 "pages": [
 "https://elcinema.com/work/2090082/"
-],
-"redo": true
+]
 },
 {
 "name": "7alim",
@@ -32,8 +30,7 @@
 "fix": true,
 "pages": [
 "https://elcinema.com/work/1010307/"
-],
-"redo": true
+]
 },
 {
 "name": "Ard el khof",
@@ -44,8 +41,7 @@
 "fix": true,
 "pages": [
 "https://elcinema.com/work/1010932/"
-],
-"redo": true
+]
 },
 {
 "name": "E7dak el sora tetla3 7elwa",
@@ -56,8 +52,7 @@
 "fix": true,
 "pages": [
 "https://elcinema.com/work/1010166/"
-],
-"redo": true
+]
 },
 {
 "name": "Rodda Qalbi",
@@ -68,8 +63,7 @@
 "fix": true,
 "pages": [
 "https://elcinema.com/work/1009815/"
-],
-"redo": true
+]
 },
 {
 "name": "El kenz",
@@ -80,8 +74,7 @@
 "fix": true,
 "pages": [
 "https://elcinema.com/work/2043112/"
-],
-"redo": true
+]
 },
 {
 "name": "Lan a3eesh fi gelbab aby",
@@ -92,8 +85,7 @@
 "fix": true,
 "pages": [
 "https://elcinema.com/work/1010312/"
-],
-"redo": true
+]
 },
 {
 "name": "Ga3far el 3omda",
@@ -104,8 +96,7 @@
 "fix": true,
 "pages": [
 "https://elcinema.com/work/2077046/"
-],
-"redo": true
+]
 },
 {
 "name": "Bawabet el 7alawany",
@@ -116,8 +107,7 @@
 "fix": true,
 "pages": [
 "https://elcinema.com/work/1011618/"
-],
-"redo": true
+]
 },
 {
 "name": "El mal wel banoon",
@@ -129,8 +119,7 @@
 "pages": [
 "https://elcinema.com/work/1723192/",
 "https://elcinema.com/work/1276343/"
-],
-"redo": true
+]
 },
 {
 "name": "Zizinia",
@@ -141,8 +130,7 @@
 "fix": true,
 "pages": [
 "https://elcinema.com/work/1010857/"
-],
-"redo": true
+]
 },
 {
 "name": "Bodyguard",
@@ -153,8 +141,7 @@
 "fix": true,
 "pages": [
 "https://elcinema.com/work/1531311/"
-],
-"redo": true
+]
 },
 {
 "name": "El daw2 el shared",
@@ -165,8 +152,7 @@
 "fix": true,
 "pages": [
 "https://elcinema.com/work/1010862/"
-],
-"redo": true
+]
 },
 {
 "name": "3elet el 7ag metwally",
@@ -177,8 +163,7 @@
 "fix": true,
 "pages": [
 "https://elcinema.com/work/1028580/"
-],
-"redo": true
+]
 },
 {
 "name": "7assan we morcos",
@@ -189,8 +174,7 @@
 "fix": true,
 "pages": [
 "https://elcinema.com/work/1010056/"
-],
-"redo": true
+]
 },
 {
 "name": "El ostoura",
@@ -201,8 +185,7 @@
 "fix": true,
 "pages": [
 "https://elcinema.com/work/2040307/"
-],
-"redo": true
+]
 },
 {
 "name": "Do3a2 el karawan",
@@ -213,8 +196,7 @@
 "fix": true,
 "pages": [
 "https://elcinema.com/work/1010041/"
-],
-"redo": true
+]
 },
 {
 "name": "Tito",
@@ -225,8 +207,7 @@
 "fix": true,
 "pages": [
 "https://elcinema.com/work/1010146/"
-],
-"redo": true
+]
 },
 {
 "name": "Arabesque",
@@ -237,8 +218,7 @@
 "fix": true,
 "pages": [
 "https://elcinema.com/work/1010599/"
-],
-"redo": true
+]
 },
 {
 "name": "7adis el saba7 wel masa2",
@@ -249,8 +229,7 @@
 "fix": true,
 "pages": [
 "https://elcinema.com/work/1010927/"
-],
-"redo": true
+]
 },
 {
 "name": "Ahmed Shobeir",
@@ -259,7 +238,14 @@
 "ar": "أحمد شوبير",
 "hint": "Egyptian footballer",
 "fix": false,
-"redo": true
+"more": true,
+"web": [
+"أحمد شوبير",
+"Ahmed Shobeir"
+],
+"sportsdb": [
+"Ahmed Shobeir"
+]
 },
 {
 "name": "Egyptian Army Stadium (Suez)",
@@ -268,7 +254,11 @@
 "ar": "استاد الجيش بالسويس",
 "hint": "stadium",
 "fix": false,
-"redo": true
+"more": true,
+"web": [
+"استاد الجيش بالسويس",
+"Suez Army Stadium"
+]
 },
 {
 "name": "Shawky Gharib",
@@ -277,7 +267,11 @@
 "ar": "شوقي غريب",
 "hint": "Egyptian football manager",
 "fix": false,
-"redo": true
+"more": true,
+"web": [
+"شوقي غريب",
+"Shawky Gharib coach"
+]
 },
 {
 "name": "Hossam El-Badry",
@@ -286,7 +280,11 @@
 "ar": "حسام البدري",
 "hint": "Egyptian football manager",
 "fix": false,
-"redo": true
+"more": true,
+"web": [
+"حسام البدري",
+"Hossam El Badry coach"
+]
 },
 {
 "name": "Hosny Abd Rabo",
@@ -295,7 +293,11 @@
 "ar": "حسني عبد ربه",
 "hint": "Egyptian footballer",
 "fix": false,
-"redo": true
+"more": true,
+"web": [
+"حسني عبد ربه",
+"Hosny Abd Rabou Ismaily"
+]
 },
 {
 "name": "Ibrahim Hassan",
@@ -303,7 +305,15 @@
 "title": "Ibrahim Hassan",
 "ar": "إبراهيم حسن",
 "hint": "footballer",
-"fix": false
+"fix": false,
+"more": true,
+"web": [
+"إبراهيم حسن",
+"Ibrahim Hassan Egypt footballer"
+],
+"sportsdb": [
+"Ibrahim Hassan"
+]
 },
 {
 "name": "Ramadan Sobhi",
@@ -312,7 +322,14 @@
 "ar": "رمضان صبحي",
 "hint": "footballer",
 "fix": false,
-"redo": true
+"more": true,
+"web": [
+"رمضان صبحي",
+"Ramadan Sobhi"
+],
+"sportsdb": [
+"Ramadan Sobhi"
+]
 },
 {
 "name": "Moamen Zakaria",
@@ -321,7 +338,14 @@
 "ar": "مؤمن زكريا",
 "hint": "Egyptian footballer",
 "fix": false,
-"redo": true
+"more": true,
+"web": [
+"مؤمن زكريا",
+"Moamen Zakaria"
+],
+"sportsdb": [
+"Moamen Zakaria"
+]
 },
 {
 "name": "Mike Smith",
@@ -330,7 +354,11 @@
 "ar": "مايك سميث",
 "hint": "football manager",
 "fix": false,
-"redo": true
+"more": true,
+"web": [
+"مايك سميث مدرب منتخب مصر",
+"Mike Smith Egypt coach 1980s"
+]
 },
 {
 "name": "Ismailia Rayeh Gai",
@@ -341,8 +369,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/work/1010247/"
-],
-"redo": true
+]
 },
 {
 "name": "Mohamed Saad",
@@ -353,8 +380,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/person/1049209/"
-],
-"redo": true
+]
 },
 {
 "name": "Sherif Arafa",
@@ -365,8 +391,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/person/1004016/"
-],
-"redo": true
+]
 },
 {
 "name": "Marwan Hamed",
@@ -377,8 +402,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/person/1068590/"
-],
-"redo": true
+]
 },
 {
 "name": "Mohamed Fouad",
@@ -389,8 +413,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/person/1010596/"
-],
-"redo": true
+]
 },
 {
 "name": "El Halfout",
@@ -401,8 +424,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/work/1000898/"
-],
-"redo": true
+]
 },
 {
 "name": "El mansy",
@@ -414,7 +436,11 @@
 "pages": [
 "https://elcinema.com/work/1010597/"
 ],
-"redo": true
+"more": true,
+"web": [
+"فيلم المنسي بوستر",
+"El Mansy 1993 film poster"
+]
 },
 {
 "name": "Belya w demagho el 3alya",
@@ -425,8 +451,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/work/1010150/"
-],
-"redo": true
+]
 },
 {
 "name": "El 3azima",
@@ -437,8 +462,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/work/1006604/"
-],
-"redo": true
+]
 },
 {
 "name": "Lak yom ya zalem",
@@ -449,8 +473,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/work/1005572/"
-],
-"redo": true
+]
 },
 {
 "name": "Imbaratoriyet Meem",
@@ -461,8 +484,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/work/1010172/"
-],
-"redo": true
+]
 },
 {
 "name": "El ard",
@@ -473,8 +495,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/work/1010126/"
-],
-"redo": true
+]
 },
 {
 "name": "El 7arb el 3alameya el talta",
@@ -485,8 +506,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/work/2019799/"
-],
-"redo": true
+]
 },
 {
 "name": "Hepta",
@@ -497,8 +517,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/work/2040399/"
-],
-"redo": true
+]
 },
 {
 "name": "Welad rizk 3",
@@ -509,8 +528,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/work/2059194/"
-],
-"redo": true
+]
 },
 {
 "name": "Kaboria",
@@ -521,8 +539,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/work/1002064/"
-],
-"redo": true
+]
 },
 {
 "name": "Bakkar",
@@ -533,8 +550,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/work/1654852/"
-],
-"redo": true
+]
 },
 {
 "name": "Sabe3 gar",
@@ -545,8 +561,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/work/2049068/"
-],
-"redo": true
+]
 },
 {
 "name": "Gümüş (Noor)",
@@ -554,8 +569,7 @@
 "title": "Gümüş (TV series)",
 "ar": "نور",
 "hint": "Turkish TV series",
-"fix": false,
-"redo": true
+"fix": false
 },
 {
 "name": "Abna2y el a3eza2 shokran",
@@ -566,8 +580,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/work/1011213/"
-],
-"redo": true
+]
 },
 {
 "name": "Yetrabba fi 3ezzo",
@@ -578,8 +591,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/work/1010322/"
-],
-"redo": true
+]
 },
 {
 "name": "Faten amal 7arby",
@@ -590,8 +602,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/work/2072315/"
-],
-"redo": true
+]
 },
 {
 "name": "Kamel el 3adad",
@@ -602,8 +613,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/work/2076685/"
-],
-"redo": true
+]
 },
 {
 "name": "7a2 3arab",
@@ -614,8 +624,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/work/2082468/"
-],
-"redo": true
+]
 },
 {
 "name": "Marwan Pablo",
@@ -626,8 +635,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/person/2342408/"
-],
-"redo": true
+]
 },
 {
 "name": "Ezzay",
@@ -635,7 +643,11 @@
 "title": "Ezzay",
 "ar": "إزاي",
 "hint": "Egyptian song",
-"fix": false
+"fix": false,
+"more": true,
+"web": [
+"أغنية إزاي محمد منير"
+]
 },
 {
 "name": "Gloryland",
@@ -643,7 +655,11 @@
 "title": "Gloryland",
 "ar": "جلوري لاند",
 "hint": "song",
-"fix": false
+"fix": false,
+"more": true,
+"web": [
+"Gloryland song 1996 Olympics Daryl Coley"
+]
 },
 {
 "name": "When You Wish Upon a Star",
@@ -715,7 +731,11 @@
 "title": "Ali El Keffiyeh",
 "ar": "علّي الكوفية",
 "hint": "song",
-"fix": false
+"fix": false,
+"more": true,
+"web": [
+"علي الكوفية محمد عساف"
+]
 },
 {
 "name": "All Too Well (10 Minute Version)",
@@ -731,7 +751,11 @@
 "title": "Ana Fi Entezarak",
 "ar": "أنا في انتظارك",
 "hint": "Egyptian song",
-"fix": false
+"fix": false,
+"more": true,
+"web": [
+"أنا في انتظارك أم كلثوم"
+]
 },
 {
 "name": "Ghanili shwaya",
@@ -739,7 +763,11 @@
 "title": "Ghanili Shwaya",
 "ar": "غنيلي شوية",
 "hint": "Egyptian song",
-"fix": false
+"fix": false,
+"more": true,
+"web": [
+"غنيلي شوية أم كلثوم"
+]
 },
 {
 "name": "Amal 7ayati",
@@ -747,7 +775,11 @@
 "title": "Amal Hayati",
 "ar": "أمل حياتي",
 "hint": "Egyptian song",
-"fix": false
+"fix": false,
+"more": true,
+"web": [
+"أمل حياتي أم كلثوم"
+]
 },
 {
 "name": "Ye7ia w konooz",
@@ -756,7 +788,11 @@
 "ar": "يحيى وكنوز",
 "hint": "Egyptian cartoon",
 "fix": false,
-"redo": true
+"more": true,
+"web": [
+"يحيى وكنوز كرتون",
+"Yehia we Kenooz cartoon"
+]
 },
 {
 "name": "Lamees El-Hadidi",
@@ -767,8 +803,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/person/2004958/"
-],
-"redo": true
+]
 },
 {
 "name": "Tamer Amin",
@@ -779,8 +814,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/person/1979865/"
-],
-"redo": true
+]
 },
 {
 "name": "Princess Charlotte",
@@ -788,8 +822,7 @@
 "title": "Princess Charlotte of Wales",
 "ar": "الأميرة شارلوت",
 "hint": "British royal family",
-"fix": false,
-"redo": true
+"fix": false
 },
 {
 "name": "Feryal Abdelaziz",
@@ -798,7 +831,11 @@
 "ar": "فريال أشرف",
 "hint": "Egyptian athlete",
 "fix": false,
-"redo": true
+"more": true,
+"web": [
+"فريال عبد العزيز كاراتيه",
+"Feryal Abdelaziz karate"
+]
 },
 {
 "name": "Rania Elwani",
@@ -807,7 +844,11 @@
 "ar": "رانيا علواني",
 "hint": "Egyptian athlete",
 "fix": false,
-"redo": true
+"more": true,
+"web": [
+"رانيا علواني سباحة",
+"Rania Elwani swimmer"
+]
 },
 {
 "name": "Felfela",
@@ -815,7 +856,12 @@
 "title": "Felfela",
 "ar": "فلفلة",
 "hint": "company",
-"fix": false
+"fix": false,
+"more": true,
+"web": [
+"مطعم فلفلة",
+"Felfela restaurant Cairo logo"
+]
 },
 {
 "name": "Buffalo Burger",
@@ -832,7 +878,11 @@
 "ar": "غزل المحلة (مصر للغزل والنسيج)",
 "hint": "company",
 "fix": false,
-"redo": true
+"more": true,
+"web": [
+"شركة مصر للغزل والنسيج المحلة",
+"Misr Spinning and Weaving Mahalla"
+]
 },
 {
 "name": "SODIC",
@@ -856,7 +906,12 @@
 "title": "Al-Wafd (newspaper)",
 "ar": "الوفد",
 "hint": "newspaper",
-"fix": false
+"fix": false,
+"more": true,
+"web": [
+"جريدة الوفد",
+"Al-Wafd newspaper logo"
+]
 },
 {
 "name": "El-Watan",
@@ -872,7 +927,12 @@
 "title": "Tiba-1",
 "ar": "طيبة 1",
 "hint": "satellite",
-"fix": false
+"fix": false,
+"more": true,
+"web": [
+"القمر الصناعي طيبة 1",
+"TIBA-1 satellite"
+]
 },
 {
 "name": "Nilesat 301",
@@ -880,7 +940,12 @@
 "title": "Nilesat 301",
 "ar": "نايل سات 301",
 "hint": "satellite",
-"fix": false
+"fix": false,
+"more": true,
+"web": [
+"نايل سات 301",
+"Nilesat 301 satellite"
+]
 },
 {
 "name": "Shahid",
@@ -904,7 +969,12 @@
 "title": "Corona",
 "ar": "كورونا",
 "hint": "Egyptian food brand",
-"fix": false
+"fix": false,
+"more": true,
+"web": [
+"شيكولاتة كورونا",
+"Corona chocolate Egypt"
+]
 },
 {
 "name": "Regina",
@@ -912,7 +982,12 @@
 "title": "Regina",
 "ar": "ريجينا",
 "hint": "Egyptian food brand",
-"fix": false
+"fix": false,
+"more": true,
+"web": [
+"مكرونة ريجينا",
+"Regina pasta Egypt"
+]
 },
 {
 "name": "Dina Farms",
@@ -952,7 +1027,12 @@
 "title": "Simonds",
 "ar": "سيموندس",
 "hint": "café in Egypt",
-"fix": false
+"fix": false,
+"more": true,
+"web": [
+"سيموندس الزمالك",
+"Simonds bakery Zamalek"
+]
 },
 {
 "name": "El Horreya Café",
@@ -960,7 +1040,12 @@
 "title": "El Horreya Café",
 "ar": "قهوة الحرية",
 "hint": "café in Egypt",
-"fix": false
+"fix": false,
+"more": true,
+"web": [
+"قهوة الحرية باب اللوق",
+"El Horreya cafe Cairo"
+]
 },
 {
 "name": "El Malky",
@@ -984,7 +1069,12 @@
 "title": "Sedra",
 "ar": "سيدرا",
 "hint": "Egyptian patisserie",
-"fix": false
+"fix": false,
+"more": true,
+"web": [
+"سيدرا مصر",
+"Sedra Egypt brand"
+]
 },
 {
 "name": "Abou Shakra",
@@ -1000,7 +1090,12 @@
 "title": "Abou El Sid",
 "ar": "أبو السيد",
 "hint": "Egyptian restaurant",
-"fix": false
+"fix": false,
+"more": true,
+"web": [
+"مطعم أبو السيد",
+"Abou El Sid restaurant Cairo"
+]
 },
 {
 "name": "Kiri",
@@ -1008,7 +1103,12 @@
 "title": "Kiri (cheese)",
 "ar": "كيري",
 "hint": "cheese brand",
-"fix": false
+"fix": false,
+"more": true,
+"web": [
+"جبنة كيري",
+"Kiri cheese"
+]
 },
 {
 "name": "Cornetto",
@@ -1016,7 +1116,12 @@
 "title": "Cornetto",
 "ar": "كورنيتو",
 "hint": "ice cream brand",
-"fix": false
+"fix": false,
+"more": true,
+"web": [
+"كورنيتو",
+"Cornetto ice cream"
+]
 },
 {
 "name": "Sherihan",
@@ -1027,8 +1132,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/person/1073767/"
-],
-"redo": true
+]
 },
 {
 "name": "Gihan Nasr",
@@ -1039,8 +1143,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/person/1096006/"
-],
-"redo": true
+]
 },
 {
 "name": "Alexandria Radio",
@@ -1048,7 +1151,11 @@
 "title": "Alexandria Radio",
 "ar": "إذاعة الإسكندرية",
 "hint": "Egyptian radio station",
-"fix": false
+"fix": false,
+"more": true,
+"web": [
+"إذاعة الإسكندرية شعار"
+]
 },
 {
 "name": "Middle East Radio",
@@ -1056,7 +1163,12 @@
 "title": "Middle East Radio",
 "ar": "إذاعة الشرق الأوسط",
 "hint": "Egyptian radio station",
-"fix": false
+"fix": false,
+"more": true,
+"web": [
+"إذاعة الشرق الأوسط شعار",
+"Middle East Radio Egypt logo"
+]
 },
 {
 "name": "Sayedati El Gameela",
@@ -1067,8 +1179,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/work/1010565/"
-],
-"redo": true
+]
 },
 {
 "name": "Abla Fadila",
@@ -1079,8 +1190,7 @@
 "fix": false,
 "pages": [
 "https://elcinema.com/person/1983585/"
-],
-"redo": true
+]
 },
 {
 "name": "Alaa El-Din",
@@ -1088,7 +1198,12 @@
 "title": "Alaa El-Din",
 "ar": "علاء الدين",
 "hint": "Egyptian magazine",
-"fix": false
+"fix": false,
+"more": true,
+"web": [
+"مجلة علاء الدين",
+"Alaa El Din magazine cover"
+]
 },
 {
 "name": "Digimon",
@@ -1096,8 +1211,7 @@
 "title": "Digimon Adventure",
 "ar": "ديجيمون",
 "hint": "anime",
-"fix": false,
-"redo": true
+"fix": false
 },
 {
 "name": "Majid Kids",
@@ -1105,7 +1219,12 @@
 "title": "Majid (TV channel)",
 "ar": "قناة ماجد",
 "hint": "TV channel",
-"fix": false
+"fix": false,
+"more": true,
+"web": [
+"قناة ماجد",
+"Majid Kids TV logo"
+]
 },
 {
 "name": "Onix",
@@ -1113,7 +1232,12 @@
 "title": "Onix",
 "ar": "أونيكس",
 "hint": "Pokémon",
-"fix": false
+"fix": false,
+"more": true,
+"web": [
+"Onix pokemon",
+"أونيكس بوكيمون"
+]
 },
 {
 "name": "Nile Hilton",
@@ -1121,7 +1245,12 @@
 "title": "Nile Ritz-Carlton",
 "ar": "النيل هيلتون",
 "hint": "hotel in Egypt",
-"fix": false
+"fix": false,
+"more": true,
+"web": [
+"فندق النيل هيلتون",
+"Nile Hilton hotel 1960s"
+]
 },
 {
 "name": "Four Seasons Nile Plaza",
@@ -1130,7 +1259,10 @@
 "ar": "فور سيزونز النيل",
 "hint": "hotel in Egypt",
 "fix": false,
-"redo": true
+"more": true,
+"web": [
+"Four Seasons Nile Plaza Cairo"
+]
 },
 {
 "name": "St. Regis Cairo",
@@ -1139,7 +1271,10 @@
 "ar": "سانت ريجيس القاهرة",
 "hint": "hotel in Egypt",
 "fix": false,
-"redo": true
+"more": true,
+"web": [
+"St. Regis Cairo hotel"
+]
 },
 {
 "name": "Ma wara2 el tabi3a",
@@ -1148,7 +1283,11 @@
 "ar": "ما وراء الطبيعة",
 "hint": "book series",
 "fix": false,
-"redo": true
+"more": true,
+"web": [
+"ما وراء الطبيعة أحمد خالد توفيق غلاف",
+"Paranormal Netflix poster Egypt"
+]
 },
 {
 "name": "2alb el asad",
@@ -1170,6 +1309,11 @@
 "q": [
 "رامز ثعلب الصحرا",
 "Ramez Ta3lab el sa7ra"
+],
+"more": true,
+"web": [
+"رامز ثعلب الصحرا بوستر",
+"Ramez Thaalab El Sahraa poster"
 ]
 },
 {
@@ -1268,7 +1412,12 @@
 "kind": "work",
 "title": "El 3arraf",
 "ar": "العراف",
-"hint": "Adel Emam TV series"
+"hint": "Adel Emam TV series",
+"more": true,
+"web": [
+"مسلسل العراف بوستر",
+"El Arraf series poster Adel Emam"
+]
 },
 {
 "name": "Sa7eb el sa3ada",
@@ -1310,7 +1459,12 @@
 "kind": "work",
 "title": "Valentino (Egyptian TV series)",
 "ar": "فالنتينو",
-"hint": "Adel Emam TV series"
+"hint": "Adel Emam TV series",
+"more": true,
+"web": [
+"مسلسل فالنتينو بوستر",
+"Valentino series Adel Emam poster"
+]
 },
 {
 "name": "Opera 3ayda",
@@ -1324,7 +1478,12 @@
 "kind": "work",
 "title": "El layl w akhro",
 "ar": "الليل وآخره",
-"hint": "Yehia El-Fakharany TV series"
+"hint": "Yehia El-Fakharany TV series",
+"more": true,
+"web": [
+"مسلسل الليل وآخره بوستر",
+"El Leil we Akhro series poster"
+]
 },
 {
 "name": "Shaykh el 3arab hammam",
@@ -1345,7 +1504,12 @@
 "kind": "work",
 "title": "Wanoos",
 "ar": "ونوس",
-"hint": "Yehia El-Fakharany TV series"
+"hint": "Yehia El-Fakharany TV series",
+"more": true,
+"web": [
+"مسلسل ونوس بوستر",
+"Wanoos series poster Yehia El Fakharany"
+]
 },
 {
 "name": "Nagib zahy zarkash",
@@ -1376,7 +1540,11 @@
 "title": "2arrab kaman",
 "ar": "قرب كمان",
 "hint": "Tamer Hosny album",
-"artist": "Tamer Hosny"
+"artist": "Tamer Hosny",
+"more": true,
+"web": [
+"قرب كمان أغنية"
+]
 },
 {
 "name": "Ha3eesh 7ayaty",
@@ -1392,7 +1560,11 @@
 "title": "Ekhtart sa7",
 "ar": "اخترت صح",
 "hint": "Tamer Hosny album",
-"artist": "Tamer Hosny"
+"artist": "Tamer Hosny",
+"more": true,
+"web": [
+"اخترت صح أغنية"
+]
 },
 {
 "name": "Elly gai a7la",
@@ -1440,7 +1612,11 @@
 "title": "Meshwar",
 "ar": "مشوار",
 "hint": "Mohamed Mounir album",
-"artist": "Mohamed Mounir"
+"artist": "Mohamed Mounir",
+"more": true,
+"web": [
+"مشوار محمد منير"
+]
 },
 {
 "name": "Eftah 2albak",
@@ -1456,7 +1632,11 @@
 "title": "El far7a",
 "ar": "الفرحة",
 "hint": "Mohamed Mounir album",
-"artist": "Mohamed Mounir"
+"artist": "Mohamed Mounir",
+"more": true,
+"web": [
+"أغنية الفرحة"
+]
 },
 {
 "name": "Fi 3eshg el banat",
@@ -1592,7 +1772,11 @@
 "title": "7abeit",
 "ar": "حبيت",
 "hint": "Sherine album",
-"artist": "Sherine"
+"artist": "Sherine",
+"more": true,
+"web": [
+"حبيت شيرين ألبوم"
+]
 },
 {
 "name": "Es2al 3alaya",
@@ -1697,5 +1881,427 @@
 "ar": "أحضان الحبايب",
 "hint": "Abdel Halim Hafez song",
 "artist": "Abdel Halim Hafez"
+},
+{
+"name": "Kharban",
+"kind": "song",
+"title": "Kharban",
+"artist": "Wegz",
+"artist_ar": "ويجز",
+"hint": "Egyptian rap or mahraganat song",
+"web": [
+"خربان ويجز أغنية"
+],
+"ar": "خربان",
+"more": true
+},
+{
+"name": "Bazeet",
+"kind": "song",
+"title": "Bazeet",
+"artist": "Wegz",
+"artist_ar": "ويجز",
+"hint": "Egyptian rap or mahraganat song",
+"web": [
+"بسيط ويجز أغنية"
+],
+"ar": "بسيط",
+"more": true
+},
+{
+"name": "Dorak gai",
+"kind": "song",
+"title": "Dorak gai",
+"artist": "Wegz",
+"artist_ar": "ويجز",
+"hint": "Egyptian rap or mahraganat song",
+"web": [
+"دورك جاي ويجز أغنية"
+],
+"ar": "دورك جاي",
+"more": true
+},
+{
+"name": "3afareet el asphalt",
+"kind": "song",
+"title": "3afareet el asphalt",
+"artist": "Wegz",
+"artist_ar": "ويجز",
+"hint": "Egyptian rap or mahraganat song",
+"web": [
+"عفاريت الأسفلت ويجز أغنية"
+],
+"ar": "عفاريت الأسفلت",
+"more": true
+},
+{
+"name": "Msh khalsa",
+"kind": "song",
+"title": "Msh khalsa",
+"artist": "Wegz",
+"artist_ar": "ويجز",
+"hint": "Egyptian rap or mahraganat song",
+"web": [
+"مش خالصة ويجز أغنية"
+],
+"ar": "مش خالصة",
+"more": true
+},
+{
+"name": "Amira",
+"kind": "song",
+"title": "Amira",
+"artist": "Wegz",
+"artist_ar": "ويجز",
+"hint": "Egyptian rap or mahraganat song",
+"web": [
+"أميرة ويجز أغنية"
+],
+"ar": "أميرة",
+"more": true
+},
+{
+"name": "Ezz el arab",
+"kind": "song",
+"title": "Ezz el arab",
+"artist": "Wegz",
+"artist_ar": "ويجز",
+"hint": "Egyptian rap or mahraganat song",
+"web": [
+"عز العرب ويجز أغنية"
+],
+"ar": "عز العرب",
+"more": true
+},
+{
+"name": "Kalam forsan",
+"kind": "song",
+"title": "Kalam forsan",
+"artist": "Wegz",
+"artist_ar": "ويجز",
+"hint": "Egyptian rap or mahraganat song",
+"web": [
+"كلام فرسان ويجز أغنية"
+],
+"ar": "كلام فرسان",
+"more": true
+},
+{
+"name": "Mahragan el salam",
+"kind": "song",
+"title": "Mahragan el salam",
+"artist": "",
+"artist_ar": "مهرجان",
+"hint": "Egyptian rap or mahraganat song",
+"web": [
+"مهرجان السلام مهرجان أغنية"
+],
+"ar": "مهرجان السلام",
+"more": true
+},
+{
+"name": "Ana baba yalla",
+"kind": "song",
+"title": "Ana baba yalla",
+"artist": "Oka Ortega",
+"artist_ar": "أوكا وأورتيجا",
+"hint": "Egyptian rap or mahraganat song",
+"web": [
+"أنا بابا يلا أوكا وأورتيجا أغنية"
+],
+"ar": "أنا بابا يلا",
+"more": true
+},
+{
+"name": "Hayla",
+"kind": "song",
+"title": "Hayla",
+"artist": "",
+"artist_ar": "مهرجان",
+"hint": "Egyptian rap or mahraganat song",
+"web": [
+"هيلا مهرجان أغنية"
+],
+"ar": "هيلا",
+"more": true
+},
+{
+"name": "Batalo fake",
+"kind": "song",
+"title": "Batalo fake",
+"artist": "",
+"artist_ar": "",
+"hint": "Egyptian rap or mahraganat song",
+"web": [
+"بطلوا فيك أغنية"
+],
+"ar": "بطلوا فيك",
+"more": true
+},
+{
+"name": "3ayz fin",
+"kind": "song",
+"title": "3ayz fin",
+"artist": "",
+"artist_ar": "",
+"hint": "Egyptian rap or mahraganat song",
+"web": [
+"عايز فين أغنية"
+],
+"ar": "عايز فين",
+"more": true
+},
+{
+"name": "Sindbad",
+"kind": "song",
+"title": "Sindbad",
+"artist": "",
+"artist_ar": "",
+"hint": "Egyptian rap or mahraganat song",
+"web": [
+"سندباد أغنية"
+],
+"ar": "سندباد",
+"more": true
+},
+{
+"name": "Ghaba",
+"kind": "song",
+"title": "Ghaba",
+"artist": "Marwan Pablo",
+"artist_ar": "مروان بابلو",
+"hint": "Egyptian rap or mahraganat song",
+"web": [
+"غابة مروان بابلو أغنية"
+],
+"ar": "غابة",
+"more": true
+},
+{
+"name": "Men el akher",
+"kind": "song",
+"title": "Men el akher",
+"artist": "",
+"artist_ar": "",
+"hint": "Egyptian rap or mahraganat song",
+"web": [
+"من الآخر أغنية"
+],
+"ar": "من الآخر",
+"more": true
+},
+{
+"name": "Mozakerat 7ares marma",
+"kind": "album",
+"title": "Mozakerat 7ares marma",
+"artist": "",
+"artist_ar": "",
+"hint": "Egyptian rap album",
+"web": [
+"مذكرات حارس مرمى ألبوم"
+],
+"ar": "مذكرات حارس مرمى",
+"more": true
+},
+{
+"name": "Dah mesh rap",
+"kind": "album",
+"title": "Dah mesh rap",
+"artist": "",
+"artist_ar": "",
+"hint": "Egyptian rap album",
+"web": [
+"ده مش راب ألبوم"
+],
+"ar": "ده مش راب",
+"more": true
+},
+{
+"name": "Bel monasba",
+"kind": "album",
+"title": "Bel monasba",
+"artist": "",
+"artist_ar": "",
+"hint": "Egyptian rap album",
+"web": [
+"بالمناسبة ألبوم"
+],
+"ar": "بالمناسبة",
+"more": true
+},
+{
+"name": "Wa7ed wa7ed",
+"kind": "album",
+"title": "Wa7ed wa7ed",
+"artist": "",
+"artist_ar": "",
+"hint": "Egyptian rap album",
+"web": [
+"واحد واحد ألبوم"
+],
+"ar": "واحد واحد",
+"more": true
+},
+{
+"name": "Geziret el batal",
+"kind": "album",
+"title": "Geziret el batal",
+"artist": "",
+"artist_ar": "",
+"hint": "Egyptian rap album",
+"web": [
+"جزيرة البطل ألبوم"
+],
+"ar": "جزيرة البطل",
+"more": true
+},
+{
+"name": "Akher et3a fanneya",
+"kind": "album",
+"title": "Akher et3a fanneya",
+"artist": "",
+"artist_ar": "",
+"hint": "Egyptian rap album",
+"web": [
+"آخر قطعة فنية ألبوم"
+],
+"ar": "آخر قطعة فنية",
+"more": true
+},
+{
+"name": "Project blue beam",
+"kind": "album",
+"title": "Project blue beam",
+"artist": "",
+"artist_ar": "",
+"hint": "Egyptian rap album",
+"web": [
+"بروجكت بلو بيم ألبوم"
+],
+"ar": "بروجكت بلو بيم",
+"more": true
+},
+{
+"name": "En7eraf",
+"kind": "album",
+"title": "En7eraf",
+"artist": "",
+"artist_ar": "",
+"hint": "Egyptian rap album",
+"web": [
+"انحراف ألبوم"
+],
+"ar": "انحراف",
+"more": true
+},
+{
+"name": "5 nezam",
+"kind": "album",
+"title": "5 nezam",
+"artist": "",
+"artist_ar": "",
+"hint": "Egyptian rap album",
+"web": [
+"5 نظام ألبوم"
+],
+"ar": "5 نظام",
+"more": true
+},
+{
+"name": "Ahmed Sheba",
+"kind": "person",
+"title": "Ahmed Sheba",
+"ar": "أحمد شيبة",
+"hint": "Egyptian singer",
+"singer": true,
+"web": [
+"أحمد شيبة",
+"Ahmed Sheba singer"
+],
+"more": true
+},
+{
+"name": "Zap Tharwat",
+"kind": "person",
+"title": "Zap Tharwat",
+"ar": "زاب ثروت",
+"hint": "Egyptian singer",
+"singer": true,
+"web": [
+"زاب ثروت",
+"Zap Tharwat singer"
+],
+"more": true
+},
+{
+"name": "Hassan Shakosh",
+"kind": "person",
+"title": "Hassan Shakosh",
+"ar": "حسن شاكوش",
+"hint": "Egyptian singer",
+"singer": true,
+"web": [
+"حسن شاكوش",
+"Hassan Shakosh singer"
+],
+"more": true
+},
+{
+"name": "Hamo Bika",
+"kind": "person",
+"title": "Hamo Bika",
+"ar": "حمو بيكا",
+"hint": "Egyptian singer",
+"singer": true,
+"web": [
+"حمو بيكا",
+"Hamo Bika singer"
+],
+"more": true
+},
+{
+"name": "Aswan SC",
+"kind": "club",
+"title": "Aswan SC",
+"ar": "نادي أسوان",
+"hint": "Egyptian football club",
+"sportsdb": [
+"Aswan"
+],
+"web": [
+"شعار نادي أسوان",
+"Aswan SC football club logo"
+],
+"more": true
+},
+{
+"name": "Baladiyat El Mahalla",
+"kind": "club",
+"title": "Baladiyat El Mahalla",
+"ar": "نادي بلدية المحلة",
+"hint": "Egyptian football club",
+"sportsdb": [
+"Baladiyat El Mahalla"
+],
+"web": [
+"شعار نادي بلدية المحلة",
+"Baladiyat El Mahalla football club logo"
+],
+"more": true
+},
+{
+"name": "El Mansoura",
+"kind": "club",
+"title": "El Mansoura",
+"ar": "نادي المنصورة",
+"hint": "Egyptian football club",
+"sportsdb": [
+"El Mansoura"
+],
+"web": [
+"شعار نادي المنصورة",
+"El Mansoura football club logo"
+],
+"more": true
 }
 ]
