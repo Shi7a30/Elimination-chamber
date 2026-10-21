@@ -32,7 +32,7 @@ await a.reload();await a.waitForTimeout(400);ok(/Done for today/.test((await st(
 // Arabic: wording, lose resets the streak but keeps the best
 const d=await c2.evaluate(()=>dayNo());
 await c2.evaluate(()=>menu());const ar=await open('ar',{d:d-1,done:true,w:true,s:3,lw:d-1,b:5,r:[1,1]});
-s=await st(ar);ok(/سؤال اليوم/.test(s.card)&&/هو هو/.test(s.card),'Arabic daily card wording');
+s=await st(ar);ok(/سؤال اليوم/.test(s.card)&&/النهارده:/.test(s.card),'Arabic daily card wording');
 ok(await ar.evaluate(()=>[...document.querySelectorAll('.dcard .chip')].map(e=>e.textContent).join(','))==='3,5','streak/best chips should show 3,5');
 await ar.tap('.dcard');await ar.evaluate(()=>document.querySelector('.cell[data-i="'+corr+'"]').click());await ar.waitForTimeout(700);
 s=await st(ar);ok(s.over==='lose'&&s.DY.s===0&&s.DY.b===5,'lose should reset streak and keep best: '+JSON.stringify(s.DY));

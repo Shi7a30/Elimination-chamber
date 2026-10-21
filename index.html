@@ -365,13 +365,22 @@ html[dir=rtl] .hero .hgrid{transform:translateY(-38%) rotate(8deg) scale(.82);tr
 .dcard .pg{position:absolute;inset:14px 10px 8px 14px;border-radius:14px;background:#fff;box-shadow:var(--dcpg);transform:rotate(8deg);overflow:hidden}
 .dcard .pg::before{content:"";position:absolute;left:0;right:0;top:0;height:24px;background:var(--y)}
 .dcard.done .pg::before{background:#2fbf71}
-.dcard .pg b{position:absolute;left:0;right:0;top:24px;text-align:center;font-family:"Baloo Bhaijaan 2","Rubik",sans-serif;font-size:46px;line-height:1.05;color:var(--ink);font-weight:800}
+.dcard .pg b{position:absolute;left:0;right:0;top:22px;text-align:center;font-family:"Rubik",sans-serif;font-size:40px;line-height:1.15;color:var(--ink);font-weight:800}
+.dcard .pg .mo{position:absolute;left:0;right:0;top:4px;z-index:1;text-align:center;font:800 12px/16px "Rubik","Cairo",sans-serif;color:var(--ink);letter-spacing:.5px}
+.dcard.done .pg .mo{color:#fff}.dcard.lost .pg::before{background:#e5484d}
+.dcard .mk{position:absolute;z-index:3;left:13%;top:55%;white-space:nowrap;transform:rotate(-12deg);border:3px solid #22a35e;color:#22a35e;border-radius:8px;padding:2px 9px;display:inline-flex;align-items:center;gap:5px;font:900 16px/1.2 "Rubik","Cairo",sans-serif;letter-spacing:1px;background:rgba(255,255,255,.92)}
+.dcard.lost .mk{border-color:#e5484d;color:#e5484d}
+.dcard .mk svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:3.4;stroke-linecap:round;stroke-linejoin:round}
+.dcard .tm{font-size:12.5px;font-weight:700;color:var(--dcmut)}
+.dcard .ds .tp{font-weight:700;color:var(--dcfg)}.dcard .dt,.dcard .ds{flex-shrink:0}
+.dcard .chips{align-items:center}.dcard .shr svg.pl{fill:currentColor;stroke:none;width:14px;height:14px}[dir=rtl] .dcard .shr svg.pl{transform:scaleX(-1)}
 .dcard .pg i{position:absolute;top:-6px;width:8px;height:16px;border-radius:4px;background:var(--ink);z-index:2}
 .dcard .pg i:first-child{left:20px}.dcard .pg i:nth-child(2){right:20px}
 .dcard .back{position:absolute;inset:18px 18px 4px 6px;border-radius:14px;background:var(--dcback);transform:rotate(-7deg)}
 .dcard .sp{position:absolute;color:var(--y);font-size:14px;line-height:1}
 .dcard .sp.a{top:2px;inset-inline-start:2px}.dcard .sp.b{bottom:0;inset-inline-end:-2px;font-size:18px}.dcard .sp.c{top:8px;inset-inline-end:-4px;font-size:10px;color:var(--y)}
 @media (max-width:380px){.dcard .art{width:92px;height:92px}.dcard .dt{font-size:22px}}
+@media (max-width:360px){.dcard .chip+.chip{display:none}.dcard .mk{font-size:13px;padding:1px 6px;border-width:2.5px}.dcard .mk svg{width:12px;height:12px}}
 /* taller phones: the two cards grow to fill the screen down to the dock */
 @media (min-height:680px){.cat.hero{min-height:205px;padding:22px 20px}.hero .hgrid{transform:translateY(-38%) rotate(-8deg) scale(.95)}html[dir=rtl] .hero .hgrid{transform:translateY(-38%) rotate(8deg) scale(.95)}
  .cat.dcard{height:214px;padding:22px 20px}.dcard .art{width:120px;height:120px}body[data-scr=home] #menu{gap:16px}}
@@ -492,8 +501,8 @@ var TX={
   chRound:function(a,b,s){return"🔗 Round "+a+"/"+b+" · Score "+s},chDone:"✅ Challenge done!",chYou:function(s,k){return"You got "+s+"/"+k+". Send the link and see if your friends can beat it."},
   chWin:"🏆 You win!",chLose:"😬 You lost!",chDraw:"🤝 Draw!",vs:function(s,b,x,k){return"You "+s+"/"+k+" · "+x+" "+b+"/"+k},
   share:"🔗 Send challenge",shareBack:"🔗 Send your score",copied:"Link copied!",msg:function(s,k){return"I got "+s+"/"+k+" on Shelhom! Can you beat me? 🔥"},
-  tHome:"Home",tStats:"Stats",stCoins:"Coins",stSolved:"Rounds solved",stBest:"Best streak",stScores:"Best scores",stGroups:"Rounds solved in each group",dyBadge:function(n){return"Daily · #"+n},dyTitle:"Daily round",dySub:"Same round for everyone",dyDone:"Done for today!",dyShare:"Share",dyRn:function(n){return"Daily round #"+n},
-  dyNext:function(h,m){return"Next round in "+(h?h+"h "+m+"m":m+"m")},dyMsg:function(n){return"Shelhom daily round #"+n},dyStreak:function(n){return"🔥 "+n+(n==="1"?" day":" days")+" in a row"},
+  tHome:"Home",tStats:"Stats",stCoins:"Coins",stSolved:"Rounds solved",stBest:"Best streak",stScores:"Best scores",stGroups:"Rounds solved in each group",dyBadge:function(n){return"Daily · #"+n},dyTitle:"Daily round",dySub:"Same round for everyone",dyDone:"Done for today!",dyShare:"Share",dyToday:"Today:",dyPlay:"Play",dyWon:"WON",dyLost:"LOST",dyMon:["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"],dyEnds:function(h,m){return"Ends in "+(h?h+"h "+m+"m":m+"m")},dyRn:function(n){return"Daily round #"+n},
+  dyNext:function(h,m){return"New question in "+(h?h+"h "+m+"m":m+"m")},dyMsg:function(n){return"Shelhom daily round #"+n},dyStreak:function(n){return"🔥 "+n+(n==="1"?" day":" days")+" in a row"},
   howT:"👆 How to play",howP:"Knock out the cards that are NOT the answer, one at a time, until only the right one is left. Knock out the answer and you lose! Tip: 📷 in a round puts your own photo on a card.",howOk:"Got it",
   leaveDy:"You'll lose today's round. There's one try a day.",skipQ:"Skip this round?",skipTxt:function(k){return"Skipping ends your 🔥"+k+" streak."},skipBtn:"Skip",
   chGot:function(x,s,k){return x+" got "+s+"/"+k},chMine:function(s,k){return"You got "+s+"/"+k+". "}},
@@ -516,7 +525,7 @@ var TX={
   chRound:function(a,b,s){return"🔗 جولة "+a+"/"+b+" · النتيجة "+s},chDone:"✅ خلصت التحدي!",chYou:function(s,k){return"جبت "+s+" من "+k+". ابعت اللينك وشوف صحابك هيعدّوك ولا لأ."},
   chWin:"🏆 كسبت!",chLose:"😬 خسرت!",chDraw:"🤝 تعادل!",vs:function(s,b,x,k){return"إنت "+s+" · "+x+" "+b+" (من "+k+")"},
   share:"🔗 ابعت التحدي",shareBack:"🔗 ابعت نتيجتك",copied:"اتنسخ اللينك!",msg:function(s,k){return"جبت "+s+" من "+k+" في شيلهم! تقدر تعدّيني؟ 🔥"},
-  tHome:"الرئيسية",tStats:"أرقامي",stCoins:"كوينز",stSolved:"جولات خلّصتها",stBest:"أحسن رقم ورا بعض",stScores:"أحسن أرقامك",stGroups:"خلّصت كام جولة في كل مجموعة",dyBadge:function(n){return"رقم "+n},dyTitle:"سؤال اليوم",dySub:"سؤال جديد كل يوم، هو هو لكل صحابك",dyDone:"جاوبت النهارده!",dyShare:"شارك",dyRn:function(n){return"سؤال اليوم رقم "+n},
+  tHome:"الرئيسية",tStats:"أرقامي",stCoins:"كوينز",stSolved:"جولات خلّصتها",stBest:"أحسن رقم ورا بعض",stScores:"أحسن أرقامك",stGroups:"خلّصت كام جولة في كل مجموعة",dyBadge:function(n){return"رقم "+n},dyTitle:"سؤال اليوم",dySub:"سؤال جديد كل يوم، هو هو لكل صحابك",dyDone:"جاوبت النهارده!",dyShare:"شارك",dyToday:"النهارده:",dyPlay:"العب",dyWon:"كسبت",dyLost:"خسرت",dyMon:["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"],dyEnds:function(h,m){return"فاضل "+(h?(h===1?"ساعة":h===2?"ساعتين":h<=10?h+" ساعات":h+" ساعة"):(m===1?"دقيقة":m===2?"دقيقتين":m<=10?m+" دقايق":m+" دقيقة"))},dyRn:function(n){return"سؤال اليوم رقم "+n},
   dyNext:function(h,m){var hs=h===1?"ساعة":h===2?"ساعتين":h<=10?h+" ساعات":h+" ساعة",ms=m===1?"دقيقة":m===2?"دقيقتين":m<=10?m+" دقايق":m+" دقيقة";return"السؤال الجاي بعد "+(h?hs:ms)},dyMsg:function(n){return"شيلهم - سؤال اليوم رقم "+n},dyStreak:function(n){return"🔥 "+(n==="1"?"أول يوم":arN(n,"يومين","أيام","يوم")+" ورا بعض")},
   howT:"👆 إزاي تلعب",howP:"شيل الكروت الغلط واحد واحد لحد ما يفضل الكارت الصح لوحده. لو شلت الإجابة الصح تخسر! وعلى فكرة: 📷 جوه الجولة بيخليك تحط صورة من عندك على أي كارت.",howOk:"تمام",
   leaveDy:"هتخسر سؤال النهارده، وكل يوم ليه محاولة واحدة بس.",skipQ:"تعدّي الجولة دي؟",skipTxt:function(k){return"لو عدّيتها هتخسر الـ 🔥"+k+" اللي ورا بعض."},skipBtn:"عدّي",
@@ -719,16 +728,18 @@ function dailyPick(i,x){out.push(i);flipNow=[i];DY.r.push(i===corr?0:1);
 function dyBtns(){return[[t("dyShare"),dyShare,""],[t("menu"),menu,"y"]]}
 function dyShare(){var m=t("dyMsg")(n(DY.d))+"\n"+(DY.r||[]).map(function(v){return v?"🟩":"🟥"}).join("")+(dyStreak()?"\n🔥 "+n(dyStreak()):"")+"\n"+location.origin+location.pathname;
  if(navigator.share)navigator.share({text:m}).catch(function(){});else open("https://wa.me/?text="+encodeURIComponent(m),"_blank")}
-function dyCard(){var d=dayNo(),done=dyPlayed(),fl=IC.flame,tr=IC.trophy,share='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>';
- var art='<span class="art" aria-hidden="true"><span class="back"></span><span class="pg"><i></i><i></i><b>'+(done?"✓":"?")+'</b></span><span class="sp a">✦</span><span class="sp b">✦</span><span class="sp c">✦</span></span>';
+function dyCard(){var d=dayNo(),done=dyPlayed(),won=done&&DY.w,cd=cairo(),lf=dayLeft(),r=dailyRound(d),sg=null,fl=IC.flame,tr=IC.trophy,share='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>';
+ GROUPS.forEach(function(g){g.s.forEach(function(x){if(r&&x[0]===r.s)sg=x})});
+ var mk=done?'<span class="mk">'+(won?'<svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>'+t("dyWon"):'<svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>'+t("dyLost"))+"</span>":"";
+ var art='<span class="art" aria-hidden="true"><span class="back"></span><span class="pg"><i></i><i></i><span class="mo">'+t("dyMon")[cd.month-1]+"</span><b>"+cd.day+"</b></span>"+mk+'<span class="sp a">✦</span><span class="sp b">✦</span><span class="sp c">✦</span></span>';
  var st=chip(fl,dyStreak(),t("streak"))+chip(tr,DY.b|0,t("best"));
- if(!done)return '<button class="cat dcard" data-c="dy"><span class="stars"></span><span class="toprow"><span class="eb"><span class="dot"></span>'+t("dyBadge")(n(d))+'</span></span><span class="dt">'+t("dyTitle")+'</span><span class="ds">'+t("dySub")+'</span><span class="chips">'+st+"</span>"+art+"</button>";
- var lf=dayLeft();return '<div class="cat dcard done"><span class="stars"></span><span class="toprow"><span class="eb">'+t("dyBadge")(n(d))+'</span><span class="dg">'+(DY.r||[]).map(function(v){return v?"<i></i>":'<i class="x"></i>'}).join("")+'</span></span>'+
+ if(!done)return '<button class="cat dcard" data-c="dy"><span class="stars"></span><span class="toprow"><span class="eb"><span class="dot"></span>'+t("dyBadge")(n(d))+'</span><span class="tm" data-dends>⏱ '+t("dyEnds")(lf[0],lf[1])+'</span></span><span class="dt">'+t("dyTitle")+'</span><span class="ds">'+(sg?t("dyToday")+' <b class="tp">'+sg[1]+" "+(L==="ar"?sg[3]:sg[2])+"</b>":t("dySub"))+'</span><span class="chips">'+st+'<span class="shr">'+t("dyPlay")+'<svg class="pl" viewBox="0 0 24 24"><path d="M7 5v14l11-7z"/></svg></span></span>'+art+"</button>";
+ return '<div class="cat dcard done'+(won?"":" lost")+'"><span class="stars"></span><span class="toprow"><span class="eb">'+t("dyBadge")(n(d))+'</span><span class="dg">'+(DY.r||[]).map(function(v){return v?"<i></i>":'<i class="x"></i>'}).join("")+'</span></span>'+
   '<span class="dt">'+t("dyDone")+'</span><span class="ds" data-dleft>'+t("dyNext")(lf[0],lf[1])+'</span><span class="row">'+st+'<button class="shr" data-dshare>'+share+t("dyShare")+"</button></span>"+art+"</div>"}
 function chip(ic,v,l){return '<span class="chip" aria-label="'+esc(l)+" "+v+'">'+ic+n(v)+"</span>"}
 // keep the countdown right while Home stays open, and show the new round when the day changes
 var DYDAY=dayNo();setInterval(function(){if(document.body.dataset.scr!=="home")return;var d=dayNo();if(d!==DYDAY){DYDAY=d;if(!shF)menu();return}
- var e=document.querySelector("[data-dleft]");if(e){var lf=dayLeft();e.textContent=t("dyNext")(lf[0],lf[1])}},30000);
+ var e=document.querySelector("[data-dleft]");if(e){var lf=dayLeft();e.textContent=t("dyNext")(lf[0],lf[1])}e=document.querySelector("[data-dends]");if(e){lf=dayLeft();e.textContent="⏱ "+t("dyEnds")(lf[0],lf[1])}},30000);
 function hk(s){var h=2166136261;for(var i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}return(h>>>0).toString(36)}
 var BYH={};ALL.forEach(function(r){var k=hk(r.key);if(BYH[k])console.warn("Round hash clash:",r.key);BYH[k]=r});
 // mulberry32: a small seeded random number generator
