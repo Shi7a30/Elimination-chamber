@@ -103,5 +103,20 @@ Rd(["WHICH CLUB OUTSIDE CAIRO","WAS FOUNDED FIRST",Q],["أنهي نادي بره
   ["Mokhtar El Tetsh Stadium",1917,"استاد مختار التتش (الأهلي)","Mokhtar El Tetsh Stadium"],["Alexandria Stadium",1929,"استاد إسكندرية"],["Cairo International Stadium",1960,"استاد القاهرة"],
   ["Arab Contractors Stadium",1979,"استاد المقاولون العرب","Osman Ahmed Osman Stadium"],["Military Academy Stadium",1989,"استاد الكلية الحربية","Cairo Military Academy Stadium"],["Suez Stadium",1990,"استاد السويس"],
   ["Borg El Arab Stadium",2007,"استاد برج العرب"],["Al Salam Stadium",2009,"استاد السلام","Al Salam Stadium (Egypt)"],["30 June Stadium",2012,"استاد 30 يونيو (الدفاع الجوي)"]],
-  {h:"stadium",k:["OPENED","اتفتح سنة"],s:"trophies",m:"eg",d:3})]}
+  {h:"stadium",k:["OPENED","اتفتح سنة"],s:"trophies",m:"eg",d:3}),
+ Rd(["WHICH CLUB WON THE","EGYPT CUP FIRST",Q],["مين","كسب كاس مصر الأول",QA],"min",[
+  ["Zamalek",1922,"الزمالك","Zamalek SC"],["Tersana",1923,"الترسانة","Tersana SC"],["Al Ahly",1924,"الأهلي","Al Ahly SC"],
+  ["Al Ittihad Alexandria",1926,"الاتحاد السكندري","Al Ittihad Alexandria Club"],["Olympic Club",1933,"الأوليمبي","Olympic Club (Egypt)"],["Arab Contractors",1990,"المقاولون العرب","Al Mokawloon Al Arab SC"],
+  ["Ismaily",1997,"الإسماعيلي","Ismaily SC"],["Al Masry",1998,"المصري","Al Masry SC"],["Pyramids FC",2024,"بيراميدز"]],
+  {h:"Egyptian football club",k:["FIRST EGYPT CUP","أول كاس مصر سنة"],s:"trophies",m:"eg",d:2}),
+ Rd(["WHICH CLUB WON THE","EGYPT CUP MOST RECENTLY",Q],["مين","آخر نادي كسب كاس مصر",QA],"max",[
+  ["Pyramids FC",2026,"بيراميدز"],["Zamalek",2025,"الزمالك","Zamalek SC"],["Al Ahly",2023,"الأهلي","Al Ahly SC"],
+  ["ENPPI",2011,"إنبي","ENPPI SC"],["Haras El Hodoud",2010,"حرس الحدود","Haras El Hodoud SC"],["Arab Contractors",2004,"المقاولون العرب","Al Mokawloon Al Arab SC"],
+  ["Ismaily",2000,"الإسماعيلي","Ismaily SC"],["Al Masry",1998,"المصري","Al Masry SC"],["Tersana",1986,"الترسانة","Tersana SC"]],
+  {h:"Egyptian football club",k:["LAST EGYPT CUP","آخر كاس مصر سنة"],s:"trophies",m:"eg",d:2}),
+ Rd(["WHICH CLUB HAS LOST THE","MOST EGYPT CUP FINALS",Q],["مين","خسر نهائي كاس مصر أكتر",QA],"max",[
+  ["Al Ahly",16,"الأهلي","Al Ahly SC"],["Zamalek",14,"الزمالك","Zamalek SC"],["Al Masry",9,"المصري","Al Masry SC"],
+  ["Al Ittihad Alexandria",8,"الاتحاد السكندري","Al Ittihad Alexandria Club"],["El Sekka El Hadid",7,"السكة الحديد","El Sekka El Hadid SC"],["Ghazl El Mahalla",6,"غزل المحلة","Ghazl El Mahalla SC"],
+  ["Ismaily",4,"الإسماعيلي","Ismaily SC"],["Tersana",3,"الترسانة","Tersana SC"],["Pyramids FC",3,"بيراميدز"]],
+  {h:"Egyptian football club",k:["CUP FINALS LOST","نهائيات خسرها"],s:"trophies",m:"eg",d:3})]}
 );

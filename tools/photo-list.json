@@ -382,6 +382,15 @@
   "skip": false
  },
  {
+  "name": "El Sekka El Hadid",
+  "title": "El Sekka El Hadid SC",
+  "hint": "Egyptian football club",
+  "ar": "السكة الحديد",
+  "ar_hint": "نادي",
+  "logo": false,
+  "skip": false
+ },
+ {
   "name": "Misr Stadium",
   "title": "New Administrative Capital Stadium",
   "hint": "stadium",
