@@ -249,5 +249,14 @@ Rd(["WHICH TAMER HOSNY ALBUM","CAME OUT LAST",Q],["أنهي ألبوم لتام�
   ["Mahragan el salam",2006,"مهرجان السلام"],["Ana baba yalla",2011,"أنا بابا يلا"],["Hayla",2016,"هيلا"],
   ["Batalo fake",2017,"بطلوا فيك"],["3ayz fin",2018,"عايز فين"],["Sindbad",2019,"سندباد"],
   ["Dorak gai",2020,"دورك جاي"],["Ghaba",2021,"غابة"],["Men el akher",2022,"من الآخر"]],
-  {h:"Egyptian rap song",k:["RELEASED","نزلت سنة"],dt:["Song released","نزول الأغنية"],g:"y",s:"songs",m:"eg",d:3})]}
+  {h:"Egyptian rap song",k:["RELEASED","نزلت سنة"],dt:["Song released","نزول الأغنية"],g:"y",s:"songs",m:"eg",d:3}),
+ Rd(["WHO IS THE OLDEST","RAP OR MAHRAGANAT STAR",Q],["مين","أكبر نجم راب أو مهرجانات في السن",QA],"min",[
+  ["Ahmed Mekky",1980,"أحمد مكي"],["Ahmed Saad",1981,"أحمد سعد","Ahmed Saad (singer)"],["Abyusif",1985,"أبيوسف"],
+  ["Hassan Shakosh",1987,"حسن شاكوش"],["Hamo Bika",1988,"حمو بيكا"],["Mohamed Ramadan",1988,"محمد رمضان"],
+  ["Marwan Moussa",1995,"مروان موسى"],["Marwan Pablo",1995,"مروان بابلو"],["Wegz",1998,"ويجز"]],{h:"Egyptian rapper",k:BORN,g:"p",s:"singers",m:"eg",d:3}),
+ Rd(["WHICH MARWAN PABLO RELEASE","CAME OUT LAST",Q],["أنهي حاجة لمروان بابلو","أجدد",QA],"max",[
+  ["3ayz fin",2018,"عايز فين"],["Sindbad",2019,"سندباد"],["Ghaba",2021,"غابة"],
+  ["CTRL",2021,"كنترول"],["Akher et3a fanneya",2023,"آخر قطعة فنية"],["Project blue beam",2024,"بروجكت بلو بيم"],
+  ["7ob w kashat",2024,"حب وكاشات"],["En7eraf",2025,"انحراف"],["5 nezam",2026,"5 نظام"]],
+  {h:"Marwan Pablo song",k:["RELEASED","نزلت سنة"],dt:["Released","نزلت سنة"],g:"y",s:"songs",m:"eg",d:3})]}
 );

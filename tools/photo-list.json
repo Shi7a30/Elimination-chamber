@@ -24611,5 +24611,95 @@
   "ar_hint": "",
   "logo": false,
   "skip": true
+ },
+ {
+  "name": "Abyusif",
+  "title": "Abyusif",
+  "hint": "Egyptian rapper",
+  "ar": "أبيوسف",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Hassan Shakosh",
+  "title": "Hassan Shakosh",
+  "hint": "Egyptian mahraganat singer",
+  "ar": "حسن شاكوش",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Hamo Bika",
+  "title": "Hamo Bika",
+  "hint": "Egyptian mahraganat singer",
+  "ar": "حمو بيكا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Marwan Moussa",
+  "title": "Marwan Moussa",
+  "hint": "Egyptian rapper",
+  "ar": "مروان موسى",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "CTRL",
+  "title": "CTRL",
+  "hint": "Marwan Pablo EP",
+  "ar": "كنترول",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Akher et3a fanneya",
+  "title": "Akher et3a fanneya",
+  "hint": "Marwan Pablo album",
+  "ar": "آخر قطعة فنية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Project blue beam",
+  "title": "Project blue beam",
+  "hint": "Marwan Pablo album",
+  "ar": "بروجكت بلو بيم",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "7ob w kashat",
+  "title": "7ob w kashat",
+  "hint": "Marwan Pablo album",
+  "ar": "حب وكاشات",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "En7eraf",
+  "title": "En7eraf",
+  "hint": "Marwan Pablo album",
+  "ar": "انحراف",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "5 nezam",
+  "title": "5 nezam",
+  "hint": "Marwan Pablo album",
+  "ar": "5 نظام",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
  }
 ]
