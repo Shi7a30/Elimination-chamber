@@ -285,5 +285,12 @@ Rd(["WHICH TAMER HOSNY ALBUM","CAME OUT LAST",Q],["أنهي ألبوم لتام�
   ["Fairuz",0,"فيروز"],["Sabah",0,"صباح","Sabah (singer)"],["Majida El Roumi",0,"ماجدة الرومي"],
   ["Ragheb Alama",0,"راغب علامة"],["Najwa Karam",0,"نجوى كرم"],["Assala Nasri",1,"أصالة"],
   ["Elissa",0,"إليسا","Elissa (singer)"],["Wael Kfoury",0,"وائل كفوري"],["Nancy Ajram",0,"نانسي عجرم"]],
-  {h:"singer",k:["FROM","من"],s:"singers",m:"w",d:2,lab:[["LEBANON","لبنان"],["SYRIA","سوريا"]]})]}
+  {h:"singer",k:["FROM","من"],s:"singers",m:"w",d:2,lab:[["LEBANON","لبنان"],["SYRIA","سوريا"]]}),
+
+ // same year: the answer is the only card from that year (same:, see above Rd() in index.html)
+ Rd(["WHAT CAME OUT IN","THE SAME YEAR AS TAMALLY MAAK","ON THIS LIST"],["إيه اللي نزل في نفس السنة","اللي نزلت فيها تملي معاك","في القايمة دي؟"],"odd",[
+  ["Zizinia",1997,"زيزينيا","Zizinia"],["Se3idy fel gam3a el amrekia",1998,"صعيدي في الجامعة الأمريكية","Saidi fil Gamaa el Amrikia"],["Hammam fi amsterdam",1999,"همام في أمستردام","Hammam fi Amsterdam"],
+  ["2amarein",1999,"قمرين","Amarain"],["El nazer",2000,"الناظر","El Nazer (film)"],["Africano",2001,"أفريكانو","Africano (film)"],
+  ["Aktar wahed",2001,"أكتر واحد","Aktar Wahed"],["7adis el saba7 wel masa2",2001,"حديث الصباح والمساء","Hadeeth El Sabah wel Masaa"],["El limby",2002,"اللمبي","El-Limby"]],
+  {h:"Egyptian film",s:"songs",m:"eg",d:2,k:["YEAR","سنة"],same:2000})]}
 );

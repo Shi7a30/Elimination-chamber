@@ -463,14 +463,15 @@ body[data-scr=game] #upd{display:none}
 // d = difficulty for Endless: 1 easy (famous names, clear answer), 2 medium, 3 hard (less known names or a very close answer).
 // best "odd" = odd one out: the answer is the one card that doesn't belong. With odd:[from,to] it is the only value outside
 // from..to (the film that isn't from the 90s). Without odd, values are 0 for the group and 1 for the odd card, and
-// lab = [[en, ar] for 0, [en, ar] for 1] is what the flipped cards show. Odd rounds stay out of Duel.
+// lab = [[en, ar] for 0, [en, ar] for 1] is what the flipped cards show. With same:year the answer is the only card
+// from that year (what came out the year Salah was born). Odd rounds stay out of Duel.
 // Each round must have exactly one best answer (checked on load).
-function Rd(q,qa,best,items,o){o=o||{};return{q:q,qa:qa,best:best,items:items,h:o.h||"",pre:o.pre,suf:o.suf,dp:o.dp,k:o.k,g:o.g,dt:o.dt,s:o.s,m:o.m,d:o.d,odd:o.odd,lab:o.lab}}
-function isOdd(r,x){return r.odd?x<r.odd[0]||x>r.odd[1]:x===1}
+function Rd(q,qa,best,items,o){o=o||{};return{q:q,qa:qa,best:best,items:items,h:o.h||"",pre:o.pre,suf:o.suf,dp:o.dp,k:o.k,g:o.g,dt:o.dt,s:o.s,m:o.m,d:o.d,odd:o.odd,lab:o.lab,same:o.same}}
+function isOdd(r,x){return r.same!=null?x===r.same:r.odd?x<r.odd[0]||x>r.odd[1]:x===1}
 // index of the right answer among values v
 function ansIdx(r,v){if(r.best==="odd")return v.findIndex(function(x){return isOdd(r,x)});return v.indexOf(r.best==="min"?Math.min.apply(0,v):Math.max.apply(0,v))}
 // true when a round has exactly one right answer
-function ansOk(r){var v=r.items.map(function(x){return x[1]});if(r.best==="odd")return v.filter(function(x){return isOdd(r,x)}).length===1&&(!!r.odd||v.every(function(x){return x===0||x===1}));
+function ansOk(r){var v=r.items.map(function(x){return x[1]});if(r.best==="odd")return v.filter(function(x){return isOdd(r,x)}).length===1&&(!!r.odd||r.same!=null||v.every(function(x){return x===0||x===1}));
  var b=r.best==="min"?Math.min.apply(0,v):Math.max.apply(0,v);return v.filter(function(x){return x===b}).length===1}
 var BORN=["BORN","مواليد"],Q="ON THIS LIST",QA="في القايمة دي؟",TR=" 🏆",TRA=[TR,TR];
 var CATS=[];

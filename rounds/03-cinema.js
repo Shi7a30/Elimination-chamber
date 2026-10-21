@@ -207,5 +207,12 @@ CATS.push(
   ["Robert Downey Jr",0,"روبرت داوني جونيور","Robert Downey Jr."],["Mark Ruffalo",0,"مارك روفالو"],["Benedict Cumberbatch",0,"بنديكت كامبرباتش"],
   ["Chris Pratt",0,"كريس برات"],["Chris Evans",0,"كريس إيفانز","Chris Evans (actor)"],["Margot Robbie",1,"مارجو روبي"],
   ["Chris Hemsworth",0,"كريس هيمسورث"],["Scarlett Johansson",0,"سكارليت جوهانسون"],["Tom Holland",0,"توم هولاند"]],
-  {h:"actor",k:["SUPERHEROES","أبطال خارقين"],s:"actors",m:"w",d:1,lab:[["MARVEL","مارفل"],["DC","دي سي"]]})]}
+  {h:"actor",k:["SUPERHEROES","أبطال خارقين"],s:"actors",m:"w",d:1,lab:[["MARVEL","مارفل"],["DC","دي سي"]]}),
+
+ // same year: the answer is the only card from that year (same:, see above Rd() in index.html)
+ Rd(["WHAT CAME OUT IN","THE SAME YEAR AS TITANIC","ON THIS LIST"],["إيه اللي نزل في نفس السنة","اللي نزل فيها فيلم تايتانيك","في القايمة دي؟"],"odd",[
+  ["Lan a3eesh fi gelbab aby",1996,"لن أعيش في جلباب أبي","Lan Aish fi Gilbab Abi (TV series)"],["El noum fel 3asal",1996,"النوم في العسل","El Noum fil Asal"],["Nour el 3ein",1996,"نور العين","Nour El Ain"],
+  ["Toyour el zalam",1995,"طيور الظلام","Toyour El Zalam"],["Ismailia Rayeh Gai",1997,"إسماعيلية رايح جاي","Round Trip to Ismailia"],["Se3idy fel gam3a el amrekia",1998,"صعيدي في الجامعة الأمريكية","Saidi fil Gamaa el Amrikia"],
+  ["Bakkar",1998,"بكار","Bakkar"],["Hammam fi amsterdam",1999,"همام في أمستردام","Hammam fi Amsterdam"],["2amarein",1999,"قمرين","Amarain"]],
+  {h:"Egyptian film",s:"films",m:"eg",d:2,k:["YEAR","سنة"],same:1997})]}
 );
