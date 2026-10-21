@@ -9,8 +9,14 @@ Sources, by kind:
 - person: the elCinema and IMDb person pages Wikidata links to, then IMDb's name search
 - song: album covers from the iTunes and Deezer search APIs
 - app / other (brands, shops): the App Store icon of the brand's own app
+- album: album covers from iTunes and Deezer
+- club: the badge from TheSportsDB; person: TheSportsDB player photo and the Deezer artist picture
+- "web" (list of search phrases, any kind): the top hits of a DuckDuckGo image search
+- song/album with "artist": matching titles from that artist's Deezer releases
 - every kind: the Wikipedia/Wikidata/Commons candidates fetch_photos already knows, and any "pages" listed by hand
   (the page's og:image is used).
+A target with "more": true is searched again with only the web, Deezer artist and TheSportsDB sources, and
+pictures an earlier run already offered are left out, so a second look shows only new options.
 Run by .github/workflows/find-posters.yml (these sites aren't reachable from every dev environment).
 """
 import json, os, re, sys, time
@@ -134,7 +140,99 @@ def deezer(term):
             for d in r.json().get("data", []) if (d.get("album") or {}).get("cover_xl")]
 
 
+def deezer_album(term):
+    r = get("https://api.deezer.com/search/album", params={"q": term, "limit": 4})
+    if not r:
+        return []
+    return [("deezer album: %s - %s" % (d.get("title"), (d.get("artist") or {}).get("name")), d["cover_xl"])
+            for d in r.json().get("data", []) if d.get("cover_xl")]
+
+
+def deezer_artist(term):
+    r = get("https://api.deezer.com/search/artist", params={"q": term, "limit": 3})
+    if not r:
+        return []
+    return [("deezer artist: %s" % d.get("name"), d["picture_xl"]) for d in r.json().get("data", [])
+            if d.get("picture_xl") and "/artist//" not in d["picture_xl"]]
+
+
+def sportsdb(term, what):
+    if what == "club":
+        r = get("https://www.thesportsdb.com/api/v1/json/3/searchteams.php", params={"t": term})
+        rows = (r.json().get("teams") or []) if r else []
+        return [("sportsdb team: %s" % d.get("strTeam"), d.get("strBadge") or d.get("strTeamBadge")) for d in rows[:3]]
+    r = get("https://www.thesportsdb.com/api/v1/json/3/searchplayers.php", params={"p": term})
+    rows = (r.json().get("player") or []) if r else []
+    return [("sportsdb player: %s (%s)" % (d.get("strPlayer"), d.get("strNationality")), d.get("strThumb") or d.get("strCutout"))
+            for d in rows[:3]]
+
+
+def web(q, n=6):
+    """Top results of a DuckDuckGo image search: [(label, full-size image url)]."""
+    r = get("https://duckduckgo.com/", params={"q": q, "iax": "images", "ia": "images"})
+    m = r and re.search(r'vqd=["\']?([\d-]+)', r.text)
+    if not m:
+        return []
+    r = get("https://duckduckgo.com/i.js", params={"l": "wt-wt", "o": "json", "q": q, "vqd": m.group(1), "f": ",,,,,", "p": "1"},
+            headers={"Referer": "https://duckduckgo.com/"})
+    try:
+        rows = r.json().get("results", []) if r else []
+    except ValueError:
+        return []
+    return [("web: %s | %s" % (q, d.get("title", "")[:60]), d["image"]) for d in rows[:n] if d.get("image")]
+
+
+def loose(s):
+    """Compare song titles across spellings: 'Batalo Fake' ~ 'Batalu fake', '3ayz fin' ~ 'Ayez Feen'."""
+    s = re.sub(r"\(.*?\)|\[.*?\]| - single| - ep", "", s.lower())
+    s = re.sub(r"[^a-z\u0621-\u064a]", "", s)
+    s = re.sub(r"[aeiouyw\u0627\u0623\u0625\u0622\u0648\u064a\u0649\u0629\u0647]", "", s)
+    return s
+
+
+def discography(t):
+    """Covers from the artist's own Deezer albums and singles whose title matches the card."""
+    r = get("https://api.deezer.com/search/artist", params={"q": t["artist"], "limit": 1})
+    rows = (r.json().get("data") or []) if r else []
+    if not rows:
+        return []
+    out, url = [], "https://api.deezer.com/artist/%s/albums?limit=200" % rows[0]["id"]
+    want = {loose(t["name"]), loose(t.get("ar", ""))} - {""}
+    r = get(url)
+    for d in (r.json().get("data") or []) if r else []:
+        if loose(d.get("title", "")) in want and d.get("cover_xl"):
+            out.append(("deezer %s release: %s" % (t["artist"], d["title"]), d["cover_xl"]))
+    r = get("https://api.deezer.com/artist/%s/top?limit=100" % rows[0]["id"])
+    for d in (r.json().get("data") or []) if r else []:
+        if loose(d.get("title", "")) in want and (d.get("album") or {}).get("cover_xl"):
+            out.append(("deezer %s track: %s" % (t["artist"], d["title"]), d["album"]["cover_xl"]))
+    return out
+
+
+def more_sources(t):
+    c = []
+    for q in t.get("web", []):
+        c += web(q)
+    k = t["kind"]
+    if k in ("song", "album") and t.get("artist"):
+        c += discography(t)
+    if k in ("person", "club"):
+        for term in [t.get("title") or t["name"]] + t.get("sportsdb", []):
+            c += sportsdb(term, k)
+    if k == "person" and t.get("singer"):
+        c += deezer_artist(t.get("title") or t["name"]) + deezer_artist(t.get("ar", ""))
+    if k == "album":
+        for term in [t["name"] + " " + t.get("artist", ""), t.get("ar", "") + " " + t.get("artist_ar", "")]:
+            c += itunes(term.strip(), "album") + deezer_album(term.strip())
+    if k == "song":
+        for term in [t["name"] + " " + t.get("artist", ""), t.get("ar", "") + " " + t.get("artist_ar", "")]:
+            c += itunes(term.strip(), "song") + deezer(term.strip())
+    return c
+
+
 def sources(t):
+    if t.get("more"):
+        return more_sources(t)
     c = []
 
     def add(src, url):
@@ -165,6 +263,8 @@ def sources(t):
         for q in [t["name"]] + t.get("q", []):
             for src, u in imdb_suggest(re.sub(r"[^\w\s]", " ", q)):
                 add(src, u)
+    for src, u in more_sources(t):
+        add(src, u)
     if k == "song":
         for term in [t["name"] + " " + t.get("artist", ""), t.get("ar", "")]:
             for src, u in itunes(term.strip(), "song") + deezer(term.strip()):
@@ -194,18 +294,19 @@ def main():
     except (OSError, ValueError):
         pass
     for t in targets:
-        if t["name"] in out and not t.get("redo"):
+        if t["name"] in out and not t.get("redo") and not t.get("more"):
             continue
         if time.time() > stop:
             print("out of time before", t["name"])
             break
         cands = []
+        seen = {c["url"] for c in out.get(t["name"], [])} if t.get("more") else set()
         try:
-            found = sources(t)
+            found = [(src, u) for src, u in sources(t) if u and u not in seen]
         except Exception as e:  # noqa: BLE001
             print("sources failed", t["name"], e)
             found = []
-        for src, url in found[:14]:
+        for src, url in found[:20]:
             for u in bigger(url):
                 try:
                     cands.append({"src": src, "url": u, "uri": F.to_uri(u)})
