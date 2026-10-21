@@ -24701,5 +24701,14 @@
   "ar_hint": "",
   "logo": false,
   "skip": true
+ },
+ {
+  "name": "Zap Tharwat",
+  "title": "Zap Tharwat",
+  "hint": "Egyptian rapper",
+  "ar": "زاب ثروت",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
  }
 ]

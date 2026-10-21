@@ -251,8 +251,8 @@ Rd(["WHICH TAMER HOSNY ALBUM","CAME OUT LAST",Q],["أنهي ألبوم لتام�
   ["Dorak gai",2020,"دورك جاي"],["Ghaba",2021,"غابة"],["Men el akher",2022,"من الآخر"]],
   {h:"Egyptian rap song",k:["RELEASED","نزلت سنة"],dt:["Song released","نزول الأغنية"],g:"y",s:"songs",m:"eg",d:3}),
  Rd(["WHO IS THE OLDEST","RAP OR MAHRAGANAT STAR",Q],["مين","أكبر نجم راب أو مهرجانات في السن",QA],"min",[
-  ["Ahmed Mekky",1980,"أحمد مكي"],["Ahmed Saad",1981,"أحمد سعد","Ahmed Saad (singer)"],["Abyusif",1985,"أبيوسف"],
-  ["Hassan Shakosh",1987,"حسن شاكوش"],["Hamo Bika",1988,"حمو بيكا"],["Mohamed Ramadan",1988,"محمد رمضان"],
+  ["Ahmed Mekky",1980,"أحمد مكي"],["Abyusif",1985,"أبيوسف"],
+  ["Zap Tharwat",1987,"زاب ثروت"],["Hassan Shakosh",1987,"حسن شاكوش"],["Hamo Bika",1988,"حمو بيكا"],["Mohamed Ramadan",1988,"محمد رمضان"],
   ["Marwan Moussa",1995,"مروان موسى"],["Marwan Pablo",1995,"مروان بابلو"],["Wegz",1998,"ويجز"]],{h:"Egyptian rapper",k:BORN,g:"p",s:"singers",m:"eg",d:3}),
  Rd(["WHICH MARWAN PABLO RELEASE","CAME OUT LAST",Q],["أنهي حاجة لمروان بابلو","أجدد",QA],"max",[
   ["3ayz fin",2018,"عايز فين"],["Sindbad",2019,"سندباد"],["Ghaba",2021,"غابة"],
