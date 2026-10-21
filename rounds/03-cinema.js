@@ -2,7 +2,7 @@
 // Each category file adds itself to CATS; index.html loads them in number order.
 CATS.push(
 {n:"Cinema",a:"السينما",e:"🎬",r:[
- Rd(["WHO IS THE","OLDEST MOVIE STAR",Q],["مين","أكبر نجم في السن",QA],"min",[
+ Rd(["WHO IS THE","OLDEST MOVIE STAR",Q],["مين","أكبر نجم سينما في السن",QA],"min",[
   ["Clint Eastwood",1930,"كلينت إيستوود"],["Dustin Hoffman",1937,"داستن هوفمان"],["Al Pacino",1940,"آل باتشينو"],["Harrison Ford",1942,"هاريسون فورد"],
   ["Robert De Niro",1943,"روبرت دي نيرو"],["Sylvester Stallone",1946,"سيلفستر ستالون"],["Arnold Schwarzenegger",1947,"أرنولد شوارزنيجر"],["Meryl Streep",1949,"ميريل ستريب"],
   ["Jackie Chan",1954,"جاكي شان"]],{h:"actor",k:BORN,g:"p",s:"actors",m:"w",d:1}),
@@ -10,7 +10,7 @@ CATS.push(
   ["Omar Sharif",1932,"عمر الشريف"],["Adel Imam",1940,"عادل إمام","Adel Emam"],["Mahmoud Yassin",1941,"محمود ياسين"],["Ahmed Zaki",1949,"أحمد زكي","Ahmed Zaki (actor)"],
   ["Mohamed Henedy",1965,"محمد هنيدي","Mohamed Henedi"],["Ahmed Helmy",1969,"أحمد حلمي"],["Ahmed El-Sakka",1973,"أحمد السقا","Ahmed El Sakka"],["Karim Abdel Aziz",1975,"كريم عبد العزيز"],
   ["Mohamed Ramadan",1988,"محمد رمضان","Mohamed Ramadan (actor)"]],{h:"Egyptian actor",k:BORN,g:"p",s:"actors",m:"eg",d:1}),
- Rd(["WHICH IS THE","BIGGEST BLOCKBUSTER",Q],["أنهي فيلم","كسّب أكتر فلوس في السينما",QA],"max",[
+ Rd(["WHICH IS THE","BIGGEST BLOCKBUSTER",Q],["أنهي فيلم","جاب أكتر إيرادات",QA],"max",[
   ["Avatar",2.923,"أفاتار","Avatar (2009 film)"],["Avengers: Endgame",2.799,"أفنجرز: إند جيم"],["Titanic",2.264,"تايتانيك","Titanic (1997 film)"],["Star Wars: The Force Awakens",2.071,"حرب النجوم: صحوة القوة"],
   ["Avengers: Infinity War",2.052,"أفنجرز: إنفينيتي وور"],["Spider-Man: No Way Home",1.921,"سبايدر مان: نو واي هوم"],["Jurassic World",1.671,"جوراسيك وورلد"],["The Lion King (2019)",1.662,"الأسد الملك (2019)","The Lion King (2019 film)"],
   ["Frozen II",1.453,"فروزن 2"]],{pre:["$",""],suf:["B"," مليار دولار"],dp:2,h:"film",k:["BOX OFFICE","الإيرادات"],s:"films",m:"w",d:2}),
@@ -138,8 +138,8 @@ CATS.push(
   {h:"film",k:["RELEASED","نزل سنة"],dt:["Film released","نزول الفيلم"],g:"y",s:"films",m:"w",d:1}),
  Rd(["WHICH CARTOON FILM MADE","THE MOST MONEY",Q],["أنهي فيلم كرتون","جاب أكتر إيرادات",QA],"max",[
   ["Inside Out 2",1.699,"إنسايد آوت 2"],["Frozen II",1.453,"فروزن 2"],["The Super Mario Bros. Movie",1.361,"فيلم سوبر ماريو"],
-  ["Frozen",1.290,"فروزن","Frozen (2013 film)"],["Incredibles 2",1.243,"الخارقون 2"],["Minions",1.159,"المينيونز","Minions (film)"],
-  ["Toy Story 4",1.073,"حكاية لعبة 4"],["Moana 2",1.059,"موانا 2"],["Despicable Me 3",1.034,"أنا الحقير 3"]],
+  ["Frozen",1.290,"فروزن","Frozen (2013 film)"],["Incredibles 2",1.243,"ذا إنكريديبلز 2"],["Minions",1.159,"المينيونز","Minions (film)"],
+  ["Toy Story 4",1.073,"توي ستوري 4"],["Moana 2",1.059,"موانا 2"],["Despicable Me 3",1.034,"ديسبيكابل مي 3"]],
   {pre:["$",""],suf:["B"," مليار دولار"],dp:2,h:"film",k:["BOX OFFICE","الإيرادات"],s:"films",m:"w",d:2}),
  Rd(["WHICH FILM IS","THE LONGEST",Q],["إيه","أطول فيلم",QA],"max",[
   ["Gone with the Wind",238,"ذهب مع الريح","Gone with the Wind (film)"],["Killers of the Flower Moon",206,"قتلة زهرة القمر","Killers of the Flower Moon (film)"],["The Return of the King",201,"عودة الملك","The Lord of the Rings: The Return of the King"],

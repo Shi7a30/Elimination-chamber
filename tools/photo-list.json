@@ -24737,5 +24737,44 @@
   "ar_hint": "",
   "logo": false,
   "skip": true
+ },
+ {
+  "name": "Mahmoud El Leithy",
+  "title": "Mahmoud El Leithy",
+  "hint": "Egyptian singer",
+  "ar": "محمود الليثي",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "Mahmoud El Leithy singer",
+   "محمود الليثي"
+  ]
+ },
+ {
+  "name": "Reda El Bahrawy",
+  "title": "Reda El Bahrawy",
+  "hint": "Egyptian singer",
+  "ar": "رضا البحراوي",
+  "ar_hint": "مطرب",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "Reda El Bahrawy singer",
+   "رضا البحراوي"
+  ]
+ },
+ {
+  "name": "Kazyon",
+  "title": "Kazyon",
+  "hint": "supermarket chain in Egypt",
+  "ar": "كازيون",
+  "ar_hint": "",
+  "logo": true,
+  "skip": false,
+  "q": [
+   "Kazyon supermarket Egypt",
+   "كازيون"
+  ]
  }
 ]
