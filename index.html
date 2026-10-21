@@ -125,6 +125,10 @@ html[data-theme=dark] .se.k{background:#2c2c33}
 .offl{display:flex;gap:8px;align-items:center;justify-content:center;width:100%;margin-top:8px;border:0;background:none;color:var(--mut);font-size:13px;font-weight:600;padding:10px 12px;border-radius:var(--r1);min-height:44px}
 .offl:not(:disabled):active{transform:scale(.97)}
 .offl:disabled{cursor:default}
+/* a friend's challenge you opened but haven't played yet stays on Home */
+.chpill{display:flex;align-items:center;gap:10px;width:100%;border:0;background:var(--surf);box-shadow:var(--sh1);color:var(--fg);font:inherit;font-size:15px;font-weight:700;padding:10px 14px;border-radius:var(--r1);min-height:48px;text-align:start}
+.chpill .i:first-child{color:#3b82f6}.chpill span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.chpill:active{transform:scale(.98)}
 .offl svg{width:18px;height:18px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 
 /* --- category and mode pages --- */
@@ -411,6 +415,14 @@ body[data-scr=game] #dock,body:not([data-scr]) #dock{display:none}
 div.cat.sc{cursor:default}
 #dock button:active .ic{transform:scale(.92)}
 body:not([data-scr=game]) #upd{bottom:calc(96px + env(safe-area-inset-bottom,0px))}
+/* the update banner waits until you leave the game, so tapping it can't throw away a round */
+body[data-scr=game] #upd{display:none}
+/* hot potato with 5+ players: names in one sliding row, so the cards stay on screen */
+.plist.many{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none;padding:2px 2px 6px}
+.plist.many::-webkit-scrollbar{display:none}
+.plist.many span{flex:none;padding:4px 10px;font-size:12.5px}
+/* narrow phones: three popup buttons go on two rows instead of squeezing */
+@media (max-width:360px){#sheet .row{flex-wrap:wrap}#sheet .row .btn{flex:1 1 40%;max-width:none;font-size:15px;padding:12px 10px}#sheet .row .btn:first-child:nth-last-child(3){flex-basis:100%}}
 </style>
 <script>window.onerror=function(m,u,l){var e=document.getElementById("menu");if(e)e.insertAdjacentHTML("beforeend","<p class='sub'>Error: "+String(m).replace(/</g,"&lt;")+" (line "+l+")</p>")}</script>
 </head><body>
@@ -498,7 +510,7 @@ var TX={
   dyNext:function(h,m){return"Next round in "+(h?h+"h "+m+"m":m+"m")},dyMsg:function(n){return"Shelhom daily round #"+n},dyStreak:function(n){return"🔥 "+n+(n==="1"?" day":" days")+" in a row"},
   howT:"👆 How to play",howP:"Knock out the cards that are NOT the answer, one at a time, until only the right one is left. Knock out the answer and you lose! Tip: 📷 in a round puts your own photo on a card.",howOk:"Got it",
   leaveDy:"You'll lose today's round. There's one try a day.",skipQ:"Skip this round?",skipTxt:function(k){return"Skipping ends your 🔥"+k+" streak."},skipBtn:"Skip",
-  chGot:function(x,s,k){return x+" got "+s+"/"+k},chMine:function(s,k){return"You got "+s+"/"+k+". "}},
+  chGot:function(x,s,k){return x+" got "+s+"/"+k},noSave:"Your phone is out of space, so your progress isn't being saved.",chMine:function(s,k){return"You got "+s+"/"+k+". "}},
  ar:{updReady:"فيه نسخة جديدة",updBtn:"حدّث",offSave:function(m){return"احفظ كل الصور عشان تلعب من غير نت ("+m+" ميجا)"},offBusy:function(p){return"بنحفظ الصور… "+p+"٪"},offDone:"الصور محفوظة وتقدر تلعب من غير نت",offFail:"فيه صور ماتحفظتش. دوس تاني وانت على النت.",title:"شيلهم",tag:"شيل كل الكروت وسيب الإجابة الصح",streak:"ورا بعض",best:"أحسن رقم",rounds:function(n){return n==="1"?"جولة واحدة":arN(n,"جولتين","جولات","جولة")},solved:function(s,n){return"حليت "+s+" من "+n},complete:"★ خلّصتها",
   hint:"الكارت اللي بتشيله بيتقلب ويوريك إجابته، ودوس عليه تاني عشان ترجعه. دوس 📷 جوه أي جولة وبعدين على أي مربع عشان تحط صورة من عندك.",
   round:function(a,b){return"جولة "+a+"/"+b},photo:"غيّر الصورة: دوس على أي كارت",nailed:"جبتها!",wrong:"لأ، مش دي!",left:function(n){return"فاضل تشيل "+n},all:"شيل الكل وسيب واحد بس",
@@ -522,7 +534,7 @@ var TX={
   dyNext:function(h,m){var hs=h===1?"ساعة":h===2?"ساعتين":h<=10?h+" ساعات":h+" ساعة",ms=m===1?"دقيقة":m===2?"دقيقتين":m<=10?m+" دقايق":m+" دقيقة";return"السؤال الجاي بعد "+(h?hs:ms)},dyMsg:function(n){return"شيلهم - سؤال اليوم رقم "+n},dyStreak:function(n){return"🔥 "+(n==="1"?"أول يوم":arN(n,"يومين","أيام","يوم")+" ورا بعض")},
   howT:"👆 إزاي تلعب",howP:"شيل الكروت الغلط واحد واحد لحد ما يفضل الكارت الصح لوحده. لو شلت الإجابة الصح تخسر! وعلى فكرة: 📷 جوه الجولة بيخليك تحط صورة من عندك على أي كارت.",howOk:"تمام",
   leaveDy:"هتخسر سؤال النهارده، وكل يوم ليه محاولة واحدة بس.",skipQ:"تعدّي الجولة دي؟",skipTxt:function(k){return"لو عدّيتها هتخسر الـ 🔥"+k+" اللي ورا بعض."},skipBtn:"عدّي",
-  chGot:function(x,s,k){return x+" جاب "+s+" من "+k},chMine:function(s,k){return"إنت جبت "+s+" من "+k+". "}}};
+  chGot:function(x,s,k){return x+" جاب "+s+" من "+k},noSave:"الموبايل مفيهوش مساحة، فاللي بتعمله مش بيتحفظ.",chMine:function(s,k){return"إنت جبت "+s+" من "+k+". "}}};
 // Arabic counted nouns: 2 has its own word (جولتين), 3 to 10 take the plural (5 جولات), 0, 1 and 11+ the singular (25 جولة)
 function arN(v,two,few,one){var k=parseInt(v,10);return k===2?two:k>=3&&k<=10?v+" "+few:v+" "+one}
 
@@ -535,16 +547,28 @@ var coins=START,streak=0,best=0,eBest={},dBest={},REG="all",prog={},mute=false,I
 // REG = region filter for everything: "eg" Egyptian rounds, "w" international, "all" both.
 var GRP=null,DCAT=null,mode="cat",SUB=null,PL=[],ri=0,cur=null,eScore=0,eRecent=[],items,out,hist,peek,flipNow,over,corr,lostStreak,runOk,edit=false,pend=null,stT,shF=null,saved=false,uLv=0;
 function ld(k,d){try{var v=localStorage.getItem(k);return v===null?d:JSON.parse(v)}catch(e){return d}}
-function sv(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){return false}}
+// Saving: if the phone's storage is full, drop the Wikipedia photo address cache (it fills back up) and try again;
+// if it still fails, say once that progress isn't being saved (your own photos have their own message)
+var SVW=0;
+function sv(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){
+ if(k==="elim_wiki"||k==="elim_img")return false;
+ try{localStorage.removeItem("elim_wiki");localStorage.setItem(k,JSON.stringify(v));return true}catch(e2){}
+ if(!SVW){SVW=1;setTimeout(function(){alert(t("noSave"))},0)}return false}}
+// a saved value that should be an object (anything else, e.g. from a broken save, starts empty)
+function obj(v){return v&&typeof v==="object"&&!Array.isArray(v)?v:{}}
 coins=ld("elim_coins",START);if(typeof coins!=="number"||!(coins>=0))coins=START;
-streak=ld("elim_streak",0)|0;uLv=streak?Math.max(0,ld("elim_ulv",0)|0):0;best=ld("elim_best",0)|0;eBest=ld("elim_endless",{});dBest=ld("elim_duel",{});if(!dBest||typeof dBest!=="object")dBest={};if(typeof eBest==="number")eBest={all:eBest};if(!eBest||typeof eBest!=="object")eBest={};
-REG=ld("elim_region","all");if(["eg","w","all"].indexOf(REG)<0)REG="all";prog=ld("elim_prog",{})||{};mute=!!ld("elim_mute",false);
-IM=ld("elim_img",{})||{};WK=ld("elim_wiki",{})||{};L=ld("elim_lang","en")==="ar"?"ar":"en";
+// elim_ulost = the last loss wasn't undone; closing the app at that popup accepts the loss, so the undo price starts again at 30
+streak=Math.max(0,ld("elim_streak",0)|0);uLv=ld("elim_ulost",0)?0:Math.max(0,ld("elim_ulv",0)|0);best=Math.max(0,ld("elim_best",0)|0);
+eBest=ld("elim_endless",{});if(typeof eBest==="number")eBest={all:eBest};eBest=obj(eBest);dBest=obj(ld("elim_duel",{}));[eBest,dBest].forEach(function(o){for(var k in o)o[k]=Math.max(0,o[k]|0)});
+REG=ld("elim_region","all");if(["eg","w","all"].indexOf(REG)<0)REG="all";prog=obj(ld("elim_prog",{}));mute=!!ld("elim_mute",false);
+IM=obj(ld("elim_img",{}));WK=obj(ld("elim_wiki",{}));L=ld("elim_lang","en")==="ar"?"ar":"en";
 // multiplayer: HP = hot potato player names ("" = default name), ME = your name on challenge links
 var HP=ld("elim_players",["",""]),ME=ld("elim_name","");if(!Array.isArray(HP)||HP.length<2||HP.length>8)HP=["",""];HP=HP.map(function(v){return String(v||"").slice(0,16)});if(typeof ME!=="string")ME="";
 function save(){sv("elim_coins",coins);sv("elim_ulv",uLv);sv("elim_streak",streak);sv("elim_best",best);sv("elim_endless",eBest);sv("elim_duel",dBest);sv("elim_prog",prog);sv("elim_mute",mute);sv("elim_lang",L);sv("elim_region",REG)}
 function t(k){return TX[L][k]}
 // numbers use English digits in both languages (Shiha's choice, 18 Oct 2026)
+// coins from a million up show as "1.2M" so the top bar keeps its buttons
+function nc(v){return v>=1e6?(Math.floor(v/1e5)/10)+"M":n(v)}
 function n(v,dp){return dp!=null?v.toFixed(dp):v>=10000?v.toLocaleString("en-US"):String(v)}
 function li(p){return p?p[L==="ar"?1:0]:""}
 // x = {d: item array, r: the round it comes from (for formatting)}
@@ -568,18 +592,21 @@ function rounds(){return ALL.filter(inReg)}
 function subRounds(id){return rounds().filter(function(r){return r.s===id})}
 // Category rounds come in random order. Rounds you haven't seen in a category come first, so nothing repeats until you've seen them all.
 var SEEN=ld("elim_seen",{});if(!SEEN||typeof SEEN!=="object"||Array.isArray(SEEN))SEEN={};
-function subOrder(id){var rs=subRounds(id),sn=SEEN[id];if(!Array.isArray(sn))sn=[];
- var fresh=rs.filter(function(r){return sn.indexOf(key(r))<0});if(!fresh.length){sn=[];fresh=rs}SEEN[id]=sn;
+// SEEN keeps every region's rounds in one list per group, so a deck only counts (and clears) the rounds of the region you're in.
+function subOrder(id){var rs=subRounds(id),ks=rs.map(key),sn=SEEN[id];if(!Array.isArray(sn))sn=[];
+ var fresh=rs.filter(function(r){return sn.indexOf(key(r))<0});if(!fresh.length){sn=sn.filter(function(k){return ks.indexOf(k)<0});fresh=rs}SEEN[id]=sn;
  return shuffle(fresh).concat(shuffle(rs.filter(function(r){return fresh.indexOf(r)<0})))}
 function markSeen(r){var id=r.s,sn=SEEN[id]||(SEEN[id]=[]);if(sn.indexOf(key(r))<0)sn.push(key(r));
- if(sn.length>=subRounds(id).length)SEEN[id]=[];sv("elim_seen",SEEN)}
+ var ks=subRounds(id).map(key);if(ks.every(function(k){return sn.indexOf(k)>=0}))SEEN[id]=sn.filter(function(k){return ks.indexOf(k)<0});sv("elim_seen",SEEN)}
+// two different cards with the same shown name (محمد صبحي the actor and the footballer) never go on one board
+function dupName(l){var s={};return l.some(function(x){var a=x.d[2]||x.d[0];if(s[a])return true;s[a]=1})}
 function pool(g,rs){var seen={},p=[];(rs||rounds()).forEach(function(r){if(r.g===g)r.items.forEach(function(d){if(!seen[d[0]]){seen[d[0]]=1;p.push({d:d,r:r})}})});return p}
 var GQ={p:{min:[["WHO IS THE","OLDEST",Q],["مين","الأكبر في السن",QA]],max:[["WHO IS THE","YOUNGEST",Q],["مين","الأصغر في السن",QA]]},
  y:{min:[["WHAT CAME","FIRST",Q],["إيه","أقدم حاجة",QA]],max:[["WHAT IS THE","NEWEST",Q],["إيه","أجدد حاجة",QA]]}};
 // lv = Endless difficulty (1-3): cards only come from rounds up to that level, and the answer must beat the next card by at least GAP[lv]
 var GAP={1:6,2:2,3:1};
 function mix(lv){var rs=lv?rounds().filter(function(r){return(r.d||2)<=lv}):null,gap=GAP[lv]||1;
- for(var k=0;k<300;k++){var g=Math.random()<.5?"p":"y",b=Math.random()<.5?"min":"max",P=pool(g,rs),pick=shuffle(P).slice(0,9);if(P.length<9||dupPhoto(pick))continue;var
+ for(var k=0;k<300;k++){var g=Math.random()<.5?"p":"y",b=Math.random()<.5?"min":"max",P=pool(g,rs),pick=shuffle(P).slice(0,9);if(P.length<9||dupPhoto(pick)||dupName(pick))continue;var
   v=pick.map(function(x){return x.d[1]}).sort(function(x,y){return b==="min"?x-y:y-x});
   if(Math.abs(v[1]-v[0])>=gap)return{q:GQ[g][b][0],qa:GQ[g][b][1],best:b,items:pick}}}
 // Endless starts easy and gets harder the longer a run lasts: the score picks the level of the next round
@@ -591,7 +618,8 @@ function endlessRound(id,lv){var m=!id&&Math.random()<.5&&mix(lv);if(m)return m;
  var all=id?subRounds(id):rounds(),fresh=all.filter(function(r){return eRecent.indexOf(r)<0}),
   // the level's own rounds first, then the nearest level if those are used up
   p=lv?[0,1,2].reduce(function(f,dl){return f||shuffle(fresh.filter(function(r){return Math.abs((r.d||2)-lv)===dl}))[0]},null):shuffle(fresh)[0];
- p=p||all[0];eRecent.push(p);while(eRecent.length>Math.min(15,all.length>>1))eRecent.shift();return mk(p)}
+ // hot potato (one group) avoids every round it has used until the group runs out; Endless remembers the last 15
+ p=p||all[0];eRecent.push(p);while(eRecent.length>(id?all.length-1:Math.min(15,all.length>>1)))eRecent.shift();return mk(p)}
 
 // --- duel mode (ده ولا ده / This or That): two cards, pick the right one, keep going until a miss ---
 // A run sticks to one question (an endless pool or one round). The right answer stays and faces a new card;
@@ -607,7 +635,7 @@ function dKey(){return REG+(DCAT?"|"+DCAT:"")}
 // it prefers cards and questions it hasn't used yet, and only comes back to a question once the fresh ones run out
 function dLK(s){return s.g?"g"+s.g:s.r.key}
 function dPK(lk,a,b){return lk+"|"+(a<b?a+"|"+b:b+"|"+a)}
-function dOk(x,a,s){return x.d[0]!==a.d[0]&&x.d[1]!==a.d[1]&&!samePhoto(x,a)&&!dPairs[dPK(dLK(s),x.d[0],a.d[0])]}
+function dOk(x,a,s){return x.d[0]!==a.d[0]&&x.d[1]!==a.d[1]&&(x.d[2]||x.d[0])!==(a.d[2]||a.d[0])&&!samePhoto(x,a)&&!dPairs[dPK(dLK(s),x.d[0],a.d[0])]}
 // cards that can go next to a: unused ones, or if none are left, any that make a new pair
 function dFree(a,s){s=s||dSrc;var lk=dLK(s),l=dList(s),f=l.filter(function(x){return!dUsed[lk+"|"+x.d[0]]&&(!a||dOk(x,a,s))});
  return a&&!f.length?l.filter(function(x){return dOk(x,a,s)}):f}
@@ -657,7 +685,7 @@ function duelRender(){var qq=L==="ar"?cur.qa:cur.q;
  var dc=DCAT&&subInfo(DCAT),dl=dc?dc[1]+" "+(L==="ar"?dc[3]:dc[2]):t("duel");
  $("rn").textContent=(dSwap?t("newQ"):dl)+" · "+t("score")(n(dScore));$("q1").textContent=qq[0];$("q2").textContent=qq[1];$("q3").textContent=qq[2];
  $("sub").textContent=edit?t("photo"):over==="win"?t("nailed"):over==="lose"?t("wrong"):t("pick");
- $("coins").textContent=n(coins);$("stk").textContent="";$("skip").style.display="none";$("cam").className="pill"+(edit?" on":"");
+ $("coins").textContent=nc(coins);$("stk").textContent="";$("skip").style.display="none";$("cam").className="pill"+(edit?" on":"");
  $("grid").className="grid duo";$("pl").style.display="none";
  $("grid").innerHTML=items.map(function(x,i){var cls=over?(i===corr?"win":"out")+(over==="lose"&&i===dPick?" bad":""):"";
   if(over&&flipNow.indexOf(i)<0)cls+=" flip";
@@ -696,18 +724,19 @@ var CH=null;
 // Daily round: one round a day, the same round (and card order) for everyone. Days change at midnight Cairo time; #1 is 19 Oct 2026.
 // DY (saved as elim_daily): d = last day played, r = that day's taps (1 = knocked out a wrong card, 0 = hit the answer), w = won it,
 // s = days won in a row, lw = last day won, b = best run, base = the run before today's round started (leaving midway counts as a loss).
-var DY=ld("elim_daily",{});if(!DY||typeof DY!=="object")DY={};var DAY0=Date.UTC(2026,9,19);
+var DY=obj(ld("elim_daily",{}));var DAY0=Date.UTC(2026,9,19);
 function cairo(){var d=new Date();try{var p={};new Intl.DateTimeFormat("en-US",{timeZone:"Africa/Cairo",year:"numeric",month:"numeric",day:"numeric",hour:"numeric",minute:"numeric",hourCycle:"h23"}).formatToParts(d).forEach(function(x){if(x.type!=="literal")p[x.type]=+x.value});if(p.year)return p}catch(e){}
  return{year:d.getFullYear(),month:d.getMonth()+1,day:d.getDate(),hour:d.getHours(),minute:d.getMinutes()}}
 function dayNo(){var p=cairo();return Math.round((Date.UTC(p.year,p.month-1,p.day)-DAY0)/864e5)+1}
-function dayLeft(){var p=cairo(),m=24*60-((p.hour%24)*60+p.minute);return[Math.floor(m/60),m%60]}
+function dayLeft(){var p=cairo(),m=Math.min(24*60-1,24*60-((p.hour%24)*60+p.minute));return[Math.floor(m/60),m%60]}
 // The schedule is written down in daily.js (one round id per day), so adding rounds never changes a day: everyone gets the same round
 // whichever version they have, and nothing repeats until the whole list has been played.
 // A round that was renamed or removed keeps its day with a fixed stand-in, so the other days don't move.
 function byKey(a,b){return a.key<b.key?-1:a.key>b.key?1:0}
 function dailyRound(d){var L=window.DAILY&&DAILY.length?DAILY:null,n=L?L.length:ALL.length,k=(d-1)%n;if(k<0)k+=n;
  var r=L&&BYH[L[k]];if(r)return r;var s=ALL.slice().sort(byKey);return s[k%s.length]}
-function dyPlayed(){return DY.d===dayNo()&&DY.done}
+// a phone clock set back to an earlier day doesn't open the Daily round again (and can't farm coins)
+function dyPlayed(){return!!DY.done&&(DY.d|0)>=dayNo()}
 function dyStreak(){return DY.lw>=dayNo()-1||dyPlayed()?DY.s|0:0}
 function dySave(){sv("elim_daily",DY)}
 function dailyGo(){var d=dayNo();if(dyPlayed())return;mode="daily";
@@ -738,10 +767,10 @@ function rng(a){return function(){a=a+0x6D2B79F5|0;var x=Math.imul(a^a>>>15,1|a)
 function chalNew(id){CH={seed:Math.floor(Math.random()*2147483647),list:shuffle(id?subRounds(id):rounds()).slice(0,10),sub:id,from:null};chalGo()}
 // Each challenge (seed + rounds) can be played once on this device, so a link can't be retried until you win.
 // CHD = {challenge key: your score}; a game left halfway keeps the score it had.
-var CHD=ld("elim_chdone",{});if(!CHD||typeof CHD!=="object")CHD={};
-function chKey(){return CH.seed.toString(36)+"."+CH.list.map(function(r){return hk(r.key)}).join(".")}
+var CHD=obj(ld("elim_chdone",{}));
+function chKey(c){c=c||CH;return c.seed.toString(36)+"."+c.list.map(function(r){return hk(r.key)}).join(".")}
 function chMark(){var k=chKey();delete CHD[k];CHD[k]=CH.score;var ks=Object.keys(CHD);while(ks.length>200)delete CHD[ks.shift()];sv("elim_chdone",CHD)}
-function chalGo(){if(CH.from&&chKey() in CHD){menu();return}mode="chal";CH.i=0;CH.score=0;chMark();loadPhotos([].concat.apply([],CH.list.map(function(r){return mk(r).items})));chalRound()}
+function chalGo(){if(CH.from&&chKey() in CHD){menu();return}if(CH===CHI){CHI=null;sv("elim_chpend","")}mode="chal";CH.i=0;CH.score=0;chMark();loadPhotos([].concat.apply([],CH.list.map(function(r){return mk(r).items})));chalRound()}
 function chalRound(){cur=mk(CH.list[CH.i]);start()}
 function chalPick(i,x){out.push(i);flipNow=[i];
  if(i===corr){over="lose";render();shake();sfx.lose();sh(function(){return[t("lost"),t("knocked")(nm(x)+" ("+fmt(x)+")"),[[t("next"),chalNext,"y"]]]},450)}
@@ -759,11 +788,21 @@ function chalShare(){var u=chalURL(),m=t("msg")(n(CH.score),n(CH.list.length));
  var copy=function(){if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(m+" "+u).then(function(){$("sp").textContent=t("copied")},function(){prompt("",u)});else prompt("",u)};
  if(navigator.share)navigator.share({text:m+" "+u}).catch(function(e){if(e&&e.name!=="AbortError")copy()});else copy()}
 // opening a challenge link: read it, tidy the address bar, and show the invite page
-function chalLoad(){var q=new URLSearchParams(location.search),c=q.get("ch");if(!c)return;
- try{history.replaceState(null,"",location.href.split(/[?#]/)[0])}catch(e){}
+// The invite is also saved on the phone (elim_chpend) until it's played, so tapping the dock or reopening the app
+// doesn't lose it: it waits on Home as a "X challenged you!" button (CHI).
+var CHI=null;
+function chalLoad(){var s=location.search,q=new URLSearchParams(s),c=q.get("ch"),old=!c;
+ if(old){s=ld("elim_chpend","");q=new URLSearchParams(typeof s==="string"?s:"");c=q.get("ch");if(!c)return}
+ else{sv("elim_chpend",s);try{history.replaceState(null,"",location.href.split(/[?#]/)[0])}catch(e){}}
  var pt=c.split("."),list=pt.slice(1).map(function(h){return BYH[h]}),seed=parseInt(pt[0],36),ok=list.length&&list.length<=10&&list.every(Boolean)&&seed>=0;
  list=list.filter(Boolean);
- CH={seed:seed,list:list,sub:subInfo(q.get("c"))?q.get("c"):null,bad:!ok,from:{n:(q.get("n")||"").trim().slice(0,16),s:Math.max(0,Math.min(list.length,parseInt(q.get("s"),10)||0))}};GRP="cr"}
+ CH={seed:seed,list:list,sub:subInfo(q.get("c"))?q.get("c"):null,bad:!ok,from:{n:(q.get("n")||"").trim().slice(0,16),s:Math.max(0,Math.min(list.length,parseInt(q.get("s"),10)||0))}};
+ if(CH.bad||chKey() in CHD){if(old){sv("elim_chpend","");CH=null;return}}else CHI=CH;
+ if(!old)GRP="cr"}
+function chPill(){if(!CHI||chKey(CHI) in CHD)return"";return '<button class="chpill" data-cr>'+IC.link+"<span>"+esc(t("chFrom")(CHI.from.n||t("friend")))+"</span>"+IC.chev+"</button>"}
+// on a small phone the Play button can start under the dock's raised Home button: scroll it into view
+function ivScroll(){var b=document.querySelector("[data-cplay],[data-cshare]"),h=document.querySelector('#dock [data-nav="home"]');
+ if(b&&h){var d=b.getBoundingClientRect().bottom-h.getBoundingClientRect().top+12;if(d>0)scrollBy(0,d)}}
 
 // --- photos: your own (📷) first, then the built-in set, then a Wikipedia lookup when online ---
 function photo(name){return IM[name]||(window.PH&&PH[name])||WK[name]}
@@ -870,15 +909,15 @@ function chalInvite(){var c=CH.sub&&subInfo(CH.sub),k=CH.list.length,pl=!CH.bad&
 function card(cls,data,emoji,label,left,d,k,c){return '<button class="cat '+cls+'" '+data+(c?' style="--c:'+c+'"':"")+'><span class="se">'+emoji+"</span>"+label+"<small><span>"+left+"</span><span>"+
  (d===k?t("complete"):t("solved")(n(d),n(k)))+'</span></small><div class="pb"><i style="width:'+(k?d/k*100:0)+'%"></i></div></button>'}
 // Home shows the play modes and the big groups; tapping a group opens its page of subcategories.
-function scr(k){document.body.dataset.scr=k}
-function menu(){if(cur&&over==="lose"&&(mode==="cat"||mode==="end")){uLv=0;save()}hide();edit=false;cur=null;$("game").style.display="none";$("menu").style.display="flex";$("coins").textContent=n(coins);$("cam").className="pill";
+function scr(k){document.body.dataset.scr=k;hSync()}
+function menu(){if(cur&&over==="lose"&&(mode==="cat"||mode==="end")){uLv=0;save()}hide();edit=false;cur=null;$("game").style.display="none";$("menu").style.display="flex";$("coins").textContent=nc(coins);$("cam").className="pill";
  var g=typeof GRP==="number"&&GROUPS[GRP],subs=g&&grpSubs(g);if(subs&&!subs.length){GRP=null;g=null}
  scr(g||["d","h","c","cats","mp","st"].indexOf(GRP)>=0||GRP==="cr"&&CH?"menu":"home");
  $("menu").innerHTML=GRP==="d"?duelPage():GRP==="h"?hotPage():GRP==="c"?chalPage():GRP==="cr"&&CH?chalInvite():GRP==="cats"?catsPage():GRP==="mp"?mpPage():GRP==="st"?statsPage():g?ghead('<span class="se" style="--c:'+GC[GRP]+'">'+g.e+"</span>",L==="ar"?g.a:g.n)+
    '<div class="subs">'+subs.map(function(x){var rs=subRounds(x[0]);return card("sc",'data-s="'+x[0]+'"',x[1],L==="ar"?x[3]:x[2],t("rounds")(n(rs.length)),solved(rs),rs.length,GC[GRP])}).join("")+"</div>":
-  '<div class="seg">'+["eg","w","all"].map(function(m){return '<button data-reg="'+m+'"'+(REG===m?' class="on"':"")+">"+IC[m]+"<span>"+t("reg_"+m).replace(/^\S+ /,"")+"</span></button>"}).join("")+"</div>"+
+  chPill()+'<div class="seg">'+["eg","w","all"].map(function(m){return '<button data-reg="'+m+'"'+(REG===m?' class="on"':"")+">"+IC[m]+"<span>"+t("reg_"+m).replace(/^\S+ /,"")+"</span></button>"}).join("")+"</div>"+
   '<button class="cat hero" data-c="e"><small class="eb">'+t("endless")+'</small><span class="ht"><i>'+IC.play+"</i>"+t("heroPlay")+"</span><small>"+t("endlessSub")+'</small><span class="chips">'+chip(IC.flame,streak,t("streak"))+chip(IC.trophy,eBest[REG]||0,t("best"))+'</span><span class="hgrid" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><b></b></span></button>'+
-  dyCard()+offRow();dockSet();if(!CLAWED){CLAWED=1;clawGo()}scrollTo(0,0)}
+  dyCard()+offRow();dockSet();if(!CLAWED){CLAWED=1;clawGo()}scrollTo(0,0);if(GRP==="cr")ivScroll()}
 // Photos download one by one as cards need them. This saves all of them on the phone for playing with no internet.
 var OFF={busy:false,txt:""};
 function phUrls(){var u={};if(window.PH)for(var k in PH)if(PH[k])u[PH[k]]=1;return Object.keys(u)}
@@ -899,7 +938,7 @@ function catsPage(){return ghead("",t("cats"))+'<div class="subs">'+GROUPS.map(f
 function statsPage(){var tile=function(v,l){return '<div class="stt"><b>'+v+"</b><small>"+l+"</small></div>"},
   regs=function(o){return["eg","w","all"].map(function(m){return chip("<span>"+t("reg_"+m).split(" ")[0]+"</span>",o[m]|0,t("reg_"+m))}).join("")},
   row=function(ic,l,c){return '<div class="str"><span>'+ic+l+'</span><span class="chips">'+c+"</span></div>"};
- return ghead("",t("tStats"))+'<div class="stg">'+tile(n(coins),t("stCoins"))+tile(n(solved(ALL))+"/"+n(ALL.length),t("stSolved"))+tile(n(best),t("stBest"))+"</div>"+
+ return ghead("",t("tStats"))+'<div class="stg">'+tile(nc(coins),t("stCoins"))+tile(n(solved(ALL))+"/"+n(ALL.length),t("stSolved"))+tile(n(best),t("stBest"))+"</div>"+
   '<h3 class="dgh">'+t("stScores")+'</h3><div class="stl">'+row(IC.play.replace("<svg",'<svg style="fill:currentColor;stroke:none"'),t("endless"),regs(eBest))+row(IC.duel,t("duel"),regs(dBest))+
   row(IC.cal,t("dyTitle"),chip(IC.flame,dyStreak(),t("streak"))+chip(IC.trophy,DY.b|0,t("best")))+"</div>"+
   '<h3 class="dgh">'+t("stGroups")+'</h3><div class="subs">'+GROUPS.map(function(g,i){var ids=g.s.map(function(x){return x[0]}),rs=ALL.filter(function(r){return ids.indexOf(r.s)>=0});if(!rs.length)return"";
@@ -923,6 +962,7 @@ $("menu").onclick=function(e){if(e.target.closest("[data-off]")){sfx.tap();saveO
  if(e.target.closest("[data-padd]")){HP.push("");sv("elim_players",HP);sfx.tap();menu();return}
  var pd=e.target.closest("[data-pdel]");if(pd){HP.splice(+pd.dataset.pdel,1);sv("elim_players",HP);sfx.tap();menu();return}
  if(e.target.closest("[data-cplay]")){sfx.tap();chalGo();return}
+ if(e.target.closest("[data-cr]")){sfx.tap();CH=CHI;GRP="cr";menu();return}
  if(e.target.closest("[data-cshare]")){sfx.tap();CH.score=CHD[chKey()]||0;chalShare();return}
  if(e.target.closest("[data-dshare]")){sfx.tap();dyShare();return}
  var b=e.target.closest(".cat");if(!b||b.classList.contains("done"))return;sfx.tap();
@@ -955,10 +995,12 @@ function render(){if(mode==="duel")return duelRender();var mp=mode==="hot"||mode
  $("rn").textContent=mode==="end"?t("endless")+" · "+t("score")(n(eScore)):mode==="hot"?"🥔 "+t("hRound")(n(hRn))+" · "+t("pLeft")(n(alive().length)):
   mode==="chal"?t("chRound")(n(CH.i+1),n(CH.list.length),n(CH.score)):mode==="daily"?t("dyRn")(n(DY.d)):SUB[1]+" "+t("round")(n(ri+1),n(PL.length))+(prog[key(cur.r)]?" ★":"");
  $("pl").style.display=mode==="hot"?"flex":"none";
- if(mode==="hot")$("pl").innerHTML=hPl.map(function(p,i){return '<span class="'+(p.out?"ko":i===hTurn&&!over?"now":"")+'">'+esc(p.n)+"</span>"}).join("");
+ $("pl").classList.toggle("many",mode==="hot"&&hPl.length>4);if(mode==="hot")$("pl").innerHTML=hPl.map(function(p,i){return '<span class="'+(p.out?"ko":i===hTurn&&!over?"now":"")+'">'+esc(p.n)+"</span>"}).join("");
+ // keep whoever's turn it is in view in the sliding names row
+ var pl=$("pl"),nw=mode==="hot"&&pl.querySelector(".now");if(nw&&pl.scrollWidth>pl.clientWidth)pl.scrollLeft+=nw.getBoundingClientRect().left-pl.getBoundingClientRect().left-(pl.clientWidth-nw.offsetWidth)/2;
  $("q1").textContent=qq[0];$("q2").textContent=qq[1];$("q3").textContent=qq[2];
  $("sub").textContent=edit?t("photo"):over==="win"?t("nailed"):over==="lose"?t("wrong"):mode==="hot"?t("turn")(hPl[hTurn].n):(out.length?t("left")(n(left-1)):t("all"));
- $("coins").textContent=n(coins);$("stk").textContent=streak&&!mp?"🔥 "+n(streak):"";
+ $("coins").textContent=nc(coins);$("stk").textContent=streak&&!mp?"🔥 "+n(streak):"";
  $("skip").textContent=over?t("next"):t("skip");$("skip").style.display=mode!=="cat"&&!over?"none":"";$("cam").className="pill"+(edit?" on":"");
  // Eliminated cards (and every card left after a win) flip over to show their value; tapping one flips it back (peek).
  $("grid").innerHTML=items.map(function(x,i){var o=out.indexOf(i)>-1,w=over==="win"&&!o,f=(o||w)&&peek.indexOf(i)<0,cls=o?"out":w?"win":"";
@@ -980,7 +1022,7 @@ $("grid").onclick=function(e){var c=e.target.closest(".cell");if(!c)return;var i
  if(mode==="chal"){chalPick(i,x);return}
  if(mode==="daily"){dailyPick(i,x);return}
  out.push(i);hist.push(i);flipNow=[i];
- if(i===corr){over="lose";lostStreak=streak;streak=0;save();render();shake();sfx.lose();
+ if(i===corr){over="lose";lostStreak=streak;streak=0;save();sv("elim_ulost",1);render();shake();sfx.lose();
   sh(function(){var b=[[mode==="end"?t("newRun"):t("moveOn"),nxt,"y"]],msg=t("knocked")(nm(x)+" ("+fmt(x)+")");var c=uCost(),ok=canUndo();if(ok)b.unshift([undoLbl(c),undo,"",1]);
    if(mode==="end"){b.push([t("menu"),menu,""]);msg+=t("runTxt")(n(eScore),n(eBest[REG]||0))}else if(lostStreak>1&&ok)msg+=t("keep")(n(lostStreak));
    msg+=ok?t("nextUndo")(n(c*2)):t("needUndo")(n(c));
@@ -1016,7 +1058,7 @@ addEventListener("resize",fitLabs);
 function uCost(){return UNDO*Math.pow(2,Math.min(uLv,10))}
 function undoLbl(c){return esc(t("undoBtn"))+" · "+n(c)+' <i class="coin"></i>'}
 function canUndo(){return over==="lose"&&(mode==="cat"||mode==="end")&&hist.length&&coins>=uCost()}
-function undo(){if(!canUndo())return;var c=uCost();coins-=c;uLv++;saved=true;var i=hist.pop();out.splice(out.indexOf(i),1);
+function undo(){if(!canUndo())return;var c=uCost();coins-=c;uLv++;saved=true;sv("elim_ulost",0);var i=hist.pop();out.splice(out.indexOf(i),1);
  if(peek.indexOf(i)>-1)peek.splice(peek.indexOf(i),1);
  if(over==="lose"){over=false;streak=lostStreak;hide()}save();sfx.tap();bump();floatTxt("−"+n(c));render()}
 function nxt(){if(mode==="hot"){if(alive().length<2)hotStart(HCAT);else hotRound();return}
@@ -1032,6 +1074,13 @@ $("skip").onclick=function(){sfx.tap();if(over||mode!=="cat"||streak<2){nxt();re
  sh(function(){return[t("skipQ"),t("skipTxt")(n(k)),[[t("stay"),function(){sfx.tap();hide()},"y"],[t("skipBtn"),function(){hide();nxt()},""]]]},0)};// Home asks first when leaving would throw away a game in progress
 function atRisk(){if(!inGame()||!cur)return false;
  return mode==="hot"?alive().length>1:mode==="chal"?true:mode==="daily"?!over:mode==="end"?over!=="lose"&&(eScore>0||out.length>0):mode==="duel"?over!=="lose"&&dScore>0:false}
+// Phone back button / back swipe: any screen past Home gets one history step, so back goes to the page before
+// (and in a game asks first, like the Home button) instead of closing the app
+function hSync(){try{if(document.body.dataset.scr!=="home"&&!(history.state&&history.state.sh))history.pushState({sh:1},"")}catch(e){}}
+addEventListener("popstate",function(){if(document.body.dataset.scr==="home"){try{history.back()}catch(e){}return}
+ if(inGame()){if(shF&&shF.leave){var b=$("sb").querySelector(".btn");if(b)b.click()}else $("home").onclick()}
+ else{GRP=typeof GRP==="number"?"cats":GRP==="h"||GRP==="c"?"mp":null;menu()}
+ hSync()});
 $("home").onclick=function(){if($("menu").style.display==="flex")GRP=null;
  if(atRisk()){var back=shF&&shF.leave?null:shF;var f=function(){return[t("leaveQ"),mode==="daily"?t("leaveDy"):t("leaveTxt"),[[t("stay"),function(){if(back)sh(back,0);else{hide();if(mode==="duel"&&over==="win")duelNext(items[corr])}},"y"],[t("leave"),menu,""]]]};f.leave=1;sh(f,0);return}
  menu()};

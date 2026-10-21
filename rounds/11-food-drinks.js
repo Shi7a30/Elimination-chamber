@@ -157,7 +157,7 @@ CATS.push(
   ["Italy",5.9,"إيطاليا"],["Brazil",5.8,"البرازيل"],["United States",4.2,"أمريكا"]],
   {pre:["~","~"],suf:[" kg"," كيلو"],h:"coffee",k:["PER PERSON A YEAR","للفرد في السنة"],s:"eats",m:"w",d:3}),
  Rd(["WHICH COUNTRY DRINKS","THE MOST TEA",Q],["فين","بيشربوا شاي أكتر",QA],"max",[
-  ["Turkey",3.2,"تركيا"],["Ireland",2.2,"أيرلندا"],["United Kingdom",1.9,"إنجلترا"],
+  ["Turkey",3.2,"تركيا"],["Ireland",2.2,"أيرلندا"],["United Kingdom",1.9,"بريطانيا"],
   ["Iran",1.5,"إيران"],["Russia",1.4,"روسيا"],["Morocco",1.2,"المغرب"],
   ["New Zealand",1.2,"نيوزيلندا"],["Egypt",1,"مصر"],["Poland",1,"بولندا"]],
   {pre:["~","~"],suf:[" kg"," كيلو"],h:"tea",k:["PER PERSON A YEAR","للفرد في السنة"],s:"eats",m:"eg",d:2}),
