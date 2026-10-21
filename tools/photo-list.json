@@ -24649,15 +24649,6 @@
   "skip": false
  },
  {
-  "name": "CTRL",
-  "title": "CTRL",
-  "hint": "Marwan Pablo EP",
-  "ar": "كنترول",
-  "ar_hint": "",
-  "logo": false,
-  "skip": true
- },
- {
   "name": "Akher et3a fanneya",
   "title": "Akher et3a fanneya",
   "hint": "Marwan Pablo album",
@@ -24671,15 +24662,6 @@
   "title": "Project blue beam",
   "hint": "Marwan Pablo album",
   "ar": "بروجكت بلو بيم",
-  "ar_hint": "",
-  "logo": false,
-  "skip": true
- },
- {
-  "name": "7ob w kashat",
-  "title": "7ob w kashat",
-  "hint": "Marwan Pablo album",
-  "ar": "حب وكاشات",
   "ar_hint": "",
   "logo": false,
   "skip": true
@@ -24707,6 +24689,51 @@
   "title": "Zap Tharwat",
   "hint": "Egyptian rapper",
   "ar": "زاب ثروت",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Mozakerat 7ares marma",
+  "title": "Mozakerat 7ares marma",
+  "hint": "Abyusif album",
+  "ar": "مذكرات حارس مرمى",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Dah mesh rap",
+  "title": "Dah mesh rap",
+  "hint": "Abyusif album",
+  "ar": "ده مش راب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Bel monasba",
+  "title": "Bel monasba",
+  "hint": "Marwan Moussa album",
+  "ar": "بالمناسبة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Wa7ed wa7ed",
+  "title": "Wa7ed wa7ed",
+  "hint": "Abyusif album",
+  "ar": "واحد واحد",
+  "ar_hint": "",
+  "logo": false,
+  "skip": true
+ },
+ {
+  "name": "Geziret el batal",
+  "title": "Geziret el batal",
+  "hint": "Wegz EP",
+  "ar": "جزيرة البطل",
   "ar_hint": "",
   "logo": false,
   "skip": true

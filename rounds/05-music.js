@@ -254,9 +254,9 @@ Rd(["WHICH TAMER HOSNY ALBUM","CAME OUT LAST",Q],["أنهي ألبوم لتام�
   ["Ahmed Mekky",1980,"أحمد مكي"],["Abyusif",1985,"أبيوسف"],
   ["Zap Tharwat",1987,"زاب ثروت"],["Hassan Shakosh",1987,"حسن شاكوش"],["Hamo Bika",1988,"حمو بيكا"],["Mohamed Ramadan",1988,"محمد رمضان"],
   ["Marwan Moussa",1995,"مروان موسى"],["Marwan Pablo",1995,"مروان بابلو"],["Wegz",1998,"ويجز"]],{h:"Egyptian rapper",k:BORN,g:"p",s:"singers",m:"eg",d:3}),
- Rd(["WHICH MARWAN PABLO RELEASE","CAME OUT LAST",Q],["أنهي حاجة لمروان بابلو","أجدد",QA],"max",[
-  ["3ayz fin",2018,"عايز فين"],["Sindbad",2019,"سندباد"],["Ghaba",2021,"غابة"],
-  ["CTRL",2021,"كنترول"],["Akher et3a fanneya",2023,"آخر قطعة فنية"],["Project blue beam",2024,"بروجكت بلو بيم"],
-  ["7ob w kashat",2024,"حب وكاشات"],["En7eraf",2025,"انحراف"],["5 nezam",2026,"5 نظام"]],
-  {h:"Marwan Pablo song",k:["RELEASED","نزلت سنة"],dt:["Released","نزلت سنة"],g:"y",s:"songs",m:"eg",d:3})]}
+ Rd(["WHICH RAP ALBUM","CAME OUT LAST",Q],["أنهي ألبوم راب","أجدد",QA],"max",[
+  ["Mozakerat 7ares marma",2012,"مذكرات حارس مرمى"],["Dah mesh rap",2013,"ده مش راب"],["Bel monasba",2017,"بالمناسبة"],
+  ["Wa7ed wa7ed",2018,"واحد واحد"],["Geziret el batal",2019,"جزيرة البطل"],["Akher et3a fanneya",2023,"آخر قطعة فنية"],
+  ["Project blue beam",2024,"بروجكت بلو بيم"],["En7eraf",2025,"انحراف"],["5 nezam",2026,"5 نظام"]],
+  {h:"Egyptian rap album",k:["RELEASED","نزل سنة"],dt:["Album released","نزول الألبوم"],g:"y",s:"songs",m:"eg",d:3})]}
 );
