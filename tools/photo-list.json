@@ -24800,5 +24800,18 @@
    "Kazyon supermarket Egypt",
    "كازيون"
   ]
+ },
+ {
+  "name": "Nohad Nour",
+  "title": "Nohad Nour",
+  "hint": "Egyptian actor and cinematographer",
+  "ar": "نهاد نور",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "Nohad Nour actor",
+   "نهاد نور"
+  ]
  }
 ]
