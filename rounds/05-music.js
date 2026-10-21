@@ -239,5 +239,15 @@ Rd(["WHICH TAMER HOSNY ALBUM","CAME OUT LAST",Q],["أنهي ألبوم لتام�
  Rd(["WHO IS THE","OLDEST 80s & 90s STAR",Q],["مين","أكبر نجم من التمانينات والتسعينات في السن",QA],"min",[
   ["Ali El Haggar",1954,"علي الحجار"],["Amr Diab",1961,"عمرو دياب"],["Hamid El Shaeri",1961,"حميد الشاعري"],
   ["Hakim",1962,"حكيم","Hakim (singer)"],["Hisham Abbas",1963,"هشام عباس"],["Ehab Tawfik",1966,"إيهاب توفيق"],
-  ["Moustafa Amar",1966,"مصطفى قمر"],["Simone",1966,"سيمون","Simone Philip Kamel"],["Angham",1972,"أنغام"]],{h:"Egyptian singer",k:BORN,g:"p",s:"singers",m:"eg",d:2})]}
+  ["Moustafa Amar",1966,"مصطفى قمر"],["Simone",1966,"سيمون","Simone Philip Kamel"],["Angham",1972,"أنغام"]],{h:"Egyptian singer",k:BORN,g:"p",s:"singers",m:"eg",d:2}),
+ Rd(["WHICH WEGZ SONG","CAME OUT LAST",Q],["أنهي أغنية لويجز","أجدد",QA],"max",[
+  ["Kharban",2018,"خربان"],["Bazeet",2019,"بسيط"],["Dorak gai",2020,"دورك جاي"],
+  ["3afareet el asphalt",2021,"عفاريت الأسفلت"],["Msh khalsa",2021,"مش خالصة"],["El bakht",2022,"البخت"],
+  ["Amira",2022,"أميرة"],["Ezz el arab",2022,"عز العرب"],["Kalam forsan",2025,"كلام فرسان"]],
+  {h:"Wegz song",k:["RELEASED","نزلت سنة"],dt:["Song released","نزول الأغنية"],g:"y",s:"songs",m:"eg",d:2}),
+ Rd(["WHICH RAP OR MAHRAGANAT SONG","CAME OUT FIRST",Q],["أنهي أغنية راب أو مهرجانات","نزلت الأول",QA],"min",[
+  ["Mahragan el salam",2006,"مهرجان السلام"],["Ana baba yalla",2011,"أنا بابا يلا"],["Hayla",2016,"هيلا"],
+  ["Batalo fake",2017,"بطلوا فيك"],["3ayz fin",2018,"عايز فين"],["Sindbad",2019,"سندباد"],
+  ["Dorak gai",2020,"دورك جاي"],["Ghaba",2021,"غابة"],["Men el akher",2022,"من الآخر"]],
+  {h:"Egyptian rap song",k:["RELEASED","نزلت سنة"],dt:["Song released","نزول الأغنية"],g:"y",s:"songs",m:"eg",d:3})]}
 );
