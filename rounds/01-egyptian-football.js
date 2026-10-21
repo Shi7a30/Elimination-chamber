@@ -118,5 +118,17 @@ Rd(["WHICH CLUB OUTSIDE CAIRO","WAS FOUNDED FIRST",Q],["أنهي نادي بره
   ["Al Ahly",16,"الأهلي","Al Ahly SC"],["Zamalek",14,"الزمالك","Zamalek SC"],["Al Masry",9,"المصري","Al Masry SC"],
   ["Al Ittihad Alexandria",8,"الاتحاد السكندري","Al Ittihad Alexandria Club"],["El Sekka El Hadid",7,"السكة الحديد","El Sekka El Hadid SC"],["Ghazl El Mahalla",6,"غزل المحلة","Ghazl El Mahalla SC"],
   ["Ismaily",4,"الإسماعيلي","Ismaily SC"],["Tersana",3,"الترسانة","Tersana SC"],["Pyramids FC",3,"بيراميدز"]],
-  {h:"Egyptian football club",k:["CUP FINALS LOST","نهائيات خسرها"],s:"trophies",m:"eg",d:3})]}
+  {h:"Egyptian football club",k:["CUP FINALS LOST","نهائيات خسرها"],s:"trophies",m:"eg",d:3}),
+
+ // odd one out: knock out the cards that belong; the one that doesn't is the answer (best "odd", see above Rd() in index.html)
+ Rd(["WHICH PLAYER","WASN'T BORN IN THE 90s","ON THIS LIST"],["أنهي لاعب","مش من مواليد التسعينات","في القايمة دي؟"],"odd",[
+  ["Ahmed Hegazi",1991,"أحمد حجازي"],["Mohamed Salah",1992,"محمد صلاح"],["Mohamed Elneny",1992,"محمد النني"],
+  ["Mahmoud 'Trezeguet' Hassan",1994,"محمود حسن (تريزيجيه)","Trézéguet (Egyptian footballer)"],["Mohamed El Shenawy",1988,"محمد الشناوي"],["Ahmed Sayed 'Zizo'",1996,"أحمد سيد (زيزو)","Zizo (footballer)"],
+  ["Mohamed Magdy 'Afsha'",1996,"محمد مجدي (أفشة)","Mohamed Magdy (footballer)"],["Mostafa Mohamed",1997,"مصطفى محمد","Mostafa Mohamed (footballer)"],["Omar Marmoush",1999,"عمر مرموش"]],
+  {h:"Egyptian footballer",k:BORN,s:"players",m:"eg",d:2,odd:[1990,1999]}),
+ Rd(["WHO NEVER PLAYED IN","THE PREMIER LEAGUE","ON THIS LIST"],["مين","ملعبش في الدوري الإنجليزي","في القايمة دي؟"],"odd",[
+  ["Ahmed 'Mido' Hossam",0,"أحمد حسام (ميدو)","Mido (footballer)"],["Hossam Ghaly",0,"حسام غالي"],["Amr Zaki",0,"عمرو زكي"],
+  ["Ahmed Elmohamady",0,"أحمد المحمدي"],["Mohamed Salah",0,"محمد صلاح"],["Mostafa Mohamed",1,"مصطفى محمد","Mostafa Mohamed (footballer)"],
+  ["Mohamed Elneny",0,"محمد النني"],["Mahmoud 'Trezeguet' Hassan",0,"محمود حسن (تريزيجيه)","Trézéguet (Egyptian footballer)"],["Omar Marmoush",0,"عمر مرموش"]],
+  {h:"Egyptian footballer",k:["PREMIER LEAGUE","البريميرليج"],s:"players",m:"eg",d:2,lab:[["PLAYED","لعب فيه"],["NEVER","ملعبش"]]})]}
 );

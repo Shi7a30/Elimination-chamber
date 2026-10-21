@@ -258,5 +258,39 @@ Rd(["WHICH TAMER HOSNY ALBUM","CAME OUT LAST",Q],["أنهي ألبوم لتام�
   ["Mozakerat 7ares marma",2012,"مذكرات حارس مرمى"],["Dah mesh rap",2013,"ده مش راب"],["Bel monasba",2017,"بالمناسبة"],
   ["Wa7ed wa7ed",2018,"واحد واحد"],["Geziret el batal",2019,"جزيرة البطل"],["Akher et3a fanneya",2023,"آخر قطعة فنية"],
   ["Project blue beam",2024,"بروجكت بلو بيم"],["En7eraf",2025,"انحراف"],["5 nezam",2026,"5 نظام"]],
-  {h:"Egyptian rap album",k:["RELEASED","نزل سنة"],dt:["Album released","نزول الألبوم"],g:"y",s:"songs",m:"eg",d:3})]}
+  {h:"Egyptian rap album",k:["RELEASED","نزل سنة"],dt:["Album released","نزول الألبوم"],g:"y",s:"songs",m:"eg",d:3}),
+
+ // odd one out: knock out the cards that belong; the one that doesn't is the answer (best "odd", see above Rd() in index.html)
+ Rd(["WHICH SONG","ISN'T FROM THE 2000s","ON THIS LIST"],["أنهي أغنية","مش من الألفينات","في القايمة دي؟"],"odd",[
+  ["Tamally ma3ak",2000,"تملي معاك","Tamally Maak"],["Aktar wahed",2001,"أكتر واحد","Aktar Wahed"],["Tamer w shereen",2002,"تامر وشيرين"],
+  ["2amarein",1999,"قمرين","Amarain"],["3allem 2alby",2003,"علم قلبي","Allem Alby"],["Leily nahary",2004,"ليلي نهاري","Leily Nahary"],
+  ["Kammel kalamak",2005,"كمل كلامك","Kammel Kalamak"],["Ya bent el eih",2007,"يا بنت الإيه"],["Wayah",2009,"وياه","Wayah"]],
+  {h:"Egyptian song",k:["RELEASED","نزل سنة"],s:"songs",m:"eg",d:2,odd:[2000,2009]}),
+ Rd(["WHICH SONG","ISN'T FROM THE 80s","ON THIS LIST"],["أنهي أغنية أجنبية","مش من التمانينات","في القايمة دي؟"],"odd",[
+  ["Another One Bites the Dust",1980,"أناذر وان بايتس ذا داست"],["Under Pressure",1981,"أندر بريشر"],["Billie Jean",1983,"بيلي جين"],
+  ["Careless Whisper",1984,"كيرلس ويسبر"],["Smells Like Teen Spirit",1991,"سميلز لايك تين سبيريت"],["Radio Ga Ga",1984,"راديو جا جا"],
+  ["Like a Prayer",1989,"لايك أ براير","Like a Prayer (song)"],["Under the Sea",1989,"تحت البحر"],["Fight the Power",1989,"فايت ذا باور"]],
+  {h:"song",k:["RELEASED","نزل سنة"],s:"songs",m:"w",d:2,odd:[1980,1989]}),
+ Rd(["WHICH SINGER","WASN'T BORN IN THE 90s","ON THIS LIST"],["مين","مش من مواليد التسعينات","في القايمة دي؟"],"odd",[
+  ["The Weeknd",1990,"ذا ويكند"],["Ed Sheeran",1991,"إد شيران"],["Cardi B",1992,"كاردي بي"],
+  ["Ariana Grande",1993,"أريانا جراندي"],["Taylor Swift",1989,"تايلور سويفت"],["Harry Styles",1994,"هاري ستايلز"],
+  ["Bad Bunny",1994,"باد باني"],["Dua Lipa",1995,"دوا ليبا"],["Shawn Mendes",1998,"شون منديز"]],
+  {h:"singer",k:BORN,s:"singers",m:"w",d:2,odd:[1990,1999]}),
+ Rd(["WHO IS","NOT KOREAN","ON THIS LIST"],["مين","مش كوري","في القايمة دي؟"],"odd",[
+  ["PSY",0,"ساي","Psy"],["G-Dragon",0,"جي دراجون"],["Jin",0,"جين","Jin (singer)"],
+  ["Suga",0,"شوجا","Suga (rapper)"],["RM",0,"آر إم","RM (rapper)"],["Lisa",1,"ليسا","Lisa (rapper)"],
+  ["Jisoo",0,"جيسو"],["Jennie",0,"جيني","Jennie (singer)"],["Jungkook",0,"جونج كوك"]],
+  {h:"singer",k:["FROM","من"],s:"singers",m:"w",d:2,lab:[["SOUTH KOREA","كوريا الجنوبية"],["THAILAND","تايلاند"]]}),
+ Rd(["WHO IS","NOT LEBANESE","ON THIS LIST"],["مين","مش لبناني","في القايمة دي؟"],"odd",[
+  ["Fairuz",0,"فيروز"],["Sabah",0,"صباح","Sabah (singer)"],["Majida El Roumi",0,"ماجدة الرومي"],
+  ["Ragheb Alama",0,"راغب علامة"],["Najwa Karam",0,"نجوى كرم"],["Assala Nasri",1,"أصالة"],
+  ["Elissa",0,"إليسا","Elissa (singer)"],["Wael Kfoury",0,"وائل كفوري"],["Nancy Ajram",0,"نانسي عجرم"]],
+  {h:"singer",k:["FROM","من"],s:"singers",m:"w",d:2,lab:[["LEBANON","لبنان"],["SYRIA","سوريا"]]}),
+
+ // same year: the answer is the only card from that year (same:, see above Rd() in index.html)
+ Rd(["WHAT CAME OUT IN","THE SAME YEAR AS TAMALLY MAAK","ON THIS LIST"],["إيه اللي نزل في نفس السنة","اللي نزلت فيها تملي معاك","في القايمة دي؟"],"odd",[
+  ["Zizinia",1997,"زيزينيا","Zizinia"],["Se3idy fel gam3a el amrekia",1998,"صعيدي في الجامعة الأمريكية","Saidi fil Gamaa el Amrikia"],["Hammam fi amsterdam",1999,"همام في أمستردام","Hammam fi Amsterdam"],
+  ["2amarein",1999,"قمرين","Amarain"],["El nazer",2000,"الناظر","El Nazer (film)"],["Africano",2001,"أفريكانو","Africano (film)"],
+  ["Aktar wahed",2001,"أكتر واحد","Aktar Wahed"],["7adis el saba7 wel masa2",2001,"حديث الصباح والمساء","Hadeeth El Sabah wel Masaa"],["El limby",2002,"اللمبي","El-Limby"]],
+  {h:"Egyptian film",s:"songs",m:"eg",d:2,k:["YEAR","سنة"],same:2000})]}
 );

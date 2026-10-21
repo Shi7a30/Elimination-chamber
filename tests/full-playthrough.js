@@ -16,9 +16,9 @@ await pg.goto(PAGE);
 const S=()=>pg.evaluate(()=>({coins,streak,best,over,ri,runOk,L}));
 const ncat=await pg.evaluate(()=>CATS.length);
 // Data sanity: each answer computed independently
-const data=await pg.evaluate(()=>CATS.map(c=>({n:c.n,a:c.a,r:c.r.map(r=>({q:r.q,qa:r.qa,best:r.best,items:r.items}))})));
+const data=await pg.evaluate(()=>CATS.map(c=>({n:c.n,a:c.a,r:c.r.map(r=>({q:r.q,qa:r.qa,best:r.best,items:r.items,ok:ansOk(r)}))})));
 let rounds=0;for(const c of data){ok(c.a,'arabic cat name '+c.n);for(const r of c.r){rounds++;ok(r.items.length===9,'9 items '+r.q[1]);ok(r.qa&&r.qa.length===3,'ar question '+r.q[1]);
- const vals=r.items.map(i=>i[1]);const best=r.best==='min'?Math.min(...vals):Math.max(...vals);ok(vals.filter(v=>v===best).length===1,'unique answer '+r.q[1]);
+ ok(r.ok,'unique answer '+r.q[1]);
  ok(new Set(r.items.map(i=>i[0])).size===9,'unique names '+r.q[1])}}
 console.log('categories',ncat,'rounds',rounds);
 // Play every subcategory (region BOTH) in both languages: win odd rounds, lose+undo+win even
@@ -46,7 +46,9 @@ for(let c=0;c<subs.length;c++){
   const labs=await pg.$$eval('.back',e=>e.map(x=>x.textContent));ok(labs.every(l=>!/undefined|NaN|null/.test(l)&&l.length>2),'backs ok '+labs.join(','));
   ok(await pg.$$eval('.back small',e=>e.every(x=>x.textContent.length)),'value label '+subs[c]);
   ok(await pg.$$eval('.cell.flip',e=>e.length)===9,'all flipped after win');
-  if(lang==='ar')ok(labs.every(l=>!/[٠-٩]/.test(l)&&/[0-9]/.test(l)),'english digits in arabic '+labs.join(','));
+  // odd-one-out rounds with text labels (lab) show words, not numbers
+  const words=await pg.evaluate(()=>!!(cur.r&&cur.r.lab));
+  if(lang==='ar')ok(labs.every(l=>!/[٠-٩]/.test(l)&&(words||/[0-9]/.test(l))),'english digits in arabic '+labs.join(','));
   if(roundNo===3){await pg.click('.cell.out');ok(await pg.$$eval('.cell.peek',e=>e.length)===1,'peek flips back');await pg.click('.cell.peek');ok(await pg.$$eval('.cell.flip',e=>e.length)===9,'unpeek')}
   await pg.waitForTimeout(650);await pg.click('#sb .btn.y');
  }

@@ -201,5 +201,22 @@ CATS.push(
   ["Rajol El Mostaheel",1984,"رجل المستحيل"],["Goosebumps",1992,"صرخة الرعب"],["Ma wara2 el tabi3a",1993,"ما وراء الطبيعة","Ma Wara'a al-Tabi'a"],
   ["Harry Potter",1997,"هاري بوتر"],["A Series of Unfortunate Events",1999,"سلسلة أحداث مؤسفة"],["Twilight",2005,"الشفق","Twilight (novel series)"],
   ["Percy Jackson",2005,"بيرسي جاكسون","Percy Jackson & the Olympians"],["Diary of a Wimpy Kid",2007,"مذكرات طالب","Diary of a Wimpy Kid (book)"],["The Hunger Games",2008,"مباريات الجوع"]],
-  {h:"book series",k:["FIRST BOOK","أول كتاب سنة"],g:"y",dt:["First book","أول كتاب"],s:"zaman",m:"eg",d:3})]}
+  {h:"book series",k:["FIRST BOOK","أول كتاب سنة"],g:"y",dt:["First book","أول كتاب"],s:"zaman",m:"eg",d:3}),
+
+ // odd one out: knock out the cards that belong; the one that doesn't is the answer (best "odd", see above Rd() in index.html)
+ Rd(["WHICH CARTOON","ISN'T FROM THE 90s","ON THIS LIST"],["أنهي كرتون","مش من التسعينات","في القايمة دي؟"],"odd",[
+  ["TaleSpin",1990,"تيل سبين"],["Darkwing Duck",1991,"البطوط الخارق (دارك وينج داك)"],["Goof Troop",1992,"جوفي وابنه"],
+  ["Timon & Pumbaa",1995,"تيمون وبومبا","Timon & Pumbaa (TV series)"],["DuckTales",1987,"حكايات البط","DuckTales (1987 TV series)"],["Dexter's Laboratory",1996,"معمل دكستر"],
+  ["Johnny Bravo",1997,"جوني برافو"],["Pokémon (anime)",1997,"بوكيمون","Pokémon (TV series)"],["Courage the Cowardly Dog",1999,"الكلب الجبان"]],
+  {h:"cartoon",k:["FIRST AIRED","اتعرض أول مرة سنة"],s:"kidstv",m:"eg",d:2,odd:[1990,1999]}),
+ Rd(["WHICH CARTOON","ISN'T FROM THE 2000s","ON THIS LIST"],["أنهي كرتون","مش من الألفينات","في القايمة دي؟"],"odd",[
+  ["Dora the Explorer",2000,"دورا"],["Samurai Jack",2001,"ساموراي جاك"],["The Fairly OddParents",2001,"آباء خارقون"],
+  ["Kim Possible",2002,"كيم بوسيبل"],["SpongeBob",1999,"سبونج بوب","SpongeBob SquarePants"],["Naruto",2002,"ناروتو","Naruto (TV series)"],
+  ["Teen Titans",2003,"تين تايتنز","Teen Titans (TV series)"],["Ben 10",2005,"بن 10","Ben 10 (2005 TV series)"],["Danny Phantom",2004,"داني فانتوم"]],
+  {h:"cartoon",k:["FIRST AIRED","اتعرض أول مرة سنة"],s:"kidstv",m:"eg",d:3,odd:[2000,2009]}),
+ Rd(["WHICH CARTOON","ISN'T JAPANESE ANIME","ON THIS LIST"],["أنهي كرتون","مش أنمي ياباني","في القايمة دي؟"],"odd",[
+  ["Grendizer",0,"جريندايزر","UFO Robot Grendizer"],["Captain Tsubasa (Captain Majed)",0,"الكابتن ماجد","Captain Tsubasa"],["Dragon Ball",0,"دراجون بول","Dragon Ball (TV series)"],
+  ["Slam Dunk",0,"سلام دانك","Slam Dunk (TV series)"],["Detective Conan",0,"المحقق كونان","Case Closed"],["Avatar: The Last Airbender",1,"أفاتار: أسطورة أنج"],
+  ["Pokémon (anime)",0,"بوكيمون","Pokémon (TV series)"],["Digimon",0,"ديجيمون","Digimon Adventure"],["One Piece",0,"ون بيس","One Piece (TV series)"]],
+  {h:"cartoon",k:["MADE IN","اتعمل في"],s:"kidstv",m:"eg",d:2,lab:[["JAPAN","اليابان"],["USA","أمريكا"]]})]}
 );

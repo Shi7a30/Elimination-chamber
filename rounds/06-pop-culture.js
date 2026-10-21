@@ -132,5 +132,17 @@ Rd(["WHO IS THE","OLDEST EGYPTIAN IN HOLLYWOOD",Q],["مين","أكبر مصري 
   ["Nour El Sherbini",8,"نور الشربيني"],["Amr Shabana",4,"عمرو شبانة"],["Ali Farag",4,"علي فرج"],
   ["Ramy Ashour",3,"رامي عاشور"],["Mostafa Asal",2,"مصطفى عسل"],["Karim Abdel Gawad",1,"كريم عبد الجواد"],
   ["Mohamed El Shorbagy",1,"محمد الشوربجي"],["Tarek Momen",1,"طارق مؤمن"],["Raneem El Weleily",1,"رنيم الوليلي"]],
-  {suf:TRA,h:"squash player",k:["WORLD TITLES","بطولات العالم"],s:"celebs",m:"eg",d:2})]}
+  {suf:TRA,h:"squash player",k:["WORLD TITLES","بطولات العالم"],s:"celebs",m:"eg",d:2}),
+
+ // same year: the answer is the only card from that year (same:, see above Rd() in index.html)
+ Rd(["WHAT CAME OUT IN","THE YEAR SALAH WAS BORN","ON THIS LIST"],["إيه اللي نزل في نفس السنة","اللي صلاح اتولد فيها","في القايمة دي؟"],"odd",[
+  ["Kaboria",1990,"كابوريا","Kaboria"],["El kit kat",1991,"الكيت كات","The Kit Kat"],["El erhab wel kabab",1992,"الإرهاب والكباب","Terrorism and Kebab"],
+  ["El mohager",1994,"المهاجر","The Emigrant (1994 film)"],["Toyour el zalam",1995,"طيور الظلام","Toyour El Zalam"],["El mal wel banoon",1993,"المال والبنون","El Mal wal Banoun"],
+  ["Arabesque",1994,"أرابيسك","Arabesque"],["Habiby",1991,"حبيبي","Habiby (album)"],["Eftah 2albak",1994,"افتح قلبك"]],
+  {h:"Egypt",s:"celebs",m:"eg",d:2,k:["YEAR","سنة"],same:1992}),
+ Rd(["WHAT CAME OUT IN","THE YEAR MOHAMED RAMADAN WAS BORN","ON THIS LIST"],["إيه اللي نزل في نفس السنة","اللي محمد رمضان اتولد فيها","في القايمة دي؟"],"odd",[
+  ["El Halfout",1985,"الهلفوت","El Halfout"],["El bari2",1986,"البريء","The Innocent (1986 film)"],["El beh el bawwab",1987,"البيه البواب","El Beh El Bawab"],
+  ["Layaly el 7elmeya",1987,"ليالي الحلمية","Al Helmeya Nights"],["Ra2fat el haggan",1988,"رأفت الهجان","Raafat El Haggan"],["Shokolata",1989,"شيكولاتة"],
+  ["Kaboria",1990,"كابوريا","Kaboria"],["Habiby",1991,"حبيبي","Habiby (album)"],["El kit kat",1991,"الكيت كات","The Kit Kat"]],
+  {h:"Egypt",s:"celebs",m:"eg",d:3,k:["YEAR","سنة"],same:1988})]}
 );

@@ -196,5 +196,34 @@ Rd(["WHICH BANK","WAS FOUNDED FIRST",Q],["أنهي بنك","اتأسس الأو�
   ["Banque Misr",1920,"بنك مصر"],["Agricultural Bank of Egypt",1930,"البنك الزراعي المصري"],["Banque du Caire",1952,"بنك القاهرة"],
   ["Bank of Alexandria",1957,"بنك الإسكندرية","Alexbank"],["Arab African International Bank",1964,"البنك العربي الأفريقي"],["CIB",1975,"البنك التجاري الدولي","Commercial International Bank"],
   ["Suez Canal Bank",1978,"بنك قناة السويس"],["Housing and Development Bank",1979,"بنك التعمير والإسكان"],["HSBC Egypt",1982,"إتش إس بي سي مصر","HSBC Bank Egypt"]],
-  {h:"Egyptian bank",k:["FOUNDED","اتأسس سنة"],dt:["Bank founded","تأسيس البنك"],g:"y",s:"brands",m:"eg",d:2})]}
+  {h:"Egyptian bank",k:["FOUNDED","اتأسس سنة"],dt:["Bank founded","تأسيس البنك"],g:"y",s:"brands",m:"eg",d:2}),
+
+ // odd one out: knock out the cards that belong; the one that doesn't is the answer (best "odd", see above Rd() in index.html)
+ Rd(["WHICH GAME","ISN'T FROM THE 2010s","ON THIS LIST"],["أنهي لعبة","مش من 2010 لـ 2019","في القايمة دي؟"],"odd",[
+  ["Fruit Ninja",2010,"فروت نينجا"],["Minecraft",2011,"ماينكرافت"],["Temple Run",2011,"تمبل رن"],
+  ["Subway Surfers",2012,"صبواي سيرفرز"],["Angry Birds",2009,"أنجري بيردز","Angry Birds (video game)"],["Flappy Bird",2013,"فلابي بيرد"],
+  ["Pokémon Go",2016,"بوكيمون جو"],["Fortnite",2017,"فورتنايت"],["Among Us",2018,"أمونج أس"]],
+  {h:"video game",k:["RELEASED","نزل سنة"],s:"games",m:"w",d:2,odd:[2010,2019]}),
+ Rd(["WHICH APP","ISN'T FROM THE 2000s","ON THIS LIST"],["أنهي أبلكيشن أو موقع","مش من الألفينات","في القايمة دي؟"],"odd",[
+  ["Wikipedia",2001,"ويكيبيديا"],["Skype",2003,"سكايب"],["LinkedIn",2003,"لينكد إن"],
+  ["Facebook",2004,"فيسبوك"],["Instagram",2010,"إنستجرام"],["Gmail",2004,"جيميل"],
+  ["YouTube",2005,"يوتيوب"],["Twitter",2006,"تويتر"],["WhatsApp",2009,"واتساب"]],
+  {h:"website",k:["LAUNCHED","نزل سنة"],s:"brands",m:"w",d:2,odd:[2000,2009]}),
+ Rd(["WHICH COMPANY","ISN'T AMERICAN","ON THIS LIST"],["أنهي شركة","مش أمريكية","في القايمة دي؟"],"odd",[
+  ["Apple",0,"أبل","Apple Inc."],["Google",0,"جوجل"],["Microsoft",0,"مايكروسوفت"],
+  ["Amazon",0,"أمازون","Amazon (company)"],["Netflix",0,"نتفليكس"],["BlackBerry",1,"بلاك بيري","BlackBerry Limited"],
+  ["Nvidia",0,"إنفيديا"],["Tesla",0,"تيسلا","Tesla, Inc."],["IBM",0,"آي بي إم"]],
+  {h:"company",k:["FROM","من"],s:"brands",m:"w",d:2,lab:[["USA","أمريكا"],["CANADA","كندا"]]}),
+
+ // same year: the answer is the only card from that year (same:, see above Rd() in index.html)
+ Rd(["WHAT CAME OUT IN","THE SAME YEAR AS THE FIRST IPHONE","ON THIS LIST"],["إيه اللي نزل في نفس السنة","اللي نزل فيها أول آيفون","في القايمة دي؟"],"odd",[
+  ["Prison Break",2005,"بريزون بريك"],["Twitter",2006,"تويتر"],["Wii",2006,"وي"],
+  ["Cars",2006,"كارز","Cars (film)"],["Ratatouille",2007,"راتاتوي","Ratatouille (film)"],["Iron Man",2008,"آيرون مان","Iron Man (2008 film)"],
+  ["Mario Kart Wii",2008,"ماريو كارت وي"],["Breaking Bad",2008,"بريكنج باد"],["Angry Birds",2009,"أنجري بيردز","Angry Birds (video game)"]],
+  {h:"film",s:"brands",m:"w",d:2,k:["YEAR","سنة"],same:2007}),
+ Rd(["WHAT CAME OUT IN","THE YEAR FACEBOOK STARTED","ON THIS LIST"],["إيه اللي نزل في نفس السنة","اللي اتعمل فيها فيسبوك","في القايمة دي؟"],"odd",[
+  ["Monsters, Inc.",2001,"مونسترز إنك"],["Wikipedia",2001,"ويكيبيديا"],["Two and a Half Men",2003,"اتنين ونص راجل"],
+  ["Skype",2003,"سكايب"],["The Incredibles",2004,"ذا إنكريديبلز"],["YouTube",2005,"يوتيوب"],
+  ["Prison Break",2005,"بريزون بريك"],["The Office (US)",2005,"ذا أوفيس","The Office (American TV series)"],["Twitter",2006,"تويتر"]],
+  {h:"film",s:"brands",m:"w",d:2,k:["YEAR","سنة"],same:2004})]}
 );

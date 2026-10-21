@@ -485,8 +485,18 @@ body[data-scr=game] #upd{display:none}
 // dt = [en, ar] what the year means ("Film released"), shown under each card when "y" rounds are mixed;
 // s = menu subcategory (see GROUPS); m = "eg" Egyptian or "w" international;
 // d = difficulty for Endless: 1 easy (famous names, clear answer), 2 medium, 3 hard (less known names or a very close answer).
+// best "odd" = odd one out: the answer is the one card that doesn't belong. With odd:[from,to] it is the only value outside
+// from..to (the film that isn't from the 90s). Without odd, values are 0 for the group and 1 for the odd card, and
+// lab = [[en, ar] for 0, [en, ar] for 1] is what the flipped cards show. With same:year the answer is the only card
+// from that year (what came out the year Salah was born). Odd rounds stay out of Duel.
 // Each round must have exactly one best answer (checked on load).
-function Rd(q,qa,best,items,o){o=o||{};return{q:q,qa:qa,best:best,items:items,h:o.h||"",pre:o.pre,suf:o.suf,dp:o.dp,k:o.k,g:o.g,dt:o.dt,s:o.s,m:o.m,d:o.d}}
+function Rd(q,qa,best,items,o){o=o||{};return{q:q,qa:qa,best:best,items:items,h:o.h||"",pre:o.pre,suf:o.suf,dp:o.dp,k:o.k,g:o.g,dt:o.dt,s:o.s,m:o.m,d:o.d,odd:o.odd,lab:o.lab,same:o.same}}
+function isOdd(r,x){return r.same!=null?x===r.same:r.odd?x<r.odd[0]||x>r.odd[1]:x===1}
+// index of the right answer among values v
+function ansIdx(r,v){if(r.best==="odd")return v.findIndex(function(x){return isOdd(r,x)});return v.indexOf(r.best==="min"?Math.min.apply(0,v):Math.max.apply(0,v))}
+// true when a round has exactly one right answer
+function ansOk(r){var v=r.items.map(function(x){return x[1]});if(r.best==="odd")return v.filter(function(x){return isOdd(r,x)}).length===1&&(!!r.odd||r.same!=null||v.every(function(x){return x===0||x===1}));
+ var b=r.best==="min"?Math.min.apply(0,v):Math.max.apply(0,v);return v.filter(function(x){return x===b}).length===1}
 var BORN=["BORN","مواليد"],Q="ON THIS LIST",QA="في القايمة دي؟",TR=" 🏆",TRA=[TR,TR];
 var CATS=[];
 </script>
@@ -505,8 +515,8 @@ var CATS=[];
 <script>
 // Progress key: category + second question line; a later round that repeats that line also gets its first line, so older saves still match.
 var KEYS={};
-CATS.forEach(function(c){c.r.forEach(function(r){r.c=c;r.key=c.n+"|"+r.q[1];if(KEYS[r.key])r.key+="|"+r.q[0];KEYS[r.key]=1;var v=r.items.map(function(x){return x[1]}),b=r.best==="min"?Math.min.apply(0,v):Math.max.apply(0,v);
- if(r.g==="y"&&!r.dt)console.warn("Mixed year round needs dt:",c.n,r.q[1]);if(r.items.length!==9||v.filter(function(x){return x===b}).length!==1)console.warn("Round needs 9 items and one answer:",c.n,r.q[1])})});
+CATS.forEach(function(c){c.r.forEach(function(r){r.c=c;r.key=c.n+"|"+r.q[1];if(KEYS[r.key])r.key+="|"+r.q[0];KEYS[r.key]=1;
+ if(r.g==="y"&&!r.dt)console.warn("Mixed year round needs dt:",c.n,r.q[1]);if(r.items.length!==9||!ansOk(r))console.warn("Round needs 9 items and one answer:",c.n,r.q[1])})});
 
 // Home menu: broad groups, each with subcategories. A subcategory plays every round tagged with its id (s) in the chosen region.
 var GROUPS=[
@@ -605,8 +615,8 @@ function nc(v){return v>=1e6?(Math.floor(v/1e5)/10)+"M":n(v)}
 function n(v,dp){return dp!=null?v.toFixed(dp):v>=10000?v.toLocaleString("en-US"):String(v)}
 function li(p){return p?p[L==="ar"?1:0]:""}
 // x = {d: item array, r: the round it comes from (for formatting)}
-// "1 goal", not "1 goals" (English only; Arabic units don't change this way)
-function fmt(x){var u=li(x.r.suf);if(L!=="ar"&&Math.abs(x.d[1])===1)u=u.replace(/([a-z]{2,})s$/,"$1");return li(x.r.pre)+n(x.d[1],x.r.dp)+u}
+// "1 goal", not "1 goals" (English only; Arabic units don't change this way). Odd-one-out rounds with lab show a word.
+function fmt(x){if(x.r.lab)return li(x.r.lab[x.d[1]]);var u=li(x.r.suf);if(L!=="ar"&&Math.abs(x.d[1])===1)u=u.replace(/([a-z]{2,})s$/,"$1");return li(x.r.pre)+n(x.d[1],x.r.dp)+u}
 function nm(x){return L==="ar"&&x.d[2]?x.d[2]:x.d[0]}
 // Card label: just the nickname for players known by one ("Mahmoud 'Trezeguet' Hassan" shows as Trezeguet); the full name stays in the aria-label.
 function lbl(x){var k=x.d[0].match(/'([^']+)'/);if(!k)return nm(x);if(L!=="ar")return k[1];var a=(x.d[2]||"").match(/\(([^)]+)\)\s*$/);return a?a[1]:nm(x)}
@@ -686,7 +696,7 @@ function dPair(s){var l=dList(s),lk=dLK(s),fr=shuffle(l.filter(function(x){retur
  return null}
 function dPickSrc(again){var all=dRounds(),c=[],k=dSrc&&dLK(dSrc)+"|"+dSrc.b;
  ["p","y"].forEach(function(g){["min","max"].forEach(function(b){c.push({g:g,b:b})})});
- all.forEach(function(r){if(!r.g)c.push({r:r,b:r.best})});
+ all.forEach(function(r){if(!r.g&&r.best!=="odd")c.push({r:r,b:r.best})});
  var sk=function(s){return dLK(s)+"|"+s.b},
   // unasked questions first, then asked ones other than the current, then the current one
   tiers=[c.filter(function(s){return!dAsked[sk(s)]}),c.filter(function(s){return dAsked[sk(s)]&&sk(s)!==k}),c.filter(function(s){return sk(s)===k})];
@@ -1026,7 +1036,7 @@ function newRound(){cur=mode==="end"?endlessRound(null,eLevel(eScore)):mk(PL[ri]
 function deal(){var g=$("grid");g.classList.remove("deal");void g.offsetWidth;g.classList.add("deal")}
 function start(){hide();scr("game");$("menu").style.display="none";$("game").style.display="flex";
  items=shuffle(cur.items,mode==="chal"?rng(CH.seed+CH.i):mode==="daily"&&rng(DY.d*7919+1));out=[];hist=[];peek=[];flipNow=[];over=false;saved=false;
- var v=items.map(function(x){return x.d[1]});corr=v.indexOf(cur.best==="min"?Math.min.apply(0,v):Math.max.apply(0,v));
+ var v=items.map(function(x){return x.d[1]});corr=ansIdx(cur.r||cur,v);
  render();deal();scrollTo(0,0);howTo()}
 // The very first game on a phone opens with a short "how to play", so a friend who starts with a shared Daily round
 // doesn't tap the right answer first (which is how you lose).
