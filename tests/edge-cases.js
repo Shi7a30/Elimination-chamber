@@ -59,6 +59,7 @@ p=await page();await p.clock.setFixedTime(new Date('2026-10-22T12:00:00Z'));awai
 await p.evaluate(()=>dailyGo());await win(p);await p.waitForTimeout(700);await p.evaluate(()=>menu());const c1=await p.evaluate(()=>coins);
 await p.clock.setFixedTime(new Date('2026-10-20T12:00:00Z'));await p.reload();await p.waitForTimeout(200);
 s=await p.evaluate(()=>({played:dyPlayed(),c:coins}));await p.evaluate(()=>dailyGo());ok(s.played&&await p.evaluate(()=>mode!=="daily"),'Daily reopened after setting the clock back');
+await p.clock.setFixedTime(new Date('2026-10-10T12:00:00Z'));await p.reload();await p.waitForTimeout(200);ok(await p.evaluate(()=>/#1\b|رقم 1\b/.test(document.querySelector('.dcard .eb').textContent)),'Daily number below #1 with an early clock');
 await p.context().close();
 
 // 8. undo price: stays after reopening with no streak; resets if the app closed on the lost popup

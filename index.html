@@ -745,6 +745,8 @@ function byKey(a,b){return a.key<b.key?-1:a.key>b.key?1:0}
 function dailyRound(d){var L=window.DAILY&&DAILY.length?DAILY:null,n=L?L.length:ALL.length,k=(d-1)%n;if(k<0)k+=n;
  var r=L&&BYH[L[k]];if(r)return r;var s=ALL.slice().sort(byKey);return s[k%s.length]}
 // a phone clock set back to an earlier day doesn't open the Daily round again (and can't farm coins)
+// a phone clock set before day #1 still shows #1, never #0 or #-8
+function dyN(d){return n(Math.max(1,d|0))}
 function dyPlayed(){return!!DY.done&&(DY.d|0)>=dayNo()}
 function dyStreak(){return DY.lw>=dayNo()-1||dyPlayed()?DY.s|0:0}
 function dySave(){sv("elim_daily",DY)}
@@ -757,15 +759,15 @@ function dailyPick(i,x){out.push(i);flipNow=[i];DY.r.push(i===corr?0:1);
   render();sfx.win();confetti();bump();floatTxt("+"+n(WIN));sh(function(){return[t("won"),t("coins")(n(WIN))+" · "+t("dyStreak")(n(DY.s)),dyBtns()]},600)}
  else{dySave();render();sfx.elim(out.length)}}
 function dyBtns(){return[[t("dyShare"),dyShare,""],[t("menu"),menu,"y"]]}
-function dyShare(){var m=t("dyMsg")(n(DY.d))+"\n"+(DY.r||[]).map(function(v){return v?"🟩":"🟥"}).join("")+(dyStreak()?"\n🔥 "+n(dyStreak()):"")+"\n"+location.origin+location.pathname;
+function dyShare(){var m=t("dyMsg")(dyN(DY.d))+"\n"+(DY.r||[]).map(function(v){return v?"🟩":"🟥"}).join("")+(dyStreak()?"\n🔥 "+n(dyStreak()):"")+"\n"+location.origin+location.pathname;
  if(navigator.share)navigator.share({text:m}).catch(function(){});else open("https://wa.me/?text="+encodeURIComponent(m),"_blank")}
 function dyCard(){var d=dayNo(),done=dyPlayed(),won=done&&DY.w,cd=cairo(),lf=dayLeft(),r=dailyRound(d),sg=null,fl=IC.flame,tr=IC.trophy,share='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>';
  GROUPS.forEach(function(g){g.s.forEach(function(x){if(r&&x[0]===r.s)sg=x})});
  var mk=done?'<span class="mk">'+(won?'<svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>'+t("dyWon"):'<svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>'+t("dyLost"))+"</span>":"";
  var art='<span class="art" aria-hidden="true"><span class="back"></span><span class="pg"><i></i><i></i><span class="mo">'+t("dyMon")[cd.month-1]+"</span><b>"+cd.day+"</b></span>"+mk+'<span class="sp a">✦</span><span class="sp b">✦</span><span class="sp c">✦</span></span>';
  var st=chip(fl,dyStreak(),t("streak"))+chip(tr,DY.b|0,t("best"));
- if(!done)return '<button class="cat dcard" data-c="dy"><span class="stars"></span><span class="toprow"><span class="eb"><span class="dot"></span>'+t("dyBadge")(n(d))+'</span><span class="tm" data-dends>⏱ '+t("dyEnds")(lf[0],lf[1])+'</span></span><span class="dt">'+t("dyTitle")+'</span><span class="ds">'+(sg?t("dyToday")+' <b class="tp">'+sg[1]+" "+(L==="ar"?sg[3]:sg[2])+"</b>":t("dySub"))+'</span><span class="chips">'+st+'<span class="shr">'+t("dyPlay")+'<svg class="pl" viewBox="0 0 24 24"><path d="M7 5v14l11-7z"/></svg></span></span>'+art+"</button>";
- return '<div class="cat dcard done'+(won?"":" lost")+'"><span class="stars"></span><span class="toprow"><span class="eb">'+t("dyBadge")(n(d))+'</span><span class="dg">'+(DY.r||[]).map(function(v){return v?"<i></i>":'<i class="x"></i>'}).join("")+'</span></span>'+
+ if(!done)return '<button class="cat dcard" data-c="dy"><span class="stars"></span><span class="toprow"><span class="eb"><span class="dot"></span>'+t("dyBadge")(dyN(d))+'</span><span class="tm" data-dends>⏱ '+t("dyEnds")(lf[0],lf[1])+'</span></span><span class="dt">'+t("dyTitle")+'</span><span class="ds">'+(sg?t("dyToday")+' <b class="tp">'+sg[1]+" "+(L==="ar"?sg[3]:sg[2])+"</b>":t("dySub"))+'</span><span class="chips">'+st+'<span class="shr">'+t("dyPlay")+'<svg class="pl" viewBox="0 0 24 24"><path d="M7 5v14l11-7z"/></svg></span></span>'+art+"</button>";
+ return '<div class="cat dcard done'+(won?"":" lost")+'"><span class="stars"></span><span class="toprow"><span class="eb">'+t("dyBadge")(dyN(d))+'</span><span class="dg">'+(DY.r||[]).map(function(v){return v?"<i></i>":'<i class="x"></i>'}).join("")+'</span></span>'+
   '<span class="dt">'+t("dyDone")+'</span><span class="ds" data-dleft>'+t("dyNext")(lf[0],lf[1])+'</span><span class="row">'+st+'<button class="shr" data-dshare>'+share+t("dyShare")+"</button></span>"+art+"</div>"}
 function chip(ic,v,l){return '<span class="chip" aria-label="'+esc(l)+" "+v+'">'+ic+n(v)+"</span>"}
 // keep the countdown right while Home stays open, and show the new round when the day changes
@@ -1004,7 +1006,7 @@ function tileBg(h){return"background:linear-gradient(150deg,hsl("+h+",58%,60%),h
 function render(){if(mode==="duel")return duelRender();var mp=mode==="hot"||mode==="chal"||mode==="daily";
  $("grid").className="grid";var left=items.length-out.length,qq=L==="ar"?cur.qa:cur.q;
  $("rn").textContent=mode==="end"?t("endless")+" · "+t("score")(n(eScore)):mode==="hot"?"🥔 "+t("hRound")(n(hRn))+" · "+t("pLeft")(n(alive().length)):
-  mode==="chal"?t("chRound")(n(CH.i+1),n(CH.list.length),n(CH.score)):mode==="daily"?t("dyRn")(n(DY.d)):SUB[1]+" "+t("round")(n(ri+1),n(PL.length))+(prog[key(cur.r)]?" ★":"");
+  mode==="chal"?t("chRound")(n(CH.i+1),n(CH.list.length),n(CH.score)):mode==="daily"?t("dyRn")(dyN(DY.d)):SUB[1]+" "+t("round")(n(ri+1),n(PL.length))+(prog[key(cur.r)]?" ★":"");
  $("pl").style.display=mode==="hot"?"flex":"none";
  $("pl").classList.toggle("many",mode==="hot"&&hPl.length>4);if(mode==="hot")$("pl").innerHTML=hPl.map(function(p,i){return '<span class="'+(p.out?"ko":i===hTurn&&!over?"now":"")+'">'+esc(p.n)+"</span>"}).join("");
  // keep whoever's turn it is in view in the sliding names row
