@@ -80,9 +80,12 @@ html[dir=rtl] #upd{padding:8px 16px 8px 8px}
 .stats b svg{width:20px;height:20px}
 .stats .fl{color:var(--o)}.stats .md{color:#d9a20f}
 .stats small{font-size:12px;color:var(--mut);font-weight:500}
-.seg{display:flex;gap:2px;padding:3px;background:var(--surf2);border-radius:14px}
-.seg button{flex:1;border:0;border-radius:11px;background:none;color:var(--mut);font-size:14px;font-weight:600;padding:8px 2px}
-.seg button.on{background:var(--surf);color:var(--fg);box-shadow:var(--sh1)}
+/* Region bar: line icon + name; the chosen region is a dark pill with a yellow icon. */
+.seg{display:flex;gap:4px;padding:4px;background:var(--surf);border:1px solid var(--line);box-shadow:var(--sh1);border-radius:16px}
+.seg button{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;border:0;border-radius:12px;background:none;color:var(--mut);font-size:14px;font-weight:600;padding:7px 2px}
+.seg svg{width:17px;height:17px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.seg button.on{background:var(--ink);color:#fff}
+.seg button.on svg{stroke:var(--y)}
 html[data-theme=dark] .seg button.on{background:#34343c}
 @media (prefers-color-scheme:dark){html:not([data-theme=light]) .seg button.on{background:#34343c}}
 .cat{position:relative;background:var(--surf);color:var(--fg);border:0;border-radius:var(--r2);padding:14px 16px;font-size:17px;font-weight:700;box-shadow:var(--sh1);text-align:start}
@@ -823,7 +826,7 @@ function grpSubs(g){return g.s.filter(function(x){return subRounds(x[0]).length}
 function subInfo(id){var r=null;GROUPS.forEach(function(g){g.s.forEach(function(x){if(x[0]===id)r=x})});return r}
 // Line icons (24px grid, drawn with the current text colour).
 function svg(d,c){return '<svg class="i'+(c?" "+c:"")+'" viewBox="0 0 24 24" aria-hidden="true">'+d+"</svg>"}
-var IC={back:svg('<path d="M15 5l-7 7 7 7"/>',"flipx"),chev:svg('<path d="M9 5l7 7-7 7"/>',"flipx chev"),play:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5z"/></svg>',
+var IC={eg:svg('<path d="M1.5 20h21M3 20 9.5 7 16 20M13.5 15l3-5 5 10"/>'),w:svg('<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/>'),all:svg('<path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/>'),back:svg('<path d="M15 5l-7 7 7 7"/>',"flipx"),chev:svg('<path d="M9 5l7 7-7 7"/>',"flipx chev"),play:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5z"/></svg>',
  duel:svg('<path d="M13 2.5L4.5 13.5h6.5l-1 8 8.5-11h-6.5z"/>'),
  cats:svg('<rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><rect x="13" y="13" width="7" height="7" rx="2"/>'),
  home:svg('<path d="M4 10.5L12 4l8 6.5V20a1 1 0 0 1-1 1h-4.5v-6h-5v6H5a1 1 0 0 1-1-1z"/>'),
@@ -871,7 +874,7 @@ function menu(){if(cur&&over==="lose"&&(mode==="cat"||mode==="end")){uLv=0;save(
  scr(g||["d","h","c","cats","mp","st"].indexOf(GRP)>=0||GRP==="cr"&&CH?"menu":"home");
  $("menu").innerHTML=GRP==="d"?duelPage():GRP==="h"?hotPage():GRP==="c"?chalPage():GRP==="cr"&&CH?chalInvite():GRP==="cats"?catsPage():GRP==="mp"?mpPage():GRP==="st"?statsPage():g?ghead('<span class="se" style="--c:'+GC[GRP]+'">'+g.e+"</span>",L==="ar"?g.a:g.n)+
    '<div class="subs">'+subs.map(function(x){var rs=subRounds(x[0]);return card("sc",'data-s="'+x[0]+'"',x[1],L==="ar"?x[3]:x[2],t("rounds")(n(rs.length)),solved(rs),rs.length,GC[GRP])}).join("")+"</div>":
-  '<div class="seg">'+["eg","w","all"].map(function(m){return '<button data-reg="'+m+'"'+(REG===m?' class="on"':"")+">"+t("reg_"+m)+"</button>"}).join("")+"</div>"+
+  '<div class="seg">'+["eg","w","all"].map(function(m){return '<button data-reg="'+m+'"'+(REG===m?' class="on"':"")+">"+IC[m]+"<span>"+t("reg_"+m).replace(/^\S+ /,"")+"</span></button>"}).join("")+"</div>"+
   '<button class="cat hero" data-c="e"><small class="eb">'+t("endless")+'</small><span class="ht"><i>'+IC.play+"</i>"+t("heroPlay")+"</span><small>"+t("endlessSub")+'</small><span class="chips">'+chip(IC.flame,streak,t("streak"))+chip(IC.trophy,eBest[REG]||0,t("best"))+'</span><span class="hgrid" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><b></b></span></button>'+
   dyCard()+offRow();dockSet();if(!CLAWED){CLAWED=1;clawGo()}scrollTo(0,0)}
 // Photos download one by one as cards need them. This saves all of them on the phone for playing with no internet.
