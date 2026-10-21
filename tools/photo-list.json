@@ -24413,5 +24413,50 @@
   "ar_hint": "بنك",
   "logo": true,
   "skip": false
+ },
+ {
+  "name": "Youssef Wahbi",
+  "title": "Youssef Wahbi",
+  "hint": "Egyptian actor",
+  "ar": "يوسف وهبي",
+  "ar_hint": "ممثل",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mostafa Asal",
+  "title": "Mostafa Asal",
+  "hint": "Egyptian squash player",
+  "ar": "مصطفى عسل",
+  "ar_hint": "لاعب اسكواش",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Karim Abdel Gawad",
+  "title": "Karim Abdel Gawad",
+  "hint": "Egyptian squash player",
+  "ar": "كريم عبد الجواد",
+  "ar_hint": "لاعب اسكواش",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Tarek Momen",
+  "title": "Tarek Momen",
+  "hint": "Egyptian squash player",
+  "ar": "طارق مؤمن",
+  "ar_hint": "لاعب اسكواش",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Raneem El Weleily",
+  "title": "Raneem El Weleily",
+  "hint": "Egyptian squash player",
+  "ar": "رنيم الوليلي",
+  "ar_hint": "لاعبة اسكواش",
+  "logo": false,
+  "skip": false
  }
 ]

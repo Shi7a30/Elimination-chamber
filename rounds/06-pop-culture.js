@@ -107,5 +107,30 @@ Rd(["WHO IS THE","OLDEST EGYPTIAN IN HOLLYWOOD",Q],["مين","أكبر مصري 
   ["Boutros Boutros-Ghali",1922,"بطرس بطرس غالي"],["Mohamed Al-Fayed",1929,"محمد الفايد"],["Mostafa El-Sayed",1933,"مصطفى السيد","Mostafa El-Sayed"],
   ["Magdi Yacoub",1935,"مجدي يعقوب"],["Farouk El-Baz",1938,"فاروق الباز"],["Mohamed ElBaradei",1942,"محمد البرادعي"],
   ["Ahmed Zewail",1946,"أحمد زويل"],["Naguib Sawiris",1954,"نجيب ساويرس"],["Mohamed Salah",1992,"محمد صلاح"]],
-  {h:"Egyptian",k:BORN,g:"p",s:"celebs",m:"eg",d:3})]}
+  {h:"Egyptian",k:BORN,g:"p",s:"celebs",m:"eg",d:3}),
+ Rd(["WHO IS THE","YOUNGEST EGYPTIAN STAR",Q],["مين","أصغر نجم مصري",QA],"max",[
+  ["Adel Imam",1940,"عادل إمام"],["Mohamed Mounir",1954,"محمد منير"],["Amr Diab",1961,"عمرو دياب"],
+  ["Ahmed Helmy",1969,"أحمد حلمي"],["Mona Zaki",1977,"منى زكي"],["Tamer Hosny",1977,"تامر حسني"],
+  ["Mohamed Ramadan",1988,"محمد رمضان","Mohamed Ramadan (actor)"],["Mohamed Salah",1992,"محمد صلاح"],["Wegz",1998,"ويجز"]],
+  {h:"Egyptian",k:BORN,g:"p",s:"celebs",m:"eg",d:1}),
+ Rd(["WHO IS THE","YOUNGEST COMEDIAN",Q],["مين","أصغر كوميديان",QA],"max",[
+  ["Samir Ghanem",1937,"سمير غانم"],["Adel Imam",1940,"عادل إمام"],["Younes Shalaby",1941,"يونس شلبي"],
+  ["Mohamed Henedy",1965,"محمد هنيدي"],["Maged El Kedwany",1967,"ماجد الكدواني"],["Mohamed Saad",1968,"محمد سعد","Mohamed Saad (actor)"],
+  ["Ahmed Helmy",1969,"أحمد حلمي"],["Karim Abdel Aziz",1975,"كريم عبد العزيز"],["Ahmed Mekky",1980,"أحمد مكي"]],
+  {h:"Egyptian actor",k:BORN,g:"p",s:"celebs",m:"eg",d:2}),
+ Rd(["WHICH ACTRESS","IS THE OLDEST",Q],["أنهي","ممثلة أكبر في السن",QA],"min",[
+  ["Yousra",1955,"يسرا","Yousra (actress)"],["Elham Shahin",1961,"إلهام شاهين"],["Laila Elwi",1962,"ليلى علوي"],
+  ["Nelly Karim",1974,"نيللي كريم"],["Mona Zaki",1977,"منى زكي"],["Hend Sabry",1979,"هند صبري"],
+  ["Yasmin Abdulaziz",1980,"ياسمين عبد العزيز"],["Menna Shalaby",1982,"منة شلبي","Menna Shalabi"],["Dina El Sherbiny",1985,"دينا الشربيني"]],
+  {h:"Egyptian actress",k:BORN,g:"p",s:"celebs",m:"eg",d:2}),
+ Rd(["WHO IS THE","OLDEST GOLDEN-ERA STAR",Q],["مين","أكبر نجم من زمن الفن الجميل في السن",QA],"min",[
+  ["Youssef Wahbi",1898,"يوسف وهبي"],["Anwar Wagdi",1904,"أنور وجدي"],["Mahmoud el-Meliguy",1910,"محمود المليجي"],
+  ["Ismail Yassine",1912,"إسماعيل ياسين"],["Farid Shawqi",1920,"فريد شوقي"],["Rushdy Abaza",1926,"رشدي أباظة"],
+  ["Faten Hamama",1931,"فاتن حمامة"],["Omar Sharif",1932,"عمر الشريف"],["Soad Hosny",1943,"سعاد حسني"]],
+  {h:"Egyptian actor",k:BORN,g:"p",s:"celebs",m:"eg",d:3}),
+ Rd(["WHO HAS THE","MOST SQUASH WORLD TITLES",Q],["مين","كسب بطولة العالم للاسكواش أكتر",QA],"max",[
+  ["Nour El Sherbini",8,"نور الشربيني"],["Amr Shabana",4,"عمرو شبانة"],["Ali Farag",4,"علي فرج"],
+  ["Ramy Ashour",3,"رامي عاشور"],["Mostafa Asal",2,"مصطفى عسل"],["Karim Abdel Gawad",1,"كريم عبد الجواد"],
+  ["Mohamed El Shorbagy",1,"محمد الشوربجي"],["Tarek Momen",1,"طارق مؤمن"],["Raneem El Weleily",1,"رنيم الوليلي"]],
+  {suf:TRA,h:"squash player",k:["WORLD TITLES","بطولات العالم"],s:"celebs",m:"eg",d:2})]}
 );
