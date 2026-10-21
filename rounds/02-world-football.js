@@ -3,11 +3,11 @@
 CATS.push(
 {n:"World Football",a:"الكورة العالمية",e:"🌍 ⚽",r:[
  // African football is international: it lives under World so Egypt mode stays Egyptian-only.
- Rd(["WHICH CLUB HAS THE","MOST CAF CHAMPIONS LEAGUES",Q],["مين","كسب دوري أبطال أفريقيا أكتر",QA],"max",[
+ Rd(["WHICH CLUB HAS THE","MOST CAF CHAMPIONS LEAGUES",Q],["أنهي نادي","كسب دوري أبطال أفريقيا أكتر",QA],"max",[
   ["Al Ahly",12,"الأهلي","Al Ahly SC"],["Zamalek",5,"الزمالك","Zamalek SC"],["TP Mazembe",5,"مازيمبي"],["Espérance de Tunis",4,"الترجي التونسي","Espérance Sportive de Tunis"],
   ["Wydad Casablanca",3,"الوداد البيضاوي","Wydad AC"],["Raja Casablanca",3,"الرجاء البيضاوي","Raja CA"],["Enyimba",2,"إنيمبا","Enyimba F.C."],["ES Sétif",2,"وفاق سطيف"],
   ["Mamelodi Sundowns",2,"صن داونز","Mamelodi Sundowns F.C."]],{suf:TRA,h:"football club",k:["CAF TITLES","بطولات أفريقيا"],s:"trophies",m:"w",d:1}),
- Rd(["WHICH TEAM HAS THE","MOST AFRICA CUP TITLES",Q],["مين","كسب كاس الأمم الأفريقية أكتر",QA],"max",[
+ Rd(["WHICH TEAM HAS THE","MOST AFRICA CUP TITLES",Q],["أنهي منتخب","كسب كاس الأمم الأفريقية أكتر",QA],"max",[
   ["Egypt",7,"مصر"],["Cameroon",5,"الكاميرون"],["Ghana",4,"غانا"],["Nigeria",3,"نيجيريا"],["Ivory Coast",3,"كوت ديفوار"],
   ["Algeria",2,"الجزائر"],["DR Congo",2,"الكونغو الديمقراطية","Democratic Republic of the Congo"],["Tunisia",1,"تونس"],["Zambia",1,"زامبيا"]],{suf:TRA,h:"country",k:["AFRICA CUPS","كاسات أفريقيا"],s:"trophies",m:"w",d:1}),
  Rd(["WHICH CLUB WON THE","CAF CHAMPIONS LEAGUE FIRST",Q],["مين","كسب دوري أبطال أفريقيا الأول",QA],"min",[

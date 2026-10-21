@@ -9,7 +9,7 @@ CATS.push(
   ["Spiro Spathis",1920,"سبيرو سباتس"],["Faragello",1973,"فرجللو"],["Juhayna",1983,"جهينة","Juhayna Food Industries"],["Panda (Arab Dairy)",1985,"باندا"],["Dina Farms",1987,"دينا فارمز"],["Domty",1990,"دومتي"],["Greenland",1995,"جرينلاند"],["Obour Land",1997,"عبور لاند"],["Beyti",1998,"بيتي"]],
   {h:"Egyptian drink or dairy brand",k:["FOUNDED","اتأسس سنة"],g:"y",dt:["Company founded","تأسيس الشركة"],s:"snacks",m:"eg",d:3}),
  Rd(["WHICH SUPERMARKET","STARTED IN EGYPT LAST",Q],["أنهي سوبرماركت","أجدد في مصر",QA],"max",[
-  ["Seoudi",1938,"سعودي ماركت"],["Awlad Ragab",1970,"أولاد رجب"],["Metro Market",1998,"مترو ماركت"],["Carrefour",2002,"كارفور"],["Hyper One",2005,"هايبر وان"],["Gourmet",2006,"جورميه"],["Kheir Zaman",2006,"خير زمان"],["LuLu Hypermarket",2010,"لولو هايبر ماركت"],["Breadfast",2017,"بريدفاست"]],
+  ["Seoudi",1938,"سعودي ماركت"],["Awlad Ragab",1970,"أولاد رجب"],["Metro Market",1998,"مترو ماركت"],["Carrefour",2002,"كارفور"],["Hyper One",2005,"هايبر وان"],["Gourmet",2006,"جورميه"],["Kheir Zaman",2006,"خير زمان"],["LuLu Hypermarket",2010,"لولو هايبر ماركت"],["Kazyon",2014,"كازيون"]],
   {h:"supermarket chain in Egypt",k:["STARTED IN EGYPT","بدأ في مصر سنة"],g:"y",dt:["Started in Egypt","البداية في مصر"],s:"snacks",m:"eg",d:2}),
  Rd(["WHICH GLOBAL GIANT","CAME TO EGYPT FIRST",Q],["أنهي شركة عالمية","دخلت مصر الأول",QA],"min",[
   ["Nestlé",1900,"نستله"],["Coca-Cola",1942,"كوكاكولا"],["Heinz",1989,"هاينز"],["Afia (Savola)",1995,"عافية","Savola Group"],["Heineken",2002,"هاينكن"],["Hero",2005,"هيرو","Hero Group"],["Danone",2006,"دانون"],["Almarai",2009,"المراعي"],["Kellogg's",2015,"كيلوجز"]],
