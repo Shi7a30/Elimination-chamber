@@ -11,7 +11,8 @@ Sources, by kind:
 - app / other (brands, shops): the App Store icon of the brand's own app
 - album: album covers from iTunes and Deezer
 - club: the badge from TheSportsDB; person: TheSportsDB player photo and the Deezer artist picture
-- "web" (list of search phrases, any kind): the top hits of a Bing image search
+- "web" (list of search phrases, any kind): the top hits of a DuckDuckGo image search
+- song/album with "artist": matching titles from that artist's Deezer releases
 - every kind: the Wikipedia/Wikidata/Commons candidates fetch_photos already knows, and any "pages" listed by hand
   (the page's og:image is used).
 A target with "more": true is searched again with only the web, Deezer artist and TheSportsDB sources, and
@@ -167,16 +168,44 @@ def sportsdb(term, what):
 
 
 def web(q, n=6):
-    """Top results of a Bing image search: [(label, full-size image url)]."""
-    r = get("https://www.bing.com/images/search", params={"q": q, "form": "HDRSC2", "first": 1, "setlang": "en"})
-    if not r:
+    """Top results of a DuckDuckGo image search: [(label, full-size image url)]."""
+    r = get("https://duckduckgo.com/", params={"q": q, "iax": "images", "ia": "images"})
+    m = r and re.search(r'vqd=["\']?([\d-]+)', r.text)
+    if not m:
         return []
-    out = []
-    for m in re.findall(r'murl&quot;:&quot;(.*?)&quot;', r.text):
-        if m.lower().split("?")[0].endswith((".jpg", ".jpeg", ".png", ".webp")) and m not in [u for _, u in out]:
-            out.append(("web: " + q, m))
-        if len(out) >= n:
-            break
+    r = get("https://duckduckgo.com/i.js", params={"l": "wt-wt", "o": "json", "q": q, "vqd": m.group(1), "f": ",,,,,", "p": "1"},
+            headers={"Referer": "https://duckduckgo.com/"})
+    try:
+        rows = r.json().get("results", []) if r else []
+    except ValueError:
+        return []
+    return [("web: %s | %s" % (q, d.get("title", "")[:60]), d["image"]) for d in rows[:n] if d.get("image")]
+
+
+def loose(s):
+    """Compare song titles across spellings: 'Batalo Fake' ~ 'Batalu fake', '3ayz fin' ~ 'Ayez Feen'."""
+    s = re.sub(r"\(.*?\)|\[.*?\]| - single| - ep", "", s.lower())
+    s = re.sub(r"[^a-z\u0621-\u064a]", "", s)
+    s = re.sub(r"[aeiouyw\u0627\u0623\u0625\u0622\u0648\u064a\u0649\u0629\u0647]", "", s)
+    return s
+
+
+def discography(t):
+    """Covers from the artist's own Deezer albums and singles whose title matches the card."""
+    r = get("https://api.deezer.com/search/artist", params={"q": t["artist"], "limit": 1})
+    rows = (r.json().get("data") or []) if r else []
+    if not rows:
+        return []
+    out, url = [], "https://api.deezer.com/artist/%s/albums?limit=200" % rows[0]["id"]
+    want = {loose(t["name"]), loose(t.get("ar", ""))} - {""}
+    r = get(url)
+    for d in (r.json().get("data") or []) if r else []:
+        if loose(d.get("title", "")) in want and d.get("cover_xl"):
+            out.append(("deezer %s release: %s" % (t["artist"], d["title"]), d["cover_xl"]))
+    r = get("https://api.deezer.com/artist/%s/top?limit=100" % rows[0]["id"])
+    for d in (r.json().get("data") or []) if r else []:
+        if loose(d.get("title", "")) in want and (d.get("album") or {}).get("cover_xl"):
+            out.append(("deezer %s track: %s" % (t["artist"], d["title"]), d["album"]["cover_xl"]))
     return out
 
 
@@ -185,6 +214,8 @@ def more_sources(t):
     for q in t.get("web", []):
         c += web(q)
     k = t["kind"]
+    if k in ("song", "album") and t.get("artist"):
+        c += discography(t)
     if k in ("person", "club"):
         for term in [t.get("title") or t["name"]] + t.get("sportsdb", []):
             c += sportsdb(term, k)
