@@ -114,5 +114,12 @@ Rd(["WHICH RAMEZ GALAL PRANK SHOW","CAME OUT FIRST",Q],["أنهي برنامج �
   ["Sanaa Gamil",1930,"سناء جميل"],["Karima Mokhtar",1934,"كريمة مختار"],["Isaad Younis",1950,"إسعاد يونس"],
   ["Laila Elwi",1962,"ليلى علوي"],["Abla Kamel",1963,"عبلة كامل"],["Ghada Adel",1974,"غادة عادل"],
   ["Mona Zaki",1977,"منى زكي"],["Yasmin Abdulaziz",1980,"ياسمين عبد العزيز"],["Menna Shalaby",1982,"منة شلبي","Menna Shalabi"]],
-  {h:"Egyptian actress",k:BORN,g:"p",s:"tv",m:"eg",d:3})]}
+  {h:"Egyptian actress",k:BORN,g:"p",s:"tv",m:"eg",d:3}),
+
+ // odd one out: knock out the cards that belong; the one that doesn't is the answer (best "odd", see above Rd() in index.html)
+ Rd(["WHICH SHOW","ISN'T FROM THE 2000s","ON THIS LIST"],["أنهي مسلسل أجنبي","مش من الألفينات","في القايمة دي؟"],"odd",[
+  ["Survivor",2000,"سيرفايفر","Survivor (American TV series)"],["American Idol",2002,"أمريكان أيدول"],["Two and a Half Men",2003,"اتنين ونص راجل"],
+  ["Prison Break",2005,"بريزون بريك"],["Game of Thrones",2011,"جيم أوف ثرونز"],["The Office (US)",2005,"ذا أوفيس","The Office (American TV series)"],
+  ["The Big Bang Theory",2007,"ذا بيج بانج ثيوري"],["Breaking Bad",2008,"بريكنج باد"],["Modern Family",2009,"مودرن فاميلي"]],
+  {h:"TV series",k:["FIRST AIRED","اتعرض أول مرة سنة"],s:"tv",m:"w",d:2,odd:[2000,2009]})]}
 );

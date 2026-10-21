@@ -95,5 +95,17 @@ CATS.push(
   ["Camel",390,"الجمل","Dromedary"],["Donkey",365,"الحمار"],["Horse",340,"الحصان"],
   ["Gamoosa (water buffalo)",310,"الجاموسة"],["Cow",283,"البقرة","Cattle"],["Goat",150,"المعزة"],
   ["Sheep",147,"الخروف"],["Pig",114,"الخنزير"],["Rabbit",31,"الأرنب"]],
-  {pre:["~","~"],suf:[" days"," يوم"],h:"animal",k:["PREGNANCY","مدة الحمل"],s:"animals",m:"eg",d:3})]}
+  {pre:["~","~"],suf:[" days"," يوم"],h:"animal",k:["PREGNANCY","مدة الحمل"],s:"animals",m:"eg",d:3}),
+
+ // odd one out: knock out the cards that belong; the one that doesn't is the answer (best "odd", see above Rd() in index.html)
+ Rd(["WHICH ONE","IS NOT A MAMMAL","ON THIS LIST"],["أنهي حيوان","مش من الثدييات","في القايمة دي؟"],"odd",[
+  ["Kangaroo",0,"الكنغر","Red kangaroo"],["Koala",0,"الكوالا"],["Hippo",0,"فرس النهر","Hippopotamus"],
+  ["Blue Whale",0,"الحوت الأزرق","Blue whale"],["Sperm whale",0,"حوت العنبر"],["Whale shark",1,"القرش الحوت"],
+  ["Dolphin",0,"الدولفين","Common bottlenose dolphin"],["Dugong",0,"عروس البحر (الأطوم)"],["Gamoosa (water buffalo)",0,"الجاموسة","Water buffalo"]],
+  {h:"animal",k:["IT IS A","نوعه"],s:"animals",m:"w",d:2,lab:[["MAMMAL","من الثدييات"],["FISH","سمكة"]]}),
+ Rd(["WHICH ONE","DOESN'T LAY EGGS","ON THIS LIST"],["أنهي حيوان","مش بيبيض","في القايمة دي؟"],"odd",[
+  ["Ostrich",0,"النعامة","Common ostrich"],["Nile crocodile",0,"تمساح النيل"],["Green sea turtle",0,"السلحفاة الخضرا"],
+  ["King cobra",0,"الكوبرا الملك"],["Reticulated python",0,"البايثون الشبكي"],["Green anaconda",1,"الأناكوندا"],
+  ["Flamingo",0,"البشاروش (الفلامنجو)","Greater flamingo"],["Albatross",0,"القطرس","Wandering albatross"],["Egyptian goose",0,"الوز المصري"]],
+  {h:"animal",k:["BABIES","بيخلّف إزاي"],s:"animals",m:"w",d:3,lab:[["EGGS","بيبيض"],["LIVE BABIES","بيولد"]]})]}
 );

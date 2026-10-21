@@ -185,5 +185,22 @@ CATS.push(
   ["Kraft Mac & Cheese",1937,"مكرونة كرافت بالجبنة","Kraft Dinner"],["Nescafé",1938,"نسكافيه"],["TV dinner",1953,"وجبة التليفزيون"],
   ["Instant noodles",1958,"النودلز السريعة"],["Pop-Tarts",1964,"بوب تارتس"],["Cup Noodles",1971,"كب نودلز"],
   ["Indomie",1972,"إندومي"],["Microwave popcorn",1981,"فشار الميكروويف"],["Lunchables",1988,"لانشبلز"]],
-  {h:"food",k:["CAME OUT","نزل سنة"],g:"y",dt:["Launched","نزول المنتج"],s:"eats",m:"w",d:3})]}
+  {h:"food",k:["CAME OUT","نزل سنة"],g:"y",dt:["Launched","نزول المنتج"],s:"eats",m:"w",d:3}),
+
+ // odd one out: knock out the cards that belong; the one that doesn't is the answer (best "odd", see above Rd() in index.html)
+ Rd(["WHICH SNACK","ISN'T FROM THE 1930s","ON THIS LIST"],["أنهي سناك","مش من التلاتينات","في القايمة دي؟"],"odd",[
+  ["Snickers",1930,"سنيكرز"],["Mars bar",1932,"مارس","Mars (chocolate bar)"],["Lay's",1932,"ليز"],
+  ["Lotus Biscoff",1932,"لوتس"],["M&M's",1941,"إم آند إمز"],["Ritz crackers",1934,"ريتز","Ritz Crackers"],
+  ["Kit Kat",1935,"كيت كات"],["Maltesers",1936,"مالتيزرز"],["Smarties",1937,"سمارتيز"]],
+  {h:"snack",k:["LAUNCHED","نزل سنة"],s:"snacks",m:"w",d:3,odd:[1930,1939]}),
+ Rd(["WHICH CHAIN","ISN'T AMERICAN","ON THIS LIST"],["أنهي مطعم أو كافيه","مش أمريكي","في القايمة دي؟"],"odd",[
+  ["McDonald's",0,"ماكدونالدز"],["KFC",0,"كنتاكي"],["Burger King",0,"برجر كينج"],
+  ["Pizza Hut",0,"بيتزا هت"],["Domino's",0,"دومينوز","Domino's Pizza"],["Costa Coffee",1,"كوستا"],
+  ["Subway",0,"صب واي","Subway (restaurant)"],["Hardee's",0,"هارديز"],["Starbucks",0,"ستاربكس"]],
+  {h:"restaurant chain",k:["FROM","من"],s:"eats",m:"w",d:1,lab:[["USA","أمريكا"],["UK","إنجلترا"]]}),
+ Rd(["WHICH BRAND","ISN'T EGYPTIAN","ON THIS LIST"],["أنهي براند","مش مصري","في القايمة دي؟"],"odd",[
+  ["Juhayna",0,"جهينة","Juhayna Food Industries"],["Edita",0,"إيديتا","Edita Food Industries"],["Domty",0,"دومتي"],
+  ["Faragello",0,"فرجللو"],["Bisco Misr",0,"بسكو مصر","BiscoMisr"],["La Vache qui rit",1,"البقرة الضاحكة","The Laughing Cow"],
+  ["Beyti",0,"بيتي"],["Obour Land",0,"عبور لاند"],["Vitrac",0,"فيتراك"]],
+  {h:"Egyptian food brand",k:["FROM","من"],s:"snacks",m:"eg",d:1,lab:[["EGYPT","مصر"],["FRANCE","فرنسا"]]})]}
 );

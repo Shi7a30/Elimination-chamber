@@ -185,5 +185,27 @@ CATS.push(
   ["El bari2",1986,"البريء","The Innocent (1986 film)"],["El beh el bawwab",1987,"البيه البواب","El Beh El Bawab"],["Kaboria",1990,"كابوريا","Kaboria"],
   ["Nasser 56",1996,"ناصر 56","Nasser 56"],["E7dak el sora tetla3 7elwa",1998,"اضحك الصورة تطلع حلوة","Edhak El Sora Tetla' Helwa"],["Ard el khof",2000,"أرض الخوف","Land of Fear"],
   ["Ayam el sadat",2001,"أيام السادات","Days of Sadat"],["Ma3aly el wazir",2002,"معالي الوزير","Mo'ali El Wazir"],["7alim",2006,"حليم","Halim (film)"]],
-  {h:"Egyptian film",k:["RELEASED","نزل سنة"],dt:["Film released","نزول الفيلم"],g:"y",s:"films",m:"eg",d:3})]}
+  {h:"Egyptian film",k:["RELEASED","نزل سنة"],dt:["Film released","نزول الفيلم"],g:"y",s:"films",m:"eg",d:3}),
+
+ // odd one out: knock out the cards that belong; the one that doesn't is the answer (best "odd", see above Rd() in index.html)
+ Rd(["WHICH EGYPTIAN FILM","ISN'T FROM THE 90s","ON THIS LIST"],["أنهي فيلم مصري","مش من التسعينات","في القايمة دي؟"],"odd",[
+  ["Kaboria",1990,"كابوريا","Kaboria"],["El kit kat",1991,"الكيت كات","The Kit Kat"],["El erhab wel kabab",1992,"الإرهاب والكباب","Terrorism and Kebab"],
+  ["El mohager",1994,"المهاجر","The Emigrant (1994 film)"],["El nazer",2000,"الناظر","El Nazer (film)"],["Toyour el zalam",1995,"طيور الظلام","Toyour El Zalam"],
+  ["El noum fel 3asal",1996,"النوم في العسل","El Noum fil Asal"],["Ismailia Rayeh Gai",1997,"إسماعيلية رايح جاي","Round Trip to Ismailia"],["Hammam fi amsterdam",1999,"همام في أمستردام","Hammam fi Amsterdam"]],
+  {h:"Egyptian film",k:["RELEASED","نزل سنة"],s:"films",m:"eg",d:2,odd:[1990,1999]}),
+ Rd(["WHICH FILM","ISN'T FROM THE 2000s","ON THIS LIST"],["أنهي فيلم","مش من الألفينات","في القايمة دي؟"],"odd",[
+  ["Gladiator",2000,"المصارع","Gladiator (2000 film)"],["Monsters, Inc.",2001,"مونسترز إنك"],["Finding Nemo",2003,"البحث عن نيمو"],
+  ["The Matrix",1999,"ذا ماتريكس"],["The Incredibles",2004,"ذا إنكريديبلز"],["Cars",2006,"كارز","Cars (film)"],
+  ["Ratatouille",2007,"راتاتوي","Ratatouille (film)"],["Iron Man",2008,"آيرون مان","Iron Man (2008 film)"],["Up",2009,"أب","Up (2009 film)"]],
+  {h:"film",k:["RELEASED","نزل سنة"],s:"films",m:"w",d:2,odd:[2000,2009]}),
+ Rd(["WHO IS","NOT IN HARRY POTTER","ON THIS LIST"],["مين","مش من أبطال هاري بوتر","في القايمة دي؟"],"odd",[
+  ["Maggie Smith",0,"ماجي سميث"],["Alan Rickman",0,"آلان ريكمان"],["Robbie Coltrane",0,"روبي كولترين"],
+  ["Gary Oldman",0,"جاري أولدمان"],["Ralph Fiennes",0,"رالف فاينس"],["Emilia Clarke",1,"إميليا كلارك"],
+  ["Rupert Grint",0,"روبرت جرينت"],["Daniel Radcliffe",0,"دانيال رادكليف"],["Emma Watson",0,"إيما واتسون"]],
+  {h:"actor",k:["STARRED IN","مثّل في"],s:"actors",m:"w",d:1,lab:[["HARRY POTTER","هاري بوتر"],["GAME OF THRONES","جيم أوف ثرونز"]]}),
+ Rd(["WHO HAS","NEVER PLAYED A MARVEL ROLE","ON THIS LIST"],["مين","ملوش دور في مارفل","في القايمة دي؟"],"odd",[
+  ["Robert Downey Jr",0,"روبرت داوني جونيور","Robert Downey Jr."],["Mark Ruffalo",0,"مارك روفالو"],["Benedict Cumberbatch",0,"بنديكت كامبرباتش"],
+  ["Chris Pratt",0,"كريس برات"],["Chris Evans",0,"كريس إيفانز","Chris Evans (actor)"],["Margot Robbie",1,"مارجو روبي"],
+  ["Chris Hemsworth",0,"كريس هيمسورث"],["Scarlett Johansson",0,"سكارليت جوهانسون"],["Tom Holland",0,"توم هولاند"]],
+  {h:"actor",k:["SUPERHEROES","أبطال خارقين"],s:"actors",m:"w",d:1,lab:[["MARVEL","مارفل"],["DC","دي سي"]]})]}
 );

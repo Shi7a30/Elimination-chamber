@@ -88,5 +88,12 @@ CATS.push(
   ["Nile",6650,"النيل"],["Yangtze",6300,"اليانجتسي"],["Congo River",4700,"نهر الكونغو"],
   ["Mekong",4350,"الميكونج"],["Niger River",4180,"نهر النيجر"],["Volga",3530,"الفولجا","Volga River"],
   ["Danube",2850,"الدانوب"],["Rhine",1230,"الراين"],["Thames",346,"التايمز","River Thames"]],
-  {pre:["~","~"],suf:[" km"," كم"],h:"river",k:["LENGTH","الطول"],s:"geo",m:"w",d:1})]}
+  {pre:["~","~"],suf:[" km"," كم"],h:"river",k:["LENGTH","الطول"],s:"geo",m:"w",d:1}),
+
+ // odd one out: knock out the cards that belong; the one that doesn't is the answer (best "odd", see above Rd() in index.html)
+ Rd(["WHICH PLACE","ISN'T IN SINAI","ON THIS LIST"],["أنهي مكان","مش في سينا","في القايمة دي؟"],"odd",[
+  ["Sharm El Sheikh",0,"شرم الشيخ"],["Dahab",0,"دهب"],["Taba",0,"طابا"],
+  ["El Arish",0,"العريش","Arish"],["Rafah",0,"رفح","Rafah, Egypt"],["Hurghada",1,"الغردقة"],
+  ["Saint Catherine",0,"سانت كاترين","Saint Catherine, Egypt"],["Nabq",0,"نبق","Nabq Protected Area"],["Ras Mohammed",0,"رأس محمد","Ras Muhammad National Park"]],
+  {h:"Egypt",k:["GOVERNORATE","المحافظة"],s:"geo",m:"eg",d:1,lab:[["SINAI","سينا"],["RED SEA","البحر الأحمر"]]})]}
 );

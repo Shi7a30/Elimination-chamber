@@ -4,7 +4,7 @@ const {PAGE,shot,PNG,finish}=require('./lib');
 p.on('console',m=>{if(m.type()!=='log')msgs.push(m.type()+': '+m.text())});p.on('pageerror',e=>msgs.push('ERR '+e.message));
 await p.goto(PAGE);await p.waitForTimeout(800);
 const r=await p.evaluate(()=>{const seen={},bad=[];let n=0;
- ALL.forEach(r=>{n++;if(r.items.length!==9)bad.push('len '+r.q[1]);if(![1,2,3].includes(r.d))bad.push('needs d:1, 2 or 3 (Endless difficulty): '+r.q[1]);r.items.forEach(i=>{if(!i[2])bad.push('no arabic name: '+i[0])});const v=r.items.map(i=>i[1]);const b=r.best==='min'?Math.min(...v):Math.max(...v);if(v.filter(x=>x===b).length!==1)bad.push('tie '+r.q[1]);
+ ALL.forEach(r=>{n++;if(r.items.length!==9)bad.push('len '+r.q[1]);if(![1,2,3].includes(r.d))bad.push('needs d:1, 2 or 3 (Endless difficulty): '+r.q[1]);r.items.forEach(i=>{if(!i[2])bad.push('no arabic name: '+i[0])});if(!ansOk(r))bad.push('needs exactly one answer: '+r.q[1]);if(r.best==='odd'&&r.g)bad.push('odd rounds cannot be in mixes: '+r.q[1]);if(r.lab&&r.lab.length!==2)bad.push('lab needs 2 labels: '+r.q[1]);
   if(r.g)r.items.forEach(i=>{const k=r.g+'|'+i[0];if(k in seen&&seen[k][0]!==i[1])bad.push('conflict '+i[0]+' '+seen[k][0]+'('+seen[k][1]+') vs '+i[1]+'('+r.q[1]+')');else seen[k]=[i[1],r.q[1]]})});
  return {n,bad}});
 console.log('rounds checked:',r.n);await b.close();finish('data check',[...r.bad,...msgs])})();
