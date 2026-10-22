@@ -119,7 +119,7 @@ CATS.push(
 
  // same year: the answer is the only card from that year (same:, see above Rd() in index.html)
  Rd(["WHAT CAME OUT IN","THE YEAR HAALAND WAS BORN","ON THIS LIST"],["إيه اللي نزل في نفس السنة","اللي هالاند اتولد فيها","في القايمة دي؟"],"odd",[
-  ["Titanic",1997,"تايتانيك","Titanic (1997 film)"],["Who Wants to Be a Millionaire?",1998,"من سيربح المليون","Who Wants to Be a Millionaire? (British game show)"],["The Matrix",1999,"ذا ماتريكس"],
+  ["Titanic",1997,"تايتانيك","Titanic (1997 film)"],["Google",1998,"جوجل"],["The Matrix",1999,"ذا ماتريكس"],
   ["SpongeBob",1999,"سبونج بوب","SpongeBob SquarePants"],["Gladiator",2000,"المصارع","Gladiator (2000 film)"],["Monsters, Inc.",2001,"مونسترز إنك"],
   ["Philosopher's Stone",2001,"حجر الفيلسوف","Harry Potter and the Philosopher's Stone (film)"],["Wikipedia",2001,"ويكيبيديا"],["Xbox",2001,"إكس بوكس","Xbox (console)"]],
   {h:"film",s:"players",m:"w",d:2,k:["YEAR","سنة"],same:2000})]}

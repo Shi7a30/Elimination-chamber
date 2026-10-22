@@ -145,7 +145,7 @@ CATS.push(
  Rd(["WHICH CAIRO LANDMARK","OPENED FIRST",Q],["أنهي معلم في القاهرة","اتفتح الأول",QA],"min",[
   ["Khedivial Opera House",1869,"الأوبرا الخديوية"],["Giza Zoo",1891,"جنينة الحيوانات","Giza Zoo"],["Cairo International Stadium",1960,"استاد القاهرة"],
   ["Cairo Tower",1961,"برج القاهرة"],["Cairo Opera House",1988,"دار الأوبرا"],["Cairo Metro Line 2",1996,"مترو الخط التاني","Line 2 (Cairo Metro)"],
-  ["Bibliotheca Alexandrina",2002,"مكتبة الإسكندرية"],["Al-Azhar Park",2005,"حديقة الأزهر"],["Cairo Metro Line 3",2012,"مترو الخط التالت","Line 3 (Cairo Metro)"]],
+  ["Cairo Metro (Line 1)",1987,"مترو الأنفاق (الخط الأول)","Line 1 (Cairo Metro)"],["Al-Azhar Park",2005,"حديقة الأزهر"],["Cairo Metro Line 3",2012,"مترو الخط التالت","Line 3 (Cairo Metro)"]],
   {h:"Egypt",k:["OPENED","اتفتح سنة"],s:"zaman",m:"eg",d:2}),
  Rd(["WHICH OF THESE","HAPPENED FIRST",Q],["أنهي حاجة","من دول حصلت الأول",QA],"min",[
   ["Fall of the Berlin Wall",1989,"سقوط سور برلين","Fall of the Berlin Wall"],["Death of Princess Diana",1997,"وفاة الأميرة ديانا","Death of Diana, Princess of Wales"],["The Y2K millennium",2000,"الألفية (سنة 2000)","Year 2000 problem"],
