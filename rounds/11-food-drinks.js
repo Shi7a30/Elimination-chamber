@@ -213,7 +213,7 @@ CATS.push(
  Rd(["WHICH BRAND ISN'T","OWNED BY NESTLÉ",Q],["أنهي براند","مش تبع نستله",QA],"odd",[
   ["Nescafé",0,"نسكافيه"],["Maggi",0,"ماجي"],["Smarties",0,"سمارتيز"],
   ["KitKat",0,"كيت كات"],["Nesquik",0,"نسكويك"],["Cerelac",0,"سيريلاك"],
-  ["Purina",0,"بورينا"],["Lion",0,"ليون","Lion (chocolate bar)"],["Snickers",1,"سنيكرز"]],
+  ["Purina",0,"بورينا"],["Lion bar",0,"لايون","Lion (chocolate bar)"],["Snickers",1,"سنيكرز"]],
   {h:"brand",k:["OWNED BY","تبع"],s:"snacks",m:"w",d:2,lab:[["NESTLÉ","نستله"],["MARS","مارس"]]}),
  Rd(["WHICH ONE","ISN'T EGYPTIAN",Q],["أنهي محل","مش مصري",QA],"odd",[
   ["Abou Tarek",0,"أبو طارق"],["Gad",0,"جاد"],["Felfela",0,"فلفلة"],

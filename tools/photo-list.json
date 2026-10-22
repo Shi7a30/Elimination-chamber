@@ -24858,5 +24858,365 @@
   "ar_hint": "",
   "logo": true,
   "skip": false
+ },
+ {
+  "name": "Schindler's List",
+  "title": "Schindler's List",
+  "hint": "film",
+  "ar": "قايمة شندلر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Gossip Girl",
+  "title": "Gossip Girl",
+  "hint": "TV series",
+  "ar": "جوسيب جيرل",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Suits",
+  "title": "Suits (American TV series)",
+  "hint": "TV series",
+  "ar": "سوتس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Brooklyn Nine-Nine",
+  "title": "Brooklyn Nine-Nine",
+  "hint": "TV series",
+  "ar": "بروكلين ناين ناين",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Law & Order",
+  "title": "Law & Order",
+  "hint": "TV series",
+  "ar": "لو آند أوردر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Blue Bloods",
+  "title": "Blue Bloods",
+  "hint": "TV series",
+  "ar": "بلو بلادز",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "El shahd wel demoo3",
+  "title": "El Shahd wel Domou",
+  "hint": "Egyptian TV series",
+  "ar": "الشهد والدموع",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Dameer abla 7ekmat",
+  "title": "Damir Abla Hikmat",
+  "hint": "Egyptian TV series",
+  "ar": "ضمير أبلة حكمت",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Re7let abo el 3ela el beshry",
+  "title": "Rihlat Abu al-Ala al-Bishri",
+  "hint": "Egyptian TV series",
+  "ar": "رحلة أبو العلا البشري",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Emra2a men zaman el 7ob",
+  "title": "Emra2a men zaman el 7ob",
+  "hint": "Egyptian TV series",
+  "ar": "امرأة من زمن الحب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Katy Perry",
+  "title": "Katy Perry",
+  "hint": "singer",
+  "ar": "كاتي بيري",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Coldplay",
+  "title": "Coldplay",
+  "hint": "band",
+  "ar": "كولدبلاي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Oasis",
+  "title": "Oasis (band)",
+  "hint": "band",
+  "ar": "أوازيس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Pink Floyd",
+  "title": "Pink Floyd",
+  "hint": "band",
+  "ar": "بينك فلويد",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Radiohead",
+  "title": "Radiohead",
+  "hint": "band",
+  "ar": "ريديوهيد",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Arctic Monkeys",
+  "title": "Arctic Monkeys",
+  "hint": "band",
+  "ar": "أركتك مانكيز",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Circle of Life",
+  "title": "Circle of Life",
+  "hint": "song",
+  "ar": "سيركل أوف لايف",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Can You Feel the Love Tonight",
+  "title": "Can You Feel the Love Tonight",
+  "hint": "song",
+  "ar": "كان يو فيل ذا لاف تونايت",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Mauritania",
+  "title": "Mauritania",
+  "hint": "country",
+  "ar": "موريتانيا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Tanzania",
+  "title": "Tanzania",
+  "hint": "country",
+  "ar": "تنزانيا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ethiopia",
+  "title": "Ethiopia",
+  "hint": "country",
+  "ar": "إثيوبيا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Venezuela",
+  "title": "Venezuela",
+  "hint": "country",
+  "ar": "فنزويلا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "South Africa",
+  "title": "South Africa",
+  "hint": "country",
+  "ar": "جنوب أفريقيا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Louis XIV",
+  "title": "Louis XIV",
+  "hint": "monarch",
+  "ar": "لويس الرابع عشر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Franz Joseph I",
+  "title": "Franz Joseph I of Austria",
+  "hint": "monarch",
+  "ar": "فرانتس يوزف الأول",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Hirohito",
+  "title": "Hirohito",
+  "hint": "monarch",
+  "ar": "هيروهيتو",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Kangxi Emperor",
+  "title": "Kangxi Emperor",
+  "hint": "monarch",
+  "ar": "الإمبراطور كانغشي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Suleiman the Magnificent",
+  "title": "Suleiman the Magnificent",
+  "hint": "monarch",
+  "ar": "سليمان القانوني",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Henry VIII",
+  "title": "Henry VIII",
+  "hint": "monarch",
+  "ar": "هنري التامن",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Waze",
+  "title": "Waze",
+  "hint": "app",
+  "ar": "ويز",
+  "ar_hint": "",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Fitbit",
+  "title": "Fitbit",
+  "hint": "app",
+  "ar": "فيتبيت",
+  "ar_hint": "",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Mountain Dew",
+  "title": "Mountain Dew",
+  "hint": "brand",
+  "ar": "ماونتن ديو",
+  "ar_hint": "",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Gatorade",
+  "title": "Gatorade",
+  "hint": "brand",
+  "ar": "جاتوريد",
+  "ar_hint": "",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Quaker",
+  "title": "Quaker Oats Company",
+  "hint": "brand",
+  "ar": "كويكر",
+  "ar_hint": "",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Sting",
+  "title": "Sting (drink)",
+  "hint": "brand",
+  "ar": "ستينج",
+  "ar_hint": "",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "KitKat",
+  "title": "KitKat",
+  "hint": "brand",
+  "ar": "كيت كات",
+  "ar_hint": "",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Nesquik",
+  "title": "Nesquik",
+  "hint": "brand",
+  "ar": "نسكويك",
+  "ar_hint": "",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Cerelac",
+  "title": "Cerelac",
+  "hint": "brand",
+  "ar": "سيريلاك",
+  "ar_hint": "",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Purina",
+  "title": "Purina",
+  "hint": "brand",
+  "ar": "بورينا",
+  "ar_hint": "",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Mr. Potato Head",
+  "title": "Mr. Potato Head",
+  "hint": "toy",
+  "ar": "مستر بوتيتو هيد",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
  }
 ]
