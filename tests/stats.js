@@ -25,6 +25,14 @@ const {PAGE, shot, finish} = require('./lib');
   const ar = await p.evaluate(() => ({h: document.querySelector('.ghead h2').textContent, on: document.querySelector('#dock .on').dataset.nav, lbl: document.querySelector('#dock [data-nav=st]').textContent}));
   ok(ar.h === 'أرقامي' && ar.lbl === 'أرقامي' && ar.on === 'st', 'Arabic Stats page stays open after switching language');
   await p.screenshot({path: shot('stats_ar.png'), fullPage: true});
+  // The version line at the bottom: an unpublished copy says so; a published one shows when it went live (Cairo time) and its commit.
+  ok((await p.textContent('.ver')).includes('نسخة تجربة'), 'Arabic version line on an unpublished copy');
+  await p.evaluate(() => { BUILD = '2026-10-22T10:43:19Z 126 e9e2e13' }); await p.click('#lang'); await p.waitForTimeout(200);
+  const ver = await p.textContent('.ver');
+  ok(ver === 'Version 126 · Last update: 22 Oct 2026, 1:43 pm', 'version line shows the version and publish time in Cairo: ' + ver);
+  await p.click('#lang'); await p.waitForTimeout(200);
+  const verAr = await p.textContent('.ver');
+  ok(verAr === 'النسخة 126 · آخر تحديث: 22 أكتوبر 2026، 1:43 م', 'Arabic version line: ' + verAr);
   await p.tap('[data-back]'); await p.waitForTimeout(200);
   ok(await p.evaluate(() => document.body.dataset.scr === 'home' && document.querySelector('#dock .on').dataset.nav === 'home'), 'Back from Stats goes Home');
   await b.close(); finish('stats', bad.concat(errs));

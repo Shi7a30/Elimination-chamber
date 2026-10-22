@@ -2,18 +2,54 @@ name: Tests
 on:
   pull_request:
   workflow_dispatch:
+  # The Publish site workflow runs these same tests before it publishes.
+  workflow_call:
+permissions:
+  contents: read
 jobs:
-  test:
+  # Everything except the full play-through (about 5 minutes).
+  checks:
+    name: Checks
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with: {node-version: 22, cache: npm}
       - run: npm ci
       - run: npx playwright install --with-deps chromium
-      - run: npm test
+      - run: node tests/run-all.js --quick --retry
       - name: Upload screenshots
         if: always()
         uses: actions/upload-artifact@v4
-        with: {name: screenshots, path: tests/screenshots/, if-no-files-found: ignore}
+        with: {name: screenshots-checks, path: tests/screenshots/, if-no-files-found: ignore}
+  # The full play-through of every round, split into 3 parts that run at the same time on separate machines.
+  # Together the parts still play every round; part 1 also runs the checks after the rounds (regions, endless, offline).
+  play:
+    name: Play-through ${{ matrix.part }}/3
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix: {part: [1, 2, 3]}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: 22, cache: npm}
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: node tests/run-all.js --play --retry
+        env: {SHELHOM_SHARD: '${{ matrix.part }}/3'}
+      - name: Upload screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with: {name: 'screenshots-play-${{ matrix.part }}', path: tests/screenshots/, if-no-files-found: ignore}
+  # One green or red result for all of the above.
+  test:
+    needs: [checks, play]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Checks: ${{ needs.checks.result }}, play-through: ${{ needs.play.result }}"
+          test "${{ needs.checks.result }}" = success && test "${{ needs.play.result }}" = success
