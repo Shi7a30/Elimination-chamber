@@ -25,7 +25,15 @@ console.log('categories',ncat,'rounds',rounds);
 let roundNo=0;const SG=await pg.evaluate(()=>{const o=[];GROUPS.forEach((g,i)=>g.s.forEach(s=>{if(ALL.some(r=>r.s===s[0]))o.push([i,s[0]])}));return o});const subs=SG.map(x=>x[1]);
 // subcategories live on group pages, and groups on the Categories page: get there, then open the sub's group
 const openSub=async c=>{if(!await pg.$(`.cat.sc[data-s="${subs[c]}"]`)){if(await pg.$('[data-back]')&&!await pg.$('.cat[data-g]'))await pg.click('[data-back]');if(!await pg.$('.cat[data-g]'))await pg.click('[data-nav="cats"]');await pg.click(`.cat[data-g="${SG[c][0]}"]`)}await pg.click(`.cat.sc[data-s="${subs[c]}"]`)};console.log('subs',subs.length);
-for(let c=0;c<subs.length;c++){
+// SHELHOM_SHARD=2/3 plays only part of the subcategories, so CI can split the play-through over parallel machines.
+// Subcategories are spread so each part has about the same number of rounds; the checks after the round loop run in part 1.
+const [SI,SN]=(process.env.SHELHOM_SHARD||'1/1').split('/').map(Number);
+const sizes=await pg.evaluate(ids=>ids.map(s=>ALL.filter(r=>r.s===s).length),subs);
+const mine=new Set(),load=Array(SN).fill(0);if(SN>1)load[0]=30; // part 1 also runs the after-loop checks, worth about 30 rounds
+subs.map((s,c)=>c).sort((a,b)=>sizes[b]-sizes[a]||a-b).forEach(c=>{const k=load.indexOf(Math.min(...load));load[k]+=sizes[c];if(k===SI-1)mine.add(c)});
+const myRounds=[...mine].reduce((t,c)=>t+sizes[c],0);
+if(SN>1)console.log('part',SI+'/'+SN,'plays',[...mine].map(c=>subs[c]).join(','),'=',myRounds,'rounds');
+for(let c=0;c<subs.length;c++){if(!mine.has(c))continue;
  const lang=c%2?'ar':'en';const cur=await pg.evaluate(()=>L);if(cur!==lang)await pg.click('#lang');
  await openSub(c);
  const nr=await pg.evaluate(()=>PL.length);
@@ -56,7 +64,9 @@ for(let c=0;c<subs.length;c++){
  if(c===1){await pg.click('#lang');ok((await pg.textContent('#sheet'))!==txt&&await pg.isVisible('#sb .btn'),'lang toggle on summary keeps the summary, translated');await pg.click('#lang');await pg.click('#sb .btn.y')}
  else if(c===2){await pg.click('#sb .btn:not(.y)');ok((await S()).ri===0,'replay');await pg.click('#home')} else await pg.click('#sb .btn.y');
 }
-ok(roundNo===rounds,'played every round: '+roundNo+'/'+rounds);
+ok(roundNo===myRounds,'played every round: '+roundNo+'/'+myRounds);
+ok(SN>1||myRounds===rounds,'the subcategories hold every round: '+myRounds+'/'+rounds);
+if(SI!==1){console.log('errors',errs.filter(e=>!/ERR_FAILED|net::|Failed to load resource/.test(e)));await b.close();return finish('full play-through part '+SI+'/'+SN,fail)}
 // regions
 for(const [rg,exp] of [['eg',r=>r.m==='eg'],['w',r=>r.m==='w']]){while(await pg.$('[data-back]'))await pg.click('[data-back]');await pg.click(`[data-reg="${rg}"]`);
  await pg.click('[data-nav="cats"]');const ids=[];for(let gi=0;gi<SG[SG.length-1][0]+1;gi++){const gc=await pg.$(`.cat[data-g="${gi}"]`);if(!gc)continue;await gc.click();ids.push(...await pg.$$eval('.cat.sc',e=>e.map(x=>x.dataset.s)));await pg.click('[data-back]')}
@@ -81,7 +91,7 @@ if((await S()).L!=='ar')await pg.click('#lang');ok(await pg.evaluate(()=>documen
 await pg.screenshot({path:shot('game_ar.png')});await pg.click('#home');await pg.screenshot({path:shot('menu_ar.png'),fullPage:true});
 // persistence
 const pre=await S();await pg.reload();await pg.waitForTimeout(200);const post=await S();ok(pre.coins===post.coins&&pre.best===post.best&&post.L==='ar','persist '+JSON.stringify([pre,post]));
-ok(await pg.evaluate(()=>Object.keys(prog).length)===rounds,'all rounds solved recorded');
+ok(await pg.evaluate(()=>Object.keys(prog).length)===myRounds,'all rounds solved recorded');
 // endless mode
 ok(await pg.evaluate(()=>{for(let k=0;k<3000;k++){const m=mix();const v=m.items.map(x=>x.d[1]);const e=m.best==='min'?Math.min(...v):Math.max(...v);
  if(m.items.length!==9||v.filter(x=>x===e).length!==1||new Set(m.items.map(x=>x.d[0])).size!==9)return false}return true}),'mix rounds valid');

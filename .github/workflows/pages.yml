@@ -11,17 +11,9 @@ concurrency:
   group: pages
   cancel-in-progress: true
 jobs:
+  # The same tests as on pull requests (tests.yml), split over parallel machines.
   test:
-    runs-on: ubuntu-latest
-    # The full play-through grows with every round (about 15 minutes at 410 rounds); 40 matches tests.yml.
-    timeout-minutes: 40
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with: {node-version: 22, cache: npm}
-      - run: npm ci
-      - run: npx playwright install --with-deps chromium
-      - run: npm test
+    uses: ./.github/workflows/tests.yml
   deploy:
     needs: test
     runs-on: ubuntu-latest
@@ -30,12 +22,16 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with: {fetch-depth: 0}  # full history, to count the commits for the version number
       - name: Collect the game files
         run: |
           mkdir _site
           cp -r index.html daily.js manifest.webmanifest sw.js rounds photos icons _site/
           sed -i "s/'shelhom-dev'/'shelhom-${GITHUB_SHA::7}'/" _site/sw.js
           grep -q "shelhom-${GITHUB_SHA::7}" _site/sw.js
+          # The version line on the Stats page: publish time, version (number of commits on main) and commit.
+          sed -i "s/^var BUILD=\"dev\";/var BUILD=\"$(date -u +%Y-%m-%dT%H:%M:%SZ) $(git rev-list --count HEAD) ${GITHUB_SHA::7}\";/" _site/index.html
+          grep -q "^var BUILD=\"20[^ ]* [0-9]* ${GITHUB_SHA::7}\";" _site/index.html
           # Every file the offline app saves must be published, or the phone never installs the new version.
           for f in $(grep -o "'[a-z0-9/_.-]*\.\(js\|html\|webmanifest\|png\|svg\)'" _site/sw.js | tr -d "'"); do
             test -f "_site/$f" || { echo "Missing from the site: $f"; exit 1; }
@@ -43,3 +39,48 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
       - id: deployment
         uses: actions/deploy-pages@v4
+  # If the site did not go live, open a GitHub issue (assigned to the owner, so it notifies them).
+  # When a later publish works, it closes that issue.
+  alert:
+    needs: [test, deploy]
+    if: always()
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+      actions: read
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+          R: ${{ github.repository }}
+          OWNER: ${{ github.repository_owner }}
+          TEST: ${{ needs.test.result }}
+          DEPLOY: ${{ needs.deploy.result }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          MSG: ${{ github.event.head_commit.message }}
+        run: |
+          set -euo pipefail
+          LABEL=publish-failed
+          open=$(gh issue list -R "$R" --label "$LABEL" --state open --json number --jq '.[].number')
+          if [ "$TEST" = success ] && [ "$DEPLOY" = success ]; then
+            for n in $open; do
+              gh issue close "$n" -R "$R" --comment "Fixed: the site published again with commit ${GITHUB_SHA::7} ([run]($RUN_URL))."
+            done
+            exit 0
+          fi
+          # A newer merge cancels this run and publishes everything; that run reports its own result.
+          head=$(gh api "repos/$R/commits/main" --jq .sha)
+          if [ "$head" != "$GITHUB_SHA" ]; then echo "main moved on to ${head::7}; its publish reports instead."; exit 0; fi
+          failed=$(gh api "repos/$R/actions/runs/$GITHUB_RUN_ID/jobs" --jq '[.jobs[] | select(.conclusion == "failure" or .conclusion == "cancelled" or .conclusion == "timed_out") | .name] | join(", ")')
+          title=$(printf '%s' "${MSG:-manual publish}" | head -n1)
+          body=$(printf '%s\n\n%s\n\n%s\n\n%s\n' \
+            "The live site did **not** update after this change: **${title}** (\`${GITHUB_SHA::7}\`)." \
+            "- Tests: ${TEST}"$'\n'"- Publish: ${DEPLOY}"$'\n'"- Failed parts: ${failed:-unknown}" \
+            "Details: $RUN_URL" \
+            "The site still shows the last version that published (see \"Last update\" at the bottom of the Stats page). This issue closes by itself after the next successful publish.")
+          if [ -n "$open" ]; then
+            gh issue comment "$(echo "$open" | head -n1)" -R "$R" --body "$body"
+          else
+            gh label create "$LABEL" -R "$R" --color d73a4a --description "The live site did not update" --force
+            gh issue create -R "$R" --title "Site did not update: ${title}" --label "$LABEL" --assignee "$OWNER" --body "$body"
+          fi
