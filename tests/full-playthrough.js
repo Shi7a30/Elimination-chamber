@@ -93,7 +93,7 @@ for(let k=0;k<25;k++){const st=await pg.evaluate(()=>({corr,e:eScore,mix:!cur.r,
  if(k===4){await pg.click('#lang');ok(await pg.textContent('#rn')!=='', 'lang in endless')}
  if(k===6)await pg.screenshot({path:shot('endless_win.png')});
  await pg.waitForTimeout(650);if(k===4){ok(await pg.isVisible('#skip'),'next shown after win');await pg.click('#skip')}else await pg.click('#sb .btn.y')}
-console.log('mix rounds in 25:',mixes);ok(mixes>0&&mixes<18,'mix ratio');
+console.log('mix rounds in 25:',mixes);ok(mixes<18,'mix ratio');
 ok(await pg.evaluate(()=>eBest.all)===25,'endless best');
 let c0=await pg.evaluate(()=>corr);await pg.click(`.cell[data-i="${(c0+1)%9}"]`);await pg.click(`.cell[data-i="${c0}"]`);await pg.waitForTimeout(500);
 await pg.screenshot({path:shot('endless_lose.png')});

@@ -22,7 +22,10 @@ for(const reg of ['all','eg','w']){
   if(s<5&&lv[1]!==n)problems.push(reg+' score '+s+': non-easy round at the start');
   if(s>=10&&s<15&&lv[2]!==n)problems.push(reg+' score '+s+': medium stretch had other levels');
   if(s>=20&&lv[3]<n*.6)problems.push(reg+' score '+s+': hard rounds too rare ('+lv[3]+'/'+n+')');
-  if(mixes<60||mixes>200)problems.push(reg+' score '+s+': mixes '+mixes+'/400, expected about a third')}}
+  if(mixes<50||mixes>200)problems.push(reg+' score '+s+': mixes '+mixes+'/400, expected about 1 in 4')}}
+// year questions (and the year mixes) never come three in a row while other kinds are left
+const run3=await pg.evaluate(()=>{REG='all';eRecent=[];eYr=0;let row=0,most=0;for(let k=0;k<400;k++){const m=endlessRound();row=(!m.r||m.r.yr)?row+1:0;most=Math.max(most,row)}return most});
+if(run3>2)problems.push('Endless gave '+run3+' year questions in a row');
 // hot potato (one subcategory) still picks from every level
 const hot=await pg.evaluate(()=>{REG='all';eRecent=[];const id='films',seen={};for(let k=0;k<200;k++)seen[endlessRound(id).r.d]=1;return Object.keys(seen).length});
 if(hot<2)problems.push('hot potato only got one level');

@@ -95,5 +95,12 @@ CATS.push(
   ["Sharm El Sheikh",0,"شرم الشيخ"],["Dahab",0,"دهب"],["Taba",0,"طابا"],
   ["El Arish",0,"العريش","Arish"],["Rafah",0,"رفح","Rafah, Egypt"],["Hurghada",1,"الغردقة"],
   ["Saint Catherine",0,"سانت كاترين","Saint Catherine, Egypt"],["Nabq",0,"نبق","Nabq Protected Area"],["Ras Mohammed",0,"رأس محمد","Ras Muhammad National Park"]],
-  {h:"Egypt",k:["GOVERNORATE","المحافظة"],s:"geo",m:"eg",d:1,lab:[["SINAI","سينا"],["RED SEA","البحر الأحمر"]]})]}
+  {h:"Egypt",k:["GOVERNORATE","المحافظة"],s:"geo",m:"eg",d:1,lab:[["SINAI","سينا"],["RED SEA","البحر الأحمر"]]}),
+
+ // more kinds of questions besides oldest/newest (odd one out, never won, closest to, most)
+ Rd(["WHICH COUNTRY'S AREA IS","CLOSEST TO EGYPT'S","(EGYPT: 1,001K KM²)"],["أنهي بلد مساحتها","أقرب لمساحة مصر","(مصر: 1001 ألف كم²)"],"near",[
+  ["Mauritania",1031,"موريتانيا"],["Tanzania",947,"تنزانيا"],["Bolivia",1099,"بوليفيا"],
+  ["Ethiopia",1104,"إثيوبيا"],["Nigeria",924,"نيجيريا"],["Venezuela",912,"فنزويلا"],
+  ["Pakistan",882,"باكستان"],["Colombia",1139,"كولومبيا"],["South Africa",1219,"جنوب أفريقيا"]],
+  {suf:["K km²"," ألف كم²"],h:"country",k:["AREA","المساحة"],s:"geo",m:"w",d:3,near:1001})]}
 );

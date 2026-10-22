@@ -218,5 +218,32 @@ CATS.push(
   ["Grendizer",0,"جريندايزر","UFO Robot Grendizer"],["Captain Tsubasa (Captain Majed)",0,"الكابتن ماجد","Captain Tsubasa"],["Dragon Ball",0,"دراجون بول","Dragon Ball (TV series)"],
   ["Slam Dunk",0,"سلام دانك","Slam Dunk (TV series)"],["Detective Conan",0,"المحقق كونان","Case Closed"],["Avatar: The Last Airbender",1,"أفاتار: أسطورة أنج"],
   ["Pokémon (anime)",0,"بوكيمون","Pokémon (TV series)"],["Digimon",0,"ديجيمون","Digimon Adventure"],["One Piece",0,"ون بيس","One Piece (TV series)"]],
-  {h:"cartoon",k:["MADE IN","اتعمل في"],s:"kidstv",m:"eg",d:2,lab:[["JAPAN","اليابان"],["USA","أمريكا"]]})]}
+  {h:"cartoon",k:["MADE IN","اتعمل في"],s:"kidstv",m:"eg",d:2,lab:[["JAPAN","اليابان"],["USA","أمريكا"]]}),
+
+ // more kinds of questions besides oldest/newest (odd one out, never won, closest to, most)
+ Rd(["WHICH ONE","ISN'T DISNEY",Q],["مين","مش من ديزني",QA],"odd",[
+  ["Mickey Mouse",0,"ميكي ماوس"],["Goofy",0,"بندق"],["Donald Duck",0,"بطوط"],
+  ["Daisy Duck",0,"زيزي (ديزي داك)"],["Scrooge McDuck",0,"عم دهب"],["Pluto",0,"بلوتو","Pluto (Disney)"],
+  ["Stitch",0,"ستيتش","Stitch (Lilo & Stitch)"],["Olaf",0,"أولاف","Olaf (Frozen)"],["Bugs Bunny",1,"باجز باني"]],
+  {h:"cartoon character",k:["FROM","من"],s:"kidstv",m:"eg",d:1,lab:[["DISNEY","ديزني"],["WARNER BROS.","وارنر براذرز"]]}),
+ Rd(["WHICH SHOW","ISN'T FROM NICKELODEON",Q],["أنهي كرتون","مش من نيكلوديون",QA],"odd",[
+  ["Rugrats",0,"رجرتس"],["Hey Arnold!",0,"هاي أرنولد"],["CatDog",0,"القط الكلب"],
+  ["SpongeBob",0,"سبونج بوب","SpongeBob SquarePants"],["The Fairly OddParents",0,"آباء خارقون"],["Jimmy Neutron",0,"جيمي نيوترون","The Adventures of Jimmy Neutron, Boy Genius"],
+  ["Danny Phantom",0,"داني فانتوم"],["Avatar: The Last Airbender",0,"أفاتار: أسطورة أنج"],["Dexter's Laboratory",1,"معمل دكستر"]],
+  {h:"cartoon",k:["CHANNEL","القناة"],s:"kidstv",m:"eg",d:2,lab:[["NICKELODEON","نيكلوديون"],["CARTOON NETWORK","كارتون نتورك"]]}),
+ Rd(["WHICH ANIME HAS","THE MOST EPISODES",Q],["أنهي أنمي","حلقاته أكتر",QA],"max",[
+  ["Grendizer",74,"جريندايزر","UFO Robot Grendizer"],["Captain Tsubasa (Captain Majed)",128,"الكابتن ماجد","Captain Tsubasa"],["Princess Sarah",46,"سالي","Princess Sarah"],
+  ["Dragon Ball",153,"دراجون بول","Dragon Ball (TV series)"],["Slam Dunk",101,"سلام دانك","Slam Dunk (TV series)"],["Digimon",54,"ديجيمون","Digimon Adventure"],
+  ["Naruto",220,"ناروتو","Naruto (TV series)"],["Death Note",37,"ديث نوت","Death Note (TV series)"],["Fullmetal Alchemist",51,"الخيميائي المعدني","Fullmetal Alchemist (TV series)"]],
+  {suf:[" episodes"," حلقة"],h:"anime",k:["EPISODES","الحلقات"],s:"kidstv",m:"eg",d:2}),
+ Rd(["WHICH ONE","ISN'T A CHAT APP",Q],["أنهي واحد","مش برنامج شات",QA],"odd",[
+  ["mIRC",0,"إم آي آر سي"],["ICQ",0,"آي سي كيو"],["AIM",0,"إيه آي إم","AIM (software)"],
+  ["Yahoo! Messenger",0,"ياهو ماسنجر"],["MSN Messenger",0,"إم إس إن ماسنجر","Windows Live Messenger"],["Skype",0,"سكايب"],
+  ["WhatsApp",0,"واتساب"],["Telegram",0,"تيليجرام","Telegram (software)"],["Orkut",1,"أوركت"]],
+  {h:"software",k:["IT IS A","نوعه"],s:"zaman",m:"eg",d:2,lab:[["CHAT APP","برنامج شات"],["SOCIAL NETWORK","سوشيال ميديا"]]}),
+ Rd(["WHICH GAME ISN'T","MADE BY HASBRO",Q],["أنهي لعبة","مش من هاسبرو",QA],"odd",[
+  ["Monopoly",0,"بنك الحظ (مونوبولي)","Monopoly (game)"],["Cluedo",0,"كلودو"],["Twister",0,"تويستر","Twister (game)"],
+  ["Connect Four",0,"كونكت فور"],["Jenga",0,"جينجا"],["Play-Doh",0,"الصلصال (بلاي دو)"],
+  ["Furby",0,"فيربي"],["Mr. Potato Head",0,"مستر بوتيتو هيد"],["Uno",1,"أونو","Uno (card game)"]],
+  {h:"toy",k:["MADE BY","من"],s:"zaman",m:"eg",d:3,lab:[["HASBRO","هاسبرو"],["MATTEL","ماتيل"]]})]}
 );

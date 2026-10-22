@@ -495,13 +495,15 @@ body[data-scr=game] #upd,body[data-scr=game] #inst{display:none}
 // from that year (what came out the year Salah was born). Odd rounds stay out of Duel.
 // was = the round's old progress key ("Category|OLD SECOND LINE"), set when its English second line is reworded, so
 // saved progress, seen decks, Daily days and challenge links still find it.
+// best "near" with near:value = the card closest to that value wins (whose area is closest to Egypt's). Also kept out of Duel.
 // Each round must have exactly one best answer (checked on load).
-function Rd(q,qa,best,items,o){o=o||{};return{q:q,qa:qa,best:best,items:items,h:o.h||"",pre:o.pre,suf:o.suf,dp:o.dp,k:o.k,g:o.g,dt:o.dt,s:o.s,m:o.m,d:o.d,odd:o.odd,lab:o.lab,same:o.same,was:o.was}}
+function Rd(q,qa,best,items,o){o=o||{};return{q:q,qa:qa,best:best,items:items,h:o.h||"",pre:o.pre,suf:o.suf,dp:o.dp,k:o.k,g:o.g,dt:o.dt,s:o.s,m:o.m,d:o.d,odd:o.odd,lab:o.lab,same:o.same,was:o.was,near:o.near}}
 function isOdd(r,x){return r.same!=null?x===r.same:r.odd?x<r.odd[0]||x>r.odd[1]:x===1}
 // index of the right answer among values v
-function ansIdx(r,v){if(r.best==="odd")return v.findIndex(function(x){return isOdd(r,x)});return v.indexOf(r.best==="min"?Math.min.apply(0,v):Math.max.apply(0,v))}
+function ansIdx(r,v){if(r.best==="odd")return v.findIndex(function(x){return isOdd(r,x)});if(r.best==="near"){var d=v.map(function(x){return Math.abs(x-r.near)});return d.indexOf(Math.min.apply(0,d))}return v.indexOf(r.best==="min"?Math.min.apply(0,v):Math.max.apply(0,v))}
 // true when a round has exactly one right answer
 function ansOk(r){var v=r.items.map(function(x){return x[1]});if(r.best==="odd")return v.filter(function(x){return isOdd(r,x)}).length===1&&(!!r.odd||r.same!=null||v.every(function(x){return x===0||x===1}));
+ if(r.best==="near"){var d=v.map(function(x){return Math.abs(x-r.near)}),m=Math.min.apply(0,d);return r.near!=null&&d.filter(function(x){return x===m}).length===1}
  var b=r.best==="min"?Math.min.apply(0,v):Math.max.apply(0,v);return v.filter(function(x){return x===b}).length===1}
 var BORN=["BORN","مواليد"],Q="ON THIS LIST",QA="في القايمة دي؟",TR=" 🏆",TRA=[TR,TR];
 var CATS=[];
@@ -522,6 +524,8 @@ var CATS=[];
 // Progress key: category + second question line; a later round that repeats that line also gets its first line, so older saves still match.
 var KEYS={};
 CATS.forEach(function(c){c.r.forEach(function(r){r.c=c;r.key=r.was||c.n+"|"+r.q[1];if(KEYS[r.key]&&!r.was)r.key+="|"+r.q[0];KEYS[r.key]=1;
+ // yr = an oldest/newest-by-year round (most rounds are); used to keep them from piling up back to back
+ r.yr=(r.best==="min"||r.best==="max")&&r.items.every(function(d){return d[1]>1000&&d[1]<2100});
  if(r.g==="y"&&!r.dt)console.warn("Mixed year round needs dt:",c.n,r.q[1]);if(r.items.length!==9||!ansOk(r))console.warn("Round needs 9 items and one answer:",c.n,r.q[1])})});
 
 // Home menu: broad groups, each with subcategories. A subcategory plays every round tagged with its id (s) in the chosen region.
@@ -645,7 +649,9 @@ var SEEN=ld("elim_seen",{});if(!SEEN||typeof SEEN!=="object"||Array.isArray(SEEN
 // SEEN keeps every region's rounds in one list per group, so a deck only counts (and clears) the rounds of the region you're in.
 function subOrder(id){var rs=subRounds(id),ks=rs.map(key),sn=SEEN[id];if(!Array.isArray(sn))sn=[];
  var fresh=rs.filter(function(r){return sn.indexOf(key(r))<0});if(!fresh.length){sn=sn.filter(function(k){return ks.indexOf(k)<0});fresh=rs}SEEN[id]=sn;
- return shuffle(fresh).concat(shuffle(rs.filter(function(r){return fresh.indexOf(r)<0})))}
+ return spread(shuffle(fresh)).concat(spread(shuffle(rs.filter(function(r){return fresh.indexOf(r)<0}))))}
+// no more than two year questions in a row while another kind of question is left
+function spread(l){var o=[];l=l.slice();while(l.length){var i=0;if(o.length>1&&o[o.length-1].yr&&o[o.length-2].yr){i=l.findIndex(function(r){return!r.yr});if(i<0)i=0}o.push(l.splice(i,1)[0])}return o}
 function markSeen(r){var id=r.s,sn=SEEN[id]||(SEEN[id]=[]);if(sn.indexOf(key(r))<0)sn.push(key(r));
  var ks=subRounds(id).map(key);if(ks.every(function(k){return sn.indexOf(k)>=0}))SEEN[id]=sn.filter(function(k){return ks.indexOf(k)<0});sv("elim_seen",SEEN)}
 // two different cards with the same shown name (محمد صبحي the actor and the footballer) never go on one board
@@ -663,13 +669,16 @@ function mix(lv){var rs=lv?rounds().filter(function(r){return(r.d||2)<=lv}):null
 // (0-4 easy, 5-9 easy or medium, 10-14 medium, 15-19 medium or hard, 20+ mostly hard)
 function eLevel(s){var o=s<5?[1]:s<10?[1,2]:s<15?[2]:s<20?[2,3]:[2,3,3,3];return o[Math.floor(Math.random()*o.length)]}
 // id = limit to one subcategory (hot potato); lv = difficulty level (Endless only; hot potato uses every level);
-// generated mixes only when playing everything
-function endlessRound(id,lv){var m=!id&&Math.random()<.3&&mix(lv);if(m)return m;
+// generated mixes only when playing everything, about 1 round in 4 (mixes are always year questions).
+// eYr counts year questions in a row: after two, the next round is another kind if the level has one.
+var eYr=0;
+function endlessRound(id,lv){var noY=eYr>=2,m=!id&&!noY&&Math.random()<.3&&mix(lv);if(m){eYr++;return m}
  var all=id?subRounds(id):rounds(),fresh=all.filter(function(r){return eRecent.indexOf(r)<0}),
+  lvl=function(rs,dl){return shuffle(rs.filter(function(r){return!lv||Math.abs((r.d||2)-lv)===dl}))[0]},
   // the level's own rounds first, then the nearest level if those are used up
-  p=lv?[0,1,2].reduce(function(f,dl){return f||shuffle(fresh.filter(function(r){return Math.abs((r.d||2)-lv)===dl}))[0]},null):shuffle(fresh)[0];
+  p=(noY&&lvl(fresh.filter(function(r){return!r.yr}),0))||(lv?[0,1,2].reduce(function(f,dl){return f||lvl(fresh,dl)},null):shuffle(fresh)[0]);
  // hot potato (one group) avoids every round it has used until the group runs out; Endless remembers the last 15
- p=p||all[0];eRecent.push(p);while(eRecent.length>(id?all.length-1:Math.min(15,all.length>>1)))eRecent.shift();return mk(p)}
+ p=p||all[0];eYr=p.yr?eYr+1:0;eRecent.push(p);while(eRecent.length>(id?all.length-1:Math.min(15,all.length>>1)))eRecent.shift();return mk(p)}
 
 // --- duel mode (ده ولا ده / This or That): two cards, pick the right one, keep going until a miss ---
 // A run sticks to one question (an endless pool or one round). The right answer stays and faces a new card;
@@ -702,7 +711,7 @@ function dPair(s){var l=dList(s),lk=dLK(s),fr=shuffle(l.filter(function(x){retur
  return null}
 function dPickSrc(again){var all=dRounds(),c=[],k=dSrc&&dLK(dSrc)+"|"+dSrc.b;
  ["p","y"].forEach(function(g){["min","max"].forEach(function(b){c.push({g:g,b:b})})});
- all.forEach(function(r){if(!r.g&&r.best!=="odd")c.push({r:r,b:r.best})});
+ all.forEach(function(r){if(!r.g&&(r.best==="min"||r.best==="max"))c.push({r:r,b:r.best})});
  var sk=function(s){return dLK(s)+"|"+s.b},
   // unasked questions first, then asked ones other than the current, then the current one
   tiers=[c.filter(function(s){return!dAsked[sk(s)]}),c.filter(function(s){return dAsked[sk(s)]&&sk(s)!==k}),c.filter(function(s){return sk(s)===k})];

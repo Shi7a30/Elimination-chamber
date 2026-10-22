@@ -201,11 +201,11 @@ Rd(["WHO IS THE","YOUNGEST FEMALE SINGER",Q],["مين","أصغر مطربة",QA]
   ["Hamza Namira",1980,"حمزة نمرة"],["Hamada Helal",1980,"حمادة هلال"],["Amir Eid",1983,"أمير عيد"],
   ["Tamer Ashour",1984,"تامر عاشور"],["Ahmed Gamal",1988,"أحمد جمال","Ahmad Gamal (singer)"],["Marwan Pablo",1995,"مروان بابلو"]],
   {h:"Egyptian singer",k:BORN,g:"p",s:"singers",m:"eg",d:3}),
- Rd(["WHO IS THE","YOUNGEST GOLDEN-ERA SINGER",Q],["مين","أصغر مطرب من الزمن الجميل",QA],"max",[
+ Rd(["WHO IS THE","YOUNGEST CLASSIC SINGER",Q],["مين","أصغر مطرب من جيل الطرب الأصيل",QA],"max",[
   ["Mounira El Mahdeya",1885,"منيرة المهدية"],["Mohamed Abdel Muttalib",1910,"محمد عبد المطلب"],["Laila Mourad",1918,"ليلى مراد","Leila Mourad"],
   ["Mohamed Fawzi",1918,"محمد فوزي","Mohamed Fawzi (singer)"],["Karem Mahmoud",1922,"كارم محمود"],["Mohamed Roshdy",1928,"محمد رشدي"],
   ["Abdel Halim Hafez",1929,"عبد الحليم حافظ"],["Fayza Ahmed",1934,"فايزة أحمد"],["Najat Al Saghira",1938,"نجاة الصغيرة","Nagat El-Sagheera"]],
-  {h:"Egyptian singer",k:BORN,g:"p",s:"singers",m:"eg",d:3}),
+  {h:"Egyptian singer",k:BORN,g:"p",s:"singers",m:"eg",d:3,was:"Music|YOUNGEST GOLDEN-ERA SINGER"}),
 Rd(["WHICH TAMER HOSNY ALBUM","CAME OUT LAST",Q],["أنهي ألبوم لتامر حسني","أجدد",QA],"max",[
   ["Hob",2004,"حب","Hob (album)"],["Ya bent el eih",2007,"يا بنت الإيه"],["2arrab kaman",2008,"قرب كمان"],
   ["Ha3eesh 7ayaty",2009,"هعيش حياتي"],["Ekhtart sa7",2010,"اخترت صح"],["Elly gai a7la",2011,"اللي جاي أحلى"],
@@ -292,5 +292,27 @@ Rd(["WHICH TAMER HOSNY ALBUM","CAME OUT LAST",Q],["أنهي ألبوم لتام�
   ["Zizinia",1997,"زيزينيا","Zizinia"],["Se3idy fel gam3a el amrekia",1998,"صعيدي في الجامعة الأمريكية","Saidi fil Gamaa el Amrikia"],["Hammam fi amsterdam",1999,"همام في أمستردام","Hammam fi Amsterdam"],
   ["2amarein",1999,"قمرين","Amarain"],["El nazer",2000,"الناظر","El Nazer (film)"],["Africano",2001,"أفريكانو","Africano (film)"],
   ["Aktar wahed",2001,"أكتر واحد","Aktar Wahed"],["7adis el saba7 wel masa2",2001,"حديث الصباح والمساء","Hadeeth El Sabah wel Masaa"],["El limby",2002,"اللمبي","El-Limby"]],
-  {h:"Egyptian film",s:"songs",m:"eg",d:2,k:["YEAR","سنة"],same:2000})]}
+  {h:"Egyptian film",s:"songs",m:"eg",d:2,k:["YEAR","سنة"],same:2000}),
+
+ // more kinds of questions besides oldest/newest (odd one out, never won, closest to, most)
+ Rd(["WHO HAS NEVER WON","A GRAMMY",Q],["مين","عمره ما خد جرامي",QA],"odd",[
+  ["Taylor Swift",0,"تايلور سويفت"],["Beyoncé",0,"بيونسيه"],["Adele",0,"أديل"],
+  ["Bruno Mars",0,"برونو مارس"],["Billie Eilish",0,"بيلي إيليش"],["Ed Sheeran",0,"إد شيران"],
+  ["Rihanna",0,"ريهانا"],["Lady Gaga",0,"ليدي جاجا"],["Katy Perry",1,"كاتي بيري"]],
+  {h:"singer",k:["GRAMMY","الجرامي"],s:"singers",m:"w",d:2,lab:[["WON ONE","خد"],["NEVER","ما خدش"]]}),
+ Rd(["WHICH BAND","ISN'T BRITISH",Q],["أنهي فرقة","مش إنجليزية",QA],"odd",[
+  ["The Beatles",0,"البيتلز"],["Queen",0,"كوين","Queen (band)"],["The Rolling Stones",0,"الرولينج ستونز"],
+  ["Coldplay",0,"كولدبلاي"],["Oasis",0,"أوازيس","Oasis (band)"],["Pink Floyd",0,"بينك فلويد"],
+  ["Radiohead",0,"ريديوهيد"],["Arctic Monkeys",0,"أركتك مانكيز"],["U2",1,"يو تو"]],
+  {h:"band",k:["FROM","من"],s:"singers",m:"w",d:2,lab:[["ENGLAND","إنجلترا"],["IRELAND","أيرلندا"]]}),
+ Rd(["WHICH SINGER WAS BORN","OUTSIDE EGYPT",Q],["أنهي مطرب","اتولد برا مصر",QA],"odd",[
+  ["Umm Kulthum",0,"أم كلثوم"],["Mohamed Abdel Wahab",0,"محمد عبد الوهاب"],["Abdel Halim Hafez",0,"عبد الحليم حافظ"],
+  ["Laila Mourad",0,"ليلى مراد","Leila Mourad"],["Mohamed Fawzi",0,"محمد فوزي","Mohamed Fawzi (singer)"],["Shadia",0,"شادية"],
+  ["Najat Al Saghira",0,"نجاة الصغيرة","Nagat El-Sagheera"],["Sayed Darwish",0,"سيد درويش"],["Farid al-Atrash",1,"فريد الأطرش"]],
+  {h:"Egyptian singer",k:["BORN IN","اتولد في"],s:"singers",m:"eg",d:2,lab:[["EGYPT","مصر"],["SYRIA","سوريا"]]}),
+ Rd(["WHICH SONG ISN'T","FROM A DISNEY FILM",Q],["أنهي أغنية","مش من فيلم ديزني",QA],"odd",[
+  ["Let It Go",0,"لت إت جو","Let It Go (Disney song)"],["A Whole New World",0,"عالم جديد"],["Hakuna Matata",0,"هاكونا ماتاتا","Hakuna Matata (song)"],
+  ["How Far I'll Go",0,"هاو فار آيل جو"],["Under the Sea",0,"تحت البحر"],["Colors of the Wind",0,"ألوان الريح"],
+  ["Circle of Life",0,"سيركل أوف لايف"],["Can You Feel the Love Tonight",0,"كان يو فيل ذا لاف تونايت"],["My Heart Will Go On",1,"ماي هارت ويل جو أون"]],
+  {h:"song",k:["FROM","من"],s:"songs",m:"w",d:1,lab:[["A DISNEY FILM","فيلم ديزني"],["TITANIC","تايتانيك"]]})]}
 );

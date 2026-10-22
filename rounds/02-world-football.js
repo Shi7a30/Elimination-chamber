@@ -122,5 +122,22 @@ CATS.push(
   ["Titanic",1997,"تايتانيك","Titanic (1997 film)"],["Google",1998,"جوجل"],["The Matrix",1999,"ذا ماتريكس"],
   ["SpongeBob",1999,"سبونج بوب","SpongeBob SquarePants"],["Gladiator",2000,"المصارع","Gladiator (2000 film)"],["Monsters, Inc.",2001,"مونسترز إنك"],
   ["Philosopher's Stone",2001,"حجر الفيلسوف","Harry Potter and the Philosopher's Stone (film)"],["Wikipedia",2001,"ويكيبيديا"],["Xbox",2001,"إكس بوكس","Xbox (console)"]],
-  {h:"film",s:"players",m:"w",d:2,k:["YEAR","سنة"],same:2000})]}
+  {h:"film",s:"players",m:"w",d:2,k:["YEAR","سنة"],same:2000}),
+
+ // more kinds of questions besides oldest/newest (odd one out, never won, closest to, most)
+ Rd(["WHICH CLUB HAS NEVER WON","THE CHAMPIONS LEAGUE",Q],["أنهي نادي","عمره ما كسب دوري الأبطال",QA],"odd",[
+  ["Real Madrid",0,"ريال مدريد","Real Madrid CF"],["FC Barcelona",0,"برشلونة"],["Bayern Munich",0,"بايرن ميونخ","FC Bayern Munich"],
+  ["Liverpool",0,"ليفربول","Liverpool F.C."],["Manchester United",0,"مانشستر يونايتد","Manchester United F.C."],["Chelsea",0,"تشيلسي","Chelsea F.C."],
+  ["AC Milan",0,"ميلان"],["Paris Saint-Germain",0,"باريس سان جيرمان","Paris Saint-Germain F.C."],["Arsenal",1,"آرسنال","Arsenal F.C."]],
+  {h:"football club",k:["CHAMPIONS LEAGUE","دوري الأبطال"],s:"trophies",m:"w",d:1,lab:[["WON IT","كسبه"],["NEVER","ما كسبهوش"]]}),
+ Rd(["WHICH COUNTRY HAS NEVER","HOSTED THE WORLD CUP",Q],["أنهي بلد","عمرها ما نظمت كاس العالم",QA],"odd",[
+  ["Brazil",0,"البرازيل"],["Germany",0,"ألمانيا"],["Italy",0,"إيطاليا"],
+  ["Argentina",0,"الأرجنتين"],["France",0,"فرنسا"],["Uruguay",0,"أوروجواي"],
+  ["England",0,"إنجلترا"],["Spain",0,"إسبانيا"],["Netherlands",1,"هولندا"]],
+  {h:"national football team",k:["WORLD CUP HOST","تنظيم كاس العالم"],s:"trophies",m:"w",d:2,lab:[["HOSTED IT","نظمته"],["NEVER","ما نظمتهوش"]]}),
+ Rd(["WHO NEVER WON","THE BALLON D'OR",Q],["مين","عمره ما كسب البالون دور",QA],"odd",[
+  ["Lionel Messi",0,"ليونيل ميسي"],["Cristiano Ronaldo",0,"كريستيانو رونالدو"],["Luka Modrić",0,"لوكا مودريتش"],
+  ["Karim Benzema",0,"كريم بنزيما"],["Ousmane Dembélé",0,"عثمان ديمبلي"],["Ricardo Kaká",0,"كاكا","Kaká"],
+  ["Ronaldinho Gaúcho",0,"رونالدينيو","Ronaldinho"],["Ronaldo Nazário",0,"رونالدو الظاهرة","Ronaldo (Brazilian footballer)"],["Zlatan Ibrahimović",1,"زلاتان إبراهيموفيتش"]],
+  {h:"footballer",k:["BALLON D'OR","البالون دور"],s:"players",m:"w",d:1,lab:[["WON IT","كسبها"],["NEVER","ما كسبهاش"]]})]}
 );

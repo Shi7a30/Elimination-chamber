@@ -129,5 +129,17 @@ Rd(["WHICH RAMEZ GALAL PRANK SHOW","CAME OUT FIRST",Q],["أنهي برنامج �
   ["WhatsApp",2009,"واتساب"],["Angry Birds",2009,"أنجري بيردز","Angry Birds (video game)"],["Fruit Ninja",2010,"فروت نينجا"],
   ["Instagram",2010,"إنستجرام"],["Minecraft",2011,"ماينكرافت"],["The Avengers",2012,"ذا أفنجرز","The Avengers (2012 film)"],
   ["Subway Surfers",2012,"صبواي سيرفرز"],["Frozen",2013,"فروزن","Frozen (2013 film)"],["Flappy Bird",2013,"فلابي بيرد"]],
-  {h:"video game",s:"tv",m:"w",d:2,k:["YEAR","سنة"],same:2011})]}
+  {h:"video game",s:"tv",m:"w",d:2,k:["YEAR","سنة"],same:2011}),
+
+ // more kinds of questions besides oldest/newest (odd one out, never won, closest to, most)
+ Rd(["WHICH SHOW ISN'T SET","IN NEW YORK",Q],["أنهي مسلسل","أحداثه مش في نيويورك",QA],"odd",[
+  ["Friends",0,"فريندز"],["Seinfeld",0,"ساينفيلد"],["How I Met Your Mother",0,"هاو آي مت يور ماذر"],
+  ["Gossip Girl",0,"جوسيب جيرل"],["Suits",0,"سوتس","Suits (American TV series)"],["Brooklyn Nine-Nine",0,"بروكلين ناين ناين"],
+  ["Law & Order",0,"لو آند أوردر"],["Blue Bloods",0,"بلو بلادز"],["Breaking Bad",1,"بريكنج باد"]],
+  {h:"TV series",k:["SET IN","أحداثه في"],s:"tv",m:"w",d:1,lab:[["NEW YORK","نيويورك"],["NEW MEXICO","نيو مكسيكو"]]}),
+ Rd(["WHICH SERIES WASN'T WRITTEN BY","OSAMA ANWAR OKASHA",Q],["أنهي مسلسل","مش تأليف أسامة أنور عكاشة",QA],"odd",[
+  ["Layaly el 7elmeya",0,"ليالي الحلمية","Al Helmeya Nights"],["El shahd wel demoo3",0,"الشهد والدموع","El Shahd wel Domou"],["Zizinia",0,"زيزينيا","Zizinia"],
+  ["Arabesque",0,"أرابيسك","Arabesque"],["Dameer abla 7ekmat",0,"ضمير أبلة حكمت","Damir Abla Hikmat"],["Re7let abo el 3ela el beshry",0,"رحلة أبو العلا البشري","Rihlat Abu al-Ala al-Bishri"],
+  ["Emra2a men zaman el 7ob",0,"امرأة من زمن الحب"],["El raya el beida",0,"الراية البيضا","El Raya El Bayda"],["Ra2fat el haggan",1,"رأفت الهجان","Raafat El Haggan"]],
+  {h:"Egyptian TV series",k:["WRITER","المؤلف"],s:"tv",m:"eg",d:3,lab:[["OSAMA ANWAR OKASHA","أسامة أنور عكاشة"],["SALEH MORSI","صالح مرسي"]]})]}
 );

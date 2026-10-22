@@ -225,5 +225,37 @@ Rd(["WHICH BANK","WAS FOUNDED FIRST",Q],["أنهي بنك","اتأسس الأو�
   ["Monsters, Inc.",2001,"مونسترز إنك"],["Wikipedia",2001,"ويكيبيديا"],["Two and a Half Men",2003,"اتنين ونص راجل"],
   ["Skype",2003,"سكايب"],["The Incredibles",2004,"ذا إنكريديبلز"],["YouTube",2005,"يوتيوب"],
   ["Prison Break",2005,"بريزون بريك"],["The Office (US)",2005,"ذا أوفيس","The Office (American TV series)"],["Twitter",2006,"تويتر"]],
-  {h:"film",s:"brands",m:"w",d:2,k:["YEAR","سنة"],same:2004})]}
+  {h:"film",s:"brands",m:"w",d:2,k:["YEAR","سنة"],same:2004}),
+
+ // more kinds of questions besides oldest/newest (odd one out, never won, closest to, most)
+ Rd(["WHICH CONSOLE SOLD","CLOSEST TO 100 MILLION",Q],["أنهي جهاز","مبيعاته أقرب لـ100 مليون",QA],"near",[
+  ["PlayStation 2",160,"بلايستيشن 2"],["Nintendo DS",154,"نينتندو دي إس"],["Game Boy",118.7,"جيم بوي"],
+  ["PlayStation 4",117.2,"بلايستيشن 4"],["PlayStation",102.5,"بلايستيشن 1","PlayStation (console)"],["Wii",101.6,"وي"],
+  ["PlayStation 3",87.4,"بلايستيشن 3"],["Game Boy Advance",81.5,"جيم بوي أدفانس"],["Nintendo 3DS",75.9,"نينتندو ثري دي إس"]],
+  {suf:["M"," مليون"],dp:1,h:"video game console",k:["UNITS SOLD","اتباع منه"],s:"games",m:"w",d:3,near:100}),
+ Rd(["WHICH ONE ISN'T","FROM NINTENDO",Q],["أنهي واحدة","مش من نينتندو",QA],"odd",[
+  ["Super Mario Bros.",0,"سوبر ماريو"],["Mario Kart Wii",0,"ماريو كارت وي"],["Link",0,"لينك (زيلدا)","Link (The Legend of Zelda)"],
+  ["Donkey Kong",0,"دونكي كونج","Donkey Kong (video game)"],["Kirby",0,"كيربي","Kirby (character)"],["Wii Sports",0,"وي سبورتس"],
+  ["Duck Hunt",0,"صيد البط"],["Excitebike",0,"الموتوسيكلات (إكسايت بايك)"],["Sonic",1,"سونيك","Sonic the Hedgehog (character)"]],
+  {h:"video game",k:["MADE BY","من"],s:"games",m:"w",d:1,lab:[["NINTENDO","نينتندو"],["SEGA","سيجا"]]}),
+ Rd(["WHICH ONE ISN'T","MADE BY SONY",Q],["أنهي جهاز","مش من سوني",QA],"odd",[
+  ["PlayStation 2",0,"بلايستيشن 2"],["PSP",0,"بي إس بي","PlayStation Portable"],["PlayStation 3",0,"بلايستيشن 3"],
+  ["PS Vita",0,"بي إس فيتا","PlayStation Vita"],["PlayStation 5",0,"بلايستيشن 5"],["Walkman",0,"الووكمان"],
+  ["Discman",0,"الديسكمان"],["Handycam",0,"الكاميرا الفيديو (هاندي كام)"],["Game Boy Advance",1,"جيم بوي أدفانس"]],
+  {h:"Sony product",k:["MADE BY","من"],s:"games",m:"eg",d:1,lab:[["SONY","سوني"],["NINTENDO","نينتندو"]]}),
+ Rd(["WHICH GAME ISN'T","MADE BY KONAMI",Q],["أنهي لعبة","مش من كونامي",QA],"odd",[
+  ["Pro Evolution Soccer",0,"بيس 1","Pro Evolution Soccer (video game)"],["PES 5",0,"بيس 5","Pro Evolution Soccer 5"],["PES 6",0,"بيس 6","Pro Evolution Soccer 6"],
+  ["PES 2013",0,"بيس 2013","Pro Evolution Soccer 2013"],["eFootball",0,"إي فوتبول","eFootball (video game)"],["Metal Gear Solid",0,"ميتال جير سوليد","Metal Gear Solid (1998 video game)"],
+  ["Contra",0,"كونترا","Contra (video game)"],["Yu-Gi-Oh! Forbidden Memories",0,"يو جي أوه فوربيدن ميموريز"],["FIFA 18",1,"فيفا 18"]],
+  {h:"video game",k:["MADE BY","من"],s:"games",m:"eg",d:2,lab:[["KONAMI","كونامي"],["EA","إي إيه"]]}),
+ Rd(["WHICH ONE ISN'T","OWNED BY GOOGLE",Q],["أنهي واحد","مش تبع جوجل",QA],"odd",[
+  ["YouTube",0,"يوتيوب"],["Android",0,"أندرويد","Android (operating system)"],["Gmail",0,"جيميل"],
+  ["Google Maps",0,"خرايط جوجل"],["Waze",0,"ويز"],["Fitbit",0,"فيتبيت"],
+  ["Google Chrome",0,"جوجل كروم"],["Gemini",0,"جيميناي","Google Gemini"],["Instagram",1,"إنستجرام"]],
+  {h:"app",k:["OWNED BY","تبع"],s:"brands",m:"w",d:1,lab:[["GOOGLE","جوجل"],["META","ميتا"]]}),
+ Rd(["WHICH APP","WASN'T STARTED IN EGYPT",Q],["أنهي أبلكيشن","ما بدأش في مصر",QA],"odd",[
+  ["Swvl",0,"سويفل"],["Fawry",0,"فوري"],["Elmenus",0,"المنيوز"],
+  ["Vezeeta",0,"فيزيتا"],["Paymob",0,"باي موب"],["Breadfast",0,"بريدفاست"],
+  ["MaxAB",0,"ماكس أب"],["Khazna",0,"خزنة"],["Talabat",1,"طلبات"]],
+  {h:"app",k:["STARTED IN","بدأ في"],s:"brands",m:"eg",d:2,lab:[["EGYPT","مصر"],["KUWAIT","الكويت"]]})]}
 );

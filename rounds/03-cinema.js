@@ -167,7 +167,7 @@ CATS.push(
   ["Belya w demagho el 3alya",2000,"بليه ودماغه العالية","Belya wa Demagho El Alya"],["Ga2na el bayan el taly",2001,"جاءنا البيان التالي","Ga'ana El Bayan El Taly"],["Sa7eb sa7bo",2002,"صاحب صاحبه","Sahib Sahbo"],
   ["Fool el seen el 3azim",2004,"فول الصين العظيم","Fool El Seen El Azim"],["Ramadan Mabrouk Abul Alamein Hamouda",2008,"رمضان مبروك أبو العلمين حمودة","Ramadan Mabrouk Abul Alamein Hamouda"],["Teta rahiba",2012,"تيتة رهيبة","Teta Rahiba"]],
   {h:"Egyptian film",k:["RELEASED","نزل سنة"],dt:["Film released","نزول الفيلم"],g:"y",s:"films",m:"eg",d:2}),
- Rd(["WHICH GOLDEN-AGE FILM","CAME OUT LAST",Q],["إيه","أجدد فيلم من الزمن الجميل",QA],"max",[
+ Rd(["WHICH GOLDEN-AGE FILM","CAME OUT LAST",Q],["إيه","أجدد فيلم من كلاسيكيات السينما",QA],"max",[
   ["El 3azima",1939,"العزيمة","Determination (1939 film)"],["Lak yom ya zalem",1951,"لك يوم يا ظالم","Lak Yawm Ya Zalim"],["Shabab emra2a",1956,"شباب امرأة","A Woman's Youth"],
   ["Rodda Qalbi",1957,"رد قلبي","Rodda Qalbi"],["Ana 7orra",1959,"أنا حرة","I Am Free (film)"],["El Mummia",1969,"المومياء","The Night of Counting the Years"],
   ["Imbaratoriyet Meem",1972,"إمبراطورية ميم","Imbaratoriyet Meem"],["El karnak",1975,"الكرنك","Karnak (film)"],["Ahl El Qemma",1981,"أهل القمة","Ahl El Qemma"]],
@@ -215,5 +215,27 @@ CATS.push(
   ["Lan a3eesh fi gelbab aby",1996,"لن أعيش في جلباب أبي","Lan Aish fi Gilbab Abi (TV series)"],["El noum fel 3asal",1996,"النوم في العسل","El Noum fil Asal"],["Nour el 3ein",1996,"نور العين","Nour El Ain"],
   ["Toyour el zalam",1995,"طيور الظلام","Toyour El Zalam"],["Ismailia Rayeh Gai",1997,"إسماعيلية رايح جاي","Round Trip to Ismailia"],["Se3idy fel gam3a el amrekia",1998,"صعيدي في الجامعة الأمريكية","Saidi fil Gamaa el Amrikia"],
   ["Bakkar",1998,"بكار","Bakkar"],["Hammam fi amsterdam",1999,"همام في أمستردام","Hammam fi Amsterdam"],["2amarein",1999,"قمرين","Amarain"]],
-  {h:"Egyptian film",s:"films",m:"eg",d:2,k:["YEAR","سنة"],same:1997})]}
+  {h:"Egyptian film",s:"films",m:"eg",d:2,k:["YEAR","سنة"],same:1997}),
+
+ // more kinds of questions besides oldest/newest (odd one out, never won, closest to, most)
+ Rd(["WHICH FILM DIDN'T WIN","BEST PICTURE",Q],["أنهي فيلم","ما خدش أوسكار أحسن فيلم",QA],"odd",[
+  ["Titanic",0,"تايتانيك","Titanic (1997 film)"],["The Godfather",0,"الأب الروحي"],["Gladiator",0,"المصارع","Gladiator (2000 film)"],
+  ["Forrest Gump",0,"فورست جامب"],["Parasite",0,"باراسايت","Parasite (2019 film)"],["Oppenheimer",0,"أوبنهايمر","Oppenheimer (film)"],
+  ["The Return of the King",0,"عودة الملك","The Lord of the Rings: The Return of the King"],["Schindler's List",0,"قايمة شندلر"],["Avatar",1,"أفاتار","Avatar (2009 film)"]],
+  {h:"film",k:["BEST PICTURE","أوسكار أحسن فيلم"],s:"films",m:"w",d:2,lab:[["WON","خده"],["DIDN'T WIN","ما خدهوش"]]}),
+ Rd(["WHO HAS NEVER WON","AN OSCAR",Q],["مين","عمره ما خد أوسكار",QA],"odd",[
+  ["Leonardo DiCaprio",0,"ليوناردو دي كابريو"],["Tom Hanks",0,"توم هانكس"],["Denzel Washington",0,"دينزل واشنطن"],
+  ["Brad Pitt",0,"براد بيت"],["Meryl Streep",0,"ميريل ستريب"],["Anthony Hopkins",0,"أنتوني هوبكنز"],
+  ["Will Smith",0,"ويل سميث"],["Cillian Murphy",0,"كيليان مورفي"],["Johnny Depp",1,"جوني ديب"]],
+  {h:"actor",k:["OSCAR","الأوسكار"],s:"actors",m:"w",d:2,lab:[["WON ONE","خد"],["NEVER","ما خدش"]]}),
+ Rd(["WHICH FILM WASN'T DIRECTED BY","YOUSSEF CHAHINE",Q],["أنهي فيلم","مش إخراج يوسف شاهين",QA],"odd",[
+  ["Baba amin",0,"بابا أمين","Baba Amin"],["Sera3 fel wadi",0,"صراع في الوادي","The Blazing Sun"],["Bab el 7adid",0,"باب الحديد","Cairo Station"],
+  ["El naser salah el din",0,"الناصر صلاح الدين","Saladin the Victorious"],["El ard",0,"الأرض","The Land (1969 film)"],["Eskendereya... leh?",0,"إسكندرية ليه","Alexandria... Why?"],
+  ["El mohager",0,"المهاجر","The Emigrant (1994 film)"],["El massir",0,"المصير","Destiny (1997 film)"],["El Mummia",1,"المومياء","The Night of Counting the Years"]],
+  {h:"Egyptian film",k:["DIRECTOR","المخرج"],s:"films",m:"eg",d:3,lab:[["YOUSSEF CHAHINE","يوسف شاهين"],["SHADI ABDEL SALAM","شادي عبد السلام"]]}),
+ Rd(["WHO WASN'T BORN","IN EGYPT",Q],["مين","مش مولود في مصر",QA],"odd",[
+  ["Adel Imam",0,"عادل إمام","Adel Emam"],["Ahmed Zaki",0,"أحمد زكي","Ahmed Zaki (actor)"],["Yousra",0,"يسرا"],
+  ["Ahmed Helmy",0,"أحمد حلمي"],["Karim Abdel Aziz",0,"كريم عبد العزيز"],["Menna Shalaby",0,"منة شلبي","Menna Shalabi"],
+  ["Omar Sharif",0,"عمر الشريف"],["Nelly Karim",0,"نيللي كريم"],["Hend Sabry",1,"هند صبري"]],
+  {h:"Egyptian actor",k:["BORN IN","اتولد في"],s:"actors",m:"eg",d:2,lab:[["EGYPT","مصر"],["TUNISIA","تونس"]]})]}
 );
