@@ -107,5 +107,22 @@ CATS.push(
   ["Ostrich",0,"النعامة","Common ostrich"],["Nile crocodile",0,"تمساح النيل"],["Green sea turtle",0,"السلحفاة الخضرا"],
   ["King cobra",0,"الكوبرا الملك"],["Reticulated python",0,"البايثون الشبكي"],["Green anaconda",1,"الأناكوندا"],
   ["Flamingo",0,"البشاروش (الفلامنجو)","Greater flamingo"],["Albatross",0,"القطرس","Wandering albatross"],["Egyptian goose",0,"الوز المصري"]],
-  {h:"animal",k:["BABIES","بيخلّف إزاي"],s:"animals",m:"w",d:3,lab:[["EGGS","بيبيض"],["LIVE BABIES","بيولد"]]})]}
+  {h:"animal",k:["BABIES","بيخلّف إزاي"],s:"animals",m:"w",d:3,lab:[["EGGS","بيبيض"],["LIVE BABIES","بيولد"]]}),
+
+ // more Egypt rounds (odd one out)
+ Rd(["WHICH ANIMAL","WASN'T SACRED IN ANCIENT EGYPT","ON THIS LIST"],["أنهي حيوان","مكانش مقدس عند الفراعنة","في القايمة دي؟"],"odd",[
+  ["Cat (Bastet)",0,"القطة (باستت)","Cat"],["Ibis (Thoth)",0,"أبو منجل (تحوت)","African sacred ibis"],["Falcon (Horus)",0,"الصقر (حورس)","Peregrine falcon"],
+  ["Jackal (Anubis)",0,"ابن آوى (أنوبيس)","Golden jackal"],["Crocodile (Sobek)",0,"التمساح (سوبك)","Nile crocodile"],["Hippo (Taweret)",0,"فرس النهر (تاورت)","Hippopotamus"],
+  ["Scarab (Khepri)",0,"الجعران (خبري)","Scarabaeus sacer"],["Cobra (Wadjet)",0,"الكوبرا (واجيت)","Egyptian cobra"],["Camel",1,"الجمل","Dromedary"]],
+  {h:"animal",k:["IN ANCIENT EGYPT","عند الفراعنة"],s:"animals",m:"eg",d:2,lab:[["SACRED","مقدس"],["NOT SACRED","مش مقدس"]]}),
+ Rd(["WHICH ANIMAL","DOESN'T LIVE IN EGYPT","ON THIS LIST"],["أنهي حيوان","مش عايش في مصر","في القايمة دي؟"],"odd",[
+  ["Fennec fox",0,"الفنك (ثعلب الصحرا)"],["Nubian ibex",0,"الوعل النوبي"],["Dorcas gazelle",0,"الغزال المصري"],
+  ["Striped hyena",0,"الضبع المخطط"],["Egyptian mongoose",0,"النمس"],["Sand cat",0,"قط الرمال"],
+  ["Desert hedgehog",0,"القنفد الصحراوي"],["Jerboa",0,"الجربوع","Lesser Egyptian jerboa"],["Meerkat",1,"الميركات"]],
+  {h:"animal",k:["IN THE WILD","في البرية"],s:"animals",m:"eg",d:2,lab:[["IN EGYPT","في مصر"],["NOT IN EGYPT","مش في مصر"]]}),
+ Rd(["WHICH RED SEA CREATURE","ISN'T A FISH","ON THIS LIST"],["أنهي كائن في البحر الأحمر","مش سمكة","في القايمة دي؟"],"odd",[
+  ["Clownfish (Nemo)",0,"سمكة المهرج (نيمو)","Amphiprioninae"],["Lionfish",0,"سمكة الأسد","Pterois"],["Napoleon wrasse",0,"سمكة نابليون","Humphead wrasse"],
+  ["Whale shark",0,"القرش الحوت"],["Parrotfish",0,"سمكة الببغاء"],["Moray eel",0,"ثعبان البحر (الموراي)"],
+  ["Stonefish",0,"سمكة الحجر"],["Barracuda",0,"الباراكودا"],["Dugong",1,"عروس البحر (الأطوم)"]],
+  {h:"Red Sea",k:["TYPE","النوع"],s:"animals",m:"eg",d:2,lab:[["FISH","سمكة"],["MAMMAL","ثديي"]]})]}
 );

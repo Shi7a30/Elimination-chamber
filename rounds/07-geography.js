@@ -102,5 +102,17 @@ CATS.push(
   ["Mauritania",1031,"موريتانيا"],["Tanzania",947,"تنزانيا"],["Bolivia",1099,"بوليفيا"],
   ["Ethiopia",1104,"إثيوبيا"],["Nigeria",924,"نيجيريا"],["Venezuela",912,"فنزويلا"],
   ["Pakistan",882,"باكستان"],["Colombia",1139,"كولومبيا"],["South Africa",1219,"جنوب أفريقيا"]],
-  {suf:["K km²"," ألف كم²"],h:"country",k:["AREA","المساحة"],s:"geo",m:"w",d:3,near:1001})]}
+  {suf:["K km²"," ألف كم²"],h:"country",k:["AREA","المساحة"],s:"geo",m:"w",d:3,near:1001}),
+
+ // more Egypt rounds (odd one out)
+ Rd(["WHICH TOWN","ISN'T ON THE RED SEA","ON THIS LIST"],["أنهي مدينة","مش على البحر الأحمر","في القايمة دي؟"],"odd",[
+  ["Hurghada",0,"الغردقة"],["Safaga",0,"سفاجا"],["Marsa Alam",0,"مرسى علم"],
+  ["Dahab",0,"دهب"],["El Quseir",0,"القصير","Quseir"],["Ain Sokhna",0,"العين السخنة"],
+  ["Ras Gharib",0,"رأس غارب"],["Sharm El Sheikh",0,"شرم الشيخ"],["Marsa Matrouh",1,"مرسى مطروح","Mersa Matruh"]],
+  {h:"Egypt",k:["SEA","البحر"],s:"geo",m:"eg",d:1,lab:[["RED SEA","الأحمر"],["MEDITERRANEAN","المتوسط"]]}),
+ Rd(["WHICH CITY","ISN'T ON THE NILE","ON THIS LIST"],["أنهي مدينة","مش على النيل","في القايمة دي؟"],"odd",[
+  ["Aswan",0,"أسوان"],["Luxor",0,"الأقصر"],["Qena",0,"قنا"],
+  ["Sohag",0,"سوهاج"],["Asyut",0,"أسيوط"],["Minya",0,"المنيا","Minya Governorate"],
+  ["Beni Suef",0,"بني سويف"],["Cairo",0,"القاهرة"],["Ismailia",1,"الإسماعيلية"]],
+  {h:"Egypt",k:["ON THE NILE","على النيل"],s:"geo",m:"eg",d:1,lab:[["ON THE NILE","على النيل"],["NOT ON IT","مش على النيل"]]})]}
 );
