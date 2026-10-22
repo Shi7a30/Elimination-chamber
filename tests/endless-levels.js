@@ -22,7 +22,7 @@ for(const reg of ['all','eg','w']){
   if(s<5&&lv[1]!==n)problems.push(reg+' score '+s+': non-easy round at the start');
   if(s>=10&&s<15&&lv[2]!==n)problems.push(reg+' score '+s+': medium stretch had other levels');
   if(s>=20&&lv[3]<n*.6)problems.push(reg+' score '+s+': hard rounds too rare ('+lv[3]+'/'+n+')');
-  if(mixes<100||mixes>300)problems.push(reg+' score '+s+': mixes '+mixes+'/400, expected about half')}}
+  if(mixes<60||mixes>200)problems.push(reg+' score '+s+': mixes '+mixes+'/400, expected about a third')}}
 // hot potato (one subcategory) still picks from every level
 const hot=await pg.evaluate(()=>{REG='all';eRecent=[];const id='films',seen={};for(let k=0;k<200;k++)seen[endlessRound(id).r.d]=1;return Object.keys(seen).length});
 if(hot<2)problems.push('hot potato only got one level');

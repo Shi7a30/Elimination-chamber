@@ -107,14 +107,14 @@ CATS.push(
   ["Ben & Jerry's",1978,"بن آند جيريز"],["Cold Stone Creamery",1988,"كولد ستون"],["Magnum",1989,"ماجنوم","Magnum (ice cream)"]],
   {h:"ice cream brand",k:["STARTED","بدأ سنة"],g:"y",dt:["Brand launched","بداية البراند"],s:"snacks",m:"w",d:3}),
  Rd(["WHICH BURGER CHAIN","WAS FOUNDED FIRST",Q],["إيه","أقدم سلسلة برجر",QA],"min",[
-  ["A&W",1919,"إيه آند دبليو","A&W Restaurants"],["White Castle",1921,"وايت كاسل","White Castle (restaurant)"],["McDonald's",1940,"ماكدونالدز"],
-  ["Carl's Jr.",1941,"كارلز جونيور"],["In-N-Out",1948,"إن آند أوت","In-N-Out Burger"],["Burger King",1953,"برجر كينج"],
+  ["McDonald's",1940,"ماكدونالدز"],["Fuddruckers",1980,"فودراكرز"],["Johnny Rockets",1986,"جوني روكتس"],
+  ["Carl's Jr.",1941,"كارلز جونيور"],["Shake Shack",2004,"شيك شاك"],["Burger King",1953,"برجر كينج"],
   ["Hardee's",1960,"هارديز"],["Wendy's",1969,"ويندي"],["Five Guys",1986,"فايف جايز"]],
-  {h:"restaurant chain",k:["FOUNDED","اتأسست سنة"],s:"eats",m:"w",d:3}),
+  {h:"restaurant chain",k:["FOUNDED","اتأسست سنة"],s:"eats",m:"w",d:2}),
  Rd(["WHICH PIZZA CHAIN","WAS FOUNDED LAST",Q],["أنهي سلسلة بيتزا","أجدد",QA],"max",[
   ["Sbarro",1956,"سبارو"],["Pizza Hut",1958,"بيتزا هت"],["Pizza Inn",1958,"بيتزا إن"],
   ["Little Caesars",1959,"ليتل سيزرز"],["Domino's",1960,"دومينوز","Domino's Pizza"],["PizzaExpress",1965,"بيتزا إكسبريس"],
-  ["Chuck E. Cheese",1977,"تشاك إي تشيز"],["Papa Murphy's",1981,"بابا مرفيز"],["Papa John's",1984,"بابا جونز","Papa John's Pizza"]],
+  ["Chuck E. Cheese",1977,"تشاك إي تشيز"],["California Pizza Kitchen",1985,"كاليفورنيا بيتزا كيتشن"],["Papa John's",1984,"بابا جونز","Papa John's Pizza"]],
   {h:"restaurant chain",k:["FOUNDED","اتأسست سنة"],g:"y",dt:["Chain founded","تأسيس السلسلة"],s:"eats",m:"w",d:3}),
  Rd(["WHICH COFFEE CHAIN","WAS FOUNDED FIRST",Q],["أنهي سلسلة قهوة","اتأسست الأول",QA],"min",[
   ["Dunkin'",1950,"دانكن"],["Coffee Bean & Tea Leaf",1963,"كوفي بين","The Coffee Bean & Tea Leaf"],["Tim Hortons",1964,"تيم هورتنز"],
@@ -123,7 +123,7 @@ CATS.push(
   {h:"coffee chain",k:["FOUNDED","اتأسست سنة"],s:"eats",m:"w",d:3}),
  Rd(["WHICH CHICKEN CHAIN","WAS FOUNDED LAST",Q],["إيه","أجدد سلسلة فراخ",QA],"max",[
   ["KFC",1952,"كنتاكي"],["Chick-fil-A",1967,"تشيك فيل إيه"],["Popeyes",1972,"بوبايز"],
-  ["Al Baik",1974,"البيك"],["Bojangles",1977,"بوجانجلز"],["Nando's",1987,"ناندوز"],
+  ["Al Baik",1974,"البيك"],["Buffalo Wild Wings",1982,"بافلو وايلد وينجز"],["Nando's",1987,"ناندوز"],
   ["Cook Door",1988,"كوك دور"],["Wingstop",1994,"وينج ستوب"],["Raising Cane's",1996,"ريزينج كينز","Raising Cane's Chicken Fingers"]],
   {h:"restaurant chain",k:["FOUNDED","اتأسست سنة"],s:"eats",m:"w",d:3}),
  Rd(["WHICH CHAIN HAS","THE MOST BRANCHES",Q],["أنهي سلسلة","ليها فروع أكتر",QA],"max",[
@@ -134,7 +134,7 @@ CATS.push(
  Rd(["WHICH DESSERT CHAIN","WAS FOUNDED FIRST",Q],["أنهي سلسلة حلويات","اتأسست الأول",QA],"min",[
   ["Krispy Kreme",1937,"كريسبي كريم"],["Dairy Queen",1940,"ديري كوين"],["Baskin-Robbins",1945,"باسكن روبنز"],
   ["Dunkin'",1950,"دانكن"],["Cinnabon",1985,"سينابون"],["Auntie Anne's",1988,"أنتي آنز"],
-  ["Cold Stone Creamery",1988,"كولد ستون"],["Pinkberry",2005,"بينك بيري"],["Crumbl",2017,"كرامبل","Crumbl Cookies"]],
+  ["Cold Stone Creamery",1988,"كولد ستون"],["Pinkberry",2005,"بينك بيري"],["Magnolia Bakery",1996,"ماجنوليا"]],
   {h:"dessert chain",k:["FOUNDED","اتأسست سنة"],s:"eats",m:"w",d:3}),
  Rd(["WHICH McDONALD'S ITEM","CAME OUT FIRST",Q],["إيه","أقدم حاجة في ماكدونالدز",QA],"min",[
   ["Filet-O-Fish",1962,"فيليه أو فيش"],["Big Mac",1967,"بيج ماك"],["Quarter Pounder",1971,"كوارتر باوندر"],
