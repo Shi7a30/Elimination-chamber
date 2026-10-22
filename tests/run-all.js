@@ -4,7 +4,7 @@
 //   --play   only the full play-through (set SHELHOM_SHARD=1/3 to play one part of it)
 //   --retry  run a failed check once more; a pass on the second try still passes but is reported as flaky
 const {spawnSync} = require('child_process'), path = require('path');
-const ALL = ['data-check', 'regions', 'mobile', 'pwa', 'duel', 'duel-categories', 'duel-no-repeats', 'mixed-year-labels', 'same-photo', 'sound', 'multiplayer', 'flaw-fixes', 'undo', 'random-order', 'daily', 'stats', 'endless-levels', 'edge-cases', 'full-playthrough'];
+const ALL = ['data-check', 'regions', 'mobile', 'pwa', 'duel', 'duel-categories', 'duel-no-repeats', 'mixed-year-labels', 'same-photo', 'sound', 'multiplayer', 'flaw-fixes', 'undo', 'random-order', 'daily', 'stats', 'endless-levels', 'edge-cases', 'audit-rest', 'full-playthrough'];
 const arg = a => process.argv.includes(a);
 const list = arg('--quick') ? ALL.filter(t => t !== 'full-playthrough') : arg('--play') ? ['full-playthrough'] : ALL;
 const run = t => spawnSync(process.execPath, [path.join(__dirname, t + '.js')], {stdio: 'inherit'}).status === 0;

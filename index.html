@@ -9,7 +9,8 @@
 <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icons/icon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700;800&family=Baloo+Bhaijaan+2:wght@800&family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Fonts load without holding up the first screen; text shows in the system font until they arrive. -->
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700;800&family=Baloo+Bhaijaan+2:wght@800&family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700;800&family=Baloo+Bhaijaan+2:wght@800&family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
 <style>
 /* Design tokens. Light theme first, dark below. --y is the brand yellow; --ink is the near-black used for the question card and flipped cards.
    Spacing follows a 4/8px grid; radii come in three sizes (--r1 small, --r2 cards, --r3 big panels). */
@@ -56,12 +57,12 @@ body:not([data-scr=game]) #cam{display:none}
 .btn .coin{width:18px;height:18px}
 
 /* --- "new version" banner: shows when an update has been installed in the background --- */
-#upd{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom,0px));transform:translate(-50%,140%);z-index:9;display:flex;align-items:center;gap:12px;
+#upd,#inst{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom,0px));transform:translate(-50%,140%);z-index:9;display:flex;align-items:center;gap:12px;
  max-width:calc(100% - 32px);padding:8px 8px 8px 16px;border-radius:999px;background:var(--ink);color:var(--inkfg);box-shadow:var(--sh2);font-size:15px;font-weight:600;
  transition:transform .35s cubic-bezier(.3,.7,.4,1);white-space:nowrap}
-#upd.show{transform:translate(-50%,0)}
-#upd button{border:0;border-radius:999px;background:var(--y);color:var(--ink);font-weight:800;font-size:15px;padding:8px 16px;min-height:36px}
-html[dir=rtl] #upd{padding:8px 16px 8px 8px}
+#upd.show,#inst.show{transform:translate(-50%,0)}
+#upd button,#inst button{border:0;border-radius:999px;background:var(--y);color:var(--ink);font-weight:800;font-size:15px;padding:8px 16px;min-height:36px}
+html[dir=rtl] #upd,html[dir=rtl] #inst{padding:8px 16px 8px 8px}
 
 /* --- shared text --- */
 .sub{color:var(--mut);font-size:14px;font-weight:500;line-height:1.45;margin:10px 0 16px;text-align:center}
@@ -207,7 +208,7 @@ html[data-theme=dark] .qcard{box-shadow:inset 0 0 0 1px var(--line),var(--sh2)}
 .duo .back b{font-size:34px}
 .duo .back small{font-size:13px}
 .duo .lab{font-size:16.5px;font-weight:700;min-height:44px}
-.lab .dt{display:block;font-size:10px;font-weight:500;color:var(--mut);margin-top:1px;line-height:1.15}
+.lab .dt{display:block;font-size:11px;font-weight:500;color:var(--mut);margin-top:1px;line-height:1.15}
 .duo .lab .dt{font-size:12px}
 .cell{display:flex;flex-direction:column;align-items:center;gap:7px;background:none;border:0;padding:0;min-width:0;perspective:700px}
 .grid.deal .cell{animation:deal .42s cubic-bezier(.2,1.3,.4,1) both;animation-delay:calc(var(--i,0)*40ms)}
@@ -220,7 +221,7 @@ html[data-theme=dark] .qcard{box-shadow:inset 0 0 0 1px var(--line),var(--sh2)}
 .back{transform:rotateY(180deg);background:#1b1b20;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:6px;gap:2px}
 .back img{opacity:.22;filter:grayscale(1)}
 .back small,.back b,.back i{position:relative}
-.back small{font-size:9.5px;font-weight:600;color:var(--y);letter-spacing:.4px;text-transform:uppercase;opacity:.95}
+.back small{font-size:11px;font-weight:600;color:var(--y);letter-spacing:.4px;text-transform:uppercase;opacity:.95}
 .back b{font-size:19px;font-weight:800;line-height:1.1;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
 .back i{position:absolute;top:6px;inset-inline-end:6px;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-style:normal;font-size:10px;font-weight:800;background:rgba(255,255,255,.14);color:#fff}
 .lab{width:100%;min-height:30px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;text-align:center;color:var(--fg);padding:0 2px;font-size:12.5px;font-weight:600;line-height:1.2;overflow-wrap:anywhere;transition:color .2s}
@@ -446,17 +447,20 @@ body[data-scr=game] #dock,body:not([data-scr]) #dock{display:none}
 .str .chips{margin:0;flex-wrap:wrap}.str .chip{background:var(--surf2);font-size:13.5px;padding:5px 10px}
 div.cat.sc{cursor:default}
 #dock button:active .ic{transform:scale(.92)}
-body:not([data-scr=game]) #upd{bottom:calc(96px + env(safe-area-inset-bottom,0px))}
+body:not([data-scr=game]) #upd,body:not([data-scr=game]) #inst{bottom:calc(96px + env(safe-area-inset-bottom,0px))}
 /* very short screens: Home has no free space above the dock, so the bar comes down from the top instead of covering the Daily card */
-@media (max-height:600px){body:not([data-scr=game]) #upd{bottom:auto;top:calc(76px + env(safe-area-inset-top,0px));transform:translate(-50%,-260%)}body:not([data-scr=game]) #upd.show{transform:translate(-50%,0)}}
+@media (max-height:600px){body:not([data-scr=game]) #upd,body:not([data-scr=game]) #inst{bottom:auto;top:calc(76px + env(safe-area-inset-top,0px));transform:translate(-50%,-260%)}body:not([data-scr=game]) #upd.show,body:not([data-scr=game]) #inst.show{transform:translate(-50%,0)}}
 /* the update banner waits until you leave the game, so tapping it can't throw away a round */
-body[data-scr=game] #upd{display:none}
+body[data-scr=game] #upd,body[data-scr=game] #inst{display:none}
 /* hot potato with 5+ players: names in one sliding row, so the cards stay on screen */
 .plist.many{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none;padding:2px 2px 6px}
 .plist.many::-webkit-scrollbar{display:none}
 .plist.many span{flex:none;padding:4px 10px;font-size:12.5px}
 /* narrow phones: three popup buttons go on two rows instead of squeezing */
 @media (max-width:360px){#sheet .row{flex-wrap:wrap}#sheet .row .btn{flex:1 1 40%;max-width:none;font-size:15px;padding:12px 10px}#sheet .row .btn:first-child:nth-last-child(3){flex-basis:100%}}
+#inst{width:max-content;border-radius:22px;white-space:normal}#inst span{flex:1;min-width:0;line-height:1.3}#inst button{flex:none}
+#inst .x{background:none;color:inherit;padding:4px 6px;min-height:0;font-size:18px;opacity:.7}
+.back small{letter-spacing:0}@media (max-width:360px){.back small{font-size:10px}}
 </style>
 <script>window.onerror=function(m,u,l){var e=document.getElementById("menu");if(e)e.insertAdjacentHTML("beforeend","<p class='sub'>Error: "+String(m).replace(/</g,"&lt;")+" (line "+l+")</p>")}</script>
 </head><body>
@@ -467,14 +471,14 @@ body[data-scr=game] #upd{display:none}
   <div class="meta"><span id="rn"></span><span class="streak" id="stk"></span></div>
   <div class="plist" id="pl" style="display:none"></div>
   <div class="qcard"><div class="q" id="q1"></div><div class="big" id="q2"></div><div class="q" id="q3"></div></div>
-  <div class="sub" id="sub"></div>
+  <div class="sub" id="sub" aria-live="polite"></div>
   <div class="grid" id="grid"></div>
   <div class="bar"><button class="btn" id="skip"></button></div>
  </div>
 </div>
 <nav id="dock"></nav>
 <input type="file" id="file" accept="image/*" style="display:none">
-<div id="sheet" role="dialog"><div id="sbadge" aria-hidden="true"></div><div id="st"></div><p id="sp"></p><div class="row" id="sb"></div></div>
+<div id="sheet" role="dialog" aria-labelledby="st" aria-describedby="sp"><div id="sbadge" aria-hidden="true"></div><div id="st"></div><p id="sp"></p><div class="row" id="sb"></div></div>
 <canvas id="fx"></canvas>
 <script id="photos"></script><script defer src="photos/index.js"></script>
 <script src="daily.js"></script>
@@ -490,8 +494,10 @@ body[data-scr=game] #upd{display:none}
 // from..to (the film that isn't from the 90s). Without odd, values are 0 for the group and 1 for the odd card, and
 // lab = [[en, ar] for 0, [en, ar] for 1] is what the flipped cards show. With same:year the answer is the only card
 // from that year (what came out the year Salah was born). Odd rounds stay out of Duel.
+// was = the round's old progress key ("Category|OLD SECOND LINE"), set when its English second line is reworded, so
+// saved progress, seen decks, Daily days and challenge links still find it.
 // Each round must have exactly one best answer (checked on load).
-function Rd(q,qa,best,items,o){o=o||{};return{q:q,qa:qa,best:best,items:items,h:o.h||"",pre:o.pre,suf:o.suf,dp:o.dp,k:o.k,g:o.g,dt:o.dt,s:o.s,m:o.m,d:o.d,odd:o.odd,lab:o.lab,same:o.same}}
+function Rd(q,qa,best,items,o){o=o||{};return{q:q,qa:qa,best:best,items:items,h:o.h||"",pre:o.pre,suf:o.suf,dp:o.dp,k:o.k,g:o.g,dt:o.dt,s:o.s,m:o.m,d:o.d,odd:o.odd,lab:o.lab,same:o.same,was:o.was}}
 function isOdd(r,x){return r.same!=null?x===r.same:r.odd?x<r.odd[0]||x>r.odd[1]:x===1}
 // index of the right answer among values v
 function ansIdx(r,v){if(r.best==="odd")return v.findIndex(function(x){return isOdd(r,x)});return v.indexOf(r.best==="min"?Math.min.apply(0,v):Math.max.apply(0,v))}
@@ -516,7 +522,7 @@ var CATS=[];
 <script>
 // Progress key: category + second question line; a later round that repeats that line also gets its first line, so older saves still match.
 var KEYS={};
-CATS.forEach(function(c){c.r.forEach(function(r){r.c=c;r.key=c.n+"|"+r.q[1];if(KEYS[r.key])r.key+="|"+r.q[0];KEYS[r.key]=1;
+CATS.forEach(function(c){c.r.forEach(function(r){r.c=c;r.key=r.was||c.n+"|"+r.q[1];if(KEYS[r.key]&&!r.was)r.key+="|"+r.q[0];KEYS[r.key]=1;
  if(r.g==="y"&&!r.dt)console.warn("Mixed year round needs dt:",c.n,r.q[1]);if(r.items.length!==9||!ansOk(r))console.warn("Round needs 9 items and one answer:",c.n,r.q[1])})});
 
 // Home menu: broad groups, each with subcategories. A subcategory plays every round tagged with its id (s) in the chosen region.
@@ -531,7 +537,7 @@ var GROUPS=[
 
 // Text in English and Egyptian Arabic. Functions take numbers already formatted.
 var TX={
- en:{updReady:"New version ready",updBtn:"Update",offSave:function(m){return"Save all photos for playing offline ("+m+" MB)"},offBusy:function(p){return"Saving photos… "+p+"%"},offDone:"Photos saved for playing offline",offFail:"Some photos didn't save. Tap to try again when you're online.",title:"Shelhom",tag:"Knock out every card but the answer",streak:"Streak",best:"Best",rounds:function(n){return n+(n==="1"?" round":" rounds")},solved:function(s,n){return s+"/"+n+" solved"},complete:"★ Complete",
+ en:{updReady:"New version ready",updBtn:"Update",instTxt:"Add Shelhom to your home screen",instBtn:"Add",instIos:"Tap Share, then Add to Home Screen",instOk:"OK",offSave:function(m){return"Save all photos for playing offline ("+m+" MB)"},offBusy:function(p){return"Saving photos… "+p+"%"},offDone:"Photos saved for playing offline",offFail:"Some photos didn't save. Tap to try again when you're online.",title:"Shelhom",tag:"Knock out every card but the answer",streak:"Streak",best:"Best",rounds:function(n){return n+(n==="1"?" round":" rounds")},solved:function(s,n){return s+"/"+n+" solved"},complete:"★ Complete",
   hint:"Eliminated cards flip to show their answer. Tap one to flip it back. Tap 📷 in a round, then a tile, to use your own photo.",
   round:function(a,b){return"Round "+a+"/"+b},photo:"Photo mode: tap a card",nailed:"Nailed it!",wrong:"Wrong one!",left:function(n){return n+" left to knock out"},all:"Knock out all but one",
   undo:"↺",skip:"Skip ▶",next:"Next ▶",lost:"❌ You lost!",knocked:function(x){return"You knocked out the answer: "+x+"."},keep:function(n){return" Undo to keep your 🔥"+n+" streak."},
@@ -555,7 +561,7 @@ var TX={
   howT:"👆 How to play",howP:"Knock out the cards that are NOT the answer, one at a time, until only the right one is left. Knock out the answer and you lose! Tip: 📷 in a round puts your own photo on a card.",howOk:"Got it",
   leaveDy:"You'll lose today's round. There's one try a day.",leaveUndo:"You won't be able to undo this loss.",skipQ:"Skip this round?",skipTxt:function(k){return"Skipping ends your 🔥"+k+" streak."},skipBtn:"Skip",
   chGot:function(x,s,k){return x+" got "+s+"/"+k},noSave:"Your phone is out of space, so your progress isn't being saved.",chMine:function(s,k){return"You got "+s+"/"+k+". "}},
- ar:{updReady:"فيه نسخة جديدة",updBtn:"حدّث",offSave:function(m){return"احفظ كل الصور عشان تلعب من غير نت ("+m+" ميجا)"},offBusy:function(p){return"بنحفظ الصور… "+p+"٪"},offDone:"الصور محفوظة وتقدر تلعب من غير نت",offFail:"فيه صور ماتحفظتش. دوس تاني وانت على النت.",title:"شيلهم",tag:"شيل كل الكروت وسيب الإجابة الصح",streak:"ستريك",best:"أطول ستريك",rounds:function(n){return n==="1"?"جولة واحدة":arN(n,"جولتين","جولات","جولة")},solved:function(s,n){return"حليت "+s+" من "+n},complete:"★ خلّصتها",
+ ar:{updReady:"فيه نسخة جديدة",updBtn:"حدّث",instTxt:"ضيف شيلهم على الشاشة الرئيسية",instBtn:"ضيف",instIos:"دوس شارك وبعدين «إضافة إلى الشاشة الرئيسية»",instOk:"تمام",offSave:function(m){return"احفظ كل الصور عشان تلعب من غير نت ("+m+" ميجا)"},offBusy:function(p){return"بنحفظ الصور… "+p+"٪"},offDone:"الصور محفوظة وتقدر تلعب من غير نت",offFail:"فيه صور ماتحفظتش. دوس تاني وانت على النت.",title:"شيلهم",tag:"شيل كل الكروت وسيب الإجابة الصح",streak:"ستريك",best:"أطول ستريك",rounds:function(n){return n==="1"?"جولة واحدة":arN(n,"جولتين","جولات","جولة")},solved:function(s,n){return"حليت "+s+" من "+n},complete:"★ خلّصتها",
   hint:"الكارت اللي بتشيله بيتقلب ويوريك إجابته، ودوس عليه تاني عشان ترجعه. دوس 📷 جوه أي جولة وبعدين على أي مربع عشان تحط صورة من عندك.",
   round:function(a,b){return"جولة "+a+"/"+b},photo:"غيّر الصورة: دوس على أي كارت",nailed:"جبتها!",wrong:"لأ، مش دي!",left:function(n){return"فاضل تشيل "+n},all:"شيل الكل وسيب واحد بس",
   undo:"↺",skip:"عدّي ◀",next:"اللي بعده ◀",lost:"❌ خسرت!",knocked:function(x){return"شلت الإجابة الصح: "+x+"."},keep:function(n){return" دوس رجوع عشان متضيّعش الستريك 🔥"+n+"."},
@@ -659,7 +665,7 @@ function mix(lv){var rs=lv?rounds().filter(function(r){return(r.d||2)<=lv}):null
 function eLevel(s){var o=s<5?[1]:s<10?[1,2]:s<15?[2]:s<20?[2,3]:[2,3,3,3];return o[Math.floor(Math.random()*o.length)]}
 // id = limit to one subcategory (hot potato); lv = difficulty level (Endless only; hot potato uses every level);
 // generated mixes only when playing everything
-function endlessRound(id,lv){var m=!id&&Math.random()<.5&&mix(lv);if(m)return m;
+function endlessRound(id,lv){var m=!id&&Math.random()<.3&&mix(lv);if(m)return m;
  var all=id?subRounds(id):rounds(),fresh=all.filter(function(r){return eRecent.indexOf(r)<0}),
   // the level's own rounds first, then the nearest level if those are used up
   p=lv?[0,1,2].reduce(function(f,dl){return f||shuffle(fresh.filter(function(r){return Math.abs((r.d||2)-lv)===dl}))[0]},null):shuffle(fresh)[0];
@@ -800,7 +806,7 @@ function dailyPick(i,x){out.push(i);flipNow=[i];DY.r.push(i===corr?0:1);
   render();sfx.win();confetti();bump();floatTxt("+"+n(WIN));sh(function(){return[t("won"),t("coins")(n(WIN))+" · "+t("dyStreak")(n(DY.s)),dyBtns()]},600)}
  else{dySave();render();sfx.elim(out.length)}}
 function dyBtns(){return[[t("dyShare"),dyShare,""],[t("menu"),menu,"y"]]}
-function dyShare(){var m=t("dyMsg")(dyN(DY.d))+"\n"+(DY.r||[]).map(function(v){return v?"🟩":"🟥"}).join("")+(dyStreak()?"\n🔥 "+n(dyStreak()):"")+"\n"+location.origin+location.pathname;
+function dyShare(){var m=t("dyMsg")(dyN(DY.d))+" · "+(DY.w?"✅ "+t("dyWon"):"❌ "+t("dyLost"))+"\n"+(DY.r||[]).map(function(v){return v?"🟩":"🟥"}).join("")+(dyStreak()?"\n🔥 "+n(dyStreak()):"")+"\n"+location.origin+location.pathname+"?daily";
  if(navigator.share)navigator.share({text:m}).catch(function(){});else open("https://wa.me/?text="+encodeURIComponent(m),"_blank")}
 function dyCard(){var d=dayNo(),done=dyPlayed(),won=done&&DY.w,cd=cairo(),lf=dayLeft(),r=dailyRound(d),sg=null,fl=IC.flame,tr=IC.trophy,share='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>';
  GROUPS.forEach(function(g){g.s.forEach(function(x){if(r&&x[0]===r.s)sg=x})});
@@ -1153,12 +1159,15 @@ function sheet(ti,p,btns,d){clearTimeout(stT);var m=ti.match(/^([^\p{L}\p{N}\s]+
  var bi=BADGE[e];if(bi)$("sbadge").innerHTML=svg(bi);else $("sbadge").textContent=e;$("sheet").classList.toggle("good",/[🎉🏆✅😅🤝]/u.test(e));$("sheet").classList.toggle("bad",/[❌💀😬💥]/u.test(e));$("st").textContent=ti;$("sp").textContent=p;var sb=$("sb");sb.innerHTML="";
  btns.forEach(function(b){var e=document.createElement("button");e.className="btn "+b[2];if(b[3])e.innerHTML=b[0];else if(b[0].indexOf("🔗 ")===0)e.innerHTML=IC.link+esc(b[0].slice(3));else e.textContent=b[0];e.onclick=b[1];sb.appendChild(e)});
  stT=setTimeout(function(){$("sheet").classList.add("show");
+  // screen readers: focus moves to the first button and the menu and dock behind are out of reach (the cards stay
+  // tappable, so you can still flip them to see the values, and so does the top bar)
+  $("menu").inert=$("dock").inert=true;var fb=$("sb").querySelector(".btn");if(fb)try{fb.focus({preventScroll:true})}catch(x){}
   // keep the answer card in view above the popup
   var c=document.querySelector(".cell.bad,.cell.win");if(c){var r=c.getBoundingClientRect(),top=innerHeight-$("sheet").offsetHeight-12;
    if(r.bottom>top)scrollBy({top:r.bottom-top,behavior:RM?"auto":"smooth"})}},d||0)}
 // sh(f, delay): show a popup whose text f() builds, so it can be rebuilt when the language changes
 function sh(f,d){shF=f;var a=f();sheet(a[0],a[1],a[2],d)}
-function hide(){clearTimeout(stT);shF=null;$("sheet").classList.remove("show")}
+function hide(){clearTimeout(stT);shF=null;$("sheet").classList.remove("show");$("menu").inert=$("dock").inert=false}
 // the built-in photos load after the game starts; put them on the cards already showing
 function fillImgs(){if(!inGame()||!items)return;[].forEach.call(document.querySelectorAll(".cell"),function(c){var x=items[+c.dataset.i],u=x&&(mode==="duel"?photo(x.d[0]):bPhoto(+c.dataset.i));
  if(u&&!c.querySelector(".tile img")){setImg(c.querySelector(".tile"),u);setImg(c.querySelector(".back"),u)}})}
@@ -1167,7 +1176,21 @@ var PHok=false;document.addEventListener("DOMContentLoaded",function(){PHok=true
 function updShow(){var e=$("upd");if(!e){e=document.createElement("div");e.id="upd";e.setAttribute("role","status");document.body.appendChild(e)}
  e.innerHTML="<span>"+t("updReady")+'</span><button type="button">'+t("updBtn")+"</button>";e.querySelector("button").onclick=function(){location.reload()};
  requestAnimationFrame(function(){e.classList.add("show")})}
-applyLang();chalLoad();menu();
+// A shared Daily link (?daily) opens today's round straight away, unless it's already played or a challenge is waiting.
+var DLINK=/[?&]daily(&|=|$)/.test(location.search);if(DLINK)try{history.replaceState(null,"",location.href.split(/[?#]/)[0])}catch(e){}
+// Install prompt: from the 2nd visit, once, never inside the installed app. Android gives a one-tap install;
+// iPhone has none, so it gets a short how-to instead.
+var BIP=null,VIS=(ld("elim_vis",0)|0)+1;sv("elim_vis",VIS);
+addEventListener("beforeinstallprompt",function(e){e.preventDefault();BIP=e;instShow()});
+function instShow(){var ios=/iPhone|iPad|iPod/.test(navigator.userAgent)&&!BIP;
+ if(location.protocol!=="https:"||ld("elim_inst",0)||VIS<2||$("inst")||navigator.standalone||matchMedia("(display-mode: standalone)").matches||!BIP&&!ios)return;
+ var e=document.createElement("div");e.id="inst";e.setAttribute("role","status");document.body.appendChild(e);
+ e.innerHTML="<span>"+t(ios?"instIos":"instTxt")+'</span><button type="button" class="go">'+t(ios?"instOk":"instBtn")+'</button><button type="button" class="x" aria-label="✕">✕</button>';
+ var done=function(){sv("elim_inst",1);e.classList.remove("show")};
+ e.querySelector(".go").onclick=function(){if(BIP){BIP.prompt();BIP=null}done()};e.querySelector(".x").onclick=done;
+ requestAnimationFrame(function(){e.classList.add("show")})}
+setTimeout(instShow,1500);
+applyLang();chalLoad();menu();if(DLINK&&GRP!=="cr"&&!dyPlayed())dailyGo();
 </script><script>if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol)){
  // A page that was already controlled when it opened gets a new controller only when a newer version has installed.
  let had=!!navigator.serviceWorker.controller;navigator.serviceWorker.addEventListener('controllerchange',()=>{if(had)updShow();had=true});

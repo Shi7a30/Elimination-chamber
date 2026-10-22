@@ -53,7 +53,7 @@ CATS.push(
   ["Ahmed Hassan",4,"أحمد حسن","Ahmed Hassan (footballer, born 1975)"],["Hossam Hassan",3,"حسام حسن"],["Wael Gomaa",3,"وائل جمعة"],
   ["Ahmed Fathy",3,"أحمد فتحي"],["Mohamed Aboutrika",2,"محمد أبو تريكة"],["Mohamed Zidan",2,"محمد زيدان"],
   ["Mahmoud 'Bibo' El Khatib",1,"محمود الخطيب (بيبو)","Mahmoud El Khatib"],["Mohamed Salah",0,"محمد صلاح"],["Omar Marmoush",0,"عمر مرموش"]],
-  {suf:TRA,h:"footballer",k:["AFCON TITLES","كاسات أمم أفريقيا"],s:"players",m:"eg",d:1}),
+  {suf:TRA,h:"footballer",k:["AFCON TITLES","كاسات أمم أفريقيا"],s:"players",m:"eg",d:2}),
  Rd(["WHO HAS WON THE","MOST CAF CHAMPIONS LEAGUES",Q],["مين","كسب دوري أبطال أفريقيا أكتر",QA],"max",[
   ["Wael Gomaa",6,"وائل جمعة"],["Mohamed Aboutrika",5,"محمد أبو تريكة"],["Mohamed El Shenawy",4,"محمد الشناوي"],
   ["Ali Maaloul",4,"علي معلول","Ali Maâloul"],["Hossam Hassan",2,"حسام حسن"],["Mahmoud 'Bibo' El Khatib",2,"محمود الخطيب (بيبو)","Mahmoud El Khatib"],

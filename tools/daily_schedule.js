@@ -16,7 +16,7 @@ for (const f of page.match(/src="rounds\/[^"]+\.js"/g).map(s => s.slice(5, -1)))
 // round keys and hashes, as in index.html
 const KEYS = {}, ALL = [];
 ctx.CATS.forEach(c => c.r.forEach(r => {
-  r.key = c.n + '|' + r.q[1]; if (KEYS[r.key]) r.key += '|' + r.q[0]; KEYS[r.key] = 1; ALL.push(r);
+  r.key = r.was || c.n + '|' + r.q[1]; if (KEYS[r.key] && !r.was) r.key += '|' + r.q[0]; KEYS[r.key] = 1; ALL.push(r);
 }));
 function hk(s) { let h = 2166136261; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return (h >>> 0).toString(36); }
 function rng(a) { return function () { a = a + 0x6D2B79F5 | 0; let x = Math.imul(a ^ a >>> 15, 1 | a); x = x + Math.imul(x ^ x >>> 7, 61 | x) ^ x; return ((x ^ x >>> 14) >>> 0) / 4294967296; }; }

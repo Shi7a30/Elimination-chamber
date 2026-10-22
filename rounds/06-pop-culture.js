@@ -123,11 +123,11 @@ Rd(["WHO IS THE","OLDEST EGYPTIAN IN HOLLYWOOD",Q],["مين","أكبر مصري 
   ["Nelly Karim",1974,"نيللي كريم"],["Mona Zaki",1977,"منى زكي"],["Hend Sabry",1979,"هند صبري"],
   ["Yasmin Abdulaziz",1980,"ياسمين عبد العزيز"],["Menna Shalaby",1982,"منة شلبي","Menna Shalabi"],["Dina El Sherbiny",1985,"دينا الشربيني"]],
   {h:"Egyptian actress",k:BORN,g:"p",s:"celebs",m:"eg",d:2}),
- Rd(["WHO IS THE","OLDEST GOLDEN-ERA STAR",Q],["مين","أكبر نجم من زمن الفن الجميل في السن",QA],"min",[
+ Rd(["WHO IS THE","OLDEST CLASSIC SCREEN LEGEND",Q],["مين","أكبر نجم من زمن الفن الجميل في السن",QA],"min",[
   ["Youssef Wahbi",1898,"يوسف وهبي"],["Anwar Wagdi",1904,"أنور وجدي"],["Mahmoud el-Meliguy",1910,"محمود المليجي"],
   ["Ismail Yassine",1912,"إسماعيل ياسين"],["Farid Shawqi",1920,"فريد شوقي"],["Rushdy Abaza",1926,"رشدي أباظة"],
   ["Faten Hamama",1931,"فاتن حمامة"],["Omar Sharif",1932,"عمر الشريف"],["Soad Hosny",1943,"سعاد حسني"]],
-  {h:"Egyptian actor",k:BORN,g:"p",s:"celebs",m:"eg",d:3}),
+  {h:"Egyptian actor",k:BORN,g:"p",s:"celebs",m:"eg",d:3,was:"Pop Culture|OLDEST GOLDEN-ERA STAR"}),
  Rd(["WHO HAS THE","MOST SQUASH WORLD TITLES",Q],["مين","كسب بطولة العالم للاسكواش أكتر",QA],"max",[
   ["Nour El Sherbini",8,"نور الشربيني"],["Amr Shabana",4,"عمرو شبانة"],["Ali Farag",4,"علي فرج"],
   ["Ramy Ashour",3,"رامي عاشور"],["Mostafa Asal",2,"مصطفى عسل"],["Karim Abdel Gawad",1,"كريم عبد الجواد"],

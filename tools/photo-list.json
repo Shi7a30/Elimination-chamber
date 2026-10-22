@@ -24813,5 +24813,50 @@
    "Nohad Nour actor",
    "نهاد نور"
   ]
+ },
+ {
+  "name": "Fuddruckers",
+  "title": "Fuddruckers",
+  "hint": "restaurant chain",
+  "ar": "فودراكرز",
+  "ar_hint": "",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Johnny Rockets",
+  "title": "Johnny Rockets",
+  "hint": "restaurant chain",
+  "ar": "جوني روكتس",
+  "ar_hint": "",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Shake Shack",
+  "title": "Shake Shack",
+  "hint": "restaurant chain",
+  "ar": "شيك شاك",
+  "ar_hint": "",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "California Pizza Kitchen",
+  "title": "California Pizza Kitchen",
+  "hint": "restaurant chain",
+  "ar": "كاليفورنيا بيتزا كيتشن",
+  "ar_hint": "",
+  "logo": true,
+  "skip": false
+ },
+ {
+  "name": "Buffalo Wild Wings",
+  "title": "Buffalo Wild Wings",
+  "hint": "restaurant chain",
+  "ar": "بافلو وايلد وينجز",
+  "ar_hint": "",
+  "logo": true,
+  "skip": false
  }
 ]
