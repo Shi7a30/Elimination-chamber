@@ -400,6 +400,13 @@ html[dir=rtl] .hero .hgrid{transform:translateY(-38%) rotate(8deg) scale(.82);tr
 .dcard .sp{position:absolute;color:var(--y);font-size:14px;line-height:1}
 .dcard .sp.a{top:2px;inset-inline-start:2px}.dcard .sp.b{bottom:0;inset-inline-end:-2px;font-size:18px}.dcard .sp.c{top:8px;inset-inline-end:-4px;font-size:10px;color:var(--y)}
 @media (max-width:380px){.dcard .art{width:92px;height:92px}.dcard .dt{font-size:22px}}
+/* streak freeze offer on the Daily card (missed yesterday) */
+.cat.dcard.fzc{height:auto;min-height:178px}.fzc .art{top:104px}
+.fzbar{position:relative;z-index:2;display:flex;align-items:center;gap:10px;width:100%;margin-top:12px;padding:8px 10px 8px 12px;border-radius:14px;background:color-mix(in srgb,#3aa8f5 16%,transparent);border:1.5px solid color-mix(in srgb,#3aa8f5 55%,transparent);font-size:13px;font-weight:700;color:var(--dcfg);line-height:1.3;text-align:start}
+.fzbar .i{width:22px;height:22px;flex-shrink:0;color:#3aa8f5}.fzbar span{flex:1}.fzbar b{white-space:nowrap}
+.fzbar button{border:0;border-radius:999px;background:var(--y);color:var(--ink);font:inherit;font-weight:800;font-size:13px;padding:7px 12px;white-space:nowrap;min-height:34px}
+#sheet.show{z-index:7} /* above the dock, for popups on Home */
+#sheet.fz #sbadge{color:#3aa8f5;background:color-mix(in srgb,#3aa8f5 16%,transparent)}
 @media (max-width:360px){.dcard .chip+.chip{display:none}.dcard .mk{font-size:13px;padding:1px 6px;border-width:2.5px}.dcard .mk svg{width:12px;height:12px}}
 /* taller phones: the two cards grow to fill the screen down to the dock */
 @media (min-height:680px){.cat.hero{min-height:205px;padding:22px 20px}.hero .hgrid{transform:translateY(-38%) rotate(-8deg) scale(.95)}html[dir=rtl] .hero .hgrid{transform:translateY(-38%) rotate(8deg) scale(.95)}
@@ -561,7 +568,7 @@ var TX={
   chWin:"🏆 You win!",chLose:"😬 You lost!",chDraw:"🤝 Draw!",vs:function(s,b,x,k){return"You "+s+"/"+k+" · "+x+" "+b+"/"+k},
   share:"🔗 Send challenge",shareBack:"🔗 Send your score",copied:"Link copied!",msg:function(s,k){return"I got "+s+"/"+k+" on Shelhom! Can you beat me? 🔥"},
   tHome:"Home",tStats:"Stats",stCoins:"Coins",stSolved:"Rounds solved",stBest:"Best streak",stScores:"Best scores",stGroups:"Rounds solved in each group",stVer:function(v,d){return v?"Version "+v+" · Last update: "+d:"Test copy (not the live site)"},verMon:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],verAm:"am",verPm:"pm",dyBadge:function(n){return"Daily · #"+n},dyTitle:"Daily round",dySub:"Same round for everyone",dyDone:"Done for today!",dyShare:"Share",dyToday:"Today:",dyPlay:"Play",dyWon:"WON",dyLost:"LOST",dyMon:["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"],dyEnds:function(h,m){return"Ends in "+(h?h+"h":m+"m")},dyRn:function(n){return"Daily round #"+n},
-  dyNext:function(h,m){return"New question in "+(h?h+"h":m+"m")},dyMsg:function(n){return"Shelhom daily round #"+n},dyStreak:function(n){return"🔥 "+n+(n==="1"?" day":" days")+" in a row"},
+  dyNext:function(h,m){return"New question in "+(h?h+"h":m+"m")},fzBar:function(n){return"You missed yesterday. Save your <b>🔥 "+n+"</b>?"},fzBtn:function(c){return"Save it · "+c},fzT:"❄ Save your streak?",fzP:function(n,c){return"You missed yesterday. Spend "+c+" coins and your 🔥"+n+" streak carries on. You can do this once a week."},fzNeed:function(c){return" You need "+c+" coins."},fzNo:"Let it go",fzDone:"❄ Streak saved!",fzDoneP:function(n){return"Your 🔥"+n+" streak carries on. Play today's round to keep it going."},dyMsg:function(n){return"Shelhom daily round #"+n},dyStreak:function(n){return"🔥 "+n+(n==="1"?" day":" days")+" in a row"},
   howT:"👆 How to play",howP:"Knock out the cards that are NOT the answer, one at a time, until only the right one is left. Knock out the answer and you lose! Tip: 📷 in a round puts your own photo on a card.",howOk:"Got it",
   leaveDy:"You'll lose today's round. There's one try a day.",leaveUndo:"You won't be able to undo this loss.",skipQ:"Skip this round?",skipTxt:function(k){return"Skipping ends your 🔥"+k+" streak."},skipBtn:"Skip",
   chGot:function(x,s,k){return x+" got "+s+"/"+k},noSave:"Your phone is out of space, so your progress isn't being saved.",chMine:function(s,k){return"You got "+s+"/"+k+". "}},
@@ -585,7 +592,7 @@ var TX={
   chWin:"🏆 كسبت!",chLose:"😬 خسرت!",chDraw:"🤝 تعادل!",vs:function(s,b,x,k){return"إنت "+s+" · "+x+" "+b+" (من "+k+")"},
   share:"🔗 ابعت التحدي",shareBack:"🔗 ابعت نتيجتك",copied:"اتنسخ اللينك!",msg:function(s,k){return"جبت "+s+" من "+k+" في شيلهم! تقدر تعدّيني؟ 🔥"},
   tHome:"الرئيسية",tStats:"أرقامي",stCoins:"كوينز",stSolved:"جولات خلّصتها",stBest:"أطول ستريك",stScores:"أحسن أرقامك",stGroups:"خلّصت كام جولة في كل مجموعة",stVer:function(v,d){return v?"النسخة "+v+" · آخر تحديث: "+d:"نسخة تجربة (مش اللي على الموقع)"},verMon:["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"],verAm:"ص",verPm:"م",dyBadge:function(n){return"رقم "+n},dyTitle:"سؤال اليوم",dySub:"سؤال جديد كل يوم، هو هو لكل صحابك",dyDone:"جاوبت النهارده!",dyShare:"شارك",dyToday:"النهارده:",dyPlay:"العب",dyWon:"كسبت",dyLost:"خسرت",dyMon:["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"],dyEnds:function(h,m){return"فاضل "+(h?(h===1?"ساعة":h===2?"ساعتين":h<=10?h+" ساعات":h+" ساعة"):(m===1?"دقيقة":m===2?"دقيقتين":m<=10?m+" دقايق":m+" دقيقة"))},dyRn:function(n){return"سؤال اليوم رقم "+n},
-  dyNext:function(h,m){var hs=h===1?"ساعة":h===2?"ساعتين":h<=10?h+" ساعات":h+" ساعة",ms=m===1?"دقيقة":m===2?"دقيقتين":m<=10?m+" دقايق":m+" دقيقة";return"السؤال الجاي بعد "+(h?hs:ms)},dyMsg:function(n){return"شيلهم - سؤال اليوم رقم "+n},dyStreak:function(n){return"🔥 "+(n==="1"?"أول يوم":"ستريك "+arN(n,"يومين","أيام","يوم"))},
+  fzBar:function(n){return"فاتك امبارح. تنقذ <b>🔥 "+n+"</b>؟"},fzBtn:function(c){return"انقذه · "+c},fzT:"❄ تنقذ الستريك؟",fzP:function(n,c){return"فاتك امبارح. ادفع "+c+" كوينز والستريك 🔥"+n+" يفضل زي ما هو. تقدر تعملها مرة واحدة في الأسبوع."},fzNeed:function(c){return" محتاج "+c+" كوينز."},fzNo:"سيبه يروح",fzDone:"❄ الستريك اتنقذ!",fzDoneP:function(n){return"الستريك 🔥"+n+" لسه معاك. العب سؤال النهارده عشان يكمل."},dyNext:function(h,m){var hs=h===1?"ساعة":h===2?"ساعتين":h<=10?h+" ساعات":h+" ساعة",ms=m===1?"دقيقة":m===2?"دقيقتين":m<=10?m+" دقايق":m+" دقيقة";return"السؤال الجاي بعد "+(h?hs:ms)},dyMsg:function(n){return"شيلهم - سؤال اليوم رقم "+n},dyStreak:function(n){return"🔥 "+(n==="1"?"أول يوم":"ستريك "+arN(n,"يومين","أيام","يوم"))},
   howT:"👆 إزاي تلعب",howP:"شيل الكروت الغلط واحد واحد لحد ما يفضل الكارت الصح لوحده. لو شلت الإجابة الصح تخسر! وعلى فكرة: 📷 جوه الجولة بيخليك تحط صورة من عندك على أي كارت.",howOk:"تمام",
   leaveDy:"هتخسر سؤال النهارده، وكل يوم ليه محاولة واحدة بس.",leaveUndo:"لو خرجت، مش هتقدر تعمل رجوع للدور ده.",skipQ:"تعدّي الجولة دي؟",skipTxt:function(k){return"لو عدّيتها هتخسر الستريك 🔥"+k+"."},skipBtn:"عدّي",
   chGot:function(x,s,k){return x+" جاب "+s+" من "+k},noSave:"الموبايل مفيهوش مساحة، فاللي بتعمله مش بيتحفظ.",chMine:function(s,k){return"إنت جبت "+s+" من "+k+". "}}};
@@ -806,6 +813,16 @@ function dyN(d){return n(Math.max(1,d|0))}
 function dyPlayed(){return!!DY.done&&(DY.d|0)>=dayNo()}
 function dyStreak(){return DY.lw>=dayNo()-1||dyPlayed()?DY.s|0:0}
 function dySave(){sv("elim_daily",DY)}
+// Streak freeze: if you won the day before yesterday and didn't play yesterday at all, the Daily card offers to save your
+// 🔥 for FZC coins, once a week. Saving counts yesterday as won (lw), so today's round carries the streak on.
+// fz = day a freeze was last used; fzNo = day you said "let it go" (no more asking that day).
+var FZC=100,FZI='<path d="M12 2.5v19M4 7.2l16 9.6M20 7.2 4 16.8M9.5 4.5 12 7l2.5-2.5M9.5 19.5 12 17l2.5 2.5M4.6 10.4l3.3-.9-.9-3.3M19.4 13.6l-3.3.9.9 3.3M19.4 10.4l-3.3-.9.9-3.3M4.6 13.6l3.3.9-.9 3.3"/>';
+function fzOffer(){var d=dayNo();return!dyPlayed()&&(DY.s|0)>0&&(DY.lw|0)===d-2&&(DY.d|0)===d-2&&!(DY.fz&&d-DY.fz<7)&&DY.fzNo!==d}
+function fzAsk(){var k=n(DY.s|0),c=n(FZC),ok=coins>=FZC;
+ sh(function(){return[t("fzT"),t("fzP")(k,c)+(ok?"":t("fzNeed")(c)),ok?[[t("fzBtn")(c),fzUse,"y"],[t("fzNo"),fzSkip,""]]:[[t("fzNo"),fzSkip,""],[t("menu"),menu,"y"]]]})}
+function fzUse(){if(!fzOffer()||coins<FZC){menu();return}var d=dayNo();coins-=FZC;DY.lw=d-1;DY.fz=d;save();dySave();sfx.tap();bump();floatTxt("−"+n(FZC));menu();
+ sh(function(){return[t("fzDone"),t("fzDoneP")(n(DY.s|0)),[[t("dyPlay"),function(){hide();dailyGo()},"y"],[t("menu"),menu,""]]]})}
+function fzSkip(){DY.fzNo=dayNo();dySave();menu()}
 function dailyGo(){var d=dayNo();if(dyPlayed())return;mode="daily";
  DY.base=DY.lw===d-1||DY.lw===d?DY.s|0:0;DY.d=d;DY.r=[];DY.w=false;DY.done=true;DY.s=0;dySave();
  cur=mk(dailyRound(d));loadPhotos(cur.items);start()}
@@ -822,7 +839,8 @@ function dyCard(){var d=dayNo(),done=dyPlayed(),won=done&&DY.w,cd=cairo(),lf=day
  var mk=done?'<span class="mk">'+(won?'<svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>'+t("dyWon"):'<svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>'+t("dyLost"))+"</span>":"";
  var art='<span class="art" aria-hidden="true"><span class="back"></span><span class="pg"><i></i><i></i><span class="mo">'+t("dyMon")[cd.month-1]+"</span><b>"+cd.day+"</b></span>"+mk+'<span class="sp a">✦</span><span class="sp b">✦</span><span class="sp c">✦</span></span>';
  var st=chip(fl,dyStreak(),t("streak"))+chip(tr,DY.b|0,t("best"));
- if(!done)return '<button class="cat dcard" data-c="dy"><span class="stars"></span><span class="toprow"><span class="eb"><span class="dot"></span>'+t("dyBadge")(dyN(d))+'</span><span class="tm" data-dends>⏱ '+t("dyEnds")(lf[0],lf[1])+'</span></span><span class="dt">'+t("dyTitle")+'</span><span class="ds">'+(sg?t("dyToday")+' <b class="tp">'+sg[1]+" "+(L==="ar"?sg[3]:sg[2])+"</b>":t("dySub"))+'</span><span class="chips">'+st+'<span class="shr">'+t("dyPlay")+'<svg class="pl" viewBox="0 0 24 24"><path d="M7 5v14l11-7z"/></svg></span></span>'+art+"</button>";
+ var fz=!done&&fzOffer(),fzb=fz?'<span class="fzbar">'+svg(FZI)+"<span>"+t("fzBar")(n(DY.s|0))+'</span><button data-fz>'+t("fzBtn")(n(FZC))+"</button></span>":"";
+ if(!done)return (fz?'<div class="cat dcard fzc" data-c="dy">':'<button class="cat dcard" data-c="dy">')+'<span class="stars"></span><span class="toprow"><span class="eb"><span class="dot"></span>'+t("dyBadge")(dyN(d))+'</span><span class="tm" data-dends>⏱ '+t("dyEnds")(lf[0],lf[1])+'</span></span><span class="dt">'+t("dyTitle")+'</span><span class="ds">'+(sg?t("dyToday")+' <b class="tp">'+sg[1]+" "+(L==="ar"?sg[3]:sg[2])+"</b>":t("dySub"))+'</span><span class="chips">'+st+'<span class="shr">'+t("dyPlay")+'<svg class="pl" viewBox="0 0 24 24"><path d="M7 5v14l11-7z"/></svg></span></span>'+art+fzb+(fz?"</div>":"</button>");
  return '<div class="cat dcard done'+(won?"":" lost")+'"><span class="stars"></span><span class="toprow"><span class="eb">'+t("dyBadge")(dyN(d))+'</span><span class="dg">'+(DY.r||[]).map(function(v){return v?"<i></i>":'<i class="x"></i>'}).join("")+'</span></span>'+
   '<span class="dt">'+t("dyDone")+'</span><span class="ds" data-dleft>'+t("dyNext")(lf[0],lf[1])+'</span><span class="row">'+st+'<button class="shr" data-dshare>'+share+t("dyShare")+"</button></span>"+art+"</div>"}
 function chip(ic,v,l){return '<span class="chip" aria-label="'+esc(l)+" "+v+'">'+ic+n(v)+"</span>"}
@@ -1039,6 +1057,7 @@ $("menu").onclick=function(e){if(e.target.closest("[data-off]")){sfx.tap();saveO
  if(e.target.closest("[data-cr]")){sfx.tap();CH=CHI;GRP="cr";menu();return}
  if(e.target.closest("[data-cshare]")){sfx.tap();CH.score=CHD[chKey()]||0;chalShare();return}
  if(e.target.closest("[data-dshare]")){sfx.tap();dyShare();return}
+ if(e.target.closest("[data-fz]")){sfx.tap();fzAsk();return}
  var b=e.target.closest(".cat");if(!b||b.classList.contains("done"))return;sfx.tap();
  if(b.dataset.c==="dy"){GRP=null;dailyGo();return}
  if(b.dataset.g){GRP=+b.dataset.g;menu();return}
@@ -1163,9 +1182,9 @@ $("home").onclick=function(){if($("menu").style.display==="flex")GRP=null;
 var SAD='<circle cx="12" cy="12" r="9"/><path d="M8 15.5c1-1.3 2.4-2 4-2s3 .7 4 2M9 9.5h.01M15 9.5h.01"/>',CUP='<path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3M12 14v3M8.5 20h7M10 17h4"/>';
 var BADGE={"🎉":'<circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5.5-6"/>',"✅":CUP,"🏆":CUP,"❌":'<path d="M7 7l10 10M17 7L7 17"/>',"💀":SAD,"😬":SAD,
  "💥":'<circle cx="10" cy="8" r="4"/><path d="M3 20c0-3.5 3-6 7-6s7 2.5 7 6M17 8l4 4M21 8l-4 4"/>',"😅":'<path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/>',
- "🤝":'<path d="M6 9.5h12M6 14.5h12"/>',"👆":'<path d="M9 11V5.5a1.5 1.5 0 0 1 3 0V11m0-1.5a1.5 1.5 0 0 1 3 0V12m0-1a1.5 1.5 0 0 1 3 0v3.5a6.5 6.5 0 0 1-6.5 6.5h-.5a6 6 0 0 1-5-2.7L4.5 15a1.5 1.5 0 0 1 2.4-1.8L9 15"/>'};
+ "🤝":'<path d="M6 9.5h12M6 14.5h12"/>',"❄":FZI,"👆":'<path d="M9 11V5.5a1.5 1.5 0 0 1 3 0V11m0-1.5a1.5 1.5 0 0 1 3 0V12m0-1a1.5 1.5 0 0 1 3 0v3.5a6.5 6.5 0 0 1-6.5 6.5h-.5a6 6 0 0 1-5-2.7L4.5 15a1.5 1.5 0 0 1 2.4-1.8L9 15"/>'};
 function sheet(ti,p,btns,d){clearTimeout(stT);var m=ti.match(/^([^\p{L}\p{N}\s]+)\s+(.+)$/u),e=m?m[1]:"";if(m)ti=m[2];
- var bi=BADGE[e];if(bi)$("sbadge").innerHTML=svg(bi);else $("sbadge").textContent=e;$("sheet").classList.toggle("good",/[🎉🏆✅😅🤝]/u.test(e));$("sheet").classList.toggle("bad",/[❌💀😬💥]/u.test(e));$("st").textContent=ti;$("sp").textContent=p;var sb=$("sb");sb.innerHTML="";
+ var bi=BADGE[e];if(bi)$("sbadge").innerHTML=svg(bi);else $("sbadge").textContent=e;$("sheet").classList.toggle("good",/[🎉🏆✅😅🤝]/u.test(e));$("sheet").classList.toggle("bad",/[❌💀😬💥]/u.test(e));$("sheet").classList.toggle("fz",e==="❄");$("st").textContent=ti;$("sp").textContent=p;var sb=$("sb");sb.innerHTML="";
  btns.forEach(function(b){var e=document.createElement("button");e.className="btn "+b[2];if(b[3])e.innerHTML=b[0];else if(b[0].indexOf("🔗 ")===0)e.innerHTML=IC.link+esc(b[0].slice(3));else e.textContent=b[0];e.onclick=b[1];sb.appendChild(e)});
  stT=setTimeout(function(){$("sheet").classList.add("show");
   // screen readers: focus moves to the first button and the menu and dock behind are out of reach (the cards stay
