@@ -79,8 +79,8 @@ CATS.push(
   ["Abdel Wahed El Sayed",1977,"عبد الواحد السيد"],["Ahmed 'Mido' Hossam",1983,"أحمد حسام (ميدو)","Mido (footballer)"],["Mahmoud 'Shikabala' Abdel Razek",1986,"محمود عبد الرازق (شيكابالا)","Shikabala"],
   ["Tarek Hamed",1988,"طارق حامد"],["Omar Gaber",1992,"عمر جابر"],["Ahmed Sayed 'Zizo'",1996,"أحمد سيد (زيزو)","Zizo (footballer)"]],
   {h:"Egyptian footballer",k:BORN,g:"p",s:"players",m:"eg",d:2}),
- Rd(["WHICH CLUB HAS THE","MOST EGYPTIAN SUPER CUPS",Q],["مين","كسب السوبر المصري أكتر",QA],"max",[
-  ["Al Ahly",16,"الأهلي","Al Ahly SC"],["Zamalek",4,"الزمالك","Zamalek SC"],["Arab Contractors",1,"المقاولون العرب","Al Mokawloon Al Arab SC"],
+ Rd(["NOT COUNTING AL AHLY, WHICH CLUB HAS THE","MOST EGYPTIAN SUPER CUPS",Q],["من غير الأهلي، مين","كسب السوبر المصري أكتر",QA],"max",[
+  ["Pyramids FC",0,"بيراميدز"],["Zamalek",4,"الزمالك","Zamalek SC"],["Arab Contractors",1,"المقاولون العرب","Al Mokawloon Al Arab SC"],
   ["Haras El Hodoud",1,"حرس الحدود","Haras El Hodoud SC"],["Tala'ea El Gaish",1,"طلائع الجيش","Tala'ea El Gaish SC"],["ENPPI",0,"إنبي","ENPPI SC"],
   ["Ghazl El Mahalla",0,"غزل المحلة","Ghazl El Mahalla SC"],["Ismaily",0,"الإسماعيلي","Ismaily SC"],["Al Masry",0,"المصري","Al Masry SC"]],
   {suf:TRA,h:"Egyptian football club",k:["SUPER CUPS","كاسات سوبر"],s:"trophies",m:"eg",d:1}),
@@ -130,5 +130,17 @@ Rd(["WHICH CLUB OUTSIDE CAIRO","WAS FOUNDED FIRST",Q],["أنهي نادي بره
   ["Ahmed 'Mido' Hossam",0,"أحمد حسام (ميدو)","Mido (footballer)"],["Hossam Ghaly",0,"حسام غالي"],["Amr Zaki",0,"عمرو زكي"],
   ["Ahmed Elmohamady",0,"أحمد المحمدي"],["Mohamed Salah",0,"محمد صلاح"],["Mostafa Mohamed",1,"مصطفى محمد","Mostafa Mohamed (footballer)"],
   ["Mohamed Elneny",0,"محمد النني"],["Mahmoud 'Trezeguet' Hassan",0,"محمود حسن (تريزيجيه)","Trézéguet (Egyptian footballer)"],["Omar Marmoush",0,"عمر مرموش"]],
-  {h:"Egyptian footballer",k:["PREMIER LEAGUE","البريميرليج"],s:"players",m:"eg",d:2,lab:[["PLAYED","لعب فيه"],["NEVER","ملعبش"]]})]}
+  {h:"Egyptian footballer",k:["PREMIER LEAGUE","البريميرليج"],s:"players",m:"eg",d:2,lab:[["PLAYED","لعب فيه"],["NEVER","ملعبش"]]}),
+
+ // more kinds of questions besides oldest/newest (odd one out, never won, closest to, most)
+ Rd(["WHICH CLUB HAS","WON THE LEAGUE",Q],["أنهي نادي","كسب الدوري قبل كده",QA],"odd",[
+  ["Al Masry",0,"المصري","Al Masry SC"],["Al Ittihad Alexandria",0,"الاتحاد السكندري","Al Ittihad Alexandria Club"],["ENPPI",0,"إنبي","ENPPI SC"],
+  ["Smouha",0,"سموحة","Smouha SC"],["Haras El Hodoud",0,"حرس الحدود","Haras El Hodoud SC"],["El Gouna",0,"الجونة","El Gouna FC"],
+  ["Wadi Degla",0,"وادي دجلة","Wadi Degla SC"],["Tala'ea El Gaish",0,"طلائع الجيش","Tala'ea El Gaish SC"],["Ghazl El Mahalla",1,"غزل المحلة","Ghazl El Mahalla SC"]],
+  {h:"Egyptian football club",k:["LEAGUE TITLE","الدوري"],s:"trophies",m:"eg",d:2,lab:[["NEVER WON IT","عمره ما كسبه"],["WON IT","كسبه"]]}),
+ Rd(["WHO NEVER WON","THE AFRICA CUP OF NATIONS",Q],["مين","عمره ما كسب أمم أفريقيا",QA],"odd",[
+  ["Essam El-Hadary",0,"عصام الحضري","Essam El Hadary"],["Ahmed Hassan",0,"أحمد حسن","Ahmed Hassan (footballer, born 1975)"],["Mohamed Aboutrika",0,"محمد أبو تريكة"],
+  ["Mohamed Zidan",0,"محمد زيدان"],["Amr Zaki",0,"عمرو زكي"],["Hosny Abd Rabo",0,"حسني عبد ربه"],
+  ["Wael Gomaa",0,"وائل جمعة"],["Ahmed Elmohamady",0,"أحمد المحمدي"],["Mohamed Salah",1,"محمد صلاح"]],
+  {h:"Egyptian footballer",k:["AFCON","أمم أفريقيا"],s:"players",m:"eg",d:2,lab:[["WON IT","كسبها"],["NEVER","ما كسبهاش"]]})]}
 );

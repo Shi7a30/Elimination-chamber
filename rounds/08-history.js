@@ -100,5 +100,12 @@ CATS.push(
   ["Baghdad",762,"بغداد"],["Cairo",969,"القاهرة"],["Moscow",1147,"موسكو"],
   ["Berlin",1237,"برلين"],["Amsterdam",1275,"أمستردام"],["New York City",1624,"نيويورك"],
   ["Sydney",1788,"سيدني"],["Washington, D.C.",1790,"واشنطن"],["Brasília",1960,"برازيليا"]],
-  {h:"city",k:["FOUNDED","اتأسست سنة"],s:"history",m:"w",d:2})]}
+  {h:"city",k:["FOUNDED","اتأسست سنة"],s:"history",m:"w",d:2}),
+
+ // more kinds of questions besides oldest/newest (odd one out, never won, closest to, most)
+ Rd(["WHO RULED","THE LONGEST",Q],["مين","قعد على العرش أطول مدة",QA],"max",[
+  ["Louis XIV",72,"لويس الرابع عشر"],["Queen Elizabeth II",70,"الملكة إليزابيث التانية","Elizabeth II"],["Franz Joseph I",67,"فرانتس يوزف الأول","Franz Joseph I of Austria"],
+  ["Ramesses II",66,"رمسيس التاني"],["Queen Victoria",63,"الملكة فيكتوريا"],["Hirohito",62,"هيروهيتو"],
+  ["Kangxi Emperor",61,"الإمبراطور كانغشي"],["Suleiman the Magnificent",45,"سليمان القانوني"],["Henry VIII",37,"هنري التامن"]],
+  {suf:[" years"," سنة"],h:"monarch",k:["ON THE THRONE","على العرش"],s:"history",m:"w",d:3})]}
 );

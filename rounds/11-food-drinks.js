@@ -202,5 +202,22 @@ CATS.push(
   ["Juhayna",0,"جهينة","Juhayna Food Industries"],["Edita",0,"إيديتا","Edita Food Industries"],["Domty",0,"دومتي"],
   ["Faragello",0,"فرجللو"],["Bisco Misr",0,"بسكو مصر","BiscoMisr"],["La Vache qui rit",1,"البقرة الضاحكة","The Laughing Cow"],
   ["Beyti",0,"بيتي"],["Obour Land",0,"عبور لاند"],["Vitrac",0,"فيتراك"]],
-  {h:"Egyptian food brand",k:["FROM","من"],s:"snacks",m:"eg",d:1,lab:[["EGYPT","مصر"],["FRANCE","فرنسا"]]})]}
+  {h:"Egyptian food brand",k:["FROM","من"],s:"snacks",m:"eg",d:1,lab:[["EGYPT","مصر"],["FRANCE","فرنسا"]]}),
+
+ // more kinds of questions besides oldest/newest (odd one out, never won, closest to, most)
+ Rd(["WHICH BRAND ISN'T","OWNED BY PEPSICO",Q],["أنهي براند","مش تبع بيبسيكو",QA],"odd",[
+  ["Lay's",0,"ليز"],["Doritos",0,"دوريتوس"],["Cheetos",0,"شيتوس"],
+  ["Mirinda",0,"ميرندا"],["Mountain Dew",0,"ماونتن ديو"],["Gatorade",0,"جاتوريد"],
+  ["Quaker",0,"كويكر","Quaker Oats Company"],["Sting",0,"ستينج","Sting (drink)"],["Fanta",1,"فانتا"]],
+  {h:"brand",k:["OWNED BY","تبع"],s:"snacks",m:"w",d:1,lab:[["PEPSICO","بيبسيكو"],["COCA-COLA","كوكاكولا"]]}),
+ Rd(["WHICH BRAND ISN'T","OWNED BY NESTLÉ",Q],["أنهي براند","مش تبع نستله",QA],"odd",[
+  ["Nescafé",0,"نسكافيه"],["Maggi",0,"ماجي"],["Smarties",0,"سمارتيز"],
+  ["KitKat",0,"كيت كات"],["Nesquik",0,"نسكويك"],["Cerelac",0,"سيريلاك"],
+  ["Purina",0,"بورينا"],["Lion bar",0,"لايون","Lion (chocolate bar)"],["Snickers",1,"سنيكرز"]],
+  {h:"brand",k:["OWNED BY","تبع"],s:"snacks",m:"w",d:2,lab:[["NESTLÉ","نستله"],["MARS","مارس"]]}),
+ Rd(["WHICH ONE","ISN'T EGYPTIAN",Q],["أنهي محل","مش مصري",QA],"odd",[
+  ["Abou Tarek",0,"أبو طارق"],["Gad",0,"جاد"],["Felfela",0,"فلفلة"],
+  ["Mo'men",0,"مؤمن"],["Abou Shakra",0,"أبو شقرة"],["El Abd",0,"العبد"],
+  ["Mandarine Koueider",0,"مندرين قويدر"],["Zooba",0,"زووبا"],["Paul",1,"بول","Paul (bakery)"]],
+  {h:"restaurant",k:["FROM","من"],s:"eats",m:"eg",d:1,lab:[["EGYPT","مصر"],["FRANCE","فرنسا"]]})]}
 );

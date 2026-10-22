@@ -21,5 +21,9 @@ while(seen.length<n)seen.push(...(await play(Math.min(5,n-seen.length))));
 if(new Set(seen).size!==n)problems.push('a round repeated before the category was used up ('+(n-new Set(seen).size)+' repeats)');
 // once used up, the next visit starts a new shuffled cycle with every round available
 const next=await play(n);if(new Set(next).size!==n)problems.push('new cycle repeated a round');
+// a category's order never has three year questions in a row until only year questions are left
+const yr=await pg.evaluate(()=>{SEEN={};const bad=[];[...new Set(rounds().map(r=>r.s))].forEach(id=>{for(let t=0;t<20;t++){const o=subOrder(id);
+ for(let i=2;i<o.length;i++)if(o[i].yr&&o[i-1].yr&&o[i-2].yr&&o.slice(i).some(r=>!r.yr)){bad.push(id);return}}});return bad});
+if(yr.length)problems.push('three year questions in a row in: '+yr.join(', '));
 console.log('category',id,'rounds',n);
 await b.close();finish('random-order',problems)})();
