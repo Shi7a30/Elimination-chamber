@@ -439,6 +439,7 @@ body[data-scr=game] #dock,body:not([data-scr]) #dock{display:none}
 .stt b{font-size:22px;font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
 .stt small{font-size:12px;font-weight:600;color:var(--mut);line-height:1.25}
 .stl{display:flex;flex-direction:column;gap:10px}
+.ver{margin:18px 0 4px;text-align:center;font-size:12px;color:var(--mut)}
 .str{background:var(--surf);border-radius:var(--r2);box-shadow:var(--sh1);padding:12px 14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 .str>span:first-child{flex:1;font-weight:700;font-size:16px;display:flex;align-items:center;gap:8px;min-width:110px}
 .str>span:first-child svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
@@ -549,7 +550,7 @@ var TX={
   chRound:function(a,b,s){return"🔗 Round "+a+"/"+b+" · Score "+s},chDone:"✅ Challenge done!",chYou:function(s,k){return"You got "+s+"/"+k+". Send the link and see if your friends can beat it."},
   chWin:"🏆 You win!",chLose:"😬 You lost!",chDraw:"🤝 Draw!",vs:function(s,b,x,k){return"You "+s+"/"+k+" · "+x+" "+b+"/"+k},
   share:"🔗 Send challenge",shareBack:"🔗 Send your score",copied:"Link copied!",msg:function(s,k){return"I got "+s+"/"+k+" on Shelhom! Can you beat me? 🔥"},
-  tHome:"Home",tStats:"Stats",stCoins:"Coins",stSolved:"Rounds solved",stBest:"Best streak",stScores:"Best scores",stGroups:"Rounds solved in each group",dyBadge:function(n){return"Daily · #"+n},dyTitle:"Daily round",dySub:"Same round for everyone",dyDone:"Done for today!",dyShare:"Share",dyToday:"Today:",dyPlay:"Play",dyWon:"WON",dyLost:"LOST",dyMon:["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"],dyEnds:function(h,m){return"Ends in "+(h?h+"h":m+"m")},dyRn:function(n){return"Daily round #"+n},
+  tHome:"Home",tStats:"Stats",stCoins:"Coins",stSolved:"Rounds solved",stBest:"Best streak",stScores:"Best scores",stGroups:"Rounds solved in each group",stVer:function(v,d){return v?"Version "+v+" · Last update: "+d:"Test copy (not the live site)"},verMon:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],verAm:"am",verPm:"pm",dyBadge:function(n){return"Daily · #"+n},dyTitle:"Daily round",dySub:"Same round for everyone",dyDone:"Done for today!",dyShare:"Share",dyToday:"Today:",dyPlay:"Play",dyWon:"WON",dyLost:"LOST",dyMon:["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"],dyEnds:function(h,m){return"Ends in "+(h?h+"h":m+"m")},dyRn:function(n){return"Daily round #"+n},
   dyNext:function(h,m){return"New question in "+(h?h+"h":m+"m")},dyMsg:function(n){return"Shelhom daily round #"+n},dyStreak:function(n){return"🔥 "+n+(n==="1"?" day":" days")+" in a row"},
   howT:"👆 How to play",howP:"Knock out the cards that are NOT the answer, one at a time, until only the right one is left. Knock out the answer and you lose! Tip: 📷 in a round puts your own photo on a card.",howOk:"Got it",
   leaveDy:"You'll lose today's round. There's one try a day.",leaveUndo:"You won't be able to undo this loss.",skipQ:"Skip this round?",skipTxt:function(k){return"Skipping ends your 🔥"+k+" streak."},skipBtn:"Skip",
@@ -573,7 +574,7 @@ var TX={
   chRound:function(a,b,s){return"🔗 جولة "+a+"/"+b+" · النتيجة "+s},chDone:"✅ خلصت التحدي!",chYou:function(s,k){return"جبت "+s+" من "+k+". ابعت اللينك وشوف صحابك هيعدّوك ولا لأ."},
   chWin:"🏆 كسبت!",chLose:"😬 خسرت!",chDraw:"🤝 تعادل!",vs:function(s,b,x,k){return"إنت "+s+" · "+x+" "+b+" (من "+k+")"},
   share:"🔗 ابعت التحدي",shareBack:"🔗 ابعت نتيجتك",copied:"اتنسخ اللينك!",msg:function(s,k){return"جبت "+s+" من "+k+" في شيلهم! تقدر تعدّيني؟ 🔥"},
-  tHome:"الرئيسية",tStats:"أرقامي",stCoins:"كوينز",stSolved:"جولات خلّصتها",stBest:"أطول ستريك",stScores:"أحسن أرقامك",stGroups:"خلّصت كام جولة في كل مجموعة",dyBadge:function(n){return"رقم "+n},dyTitle:"سؤال اليوم",dySub:"سؤال جديد كل يوم، هو هو لكل صحابك",dyDone:"جاوبت النهارده!",dyShare:"شارك",dyToday:"النهارده:",dyPlay:"العب",dyWon:"كسبت",dyLost:"خسرت",dyMon:["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"],dyEnds:function(h,m){return"فاضل "+(h?(h===1?"ساعة":h===2?"ساعتين":h<=10?h+" ساعات":h+" ساعة"):(m===1?"دقيقة":m===2?"دقيقتين":m<=10?m+" دقايق":m+" دقيقة"))},dyRn:function(n){return"سؤال اليوم رقم "+n},
+  tHome:"الرئيسية",tStats:"أرقامي",stCoins:"كوينز",stSolved:"جولات خلّصتها",stBest:"أطول ستريك",stScores:"أحسن أرقامك",stGroups:"خلّصت كام جولة في كل مجموعة",stVer:function(v,d){return v?"النسخة "+v+" · آخر تحديث: "+d:"نسخة تجربة (مش اللي على الموقع)"},verMon:["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"],verAm:"ص",verPm:"م",dyBadge:function(n){return"رقم "+n},dyTitle:"سؤال اليوم",dySub:"سؤال جديد كل يوم، هو هو لكل صحابك",dyDone:"جاوبت النهارده!",dyShare:"شارك",dyToday:"النهارده:",dyPlay:"العب",dyWon:"كسبت",dyLost:"خسرت",dyMon:["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"],dyEnds:function(h,m){return"فاضل "+(h?(h===1?"ساعة":h===2?"ساعتين":h<=10?h+" ساعات":h+" ساعة"):(m===1?"دقيقة":m===2?"دقيقتين":m<=10?m+" دقايق":m+" دقيقة"))},dyRn:function(n){return"سؤال اليوم رقم "+n},
   dyNext:function(h,m){var hs=h===1?"ساعة":h===2?"ساعتين":h<=10?h+" ساعات":h+" ساعة",ms=m===1?"دقيقة":m===2?"دقيقتين":m<=10?m+" دقايق":m+" دقيقة";return"السؤال الجاي بعد "+(h?hs:ms)},dyMsg:function(n){return"شيلهم - سؤال اليوم رقم "+n},dyStreak:function(n){return"🔥 "+(n==="1"?"أول يوم":"ستريك "+arN(n,"يومين","أيام","يوم"))},
   howT:"👆 إزاي تلعب",howP:"شيل الكروت الغلط واحد واحد لحد ما يفضل الكارت الصح لوحده. لو شلت الإجابة الصح تخسر! وعلى فكرة: 📷 جوه الجولة بيخليك تحط صورة من عندك على أي كارت.",howOk:"تمام",
   leaveDy:"هتخسر سؤال النهارده، وكل يوم ليه محاولة واحدة بس.",leaveUndo:"لو خرجت، مش هتقدر تعمل رجوع للدور ده.",skipQ:"تعدّي الجولة دي؟",skipTxt:function(k){return"لو عدّيتها هتخسر الستريك 🔥"+k+"."},skipBtn:"عدّي",
@@ -769,8 +770,13 @@ var CH=null;
 // DY (saved as elim_daily): d = last day played, r = that day's taps (1 = knocked out a wrong card, 0 = hit the answer), w = won it,
 // s = days won in a row, lw = last day won, b = best run, base = the run before today's round started (leaving midway counts as a loss).
 var DY=obj(ld("elim_daily",{}));var DAY0=Date.UTC(2026,9,19);
-function cairo(){var d=new Date();try{var p={};new Intl.DateTimeFormat("en-US",{timeZone:"Africa/Cairo",year:"numeric",month:"numeric",day:"numeric",hour:"numeric",minute:"numeric",hourCycle:"h23"}).formatToParts(d).forEach(function(x){if(x.type!=="literal")p[x.type]=+x.value});if(p.year)return p}catch(e){}
+function cairo(at){var d=at||new Date();try{var p={};new Intl.DateTimeFormat("en-US",{timeZone:"Africa/Cairo",year:"numeric",month:"numeric",day:"numeric",hour:"numeric",minute:"numeric",hourCycle:"h23"}).formatToParts(d).forEach(function(x){if(x.type!=="literal")p[x.type]=+x.value});if(p.year)return p}catch(e){}
  return{year:d.getFullYear(),month:d.getMonth()+1,day:d.getDate(),hour:d.getHours(),minute:d.getMinutes()}}
+// Which copy of the game this is. The publish step writes "<publish time> <version> <commit>" here (the version is the number of commits on main,
+// so it goes up with every merge); "dev" means a copy that was never published.
+var BUILD="dev";
+function buildTxt(){var m=/^(\S+) (\d+) (\w+)$/.exec(BUILD),at=m&&new Date(m[1]);if(!at||isNaN(at))return t("stVer")("","");var p=cairo(at),h=p.hour%12||12,mo=t("verMon")[p.month-1];
+ return t("stVer")(m[2],p.day+" "+mo+" "+p.year+(L==="ar"?"، ":", ")+h+":"+(p.minute<10?"0":"")+p.minute+" "+t(p.hour<12?"verAm":"verPm"))}
 function dayNo(){var p=cairo();return Math.round((Date.UTC(p.year,p.month-1,p.day)-DAY0)/864e5)+1}
 function dayLeft(){var p=cairo(),m=Math.min(24*60-1,24*60-((p.hour%24)*60+p.minute));return[Math.floor(m/60),m%60]}
 // The schedule is written down in daily.js (one round id per day), so adding rounds never changes a day: everyone gets the same round
@@ -994,7 +1000,8 @@ function statsPage(){var tile=function(v,l){return '<div class="stt"><b>'+v+"</b
   '<h3 class="dgh">'+t("stScores")+'</h3><div class="stl">'+row(IC.play.replace("<svg",'<svg style="fill:currentColor;stroke:none"'),t("endless"),regs(eBest))+row(IC.duel,t("duel"),regs(dBest))+
   row(IC.cal,t("dyTitle"),chip(IC.flame,dyStreak(),t("streak"))+chip(IC.trophy,DY.b|0,t("best")))+"</div>"+
   '<h3 class="dgh">'+t("stGroups")+'</h3><div class="subs">'+GROUPS.map(function(g,i){var ids=g.s.map(function(x){return x[0]}),rs=ALL.filter(function(r){return ids.indexOf(r.s)>=0});if(!rs.length)return"";
-   return card("sc grp",'data-g="'+i+'"',g.e,L==="ar"?g.a:g.n,"",solved(rs),rs.length,GC[i])}).join("")+"</div>"}
+   return card("sc grp",'data-g="'+i+'"',g.e,L==="ar"?g.a:g.n,"",solved(rs),rs.length,GC[i])}).join("")+"</div>"+
+  '<p class="ver">'+buildTxt()+"</p>"}
 // Hot potato and challenge, opened from the Multiplayer tile.
 function mpPage(){var row=function(c,e,ti,sub){return '<button class="cat row" data-c="'+c+'"><span class="se">'+e+"</span><span>"+ti+"<small>"+sub+"</small></span>"+IC.chev+"</button>"};
  return ghead("",t("mp"))+'<div class="modes">'+row("h","🥔",t("hot"),t("hotSub"))+row("c",'<span style="color:#3b82f6;display:flex">'+IC.link+"</span>",t("chal"),t("chalSub"))+"</div>"}

@@ -14,10 +14,17 @@ npx playwright install chromium
 ## Run
 
 ```bash
-npm test              # all 12 checks (about 6 minutes)
-npm run test:quick    # everything except the full play-through (about 1 minute)
+npm test              # all checks (about 20 minutes)
+npm run test:quick    # everything except the full play-through (about 5 minutes)
 node tests/duel.js    # one check on its own
+SHELHOM_SHARD=2/3 node tests/full-playthrough.js   # one third of the play-through
 ```
+
+On GitHub the play-through is split into 3 parts that run at the same time on separate machines (`SHELHOM_SHARD`), next to one machine for the other checks, so a run takes about a third as long. Together the parts still play every round. In CI a failed check is run once more (`--retry`); if it passes the second time the run stays green but shows a yellow "flaky" warning.
+
+## When the site does not update
+
+`.github/workflows/pages.yml` publishes the site after every merge to `main`. If its tests or the publish fail, it opens a GitHub issue labelled `publish-failed` and assigns it to the repo owner; the next successful publish closes it. The Stats page shows "Version <n> · Last update: <date, time>" so you can see which version a phone is running. The version is the number of commits on `main`, so it goes up by one with every merge.
 
 The tests open `../index.html` next to the `tests` folder. To test another copy, set `SHELHOM_PAGE`, e.g. `SHELHOM_PAGE=~/Desktop/other/index.html npm test`.
 
@@ -42,7 +49,7 @@ Screenshots (phone layouts, Arabic screens, duel pages…) are saved in `tests/s
 | `flaw-fixes.js` | Popups survive a language switch (duel run over, challenge results), a duel moves on after photo mode closes, an undo keeps an Endless run going, replaying a solved round pays no coins or streak, Home asks before ending a game, and the built-in photos load after the game starts. Review fixes: how-to-play shows on the first game only, Skip warns before ending a 🔥 streak, knocked-out cards turn yellow, Arabic round counts use the right plural, and the Daily card's 🔥/🏆 stay above the dock on a short screen. |
 | `undo.js` | Undo after a loss: no Undo button in the bar, the price doubles each time you save the same streak (30, 60, 120) and shows the coin icon, a saved round pays no coins, the price survives leaving and reloading, accepting a loss resets it to 30, too few coins hides Undo, Endless allows several undos per run, Arabic popup text. |
 | `daily.js` | Daily round: two players get the same round and card order, one try a day (reload and tapping the done card don't restart it), win/lose/missed-day streak and best, leaving midway counts, no repeats until every round has had its day, every round is listed in `daily.js` and day 1 stays the same, Arabic wording, the dock highlight, and the top bar keeping coins left and sound/language right in both languages (also on iPhone SE). |
-| `stats.js` | The dock has five buttons with Home raised in the centre, and the Stats page (أرقامي) shows coins, rounds solved, best streak and the Endless / Duel / Daily bests, stays open after switching to Arabic, and Back returns Home. |
+| `stats.js` | The dock has five buttons with Home raised in the centre, and the Stats page (أرقامي) shows coins, rounds solved, best streak and the Endless / Duel / Daily bests, stays open after switching to Arabic, shows the version line (version number and publish time in Cairo, or "Test copy"), and Back returns Home. |
 | `edge-cases.js` | The phone back button goes to the previous page and asks before leaving a game; the update banner waits until you leave a game; a friend's challenge stays on Home until played (even after reopening); hot potato doesn't repeat a round until the group runs out and 8 names fit in one row; the seen-rounds order counts only your region; two cards with the same name never share a board or duel; setting the clock back doesn't reopen the Daily round; the undo price survives reopening; broken or full storage is handled; big coin numbers and 3 popup buttons fit a 320px phone. |
 | `full-playthrough.js` | Plays **every round** of every subcategory, alternating English and Arabic. Covers win, lose, undo, coin and streak math, flip and peek, Arabic digits, RTL, region filters, skip, built-in photos, uploading your own photo, saving after reload, endless mode (25 rounds, run over, undo, new run, best score) and working offline. Wikipedia is mocked, so it needs no internet. |
 
