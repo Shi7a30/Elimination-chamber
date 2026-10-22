@@ -13,7 +13,8 @@ concurrency:
 jobs:
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    # The full play-through grows with every round (about 15 minutes at 410 rounds); 40 matches tests.yml.
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -32,9 +33,13 @@ jobs:
       - name: Collect the game files
         run: |
           mkdir _site
-          cp -r index.html manifest.webmanifest sw.js rounds photos icons _site/
+          cp -r index.html daily.js manifest.webmanifest sw.js rounds photos icons _site/
           sed -i "s/'shelhom-dev'/'shelhom-${GITHUB_SHA::7}'/" _site/sw.js
           grep -q "shelhom-${GITHUB_SHA::7}" _site/sw.js
+          # Every file the offline app saves must be published, or the phone never installs the new version.
+          for f in $(grep -o "'[a-z0-9/_.-]*\.\(js\|html\|webmanifest\|png\|svg\)'" _site/sw.js | tr -d "'"); do
+            test -f "_site/$f" || { echo "Missing from the site: $f"; exit 1; }
+          done
       - uses: actions/upload-pages-artifact@v3
       - id: deployment
         uses: actions/deploy-pages@v4
