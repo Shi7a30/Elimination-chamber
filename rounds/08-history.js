@@ -107,5 +107,32 @@ CATS.push(
   ["Louis XIV",72,"لويس الرابع عشر"],["Queen Elizabeth II",70,"الملكة إليزابيث التانية","Elizabeth II"],["Franz Joseph I",67,"فرانتس يوزف الأول","Franz Joseph I of Austria"],
   ["Ramesses II",66,"رمسيس التاني"],["Queen Victoria",63,"الملكة فيكتوريا"],["Hirohito",62,"هيروهيتو"],
   ["Kangxi Emperor",61,"الإمبراطور كانغشي"],["Suleiman the Magnificent",45,"سليمان القانوني"],["Henry VIII",37,"هنري التامن"]],
-  {suf:[" years"," سنة"],h:"monarch",k:["ON THE THRONE","على العرش"],s:"history",m:"w",d:3})]}
+  {suf:[" years"," سنة"],h:"monarch",k:["ON THE THRONE","على العرش"],s:"history",m:"w",d:3}),
+
+ // more Egypt rounds (odd one out)
+ Rd(["WHO","WASN'T A PHARAOH","ON THIS LIST"],["مين","مكانش فرعون","في القايمة دي؟"],"odd",[
+  ["Khufu",0,"خوفو"],["Ramesses II",0,"رمسيس التاني"],["Tutankhamun",0,"توت عنخ آمون"],
+  ["Hatshepsut",0,"حتشبسوت"],["Akhenaten",0,"إخناتون"],["Djoser",0,"زوسر"],
+  ["Seti I",0,"سيتي الأول"],["Thutmose III",0,"تحتمس التالت"],["Imhotep",1,"إمحتب"]],
+  {h:"ancient Egypt",k:["WAS A","كان"],s:"history",m:"eg",d:2,lab:[["PHARAOH","فرعون"],["ARCHITECT","مهندس"]]}),
+ Rd(["WHICH NOVEL","ISN'T BY NAGUIB MAHFOUZ","ON THIS LIST"],["أنهي رواية","مش لنجيب محفوظ","في القايمة دي؟"],"odd",[
+  ["Bein el qasrein",0,"بين القصرين","Palace Walk"],["Qasr el shoq",0,"قصر الشوق","Palace of Desire"],["El sokkareya",0,"السكرية","Sugar Street"],
+  ["Zo2a2 el medaq",0,"زقاق المدق","Midaq Alley"],["Awlad haretna",0,"أولاد حارتنا","Children of the Alley"],["El harafeesh",0,"الحرافيش","The Harafish"],
+  ["Miramar",0,"ميرامار","Miramar (novel)"],["El less wel kilab",0,"اللص والكلاب","The Thief and the Dogs"],["3omaret ya3koubian",1,"عمارة يعقوبيان","The Yacoubian Building (film)"]],
+  {h:"Egyptian novel",k:["WRITTEN BY","كتبها"],s:"history",m:"eg",d:2,lab:[["MAHFOUZ","نجيب محفوظ"],["AL ASWANY","علاء الأسواني"]]}),
+ Rd(["WHICH LANDMARK","ISN'T IN ALEXANDRIA","ON THIS LIST"],["أنهي مكان","مش في إسكندرية","في القايمة دي؟"],"odd",[
+  ["Qaitbay Citadel",0,"قلعة قايتباي","Citadel of Qaitbay"],["Bibliotheca Alexandrina",0,"مكتبة الإسكندرية"],["Montaza Palace",0,"قصر المنتزه"],
+  ["Pompey's Pillar",0,"عمود السواري"],["Kom El Shoqafa",0,"مقابر كوم الشقافة","Catacombs of Kom El Shoqafa"],["Stanley Bridge",0,"كوبري ستانلي"],
+  ["Kom El Dikka",0,"المسرح الروماني (كوم الدكة)","Kom El Deka"],["El Mursi Abul Abbas Mosque",0,"جامع المرسي أبو العباس","Abu al-Abbas al-Mursi Mosque"],["Baron Empain Palace",1,"قصر البارون"]],
+  {h:"Egypt landmark",k:["CITY","المدينة"],s:"history",m:"eg",d:1,lab:[["ALEXANDRIA","إسكندرية"],["CAIRO","القاهرة"]]}),
+ Rd(["WHICH SITE","ISN'T IN LUXOR","ON THIS LIST"],["أنهي أثر","مش في الأقصر","في القايمة دي؟"],"odd",[
+  ["Karnak Temple",0,"معبد الكرنك","Karnak"],["Luxor Temple",0,"معبد الأقصر"],["Valley of the Kings",0,"وادي الملوك"],
+  ["Temple of Hatshepsut",0,"معبد حتشبسوت","Mortuary Temple of Hatshepsut"],["Colossi of Memnon",0,"تمثالي ممنون"],["Medinet Habu",0,"مدينة هابو","Medinet Habu (temple)"],
+  ["Ramesseum",0,"الرامسيوم"],["Valley of the Queens",0,"وادي الملكات"],["Abu Simbel",1,"أبو سمبل","Abu Simbel temples"]],
+  {h:"ancient Egypt",k:["CITY","المدينة"],s:"history",m:"eg",d:2,lab:[["LUXOR","الأقصر"],["ASWAN","أسوان"]]}),
+ Rd(["WHICH SITE","ISN'T IN ASWAN","ON THIS LIST"],["أنهي أثر","مش في أسوان","في القايمة دي؟"],"odd",[
+  ["Philae Temple",0,"معبد فيلة","Philae"],["Abu Simbel",0,"أبو سمبل","Abu Simbel temples"],["High Dam",0,"السد العالي","Aswan High Dam"],
+  ["Kom Ombo Temple",0,"معبد كوم امبو","Temple of Kom Ombo"],["Elephantine Island",0,"جزيرة الفنتين","Elephantine"],["Unfinished Obelisk",0,"المسلة الناقصة"],
+  ["Nubian Museum",0,"متحف النوبة"],["Edfu Temple",0,"معبد إدفو","Temple of Edfu"],["Dendera Temple",1,"معبد دندرة","Dendera Temple complex"]],
+  {h:"ancient Egypt",k:["GOVERNORATE","المحافظة"],s:"history",m:"eg",d:3,lab:[["ASWAN","أسوان"],["QENA","قنا"]]})]}
 );

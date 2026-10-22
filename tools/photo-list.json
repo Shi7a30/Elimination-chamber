@@ -25218,5 +25218,392 @@
   "ar_hint": "",
   "logo": false,
   "skip": false
+ },
+ {
+  "name": "Scarab (Khepri)",
+  "title": "Scarabaeus sacer",
+  "hint": "animal",
+  "ar": "الجعران (خبري)",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Cobra (Wadjet)",
+  "title": "Egyptian cobra",
+  "hint": "animal",
+  "ar": "الكوبرا (واجيت)",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Jerboa",
+  "title": "Lesser Egyptian jerboa",
+  "hint": "animal",
+  "ar": "الجربوع",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Meerkat",
+  "title": "Meerkat",
+  "hint": "animal",
+  "ar": "الميركات",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Parrotfish",
+  "title": "Parrotfish",
+  "hint": "Red Sea",
+  "ar": "سمكة الببغاء",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Stonefish",
+  "title": "Stonefish",
+  "hint": "Red Sea",
+  "ar": "سمكة الحجر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Imhotep",
+  "title": "Imhotep",
+  "hint": "ancient Egypt",
+  "ar": "إمحتب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Bein el qasrein",
+  "title": "Palace Walk",
+  "hint": "Egyptian novel",
+  "ar": "بين القصرين",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Qasr el shoq",
+  "title": "Palace of Desire",
+  "hint": "Egyptian novel",
+  "ar": "قصر الشوق",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "El sokkareya",
+  "title": "Sugar Street",
+  "hint": "Egyptian novel",
+  "ar": "السكرية",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Zo2a2 el medaq",
+  "title": "Midaq Alley",
+  "hint": "Egyptian novel",
+  "ar": "زقاق المدق",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Awlad haretna",
+  "title": "Children of the Alley",
+  "hint": "Egyptian novel",
+  "ar": "أولاد حارتنا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "El harafeesh",
+  "title": "The Harafish",
+  "hint": "Egyptian novel",
+  "ar": "الحرافيش",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Miramar",
+  "title": "Miramar (novel)",
+  "hint": "Egyptian novel",
+  "ar": "ميرامار",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "El less wel kilab",
+  "title": "The Thief and the Dogs",
+  "hint": "Egyptian novel",
+  "ar": "اللص والكلاب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Montaza Palace",
+  "title": "Montaza Palace",
+  "hint": "Egypt landmark",
+  "ar": "قصر المنتزه",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Kom El Shoqafa",
+  "title": "Catacombs of Kom El Shoqafa",
+  "hint": "Egypt landmark",
+  "ar": "مقابر كوم الشقافة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Stanley Bridge",
+  "title": "Stanley Bridge",
+  "hint": "Egypt landmark",
+  "ar": "كوبري ستانلي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Kom El Dikka",
+  "title": "Kom El Deka",
+  "hint": "Egypt landmark",
+  "ar": "المسرح الروماني (كوم الدكة)",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "El Mursi Abul Abbas Mosque",
+  "title": "Abu al-Abbas al-Mursi Mosque",
+  "hint": "Egypt landmark",
+  "ar": "جامع المرسي أبو العباس",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Karnak Temple",
+  "title": "Karnak",
+  "hint": "ancient Egypt",
+  "ar": "معبد الكرنك",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Luxor Temple",
+  "title": "Luxor Temple",
+  "hint": "ancient Egypt",
+  "ar": "معبد الأقصر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Valley of the Kings",
+  "title": "Valley of the Kings",
+  "hint": "ancient Egypt",
+  "ar": "وادي الملوك",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Temple of Hatshepsut",
+  "title": "Mortuary Temple of Hatshepsut",
+  "hint": "ancient Egypt",
+  "ar": "معبد حتشبسوت",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Colossi of Memnon",
+  "title": "Colossi of Memnon",
+  "hint": "ancient Egypt",
+  "ar": "تمثالي ممنون",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Medinet Habu",
+  "title": "Medinet Habu (temple)",
+  "hint": "ancient Egypt",
+  "ar": "مدينة هابو",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ramesseum",
+  "title": "Ramesseum",
+  "hint": "ancient Egypt",
+  "ar": "الرامسيوم",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Valley of the Queens",
+  "title": "Valley of the Queens",
+  "hint": "ancient Egypt",
+  "ar": "وادي الملكات",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Philae Temple",
+  "title": "Philae",
+  "hint": "ancient Egypt",
+  "ar": "معبد فيلة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "High Dam",
+  "title": "Aswan High Dam",
+  "hint": "ancient Egypt",
+  "ar": "السد العالي",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Kom Ombo Temple",
+  "title": "Temple of Kom Ombo",
+  "hint": "ancient Egypt",
+  "ar": "معبد كوم امبو",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Elephantine Island",
+  "title": "Elephantine",
+  "hint": "ancient Egypt",
+  "ar": "جزيرة الفنتين",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Unfinished Obelisk",
+  "title": "Unfinished Obelisk",
+  "hint": "ancient Egypt",
+  "ar": "المسلة الناقصة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Edfu Temple",
+  "title": "Temple of Edfu",
+  "hint": "ancient Egypt",
+  "ar": "معبد إدفو",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Dendera Temple",
+  "title": "Dendera Temple complex",
+  "hint": "ancient Egypt",
+  "ar": "معبد دندرة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Safaga",
+  "title": "Safaga",
+  "hint": "Egypt",
+  "ar": "سفاجا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "El Quseir",
+  "title": "Quseir",
+  "hint": "Egypt",
+  "ar": "القصير",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ain Sokhna",
+  "title": "Ain Sokhna",
+  "hint": "Egypt",
+  "ar": "العين السخنة",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ras Gharib",
+  "title": "Ras Gharib",
+  "hint": "Egypt",
+  "ar": "رأس غارب",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Qena",
+  "title": "Qena",
+  "hint": "Egypt",
+  "ar": "قنا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Sohag",
+  "title": "Sohag",
+  "hint": "Egypt",
+  "ar": "سوهاج",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Asyut",
+  "title": "Asyut",
+  "hint": "Egypt",
+  "ar": "أسيوط",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Beni Suef",
+  "title": "Beni Suef",
+  "hint": "Egypt",
+  "ar": "بني سويف",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
  }
 ]
