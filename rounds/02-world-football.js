@@ -55,7 +55,7 @@ CATS.push(
   ["Thibaut Courtois",1992,"تيبو كورتوا"],["Jan Oblak",1993,"يان أوبلاك"],["Gianluigi Donnarumma",1999,"جيانلويجي دوناروما"]],
   {h:"footballer",k:BORN,g:"p",s:"players",m:"w",d:2}),
  Rd(["WHO WON THE","BALLON D'OR MOST RECENTLY",Q],["مين","آخر واحد كسب البالون دور",QA],"max",[
-  ["Ronaldo Nazário",2002,"رونالدو الظاهرة","Ronaldo (Brazilian footballer)"],["Zinedine Zidane",1998,"زين الدين زيدان"],["Ronaldinho Gaúcho",2005,"رونالدينيو","Ronaldinho"],
+  ["Ronaldo Nazário",2002,"رونالدو الظاهرة","Ronaldo (Brazilian footballer)"],["Harry Kane",2026,"هاري كين"],["Ronaldinho Gaúcho",2005,"رونالدينيو","Ronaldinho"],
   ["Ricardo Kaká",2007,"كاكا","Kaká"],["Cristiano Ronaldo",2017,"كريستيانو رونالدو"],["Lionel Messi",2023,"ليونيل ميسي"],
   ["Luka Modrić",2018,"لوكا مودريتش"],["Karim Benzema",2022,"كريم بنزيما"],["Ousmane Dembélé",2025,"عثمان ديمبلي"]],
   {h:"footballer",k:["LATEST BALLON D'OR","آخر كورة دهبية"],s:"players",m:"w",d:2}),
