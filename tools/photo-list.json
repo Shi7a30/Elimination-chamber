@@ -14744,14 +14744,13 @@
   "skip": false
  },
  {
-  "name": "All Too Well (10 Minute Version)",
-  "title": "All Too Well",
+  "name": "The End",
+  "title": "The Doors (album)",
   "hint": "song",
-  "ar": "أول تو ويل (١٠ دقايق)",
+  "ar": "ذا إند",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": false,
-  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/c6/27/9c/c6279c07-9329-827d-31c4-f5d4c7d99ff4/21UM1IM25046.rgb.jpg/600x600bb.jpg"
+  "skip": false
  },
  {
   "name": "Free Bird",
@@ -25607,10 +25606,69 @@
   "skip": false
  },
  {
-  "name": "3omaret ya3koubian (novel)",
+  "name": "3emaret ya3koubian",
   "title": "The Yacoubian Building",
   "hint": "Egyptian novel",
   "ar": "عمارة يعقوبيان",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Crocodile",
+  "title": "Nile crocodile",
+  "hint": "animal",
+  "ar": "التمساح",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "Sobek statue",
+   "Sobek Kom Ombo relief"
+  ],
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Statuette_of_the_crocodile_Sobek%2C_limestone_-_Museo_Egizio%2C_Turin_C_934_p01.jpg/500px-Statuette_of_the_crocodile_Sobek%2C_limestone_-_Museo_Egizio%2C_Turin_C_934_p01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+ },
+ {
+  "name": "Jackal",
+  "title": "Golden jackal",
+  "hint": "animal",
+  "ar": "ابن آوى",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ibis",
+  "title": "African sacred ibis",
+  "hint": "animal",
+  "ar": "أبو منجل",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Falcon",
+  "title": "Peregrine falcon",
+  "hint": "animal",
+  "ar": "الصقر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Scarab",
+  "title": "Scarabaeus sacer",
+  "hint": "animal",
+  "ar": "الجعران",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Cobra",
+  "title": "Egyptian cobra",
+  "hint": "animal",
+  "ar": "الكوبرا",
   "ar_hint": "",
   "logo": false,
   "skip": false

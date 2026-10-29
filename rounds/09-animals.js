@@ -111,9 +111,9 @@ CATS.push(
 
  // more Egypt rounds (odd one out)
  Rd(["WHICH ANIMAL","WASN'T SACRED IN ANCIENT EGYPT","ON THIS LIST"],["أنهي حيوان","مكانش مقدس عند الفراعنة","في القايمة دي؟"],"odd",[
-  ["Cat (Bastet)",0,"القطة (باستت)","Cat"],["Ibis (Thoth)",0,"أبو منجل (تحوت)","African sacred ibis"],["Falcon (Horus)",0,"الصقر (حورس)","Peregrine falcon"],
-  ["Jackal (Anubis)",0,"ابن آوى (أنوبيس)","Golden jackal"],["Crocodile (Sobek)",0,"التمساح (سوبك)","Nile crocodile"],["Hippo (Taweret)",0,"فرس النهر (تاورت)","Hippopotamus"],
-  ["Scarab (Khepri)",0,"الجعران (خبري)","Scarabaeus sacer"],["Cobra (Wadjet)",0,"الكوبرا (واجيت)","Egyptian cobra"],["Camel",1,"الجمل","Dromedary"]],
+  ["Cat",0,"القطة"],["Ibis",0,"أبو منجل","African sacred ibis"],["Falcon",0,"الصقر","Peregrine falcon"],
+  ["Jackal",0,"ابن آوى","Golden jackal"],["Crocodile",0,"التمساح","Nile crocodile"],["Hippo",0,"فرس النهر","Hippopotamus"],
+  ["Scarab",0,"الجعران","Scarabaeus sacer"],["Cobra",0,"الكوبرا","Egyptian cobra"],["Camel",1,"الجمل","Dromedary"]],
   {h:"animal",k:["IN ANCIENT EGYPT","عند الفراعنة"],s:"animals",m:"eg",d:2,lab:[["SACRED","مقدس"],["NOT SACRED","مش مقدس"]]}),
  Rd(["WHICH ANIMAL","DOESN'T LIVE IN EGYPT","ON THIS LIST"],["أنهي حيوان","مش عايش في مصر","في القايمة دي؟"],"odd",[
   ["Fennec fox",0,"الفنك (ثعلب الصحرا)"],["Nubian ibex",0,"الوعل النوبي"],["Dorcas gazelle",0,"الغزال المصري"],

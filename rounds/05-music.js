@@ -157,7 +157,7 @@ CATS.push(
   ["Gold Digger",2005,"جولد ديجر","Gold Digger (Kanye West song)"],["HUMBLE.",2017,"هامبل"],["Not Like Us",2024,"نوت لايك أس"]],
   {h:"song",k:["RELEASED","نزلت سنة"],dt:["Song released","نزول الأغنية"],g:"y",s:"songs",m:"w",d:2}),
  Rd(["WHICH SONG IS","THE LONGEST",Q],["أنهي أغنية","أطول",QA],"max",[
-  ["All Too Well (10 Minute Version)",10.2,"أول تو ويل (10 دقايق)","All Too Well"],["Free Bird",9.1,"فري بيرد"],["November Rain",9.0,"نوفمبر رين"],
+  ["The End",11.7,"ذا إند","The End (The Doors song)"],["Free Bird",9.1,"فري بيرد"],["November Rain",9.0,"نوفمبر رين"],
   ["American Pie",8.6,"أمريكان باي","American Pie (song)"],["Stairway to Heaven",8.0,"ستيرواي تو هيفن"],["Hey Jude",7.2,"هاي جود"],
   ["Hotel California",6.5,"هوتيل كاليفورنيا","Hotel California (Eagles song)"],["Like a Rolling Stone",6.2,"لايك أ رولينج ستون"],["Bohemian Rhapsody",5.9,"بوهيميان رابسودي"]],
   {pre:["~","~"],suf:[" min"," دقيقة"],dp:1,h:"song",k:["LENGTH","مدة الأغنية"],s:"songs",m:"w",d:2}),

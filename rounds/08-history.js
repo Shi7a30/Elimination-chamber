@@ -118,7 +118,7 @@ CATS.push(
  Rd(["WHICH NOVEL","ISN'T BY NAGUIB MAHFOUZ","ON THIS LIST"],["أنهي رواية","مش لنجيب محفوظ","في القايمة دي؟"],"odd",[
   ["Bein el qasrein",0,"بين القصرين","Palace Walk"],["Qasr el shoq",0,"قصر الشوق","Palace of Desire"],["El sokkareya",0,"السكرية","Sugar Street"],
   ["Zo2a2 el medaq",0,"زقاق المدق","Midaq Alley"],["Awlad haretna",0,"أولاد حارتنا","Children of the Alley"],["El harafeesh",0,"الحرافيش","The Harafish"],
-  ["Miramar",0,"ميرامار","Miramar (novel)"],["El less wel kilab",0,"اللص والكلاب","The Thief and the Dogs"],["3omaret ya3koubian (novel)",1,"عمارة يعقوبيان","The Yacoubian Building"]],
+  ["Miramar",0,"ميرامار","Miramar (novel)"],["El less wel kilab",0,"اللص والكلاب","The Thief and the Dogs"],["3emaret ya3koubian",1,"عمارة يعقوبيان","The Yacoubian Building"]],
   {h:"Egyptian novel",k:["WRITTEN BY","كتبها"],s:"history",m:"eg",d:2,lab:[["MAHFOUZ","نجيب محفوظ"],["AL ASWANY","علاء الأسواني"]]}),
  Rd(["WHICH LANDMARK","ISN'T IN ALEXANDRIA","ON THIS LIST"],["أنهي مكان","مش في إسكندرية","في القايمة دي؟"],"odd",[
   ["Qaitbay Citadel",0,"قلعة قايتباي","Citadel of Qaitbay"],["Bibliotheca Alexandrina",0,"مكتبة الإسكندرية"],["Montaza Palace",0,"قصر المنتزه"],
