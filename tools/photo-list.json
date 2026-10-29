@@ -14744,14 +14744,13 @@
   "skip": false
  },
  {
-  "name": "All Too Well (10 Minute Version)",
-  "title": "All Too Well",
+  "name": "The End",
+  "title": "The End (The Doors song)",
   "hint": "song",
-  "ar": "أول تو ويل (١٠ دقايق)",
+  "ar": "ذا إند",
   "ar_hint": "أغنية",
   "logo": false,
-  "skip": false,
-  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/c6/27/9c/c6279c07-9329-827d-31c4-f5d4c7d99ff4/21UM1IM25046.rgb.jpg/600x600bb.jpg"
+  "skip": false
  },
  {
   "name": "Free Bird",
