@@ -1,0 +1,52 @@
+# Puts the player-report relay (relay/worker.mjs) on Cloudflare and makes the GitHub labels it uses.
+# Run it by hand from the Actions tab after changing relay/ (setup steps: relay/README.md).
+name: Report relay
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Make the labels
+        env:
+          GH_TOKEN: ${{ github.token }}
+          R: ${{ github.repository }}
+        run: |
+          gh label create player-report  -R "$R" --force --color FBCA04 --description "Sent by a player from the game"
+          gh label create needs-approval -R "$R" --force --color D93F0B --description "Player report waiting for Shiha"
+          gh label create approved       -R "$R" --force --color 0E8A16 --description "Shiha approved: Claude may fix this"
+          gh label create fix-proposed   -R "$R" --force --color 1D76DB --description "A fix PR is open for this report"
+          for c in bug answer words other; do gh label create "report-$c" -R "$R" --force --color EDEDED; done
+      - name: Check the secrets are set
+        env:
+          A: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          B: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          C: ${{ secrets.REPORTS_TOKEN }}
+        run: |
+          missing=""
+          [ -n "$A" ] || missing="$missing CLOUDFLARE_API_TOKEN"
+          [ -n "$B" ] || missing="$missing CLOUDFLARE_ACCOUNT_ID"
+          [ -n "$C" ] || missing="$missing REPORTS_TOKEN"
+          if [ -n "$missing" ]; then echo "::error::Missing repository secrets:$missing (see relay/README.md)"; exit 1; fi
+      - id: deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          wranglerVersion: "4.36.0"
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: relay
+          command: deploy
+          secrets: |
+            REPORTS_TOKEN
+        env:
+          REPORTS_TOKEN: ${{ secrets.REPORTS_TOKEN }}
+      - name: Show the address
+        env:
+          URL: ${{ steps.deploy.outputs.deployment-url }}
+        run: |
+          echo "Relay address: $URL"
+          echo "Relay address: \`$URL\` (put it in index.html as REPORT_URL)" >> "$GITHUB_STEP_SUMMARY"

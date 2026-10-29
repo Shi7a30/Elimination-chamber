@@ -180,6 +180,19 @@ html[data-theme=dark] .cat.end{background:#26262d}
 #game{animation:enter .3s ease-out both}
 .meta{width:100%;display:flex;justify-content:space-between;align-items:center;margin-top:14px;font-size:13px;font-weight:600;color:var(--mut)}
 .meta span:empty{display:none}
+.meta .mr{display:flex;align-items:center;gap:6px;margin-inline-start:auto}
+#rflag{display:none;width:30px;height:30px;margin:-4px -6px;padding:0;border:0;border-radius:50%;background:none;color:var(--mut);align-items:center;justify-content:center}
+body.rp #rflag{display:flex}#rflag svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+#rwrap{position:fixed;inset:0;z-index:8;display:none;align-items:flex-end;background:rgba(0,0,0,.4)}#rwrap.show{display:flex}
+#rsheet{width:100%;max-width:480px;margin:0 auto;padding:22px 20px calc(18px + env(safe-area-inset-bottom,0px));background:var(--surf);color:var(--fg);border-radius:28px 28px 0 0;box-shadow:0 -18px 50px rgba(0,0,0,.22);max-height:92vh;overflow:auto}
+#rt{font-size:20px;font-weight:800;text-align:center}#rsheet .rsub{margin:6px 0 12px;font-size:13.5px;line-height:1.4;color:var(--mut);text-align:center;overflow-wrap:anywhere}
+.rcats{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:12px}.rcats button{border:1.5px solid var(--line);background:var(--surf);color:var(--fg);font:inherit;font-size:14px;font-weight:600;padding:8px 12px;border-radius:999px;min-height:40px}
+.rcats button.on{background:var(--y);border-color:var(--y);color:var(--ink)}
+#rtx{display:block;width:100%;box-sizing:border-box;border:1.5px solid var(--line);border-radius:14px;background:var(--surf);color:var(--fg);font:inherit;font-size:16px;padding:12px 14px;resize:vertical;min-height:96px}
+#rhp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+#rsheet .rnote{margin:10px 0 14px;font-size:12.5px;line-height:1.45;color:var(--mut);text-align:center}#rsheet .rnote.err{color:var(--r);font-weight:600}
+#rsheet .row{display:flex;gap:10px;justify-content:center}#rsheet .row .btn{flex:1;max-width:200px}
+#rsheet.done{text-align:center}#rsheet.done #rt{color:var(--g);margin:6px 0 14px}
 .streak{color:var(--o)}
 .meta .streak{background:color-mix(in srgb,var(--o) 14%,transparent);padding:3px 10px;border-radius:999px;font-weight:700}
 /* the question sits on one dark card: small lead-in, the key words in big yellow, small tail */
@@ -475,7 +488,7 @@ body[data-scr=game] #upd,body[data-scr=game] #inst{display:none}
  <div class="top"><button class="pill" id="home" aria-label="Home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h5v-6h4v6h5V10"/></svg></button><div class="pill" id="cpill"><span id="coins">0</span><i class="coin"></i></div><button class="claw" id="claw" aria-hidden="true" tabindex="-1"><i class="c e" style="left:0px;animation-delay:0.05s;"></i><i class="c" style="left:23px;"></i><i class="c e" style="left:46px;animation-delay:0.20s;"></i><i class="c jl" style="left:69px;"></i><i class="slot" style="left:92px"></i><i class="c jr" style="left:115px;"></i><i class="c e" style="left:138px;animation-delay:0.35s;"></i><span class="cw"><i class="ln" style="left:100px;height:45px"></i><i class="hd" style="left:92px;top:2px"></i></span><i class="ans" style="left:91px;top:9px"></i><i class="sl" style="left:119px;top:10px;width:10px"></i><i class="sl" style="left:121px;top:16px;width:7px"></i><i class="sl" style="left:118px;top:22px;width:11px"></i><i class="sk" style="left:77px;top:2px">✦</i><i class="sk" style="left:85px;top:-6px;font-size:7px">✦</i></button><div class="tools"><button class="pill" id="snd" aria-label="Sound and vibration"></button><button class="pill" id="cam" aria-label="Photo mode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13.5" r="3.5"/></svg></button><button class="pill" id="lang" aria-label="Language">ع</button></div></div>
  <div id="menu"><p class="sub">Loading… If nothing else shows up, this viewer isn't running the game. Open it in Safari or Chrome instead of a file preview.<br><br>لو مفيش حاجة ظهرت، افتح الملف في Safari أو Chrome بدل المعاينة.</p></div>
  <div id="game" style="display:none;width:100%;flex-direction:column;align-items:center">
-  <div class="meta"><span id="rn"></span><span class="streak" id="stk"></span></div>
+  <div class="meta"><span id="rn"></span><span class="mr"><span class="streak" id="stk"></span><button id="rflag" aria-label="Report a problem"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V4M5 4h12l-2.5 4.5L17 13H5"/></svg></button></span></div>
   <div class="plist" id="pl" style="display:none"></div>
   <div class="qcard"><div class="q" id="q1"></div><div class="big" id="q2"></div><div class="q" id="q3"></div></div>
   <div class="sub" id="sub" aria-live="polite"></div>
@@ -486,6 +499,7 @@ body[data-scr=game] #upd,body[data-scr=game] #inst{display:none}
 <nav id="dock"></nav>
 <input type="file" id="file" accept="image/*" style="display:none">
 <div id="sheet" role="dialog" aria-labelledby="st" aria-describedby="sp"><div id="sbadge" aria-hidden="true"></div><div id="st"></div><p id="sp"></p><div class="row" id="sb"></div></div>
+<div id="rwrap"></div>
 <canvas id="fx"></canvas>
 <script id="photos"></script><script defer src="photos/index.js"></script>
 <script src="daily.js"></script>
@@ -567,7 +581,7 @@ var TX={
   chRound:function(a,b,s){return"🔗 Round "+a+"/"+b+" · Score "+s},chDone:"✅ Challenge done!",chYou:function(s,k){return"You got "+s+"/"+k+". Send the link and see if your friends can beat it."},
   chWin:"🏆 You win!",chLose:"😬 You lost!",chDraw:"🤝 Draw!",vs:function(s,b,x,k){return"You "+s+"/"+k+" · "+x+" "+b+"/"+k},
   share:"🔗 Send challenge",shareBack:"🔗 Send your score",copied:"Link copied!",msg:function(s,k){return"I got "+s+"/"+k+" on Shelhom! Can you beat me? 🔥"},
-  tHome:"Home",tStats:"Stats",stCoins:"Coins",stSolved:"Rounds solved",stBest:"Best streak",stScores:"Best scores",stGroups:"Rounds solved in each group",stVer:function(v,d){return v?"Version "+v+" · Last update: "+d:"Test copy (not the live site)"},verMon:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],verAm:"am",verPm:"pm",dyBadge:function(n){return"Daily · #"+n},dyTitle:"Daily round",dySub:"Same round for everyone",dyDone:"Done for today!",dyShare:"Share",dyToday:"Today:",dyPlay:"Play",dyWon:"WON",dyLost:"LOST",dyMon:["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"],dyEnds:function(h,m){return"Ends in "+(h?h+"h":m+"m")},dyRn:function(n){return"Daily round #"+n},
+  tHome:"Home",tStats:"Stats",rpTitle:"Report a problem",rpRound:"About this question",rpGen:"Tell us anything: something broken, a mistake or an idea.",rpCats:["Something's broken","Wrong answer","Spelling or wording","Idea or other"],rpPh:"What happened? For example: the right answer is…",rpNote:"We read every report before changing anything. Please don't write your phone number or anything private.",rpSend:"Send",rpSending:"Sending…",rpCancel:"Cancel",rpOk:"Sent, thanks!",rpClose:"Close",rpErr:"Couldn't send it. Check your internet and try again.",rpBusy:"Too many reports right now. Try again in a little while.",rpStats:"Report a problem",rpStatsSub:"Or send us an idea",stCoins:"Coins",stSolved:"Rounds solved",stBest:"Best streak",stScores:"Best scores",stGroups:"Rounds solved in each group",stVer:function(v,d){return v?"Version "+v+" · Last update: "+d:"Test copy (not the live site)"},verMon:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],verAm:"am",verPm:"pm",dyBadge:function(n){return"Daily · #"+n},dyTitle:"Daily round",dySub:"Same round for everyone",dyDone:"Done for today!",dyShare:"Share",dyToday:"Today:",dyPlay:"Play",dyWon:"WON",dyLost:"LOST",dyMon:["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"],dyEnds:function(h,m){return"Ends in "+(h?h+"h":m+"m")},dyRn:function(n){return"Daily round #"+n},
   dyNext:function(h,m){return"New question in "+(h?h+"h":m+"m")},fzBar:function(n){return"You missed yesterday. Save your <b>🔥 "+n+"</b>?"},fzBtn:function(c){return"Save it · "+c},fzT:"❄ Save your streak?",fzP:function(n,c){return"You missed yesterday. Spend "+c+" coins and your 🔥"+n+" streak carries on. You can do this once a week."},fzNeed:function(c){return" You need "+c+" coins."},fzNo:"Let it go",fzDone:"❄ Streak saved!",fzDoneP:function(n){return"Your 🔥"+n+" streak carries on. Play today's round to keep it going."},dyMsg:function(n){return"Shelhom daily round #"+n},dyStreak:function(n){return"🔥 "+n+(n==="1"?" day":" days")+" in a row"},
   howT:"👆 How to play",howP:"Knock out the cards that are NOT the answer, one at a time, until only the right one is left. Knock out the answer and you lose! Tip: 📷 in a round puts your own photo on a card.",howOk:"Got it",
   leaveDy:"You'll lose today's round. There's one try a day.",leaveUndo:"You won't be able to undo this loss.",skipQ:"Skip this round?",skipTxt:function(k){return"Skipping ends your 🔥"+k+" streak."},skipBtn:"Skip",
@@ -591,7 +605,7 @@ var TX={
   chRound:function(a,b,s){return"🔗 جولة "+a+"/"+b+" · النتيجة "+s},chDone:"✅ خلصت التحدي!",chYou:function(s,k){return"جبت "+s+" من "+k+". ابعت اللينك وشوف صحابك هيعدّوك ولا لأ."},
   chWin:"🏆 كسبت!",chLose:"😬 خسرت!",chDraw:"🤝 تعادل!",vs:function(s,b,x,k){return"إنت "+s+" · "+x+" "+b+" (من "+k+")"},
   share:"🔗 ابعت التحدي",shareBack:"🔗 ابعت نتيجتك",copied:"اتنسخ اللينك!",msg:function(s,k){return"جبت "+s+" من "+k+" في شيلهم! تقدر تعدّيني؟ 🔥"},
-  tHome:"الرئيسية",tStats:"أرقامي",stCoins:"كوينز",stSolved:"جولات خلّصتها",stBest:"أطول ستريك",stScores:"أحسن أرقامك",stGroups:"خلّصت كام جولة في كل مجموعة",stVer:function(v,d){return v?"النسخة "+v+" · آخر تحديث: "+d:"نسخة تجربة (مش اللي على الموقع)"},verMon:["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"],verAm:"ص",verPm:"م",dyBadge:function(n){return"رقم "+n},dyTitle:"سؤال اليوم",dySub:"سؤال جديد كل يوم، هو هو لكل صحابك",dyDone:"جاوبت النهارده!",dyShare:"شارك",dyToday:"النهارده:",dyPlay:"العب",dyWon:"كسبت",dyLost:"خسرت",dyMon:["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"],dyEnds:function(h,m){return"فاضل "+(h?(h===1?"ساعة":h===2?"ساعتين":h<=10?h+" ساعات":h+" ساعة"):(m===1?"دقيقة":m===2?"دقيقتين":m<=10?m+" دقايق":m+" دقيقة"))},dyRn:function(n){return"سؤال اليوم رقم "+n},
+  tHome:"الرئيسية",tStats:"أرقامي",rpTitle:"بلّغ عن مشكلة",rpRound:"عن السؤال ده",rpGen:"قولنا على أي حاجة: حاجة مش شغالة، غلطة، أو فكرة.",rpCats:["حاجة مش شغالة","إجابة غلط","غلط في الكلام","فكرة أو حاجة تانية"],rpPh:"إيه اللي حصل؟ مثلًا: الإجابة الصح هي…",rpNote:"بنقرا كل رسالة قبل ما نغيّر أي حاجة. متكتبش رقم تليفونك أو أي حاجة خاصة.",rpSend:"ابعت",rpSending:"بنبعت…",rpCancel:"إلغاء",rpOk:"وصلت، شكرًا!",rpClose:"تمام",rpErr:"معرفناش نبعتها. اتأكد من النت وجرّب تاني.",rpBusy:"في رسايل كتير دلوقتي. جرّب تاني كمان شوية.",rpStats:"بلّغ عن مشكلة",rpStatsSub:"أو ابعتلنا فكرة",stCoins:"كوينز",stSolved:"جولات خلّصتها",stBest:"أطول ستريك",stScores:"أحسن أرقامك",stGroups:"خلّصت كام جولة في كل مجموعة",stVer:function(v,d){return v?"النسخة "+v+" · آخر تحديث: "+d:"نسخة تجربة (مش اللي على الموقع)"},verMon:["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"],verAm:"ص",verPm:"م",dyBadge:function(n){return"رقم "+n},dyTitle:"سؤال اليوم",dySub:"سؤال جديد كل يوم، هو هو لكل صحابك",dyDone:"جاوبت النهارده!",dyShare:"شارك",dyToday:"النهارده:",dyPlay:"العب",dyWon:"كسبت",dyLost:"خسرت",dyMon:["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"],dyEnds:function(h,m){return"فاضل "+(h?(h===1?"ساعة":h===2?"ساعتين":h<=10?h+" ساعات":h+" ساعة"):(m===1?"دقيقة":m===2?"دقيقتين":m<=10?m+" دقايق":m+" دقيقة"))},dyRn:function(n){return"سؤال اليوم رقم "+n},
   fzBar:function(n){return"فاتك امبارح. تنقذ <b>🔥 "+n+"</b>؟"},fzBtn:function(c){return"انقذه · "+c},fzT:"❄ تنقذ الستريك؟",fzP:function(n,c){return"فاتك امبارح. ادفع "+c+" كوينز والستريك 🔥"+n+" يفضل زي ما هو. تقدر تعملها مرة واحدة في الأسبوع."},fzNeed:function(c){return" محتاج "+c+" كوينز."},fzNo:"سيبه يروح",fzDone:"❄ الستريك اتنقذ!",fzDoneP:function(n){return"الستريك 🔥"+n+" لسه معاك. العب سؤال النهارده عشان يكمل."},dyNext:function(h,m){var hs=h===1?"ساعة":h===2?"ساعتين":h<=10?h+" ساعات":h+" ساعة",ms=m===1?"دقيقة":m===2?"دقيقتين":m<=10?m+" دقايق":m+" دقيقة";return"السؤال الجاي بعد "+(h?hs:ms)},dyMsg:function(n){return"شيلهم - سؤال اليوم رقم "+n},dyStreak:function(n){return"🔥 "+(n==="1"?"أول يوم":"ستريك "+arN(n,"يومين","أيام","يوم"))},
   howT:"👆 إزاي تلعب",howP:"شيل الكروت الغلط واحد واحد لحد ما يفضل الكارت الصح لوحده. لو شلت الإجابة الصح تخسر! وعلى فكرة: 📷 جوه الجولة بيخليك تحط صورة من عندك على أي كارت.",howOk:"تمام",
   leaveDy:"هتخسر سؤال النهارده، وكل يوم ليه محاولة واحدة بس.",leaveUndo:"لو خرجت، مش هتقدر تعمل رجوع للدور ده.",skipQ:"تعدّي الجولة دي؟",skipTxt:function(k){return"لو عدّيتها هتخسر الستريك 🔥"+k+"."},skipBtn:"عدّي",
@@ -972,6 +986,7 @@ var IC={eg:svg('<path d="M1.5 20h21M3 20 9.5 7 16 20M13.5 15l3-5 5 10"/>'),w:svg
  stats:svg('<path d="M5 20v-8M12 20V4M19 20v-5"/>'),
  cal:svg('<rect x="4" y="5" width="16" height="15" rx="2.5"/><path d="M4 10h16M9 3v4M15 3v4"/>'),
  mix:svg('<path d="M3 7h3c2.2 0 3.2 1.1 4.4 3l2.4 4c1.2 1.9 2.2 3 4.4 3H21M18 14l3 3-3 3M18 4l3 3-3 3M21 7h-3.8c-1.5 0-2.4.6-3.2 1.5M3 17h3c1.5 0 2.4-.6 3.2-1.5"/>')};
+IC.flag=svg('<path d="M5 21V4M5 4h12l-2.5 4.5L17 13H5"/>');
 // Each big group has its own colour, used for its icon tile and progress bars.
 var GC=["#22a45d","#ef5b5b","#8b5cf6","#3b82f6","#14b8a6","#f08a24","#ec4899"];
 function ghead(e,label){return '<div class="ghead"><button class="pill" data-back aria-label="Back">'+IC.back+"</button><h2>"+(e?e+" ":"")+label+"</h2></div>"}
@@ -1034,6 +1049,7 @@ function statsPage(){var tile=function(v,l){return '<div class="stt"><b>'+v+"</b
   row(IC.cal,t("dyTitle"),chip(IC.flame,dyStreak(),t("streak"))+chip(IC.trophy,DY.b|0,t("best")))+"</div>"+
   '<h3 class="dgh">'+t("stGroups")+'</h3><div class="subs">'+GROUPS.map(function(g,i){var ids=g.s.map(function(x){return x[0]}),rs=ALL.filter(function(r){return ids.indexOf(r.s)>=0});if(!rs.length)return"";
    return card("sc grp",'data-g="'+i+'"',g.e,L==="ar"?g.a:g.n,"",solved(rs),rs.length,GC[i])}).join("")+"</div>"+
+  (REPORT_URL?'<div class="modes" style="margin-top:18px"><button class="cat row" data-rep><span class="se">'+IC.flag+"</span><span>"+t("rpStats")+"<small>"+t("rpStatsSub")+"</small></span>"+IC.chev+"</button></div>":"")+
   '<p class="ver">'+buildTxt()+"</p>"}
 // Hot potato and challenge, opened from the Multiplayer tile.
 function mpPage(){var row=function(c,e,ti,sub){return '<button class="cat row" data-c="'+c+'"><span class="se">'+e+"</span><span>"+ti+"<small>"+sub+"</small></span>"+IC.chev+"</button>"};
@@ -1048,7 +1064,8 @@ $("dock").onclick=function(e){var b=e.target.closest("[data-nav]");if(!b)return;
 function clawGo(){var c=$("claw");if(RM)return;c.classList.remove("an");void c.offsetWidth;c.classList.add("an")}
 $("claw").onclick=function(){sfx.tap();clawGo()};
 function hub(c,e,label,sub){return '<button class="cat hub" data-c="'+c+'"><span class="se k">'+e+'</span><span class="tl">'+label+"</span><small>"+sub+"</small></button>"}
-$("menu").onclick=function(e){if(e.target.closest("[data-off]")){sfx.tap();saveOffline();return}
+$("menu").onclick=function(e){if(e.target.closest("[data-rep]")){sfx.tap();repOpen(false);return}
+ if(e.target.closest("[data-off]")){sfx.tap();saveOffline();return}
  var rg=e.target.closest("[data-reg]");if(rg){REG=rg.dataset.reg;eRecent=[];save();sfx.tap();menu();return}
  if(e.target.closest("[data-back]")){GRP=typeof GRP==="number"?"cats":GRP==="h"||GRP==="c"?"mp":null;sfx.tap();menu();return}
  if(e.target.closest("[data-padd]")){HP.push("");sv("elim_players",HP);sfx.tap();menu();return}
@@ -1171,7 +1188,8 @@ function atRisk(){if(!inGame()||!cur)return false;
 // Phone back button / back swipe: any screen past Home gets one history step, so back goes to the page before
 // (and in a game asks first, like the Home button) instead of closing the app
 function hSync(){try{if(document.body.dataset.scr!=="home"&&!(history.state&&history.state.sh))history.pushState({sh:1},"")}catch(e){}}
-addEventListener("popstate",function(){if(document.body.dataset.scr==="home"){try{history.back()}catch(e){}return}
+addEventListener("popstate",function(){if(REP){repClose();hSync();return}
+ if(document.body.dataset.scr==="home"){try{history.back()}catch(e){}return}
  if(inGame()){if(shF&&shF.leave){var b=$("sb").querySelectorAll(".btn")[1];if(b)b.click()}else $("home").onclick()}
  else{GRP=typeof GRP==="number"?"cats":GRP==="h"||GRP==="c"?"mp":null;menu()}
  hSync()});
@@ -1196,6 +1214,44 @@ function sheet(ti,p,btns,d){clearTimeout(stT);var m=ti.match(/^([^\p{L}\p{N}\s]+
 // sh(f, delay): show a popup whose text f() builds, so it can be rebuilt when the language changes
 function sh(f,d){shF=f;var a=f();sheet(a[0],a[1],a[2],d)}
 function hide(){clearTimeout(stT);shF=null;$("sheet").classList.remove("show");$("menu").inert=$("dock").inert=false}
+// Player reports: the flag in a game (or the row on the Stats page) opens a small form. It goes to the report relay
+// (relay/worker.mjs), which files a GitHub issue labelled needs-approval; nothing changes until Shiha approves it.
+// No address = the feature is hidden. The tests set window.SHELHOM_REPORT_URL.
+var REPORT_URL=window.SHELHOM_REPORT_URL||"",REP=null,RCATS=["bug","answer","words","other"];
+// what the player was looking at, so a report about a question says which one
+function repCtx(){if(!inGame()||!cur||!cur.items)return null;var r=cur.r||null;
+ return{key:r?r.key:"",shown:[$("q1").textContent,$("q2").textContent,$("q3").textContent].join(" ").replace(/\s+/g," ").trim().slice(0,300),
+  q:[].concat(cur.q||"").join(" ").slice(0,300),best:String(cur.best||""),cat:r&&r.c?r.c.n:"",
+  items:(items||cur.items).slice(0,9).map(function(x){return[String(x.d[0]).slice(0,80),x.d[1]]})}}
+function repOpen(inRound){if(!REPORT_URL)return;var c=inRound?repCtx():null;
+ REP={ctx:c,mode:c?mode:"",cat:c?"answer":"",txt:"",t0:Date.now(),busy:false,msg:"",err:false};repRender();$("rwrap").classList.add("show");
+ try{$("rtx").focus({preventScroll:true})}catch(x){}}
+function repOk(){return!!REP&&!REP.busy&&!!REP.cat&&(REP.txt.trim().length>=3||(!!REP.ctx&&REP.cat==="answer"))}
+function repRender(){var w=$("rwrap");if(!REP)return;$("menu").inert=$("dock").inert=$("game").inert=true;
+ if(REP.sent){w.innerHTML='<div id="rsheet" class="done" role="dialog" aria-modal="true" aria-labelledby="rt"><div id="rt">'+esc(t("rpOk"))+'</div><div class="row"><button class="btn y" data-rx>'+esc(t("rpClose"))+"</button></div></div>";return}
+ var lab=t("rpCats");
+ w.innerHTML='<div id="rsheet" role="dialog" aria-modal="true" aria-labelledby="rt"><div id="rt">'+esc(t("rpTitle"))+'</div><p class="rsub">'+esc(REP.ctx?t("rpRound")+": "+REP.ctx.shown:t("rpGen"))+"</p>"+
+  '<div class="rcats" role="radiogroup">'+RCATS.map(function(k,i){var on=REP.cat===k;return'<button type="button" role="radio" aria-checked="'+on+'" data-rc="'+k+'"'+(on?' class="on"':"")+">"+esc(lab[i])+"</button>"}).join("")+"</div>"+
+  '<textarea id="rtx" maxlength="1000" rows="4" placeholder="'+esc(t("rpPh"))+'" aria-label="'+esc(t("rpTitle"))+'">'+esc(REP.txt)+"</textarea>"+
+  '<input id="rhp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">'+
+  '<p class="rnote'+(REP.err?" err":"")+'" aria-live="polite">'+esc(REP.msg||t("rpNote"))+"</p>"+
+  '<div class="row"><button class="btn" data-rx>'+esc(t("rpCancel"))+'</button><button class="btn y" data-rs'+(repOk()?"":" disabled")+">"+esc(t(REP.busy?"rpSending":"rpSend"))+"</button></div></div>"}
+function repClose(){REP=null;var w=$("rwrap");w.classList.remove("show");w.innerHTML="";var s=$("sheet").classList.contains("show");$("menu").inert=$("dock").inert=s;$("game").inert=false}
+function repFail(k){if(!REP)return;REP.busy=false;REP.err=true;REP.msg=t(k);repRender()}
+function repSend(){if(!repOk())return;var now=Date.now(),last=+ld("shelhom-rep-last",0)||0;if(now-last<20000&&now>=last)return repFail("rpBusy");
+ var hp=$("rhp").value,body={v:1,cat:REP.cat,text:REP.txt.trim().slice(0,1000),lang:L,build:BUILD,mode:REP.mode,ctx:REP.ctx,
+  screen:innerWidth+"x"+innerHeight,ua:navigator.userAgent.slice(0,200),hp:hp,ms:now-REP.t0};
+ REP.busy=true;REP.err=false;REP.msg="";repRender();
+ // text/plain keeps it a "simple" request, so the browser sends it without an extra CORS check first
+ fetch(REPORT_URL,{method:"POST",headers:{"Content-Type":"text/plain;charset=UTF-8"},body:JSON.stringify(body)}).then(function(r){
+  if(!REP)return;if(!r.ok)return repFail(r.status===429?"rpBusy":"rpErr");sv("shelhom-rep-last",now);REP.sent=true;repRender()},function(){repFail("rpErr")})}
+$("rwrap").onclick=function(e){var w=$("rwrap");if(e.target===w||e.target.closest("[data-rx]")){sfx.tap();repClose();return}
+ var c=e.target.closest("[data-rc]");if(c&&REP){sfx.tap();REP.cat=c.dataset.rc;var x=$("rtx");if(x)REP.txt=x.value;repRender();return}
+ if(e.target.closest("[data-rs]"))repSend()};
+$("rwrap").oninput=function(e){if(e.target.id!=="rtx"||!REP)return;REP.txt=e.target.value;var b=$("rwrap").querySelector("[data-rs]");if(b)b.disabled=!repOk()};
+document.addEventListener("keydown",function(e){if(e.key==="Escape"&&REP)repClose()});
+$("rflag").onclick=function(){sfx.tap();repOpen(true)};
+if(REPORT_URL)document.body.classList.add("rp");
 // the built-in photos load after the game starts; put them on the cards already showing
 function fillImgs(){if(!inGame()||!items)return;[].forEach.call(document.querySelectorAll(".cell"),function(c){var x=items[+c.dataset.i],u=x&&(mode==="duel"?photo(x.d[0]):bPhoto(+c.dataset.i));
  if(u&&!c.querySelector(".tile img")){setImg(c.querySelector(".tile"),u);setImg(c.querySelector(".back"),u)}})}

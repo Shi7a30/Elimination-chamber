@@ -1,0 +1,26 @@
+# Cloudflare Worker for player reports. Deployed by .github/workflows/report-relay.yml (see relay/README.md).
+name = "shelhom-reports"
+main = "worker.mjs"
+compatibility_date = "2025-09-01"
+workers_dev = true
+
+[vars]
+REPO = "Shi7a30/Elimination-chamber"
+ALLOWED_ORIGINS = "https://shi7a30.github.io"
+DAILY_CAP = "40"
+
+# Each phone (IP): 3 reports a minute.
+[[ratelimits]]
+name = "RL_IP"
+namespace_id = "3301"
+  [ratelimits.simple]
+  limit = 3
+  period = 60
+
+# Everyone together: 10 reports a minute (on top of DAILY_CAP a day).
+[[ratelimits]]
+name = "RL_ALL"
+namespace_id = "3302"
+  [ratelimits.simple]
+  limit = 10
+  period = 60
