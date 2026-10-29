@@ -191,7 +191,8 @@ body.rp #rflag{display:flex}#rflag svg{width:17px;height:17px;fill:none;stroke:c
 #rtx{display:block;width:100%;box-sizing:border-box;border:1.5px solid var(--line);border-radius:14px;background:var(--surf);color:var(--fg);font:inherit;font-size:16px;padding:12px 14px;resize:vertical;min-height:96px}
 #rhp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
 #rsheet .rnote{margin:10px 0 14px;font-size:12.5px;line-height:1.45;color:var(--mut);text-align:center}#rsheet .rnote.err{color:var(--r);font-weight:600}
-#rsheet .row{display:flex;gap:10px;justify-content:center}#rsheet .row .btn{flex:1;max-width:200px}
+#rsheet .row{display:flex;gap:10px;justify-content:center;position:sticky;bottom:0;background:var(--surf);padding-top:6px}#rsheet .row .btn{flex:1;max-width:200px}
+@media (max-height:700px){#rsheet{padding-top:16px}#rt{font-size:18px}#rsheet .rsub{margin:4px 0 8px;font-size:12.5px}.rcats{gap:6px;margin-bottom:8px}.rcats button{min-height:36px;padding:6px 10px;font-size:13px}#rtx{min-height:72px;padding:10px 12px}#rsheet .rnote{margin:6px 0 8px;font-size:11.5px}}
 #rsheet.done{text-align:center}#rsheet.done #rt{color:var(--g);margin:6px 0 14px}
 .streak{color:var(--o)}
 .meta .streak{background:color-mix(in srgb,var(--o) 14%,transparent);padding:3px 10px;border-radius:999px;font-weight:700}
