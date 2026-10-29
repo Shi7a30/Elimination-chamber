@@ -25614,5 +25614,64 @@
   "ar_hint": "",
   "logo": false,
   "skip": false
+ },
+ {
+  "name": "Crocodile",
+  "title": "Nile crocodile",
+  "hint": "animal",
+  "ar": "التمساح",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false,
+  "q": [
+   "Sobek statue",
+   "Sobek Kom Ombo relief"
+  ],
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Statuette_of_the_crocodile_Sobek%2C_limestone_-_Museo_Egizio%2C_Turin_C_934_p01.jpg/500px-Statuette_of_the_crocodile_Sobek%2C_limestone_-_Museo_Egizio%2C_Turin_C_934_p01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+ },
+ {
+  "name": "Jackal",
+  "title": "Golden jackal",
+  "hint": "animal",
+  "ar": "ابن آوى",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Ibis",
+  "title": "African sacred ibis",
+  "hint": "animal",
+  "ar": "أبو منجل",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Falcon",
+  "title": "Peregrine falcon",
+  "hint": "animal",
+  "ar": "الصقر",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Scarab",
+  "title": "Scarabaeus sacer",
+  "hint": "animal",
+  "ar": "الجعران",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
+ },
+ {
+  "name": "Cobra",
+  "title": "Egyptian cobra",
+  "hint": "animal",
+  "ar": "الكوبرا",
+  "ar_hint": "",
+  "logo": false,
+  "skip": false
  }
 ]
