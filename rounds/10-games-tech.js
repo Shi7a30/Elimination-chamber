@@ -58,8 +58,8 @@ CATS.push(
   ["Xbox 360",84,"إكس بوكس 360"],["Game Boy Advance",82,"جيم بوي أدفانس"],["Sega Mega Drive",34,"سيجا"]],
   {pre:["~","~"],suf:["M"," مليون"],h:"video game console",k:["UNITS SOLD","اتباع منه"],s:"games",m:"w",d:2}),
  Rd(["WHICH VIDEO GAME","SOLD THE MOST",Q],["إيه","أكتر لعبة فيديو اتباعت",QA],"max",[
-  ["Minecraft",350,"ماينكرافت"],["GTA V",215,"جاتا 5","Grand Theft Auto V"],["Wii Sports",83,"وي سبورتس"],
-  ["Red Dead Redemption 2",77,"ريد ديد ريدمبشن 2"],["Mario Kart 8 Deluxe",68,"ماريو كارت 8"],["The Witcher 3",60,"ذا ويتشر 3","The Witcher 3: Wild Hunt"],
+  ["Minecraft",350,"ماينكرافت"],["GTA V",230,"جاتا 5","Grand Theft Auto V"],["Wii Sports",83,"وي سبورتس"],
+  ["Red Dead Redemption 2",87,"ريد ديد ريدمبشن 2"],["Mario Kart 8 Deluxe",71,"ماريو كارت 8"],["The Witcher 3",65,"ذا ويتشر 3","The Witcher 3: Wild Hunt"],
   ["Super Mario Bros.",58,"سوبر ماريو"],["Pokémon Red & Green",31,"بوكيمون ريد وجرين","Pokémon Red and Blue"],["Elden Ring",30,"إلدن رينج"]],
   {pre:["~","~"],suf:["M"," مليون"],h:"video game",k:["COPIES SOLD","اتباع منها"],s:"games",m:"w",d:1}),
  Rd(["WHICH GAME SERIES","STARTED FIRST",Q],["أنهي سلسلة ألعاب","بدأت الأول",QA],"min",[

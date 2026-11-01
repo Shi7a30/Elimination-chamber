@@ -18,7 +18,7 @@ CATS.push(
   ["Nogoum FM",2003,"نجوم إف إم"],["Radio Masr",2009,"راديو مصر"],["Mega FM",2010,"ميجا إف إم","Nile Radio Network"]],
   {h:"Egyptian radio station",k:["ON AIR SINCE","بدأت سنة"],g:"y",dt:["Radio station launched","انطلاق الإذاعة"],s:"kidstv",m:"eg",d:3}),
  Rd(["WHICH CLASSIC PLAY","OPENED LAST",Q],["أنهي مسرحية","أجدد",QA],"max",[
-  ["Sayedati El Gameela",1969,"سيدتي الجميلة","Sayedati El Gameela"],["Madraset el moshaghebeen",1973,"مدرسة المشاغبين","Madraset El Moshaghebeen"],["Entaha el dars ya ghaby",1975,"انتهى الدرس يا غبي","Intaha El Dars Ya Ghabi"],
+  ["Sayedati El Gameela",1969,"سيدتي الجميلة","Sayedati El Gameela"],["Madraset el moshaghebeen",1971,"مدرسة المشاغبين","Madraset El Moshaghebeen"],["Entaha el dars ya ghaby",1975,"انتهى الدرس يا غبي","Intaha El Dars Ya Ghabi"],
   ["Shahed mashafsh 7aga",1976,"شاهد ماشافش حاجة","Shahed Mashafsh Haga"],["El 3eyal kebret",1979,"العيال كبرت","El Eyal Kebret"],["Sok 3ala banatak",1980,"سك على بناتك","Sok Ala Banatak"],
   ["El wad sayed el shaghal",1985,"الواد سيد الشغال","El Wad Sayed El Shaghal"],["El za3im",1993,"الزعيم","El Zaeem"],["Bodyguard",1999,"بودي جارد","Adel Emam"]],
   {h:"Egyptian comedy play",k:["OPENED","اتعرضت سنة"],g:"y",dt:["Play opened","عرض المسرحية"],s:"kidstv",m:"eg",d:2}),
@@ -168,7 +168,7 @@ CATS.push(
   ["Egypt at the 2018 World Cup",2018,"مصر في كاس العالم 2018","2018 FIFA World Cup"],["Egypt hosts AFCON 2019",2019,"مصر تنظم أمم أفريقيا 2019","2019 Africa Cup of Nations"],["The Pharaohs' Golden Parade",2021,"موكب المومياوات","Pharaohs' Golden Parade"]],
   {h:"Egypt",k:["YEAR","السنة"],s:"zaman",m:"eg",d:2}),
  Rd(["WHICH HOTEL","OPENED FIRST",Q],["أنهي فندق","اتفتح الأول",QA],"min",[
-  ["Shepheard's Hotel",1841,"فندق شبرد","Shepheard's Hotel"],["Mena House",1886,"مينا هاوس","Marriott Mena House"],["Winter Palace Luxor",1886,"وينتر بالاس الأقصر","Winter Palace Hotel"],
+  ["Shepheard's Hotel",1841,"فندق شبرد","Shepheard's Hotel"],["Mena House",1886,"مينا هاوس","Marriott Mena House"],["Winter Palace Luxor",1907,"وينتر بالاس الأقصر","Winter Palace Hotel"],
   ["Old Cataract",1899,"كتاراكت أسوان","Old Cataract Hotel"],["Semiramis",1907,"سميراميس","Semiramis InterContinental Hotel"],["Cecil Hotel",1929,"فندق سيسيل","Cecil Hotel (Alexandria)"],
   ["Nile Hilton",1959,"النيل هيلتون","Nile Ritz-Carlton"],["Four Seasons Nile Plaza",2004,"فور سيزونز النيل","Four Seasons Hotel Cairo at Nile Plaza"],["St. Regis Cairo",2019,"سانت ريجيس القاهرة","St. Regis Cairo"]],
   {h:"hotel in Egypt",k:["OPENED","اتفتح سنة"],s:"zaman",m:"eg",d:3}),
